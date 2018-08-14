@@ -74,8 +74,8 @@
             </md></p>
         </example>
 
-        <fact><idx><h>squaring a binomial</h></idx>
-            <title>Squaring a Binomial Formulas</title>
+        <fact xml:id="fact-squaring-a-binomial">
+            <title>Squaring a Binomial Formulas</title><idx><h>squaring a binomial</h></idx>
             <statement>
                 <p>If <m>a</m> and <m>b</m> are real numbers or variable expressions, then we have the following formulas:
                 <me>(a+b)^2 = a^2+2ab+b^2</me>
@@ -206,8 +206,8 @@
             <mrow> \amp= a^2  - b^2</mrow>
         </md>As with the previous special case, this one also has two names. This can be called the <term>product of the sum and difference of two terms</term>, because this pattern is built on multiplying two binomials that have the same two terms, except one binomial is a sum and the other binomial is a difference. The second name is a <term>difference of squares</term><idx><h>difference of squares</h></idx>, because the end result of the multiplication is a binomial that is the difference of two perfect squares. As before, the second name will become useful in a future chapter when using exactly the technique described in this section will be pertinent.</p>
 
-        <fact><idx><h>difference of squares</h></idx><idx><h>product of sum and difference of two terms</h></idx>
-            <title>The Product of the Sum and Difference of Two Terms Formula</title>
+        <fact xml:id="fact-product-of-sum-and-difference">
+            <title>The Product of the Sum and Difference of Two Terms Formula</title><idx><h>difference of squares</h></idx><idx><h>product of sum and difference of two terms</h></idx>
             <statement>
                 <p>If <m>a</m> and <m>b</m> are real numbers or variable expressions, then we have the following formula:
                 <me>(a+b)(a-b)=a^2-b^2</me>
@@ -259,8 +259,7 @@
         </exercise>-->
 
         <list xml:id="list-special-cases-of-multiplication-formulas">
-            <idx><h>special cases of multiplication formulas</h></idx>
-            <caption>Special Cases of Multiplication Formulas</caption>
+            <caption>Special Cases of Multiplication Formulas</caption><idx><h>special cases of multiplication formulas</h></idx>
             <introduction>
                 <p>If <m>a</m> and <m>b</m> are real numbers or variable expressions, then we have the following formulas:</p>
             </introduction>
@@ -325,6 +324,34 @@
     </subsection>
 
     <exercises>
+        <exercisegroup cols="2">
+            <title>Review and Warmup</title>
+<!--TODO: add 4 exercises from section-combining-like-terms.ptx when done in WW-->
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentsMultiplication25.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentsMultiplication25.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentsMultiplication23.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentsMultiplication23.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentsMultiplication45.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentsMultiplication45.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentsMultiplication50.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentsMultiplication50.pg" />
+            </exercise>
+        </exercisegroup>
         <exercisegroup cols="2">
             <exercise>
                 <webwork>
@@ -417,9 +444,7 @@
         </exercisegroup>
 
         <exercisegroup cols="2">
-            <introduction>
-                <p>Perfect Square Trinomial Formula</p>
-            </introduction>
+            <title>Perfect Square Trinomial Formula</title>
             <exercise>
                 <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication190.pg" />
             </exercise>
@@ -477,9 +502,7 @@
         </exercisegroup>
 
         <exercisegroup cols="2">
-            <introduction>
-                <p>Difference of Squares Formula</p>
-            </introduction>
+            <title>Difference of Squares Formula</title>
             <exercise>
                 <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication160.pg" />
             </exercise>
@@ -551,9 +574,7 @@
 <!--TODO: exercises with c(a-b)^2 and c(a-b)(a+b) are needed; none found in problem library-->
 
         <exercisegroup cols="2">
-            <introduction>
-                <p>Application Problems</p>
-            </introduction>
+            <title>Application Problems</title>
             <exercise>
                 <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication60.pg" />
             </exercise>
@@ -587,9 +608,7 @@
         </exercisegroup>
 
         <exercisegroup cols="2">
-            <introduction>
-                <p>Binomials Raised to Other Powers</p>
-            </introduction>
+            <title>Binomials Raised to Other Powers</title>
             <exercise>
                 <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication230.pg" />
             </exercise>

@@ -160,10 +160,47 @@
 
 
     <exercises>
-        <exercisegroup cols="2">
-            <introduction>
-                <p>Solving Linear Inequalities</p>
-            </introduction>
+        <exercisegroup cols="3">
+            <title>Review and Warmup</title>
+            <exercise>
+                <webwork source="BasicAlgebra/LinearInequalities/SolveInequality10.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/LinearInequalities/SolveInequality10.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/LinearInequalities/SolveInequality41.pg"/>
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/LinearInequalities/SolveInequality41.pg"/>
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/LinearInequalities/SolveInequality50.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/LinearInequalities/SolveInequality50.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/LinearInequalities/SolveInequality80.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/LinearInequalities/SolveInequality80.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/LinearInequalities/SolveInequality110.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/LinearInequalities/SolveInequality110.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/LinearEquationApplications/ModelingWithEquation130.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/LinearEquationApplications/ModelingWithEquation140.pg" />
+            </exercise>
+        </exercisegroup>
+        <exercisegroup cols="3">
+            <title>Solving Multistep Linear Inequalities</title>
             <exercise>
                 <webwork source="BasicAlgebra/LinearInequalities/SolveInequality170.pg" />
             </exercise>
@@ -263,9 +300,7 @@
 
         </exercisegroup>
         <exercisegroup>
-            <introduction>
-                <p>Application Problems for Linear Inequalities</p>
-            </introduction>
+            <title>Applications</title>
             <exercise>
                 <webwork source="BasicAlgebra/LinearInequalities/InequalityWordProblem10.pg" />
             </exercise>

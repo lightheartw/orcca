@@ -47,7 +47,7 @@
             <p>A more complicated inequality:<me>x^2+y^2\lt1</me></p>
         </sidebyside>
 
-        <p>A <term>linear equation</term><idx><h>linear equation</h></idx> in one variable can be written in the form <m>ax+b=0</m>, where <m>a, b</m> are real numbers, and <m>a\ne0</m>. The variable could be any letter other than <m>x</m>. The variable cannot have other exponent than <m>1</m> (<m>x=x^1</m>), and the variable cannot be inside a root symbol (square root, cube root, etc.) or in a denominator.</p>
+        <p>A <term>linear equation</term><idx><h>linear equation</h></idx> in one variable can be written in the form <m>ax+b=0</m>, where <m>a, b</m> are real numbers, and <m>a\ne0</m>. The variable doesn't have to be <m>x</m>. The variable cannot have an exponent other than <m>1</m> (<m>x=x^1</m>), and the variable cannot be inside a root symbol (square root, cube root, etc.) or in a denominator.</p>
 
         <p>The following are some linear equations in one variable:<md>
             <mrow>4-y\amp=5 \amp 4-z\amp=5z \amp 0\amp=\frac{1}{2}p</mrow>
@@ -64,7 +64,7 @@
 
         <p>This chapter focuses on linear equations in <em>one</em> variable. We will study other types of equations in later chapters.</p>
 
-        <p>The simplest equations and inequalities have numbers and no variables. When this happens, the equation is either <em>true</em> or <em>false</em>.The following equations and inequalities are <em>true</em> statements:<md>
+        <p>The simplest equations and inequalities have numbers and no variables. When this happens, the equation is either <em>true</em> or <em>false</em>. The following equations and inequalities are <em>true</em> statements:<md>
             <mrow>2\amp=2\amp-4\amp=-4\amp2\amp\gt1\amp-2\amp\lt-1\amp3\amp\ge3</mrow>
         </md>The following equations and inequalities are <em>false</em> statements:<md>
             <mrow>2\amp=1\amp-4\amp=4\amp2\amp\lt1\amp-2\amp\ge-1\amp0\neq0</mrow>
@@ -81,7 +81,7 @@
             </md>we get a true equation. So we say that <m>1</m> is a solution to  <m>y+2=3</m>. Notice that we used a question mark at first because we are unsure if the equation is true or false until the end.</p>
         </example>
 
-        <p>If replacing a variable with a number makes an equation or inequality false, then that number is not a solution.</p>
+        <p>If replacing a variable with a value makes a false equation or inequality, that number is not a solution.</p>
 
         <example>
             <title>Not a Solution</title>
@@ -154,15 +154,14 @@
                     <p>So <m>-3</m> <var name="$yesno" form="popup"/> a solution to <m>2x-3=5-(4+x)</m>.</p>
                 </statement>
 
-<!-- Having a "Solution" link appear is possibly confusing since "solution" is a piece of technical vocabulary here -->
-                <!-- <solution> -->
-                    <!-- <p>We will substitute <m>x</m> with <m>-3</m> in the equation and simplify each side of the equation to determine if the statement is true or false:<md> -->
-                        <!-- <mrow>2x-3\amp=5-(4+x)</mrow> -->
-                        <!-- <mrow>2(\substitute{-3})-3\amp\stackrel{?}{=}5-(4+(\substitute{-3}))</mrow> -->
-                        <!-- <mrow>\highlight{-6}-3\amp\stackrel{?}{=} 5-(\highlight{1})</mrow> -->
-                        <!-- <mrow>-9\amp\stackrel{\chi}{=}4</mrow> -->
-                    <!-- </md>Since <m>-9=4</m> is not true, <m>-3</m> is not a solution for <m>x</m> in the equation <m>2x-3=5-(4+x)</m>.</p> -->
-                <!-- </solution> -->
+                <solution>
+                    <p>We will substitute <m>x</m> with <m>-3</m> in the equation and simplify each side of the equation to determine if the statement is true or false:<md>
+                        <mrow>2x-3\amp=5-(4+x)</mrow>
+                        <mrow>2(\substitute{-3})-3\amp\stackrel{?}{=}5-(4+(\substitute{-3}))</mrow>
+                        <mrow>\highlight{-6}-3\amp\stackrel{?}{=} 5-(\highlight{1})</mrow>
+                        <mrow>-9\amp\stackrel{\chi}{=}4</mrow>
+                    </md>Since <m>-9=4</m> is not true, <m>-3</m> is not a solution for <m>x</m> in the equation <m>2x-3=5-(4+x)</m>.</p>
+                </solution>
             </webwork>
         </exercise>
 
@@ -209,7 +208,7 @@
                     </pg-code>
                 </setup>
                 <statement>
-                    <p>Is <m>-2</m> a solution for <m>y</m> in the inequality <m>y^2+y-5\leq y-1</m>? Evaluating the left and right sides gives:</p>
+                    <p>Is <m>-2</m> a solution to <m>y^2+y-5\leq y-1</m>? Evaluating the left and right sides gives:</p>
                     <sidebyside margins="0%">
                         <tabular>
                             <col halign="right" />
@@ -297,9 +296,18 @@
         <example>
             <title>Cylinder Volume</title>
 
-            <sidebyside widths="59% 35%" margins="0%">
+            <sidebyside widths="68% 26%" margins="0%" valign="bottom">
 
-                <p>A cylinder's volume is related to its radius and its height by the equation <me>V=\pi r^2h</me>, where <m>V</m> is the volume, <m>r</m> is the base's radius, and <m>h</m> is the height. If we know the volume is <quantity><mag>96\pi</mag><unit base="meter" prefix="centi" exp="3"/></quantity> and the radius is <quantity><mag>4</mag><unit base="meter" prefix="centi"/></quantity>, then this equation simplifies to<me>96\pi=16\pi h</me></p>
+                <stack>
+                    <p>A cylinder's volume is related to its radius and its height by:<me>V=\pi r^2h</me>, where <m>V</m> is the volume, <m>r</m> is the base's radius, and <m>h</m> is the height. If we know the volume is <quantity><mag>96\pi</mag><unit base="meter" prefix="centi" exp="3"/></quantity> and the radius is <quantity><mag>4</mag><unit base="meter" prefix="centi"/></quantity>, then we have:<me>96\pi=16\pi h</me></p>
+
+                    <p>Is <quantity><mag>4</mag><unit prefix="centi" base="meter" /></quantity> the height of the cylinder? In other words, is <m>4</m> a solution to <m>96\pi=16\pi h</m>? We will substitute <m>h</m> in the equation with <m>4</m> to check:<md>
+                        <mrow>96\pi\amp=16\pi h</mrow>
+                        <mrow>96\pi\amp\stackrel{?}{=}16\pi \cdot\substitute{4}</mrow>
+                        <mrow>96\pi\amp\stackrel{\text{no}}{=}64\pi </mrow>
+                    </md>Since <m>96\pi=64\pi</m> is false, <m>h=4</m> does <em>not</em> satisfy the equation <m>96\pi=16\pi h</m>.</p>
+                </stack>
+
 
                 <figure xml:id="figure-cylinder">
                     <caption>A cylinder</caption>
@@ -321,7 +329,7 @@
                                     %\draw[densely dashed] (-2,0) arc (180:0:2cm and 0.5cm);
                                     \draw[guideline] (0,0) -- (2,0);
                                     \path (0,0) -- (2,0) node[midway,sloped,xslant=tan(\a+\b+90),yscale=sin(\a+\b),above] {$4$\,cm};
-                                    \draw [decorate,decoration={text along path,text align=center,text={{$96\pi$} cm{$^3$}}}] (-2,1.5) arc(180:360:2cm and 0.5cm);
+                                    \draw [decorate,decoration={text along path,text align=center,text={{$96\pi$} cm{$^3$}}}] (-2,2) arc(180:360:2cm and 0.5cm);
                                 \end{tikzpicture}
                             ]]>
                         </latex-image>
@@ -329,17 +337,12 @@
                 </figure>
             </sidebyside>
 
-            <p>Is <quantity><mag>4</mag><unit prefix="centi" base="meter" /></quantity> the height of the cylinder? In other words, is <m>4</m> a solution to <m>96\pi=16\pi h</m>? We will substitute <m>h</m> in the equation with <m>4</m> to check:<md>
-                <mrow>96\pi\amp=16\pi h</mrow>
-                <mrow>96\pi\amp\stackrel{?}{=}16\pi \cdot\substitute{4}</mrow>
-                <mrow>96\pi\amp\stackrel{\text{no}}{=}64\pi </mrow>
-            </md>Since <m>96\pi=64\pi</m> is false, <m>h=4</m> does <em>not</em> satisfy the equation <m>96\pi=16\pi h</m>.</p>
 
             <p>Next, we will try <m>h=6</m>:<md>
                 <mrow>96\pi\amp=16\pi h</mrow>
                 <mrow>96\pi\amp\stackrel{?}{=}16\pi \cdot\substitute{6}</mrow>
                 <mrow>96\pi\amp\stackrel{\checkmark}{=}96\pi</mrow>
-            </md>When <m>h=6</m>, the equation <m>96\pi=16\pi h</m> is true. This tells us that <m>6</m> <em>is</em> a solution for <m>h</m> in the equation <m>96\pi=16\pi h</m>.</p>
+            </md>When <m>h=6</m>, the equation <m>96\pi=16\pi h</m> is true. This tells us that <m>6</m> <em>is</em> a solution to <m>96\pi=16\pi h</m>.</p>
         </example>
 
         <remark>
@@ -347,33 +350,755 @@
         </remark>
 
         <example>
-            <p>Ann has budgeted a maximum of <m>\$300</m> for an appliance repair. The total cost of the repair can be modeled by <m>89+110(h-0.25)</m>, where <m>\$89</m> is the initial cost and <m>\$110</m> is the hourly labor charge after the first quarter hour. Is <m>2</m> a solution for <m>h</m> in the inequality <m>89+110(h-0.25)\le 300</m>?</p>
+            <p>Jaylen has budgeted a maximum of <m>\$300</m> for an appliance repair. The total cost of the repair can be modeled by <m>89+110(h-0.25)</m>, where <m>\$89</m> is the initial cost and <m>\$110</m> is the hourly labor charge after the first quarter hour. Is <m>2</m> hours a solution for <m>h</m> in the inequality <m>89+110(h-0.25)\le 300</m>?</p>
 
-            <p>To determine if <m>h=2</m> satisfies the inequality <m>89+110(h-0.25)\le 300</m>, we will replace <m>h</m> with <m>2</m> and check if the statement is true or false:<md>
+            <p>To determine if <m>h=2</m> satisfies the inequality, we will replace <m>h</m> with <m>2</m> and check if the statement is true:<md>
                 <mrow>89+110(h-0.25)\amp\le 300</mrow>
                 <mrow>89+110(\substitute{2}-0.25)\amp\stackrel{?}{\le} 300</mrow>
                 <mrow>89+110(1.75)\amp\stackrel{?}{\le} 300</mrow>
                 <mrow>89+192.5\amp\stackrel{?}{\le} 300</mrow>
                 <mrow>281.5\amp\stackrel{\checkmark}{\le} 300</mrow>
-            </md>Thus <m>2</m> is a solution for <m>h</m> in the inequality <m>89+110(h-0.25)\le 300</m>. In context, this means that Ann would stay within her <m>\$300</m> budget if <m>2</m> hours of labor were performed.</p>
+            </md>Thus, <m>2</m> hours is a solution for <m>h</m> in the inequality <m>89+110(h-0.25)\le 300</m>. In context, this means that Jaylen would stay within their <m>\$300</m> budget if <m>2</m> hours of labor were performed.</p>
         </example>
     </subsection>
 
      <exercises>
-<!--        <exercisegroup>
-            <introduction>
-                <p>Linear and Non-Linear Equations</p>
-            </introduction>
- --><!-- This problem puts strings like "`x^2`" into the tex output. These strings are checkbox options. PGML is not processing them into math for some reason in the MBX output mode, even though it processes them into math for HTML output. -->
-<!--            <exercise>
-                <webwork source="BasicAlgebra/SolveLinearEquations/LinearOrNonLinearEquations10.pg" />
+        <exercisegroup cols="2">
+            <title>Review and Warmup</title>
+            <exercise>
+                <webwork source="BasicAlgebra/EvaluateExpressions/evaluate12.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/EvaluateExpressions/evaluate12.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/EvaluateExpressions/evaluate15.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/EvaluateExpressions/evaluate15.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/EvaluateExpressions/evaluate20.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/EvaluateExpressions/evaluate20.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-04-Expressions.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-04-Expressions.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-02-Expressions.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-02-Expressions.pg" />
             </exercise>
         </exercisegroup>
- -->
-        <exercisegroup>
-            <introduction>
-                <p>Checking Solution for Equations</p>
-            </introduction>
+        <exercisegroup cols="2">
+            <title>Identifying Linear Equations and Inequalities</title>
+            <exercise>
+                <webwork>
+                    <setup>
+                        <pg-code>
+                            Context("Numeric");
+                            Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',r=>'Real',q=>'Real',p=>'Real',V=>'Real',);
+                            Context()->noreduce('(-x)-y');
+                            $yes=PopUp(['?','is','is not'],1);
+                            $no=PopUp(['?','is','is not'],2);
+                            @allvars=('x','y','z','r','q','p','V');
+                            @var=(
+                                list_random(@allvars),
+                                (@allvars)[NchooseK(7,2)],
+                                list_random(@allvars),
+                                list_random(@allvars),
+                                list_random(@allvars),
+                                'r',
+                            );
+                            @left=(
+                                Formula(non_zero_random(-9,9,1).$var[0].'+'.non_zero_random(-19,19,1))->reduce,
+                                Formula(non_zero_random(-9,9,1).$var[1].'^2+'.non_zero_random(-9,9,1).$var[2])->reduce,
+                                Formula(non_zero_random(-9,9,1).'+'.non_zero_random(-9,9,1).$var[3].'^2')->reduce,
+                                Formula(non_zero_random(-9,9,0.01).$var[4])->reduce,
+                                Formula('sqrt('.non_zero_random(-9,9,0.1).$var[5].'+'.non_zero_random(-9,9,1).')')->reduce,
+                                Formula("2 pi r")->reduce
+                            );
+                            @right=(
+                                Compute(random(-9,9,1)),
+                                Compute(random(-29,29,1)),
+                                Compute(random(-29,29,1)),
+                                Compute(random(-9,9,1)),
+                                Compute(random(0,9,1)),
+                                Formula(random(1,20,1).'pi')->reduce
+                            );
+                            @eq = map{$left[$_]->TeX.'='.$right[$_]->TeX}(0..5);
+                            @answer = (
+                                $yes,
+                                $no,
+                                $no,
+                                $yes,
+                                $no,
+                                $yes
+                            );
+                            @sol = (
+                                "The equation is a linear equation in one variable.",
+                                "The equation is not a linear equation in one variable since it contains two variables.",
+                                "The equation is not a linear equation in one variable since it contains the square of a variable.",
+                                "The equation is a linear equation in one variable.",
+                                "The equation is not a linear equation in one variable since there is a variable within a square root.",
+                                "The equation is a linear equation in one variable.",
+                            );
+                            @mix = NchooseK(6,6);
+                            @mixeq = (@eq)[@mix];
+                            @mixanswer = (@answer)[@mix];
+                            @mixsol = (@sol)[@mix];
+                        </pg-code>
+                    </setup>
+                    <statement>
+                        <p>Are the equations below linear equations in one variable?<ol label="a.">
+                            <li>
+                                <p><m><var name="$mixeq[0]" /></m> <var name="$mixanswer[0]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[1]" /></m> <var name="$mixanswer[1]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[2]" /></m> <var name="$mixanswer[2]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[3]" /></m> <var name="$mixanswer[3]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[4]" /></m> <var name="$mixanswer[4]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[5]" /></m> <var name="$mixanswer[5]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                        </ol></p>
+                    </statement>
+                    <solution>
+                        <p><ol label="a.">
+                            <li>
+                                <p><var name="$mixsol[0]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[1]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[2]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[3]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[4]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[5]" /></p>
+                            </li>
+                        </ol></p>
+                    </solution>
+                </webwork>
+            </exercise>
+            <exercise>
+                <webwork>
+                    <setup>
+                        <pg-code>
+                            Context("Numeric");
+                            Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',r=>'Real',q=>'Real',p=>'Real',V=>'Real',);
+                            Context()->noreduce('(-x)-y');
+                            $yes=PopUp(['?','is','is not'],1);
+                            $no=PopUp(['?','is','is not'],2);
+                            @allvars=('x','y','z','r','q','p','V');
+                            @var=(
+                                list_random(@allvars),
+                                (@allvars)[NchooseK(7,2)],
+                                list_random(@allvars),
+                                list_random(@allvars),
+                                list_random(@allvars),
+                                'r',
+                            );
+                            @left=(
+                                Formula(non_zero_random(-9,9,1).$var[0].'+'.non_zero_random(-19,19,1))->reduce,
+                                Formula(non_zero_random(-9,9,1).$var[1].'^2+'.non_zero_random(-9,9,1).$var[2])->reduce,
+                                Formula(non_zero_random(-9,9,1).'+'.non_zero_random(-9,9,1).$var[3].'^2')->reduce,
+                                Formula(non_zero_random(-9,9,0.01).$var[4])->reduce,
+                                Formula('sqrt('.non_zero_random(-9,9,0.1).$var[5].'+'.non_zero_random(-9,9,1).')')->reduce,
+                                Formula("2 pi r")->reduce
+                            );
+                            @right=(
+                                Compute(random(-9,9,1)),
+                                Compute(random(-29,29,1)),
+                                Compute(random(-29,29,1)),
+                                Compute(random(-9,9,1)),
+                                Compute(random(0,9,1)),
+                                Formula(random(1,20,1).'pi')->reduce
+                            );
+                            @eq = map{$left[$_]->TeX.'='.$right[$_]->TeX}(0..5);
+                            @answer = (
+                                $yes,
+                                $no,
+                                $no,
+                                $yes,
+                                $no,
+                                $yes
+                            );
+                            @sol = (
+                                "The equation is a linear equation in one variable.",
+                                "The equation is not a linear equation in one variable since it contains two variables.",
+                                "The equation is not a linear equation in one variable since it contains the square of a variable.",
+                                "The equation is a linear equation in one variable.",
+                                "The equation is not a linear equation in one variable since there is a variable within a square root.",
+                                "The equation is a linear equation in one variable.",
+                            );
+                            @mix = NchooseK(6,6);
+                            @mixeq = (@eq)[@mix];
+                            @mixanswer = (@answer)[@mix];
+                            @mixsol = (@sol)[@mix];
+                        </pg-code>
+                    </setup>
+                    <statement>
+                        <p>Are the equations below linear equations in one variable?<ol label="a.">
+                            <li>
+                                <p><m><var name="$mixeq[0]" /></m> <var name="$mixanswer[0]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[1]" /></m> <var name="$mixanswer[1]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[2]" /></m> <var name="$mixanswer[2]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[3]" /></m> <var name="$mixanswer[3]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[4]" /></m> <var name="$mixanswer[4]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[5]" /></m> <var name="$mixanswer[5]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                        </ol></p>
+                    </statement>
+                    <solution>
+                        <p><ol label="a.">
+                            <li>
+                                <p><var name="$mixsol[0]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[1]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[2]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[3]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[4]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[5]" /></p>
+                            </li>
+                        </ol></p>
+                    </solution>
+                </webwork>
+            </exercise>
+
+            <exercise>
+                <webwork>
+                    <setup>
+                        <pg-code>
+                            Context("Numeric");
+                            Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',r=>'Real',q=>'Real',p=>'Real',V=>'Real',);
+                            Context()->noreduce('(-x)-y');
+                            Context()->flags->set(reduceConstantFunctions=>0);
+                            $yes=PopUp(['?','is','is not'],1);
+                            $no=PopUp(['?','is','is not'],2);
+                            @allvars=('x','y','z','r','q','p','V');
+                            @var=(
+                                (@allvars)[NchooseK(7,3)],
+                                (@allvars)[NchooseK(7,2)],
+                                list_random(@allvars),
+                                list_random(@allvars),
+                                'r',
+                                list_random(@allvars),
+                            );
+                            @left=(
+                                Formula(non_zero_random(-9,9,1).$var[0].$var[1].$var[2])->reduce,
+                                Formula($var[3].'^2+'.$var[4].'^2')->reduce,
+                                Formula(non_zero_random(-19,19,1).$var[5].'+'.non_zero_random(-9,9,1))->reduce,
+                                Formula($var[6].'sqrt('.list_random(2,3,5..8,10..15,17..24,26..35).')'),
+                                Formula("pi r^2")->reduce,
+                                Formula(non_zero_random(-9,9,0.01).$var[8])->reduce
+                            );
+                            @right=(
+                                Compute(random(-99,99,1)),
+                                Compute(random(-99,99,1)),
+                                Compute(random(-99,99,1)),
+                                Compute(random(-99,99,1)),
+                                Formula(random(1,99,1).'pi')->reduce,
+                                Compute(random(-99,99,1))
+                            );
+                            @eq = map{$left[$_]->TeX.'='.$right[$_]->TeX}(0..5);
+                            @answer = (
+                                $no,
+                                $no,
+                                $yes,
+                                $yes,
+                                $no,
+                                $yes
+                            );
+                            @sol = (
+                                "The equation is not a linear equation in one variable since it contains three variables.",
+                                "The equation is not a linear equation in one variable since it contains two variables and variables are squared.",
+                                "The equation is a linear equation in one variable.",
+                                "The equation is a linear equation in one variable. Note that there is no variable inside the square root.",
+                                "The equation is not a linear equation in one variable since it contains the square of a variable.",
+                                "The equation is a linear equation in one variable.",
+                            );
+                            @mix = NchooseK(6,6);
+                            @mixeq = (@eq)[@mix];
+                            @mixanswer = (@answer)[@mix];
+                            @mixsol = (@sol)[@mix];
+                        </pg-code>
+                    </setup>
+                    <statement>
+                        <p>Are the equations below linear equations in one variable?<ol label="a.">
+                            <li>
+                                <p><m><var name="$mixeq[0]" /></m> <var name="$mixanswer[0]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[1]" /></m> <var name="$mixanswer[1]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[2]" /></m> <var name="$mixanswer[2]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[3]" /></m> <var name="$mixanswer[3]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[4]" /></m> <var name="$mixanswer[4]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[5]" /></m> <var name="$mixanswer[5]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                        </ol></p>
+                    </statement>
+                    <solution>
+                        <p><ol label="a.">
+                            <li>
+                                <p><var name="$mixsol[0]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[1]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[2]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[3]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[4]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[5]" /></p>
+                            </li>
+                        </ol></p>
+                    </solution>
+                </webwork>
+            </exercise>
+            <exercise>
+                <webwork>
+                    <setup>
+                        <pg-code>
+                            Context("Numeric");
+                            Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',r=>'Real',q=>'Real',p=>'Real',V=>'Real',);
+                            Context()->noreduce('(-x)-y');
+                            Context()->flags->set(reduceConstantFunctions=>0);
+                            $yes=PopUp(['?','is','is not'],1);
+                            $no=PopUp(['?','is','is not'],2);
+                            @allvars=('x','y','z','r','q','p','V');
+                            @var=(
+                                (@allvars)[NchooseK(7,3)],
+                                (@allvars)[NchooseK(7,2)],
+                                list_random(@allvars),
+                                list_random(@allvars),
+                                'r',
+                                list_random(@allvars),
+                            );
+                            @left=(
+                                Formula(non_zero_random(-9,9,1).$var[0].$var[1].$var[2])->reduce,
+                                Formula($var[3].'^2+'.$var[4].'^2')->reduce,
+                                Formula(non_zero_random(-19,19,1).$var[5].'+'.non_zero_random(-9,9,1))->reduce,
+                                Formula($var[6].' sqrt('.list_random(2,3,5..8,10..15,17..24,26..35).')'),
+                                Formula("pi r^2")->reduce,
+                                Formula(non_zero_random(-9,9,0.01).$var[8])->reduce
+                            );
+                            @right=(
+                                Compute(random(-99,99,1)),
+                                Compute(random(-99,99,1)),
+                                Compute(random(-99,99,1)),
+                                Compute(random(-99,99,1)),
+                                Formula(random(1,99,1).'pi')->reduce,
+                                Compute(random(-99,99,1))
+                            );
+                            @eq = map{$left[$_]->TeX.'='.$right[$_]->TeX}(0..5);
+                            @answer = (
+                                $no,
+                                $no,
+                                $yes,
+                                $yes,
+                                $no,
+                                $yes
+                            );
+                            @sol = (
+                                "The equation is not a linear equation in one variable since it contains three variables.",
+                                "The equation is not a linear equation in one variable since it contains two variables and variables are squared.",
+                                "The equation is a linear equation in one variable.",
+                                "The equation is a linear equation in one variable. Note that there is no variable inside the square root.",
+                                "The equation is not a linear equation in one variable since it contains the square of a variable.",
+                                "The equation is a linear equation in one variable.",
+                            );
+                            @mix = NchooseK(6,6);
+                            @mixeq = (@eq)[@mix];
+                            @mixanswer = (@answer)[@mix];
+                            @mixsol = (@sol)[@mix];
+                        </pg-code>
+                    </setup>
+                    <statement>
+                        <p>Are the equations below linear equations in one variable?<ol label="a.">
+                            <li>
+                                <p><m><var name="$mixeq[0]" /></m> <var name="$mixanswer[0]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[1]" /></m> <var name="$mixanswer[1]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[2]" /></m> <var name="$mixanswer[2]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[3]" /></m> <var name="$mixanswer[3]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[4]" /></m> <var name="$mixanswer[4]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[5]" /></m> <var name="$mixanswer[5]" form="popup" /> a linear equation in one variable.</p>
+                            </li>
+                        </ol></p>
+                    </statement>
+                    <solution>
+                        <p><ol label="a.">
+                            <li>
+                                <p><var name="$mixsol[0]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[1]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[2]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[3]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[4]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[5]" /></p>
+                            </li>
+                        </ol></p>
+                    </solution>
+                </webwork>
+            </exercise>
+
+            <exercise>
+                <webwork>
+                    <setup>
+                        <pg-code>
+                            Context("Numeric");
+                            Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',r=>'Real',q=>'Real',p=>'Real',V=>'Real',);
+                            Context()->noreduce('(-x)-y');
+                            $yes=PopUp(['?','is','is not'],1);
+                            $no=PopUp(['?','is','is not'],2);
+                            @allvars=('x','y','z','r','q','p','V');
+                            @var=(
+                                (@allvars)[NchooseK(7,2)],
+                                list_random(@allvars),
+                                (@allvars)[NchooseK(7,2)],
+                            );
+                            @left=(
+                                Formula(non_zero_random(-9,9,1).$var[0].'^2+'.non_zero_random(-9,9,1).$var[1])->reduce,
+                                Formula(random(-5,5,1))->reduce,
+                                Formula(non_zero_random(-9,9,1).$var[3].'^2+'.non_zero_random(-9,9,1).$var[4].'^2')->reduce
+                            );
+                            @right=(
+                                Compute(random(-99,99,1)),
+                                Formula(non_zero_random(-9,9,1).'+'.non_zero_random(-19,19,1).$var[2])->reduce,
+                                Compute(1),
+                            );
+                            @eq = map{$left[$_]->TeX.list_random('\lt','\gt','\leq','\geq').$right[$_]->TeX}(0..2);
+                            @answer = (
+                                $no,
+                                $yes,
+                                $no,
+                            );
+                            @sol = (
+                                "The inequality is not a linear inequality in one variable since it contains two variables and one of them is squared.",
+                                "The inequality is a linear inequality in one variable.",
+                                "The inequality is not a linear inequality in one variable since it contains two variables and both of them are squared.",
+                            );
+                            @mix = NchooseK(3,3);
+                            @mixeq = (@eq)[@mix];
+                            @mixanswer = (@answer)[@mix];
+                            @mixsol = (@sol)[@mix];
+                        </pg-code>
+                    </setup>
+                    <statement>
+                        <p>Are the inequalities below linear inequalities in one variable?<ol label="a.">
+                            <li>
+                                <p><m><var name="$mixeq[0]" /></m> <var name="$mixanswer[0]" form="popup" /> a linear inequality in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[1]" /></m> <var name="$mixanswer[1]" form="popup" /> a linear inequality in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[2]" /></m> <var name="$mixanswer[2]" form="popup" /> a linear inequality in one variable.</p>
+                            </li>
+                        </ol></p>
+                    </statement>
+                    <solution>
+                        <p><ol label="a.">
+                            <li>
+                                <p><var name="$mixsol[0]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[1]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[2]" /></p>
+                            </li>
+                        </ol></p>
+                    </solution>
+                </webwork>
+            </exercise>
+            <exercise>
+                <webwork>
+                    <setup>
+                        <pg-code>
+                            Context("Numeric");
+                            Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',r=>'Real',q=>'Real',p=>'Real',V=>'Real',);
+                            Context()->noreduce('(-x)-y');
+                            $yes=PopUp(['?','is','is not'],1);
+                            $no=PopUp(['?','is','is not'],2);
+                            @allvars=('x','y','z','r','q','p','V');
+                            @var=(
+                                (@allvars)[NchooseK(7,2)],
+                                list_random(@allvars),
+                                (@allvars)[NchooseK(7,2)],
+                            );
+                            @left=(
+                                Formula(non_zero_random(-9,9,1).$var[0].'^2+'.non_zero_random(-9,9,1).$var[1])->reduce,
+                                Formula(random(-5,5,1))->reduce,
+                                Formula(non_zero_random(-9,9,1).$var[3].'^2+'.non_zero_random(-9,9,1).$var[4].'^2')->reduce
+                            );
+                            @right=(
+                                Compute(random(-99,99,1)),
+                                Formula(non_zero_random(-9,9,1).'+'.non_zero_random(-19,19,1).$var[2])->reduce,
+                                Compute(1),
+                            );
+                            @eq = map{$left[$_]->TeX.list_random('\lt','\gt','\leq','\geq').$right[$_]->TeX}(0..2);
+                            @answer = (
+                                $no,
+                                $yes,
+                                $no,
+                            );
+                            @sol = (
+                                "The inequality is not a linear inequality in one variable since it contains two variables and one of them is squared.",
+                                "The inequality is a linear inequality in one variable.",
+                                "The inequality is not a linear inequality in one variable since it contains two variables and both of them are squared.",
+                            );
+                            @mix = NchooseK(3,3);
+                            @mixeq = (@eq)[@mix];
+                            @mixanswer = (@answer)[@mix];
+                            @mixsol = (@sol)[@mix];
+                        </pg-code>
+                    </setup>
+                    <statement>
+                        <p>Are the inequalities below linear inequalities in one variable?<ol label="a.">
+                            <li>
+                                <p><m><var name="$mixeq[0]" /></m> <var name="$mixanswer[0]" form="popup" /> a linear inequality in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[1]" /></m> <var name="$mixanswer[1]" form="popup" /> a linear inequality in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[2]" /></m> <var name="$mixanswer[2]" form="popup" /> a linear inequality in one variable.</p>
+                            </li>
+                        </ol></p>
+                    </statement>
+                    <solution>
+                        <p><ol label="a.">
+                            <li>
+                                <p><var name="$mixsol[0]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[1]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[2]" /></p>
+                            </li>
+                        </ol></p>
+                    </solution>
+                </webwork>
+            </exercise>
+
+            <exercise>
+                <webwork>
+                    <setup>
+                        <pg-code>
+                            Context("Numeric");
+                            Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',r=>'Real',q=>'Real',p=>'Real',t=>'Real',);
+                            Context()->noreduce('(-x)-y');
+                            $yes=PopUp(['?','is','is not'],1);
+                            $no=PopUp(['?','is','is not'],2);
+                            @allvars=('x','y','z','r','q','p','t');
+                            @var=(
+                                list_random(@allvars),
+                                (@allvars)[NchooseK(7,2)],
+                                list_random(@allvars),
+                            );
+                            @left=(
+                                Formula(non_zero_random(-9,9,0.1).$var[0])->reduce,
+                                Formula(random(-200,200,1))->reduce,
+                                Formula('sqrt('.random(2,9,1).$var[3].')+'.non_zero_random(-19,19,1))->reduce,
+                            );
+                            @right=(
+                                Compute(random(-99,99,1)),
+                                Formula(non_zero_random(-9999,9999,1).$var[1].'+'.non_zero_random(-9999,9999,1).$var[2])->reduce,
+                                Compute(non_zero_random(-9,9,1)),
+                            );
+                            @eq = map{$left[$_]->TeX.list_random('\lt','\gt','\leq','\geq').$right[$_]->TeX}(0..2);
+                            @answer = (
+                                $yes,
+                                $yes,
+                                $no,
+                            );
+                            @sol = (
+                                "The inequality is a linear inequality in one variable.",
+                                "The inequality is a linear inequality in one variable.",
+                                "The inequality is not a linear inequality in one variable since there is a variable inside a square root.",
+                            );
+                            @mix = NchooseK(3,3);
+                            @mixeq = (@eq)[@mix];
+                            @mixanswer = (@answer)[@mix];
+                            @mixsol = (@sol)[@mix];
+                        </pg-code>
+                    </setup>
+                    <statement>
+                        <p>Are the inequalities below linear inequalities in one variable?<ol label="a.">
+                            <li>
+                                <p><m><var name="$mixeq[0]" /></m> <var name="$mixanswer[0]" form="popup" /> a linear inequality in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[1]" /></m> <var name="$mixanswer[1]" form="popup" /> a linear inequality in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[2]" /></m> <var name="$mixanswer[2]" form="popup" /> a linear inequality in one variable.</p>
+                            </li>
+                        </ol></p>
+                    </statement>
+                    <solution>
+                        <p><ol label="a.">
+                            <li>
+                                <p><var name="$mixsol[0]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[1]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[2]" /></p>
+                            </li>
+                        </ol></p>
+                    </solution>
+                </webwork>
+            </exercise>
+            <exercise>
+                <webwork>
+                    <setup>
+                        <pg-code>
+                            Context("Numeric");
+                            Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',r=>'Real',q=>'Real',p=>'Real',t=>'Real',);
+                            Context()->noreduce('(-x)-y');
+                            $yes=PopUp(['?','is','is not'],1);
+                            $no=PopUp(['?','is','is not'],2);
+                            @allvars=('x','y','z','r','q','p','t');
+                            @var=(
+                                list_random(@allvars),
+                                (@allvars)[NchooseK(7,2)],
+                                list_random(@allvars),
+                            );
+                            @left=(
+                                Formula(non_zero_random(-9,9,0.1).$var[0])->reduce,
+                                Formula(random(-200,200,1))->reduce,
+                                Formula('sqrt('.random(2,9,1).$var[3].')+'.non_zero_random(-19,19,1))->reduce,
+                            );
+                            @right=(
+                                Compute(random(-99,99,1)),
+                                Formula(non_zero_random(-9999,9999,1).$var[1].'+'.non_zero_random(-9999,9999,1).$var[2])->reduce,
+                                Compute(non_zero_random(-9,9,1)),
+                            );
+                            @eq = map{$left[$_]->TeX.list_random('\lt','\gt','\leq','\geq').$right[$_]->TeX}(0..2);
+                            @answer = (
+                                $yes,
+                                $yes,
+                                $no,
+                            );
+                            @sol = (
+                                "The inequality is a linear inequality in one variable.",
+                                "The inequality is a linear inequality in one variable.",
+                                "The inequality is not a linear inequality in one variable since there is a variable inside a square root.",
+                            );
+                            @mix = NchooseK(3,3);
+                            @mixeq = (@eq)[@mix];
+                            @mixanswer = (@answer)[@mix];
+                            @mixsol = (@sol)[@mix];
+                        </pg-code>
+                    </setup>
+                    <statement>
+                        <p>Are the inequalities below linear inequalities in one variable?<ol label="a.">
+                            <li>
+                                <p><m><var name="$mixeq[0]" /></m> <var name="$mixanswer[0]" form="popup" /> a linear inequality in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[1]" /></m> <var name="$mixanswer[1]" form="popup" /> a linear inequality in one variable.</p>
+                            </li>
+                            <li>
+                                <p><m><var name="$mixeq[2]" /></m> <var name="$mixanswer[2]" form="popup" /> a linear inequality in one variable.</p>
+                            </li>
+                        </ol></p>
+                    </statement>
+                    <solution>
+                        <p><ol label="a.">
+                            <li>
+                                <p><var name="$mixsol[0]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[1]" /></p>
+                            </li>
+                            <li>
+                                <p><var name="$mixsol[2]" /></p>
+                            </li>
+                        </ol></p>
+                    </solution>
+                </webwork>
+            </exercise>
+        </exercisegroup>
+
+        <exercisegroup cols="2">
+            <title>Checking a Solution for an Equation</title>
             <exercise>
                 <webwork source="BasicAlgebra/VerifySolutionsOneVariable/solutionQ10.pg" />
             </exercise>
@@ -422,17 +1147,15 @@
             <exercise>
                 <webwork source="BasicAlgebra/VerifySolutionsOneVariable/solutionQ80.pg" />
             </exercise>
-            <exercise>
+            <!-- <exercise>
                 <webwork source="BasicAlgebra/VerifySolutionsOneVariable/solutionQ90.pg" />
             </exercise>
             <exercise>
                 <webwork source="BasicAlgebra/VerifySolutionsOneVariable/solutionQ90.pg" />
-            </exercise>
+            </exercise> -->
         </exercisegroup>
         <exercisegroup cols="2">
-            <introduction>
-                <p>Checking Solution for Inequalities</p>
-            </introduction>
+            <title>Checking a Solution for an Inequality</title>
             <exercise>
                 <webwork source="BasicAlgebra/LinearInequalities/InequalitySolutionOrNot10.pg" />
             </exercise>
@@ -453,27 +1176,14 @@
             </exercise>
         </exercisegroup>
         <exercisegroup cols="2">
-            <introduction>
-                <p>Checking Solutions for Application Problems</p>
-            </introduction>
-            <exercise width="wide">
+            <title>Checking Solutions for Application Problems</title>
+            <exercise>
                 <webwork source="BasicAlgebra/VerifySolutionsOneVariable/VerifySolutionApplication10.pg" />
             </exercise>
-            <exercise width="wide">
+            <exercise>
                 <webwork source="BasicAlgebra/VerifySolutionsOneVariable/VerifySolutionApplication10.pg" />
             </exercise>
-            <exercise width="wide">
-                <webwork source="BasicAlgebra/VerifySolutionsOneVariable/VerifySolutionApplication20.pg" />
-            </exercise>
-            <exercise width="wide">
-                <webwork source="BasicAlgebra/VerifySolutionsOneVariable/VerifySolutionApplication20.pg" />
-            </exercise>
-            <exercise>
-                <webwork source="BasicAlgebra/VerifySolutionsOneVariable/VerifySolutionApplication30.pg" />
-            </exercise>
-            <exercise>
-                <webwork source="BasicAlgebra/VerifySolutionsOneVariable/VerifySolutionApplication30.pg" />
-            </exercise>
+
             <exercise>
                 <webwork source="BasicAlgebra/VerifySolutionsOneVariable/VerifySolutionApplication40.pg" />
             </exercise>
@@ -487,6 +1197,13 @@
                 <webwork source="BasicAlgebra/VerifySolutionsOneVariable/VerifySolutionApplication50.pg" />
             </exercise>
             <exercise>
+                <webwork source="BasicAlgebra/VerifySolutionsOneVariable/VerifySolutionApplication20.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/VerifySolutionsOneVariable/VerifySolutionApplication20.pg" />
+            </exercise>
+
+            <exercise>
                 <webwork source="BasicAlgebra/VerifySolutionsOneVariable/VerifySolutionApplication60.pg" />
             </exercise>
             <exercise>
@@ -497,6 +1214,12 @@
             </exercise>
             <exercise>
                 <webwork source="BasicAlgebra/VerifySolutionsOneVariable/VerifySolutionApplication70.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/VerifySolutionsOneVariable/VerifySolutionApplication30.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/VerifySolutionsOneVariable/VerifySolutionApplication30.pg" />
             </exercise>
         </exercisegroup>
     </exercises>

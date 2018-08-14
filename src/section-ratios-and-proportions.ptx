@@ -32,10 +32,10 @@
     <subsection>
         <title>Introduction</title>
 
-        <p>A <term>ratio</term><idx><h>ratio</h></idx> is a means of comparing two things using division. One common example is a unit price. For example, if a box of cereal costs <m>\$3.99</m> and weighs <m>21</m> ounces then we can write this ratio as:
+        <p>A <term>ratio</term><idx><h>ratio</h></idx> is a means of comparing two quantities using division. One common example is a unit price. For example, if a box of cereal costs <m>\$3.99</m> and weighs <m>21</m> ounces then we can write this ratio as:
             <me>\frac{\$3.99}{21\,\text{oz}}</me>
 
-        If we want to know the unit price (that is, how much each individual ounce costs), then we can divide <m>\$3.99</m> by <m>21</m> ounces<!-- <quantity><mag>21</mag><unit base="foot"/></quantity> --> and obtain <m>\$0.19</m> per ounce. These two ratios are equivalent, and the equation showing that they are equal is a <term>proportion</term><idx><h>proportion</h></idx>. In this case, we could write the following proportion:
+        If we want to know the unit price (that is, how much each individual ounce costs), then we can divide <m>\$3.99</m> by <m>21</m> ounces<!-- <quantity><mag>21</mag><unit base="foot"/></quantity> --> and obtain <m>\$0.19</m> per ounce. These two ratios, <m>\frac{\$3.99}{21\,\text{oz}}</m> and <m>0.19\frac{\$}{\text{oz}}</m> are equivalent, and the equation showing that they are equal is a <term>proportion</term><idx><h>proportion</h></idx>. In this case, we could write the following proportion:
             <me>\frac{\$3.99}{21\,\text{oz}}=\frac{\$0.19}{1\,\text{oz}}</me>
 
         In this section, we will extend this concept and write proportions where one quantity is unknown and solve for that unknown.</p>
@@ -45,22 +45,21 @@
         </remark>
 
         <example xml:id="example-proportion-in-price">
-            <p>Let's now assume that we wanted to know what a proportional cost would be for a box of cereal that weighs <m>18</m> ounces. Letting <m>C</m> be this unknown cost (in dollars), we could set up the following proportion:<md>
+            <p>Suppose we want to know the total cost for a box of cereal that weighs <m>18</m> ounces, assuming it costs the same per ounce as the <m>21</m>-ounce box. Letting <m>C</m> be this unknown cost (in dollars), we could set up the following proportion:<md>
                 <mrow>\frac{\text{cost in dollars}}{\text{weight in oz}}\amp=\frac{\text{cost in dollars}}{\text{weight in oz}}</mrow>
                 <mrow>\frac{\$3.99}{21\,\text{oz}}\amp=\frac{\$C}{18\,\text{oz}}</mrow>
             </md>To solve this proportion, we will first note that it will be easier to solve without units:
                 <me>\frac{3.99}{21}=\frac{C}{18}</me>
-            Next we want to recognize that each side contains a fraction. Our standard approach for solving this type of equation is to multiply each side by the least common denominator (LCD). In this case, the LCD of <m>21</m> and <m>18</m> is <m>126</m>. As with many other proportions we solve, it is often easier to just multiply each side by the common denominator of <m>18\cdot 21</m>, which we know will make each denominator cancel:
+            Next we want to recognize that each side contains a fraction. Our usual approach for solving this type of equation is to multiply each side by the least common denominator (LCD). In this case, the LCD of <m>21</m> and <m>18</m> is <m>126</m>. As with many other proportions we solve, it is often easier to just multiply each side by the common denominator of <m>18\cdot 21</m>, which we know will make each denominator cancel:
                 <md>
                     <mrow>\frac{3.99}{21}\amp=\frac{C}{18}</mrow>
                     <mrow>\multiplyleft{18\cdot21}\frac{3.99}{21}\amp=\frac{C}{18}\multiplyright{18\cdot21}</mrow>
-                    <mrow>18\cdot\cancel{21}\frac{3.99}{\cancel{21}}\amp=\frac{C}{\cancel{18}}\cdot\cancel{18}\cdot21</mrow>
+                    <mrow>18\cdot\cancelhighlight{21}\frac{3.99}{\cancelhighlight{21}}\amp=\frac{C}{\cancelhighlight{18}}\cdot\cancelhighlight{18}\cdot21</mrow>
                     <mrow>71.82\amp=21C</mrow>
                     <mrow>\divideunder{71.82}{21}\amp=\divideunder{21C}{21}</mrow>
                     <mrow>C\amp=3.42</mrow>
                 </md>
-            Thus a proportional price for an <m>18</m> ounce box of cereal would be <m>\$3.42</m>.
-            </p>
+            So assuming the cost is proportional to the cost of the <m>21</m>-ounce box, the cost for an <m>18</m>-ounce box of cereal would be <m>\$3.42</m>.</p>
         </example>
     </subsection>
 
@@ -75,7 +74,7 @@
                     <p>Instead of finding the LCD of the two fractions, we'll simply multiply both sides of the equation by <m>8</m> and by <m>12</m>.  This will still have the effect of canceling the denominators on both sides of the equation. <md>
                         <mrow>\frac{x}{8} \amp= \frac{15}{12}</mrow>
                         <mrow>\highlight{12\cdot8\cdot}\frac{x}{8} \amp= \frac{15}{12}\highlight{\cdot12\cdot8}</mrow>
-                        <mrow>12\cdot\cancel{8}\cdot\frac{x}{\cancel{8}} \amp= \frac{15}{\cancel{12}}\cdot\cancel{12}\cdot8</mrow>
+                        <mrow>12\cdot\cancelhighlight{8}\cdot\frac{x}{\cancelhighlight{8}} \amp= \frac{15}{\cancelhighlight{12}}\cdot\cancelhighlight{12}\cdot8</mrow>
                         <mrow>12\cdot x \amp= 15\cdot 8</mrow>
                         <mrow>12x \amp= 120 </mrow>
                         <mrow>\divideunder{12x}{12} \amp= \divideunder{120}{12} </mrow>
@@ -92,9 +91,9 @@
             <p>When solving proportions, we can use the name <term>cross-multiplication</term><idx><h>cross-multiplication</h></idx> to describe the process of what just occurred. Say we have a proportion<me>\frac{a}{b}=\frac{c}{d}</me>To remove fractions, we multiply both sides with the common denominator, <m>bd</m>, and we have:<md>
                 <mrow>\frac{a}{b}\amp=\frac{c}{d}</mrow>
                 <mrow>\multiplyleft{bd}\frac{a}{b}\amp=\frac{c}{d}\multiplyright{bd}</mrow>
-                <mrow>\cancel{b}d\cdot\frac{a}{\cancel{b}}\amp=\frac{c}{\cancel{d}}\cdot b\cancel{d}</mrow>
+                <mrow>\cancelhighlight{b}d\cdot\frac{a}{\cancelhighlight{b}}\amp=\frac{c}{\cancelhighlight{d}}\cdot b\cancelhighlight{d}</mrow>
                 <mrow>ad\amp=bc</mrow>
-            </md>Since <m>a</m> and <m>d</m> are <!-- <q>crossed</q> to --> diagonally  across the equals sign from each other in <m>\frac{a}{b}=\frac{c}{d}</m>, as are <m>b</m> and <m>c</m>, we call this approach <term>cross-multiplication</term>. <me>
+            </md>Since <m>a</m> and <m>d</m> are <!-- <q>crossed</q> to --> diagonally across the equals sign from each other in <m>\frac{a}{b}=\frac{c}{d}</m>, as are <m>b</m> and <m>c</m>, we call this approach <term>cross-multiplication</term>. <me>
                 \text{If }\frac{a}{b}=\frac{c}{d} \text{, then }ad=bc.
             </me></p>
             <p> If we understand cross-multiplication, we are able to rewrite a proportion <m>\frac{a}{b}=\frac{c}{d}</m> in an equivalent form that does not have any fractions, <m>ad=bc</m>, as our first step of work. If we had used this skill in <xref ref="example-proportion-straight-algebra">Example</xref>, we would have had:<md>
@@ -116,7 +115,7 @@
                     <p>Again this equation is a proportion, so we are able to multiply both sides of the equation by both denominators to clear the fractions:<md>
                         <mrow>\frac{t}{5} \amp= \frac{t+2}{3}</mrow>
                         <mrow>\highlight{5\cdot3\cdot}\frac{t}{5} \amp= \frac{t+2}{3}\highlight{\cdot5\cdot3}</mrow>
-                        <mrow>\cancel{5}\cdot3\cdot\frac{t}{\cancel{5}} \amp= \frac{t+2}{\cancel{3}}\cdot5\cdot\cancel{3}</mrow>
+                        <mrow>\cancelhighlight{5}\cdot3\cdot\frac{t}{\cancelhighlight{5}} \amp= \frac{t+2}{\cancelhighlight{3}}\cdot5\cdot\cancelhighlight{3}</mrow>
                         <mrow>3 \cdot t \amp= 5\cdot(t+2)</mrow>
                     </md></p>
 
@@ -152,7 +151,7 @@
                 <p>We'll work with the equation in the form <m>\frac{r+7}{8} = \frac{-9}{4} </m><md>
                     <mrow>\frac{r+7}{8} \amp= \frac{-9}{4}</mrow>
                     <mrow>\highlight{8\cdot 4\cdot}\frac{r+7}{8} \amp= \frac{-9}{4}\highlight{\cdot8\cdot 4}</mrow>
-                    <mrow>\cancel{8}\cdot 4\cdot\frac{r+7}{\cancel{8}} \amp= \frac{-9}{\cancel{4}}\cdot8\cdot \cancel{4}</mrow>
+                    <mrow>\cancelhighlight{8}\cdot 4\cdot\frac{r+7}{\cancelhighlight{8}} \amp= \frac{-9}{\cancelhighlight{4}}\cdot8\cdot \cancelhighlight{4}</mrow>
                     <mrow>4 \cdot (r+7) \amp= 8\cdot(-9)</mrow>
                     <mrow>4r + 28 \amp= -72 </mrow>
                     <mrow>4r + 28 \highlight{-28} \amp= -72 \highlight{-28}  </mrow>
@@ -174,7 +173,7 @@
                         <md>
                             <mrow>\frac{x}{15}\amp=\frac{40}{25}</mrow>
                             <mrow>\highlight{15\cdot25}\cdot\frac{x}{15}\amp=\frac{40}{25}\cdot\highlight{15\cdot25}</mrow>
-                            <mrow>\cancel{15}\cdot25\cdot\frac{x}{\cancel{15}}\amp=\frac{40}{\cancel{25}}\cdot15\cdot\cancel{25}</mrow>
+                            <mrow>\cancelhighlight{15}\cdot25\cdot\frac{x}{\cancelhighlight{15}}\amp=\frac{40}{\cancelhighlight{25}}\cdot15\cdot\cancelhighlight{25}</mrow>
                             <mrow>25\cdot x\amp=40\cdot15</mrow>
                             <mrow>25x\amp=600</mrow>
                             <mrow>\divideunder{25x}{25}\amp=\divideunder{600}{25}</mrow>
@@ -197,7 +196,7 @@
                         <md>
                             <mrow>\frac{x-4}{6}\amp=\frac{x+3}{4}</mrow>
                             <mrow>\highlight{6\cdot4}\cdot\frac{x-4}{6}\amp=\frac{x+3}{4}\cdot\highlight{6\cdot4}</mrow>
-                            <mrow>\cancel{6}\cdot4\cdot\frac{x-4}{\cancel{6}}\amp=\frac{x+3}{\cancel{4}}\cdot6\cdot\cancel{4}</mrow>
+                            <mrow>\cancelhighlight{6}\cdot4\cdot\frac{x-4}{\cancelhighlight{6}}\amp=\frac{x+3}{\cancelhighlight{4}}\cdot6\cdot\cancelhighlight{4}</mrow>
                             <mrow>4\cdot(x-4)\amp=(x+3)\cdot6</mrow>
                             <mrow>4x-16\amp=6x+18</mrow>
                             <mrow>4x-16\addright{16}\amp=6x+18\addright{16}</mrow>
@@ -370,7 +369,7 @@
                 <p>Assume that <m>90</m> fish are caught and tagged. Once they are redistributed, a sample of <m>200</m> fish is taken. Of these, <m>7</m> are tagged. Estimate how many fish total are in the lake.</p>
             </statement>
             <solution>
-                <p>Let <m>n</m> be the number of fish in the lake. We can set up this proportion to represent the scenario:
+                <p>Let <m>n</m> be the number of fish in the lake. We can set up a proportion for this scenario:
                         <md>
                             <mrow>\frac{7}{200}\amp=\frac{90}{n}</mrow>
                         </md>
@@ -378,7 +377,7 @@
                         <md>
                             <mrow>\frac{7}{200}\amp=\frac{90}{n}</mrow>
                             <mrow>\multiplyleft{200\cdot n}\frac{7}{200}\amp=\frac{90}{n}\multiplyright{200\cdot n}</mrow>
-                            <mrow>{\cancel{200}\cdot n}\cdot\frac{7}{\cancel{200}}\amp=\frac{90}{\cancel{n}}\cdot200\cdot\cancel{n}</mrow>
+                            <mrow>{\cancelhighlight{200}\cdot n}\cdot\frac{7}{\cancelhighlight{200}}\amp=\frac{90}{\cancelhighlight{n}}\cdot200\cdot\cancelhighlight{n}</mrow>
                             <mrow>7n\amp=1800</mrow>
                             <mrow>\frac{7n}{7}\amp=\frac{1800}{7}</mrow>
                             <mrow>n\amp\approx 2471.4286</mrow>
@@ -389,10 +388,10 @@
 
         <example>
             <statement>
-                <p>Infant Tylenol contains <quantity><mag>160</mag><unit prefix="milli" base="gram"/></quantity> of acetaminophen in each <quantity><mag>5</mag><unit prefix="milli" base="liter"/></quantity> of liquid medicine. If an infant is prescribed <quantity><mag>60</mag><unit prefix="milli" base="gram"/></quantity> of acetaminophen, how many milliliters of liquid medicine should he/she receive?</p>
+                <p>Infant Tylenol contains <quantity><mag>160</mag><unit prefix="milli" base="gram"/></quantity> of acetaminophen in each <quantity><mag>5</mag><unit prefix="milli" base="liter"/></quantity> of liquid medicine. If Bao's baby is prescribed <quantity><mag>60</mag><unit prefix="milli" base="gram"/></quantity> of acetaminophen, how many milliliters of liquid medicine should he give them?</p>
             </statement>
             <solution>
-                <p>Assume the infant should receive <m>q</m> milliliters of liquid medicine, and we can set up the following proportion:
+                <p>Assume Bao should give <m>q</m> milliliters of liquid medicine, and we can set up the following proportion:
                     <md>
                         <mrow>\frac{\text{amount of liquid medicine in mL}}{\text{amount of acetaminophen in mg}}\amp=\frac{\text{amount of liquid medicine in mL}}{\text{amount of acetaminophen in mg}}</mrow>
                         <mrow>\frac{5\,\text{mL}}{160\,\text{mg}}\amp=\frac{q\,\text{mL}}{60\,\text{mg}}</mrow>
@@ -403,18 +402,18 @@
                         <mrow>\frac{300}{160}\amp=\frac{160q}{160}</mrow>
                         <mrow>q\amp=1.875</mrow>
                     </md>
-                So to receive <quantity><mag>60</mag><unit prefix="milli" base="gram"/></quantity> of acetaminophen, an infant should receive <quantity><mag>1.875</mag><unit prefix="milli" base="liter"/></quantity> of liquid medicine.
+                So to give <quantity><mag>60</mag><unit prefix="milli" base="gram"/></quantity> of acetaminophen to his baby, Bao should give <quantity><mag>1.875</mag><unit prefix="milli" base="liter"/></quantity> of liquid medicine.
                 </p>
             </solution>
         </example>
 
         <example>
             <statement>
-                <p>An architect is making a scale model of a building. The actual building will be <quantity><mag>30</mag><unit base="foot"/></quantity> tall. In the model, the height of the building will be <quantity><mag>2</mag><unit base="inch"/></quantity>. How tall should a person who is <quantity><mag>5</mag><unit base="foot"/></quantity> <quantity><mag>6</mag><unit base="inch"/></quantity> be made in the model so that the model is to scale?
+                <p>Sarah is an architect and she's making a scale model of a building. The actual building will be <quantity><mag>30</mag><unit base="foot"/></quantity> tall. In the model, the height of the building will be <quantity><mag>2</mag><unit base="inch"/></quantity>. How tall should she make the model of a person who is <quantity><mag>5</mag><unit base="foot"/></quantity> <quantity><mag>6</mag><unit base="inch"/></quantity> tall so that the model is to scale?
                 </p>
             </statement>
             <solution>
-                <p>Let <m>h</m> be the height of the person in the model, which we'll measure in inches. We'll create a proportion that compares the building and person's heights in the model to their heights in real life:
+                <p>Let <m>h</m> be the height of the person in Sarah's model, which we'll measure in inches. We'll create a proportion that compares the building and person's heights in the model to their heights in real life:
                     <md>
                         <mrow>\frac{\text{height of model building in inches}}{\text{height of actual building in feet}}\amp=\frac{\text{height of model person in inches}}{\text{height of actual person in feet}}</mrow>
                         <mrow>\frac{2\,\text{in}}{30\,\text{ft}}\amp=\frac{h\,\text{in}}{5\,\text{ft}\,6\text{in}}</mrow>
@@ -431,13 +430,40 @@
                         <mrow>\frac{11}{30}\amp=h</mrow>
                         <mrow>h\amp\approx 0.3667</mrow>
                     </md>
-                A person who is <quantity><mag>5</mag><unit base="foot"/></quantity> <quantity><mag>6</mag><unit base="inch"/></quantity> tall should be <m>\frac{11}{30}</m> inches (about <m>0.3667</m> inches) tall in the model.
+                Sarah should make the model of a person who is <quantity><mag>5</mag><unit base="foot"/></quantity> <quantity><mag>6</mag><unit base="inch"/></quantity> tall be <m>\frac{11}{30}</m> inches (about <m>0.3667</m> inches) tall.
                 </p>
             </solution>
         </example>
     </subsection>
 
     <exercises>
+        <exercisegroup cols="4">
+            <title>Review and Warmup</title>
+            <exercise>
+                <webwork source="BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction05.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction05.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction10.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction10.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction20.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction20.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction30.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction30.pg" />
+            </exercise>
+        </exercisegroup>
         <exercisegroup>
             <title>Setting Up Ratios and Proportions</title>
              <exercise>
@@ -448,15 +474,13 @@
             </exercise>
             <exercise>
                 <webwork source="BasicAlgebra/LinearEquationApplications/ModelingWithEquation90.pg" />
-            </exercise>        
+            </exercise>
             <exercise>
                 <webwork source="BasicAlgebra/LinearEquationApplications/ModelingWithEquation90.pg" />
-            </exercise>        
+            </exercise>
         </exercisegroup>
-        <exercisegroup cols="2">
-            <introduction>
-                <p>Solving Proportions</p>
-            </introduction>
+        <exercisegroup cols="3">
+            <title>Solving Proportions</title>
             <exercise>
                 <webwork>
                     <setup>
@@ -472,11 +496,13 @@
                                 $r = Fraction($p[1]/$p[2]);
                             } until (($c &lt; $d) and ($a &lt; 20) );
                             $a = Fraction($a);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$a}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{x}{<var name="$b"/>}=\frac{<var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$a" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{x}{<var name="$b"/>}=\frac{<var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>, we can multiply both sides of the equation by <m><var name="$b"/></m> and then simplify the right side of the equation. <md>
@@ -503,11 +529,13 @@
                                 $r = Fraction($p[1]/$p[2]);
                             } until (($c &lt; $d) and ($a &lt; 20) );
                             $a = Fraction($a);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$a}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{x}{<var name="$b"/>}=\frac{<var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$a" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{x}{<var name="$b"/>}=\frac{<var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>, we can multiply both sides of the equation by <m><var name="$b"/></m> and then simplify the right side of the equation. <md>
@@ -536,11 +564,13 @@
                                 $r = Fraction($p[2]/$p[0]);
                             } until (($a &lt; 20) );
                             $a = Fraction($a);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$a}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{<var name="$b"/>}{x}=\frac{<var name="$d"/>}{<var name="$c"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$a" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{<var name="$b"/>}{x}=\frac{<var name="$d"/>}{<var name="$c"/>}</m> for <m>x</m>, we will first multiply both sides of the equation by <m>x</m> and <m><var name="$c"/></m>.  We'll then isolate <m>x</m> by dividing both sides of the equation by <m><var name="$d"/></m>.<md>
@@ -568,11 +598,13 @@
                                 $r = Fraction($p[2]/$p[0]);
                             } until (($a &lt; 20) );
                             $a = Fraction($a);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$a}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{<var name="$b"/>}{x}=\frac{<var name="$d"/>}{<var name="$c"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$a" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{<var name="$b"/>}{x}=\frac{<var name="$d"/>}{<var name="$c"/>}</m> for <m>x</m>, we will first multiply both sides of the equation by <m>x</m> and <m><var name="$c"/></m>.  We'll then isolate <m>x</m> by dividing both sides of the equation by <m><var name="$d"/></m>.<md>
@@ -607,11 +639,13 @@
                                 $r = Fraction($a/$b);
                             } until ($e &gt; 1);
                             $a = Fraction($a);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$a}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{x}{<var name="$b"/>}=\frac{x - <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$a" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{x}{<var name="$b"/>}=\frac{x - <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>, we will first multiply both sides of the equation by <m><var name="$b"/></m> and <m><var name="$d"/></m>.<md>
@@ -649,11 +683,13 @@
                                 $r = Fraction($a/$b);
                             } until ( $b &lt; $dc );
                             $a = Fraction($a);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$a}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{x}{<var name="$b"/>}=\frac{x + <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$a" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{x}{<var name="$b"/>}=\frac{x + <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>, we will first multiply both sides of the equation by <m><var name="$b"/></m> and <m><var name="$d"/></m>.<md>
@@ -691,11 +727,13 @@
                                 $r = Fraction($a/$b);
                             } until ( $b &lt; $dc );
                             $a = Fraction($a);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$a}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{x}{<var name="$b"/>}=\frac{x + <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$a" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{x}{<var name="$b"/>}=\frac{x + <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>, we will first multiply both sides of the equation by <m><var name="$b"/></m> and <m><var name="$d"/></m>.<md>
@@ -733,11 +771,13 @@
                                 $r = Fraction($a/$b);
                             } until ( ($b &lt; $dc) );
                             $a = Fraction($a);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$a}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{x}{<var name="$b"/>}=\frac{x - <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$a" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{x}{<var name="$b"/>}=\frac{x - <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>, we will first multiply both sides of the equation by <m><var name="$b"/></m> and <m><var name="$d"/></m>.<md>
@@ -778,11 +818,13 @@
                                 $r = Fraction(($Ans + $a)/$b);
                             } until ( $check1%$check2 == 0);
                             $Ans = Fraction($Ans);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$Ans}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{x + <var name="$a"/>}{<var name="$b"/>}=\frac{x - <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$Ans" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{x + <var name="$a"/>}{<var name="$b"/>}=\frac{x - <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>, we will first multiply both sides of the equation by <m><var name="$b"/></m> and <m><var name="$d"/></m>.<md>
@@ -824,11 +866,13 @@
                                 $r = Fraction(($Ans - $a)/$b);
                             } until ( $check1%$check2 == 0);
                             $Ans = Fraction($Ans);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$Ans}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{x - <var name="$a"/>}{<var name="$b"/>}=\frac{x + <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$Ans" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{x - <var name="$a"/>}{<var name="$b"/>}=\frac{x + <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>, we will first multiply both sides of the equation by <m><var name="$b"/></m> and <m><var name="$d"/></m>.<md>
@@ -871,11 +915,13 @@
                                 $r = Fraction( ($Ans-$a)/$b);
                             } until ( $check1%$check2 == 0);
                             $Ans = Fraction($Ans);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$Ans}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{x - <var name="$a"/>}{<var name="$b"/>}=\frac{x - <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$Ans" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{x - <var name="$a"/>}{<var name="$b"/>}=\frac{x - <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>, we will first multiply both sides of the equation by <m><var name="$b"/></m> and <m><var name="$d"/></m>.<md>
@@ -917,11 +963,13 @@
                                 $r = Fraction( ($Ans-$a)/$b);
                             } until ( $check1%$check2 == 0);
                             $Ans = Fraction($Ans);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$Ans}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{x - <var name="$a"/>}{<var name="$b"/>}=\frac{x - <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$Ans" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{x - <var name="$a"/>}{<var name="$b"/>}=\frac{x - <var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>, we will first multiply both sides of the equation by <m><var name="$b"/></m> and <m><var name="$d"/></m>.<md>
@@ -958,11 +1006,13 @@
                                 $r = Fraction($a/$b);
                             } until (($c &gt; $d) and ($a &lt; 20) and ($c%$d != 0 ));
                             $a = Fraction($a);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$a}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{x}{<var name="$b"/>}=-\frac{<var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$a" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{x}{<var name="$b"/>}=-\frac{<var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>, we can multiply both sides of the equation by <m><var name="$b"/></m> and then simplify the right side of the equation. <md>
@@ -989,11 +1039,13 @@
                                 $r = Fraction($a/$b);
                             } until (($c &gt; $d) and ($a &lt; 20) and ($c%$d != 0 ));
                             $a = Fraction($a);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$a}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{x}{<var name="$b"/>}=-\frac{<var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$a" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{x}{<var name="$b"/>}=-\frac{<var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>, we can multiply both sides of the equation by <m><var name="$b"/></m> and then simplify the right side of the equation. <md>
@@ -1025,11 +1077,13 @@
                                 $r = Fraction(-1*$c/$d);
                             } until (($c &gt; $d) and ($a &lt; 20) and ($c%$d != 0 ));
                             $a = Fraction($a);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$Ans}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{x+<var name="$e"/>}{<var name="$b"/>}=-\frac{<var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$Ans" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{x+<var name="$e"/>}{<var name="$b"/>}=-\frac{<var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>, we can multiply both sides of the equation by <m><var name="$b"/></m>, then simplify the right side of the equation, and then subtract <m><var name="$e"/></m>. <md>
@@ -1065,11 +1119,13 @@
                                 $r = Fraction(-1*$c/$d);
                             } until (($c &gt; $d) and ($a &lt; 20) and ($c%$d != 0 ));
                             $a = Fraction($a);
+                            Context("FiniteSolutionSets");
+                            $ans = Formula("{$Ans}");
                         </pg-code>
                     </setup>
                     <statement>
                         <p>Solve <m>\frac{x-<var name="$e"/>}{<var name="$b"/>}=-\frac{<var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>.</p>
-                        <p>The solution is <var name="$Ans" width="10" />.</p>
+                        <p><var name="$ans" width="10" /></p>
                     </statement>
                     <solution>
                         <p>To solve <m>\frac{x-<var name="$e"/>}{<var name="$b"/>}=-\frac{<var name="$c"/>}{<var name="$d"/>}</m> for <m>x</m>, we can multiply both sides of the equation by <m><var name="$b"/></m>, then simplify the right side of the equation, and then subtract <m><var name="$e"/></m>. <md>
@@ -1087,11 +1143,8 @@
             </exercise>
         </exercisegroup>
 
-        <exercisegroup>
-            <introduction>
-                <p>Applications</p>
-            </introduction>
-
+        <exercisegroup cols="2">
+            <title>Applications</title>
             <exercise>
                 <webwork source="BasicAlgebra/Geometry/SimilarTriangles10.pg" />
             </exercise>
@@ -1099,10 +1152,10 @@
                 <webwork source="BasicAlgebra/Geometry/SimilarTriangles20.pg" />
             </exercise>
             <exercise>
-                <webwork source="BasicAlgebra/Geometry/SimilarTriangles50.pg" />
+                <webwork source="BasicAlgebra/Geometry/SimilarTriangles50.pg" seed="1596"/>
             </exercise>
             <exercise>
-                <webwork source="BasicAlgebra/Geometry/SimilarTriangles60.pg" />
+                <webwork source="BasicAlgebra/Geometry/SimilarTriangles60.pg" seed="1601"/>
             </exercise>
             <exercise>
                 <webwork source="BasicMath/Proportion/MTH20Proportion10.pg" />
@@ -1294,29 +1347,30 @@
             </exercise>
         </exercisegroup>
 
+        <exercisegroup>
+            <title>Challenge</title>
 
-        <exercise><!-- Kara's challenge problem -->
-            <webwork>
-                <setup>
-                    <pg-code>
-                        $girl = random(2,6,2);
-                        $boy = random(3,7,2);
-                        $factor = random(5,9,1);
-                        $totalgirls = Real($girl*$factor);
-                        $total = Real(($girl+$boy)*$factor);
-                    </pg-code>
-                </setup>
-                <statement>
-                    <p> The ratio of girls to boys in a preschool is <var name="$girl"/> to <var name="$boy"/>.  If there are <var name="$total"/> kids in the school, how many girls are there in the preschool?</p>
-                    <p><var name="$totalgirls" width="10"/></p>
-                </statement>
-                <solution>
-                    <p> Let x = number of girls in the preschool.  We can represent this situation with the following ratio:</p>
-                    <p><m>\frac{girls}{girls+boys} = \frac{x}{<var name="$total"/>}</m>.  Solve this equation for x.</p>
-                </solution>
-            </webwork>
-        </exercise>
-
-
+            <exercise><!-- Kara's challenge problem -->
+                <webwork>
+                    <setup>
+                        <pg-code>
+                            $girl = random(2,6,2);
+                            $boy = random(3,7,2);
+                            $factor = random(5,9,1);
+                            $totalgirls = Real($girl*$factor);
+                            $total = Real(($girl+$boy)*$factor);
+                        </pg-code>
+                    </setup>
+                    <statement>
+                        <p>The ratio of girls to boys in a preschool is <var name="$girl"/> to <var name="$boy"/>.  If there are <var name="$total"/> kids in the school, how many girls are there in the preschool?</p>
+                        <p><var name="$totalgirls" width="10"/></p>
+                    </statement>
+                    <solution>
+                        <p> Let <m>x</m> be the number of girls in the preschool.  We can represent this situation with the following proportion:</p>
+                        <p><m>\frac{<var name="$girl"/>}{<var name="$girl"/>+<var name="$boy"/>} = \frac{x}{<var name="$total"/>}</m>.  Solve this equation for <m>x</m>.</p>
+                    </solution>
+                </webwork>
+            </exercise>
+        </exercisegroup>
     </exercises>
 </section>

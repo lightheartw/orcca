@@ -84,7 +84,7 @@
 
         <example xml:id="example-quadratic-equation-flying-object">
             <statement>
-                <p>A physics class launches a tennis ball from a rooftop that is <m>90.2</m> feet above the ground. They fire it directly upward at a speed of <m>14.4</m> feet per second and measure the time it takes for the ball to hit the ground below. We can model the height of the tennis ball, <m>h</m>, in feet, with the quadratic equation <m>h=-16x^2+14.4x+90.2</m>, where <m>x</m> represents the time in seconds after the launch. According to the model, when should the ball hit the ground? Round the time to one decimal place.</p>
+                <p>Linh is in another physics class that launches a tennis ball from a rooftop that is <m>90.2</m> feet above the ground. They fire it directly upward at a speed of <m>14.4</m> feet per second and measure the time it takes for the ball to hit the ground below. We can model the height of the tennis ball, <m>h</m>, in feet, with the quadratic equation <m>h=-16x^2+14.4x+90.2</m>, where <m>x</m> represents the time in seconds after the launch. According to the model, when should the ball hit the ground? Round the time to one decimal place.</p>
 
                 <p>The ground has a height of <m>0</m> feet. Substituting <m>0</m> for <m>h</m> in the equation, we have this quadratic equation:
                 <me>0=-16x^2+14.4x+90.2</me>
@@ -250,7 +250,7 @@
 
         <p>When an equation is <term>quadratic</term>, we have three different methods we can use. Here is an outline of the general process for determining which method to use.</p>
 
-        <algorithm><idx><h>solving</h><h>linear and quadratic equations</h></idx>
+        <algorithm xml:id="algorithm-solving-linear-and-quadratic-equations"><idx><h>solving</h><h>linear and quadratic equations</h></idx>
             <title>Solving Quadratic Equations</title>
             <p><ol>
                 <li><p>First, check whether there is a linear term, or whether there is only a squared expression and a constant. If there is only a squared expression and a constant, isolate the squared quantity and use the <term>square root method</term>.</p></li>
@@ -311,11 +311,13 @@
 
         <example xml:id="example-compare-linear-quadratic-quadratic-with-x-term-factor">
             <statement>
-                <p>Solve for <m>z</m> in <m>z^2+10=3z-30</m>.</p>
+                <p>Solve for <m>z</m> in <m>z^2-10=3z+30</m>.</p>
             </statement>
             <solution>
-                <p>This is a quadratic equation with a linear term so we will put it in standard form. Then we see that the left side factors so we solve by factoring.<md>
-                    <mrow>z^2-3z+40\amp=0</mrow>
+                <p>This is a quadratic equation with a linear term so we will put it in standard form. Then we see that the left side factors so we solve by factoring.
+                <md>
+                    <mrow>z^2-10=3z+30</mrow>
+                    <mrow>z^2-3z-40\amp=0</mrow>
                     <mrow>(z+5)(z-8)\amp=0</mrow></md><md>
                     <mrow>z+5\amp=0\amp\amp\text{ or }\amp z-8\amp=0</mrow>
                     <mrow>z\amp=-5\amp\amp\text{ or }\amp z\amp=8</mrow>
@@ -325,11 +327,41 @@
     </subsection>
 
     <exercises>
-
         <exercisegroup cols="2">
-            <introduction>
-                <p>Solve the Quadratic Equations Using the Quadratic Formula</p>
-            </introduction>
+            <title>Review and Warmup</title>
+            <exercise>
+                <webwork source="BasicAlgebra/EvaluateExpressions/evaluate90.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/EvaluateExpressions/evaluate90.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-04-Expressions.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-04-Expressions.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-02-Expressions.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-02-Expressions.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/EvaluateExpressions/evaluate100.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/EvaluateExpressions/evaluate100.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Library/Mizzou/College_Algebra/Real_Numbers/Simplifying_Expressions/Simplifying_Algebraic_Expressions_01.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Library/Mizzou/College_Algebra/Real_Numbers/Simplifying_Expressions/Simplifying_Algebraic_Expressions_01.pg" />
+            </exercise>
+        </exercisegroup>
+        <exercisegroup cols="2">
+            <title>Solve Quadratic Equations Using the Quadratic Formula</title>
             <exercise>
                 <webwork source="BasicAlgebra/QuadraticEquations/solveQuad155.pg" />
             </exercise>
@@ -453,10 +485,8 @@
         </exercisegroup>
 
         <exercisegroup cols="2">
-            <introduction>
-                <p>Quadratic Formula Applications</p>
+            <title>Quadratic Formula Applications</title>
                 <!-- TODO: Should these be mixed applications with factoring and square root method added? -->
-            </introduction>
             <exercise>
                 <webwork source="BasicAlgebra/QuadraticApplications/QuadraticEquationApplication10.pg" />
             </exercise>

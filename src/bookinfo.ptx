@@ -18,6 +18,8 @@
 
     <cross-references text="global" />
 
+    <rename element="solution" lang="en-US">Explanation</rename>
+
     <latex-preamble>
       <package>cancel</package>
     </latex-preamble>
@@ -62,10 +64,20 @@
 \newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}
 %
 %
+%  nextoperation (draw attention to the next order)
+%  Usage: 2+\nextoperation{3\cdot4}
+\newcommand{\nextoperation}[1]{\mathord{\boxed{#1}}}
+%
+%
 %  substitute (substitute a value for a variable)
 %  Usage: x+1\amp=2
 %         \substitute{1}+1\amp=2
 \newcommand{\substitute}[1]{{\color{blue}{{#1}}}}
+%
+%
+%  pinover (put a pin over something with text labeling)
+%  Usage: \pinover{x}{what}
+\newcommand{\pinover}[2]{\overset{\overset{\mathrm{\ #2\ }}{|}}{\strut #1 \strut}}
 %
 %
 %  addright (add to the right)
@@ -189,6 +201,7 @@
     \pgfplotsset{numberline/.style     = {xmin=-10,xmax=10,
                                           minor xtick={-11,-10,...,11},
                                           xtick={-10,-5,...,10},
+                                          every tick/.append style={thick},
                                           axis y line=none,
                                           y=15pt,
                                           axis lines=middle,
@@ -246,7 +259,7 @@
         %label style={font=\scriptsize},
         legend cell align=left,
         %legend style={font=\scriptsize},
-        width = {ifthenelse(.9\linewidth>.45\textwidth,0.45\textwidth,.9\linewidth)},
+        %width = {ifthenelse(.9\linewidth>.45\textwidth,0.45\textwidth,.9\linewidth)},
         grid = both,
         grid style = {solid,gray!40},
         axis background/.style={fill=yellow!30},
