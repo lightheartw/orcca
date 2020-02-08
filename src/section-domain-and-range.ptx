@@ -806,7 +806,6 @@ $domain = SetBuilder("{ x | x >= 0 }");
     </warning>
 
     <example permid="VVZ">
-      <statement>
         <p permid="fEg">
           Given the function <m>g</m> graphed in <xref ref="figure-range-bell">Figure</xref>,
           find the domain and range of <m>g</m>.
@@ -831,8 +830,6 @@ ytick={0,1,...,3},
           </image>
         </figure>
       </sidebyside>
-      </statement>
-      <solution permid="fpL">
         <p permid="PLo">
           To find the domain,
           we can visualize all of the <m>x</m>-values that are valid inputs for this function by
@@ -914,7 +911,6 @@ ytick={0,1,...,3},
             </image>
           </figure>
         </sidebyside>
-      </solution>
     </example>
     <exercise xml:id="exercise-rational-function-domain" permid="mUk">
       <webwork>
