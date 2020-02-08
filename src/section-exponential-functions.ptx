@@ -1069,13 +1069,9 @@ $answer=1102;
           </p>
         </statement>
         <answer  permid="sDs">
-        <p permid="DqS">
-          <figure permid="XTD">
             <image source="images/CNX_IntAlg_Figure_10_02_309_img.jpg" width="40%" permid="Nnu">
             </image>
-          </figure>
-        </p>
-        </answer >
+        </answer>
       </exercise>
       <exercise permid="TMn">
         <statement>
@@ -1090,14 +1086,10 @@ $answer=1102;
             <m>f(x)=6^x</m>
           </p>
         </statement>
-        <answer >
-        <p permid="vMt">
-          <figure permid="EaM">
+        <answer>
             <image source="images/CNX_IntAlg_Figure_10_02_311_img.jpg" width="40%" permid="tuD">
             </image>
-          </figure>
-        </p>
-        </answer >
+        </answer>
       </exercise>
       <exercise permid="gaF">
         <statement>
@@ -1113,12 +1105,8 @@ $answer=1102;
           </p>
         </statement>
         <answer >
-        <p permid="ohU">
-          <figure permid="khV">
             <image source="images/CNX_IntAlg_Figure_10_02_313_img.jpg" width="40%" permid="ZBM">
             </image>
-          </figure>
-        </p>
         </answer >
       </exercise>
       <exercise permid="soX">
@@ -1135,12 +1123,8 @@ $answer=1102;
           </p>
         </statement>
         <answer >
-        <p permid="gDv">
-          <figure permid="Qpe">
             <image source="images/CNX_IntAlg_Figure_10_02_315_img.jpg" width="40%" permid="FIV">
             </image>
-          </figure>
-        </p>
         </answer >
       </exercise>
       <exercise permid="EDp">
@@ -1157,12 +1141,8 @@ $answer=1102;
           </p>
         </statement>
         <answer >
-        <p permid="YYW">
-          <figure permid="wwn">
             <image source="images/CNX_IntAlg_Figure_10_02_317_img.jpg" width="40%" permid="lQe">
             </image>
-          </figure>
-        </p>
         </answer >
       </exercise>
       <exercise permid="QRH">
@@ -1179,12 +1159,8 @@ $answer=1102;
           </p>
         </statement>
         <answer >
-        <p permid="Rux">
-          <figure permid="cDw">
             <image source="images/CNX_IntAlg_Figure_10_02_319_img.jpg" width="40%" permid="RXn">
             </image>
-          </figure>
-        </p>
         </answer >
       </exercise>
       <exercise permid="dfZ">
@@ -1209,12 +1185,8 @@ $answer=1102;
           </p>
         </statement>
         <answer >
-        <p permid="pXh">
-          <figure permid="IKF">
             <image source="images/CNX_IntAlg_Figure_10_02_321_img.jpg" width="40%" permid="yew">
             </image>
-          </figure>
-        </p>
         </answer >
       </exercise>
       <exercise permid="VBA">
@@ -1231,12 +1203,8 @@ $answer=1102;
           </p>
         </statement>
         <answer >
-        <p permid="isI">
-          <figure permid="oRO">
             <image source="images/CNX_IntAlg_Figure_10_02_323_img.jpg" width="40%" permid="elF">
             </image>
-          </figure>
-        </p>
         </answer >
       </exercise>
       <exercise permid="hPS">
@@ -1253,12 +1221,8 @@ $answer=1102;
           </p>
         </statement>
         <answer >
-        <p permid="aOj">
-          <figure permid="UYX">
             <image source="images/CNX_IntAlg_Figure_10_02_325_img.jpg" width="40%" permid="KsO">
             </image>
-          </figure>
-        </p>
         </answer >
       </exercise>
       <exercise permid="uek">
@@ -1275,12 +1239,8 @@ $answer=1102;
           </p>
         </statement>
         <answer >
-        <p permid="TjK">
-          <figure permid="Bgg">
             <image source="images/CNX_IntAlg_Figure_10_02_327_img.jpg" width="40%" permid="qzX">
             </image>
-          </figure>
-        </p>
         </answer >
       </exercise>
       <exercise permid="GsC">
@@ -1304,12 +1264,8 @@ $answer=1102;
           </p>
         </statement>
         <answer permid="vxY">
-          <p permid="rMu">
-            <figure permid="hnp">
               <image source="images/CNX_IntAlg_Figure_10_02_329_img.jpg" width="40%" permid="WHg">
               </image>
-            </figure>
-          </p>
         </answer>
       </exercise>
       <exercise permid="yOd">
@@ -1326,12 +1282,8 @@ $answer=1102;
           </p>
         </statement>
         <answer permid="bFh">
-          <p permid="Nuy">
-            <figure permid="tBH">
               <image source="images/CNX_IntAlg_Figure_10_02_331_img.jpg" width="40%" permid="COp">
               </image>
-            </figure>
-          </p>
         </answer>
       </exercise>
       <exercise permid="Lcv">
@@ -1348,12 +1300,8 @@ $answer=1102;
           </p>
         </statement>
         <answer permid="HMq">
-          <p permid="ZIQ">
-            <figure permid="FPZ">
               <image source="images/CNX_IntAlg_Figure_10_02_333_img.jpg" width="40%" permid="iVy">
               </image>
-            </figure>
-          </p>
         </answer>
       </exercise>
       <exercise permid="XqN">
@@ -1370,12 +1318,8 @@ $answer=1102;
           </p>
         </statement>
         <answer permid="nTz">
-          <p permid="lXi">
-            <figure permid="Ser">
               <image source="images/CNX_IntAlg_Figure_10_02_335_img.jpg" width="40%" permid="PcH">
               </image>
-            </figure>
-          </p>
         </answer>
       </exercise>
       <exercise permid="jFf">
@@ -1392,12 +1336,8 @@ $answer=1102;
           </p>
         </statement>
         <answer permid="UaI">
-          <p permid="ylA">
-            <figure permid="esJ">
               <image source="images/CNX_IntAlg_Figure_10_02_337_img.jpg" width="40%" permid="vjQ">
               </image>
-            </figure>
-          </p>
         </answer>
       </exercise>
       <exercise permid="vTx">
@@ -1446,10 +1386,8 @@ $answer=1102;
       <exercise permid="ooY">
         <statement>
           <p permid="Ipg">
-            <figure permid="owp">
               <image source="images/CNX_IntAlg_Figure_10_02_201_img.jpg" width="40%" permid="bqZ">
               </image>
-            </figure>
           </p>
         </statement>
         <answer permid="AhR">
@@ -1461,20 +1399,16 @@ $answer=1102;
       <exercise permid="Uwh">
         <statement>
           <p permid="UDy">
-            <figure permid="AKH">
               <image source="images/CNX_IntAlg_Figure_10_02_202_img.jpg" width="40%" permid="Hyi">
               </image>
-            </figure>
           </p>
         </statement>
       </exercise>
       <exercise permid="ADq">
         <statement>
           <p permid="gRQ">
-            <figure permid="MYZ">
               <image source="images/CNX_IntAlg_Figure_10_02_203_img.jpg" width="40%" permid="nFr">
               </image>
-            </figure>
           </p>
         </statement>
         <answer permid="gpa">
@@ -1486,20 +1420,16 @@ $answer=1102;
       <exercise permid="gKz">
         <statement>
           <p permid="tgi">
-            <figure permid="Znr">
               <image source="images/CNX_IntAlg_Figure_10_02_204_img.jpg" width="40%" permid="TMA">
               </image>
-            </figure>
           </p>
         </statement>
       </exercise>
       <exercise permid="MRI">
         <statement>
           <p permid="FuA">
-            <figure permid="lBJ">
               <image source="images/CNX_IntAlg_Figure_10_02_205_img.jpg" width="40%" permid="zTJ">
               </image>
-            </figure>
           </p>
         </statement>
         <answer permid="Mwj">
@@ -1511,10 +1441,8 @@ $answer=1102;
       <exercise permid="sYR">
         <statement>
           <p permid="RIS">
-            <figure permid="xQb">
               <image source="images/CNX_IntAlg_Figure_10_02_206_img.jpg" width="40%" permid="gaS">
               </image>
-            </figure>
           </p>
         </statement>
       </exercise>
