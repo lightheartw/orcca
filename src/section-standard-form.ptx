@@ -1484,7 +1484,7 @@ return $ansHash;
       </exercise>
     </exercisegroup>
     <newpage/>
-    <exercisegroup permid="bAM">
+    <exercisegroup cols="2" permid="bAM">
       <title>Graphs and Standard Form</title>
       <exercise permid="ffm">
         <webwork source="BasicAlgebra/GraphingPointsAndLines/FindXYIntercepts60.pg" />
@@ -1499,7 +1499,7 @@ return $ansHash;
         <webwork source="BasicAlgebra/GraphingPointsAndLines/FindXYIntercepts90.pg" />
       </exercise>
     </exercisegroup>
-    <exercisegroup cols="2" permid="HHV">
+    <exercisegroup permid="HHV">
       <exercise permid="xSK">
         <statement>
           <p permid="grW">

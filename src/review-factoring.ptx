@@ -1992,7 +1992,7 @@ $answer1=10;
         <webwork source="BasicAlgebra/QuadraticApplications/QuadraticEquationApplication60.pg" />
       </exercise>
     </exercisegroup>
-    <exercisegroup cols="2"  permid="cpF">
+    <exercisegroup cols="2" permid="cpF">
       <title>Graphing Quadratic Equations</title>
       <introduction permid="UEc">
         <p permid="YZN">
