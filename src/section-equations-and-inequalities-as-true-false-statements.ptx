@@ -326,7 +326,7 @@ $yesno=PopUp(['?','is', 'is not'],1);
               </tabular>
             </sidebyside>
             <p permid="bxq">
-              So <m>-3</m> <var name="$yesno" form="popup"/> a solution to <m>y^2+y-5\leq y-1</m>.
+              So <m>-2</m> <var name="$yesno" form="popup"/> a solution to <m>y^2+y-5\leq y-1</m>.
             </p>
           </statement>
       </webwork>
