@@ -463,10 +463,10 @@
               <unit base="pound"/>
             </quantity>)</line></cell>
           <cell>
-            <line><m>1</m> gram (<quantity>
+            <line><m>1</m> kilogram (<quantity>
               <unit base="gram"/>
             </quantity>)</line>
-            <line><m>{}=1000</m> kilograms (<quantity>
+            <line><m>{}=1000</m> grams (<quantity>
               <unit prefix="kilo" base="gram"/>
             </quantity>)</line></cell>
           <cell bottom="major" right="medium">

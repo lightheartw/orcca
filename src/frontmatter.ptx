@@ -481,9 +481,9 @@ title?, idx*, (p | p)+
       <title>Basic Arithemtic</title>
       <p permid="bqD">
         The five basic arithmetic operations are:
-        addition, subtraction, multiplication, and raising to a power.
+        addition, subtraction, multiplication, division, and raising to a power.
         The symbols for addition and subtraction are <m>+</m> and <m>-</m>,
-        and both of these are directly avialable on most keyboards as <c>+</c> and <c>-</c>.
+        and both of these are directly available on most keyboards as <c>+</c> and <c>-</c>.
       </p>
       <p permid="HxM">
         On paper, multiplication is sometimes written using <m>\times</m> and sometimes written using <m>\cdot</m> (a centered dot).

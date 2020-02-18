@@ -74,7 +74,7 @@
             </li>
             <li permid="qXJ">
               <p permid="wFR">
-                When <m>x=5</m>, the <m>y</m>-value is <m>102.5</m>.
+                When <m>t=5</m>, the <m>y</m>-value is <m>102.5</m>.
                 So <m>H(5)=102.5</m>.
                 This means that after <m>5</m> seconds,
                 the plane is <m>102.5</m> feet above the ground.

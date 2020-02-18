@@ -100,7 +100,7 @@
       </statement>
       <solution permid="OBV">
         <p permid="BSe">
-          The ordered pairs tell us that <m>g(0)=2</m>, <m>g(13)=-1</m>, etc.
+          The ordered pairs tell us that <m>g(0)=2</m>, <m>g(-13)=-1</m>, etc.
           So the valid input values are <m>0</m>, <m>-13</m>,
           <m>15</m>, <m>-9</m>, and <m>-15</m>.
           This means the domain is the set <m>\{0,-13,15,-9,-15\}</m>.
@@ -217,11 +217,11 @@ xlabel={$x$, days},ylabel={$y$, number of zombies}]
                 To determine whether or not this function can be simplified,
                 we must factor the numerator and denominator to see if there are any common factors that can be canceled.
                 <md permid="wMM">
-                  <mrow>\frac{200000x+100}{5x+100}=\frac{100(200x+1)}{5(x+20)}</mrow>
-                  <mrow>\amp=\frac{\cancelhighlight{5}\cdot20(200x+1)}{\cancelhighlight{5}(x+20)}</mrow>
-                  <mrow>\amp=\frac{20(200x+1)}{x+20}</mrow>
+                  <mrow>\frac{200000x+100}{5x+100}=\frac{100(2000x+1)}{5(x+20)}</mrow>
+                  <mrow>\amp=\frac{\cancelhighlight{5}\cdot20(2000x+1)}{\cancelhighlight{5}(x+20)}</mrow>
+                  <mrow>\amp=\frac{20(2000x+1)}{x+20}</mrow>
                 </md>
-                Thus, the function <m>Z</m> simplifies to <m>Z(x)=\frac{20(200x+1)}{x+20}</m>.
+                Thus, the function <m>Z</m> simplifies to <m>Z(x)=\frac{20(2000x+1)}{x+20}</m>.
                 Note that there are no explicit domain restrictions to include since the only factor that was canceled was a constant.
               </p>
             </li>

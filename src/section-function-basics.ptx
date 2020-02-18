@@ -345,7 +345,7 @@ return $correct eq lc($student);});
         that takes a year as its input and outputs the US federal budget deficit for that year.
         For example,
         the Congressional Budget Office's website tells us that
-        <m>\operatorname{BudgetDeficit}(2009)</m> is <m>\$1.41</m> trillion.
+        <m>\operatorname{BudgetDeficit}(2009)</m> is <m>\$1.4</m> trillion.
         If we'd like to understand this function better,
         we might make a table of all the inputs and outputs we can find.
         Using the CBO's website (

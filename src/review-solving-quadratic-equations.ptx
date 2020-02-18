@@ -528,7 +528,7 @@ ymax=1]
             </li>
             <li permid="xDX">
               <p permid="EMX">
-                To solve the equation <m>2(x-6)-16=0</m> we first we first note that it is linear.
+                To solve the equation <m>2(x-6)-16=0</m> we first note that it is linear.
                 Since it is linear,
                 we just need to isolate the terms with the variable on one side and all the other terms on the other side of the equals sign.
                 <md permid="fHK">
@@ -662,7 +662,7 @@ ymax=1]
     <title>Strategies for Solving Quadratic Equations</title>
     <p permid="tbv">
       In <xref ref="section-strategies-for-solving-quadratic-equations">Section</xref>
-      we reviews all three <xref ref="list-methods-for-solving-quadratic-equations" text="title">methods for solving quadratic equations</xref> that we know.
+      we review all three <xref ref="list-methods-for-solving-quadratic-equations" text="title">methods for solving quadratic equations</xref> that we know.
       For the full explanation of solving using the factoring,
       visit <xref ref="section-solving-quadratic-equations-by-factoring">Section</xref>,
       solving using the square root method,

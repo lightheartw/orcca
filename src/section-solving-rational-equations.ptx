@@ -1202,12 +1202,12 @@ $solution = Formula("-0.60740935095773971711606959, 0.82867509557516993781158201
             <setup>
 <pg-code>
 Context("Numeric");
-$answer=15;
+$answer=18;
 </pg-code>
             </setup>
             <statement>
               <p permid="hZf">
-                Akim can sail his boat <m>20</m> miles into a <m>3</m> mph headwind in the same amount of time he can sail <m>12</m> miles with a <m>7</m> mph tailwind.
+                Akim can sail his boat <m>12</m> miles into a <m>3</m> mph headwind in the same amount of time he can sail <m>20</m> miles with a <m>7</m> mph tailwind.
                 What is the speed of Akim's boat without a wind?
               </p>
               <p permid="Ogo">

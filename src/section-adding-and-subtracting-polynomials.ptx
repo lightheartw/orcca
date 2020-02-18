@@ -306,8 +306,6 @@ $no=PopUp(['?','is', 'is not'],2);
       <statement>
         <p permid="mDp">
           The <term>degree of a polynomial</term><idx><h>polynomial</h><h>degree of a polynomial</h></idx> is the greatest degree that appears amongst its terms.
-          If the polynomial is just <m>0</m>,
-          it has no terms, and we say its degree is <m>-1</m>.
         </p>
       </statement>
     </definition>

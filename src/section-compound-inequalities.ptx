@@ -1316,7 +1316,7 @@ xlabel={t}]
         <p permid="rir">
           Then, at the end,
           we reverse the entire statement to go from smallest to largest.
-          The solution set is <m>(-6,15]</m>.
+          The solution set is <m>[-6,15)</m>.
         </p>
       </solution>
     </example>

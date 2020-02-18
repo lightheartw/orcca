@@ -305,7 +305,7 @@ minor ytick={-12,-11,...,12}]
           <mrow>-x^2+4x-5\amp=0</mrow>
           <mrow>x\amp=\frac{-4\pm \sqrt{(4)^2-4(-1)(-5)}}{2(-1)}</mrow>
           <mrow>x\amp=\frac{-4\pm \sqrt{16-20}}{-2}</mrow>
-          <mrow>x\amp=\frac{-4\pm \sqrt{-8}}{-2}</mrow>
+          <mrow>x\amp=\frac{-4\pm \sqrt{-4}}{-2}</mrow>
         </md>
         The radicand is negative, so there are no real solutions to the equation.
         This is a parabola that does not have any horizontal intercepts.
@@ -455,7 +455,7 @@ minor ytick={-12,-11,...,12}]
           Returning to the path of the baseball in <xref ref="figure-quadratic-function-model-without-nice-intercepts-or-vertex">Figure </xref>,
           the function that represents the height of the baseball after Ignacio hit it,
           is <m>H(t)=-16t^2+75t+4.7</m>.
-          The height is is feet and the time, <m>t</m>, is in seconds.
+          The height is in feet and the time, <m>t</m>, is in seconds.
           Find and interpret the following, in context.
           <ol label="a." permid="CIY">
             <li permid="HsR">
@@ -612,9 +612,9 @@ minor ytick={-12,-11,...,12}]
                 We will substitute <m>1000</m> for <m>n</m> and we have:
                 <md permid="pbf">
                   <mrow>P\amp=-0.01(\substitute{1000})^2+520(\substitute{1000})-54000</mrow>
-                  <mrow>P\amp=366000</mrow>
+                  <mrow>P\amp=456000</mrow>
                 </md>
-                If Keenan's company sells <m>1{,}000</m> refrigerators it will make a profit of <m>\$366{,}000</m>.
+                If Keenan's company sells <m>1{,}000</m> refrigerators it will make a profit of <m>\$456{,}000</m>.
               </p>
             </li>
             <li permid="Vww">

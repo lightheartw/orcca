@@ -253,7 +253,7 @@
           <m>\sqrt[4]{\left(n^2\right)^4}=n^2</m> and use the property that
           <m>\sqrt[m]{x^m}=x</m> when all variables are positive.
           A second explanation would be to use the <xref ref="fact-rational-exponent-rule-ii" text="title" /> by rewriting
-          <m>\sqrt[4]{n^8}</m> as <m>n^{\frac{8}{2}}=n^2</m>.
+          <m>\sqrt[4]{n^8}</m> as <m>n^{\frac{8}{4}}=n^2</m>.
           Either way, we've shown that <m>\sqrt[4]{n^8}=n^2</m>.
         </p>
       </solution>

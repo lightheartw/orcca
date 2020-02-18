@@ -737,7 +737,7 @@ $neither = PopUp(['?','linear','quadratic','neither'],3);
         <webwork source="BasicAlgebra/QuadraticApplications/QuadraticEquationApplication60.pg" />
       </exercise>
       <exercise permid="ljG">
-        <webwork source="BasicAlgebra/QuadraticApplications/QuadraticEquationApplication60.pg" />
+        <webwork source="BasicAlgebra/QuadraticApplications/QuadraticEquationApplication60.pg"  seed="3"/>
       </exercise>
       <exercise permid="RqP">
         <webwork source="BasicAlgebra/QuadraticApplications/QuadraticEquationApplication70.pg" />
