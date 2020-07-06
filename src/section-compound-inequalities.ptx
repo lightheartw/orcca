@@ -698,7 +698,7 @@
                 <md permid="BVR">
                   <mrow>3-5x\amp\gt-7\amp\text{or}\amp\amp 2-x\amp\le-3</mrow>
                   <mrow>3-5(\highlight{3})\amp\stackrel{?}{\gt}-7\amp\text{or}\amp\amp 2-(\highlight{3})\amp\stackrel{?}{\le}-3</mrow>
-                  <mrow>-9\amp\stackrel{\text{no}}{\gt}-7\amp\text{or}\amp\amp -1\amp\stackrel{\text{no}}{\le}-3</mrow>
+                  <mrow>-12\amp\stackrel{\text{no}}{\gt}-7\amp\text{or}\amp\amp -1\amp\stackrel{\text{no}}{\le}-3</mrow>
                 </md>
               </p>
               <p permid="Ugz">
@@ -714,7 +714,7 @@
                 <md permid="ida">
                   <mrow>3-5x\amp\gt-7\amp\text{or}\amp\amp 2-x\amp\le-3</mrow>
                   <mrow>3-5(\highlight{1})\amp\stackrel{?}{\gt}-7\amp\text{or}\amp\amp 2-(\highlight{1})\amp\stackrel{?}{\le}-3</mrow>
-                  <mrow>-12\amp\stackrel{\checkmark}{\lt}-7\amp\text{or}\amp\amp -1\amp\stackrel{\text{no}}{\leq}-3</mrow>
+                  <mrow>-2\amp\stackrel{\checkmark}{\lt}-7\amp\text{or}\amp\amp 1\amp\stackrel{\text{no}}{\leq}-3</mrow>
                 </md>
               </p>
               <p permid="guR">

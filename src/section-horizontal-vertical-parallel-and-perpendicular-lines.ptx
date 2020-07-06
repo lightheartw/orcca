@@ -632,7 +632,7 @@ xlabel={purchase price},
     </example>
     <paragraphs permid="diM">
       <title>Summary of Horizontal and Vertical Line Equations</title>
-      <statement>
+      
         <sidebyside permid="FZQ">
           <tabular valign="top" bottom="minor" permid="YGk">
             <col width="47%" right="medium"/>
@@ -712,7 +712,7 @@ xlabel={purchase price},
             </row>
           </tabular>
         </sidebyside>
-      </statement>
+      
     </paragraphs>
   </subsection>
   <subsection xml:id="subsection-parallel-lines" permid="kNl">
