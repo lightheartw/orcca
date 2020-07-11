@@ -768,6 +768,142 @@ xlabel={},
       </webwork>
     </exercise>
   </subsection>
+  <subsection>
+    <title>Division</title>
+    <p>Division by some number is the same as multiplication by its reciprocal. For example, dividing a number by <m>2</m> is the same as multiplying by the reciprocal of <m>2</m>, which is <m>\frac{1}{2}</m>. Thus, when dividing numbers, including negative numbers, the same rules we use for multiplication can be applied when determining the resulting sign.</p>
+
+    <example>
+      <title>Examples of Division with Negative Numbers</title>
+      <p>
+        Here are four examples of division where at least one number is negative.</p>
+        
+        <ol label="a.">
+          <li>
+            <p>
+              <m>-36\div12</m>
+            </p>
+            <p>We have one number of each sign.
+              Recall, that we learned in the previous section, the rule for multiplication is that a negative times a positive always results in a negative. Since the same rules for multiplication can be applied to division, when determining the resulting sign, to calculate this answer, we simply divide <m>36</m> by <m>12</m>, which gives us <m>3</m> and then since the numbers have opposite sign, we know the final result is negative. Thus,
+              
+              <me>
+                -36\div12=-3
+              </me>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>200\div(-100)</m>
+            </p>
+            <p>
+              Again, we have one number of each sign, so the result will be negative.
+              <me>
+                200\div(-100)=-2
+              </me>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>-\frac{15}{2}\div-25</m>
+            </p>
+            <p>
+              This time the numbers are both negative. Recall, from multiplication, the rule is that if the numbers are both negative, the result will be positive. Since we are working with fractions in this case, it is clear why the same rules for multiplication are applied to division: because division is the same as multiplying by the reciprocal of a number.
+              
+              <md>
+                <mrow>-\frac{15}{2}\div-25\amp=-\frac{15}{2}\cdot-\frac{1}{25}</mrow>
+                <mrow>\amp=\frac{3}{10}</mrow>
+              </md>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{-96}{-52}</m>
+            </p>
+            <p>
+              Both numbers are negative, in this case, so the final result will be positive. However, 
+              <m>96</m> cannot be evenly divided by <m>52</m>, so we simply reduce the fraction and then simplify the signs by making the final result positive.
+            
+            <me>\frac{-96}{-52}=\frac{24}{13}</me>
+            </p>
+          </li>
+        </ol>
+      
+    </example>
+    <exercise>
+      <webwork>
+          <statement>
+            <p>
+              Here are some practice exercises with division and signed numbers.
+              The expectation is that readers can make these calculations here without a calculator.</p>
+              <p>
+              <ol label="a." cols="2">
+                <li>
+                  <p>
+                    Divide <m>-16\div2</m>.
+                  </p>
+                  <p>
+                    <var name="-8" width="10" />
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Find the quotient of <m>-30</m> and <m>-5</m>.
+                  </p>
+                  <p>
+                    <var name="6" width="10" />
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Compute <m>-\frac{12}{25}\div\frac{32}{35}</m>.
+                  </p>
+                  <p>
+                    <var name="-21/40" width="10" />
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Simplify <m>\frac{-150}{-250}</m>.
+                  </p>
+                  <p>
+                    <var name="3/5" width="10" />
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol label="a.">
+                <li>
+                  <p>
+                    Since <m>16\div2=8</m> and we are dividing numbers of opposite signs,
+                    the answer is negative: <m>-8</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Since <m>30\div5=6</m> and we are dividing two negative numbers,
+                    the answer is positive: <m>6</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Since <m>\frac{12}{25}\div\frac{32}{35}=\frac{21}{40}</m> and we are dividing numbers of opposite signs,
+                    the answer is negative: <m>-\frac{21}{40}</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Since <m>\frac{150}{250}=\frac{3}{5}</m> and we are dividing two negative numbers,
+                    the answer is positive: <m>\frac{3}{5}</m>.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+      </webwork>
+    </exercise>
+  </subsection>
   <subsection xml:id="subsection-powers" permid="vQx">
     <title>Powers</title>
     <p permid="VUm">
@@ -945,7 +1081,7 @@ xlabel={},
           </p>
         </li>
         <li permid="aLj">
-          <title>Division (not discussed in this section)</title>
+          <title>Division</title>
           <p permid="qiC">
             Division by some number is the same as multiplication by its reciprocal.
             So the multiplication rules can be adopted.
