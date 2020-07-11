@@ -388,173 +388,552 @@
   </subsection>
   <exercises permid="bsq">
 <!--         <exercise>
-<webwork source="BasicAlgebra/SolveLinearEquations/compareEquationExpression20.pg" seed="5"/>
+<webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/compareEquationExpression20.pg" seed="5"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/SolveLinearEquations/solveLinearEqnMultiSteps70.pg" />
+<webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnMultiSteps70.pg" />
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses170.pg" seed="2"/>
+<webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses170.pg" seed="2"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/SolveLinearEquations/SolveSpecialLinearEquation40.pg" seed="9"/>
+<webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveSpecialLinearEquation40.pg" seed="9"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction290.pg" seed="6"/>
+<webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction290.pg" seed="6"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction260.pg" seed="7"/>
+<webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction260.pg" seed="7"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/LinearInequalities/SolveInequality310.pg" seed="3"/>
+<webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality310.pg" seed="3"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/LinearInequalities/SolveSpecialInequality70.pg" seed="10"/>
+<webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveSpecialInequality70.pg" seed="10"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/LinearInequalities/SolveInequality320.pg" seed="4"/>
+<webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality320.pg" seed="4"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/LinearInequalities/SolveInequalityWithFraction30.pg" seed="8"/>
+<webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequalityWithFraction30.pg" seed="8"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/SolveLinearEquations/LiteralEquation210.pg" seed="16"/>
+<webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/LiteralEquation210.pg" seed="16"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/SolveLinearEquations/LiteralEquation190.pg" seed="17"/>
+<webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/LiteralEquation190.pg" seed="17"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem60.pg" seed="11"/>
+<webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem60.pg" seed="11"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/LinearEquationApplications/TwoSideVariableWordProblem50.pg" seed="12"/>
+<webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/TwoSideVariableWordProblem50.pg" seed="12"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem60.pg" seed="13"/>
+<webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem60.pg" seed="13"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/Geometry/RectanglePerimeterEquation50.pg" seed="14"/>
+<webwork source="Contrib/PCC/BasicAlgebra/Geometry/RectanglePerimeterEquation50.pg" seed="14"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/LinearEquationApplications/FractionLinearApplication40.pg" seed="15"/>
+<webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FractionLinearApplication40.pg" seed="15"/>
 </exercise>
 <exercise>
-<webwork source="BasicAlgebra/Geometry/SimilarTriangles90.pg" seed="18"/>
+<webwork source="Contrib/PCC/BasicAlgebra/Geometry/SimilarTriangles90.pg" seed="18"/>
 </exercise>
 <exercise>
 <webwork source="BasicMath/Proportion/MTH20Proportion71.pg" seed="19"/>
 </exercise> -->
     <exercisegroup cols="2" permid="nGI">
+      <!-- attempted to make revisions to first two exercises with this version, but it wouldn't work: 
+      <exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+$var = RandomVariableName(type=>variable);
+Context()->variables->are($var=>'Real');
+Context()->noreduce('(-x)-y','(-x)+y');
+
+$a=random(2,5,1);
+$b=non_zero_random(-9,9,1);
+$c=non_zero_random(-9,9,1);
+do {$ans = random(2,10,1);} until ($ans!=-$b);
+$left= Compute("$a($var+$b)+$c")->reduce;
+$right = $left->eval($var=>$ans);
+$right = Compute($right);
+
+$ab = $a*$b;
+$s = $ab+$c;
+$simplified = Compute("$a*$var+$s")->reduce;
+$s1 = $right-$s;
+$s2 = $ans+$b;
+$s3 = $a*$s2;
+
+@vArray = ($var);
+@aArray = ($ans);
+($ansEqRef, $eqTypesRef) = contextSetup(~~@vArray,~~@aArray);
+</pg-code>
+</setup>
+<statement>
+  <ol><li>
+<p>Evaluate <var name="$left"/> when <m><var name="$var"/>=<var name="$ans"/></m></p>.</li>
+<li><p>Simplify <var name="$left"/>.<</li>
+  <li><p>Solve <m><var name="$left"/>=<var name="$right"/></m></p></li>
+</ol>
+</statement>
+
+</webwork>
+</exercise> -->
+
       <exercise permid="zVa">
-        <webwork source="BasicAlgebra/SolveLinearEquations/compareEquationExpression20.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/compareEquationExpression20.pg" />
       </exercise>
       <exercise permid="gcj">
-        <webwork source="BasicAlgebra/SolveLinearEquations/compareEquationExpression20.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/compareEquationExpression20.pg" />
       </exercise>
     </exercisegroup>
     <exercisegroup cols="2" permid="TNR">
       <exercise permid="Mjs">
-        <webwork source="BasicAlgebra/SolveLinearEquations/solveLinearEqnMultiSteps70.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnMultiSteps70.pg" />
       </exercise>
       <exercise permid="sqB">
-        <webwork source="BasicAlgebra/SolveLinearEquations/solveLinearEqnMultiSteps70.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnMultiSteps70.pg" />
       </exercise>
       <exercise permid="YxK">
-        <webwork source="BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses170.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses170.pg" />
       </exercise>
       <exercise permid="EET">
-        <webwork source="BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses170.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses170.pg" />
       </exercise>
       <exercise permid="kMc">
-        <webwork source="BasicAlgebra/SolveLinearEquations/SolveSpecialLinearEquation40.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveSpecialLinearEquation40.pg" />
       </exercise>
       <exercise permid="QTl">
-        <webwork source="BasicAlgebra/SolveLinearEquations/SolveSpecialLinearEquation40.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveSpecialLinearEquation40.pg" />
       </exercise>
       <exercise permid="xau">
-        <webwork source="BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction290.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction290.pg" />
       </exercise>
       <exercise permid="dhD">
-        <webwork source="BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction290.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction290.pg" />
       </exercise>
       <exercise permid="JoM">
-        <webwork source="BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction260.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction260.pg" />
       </exercise>
       <exercise permid="pvV">
-        <webwork source="BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction260.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction260.pg" />
       </exercise>
-      <exercise permid="VDe">
-        <webwork source="BasicAlgebra/LinearInequalities/SolveInequality310.pg" />
+      <exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+Context()->variables->are(y=>"Real");
+
+$a=random(1,5,1);
+$b=random(6,10,1);
+$crit = random(-10,10,1);
+$c= $a-($crit+$b);
+
+$left = Compute("$a-(y+$b)");
+$comp = "\lt";
+$right = Compute("$c");
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+Context()->flags->set(formatStudentAnswer=>'parsed');
+Context()->variables->are(y=>"Real");
+
+$setans = Compute("{ y | y > $crit}");
+<!-- $alt = Compute("{ y | y > $crit}");
+$ans = OneOf($setans, $alt); -->
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("($crit,inf)");
+</pg-code>
+</setup>
+<statement>
+  <p>Solve this inequality:
+
+    <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+</statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+<exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+Context()->variables->are(y=>"Real");
+
+$a=random(1,5,1);
+$b=random(6,10,1);
+$crit = random(-10,10,1);
+$c= $a-($crit+$b);
+
+$left = Compute("$a-(y+$b)");
+$comp = "\lt";
+$right = Compute("$c");
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+Context()->flags->set(formatStudentAnswer=>'parsed');
+Context()->variables->are(y=>"Real");
+
+$setans = Compute("{ y | y > $crit}");
+<!-- $alt = Compute("{ y | y > $crit}");
+$ans = OneOf($setans, $alt); -->
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("($crit,inf)");
+</pg-code>
+</setup>
+<statement>
+  <p>Solve this inequality:
+
+    <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+
+      <!-- <exercise permid="VDe">
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality310.pg" />
       </exercise>
       <exercise permid="BKn">
-        <webwork source="BasicAlgebra/LinearInequalities/SolveInequality310.pg" />
-      </exercise>
-      <exercise permid="hRw">
-        <webwork source="BasicAlgebra/LinearInequalities/SolveSpecialInequality70.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality310.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+$a=random(2,5,1);
+$c=list_random((2,3,4));
+$b=$a*$c;
+$left = Compute("-$a*x");
+$comp = "\geq";
+$right = Compute("$b");
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+Context()->flags->set(formatStudentAnswer=>'parsed');
+
+<!-- $setans = Compute("{ x | x \lt= -$c}"); -->
+$ans = Compute("{ x | -$c >= x}");
+<!-- $ans = OneOf($setans, $alt); -->
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("(-inf,-$c]");
+</pg-code>
+</setup>
+<statement>
+  <p>Solve this inequality:
+
+    <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+<exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+$a=random(2,5,1);
+$c=list_random((2,3,4));
+$b=$a*$c;
+$left = Compute("-$a*x");
+$comp = "\geq";
+$right = Compute("$b");
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+Context()->flags->set(formatStudentAnswer=>'parsed');
+
+<!-- $setans = Compute("{ x | x \lt= -$c}"); -->
+$ans = Compute("{ x | -$c >= x}");
+<!-- $ans = OneOf($setans, $alt); -->
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("(-inf,-$c]");
+</pg-code>
+</setup>
+<statement>
+  <p>Solve this inequality:
+
+    <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+
+      <!-- <exercise permid="hRw">
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveSpecialInequality70.pg" />
       </exercise>
       <exercise permid="NYF">
-        <webwork source="BasicAlgebra/LinearInequalities/SolveSpecialInequality70.pg" />
-      </exercise>
-      <exercise permid="ufO">
-        <webwork source="BasicAlgebra/LinearInequalities/SolveInequality320.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveSpecialInequality70.pg" />
+      </exercise> -->
+
+      <exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+
+Context("Numeric");
+
+$a=random(1,5,1);
+$b=random(7,10,1);
+$c=random(3,10,1);
+$crit = random(-10,10,1);
+
+$e=random(1,10,1);
+$f=random(2,5,1);
+$d= $a+$b*($crit-$c)+$e-$f*$crit;
+
+$left = Compute("$a+$b*(x-$c)");
+$comp = "\lt";
+$right = Compute("$d-($e-$f*x)");
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+Context()->flags->set(formatStudentAnswer=>'parsed');
+
+<!-- $setans = Compute("{ x | x < $crit}");
+$alt = Compute("{ x | $crit > x}"); -->
+$ans = Compute("{ x | $crit > x}");
+
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("(-inf,$crit)");
+</pg-code>
+</setup>
+<statement>
+  <p>Solve this inequality:
+
+    <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+<exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+
+Context("Numeric");
+
+$a=random(1,5,1);
+$b=random(7,10,1);
+$c=random(3,10,1);
+$crit = random(-10,10,1);
+
+$e=random(1,10,1);
+$f=random(2,5,1);
+$d= $a+$b*($crit-$c)+$e-$f*$crit;
+
+$left = Compute("$a+$b*(x-$c)");
+$comp = "\lt";
+$right = Compute("$d-($e-$f*x)");
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+Context()->flags->set(formatStudentAnswer=>'parsed');
+
+<!-- $setans = Compute("{ x | x < $crit}");
+$alt = Compute("{ x | $crit > x}"); -->
+$ans = Compute("{ x | $crit > x}");
+
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("(-inf,$crit)");
+</pg-code>
+</setup>
+<statement>
+  <p>Solve this inequality:
+
+    <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+
+      <!-- <exercise permid="ufO">
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality320.pg" />
       </exercise>
       <exercise permid="amX">
-        <webwork source="BasicAlgebra/LinearInequalities/SolveInequality320.pg" />
-      </exercise>
-      <exercise permid="Gug">
-        <webwork source="BasicAlgebra/LinearInequalities/SolveInequalityWithFraction30.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality320.pg" />
+      </exercise> -->
+
+      <exercise>
+        <webwork>
+        <setup>
+          <pg-code>
+Context("Numeric");
+
+$a=random(1,5,1);
+$b=random(6,10,1);
+$left = Compute("$a");
+$comp = "\leq";
+$right = Compute("x+$b");
+
+$c = $a-$b;
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+
+$ans = Compute("{ x | x >= $c}");
+<!-- $alt = Compute("{ x | $c <= x}");
+$ans = OneOf($setans, $alt); -->
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("[$c,inf)");
+</pg-code>
+</setup>
+<statement>
+  <p>Solve this inequality:
+
+    <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+<exercise>
+  <webwork>
+        <setup>
+          <pg-code>
+Context("Numeric");
+
+$a=random(1,5,1);
+$b=random(6,10,1);
+$left = Compute("$a");
+$comp = "\leq";
+$right = Compute("x+$b");
+
+$c = $a-$b;
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+
+$ans = Compute("{ x | x >= $c}");
+<!-- $alt = Compute("{ x | $c <= x}");
+$ans = OneOf($setans, $alt); -->
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("[$c,inf)");
+</pg-code>
+</setup>
+<statement>
+  <p>Solve this inequality:
+
+    <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+      <!-- <exercise permid="Gug">
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequalityWithFraction30.pg" />
       </exercise>
       <exercise permid="mBp">
-        <webwork source="BasicAlgebra/LinearInequalities/SolveInequalityWithFraction30.pg" />
-      </exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequalityWithFraction30.pg" />
+      </exercise> -->
+
       <exercise permid="SIy">
-        <webwork source="BasicAlgebra/SolveLinearEquations/LiteralEquation200.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/LiteralEquation200.pg" />
       </exercise>
       <exercise permid="yPH">
-        <webwork source="BasicAlgebra/SolveLinearEquations/LiteralEquation210.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/LiteralEquation210.pg" />
       </exercise>
       <exercise permid="eWQ">
-        <webwork source="BasicAlgebra/SolveLinearEquations/LiteralEquation190.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/LiteralEquation190.pg" />
       </exercise>
       <exercise permid="LdZ">
-        <webwork source="BasicAlgebra/SolveLinearEquations/LiteralEquation190.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/LiteralEquation190.pg" />
       </exercise>
     </exercisegroup>
     <exercise permid="UxL">
-      <webwork source="BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem60.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem60.pg" />
     </exercise>
     <exercise permid="AEU">
-      <webwork source="BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem60.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem60.pg" />
     </exercise>
     <exercise permid="gMd">
-      <webwork source="BasicAlgebra/LinearEquationApplications/TwoSideVariableWordProblem50.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/TwoSideVariableWordProblem50.pg" />
     </exercise>
     <exercise permid="MTm">
-      <webwork source="BasicAlgebra/LinearEquationApplications/TwoSideVariableWordProblem50.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/TwoSideVariableWordProblem50.pg" />
     </exercise>
     <exercise permid="tav">
-      <webwork source="BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem60.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem60.pg" />
     </exercise>
     <exercise permid="ZhE">
-      <webwork source="BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem60.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem60.pg" />
     </exercise>
     <exercise permid="FoN">
-      <webwork source="BasicAlgebra/Geometry/RectanglePerimeterEquation50.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/Geometry/RectanglePerimeterEquation50.pg" />
     </exercise>
     <exercise permid="lvW">
-      <webwork source="BasicAlgebra/Geometry/RectanglePerimeterEquation50.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/Geometry/RectanglePerimeterEquation50.pg" />
     </exercise>
     <exercise permid="RDf">
-      <webwork source="BasicAlgebra/LinearEquationApplications/FractionLinearApplication40.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FractionLinearApplication40.pg" />
     </exercise>
     <exercise permid="xKo">
-      <webwork source="BasicAlgebra/LinearEquationApplications/FractionLinearApplication40.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FractionLinearApplication40.pg" />
     </exercise>
     <exercise permid="dRx">
-      <webwork source="BasicAlgebra/Geometry/SimilarTriangles90.pg" seed="1"/>
+      <webwork source="Contrib/PCC/BasicAlgebra/Geometry/SimilarTriangles90.pg" seed="1"/>
     </exercise>
     <exercise permid="JYG">
-      <webwork source="BasicAlgebra/Geometry/SimilarTriangles90.pg" seed="6"/>
+      <webwork source="Contrib/PCC/BasicAlgebra/Geometry/SimilarTriangles90.pg" seed="6"/>
     </exercise>
     <exercise permid="qfP">
       <webwork source="BasicMath/Proportion/MTH20Proportion71.pg" />
@@ -563,16 +942,16 @@
       <webwork source="BasicMath/Proportion/MTH20Proportion71.pg" />
     </exercise>
     <!-- <exercise permid="Cuh">
-      <webwork source="BasicAlgebra/LinearEquationApplications/TwoSideVariableWordProblem20.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/TwoSideVariableWordProblem20.pg" />
     </exercise> -->
     <exercise permid="iBq">
-      <webwork source="BasicAlgebra/LinearEquationApplications/TwoSideVariableWordProblem30.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/TwoSideVariableWordProblem30.pg" />
     </exercise>
     <exercise permid="OIz">
-      <webwork source="BasicAlgebra/Geometry/RectanglePerimeterEquation40.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/Geometry/RectanglePerimeterEquation40.pg" />
     </exercise>
     <exercise permid="uPI">
-      <webwork source="BasicAlgebra/Geometry/RectanglePerimeterEquation50.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/Geometry/RectanglePerimeterEquation50.pg" />
     </exercise>
   </exercises>
 </section>
