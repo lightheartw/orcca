@@ -14,7 +14,7 @@
       intended to <em>review</em>
       topics from a basic math course,
       especially <xref first="section-arithmetic-with-negative-numbers" last="section-order-of-operations">Sections</xref>.
-      These topics are covered differently than they would be covered for a student seeing them for the first time.
+      Review topics are covered differently than they would be covered for a student seeing them for the first time.
     </p>
   </introduction>
 <xi:include href="section-arithmetic-with-negative-numbers.ptx" />
