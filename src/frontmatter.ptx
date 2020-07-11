@@ -251,7 +251,6 @@ title?, idx*, (p | p)+
         but will be made available per request in a separate <init>PDF</init>.
         As the eBook evolves,
         they may or may not be contained in an appendix there.
-        In any case, we hope to provide them in the near future.
       </p>
     </paragraphs>
     <paragraphs permid="GdY">
@@ -346,12 +345,12 @@ title?, idx*, (p | p)+
  <!--                <li> <p>The <m>y</m>-intercept is a single number, not an ordered pair whose first coordinate is <m>0</m>. The notion of a <m>y</m>-intercept makes sense in higher dimensions than two, so why specify <m>(0,b)</m>? It's also implied in the name, <m>y</m>-intercept, that this place is on the <m>y</m>-axis. So <m>x</m> (and <m>z</m>, <m>w</m>, <etc />) are implied to be <m>0</m>, and there is no need to repeat that in an ordered tuple.</p>  <p>We feel similarly for an <m>x</m>-intercept. We acknowledge one downside to this position. And that is the unfortunate situation of a student who calculates an <m>x</m>-intercept of say <m>2</m> and a <m>y</m>-intercept of say <m>3</m> and comes to think that their line passes through <m>(2,3)</m>.</p> </li>--><!--Approved by: Alex-->
         <li permid="YRw">
           <p permid="woN">
-            We round decimal results to four significant digits,
+            We often round decimal results to four significant digits,
             or possibly fewer leaving out trailing zeros.
             We do this to maintain consistency with the most common level of precision that
             <webwork /> uses to assess decimal answers.
             We <em>round</em>, not <em>truncate</em>
-            and we use the <m>\approx</m> symbol.
+            and we often use the <m>\approx</m> symbol.
             For example <m>\pi\approx3.142</m> and Portland's population is <m>\approx609500</m>.
           </p>
         </li>
