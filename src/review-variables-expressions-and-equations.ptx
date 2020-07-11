@@ -434,32 +434,32 @@
   <exercises permid="wrN">
     <exercisegroup cols="2" permid="ZEq">
       <exercise permid="Kvs">
-        <webwork source="BasicAlgebra/EvaluateExpressions/EvaluateFormula70.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/EvaluateFormula70.pg" />
       </exercise>
       <exercise permid="qCB">
-        <webwork source="BasicAlgebra/EvaluateExpressions/EvaluateFormula70.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/EvaluateFormula70.pg" />
       </exercise>
     </exercisegroup>
     <exercisegroup cols="2" permid="FLz">
       <exercise permid="WJK">
-        <webwork source="BasicAlgebra/EvaluateExpressions/FahrenheitCelsius10.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/FahrenheitCelsius10.pg" />
       </exercise>
       <exercise permid="CQT">
-        <webwork source="BasicAlgebra/EvaluateExpressions/FahrenheitCelsius10.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/FahrenheitCelsius10.pg" />
       </exercise>
     </exercisegroup>
     <exercisegroup cols="2" permid="lSI">
       <exercise permid="HAM">
-        <webwork source="BasicAlgebra/EvaluateExpressions/evaluate100.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluate100.pg" />
       </exercise>
       <exercise permid="nHV">
-        <webwork source="BasicAlgebra/EvaluateExpressions/evaluate100.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluate100.pg" />
       </exercise>
       <exercise permid="TPe">
-        <webwork source="BasicAlgebra/EvaluateExpressions/evaluate120.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluate120.pg" />
       </exercise>
       <exercise permid="zWn">
-        <webwork source="BasicAlgebra/EvaluateExpressions/evaluate120.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluate120.pg" />
       </exercise>
       <exercise permid="gdw">
         <webwork>
@@ -1350,110 +1350,577 @@ $yesno=PopUp(['?','is', 'is not'],$ans);
     </exercisegroup>
     <exercisegroup cols="4" permid="RZR">
       <exercise permid="pxi">
-        <webwork source="BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepAddSubtract20.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepAddSubtract20.pg" />
       </exercise>
       <exercise permid="VEr">
-        <webwork source="BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepAddSubtract20.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepAddSubtract20.pg" />
       </exercise>
       <exercise permid="BLA">
-        <webwork source="BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepAddSubtract40.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepAddSubtract40.pg" />
       </exercise>
       <exercise permid="hSJ">
-        <webwork source="BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepAddSubtract40.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepAddSubtract40.pg" />
       </exercise>
       <exercise permid="NZS">
-        <webwork source="BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepMultiDiv20.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepMultiDiv20.pg" />
       </exercise>
       <exercise permid="uhb">
-        <webwork source="BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepMultiDiv20.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepMultiDiv20.pg" />
       </exercise>
       <exercise permid="aok">
-        <webwork source="BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepMultiDiv80.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepMultiDiv80.pg" />
       </exercise>
       <exercise permid="Gvt">
-        <webwork source="BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepMultiDiv80.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnOneStepMultiDiv80.pg" />
       </exercise>
     </exercisegroup>
+    <exercisegroup cols="4">
+      <introduction permid="Yjh">
+        <p permid="Dzs">
+          For each problem below,
+          in addition to writing the different notations for each solution set,
+          draw a graph of each solution set on a number line. 
+        </p>
+        <p>Solve each inequality.</p>
+      </introduction>
+      <exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+
+$a=random(1,5,1);
+$b=random(6,10,1);
+$left = Compute("x+$a");
+$comp = '>';
+$right = Compute("$b");
+
+$c = $b-$a;
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+$ans = Compute("{ x | x > $c}");
+<!-- $alt = Compute("{ x | $c < x}");
+$ans = OneOf($setans, $alt); -->
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("($c,inf)");
+</pg-code>
+</setup>
+<statement>
+  <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+<exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+
+$a=random(1,5,1);
+$b=random(6,10,1);
+$left = Compute("x-$a");
+$comp = "\leq";
+$right = Compute("$b");
+
+$c = $b+$a;
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+
+<!-- $setans = Compute("{ x | x <= $c}"); -->
+$ans = Compute("{ x | $c >= x}");
+<!-- $ans = OneOf($setans, $alt); -->
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("(-inf,$c]");
+</pg-code>
+</setup>
+<statement>
+  <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+  <exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+
+$a=random(1,5,1);
+$b=random(6,10,1);
+$left = Compute("$a");
+$comp = "\leq";
+$right = Compute("x+$b");
+
+$c = $a-$b;
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+
+$ans = Compute("{ x | x >= $c}");
+<!-- $alt = Compute("{ x | $c <= x}");
+$ans = OneOf($setans, $alt); -->
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("[$c,inf)");
+</pg-code>
+</setup>
+<statement>
+  <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+<exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+
+$a=random(1,5,1);
+$b=random(6,10,1);
+$left = Compute("$a");
+$comp = ">";
+$right = Compute("x-$b");
+
+$c = $a+$b;
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+
+<!-- $setans = Compute("{ x | x < $c}"); -->
+$ans = Compute("{ x | $c > x}");
+<!-- $ans = OneOf($setans, $alt); -->
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("(-inf,$c)");
+</pg-code>
+</setup>
+<statement>
+  <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+<exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+
+$a=random(2,5,1);
+$c=list_random((2,3,4));
+$b=$a*$c;
+$left = Compute("$a*x");
+$comp = "\leq";
+$right = Compute("$b");
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+
+<!-- $setans = Compute("{ x | x <= $c}"); -->
+$ans = Compute("{ x | $c >= x}");
+<!-- $ans = OneOf($setans, $alt); -->
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("(-inf,$c]");
+</pg-code>
+</setup>
+<statement>
+  <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+<exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Fraction");
+Context()->flags->set(
+    formatStudentAnswer => 'parsed',
+    reduceConstants => 0
+);
+
+$num=random(1,10,1);
+$den=random(2,10,1);
+while (gcd($den,$num)!=1) {$den=random(1,10,1);}
+$c=Fraction($num,$den);
+
+$left = Compute("$den*x");
+$comp = ">";
+$right = Compute("$num");
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+Context()->flags->set(
+    formatStudentAnswer => 'parsed',
+    showExtraParens => 0,
+    reduceConstants => 0
+);
+
+$ans = Compute("{ x | x > $c}");
+<!-- $alt = Compute("{ x | $c < x}");
+$ans = OneOf($setans, $alt); -->
+$ansLatexString="\left\{ x \mid x > ".$c->TeX."\right\}";
+
+Context("Interval");
+Context()->flags->set(
+    formatStudentAnswer => 'parsed',
+    reduceConstants => 0
+);
+$intans = Interval("($c,inf)");
+$intansLatexString = "\left(".$c->TeX.",\infty\right)";
+</pg-code>
+</setup>
+<statement>
+  <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+<exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+
+$a=random(2,5,1);
+$c=list_random((2,3,4));
+$b=$a*$c;
+$left = Compute("-$a*x");
+$comp = "\geq";
+$right = Compute("$b");
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+Context()->flags->set(formatStudentAnswer=>'parsed');
+
+<!-- $setans = Compute("{ x | x <= -$c}"); -->
+$ans = Compute("{ x | -$c >= x}");
+<!-- $ans = OneOf($setans, $alt); -->
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("(-inf,-$c]");
+</pg-code>
+</setup>
+<statement>
+  <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+<exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+
+$a=random(2,5,1);
+$c=list_random((2,3,4));
+$b=$a*$c;
+$left = Compute("$b");
+$comp = "\geq";
+$right = Compute("-$a*x");
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+Context()->flags->set(formatStudentAnswer=>'parsed');
+
+$ans = Compute("{ x | x >= -$c}");
+<!-- $alt = Compute("{ x | -$c <= x}");
+$ans = OneOf($setans, $alt); -->
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("[-$c,inf)");
+</pg-code>
+</setup>
+<statement>
+  <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+<exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+
+$b=random(2,10,1);
+$left = Compute("$b");
+$comp = "\lt";
+$right = Compute("-x");
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+Context()->flags->set(formatStudentAnswer=>'parsed');
+
+<!-- $setans = Compute("{ x | x < -$b}"); -->
+$ans = Compute("{ x | -$b > x}");
+<!-- $ans = OneOf($setans, $alt); -->
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("(-inf,-$b)");
+</pg-code>
+</setup>
+<statement>
+  <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+<exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+
+$b=random(2,10,1);
+$left = Compute("-x");
+$comp = "\leq";
+$right = Compute("$b");
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+Context()->flags->set(formatStudentAnswer=>'parsed');
+
+$ans = Compute("{ x | x >= -$b}");
+<!-- $alt = Compute("{ x | -$b <= x}");
+$ans = OneOf($setans, $alt); -->
+
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("[-$b,inf)");
+</pg-code>
+</setup>
+<statement>
+  <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+<exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Fraction");
+
+$num=random(1,10,1);
+$den=random(2,10,1);
+while (gcd($num,$den)!=1) {$den=random(2,10,1);}
+$frac = Fraction($num,$den);
+
+$a=$num*list_random((1,2,3,4));
+$left = Compute("-$a");
+$comp = "\lt";
+$right = Compute("$frac*x");
+$b=$a/$num*$den;
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+Context()->flags->set(formatStudentAnswer=>'parsed');
+
+$ans = Compute("{ x | x > -$b}");
+<!-- $alt = Compute("{ x | -$b < x}");
+$ans = OneOf($setans, $alt); -->
+
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("(-$b,inf)");
+</pg-code>
+</setup>
+<statement>
+  <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise>
+<exercise>
+        <webwork>
+          <setup>
+            <pg-code>
+Context("Numeric");
+
+$a=random(2,5,1);
+$c=list_random((2,3,4));
+$b=$a*$c;
+$left = Compute("$a*x");
+$comp = ">";
+$right = Compute("-$b");
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+Context()->flags->set(formatStudentAnswer=>'parsed');
+
+$ans = Compute("{ x | x > -$c}");
+<!-- $alt = Compute("{ x | -$c < x}");
+$ans = OneOf($setans, $alt); -->
+
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("(-$c,inf)");
+</pg-code>
+</setup>
+<statement>
+  <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+  </statement>
+  <solution>
+
+    <p>In set-builder notation, the solution set is <var name="$ans"/>.</p>
+
+    <p>In interval notation, the solution set is <var name="$intans"/>.</p>  
+</solution>
+</webwork>
+</exercise> 
+    </exercisegroup>
+
     <exercisegroup cols="2" permid="yha">
       <exercise permid="mCC">
-        <webwork source="BasicMath/Percent/MTH20PercentApplicationType1_120.pg" />
+        <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentApplicationType1_120.pg" />
       </exercise>
       <exercise permid="SJL">
-        <webwork source="BasicMath/Percent/MTH20PercentApplicationType1_120.pg" />
+        <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentApplicationType1_120.pg" />
       </exercise>
       <exercise permid="yQU">
-        <webwork source="BasicMath/Percent/MTH20PercentApplicationType2_120.pg" />
+        <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentApplicationType2_120.pg" />
       </exercise>
       <exercise permid="eYd">
-        <webwork source="BasicMath/Percent/MTH20PercentApplicationType2_120.pg" />
+        <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentApplicationType2_120.pg" />
       </exercise>
       <exercise permid="Lfm">
-        <webwork source="BasicMath/Percent/MTH20PercentApplicationType3_110.pg" />
+        <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentApplicationType3_110.pg" />
       </exercise>
       <exercise permid="rmv">
-        <webwork source="BasicMath/Percent/MTH20PercentApplicationType3_110.pg" />
+        <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentApplicationType3_110.pg" />
       </exercise>
       <exercise permid="XtE">
-        <webwork source="BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease50.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease50.pg" />
       </exercise>
       <exercise permid="DAN">
-        <webwork source="BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease50.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease50.pg" />
       </exercise>
       <exercise permid="jHW">
-        <webwork source="BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease70.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease70.pg" />
       </exercise>
       <exercise permid="PPf">
-        <webwork source="BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease70.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease70.pg" />
       </exercise>
       <exercise permid="vWo">
-        <webwork source="BasicAlgebra/LinearEquationApplications/ModelingWithEquation20.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithEquation20.pg" />
       </exercise>
       <exercise permid="cdx">
-        <webwork source="BasicAlgebra/LinearEquationApplications/ModelingWithEquation20.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithEquation20.pg" />
       </exercise>
       <exercise permid="IkG">
-        <webwork source="BasicAlgebra/LinearEquationApplications/ModelingWithEquation90.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithEquation90.pg" />
       </exercise>
       <exercise permid="orP">
-        <webwork source="BasicAlgebra/LinearEquationApplications/ModelingWithEquation90.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithEquation90.pg" />
       </exercise>
       <exercise permid="UyY">
-        <webwork source="BasicAlgebra/LinearEquationApplications/ModelingWithEquation130.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithEquation130.pg" />
       </exercise>
       <exercise permid="AGh">
-        <webwork source="BasicAlgebra/LinearEquationApplications/ModelingWithEquation130.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithEquation130.pg" />
       </exercise>
     </exercisegroup>
     <exercisegroup cols="3" permid="eoj">
       <exercise permid="gNq">
-        <webwork source="BasicAlgebra/AlgebraicProperties/CommutativePropertyAddition20.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/AlgebraicProperties/CommutativePropertyAddition20.pg" />
       </exercise>
       <exercise permid="MUz">
-        <webwork source="BasicAlgebra/AlgebraicProperties/CommutativePropertyAddition20.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/AlgebraicProperties/CommutativePropertyAddition20.pg" />
       </exercise>
       <exercise permid="tbI">
-        <webwork source="BasicAlgebra/AlgebraicProperties/AssociativePropertyMultiplication10.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/AlgebraicProperties/AssociativePropertyMultiplication10.pg" />
       </exercise>
       <exercise permid="ZiR">
-        <webwork source="BasicAlgebra/AlgebraicProperties/AssociativePropertyMultiplication10.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/AlgebraicProperties/AssociativePropertyMultiplication10.pg" />
       </exercise>
       <exercise permid="Fqa">
-        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty10.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/AlgebraicProperties/DistributiveProperty10.pg" />
       </exercise>
       <exercise permid="lxj">
-        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty10.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/AlgebraicProperties/DistributiveProperty10.pg" />
       </exercise>
       <exercise permid="REs">
-        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty40.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/AlgebraicProperties/DistributiveProperty40.pg" />
       </exercise>
       <exercise permid="xLB">
-        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty40.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/AlgebraicProperties/DistributiveProperty40.pg" />
       </exercise>
       <exercise permid="dSK">
-        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty50.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/AlgebraicProperties/DistributiveProperty50.pg" />
       </exercise>
       <exercise permid="JZT">
-        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty50.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/AlgebraicProperties/DistributiveProperty50.pg" />
       </exercise>
     </exercisegroup>
   </exercises>
