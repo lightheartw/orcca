@@ -993,51 +993,51 @@ $p=random(12,22,1);
 </exercise> -->
 <!-- <webwork-placeholder/>
 <exercise>
-<webwork  source="BasicAlgebra/LinearInequalities/CompoundInequalityBasics10.pg" />
+<webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/CompoundInequalityBasics10.pg" />
 </exercise>
 <webwork-placeholder/>
 <exercise>
-<webwork  source="BasicAlgebra/LinearInequalities/CompoundInequalityBasics20.pg" />
+<webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/CompoundInequalityBasics20.pg" />
 </exercise>
 <webwork-placeholder/>
 <exercise>
-<webwork  source="BasicAlgebra/LinearInequalities/CompoundInequalityBasics30.pg" />
+<webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/CompoundInequalityBasics30.pg" />
 </exercise>
 <webwork-placeholder/>
 <exercise>
-<webwork  source="BasicAlgebra/LinearInequalities/CompoundInequalityBasics40.pg" />
+<webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/CompoundInequalityBasics40.pg" />
 </exercise>
 <webwork-placeholder/>
 <exercise>
-<webwork  source="BasicAlgebra/LinearInequalities/CompoundInequalityBasics50.pg" />
+<webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/CompoundInequalityBasics50.pg" />
 </exercise>
 <webwork-placeholder/>
 <exercise>
-<webwork  source="BasicAlgebra/LinearInequalities/CompoundInequalityBasics60.pg" />
+<webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/CompoundInequalityBasics60.pg" />
 </exercise> -->
     <exercise permid="Kqx">
-      <webwork  source="BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation10.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation10.pg" />
     </exercise>
     <exercise permid="qxG">
-      <webwork  source="BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation10.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation10.pg" />
     </exercise>
     <exercise permid="WEP">
-      <webwork  source="BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation20.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation20.pg" />
     </exercise>
     <exercise permid="CLY">
-      <webwork  source="BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation20.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation20.pg" />
     </exercise>
     <exercise permid="iTh">
-      <webwork  source="BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation30.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation30.pg" />
     </exercise>
     <exercise permid="Paq">
-      <webwork  source="BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation30.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation30.pg" />
     </exercise>
     <exercise permid="vhz">
-      <webwork  source="BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation40.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation40.pg" />
     </exercise>
     <exercise permid="boI">
-      <webwork  source="BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation40.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation40.pg" />
     </exercise>
     </exercisegroup>
     <exercisegroup cols="2" permid="TYE">
@@ -1047,70 +1047,70 @@ $p=random(12,22,1);
       </p>
     </introduction>
     <exercise permid="HvR">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation10.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation10.pg" />
     </exercise>
     <exercise permid="nDa">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation10.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation10.pg" />
     </exercise>
     <exercise permid="TKj">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation20.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation20.pg" />
     </exercise>
     <exercise permid="zRs">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation20.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation20.pg" />
     </exercise>
     <exercise permid="fYB">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation30.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation30.pg" />
     </exercise>
     <exercise permid="MfK">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation30.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation30.pg" />
     </exercise>
     <exercise permid="smT">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation40.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation40.pg" />
     </exercise>
     <exercise permid="Yuc">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation40.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation40.pg" />
     </exercise>
     <exercise permid="EBl">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation50.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation50.pg" />
     </exercise>
     <exercise permid="kIu">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation50.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation50.pg" />
     </exercise>
     <exercise permid="QPD">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation60.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation60.pg" />
     </exercise>
     <exercise permid="wWM">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation60.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation60.pg" />
     </exercise>
     <exercise permid="ddV">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation70.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation70.pg" />
     </exercise>
     <exercise permid="Jle">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation70.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation70.pg" />
     </exercise>
     <exercise permid="psn">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation80.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation80.pg" />
     </exercise>
     <exercise permid="Vzw">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation80.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation80.pg" />
     </exercise>
     <exercise permid="BGF">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation90.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation90.pg" />
     </exercise>
     <exercise permid="hNO">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation90.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation90.pg" />
     </exercise>
     <exercise permid="NUX">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation100.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation100.pg" />
     </exercise>
     <exercise permid="ucg">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation100.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation100.pg" />
     </exercise>
     <exercise permid="ajp">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation110.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation110.pg" />
     </exercise>
     <exercise permid="Gqy">
-      <webwork  source="BasicAlgebra/LinearInequalities/IntervalNotation120.pg" />
+      <webwork  source="Contrib/PCC/BasicAlgebra/LinearInequalities/IntervalNotation120.pg" />
     </exercise>
   </exercises>
 </section>
