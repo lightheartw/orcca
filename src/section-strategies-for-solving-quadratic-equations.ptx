@@ -30,6 +30,12 @@
                 <xref ref="fact-square-root-property">Property</xref>.
               </p>
             </li>
+            <li>
+              <p>
+                If the quadratic equation can be written as a squared expression equal to a constant, as in <m>\left(x-3)\right^2=25</m>, we can also use the square root property,
+                <xref ref="fact-square-root-property">Property</xref>.
+              </p>
+            </li>
             <li permid="uox">
               <p permid="mJY">
                 If we can easily factor the polynomial, as in <m>x^2-4x-12=0</m>,
