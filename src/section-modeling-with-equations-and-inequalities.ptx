@@ -579,11 +579,12 @@ $triangle->lb( new Label(1,13,'h','black','right','middle','large'));
           Given that we want to know when this amount exceeds
           <quantity>
             <mag>275</mag><unit base="gallon"/>
-          </quantity>, we set this equation up as:
+          </quantity>, we write this inequality as:
           <me permid="BrK">
             700t >275
           </me>
         </p>
+        <p>Note that we were only asked to write the inequality to represent the given scenario. So this inequality is our answer. If we were asked to find the time it takes the tank to overflow with sand, then we would use the skills taught in <xref ref="section-solving-one-step-inequalities">Section</xref> to solve the inequality, which would help us determine that answer.</p>
       </solution>
     </example>
   </subsection>
