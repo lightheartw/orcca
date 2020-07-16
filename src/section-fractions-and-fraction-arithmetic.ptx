@@ -1359,10 +1359,16 @@ $ev=$flour->cmp(correct_ans_latex_string => "\frac{13}{24}\text{ cup}");
 
     <exercise>
       <webwork>
+        <pg-code>
+          Context("LimitedFraction");
+          Context()->flags->set(formatStudentAnswer=>"parsed");
+          $ans1=Fraction(-3,2);
+          $ans2=Fraction(49,15);
+        </pg-code>
           <statement>
             <p>
               Here are some practice exercises involving multiplication and division with mixed numbers.
-              The expectation is that readers can make these calculations here without a calculator. Note: Enter each answer as a reduced improper fraction.</p>
+              The expectation is that readers can make these calculations here without a calculator.</p>
               <p>
               <ol label="a." cols="2">
                 <li>
@@ -1370,7 +1376,7 @@ $ev=$flour->cmp(correct_ans_latex_string => "\frac{13}{24}\text{ cup}");
                     Divide: <m>3\,\frac{3}{4}\div-2\,\frac{1}{2}</m>.
                   </p>
                   <p>
-                    <var name="-3/2" width="10" />
+                    <var name="$ans1" width="10" />
                   </p>
                 </li>
                 <li>
@@ -1378,7 +1384,7 @@ $ev=$flour->cmp(correct_ans_latex_string => "\frac{13}{24}\text{ cup}");
                     Multiply: <m>-1\frac{2}{5}\cdot-2\frac{1}{3}</m>.
                   </p>
                   <p>
-                    <var name="49/15" width="10" />
+                    <var name="$ans2" width="10" />
                   </p>
                 </li>
               </ol>
@@ -1394,7 +1400,9 @@ $ev=$flour->cmp(correct_ans_latex_string => "\frac{13}{24}\text{ cup}");
 
                     <md>
                       <mrow>3\,\frac{3}{4}\div-2\,\frac{1}{2}\amp=\frac{15}{4}\div-\frac{5}{2}</mrow>
-                      <mrow>\amp=-\frac{3}{2}</mrow></md>.
+                      <mrow>\amp=-\frac{3}{2}</mrow>
+                      <mrow>\amp=-1\,\frac{1}{2}</mrow>
+                    </md>.
                   </p>
                 </li>
                 <li>
@@ -1404,7 +1412,9 @@ $ev=$flour->cmp(correct_ans_latex_string => "\frac{13}{24}\text{ cup}");
 
                        <md>
                         <mrow>-1\frac{2}{5}\cdot-2\frac{1}{3}\amp=-\frac{7}{5}\cdot-\frac{7}{3}</mrow>
-                        <mrow>\amp=\frac{49}{15}</mrow></md>.
+                        <mrow>\amp=\frac{49}{15}</mrow>
+                        <mrow>\amp=3\,\frac{4}{15}</mrow>
+                      </md>.
                   </p>
                 </li>
               </ol>
@@ -1443,28 +1453,235 @@ $ev=$flour->cmp(correct_ans_latex_string => "\frac{13}{24}\text{ cup}");
       </solution>
 </example>
 
+<exercise>
+      <webwork>
+        <pg-code>
+          Context("LimitedFraction");
+          Context()->flags->set(formatStudentAnswer=>"parsed");
+          $ans1=Fraction(23,4);
+          $ans2=Fraction(46,5);
+        </pg-code>
+          <statement>
+            <p>
+              Here are some practice exercises involving addition with mixed numbers, where the fractions have common denominators.
+              The expectation is that readers can make these calculations here without a calculator.</p>
+              <p>
+              <ol label="a." cols="2">
+                <li>
+                  <p>
+                    Add: <m>3\,\frac{1}{8}+2\,\frac{5}{8}</m>.
+                  </p>
+                  <p>
+                    <var name="$ans1" width="10" />
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Add: <m>2\,\frac{3}{10}+6\,\frac{9}{10}</m>.
+                  </p>
+                  <p>
+                    <var name="$ans2" width="10" />
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution><p>
+            <ol label="a.">
+
+            <li><p>First, we add the whole numbers: <m>3+2=5</m>. Then, we add the fractions: <m>\frac{1}{8}+\frac{5}{8}=\frac{6}{8}</m>.</p>
+
+            <p>The last step is to simplify, which means we need to reduce the fraction, if possible.</p>
+
+            <p>The simplification step, including the whole number, can be shown as follows:
+
+              <me>5\,\frac{6}{8}=5\,\frac{3}{4}</me>.
+            </p>
+
+            <p>Therefore, <m>3\,\frac{1}{8}+2\,\frac{5}{8}=5\,\frac{3}{4}</m>.</p></li>
+
+            <li><p>First, we add the whole numbers: <m>2+6=8</m>. Then, we add the fractions: <m>\frac{3}{10}+\frac{9}{10}=\frac{12}{10}</m>.</p>
+
+            <p>The last step is to simplify, which means we need to reduce the fraction, if possible. However, it also means that if the fraction turns out to be improper, we must convert it to a mixed number and then combine the whole number part to the result of adding the original whole numbers.</p>
+
+            <p>The simplification steps, including the whole numbers, can be shown as follows:
+
+          <md>
+            <mrow>8\,\frac{12}{10}\amp=8\,\frac{6}{5}</mrow>
+            <mrow>\amp=8+1\,\frac{1}{5}</mrow>
+            <mrow>\amp=9\,\frac{1}{5}</mrow></md>.
+          </p>
+
+            <p>Therefore, <m>2\,\frac{3}{10}+6\,\frac{9}{10}=9\,\frac{1}{5}</m>.</p></li>
+          </ol></p>
+
+      </solution>
+    </webwork>
+  </exercise>
+
+
+
 <p>To subtract mixed numbers with a common denominator:
   <ol label="1.">
     <li><p>It's usually easiest to rewrite the problem in vertical form.</p></li>
     <li><p>Compare the two fractions. If the top fraction is larger than the bottom fraction, then skip the next step and go on to the third step. Otherwise, borrow <m>1</m> from the whole number in the top mixed number and add it to the fraction part, making it an improper fraction part.</p></li>
+    <li><p>Subtract the bottom fraction from the new top fraction.</p></li>
     <li><p>Subtract the whole numbers.</p></li>
-    <li><p>Subtract the fractions.</p></li>i>
   </ol>
     <li><p>Simplify, if possible.</p></li>
 </p>
 
-<!-- <example>
+<example>
   <statement><p>Subtract: <m>8\,\frac{2}{7}-3\,\frac{4}{7}</m>.</p></statement>
-  <solution><p>We'll start by writing the problem in vertical form:</p>
-  <sidebyside valign="bottom">
-    <stack><p>
-      <m>\amp 8\,\frac{2}{7}
-        - \amp 3 \amp \frac{4}{7}\\ \hline{} \amp \amp \phantom{3} \amp \phantom{3} \end{array}</m>
-    </p></stack>
-    <stack><p><m>\divideunder{-\amp 3\,\frac{4}{7}}{}</m></p></stack>
-  </sidebyside>
+  <solution><p>We'll start by writing the problem in vertical form:
+  
+      <me>\begin{array}{r}
+      8{\textstyle{2 \over 7}}\\
+      \underline { - 3{\textstyle{4 \over 7}}} 
+      \end{array}</me>
+    </p>
+
+    <p>Notice that the top fraction is smaller than the bottom fraction. This means that we will need to borrow <m>1</m> from the top whole number, <m>8</m>, and add it to the top fraction, making it an improper fraction. Then, we subtract the bottom fraction from the new top fraction, as well subtract the whole numbers, as shown below:</p>
+
+<sidebyside>
+    <p><me>\underline{ \begin{array}{r}
+      7 + 1 + {\textstyle{2 \over 7}}\\
+      - 3{\textstyle{4 \over 7}}
+      \end{array} }
+      </me>
+    </p>
+    <p><me>\underline{ \begin{array}{r}
+      7 + {\textstyle{7 \over 7}} + {\textstyle{2 \over 7}}\\
+      - 3{\textstyle{4 \over 7}}
+      \end{array} }
+      </me>
+    </p>
+    <p><me>\begin{array}{r}
+        7{\textstyle{9 \over 7}}\\
+        \underline { - 3{\textstyle{4 \over 7}}} \\
+        4{\textstyle{5 \over 7}}
+       \end{array}
+        </me>
+    </p>
+  </sidebyside> 
+
+  <p>Since the fraction is already finished, we are finished. Therefore, <m>8\,\frac{2}{7}-3\,\frac{4}{7}=4\,\frac{5}{7}</m>.</p>
+
   </solution>
-</example> -->
+</example>
+
+<exercise>
+      <webwork>
+        <pg-code>
+          Context("LimitedFraction");
+          Context()->flags->set(formatStudentAnswer=>"parsed");
+          $ans=Fraction(34,9);
+          
+        </pg-code>
+          <statement>
+              <p>Subtract: <m>12\,\frac{2}{9}-8\,\frac{4}{9}</m>.
+                  </p>
+                  <p>
+                    <var name="$ans" width="10" />
+                  </p>
+          </statement>
+          <solution><p>We start by writing the problem in vertical form:
+  
+      <me>\begin{array}{r}
+      12{\textstyle{2 \over 9}}\\
+      \underline { - 8{\textstyle{4 \over 9}}} 
+      \end{array}</me>
+    </p>
+
+    <p>Notice that the top fraction is smaller than the bottom fraction. This means that we will need to borrow <m>1</m> from the top whole number, <m>12</m>, and add it to the top fraction, making it an improper fraction. Then, we subtract the bottom fraction from the new top fraction, as well subtract the whole numbers, as shown below:</p>
+
+
+    <p><me>\underline{ \begin{array}{r}
+      11 + 1 + {\textstyle{2 \over 9}}\\
+      - 8{\textstyle{4 \over 9}}
+      \end{array} }
+      </me>
+    </p>
+    <p>Now we have,</p>
+    <p><me>\underline{ \begin{array}{r}
+      11 + {\textstyle{9 \over 9}} + {\textstyle{2 \over 9}}\\
+      - 8{\textstyle{4 \over 9}}
+      \end{array} }
+      </me>
+    </p>
+    <p>Finally, we can subtract,</p>
+    <p><me>\begin{array}{r}
+        11{\textstyle{11 \over 9}}\\
+        \underline { - 8{\textstyle{4 \over 9}}} \\
+        3{\textstyle{7 \over 9}}
+       \end{array}
+        </me>
+    </p>
+   
+
+  <p>Since the fraction is already reduced, we are finished. Therefore, <m>12\,\frac{2}{9}-8\,\frac{4}{9}=3\,\frac{7}{9}</m>.</p>
+  </solution>
+  </webwork>
+  </exercise> 
+
+  <p>To add or subtract mixed numbers that have fraction parts with different denominators, here is one approach:
+  <ol label="1.">
+  <li><p>Convert each mixed number to an improper fraction.</p></li>
+  <li><p>Find the least common denominator.</p></li>
+  <li><p>Rewrite the fractions as equivalent fractions that use this common denominator.</p></li>
+  <li><p>Add or subtract the new fractions by adding or subtracting the two numerators to obtain the numerator of the result and keeping the common denominator as the denominator of the result.</p></li>
+  <li><p>Simplify, if possible, including rewriting the result as a mixed number whenever appropriate.</p></li>
+  </ol></p>
+
+  <example>
+    <statement><p>Here are some examples involving addition or subtraction of mixed numbers with different denominators:
+      <ol label="a." cols="2" >
+          <li>
+            <p>
+              <md><mrow>3\,\frac{1}{2}+5\,\frac{2}{3}\amp=\frac{7}{2}+\frac{17}{3}</mrow>
+              <mrow>\amp=\multiplyleft{\frac{3}{3}}\frac{7}{2}+\frac{17}{3}\multiplyright{\frac{2}{2}}</mrow>
+              <mrow>\amp=\frac{21}{6}+\frac{34}{6}</mrow>
+              <mrow>\amp=\frac{55}{6}</mrow>
+              <mrow>\amp=9\,\frac{1}{6}</mrow> 
+              </md>
+            </p>
+          </li>
+          <li>
+            <p>
+              <md><mrow>2\,\frac{5}{6}-5\,\frac{3}{4}\amp=\frac{17}{6}-\frac{23}{4}</mrow>
+              <mrow>\amp=\multiplyleft{\frac{2}{2}}\frac{17}{6}-\frac{23}{4}\multiplyright{\frac{3}{3}}</mrow>
+              <mrow>\amp=\frac{34}{12}-\frac{69}{12}</mrow>
+              <mrow>\amp=-\frac{35}{12}</mrow>
+              <mrow>\amp=-2\,\frac{11}{12}</mrow> 
+              </md>
+            </p>
+          </li>
+          <li>
+            <p>
+              <md><mrow>-4\,\frac{1}{9}-7\,\frac{2}{3}\amp=-\frac{37}{9}-\frac{23}{3}</mrow>
+              <mrow>\amp=-\frac{37}{9}-\frac{23}{3}\multiplyright{\frac{3}{3}}</mrow>
+              <mrow>\amp=-\frac{37}{9}-\frac{69}{9}</mrow>
+              <mrow>\amp=-\frac{106}{9}</mrow>
+              <mrow>\amp=-11\,\frac{7}{9}</mrow> 
+              </md>
+            </p>
+          </li>
+          <li>
+            <p>
+              <md><mrow>-8\,\frac{1}{5}+2\,\frac{2}{7}\amp=-\frac{41}{5}+\frac{16}{7}</mrow>
+              <mrow>\amp=\multiplyleft{\frac{7}{7}}-\frac{41}{5}+\frac{16}{7}\multiplyright{\frac{5}{5}}</mrow>
+              <mrow>\amp=-\frac{287}{35}+\frac{80}{35}</mrow>
+              <mrow>\amp=-\frac{207}{35}</mrow>
+              <mrow>\amp=-5\,\frac{32}{35}</mrow> 
+              </md>
+            </p>
+          </li>
+        </ol>  
+        </p>
+        </statement>
+        </example>     
+
+
   </subsection>
 
   <exercises permid="Ixk">
@@ -1697,12 +1914,7 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
 <exercise>
 <webwork source="Contrib/PCC/BasicMath/FractionsCalculation/DivideFractions42.pg"  />
 </exercise> -->
-      <exercise permid="PGk">
-        <webwork source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MixedNumberMultiplication10.pg"  />
-      </exercise>
-      <exercise permid="vNt">
-        <webwork source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MixedNumberMultiplication10.pg"  />
-      </exercise>
+      
 <!--             <exercise>
 <webwork source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MixedNumberDivision10.pg"  />
 </exercise>
@@ -1909,6 +2121,35 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
 <webwork source="Contrib/PCC/BasicMath/FractionsCalculation/FractionSubtractionEstimation30.pg"  />
 </exercise>
 </exercisegroup> -->
+  <exercisegroup cols="2">
+    <title>Operations with Mixed Numbers</title>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MixedNumberMultiplication10.pg"  />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MixedNumberMultiplication10.pg"  />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MixedNumberDivision10.pg"  />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MixedNumberDivision10.pg"  />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicMath/FractionsCalculation/MixedNumberAddition90.pg"  />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicMath/FractionsCalculation/MixedNumberAddition120.pg"  />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicMath/FractionsCalculation/MixedNumberSubtraction170.pg"  />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicMath/FractionsCalculation/MixedNumberSubtraction140.pg"  />
+      </exercise>
+    </exercisegroup>
+      
+
     <exercisegroup permid="lJN">
       <title>Applications</title>
       <exercise permid="oSO">
