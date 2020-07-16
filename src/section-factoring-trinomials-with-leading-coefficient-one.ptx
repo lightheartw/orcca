@@ -454,6 +454,74 @@ $answer = Formula("(m+4)(m-10)");
           </solution>
       </webwork>
     </exercise>
+
+    <p>Note that in all of the examples so far, we eventually found the sum we wanted. However, this won't always be the case. If the trinomial has no GCF and, after listing every possible factor pair, we do not find the sum we need, then the trinomial cannot be factored. Thus, we say the trinomial is <term>prime</term><idx><h>prime polynomial</h></idx>
+    <idx><h>polynomial</h><h>prime</h></idx>.</p>
+
+    <example>
+      <statement>
+          <p>
+          Factor <m>x^2+3x-16</m>.
+          </p>
+      </statement>
+      <solution>
+        <p>
+          We need a pair of numbers that multiply to <m>-16</m> and add to <m>3</m>.
+          Note that we <em>do</em> care to keep track that they multiply to a negative product.
+        </p>
+        <sidebyside widths="47% 47%">
+          <tabular>
+            <col right="minor" />
+            <col />
+            <row bottom="minor">
+              <cell>Factor Pair</cell>
+              <cell>Sum of the Pair</cell>
+            </row>
+            <row>
+              <cell><m>1\cdot(-16)</m></cell>
+              <cell><m>-15</m></cell>
+            </row>
+            <row>
+              <cell><m>2\cdot(-8)</m></cell>
+              <cell><m>-6</m></cell>
+            </row>
+            <row>
+              <cell><m>4\cdot(-4)</m></cell>
+              <cell><m>0</m></cell>
+            </row>
+          </tabular>
+          <tabular permid="GHX">
+            <col right="minor" />
+            <col />
+            <row bottom="minor">
+              <cell>Factor Pair</cell>
+              <cell>Sum of the Pair</cell>
+            </row>
+            <row>
+              <cell><m>-1\cdot16</m></cell>
+              <cell><m>15</m></cell>
+            </row>
+            <row>
+              <cell><m>-2\cdot8</m></cell>
+              <cell><m>6</m></cell>
+            </row>
+            <row>
+              <cell><m>-4\cdot4</m></cell>
+              <cell><m>0</m></cell>
+            </row>
+          </tabular>
+        </sidebyside>
+        <p> Note that we listed every possible factor pair of <m>-16</m>, but none of these pairs gave a sum of <m>3</m>.
+          Therefore, we conclude that <m>x^2+3x-16</m> is prime.  
+        </p>
+      </solution>
+    </example>
+    <exercise permid="BQN">
+        <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring355.pg" seed="3" />
+      </exercise>
+        
+
+
   </subsection>
   <subsection permid="XUq">
     <title>Connection to Grouping</title>
@@ -1077,6 +1145,7 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
       <exercise permid="byQ">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring175.pg" />
       </exercise>
+      
       <exercise permid="HFZ">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring180.pg" />
       </exercise>
@@ -1143,6 +1212,7 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
       <exercise permid="GAG">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring520.pg" />
       </exercise>
+
       <exercise permid="mHP">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring520.pg" />
       </exercise>
@@ -1161,6 +1231,7 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
       <exercise permid="rrI">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring525.pg" />
       </exercise>
+      
 <!-- One variable, GCF -->
       <exercise permid="XyR">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring380.pg" />
@@ -1272,12 +1343,12 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
       <exercise permid="EpU">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring375.pg" />
       </exercise>
-      <exercise permid="kxd">
+      <!-- <exercise permid="kxd">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring405.pg" />
       </exercise>
       <exercise permid="QEm">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring405.pg" />
-      </exercise>
+      </exercise> -->
       <exercise permid="wLv">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring410.pg" />
       </exercise>
