@@ -400,12 +400,65 @@
       <exercise permid="WtH">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/InequalityWordProblem10.pg" />
       </exercise>
-      <exercise permid="CAQ">
+      <exercise>
+        <webwork>
+          <pg-code>
+            $a =  random(11,20,1);
+            $b = random(27,33,1);
+            $c = random(45,52,1);
+            $ans = ($c-$b)/$a*100;
+
+            Context("Interval");
+            Context()->flags->set(ignoreEndpointTypes => 1);
+            Context()->flags->set(tolType=>absolute);
+            Context()->flags->set(tolerance=>0.5);
+          </pg-code>
+
+          <statement>
+            <p>A car rental company offers the following two plans for renting a car.</p>
+
+            <p>Plan A: <var name="$b"/> per day and <var name="$a"/> cents per mile</p>
+
+            <p>Plan B: <var name="$c"/> per day with free unlimited mileage</p>
+
+            <p>How many miles must one drive in order to justify choosing Plan B for a one-day rental? <var name="$ans" width="10"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            $a =  random(11,20,1);
+            $b = random(27,33,1);
+            $c = random(45,52,1);
+            $ans = ($c-$b)/$a*100;
+
+            Context("Interval");
+            Context()->flags->set(ignoreEndpointTypes => 1);
+            Context()->flags->set(tolType=>absolute);
+            Context()->flags->set(tolerance=>0.5);
+          </pg-code>
+
+          <statement>
+            <p>A car rental company offers the following two plans for renting a car.</p>
+
+            <p>Plan A: <var name="$b"/> per day and <var name="$a"/> cents per mile</p>
+
+            <p>Plan B: <var name="$c"/> per day with free unlimited mileage</p>
+
+            <p>How many miles must one drive in order to justify choosing Plan B for a one-day rental? <var name="$ans" width="10"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+
+      <!-- <exercise permid="CAQ">
         <webwork source="Contrib/PCC/Math95/LinearInequalities/LinearInequalities8.pg" />
       </exercise>
       <exercise permid="iHZ">
-        <webwork source="Contrib/PCC/Math95/LinearInequalities/LinearInequalities8.pg" />
-      </exercise>
+        <webwork source="Contrib/PCC/Math95/LinearInequalities/LinearInequalities8.pg" /> 
+      </exercise> -->
       <exercise permid="OPi">
         <webwork source="Contrib/PCC/Math95/LinearInequalities/LinearInequalities9.pg" />
       </exercise>

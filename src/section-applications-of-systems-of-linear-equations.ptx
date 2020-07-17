@@ -2820,9 +2820,41 @@ return $return;
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplicationBySubstitution20.pg" />
       </exercise>
 
-      <exercise permid="ZqV">
-        <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplication80.pg" />
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Currency");
+
+            $minutes = random(200,300,10);
+
+            $rRateA = random(2,5,1)/100;
+            $cRateA = Currency($rRateA);
+
+            $rRateB = random(6,10,1)/100;
+            $cRateB = Currency($rRateB);
+
+            $rFlatB = random(20,40,5);
+            $cFlatB = Currency($rFlatB);
+
+            $rFlatA = $rFlatB + ($rRateB-$rRateA)*$minutes;
+            $cFlatA = Currency($rFlatA);
+
+            $rSameBill = $rRateA*$minutes+$rFlatA;
+            $cSameBill = Currency($rSameBill);
+          </pg-code>
+          <statement>
+            <p>Phone Company A charges a monthly fee of <var name="$cFlatA" />", and <var name="$cRateA" /> for each minute of talk time. Phone Company B charges a monthly fee of <var name="$cFlatB" />", and <var name="$cRateB" /> for each minute of talk time. Write and solve a system equation to answer the following question.</p>
+
+            <p>These two companies would charge the same amount on a monthly bill when the talk time was <var name="$minutes" width="10" /> minutes.</p>
+          </statement>
+        </webwork>
       </exercise>
+
+      <!-- <exercise permid="ZqV">
+        <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplication80.pg" />
+      </exercise> -->
+
+
 
       <exercise permid="Fye">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplication90.pg" />
@@ -2843,10 +2875,39 @@ return $return;
       <exercise permid="eaO">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplication70.pg" />
       </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Currency");
 
-      <exercise permid="KhX">
-        <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplication80.pg" />
+            $minutes = random(200,300,10);
+
+            $rRateA = random(2,5,1)/100;
+            $cRateA = Currency($rRateA);
+
+            $rRateB = random(6,10,1)/100;
+            $cRateB = Currency($rRateB);
+
+            $rFlatB = random(20,40,5);
+            $cFlatB = Currency($rFlatB);
+
+            $rFlatA = $rFlatB + ($rRateB-$rRateA)*$minutes;
+            $cFlatA = Currency($rFlatA);
+
+            $rSameBill = $rRateA*$minutes+$rFlatA;
+            $cSameBill = Currency($rSameBill);
+          </pg-code>
+          <statement>
+            <p>Phone Company A charges a monthly fee of <var name="$cFlatA" />", and <var name="$cRateA" /> for each minute of talk time. Phone Company B charges a monthly fee of <var name="$cFlatB" />", and <var name="$cRateB" /> for each minute of talk time. Write and solve a system equation to answer the following question.</p>
+
+            <p>These two companies would charge the same amount on a monthly bill when the talk time was <var name="$minutes" width="10" /> minutes.</p>
+          </statement>
+        </webwork>
       </exercise>
+
+      <!-- <exercise permid="KhX">
+        <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplication80.pg" />
+      </exercise> -->
 
       <exercise permid="qpg">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplication90.pg" />
@@ -2856,7 +2917,7 @@ return $return;
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/systemsWord0.pg" />
       </exercise>
 <!-- Geometry applications -->
-      2
+      
       <exercise permid="CDy">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplicationBySubstitution05.pg" />
       </exercise>
@@ -2888,17 +2949,106 @@ return $return;
         </webwork>
       </exercise>
 
-      <exercise permid="uYZ">
-        <webwork source="Library/Mizzou/Intermediate_Algebra/Word_Problems/Comp_Supp_Angles_Solve.pg" />
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+            @timearray = ("twice", "three times", "four times", "five times", "six times", "seven times", "eight times", "nine times", "ten times", "eleven times", "twelve times");
+            for ($i = 0; $i&lt; random(10,50,1); $i++) { # more random???
+              $c1 = random(0,1,1); # 0 - complement, 1 - supplement
+              $c2 = random(0,1,1); # 0 - increased, 2 - decreased;
+            }
+            do {
+              $c0 = random(0,scalar(@timearray)-1,1);
+              $a = random(20,70,5);
+              $word1 = ($c1 == 0) ? "complement" : "supplement";
+              $word2 = ($c2 == 0) ? "more than" : "less than";
+              $word3 = $word1."ary";
+              $times = $timearray[$c0];
+              $compsup = ($c1 == 0) ? 90 : 180;
+              $decinc = ($c2 == 0) ? $a : -$a;
+              $ang1 = ($compsup - $decinc)/($c0+2 + 1);
+              $ang2 = $compsup - $ang1;
+              $ans = List($ang1,$ang2);
+            } until (floor($ang1) == $ang1);
+            Context()->texStrings;
+          </pg-code>
+          <statement>
+            <p>One angle is <m><var name="$a"/>^{\circ}</m> <var name="$word2"/> <var name="$times"/> its <var name="$word1"/>. The measures, in degrees, of the two <var name="$word3"/> angles are <var name="$ang1" width="5"/> and <var name="$ang1" width="5"/>.</p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+            @timearray = ("twice", "three times", "four times", "five times", "six times", "seven times", "eight times", "nine times", "ten times", "eleven times", "twelve times");
+            for ($i = 0; $i&lt; random(10,50,1); $i++) { # more random???
+              $c1 = random(0,1,1); # 0 - complement, 1 - supplement
+              $c2 = random(0,1,1); # 0 - increased, 2 - decreased;
+            }
+            do {
+              $c0 = random(0,scalar(@timearray)-1,1);
+              $a = random(20,70,5);
+              $word1 = ($c1 == 0) ? "complement" : "supplement";
+              $word2 = "more than";
+              $word3 = $word1."ary";
+              $times = $timearray[$c0];
+              $compsup = ($c1 == 0) ? 90 : 180;
+              $decinc = ($c2 == 0) ? $a : -$a;
+              $ang1 = ($compsup - $decinc)/($c0+2 + 1);
+              $ang2 = $compsup - $ang1;
+              $ans = List($ang1,$ang2);
+            } until (floor($ang1) == $ang1);
+            Context()->texStrings;
+          </pg-code>
+          <statement>
+            <p>One angle is <m><var name="$a"/>^{\circ}</m> <var name="$word2"/> <var name="$times"/> its <var name="$word1"/>. The measures, in degrees, of the two <var name="$word3"/> angles are <var name="$ang1" width="5"/> and <var name="$ang1" width="5"/>.</p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+            @timearray = ("twice", "three times", "four times", "five times", "six times", "seven times", "eight times", "nine times", "ten times", "eleven times", "twelve times");
+            for ($i = 0; $i&lt; random(10,50,1); $i++) { # more random???
+              $c1 = random(0,1,1); # 0 - complement, 1 - supplement
+              $c2 = random(0,1,1); # 0 - increased, 2 - decreased;
+            }
+            do {
+              $c0 = random(0,scalar(@timearray)-1,1);
+              $a = random(20,70,5);
+              $word1 = ($c1 == 0) ? "complement" : "supplement";
+              $word2 = ($c2 == 0) ? "more than" : "less than";
+              $word3 = $word1."ary";
+              $times = $timearray[$c0];
+              $compsup = ($c1 == 0) ? 90 : 180;
+              $decinc = ($c2 == 0) ? $a : -$a;
+              $ang1 = ($compsup - $decinc)/($c0+2 + 1);
+              $ang2 = $compsup - $ang1;
+              $ans = List($ang1,$ang2);
+            } until (floor($ang1) == $ang1);
+            Context()->texStrings;
+          </pg-code>
+          <statement>
+            <p>One angle is <m><var name="$a"/>^{\circ}</m> <var name="$word2"/> <var name="$times"/> its <var name="$word1"/>. The measures, in degrees, of the two <var name="$word3"/> angles are <var name="$ang1" width="5"/> and <var name="$ang1" width="5"/>.</p>
+          </statement>
+        </webwork>
       </exercise>
 
-      <exercise permid="bgi">
-        <webwork source="Library/Mizzou/Intermediate_Algebra/Word_Problems/Comp_Supp_Angles_Solve.pg" />
-      </exercise>
 
-      <exercise permid="Hnr">
+      <!-- <exercise permid="uYZ">
         <webwork source="Library/Mizzou/Intermediate_Algebra/Word_Problems/Comp_Supp_Angles_Solve.pg" />
-      </exercise>
+      </exercise> -->
+
+      <!-- <exercise permid="bgi">
+        <webwork source="Library/Mizzou/Intermediate_Algebra/Word_Problems/Comp_Supp_Angles_Solve.pg" />
+      </exercise> -->
+
+      <!-- <exercise permid="Hnr">
+        <webwork source="Library/Mizzou/Intermediate_Algebra/Word_Problems/Comp_Supp_Angles_Solve.pg" />
+      </exercise> -->
 <!-- Uniform Motion -->
 
       <exercise permid="nuA">
@@ -2906,7 +3056,7 @@ return $return;
       </exercise>
 
       <exercise permid="TBJ">
-        <webwork source="Library/PCC/Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplication100.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplication100.pg" />
       </exercise>
 
       <exercise permid="zIS">
