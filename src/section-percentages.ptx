@@ -574,40 +574,63 @@ x tick label style={rotate=45,anchor=east},
         </p>
       </solution>
     </example>
-    <exercise permid="jRJ">
+
+    <exercise>
       <webwork>
-          <pg-macros><macro-file>contextCurrency.pl</macro-file></pg-macros>
-          <setup>
-<pg-code>
-Context("Currency");
-$cost=Currency(4.80);
-</pg-code>
-          </setup>
-          <statement>
-            <p permid="wuw">
-              Last month, a full tank of gas for a car you drive cost you <m>\$40.00</m>.
-              You hear on the news that gas prices have risen by <m>12\%</m>.
-              By how much, in dollars, has the cost of a full tank gone up?
-            </p>
-            <p permid="cBF">
-              A full tank of gas now costs <var name="$cost" width="10" /> more than it did last month.
-            </p>
-          </statement>
-          <solution permid="xVo">
-            <p permid="JOh">
-              Let <m>x</m> represent the amount of increase.
-              We can set up and solve the equation:
-              <md permid="vpd">
-                <mrow>\pinover{0.12}{12\%}\pinover{\cdot}{of}\pinover{40}{old\ cost}\amp\pinover{=}{is}\pinover{x}{how\ much}</mrow>
-                <mrow>4.8\amp=x</mrow>
-              </md>
-            </p>
-            <p permid="pVq">
-              A full tank now costs <m>\$4.80</m> more than it did last month.
-            </p>
-          </solution>
+        <pg-code>
+          Context("Numeric");
+
+          $new = random(5001,9999,1);
+          $decrease = $new+random(5001,8999,1);
+          $original = $new+$decrease;
+          $ansP = $decrease/$original*100;
+          $ansShow = sprintf("%.2f",$ansP);
+
+          Context("LimitedPercent-strict");
+          Context()->flags->set(
+            noExtraDecimals => 0,
+            trimTrailingZeros => 1,
+            decimalPlaces => 4,
+            tolerance => .005,
+          );
+          $ans = Compute("$ansP %");
+          $s1 = $new/$original;
+          $s2 = sprintf("%.2f", $s1*100);
+
+          $connector = '=';
+          if (round($ans->value)!=($ans->value)) {
+            $connector = '\approx';
+          };
+        </pg-code>
+        <statement>
+          <p>In a particular town, an Internet service provider used to have <var name="$original"/> dial-up customers about 3 years ago. Now it has <var name="$new"/> dial-up customers. What is the total percent decrease in the number of dial-up customers in this town?</p>
+
+          <p>The total percent decrease is <var name="$ans" width="10"/>.</p>
+        </statement>
+        <solution>
+          <p>To calculate the percentage decrease, first we find the amount of decrease by doing a simple subtraction calculation, and then we find the percentage decrease.</p>
+
+          <p>In this problem, the amount of decrease is <m><var name="$original"/> - <var name="$new"/> = <var name="$decrease"/></m>.</p>
+
+          <p>Since there were initially <var name="$original"/> dial-up customers, we need to ask: <var name="$decrease"/> is what percent of <var name="$original"/>?</p>
+
+          <p>Let the decrease <var name="$decrease"/> be <m>x</m> (as a percent) of <var name="$original"/>. That means:
+
+            <md>
+              <mrow><var name="$decrease"/> \amp= x \cdot <var name="$original"/></mrow>
+              <mrow>\frac{<var name="$decrease"/>}{<var name="$new"/>} \amp= \frac{x \cdot <var name="$original"/>}{<var name="$original"/>}</mrow>
+              <mrow>\frac{<var name="$ansP"/>}{100} \amp= x</mrow>
+              <mrow>x \amp=<var name="$ansShow"/> \% </mrow>
+            </md>
+          </p>
+
+          <p>There has been a <var name="$ansShow"/>% decrease in dial-up customers in the town over this three-year period.</p>
+        </solution>
       </webwork>
     </exercise>
+
+   
+    
     <example permid="zaH">
       <statement>
         <p permid="LDu">
@@ -643,6 +666,40 @@ $cost=Currency(4.80);
         </p>
       </solution>
     </example>
+    <exercise permid="jRJ">
+      <webwork>
+          <pg-macros><macro-file>contextCurrency.pl</macro-file></pg-macros>
+          <setup>
+<pg-code>
+Context("Currency");
+$cost=Currency(4.80);
+</pg-code>
+          </setup>
+          <statement>
+            <p permid="wuw">
+              Last month, a full tank of gas for a car you drive cost you <m>\$40.00</m>.
+              You hear on the news that gas prices have risen by <m>12\%</m>.
+              By how much, in dollars, has the cost of a full tank gone up?
+            </p>
+            <p permid="cBF">
+              A full tank of gas now costs <var name="$cost" width="10" /> more than it did last month.
+            </p>
+          </statement>
+          <solution permid="xVo">
+            <p permid="JOh">
+              Let <m>x</m> represent the amount of increase.
+              We can set up and solve the equation:
+              <md permid="vpd">
+                <mrow>\pinover{0.12}{12\%}\pinover{\cdot}{of}\pinover{40}{old\ cost}\amp\pinover{=}{is}\pinover{x}{how\ much}</mrow>
+                <mrow>4.8\amp=x</mrow>
+              </md>
+            </p>
+            <p permid="pVq">
+              A full tank now costs <m>\$4.80</m> more than it did last month.
+            </p>
+          </solution>
+      </webwork>
+    </exercise>
   </subsection>
   <newpage/>
   <exercises permid="PKx">

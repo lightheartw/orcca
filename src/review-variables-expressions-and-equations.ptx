@@ -1866,31 +1866,64 @@ $intans = Compute("(-$c,inf)");
       <exercise permid="DAN">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease50.pg" />
       </exercise>
-      <exercise permid="jHW">
+      <exercise permid="BVn">
+        <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentIncreaseDecrease95.pg" />
+      </exercise>
+      <exercise permid="BVn">
+        <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentIncreaseDecrease95.pg" />
+      </exercise>
+      <exercise permid="icw">
+        <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentIncreaseDecrease130.pg" />
+      </exercise>
+      <exercise permid="icw">
+        <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentIncreaseDecrease130.pg" />
+      </exercise>
+      <!-- <exercise permid="jHW">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease70.pg" />
       </exercise>
       <exercise permid="PPf">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease70.pg" />
-      </exercise>
+      </exercise> -->
       <exercise permid="vWo">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithEquation20.pg" />
       </exercise>
       <exercise permid="cdx">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithEquation20.pg" />
       </exercise>
-      <exercise permid="IkG">
+      <!-- <exercise permid="IkG">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithEquation90.pg" />
       </exercise>
       <exercise permid="orP">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithEquation90.pg" />
+      </exercise> -->
+      <exercise permid="ebx">
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithInequality130.pg" />
       </exercise>
-      <exercise permid="UyY">
-        <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithEquation130.pg" />
+      <exercise permid="KiG">
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithInequality130.pg" />
+    </exercisegroup>
+    <exercisegroup cols="3">
+      <title>Translating English Phrases into Math Expressions and Equations</title>
+      <exercise permid="pkw">
+        <webwork source="Contrib/PCC/BasicAlgebra/EnglishToMath/englishToMath80.pg" />
       </exercise>
-      <exercise permid="AGh">
-        <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithEquation130.pg" />
+      <exercise permid="VrF">
+        <webwork source="Contrib/PCC/BasicAlgebra/EnglishToMath/englishToMath82.pg" />
+      </exercise>
+       <exercise permid="yEi">
+        <webwork source="Contrib/PCC/BasicAlgebra/EnglishToMath/englishToMath110.pg" />
+      </exercise>
+      <exercise permid="eLr">
+        <webwork source="Contrib/PCC/BasicAlgebra/EnglishToMath/englishToMath120.pg" />
+      </exercise>
+      <exercise permid="Umm">
+        <webwork source="Contrib/PCC/BasicAlgebra/EnglishToMath/englishToMath170.pg" />
+      </exercise>
+      <exercise permid="Atv">
+        <webwork source="Contrib/PCC/BasicAlgebra/EnglishToMath/englishToMath180.pg" />
       </exercise>
     </exercisegroup>
+
     <exercisegroup cols="3" permid="eoj">
       <exercise permid="gNq">
         <webwork source="Contrib/PCC/BasicAlgebra/AlgebraicProperties/CommutativePropertyAddition20.pg" />
