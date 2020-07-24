@@ -413,8 +413,9 @@ $refreshCachedImages=1;
       what is that person's age?
       There's no way to know for sure.
       <em>Maybe</em> they are <m>18</m>, but maybe they are older.
-      It's helpful to use a variable <m>a</m> to represent age
-      (in years)
+      When we want to represent an unknown or changing numerical quantity, we use a <term>variable</term>
+          <idx><h>variable</h></idx>
+      to do so.  For example, it's helpful to use a variable, in this case the letter <m>a</m>, to represent age (in years)
       and then to visualize the possibilities with a number line,
       as in <xref ref="figure-voters-age">Figure</xref>.
     </p>
@@ -442,6 +443,8 @@ minor xtick={-5,-4,...,35},
       For now, that just means a collection of certain numbers.
       In this case, it's all the numbers <m>18</m> and above.
     </p>
+
+     
     <p permid="GTf">
       The number line in <xref ref="figure-voters-age">Figure</xref> is a <em>graphical</em>
       representation of a collection of certain numbers.
@@ -455,7 +458,7 @@ minor xtick={-5,-4,...,35},
       <idx><h>set-builder notation</h></idx>
       <statement>
         <p permid="WxC">
-          Set-builder notation attempts to directly say the condition that numbers in the interval satisfy.
+          Set-builder notation attempts to directly say the condition that numbers in the interval satisfy, where a variable, usually <m>x</m> is used to represent an arbitrary number in the interval.
           In general, we write set-builder notation like:
           <me permid="XRq">
             \left\{x\mid\text{condition on }x\right\}
