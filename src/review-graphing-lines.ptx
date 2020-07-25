@@ -68,7 +68,7 @@
           <caption>Making a table for <m>y=-2x+5</m></caption>
           <sidebyside margins="0%" permid="GIb">
             <table permid="Xzi">
-              <caption>Set up the table</caption>
+              <title>Set up the table</title>
               <tabular valign="top" bottom="minor" permid="PUJ">
                 <col halign="right" right="minor"/>
                 <col halign="right" right="minor"/>
@@ -106,7 +106,7 @@
               </tabular>
             </table>
             <table permid="DGr">
-              <caption>Complete the table</caption>
+              <title>Complete the table</title>
               <tabular valign="top" bottom="minor" permid="wbS">
                 <col halign="right" right="minor"/>
                 <col halign="right" right="minor"/>
@@ -227,7 +227,7 @@ minor ytick=,]
             <m>y=\ldots</m> suggested by the pattern in the table.
           </p>
           <table permid="jNA">
-            <caption>A table of linear data.</caption>
+            <title>A table of linear data.</title>
             <tabular permid="cjb">
               <row bottom="medium">
                 <cell><m>x</m></cell>
@@ -953,7 +953,7 @@ minor ytick={-9,-8,...,9}]
       </exercise>
       <exercise permid="Qxm">
         <webwork>
-            <setup>
+           
 <pg-code>
 @px=map{($_==0)?8:$_-8}(NchooseK(16,4));
 @py=map{($_==0)?8:$_-8}(NchooseK(16,4));
@@ -982,13 +982,13 @@ elsif ($px[$i]>0 and $py[$i]&lt;0) {$gr->lb(new Label($px[$i]+0.3,$py[$i]-0.3,$A
 Context("Point");
 @ans=map{Compute("($px[$_],$py[$_])")}(0..3);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="ILJ">
                 Locate each point in the graph:
               </p>
               <sidebyside widths="40%" permid="zzb">
-                <image permid="fdH" pg-name="$gr"/>
+                <image permid="fdH" source="$gr"/>
               </sidebyside>
               <p permid="oSS">
                 Write each point's position as an ordered pair, like <m>(1,2)</m>.
@@ -1016,7 +1016,7 @@ Context("Point");
       </exercise>
       <exercise permid="ISN">
         <webwork seed="10">
-            <setup>
+            
 <pg-code>
 @x=(0..3);
 $m = random(2,5,1);
@@ -1027,7 +1027,7 @@ Context("Numeric")->variables->add(y=>'Real');
 parser::Assignment->Allow;
 $eq=Formula("y=$f")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Vab">
                 Write an equation in the form
@@ -1124,7 +1124,7 @@ $eq=Formula("y=$f")->reduce;
       </exercise>
       <exercise permid="oZW">
         <webwork seed="11">
-            <setup>
+            
 <pg-code>
 @x=(0..3);
 $m = random(-5,-2,1);
@@ -1136,7 +1136,7 @@ Context("Numeric")->variables->add(y=>'Real');
 parser::Assignment->Allow;
 $eq=Formula("y=$f")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="hot">
                 Write an equation in the form

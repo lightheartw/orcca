@@ -22,7 +22,7 @@
   </p>
   <sidebyside widths="38% 56%" margins="0%" permid="GXf">
     <table xml:id="table-check-points-for-line" permid="vHc">
-      <caption />
+      <title></title>
       <tabular permid="aIS">
         <col halign="center" />
         <col halign="center" />
@@ -130,14 +130,14 @@
   </remark>
   <exercise permid="wya">
     <webwork>
-        <setup>
+        
 <pg-code>
 Context()->variables->add(y=>'Real');
 $y=-5;
 $f=Compute("-2(4)+3");
 $truefalse=PopUp(['?','true','false'],'true');
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="wcB">
             The point <m>(4,-5)</m> is on the graph in <xref ref="figure-graph-line-full">Figure</xref>.
@@ -168,7 +168,7 @@ $truefalse=PopUp(['?','true','false'],'true');
   </exercise>
   <exercise permid="cFj">
     <webwork>
-        <setup>
+        
 <pg-code>
 Context()->variables->add(y=>'Real');
 @y=(-2,-7);
@@ -179,7 +179,7 @@ $f=Compute("-(3/5)x+1");
 @truefalse=(PopUp(['?','true','false'],1),PopUp(['?','true','false'],2));
 @shaded=(PopUp(['?','part of','not part of'],1),PopUp(['?','part of','not part of'],2));
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="IqT">
             Decide whether <m>(5,-2)</m> and
@@ -272,7 +272,7 @@ $f=Compute("-(3/5)x+1");
       <caption>Making a table for <m>y=-2x+5</m></caption>
       <sidebyside widths="37% 37%" margins="10%" permid="LGY">
         <table permid="bOl">
-          <caption>Set up the table</caption>
+          <title>Set up the table</title>
           <tabular valign="top" bottom="minor" permid="zlC">
             <col halign="right" right="minor"/>
             <col halign="right" right="minor"/>
@@ -310,7 +310,7 @@ $f=Compute("-(3/5)x+1");
           </tabular>
         </table>
         <table permid="HVu">
-          <caption>Complete the table</caption>
+          <title>Complete the table</title>
           <tabular valign="top" bottom="minor" permid="fsL">
             <col halign="right" right="minor"/>
             <col halign="right" right="minor"/>
@@ -448,7 +448,7 @@ minor ytick=,]
       </p>
       <sidebyside widths="37% 37%" margins="10%" permid="XVq">
         <table permid="ocD">
-          <caption>Make the table</caption>
+          <title>Make the table</title>
           <tabular valign="top" bottom="minor" permid="LzU">
             <col halign="right" right="minor"/>
             <col halign="center" right="minor"/>
@@ -556,7 +556,7 @@ axis line style={->}]
         <caption>Making a table for <m>y=\frac{4}{3}x-4</m></caption>
         <sidebyside widths="37% 37%" margins="10%" permid="Ecz">
           <table permid="UjM">
-            <caption>Set up the table</caption>
+            <title>Set up the table</title>
             <tabular valign="top" bottom="minor" permid="rHd">
               <col halign="right" right="minor"/>
               <col halign="right" right="minor"/>
@@ -594,7 +594,7 @@ axis line style={->}]
             </tabular>
           </table>
           <table permid="AqV">
-            <caption>Complete the table</caption>
+            <title>Complete the table</title>
             <tabular valign="top" bottom="minor" permid="XOm">
               <col halign="right" right="minor"/>
               <col halign="right" right="minor"/>
@@ -892,7 +892,7 @@ minor ytick={-2,-1,...,10},]
           </p>
           <sidebyside margins="0%" permid="hKB">
             <table permid="gye">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="kcE">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -982,7 +982,7 @@ axis line style={->}]
           </p>
           <sidebyside margins="0%" permid="NRK">
             <table permid="MFn">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="QjN">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -1076,7 +1076,7 @@ axis line style={->}]
         <answer permid="tDu">
           <sidebyside margins="0%" permid="tYT">
             <table permid="sMw">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="wqW">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -1159,7 +1159,7 @@ axis line style={->}]
         <answer permid="ZKD">
           <sidebyside margins="0%" permid="agc">
             <table permid="YTF">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="cyf">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -1238,7 +1238,7 @@ axis line style={->}]
         <answer permid="FRM">
           <sidebyside widths="47% 47%" margins="0%" permid="ePV">
             <table permid="FaO">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="IFo">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -1299,7 +1299,7 @@ axis line style={->}]
         <answer permid="lYV">
           <sidebyside widths="47% 47%" margins="0%" permid="KXe">
             <table permid="lhX">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="oMx">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -1360,7 +1360,7 @@ axis line style={->}]
         <answer permid="Sge">
           <sidebyside widths="47% 47%" margins="0%" permid="ren">
             <table permid="Rpg">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="UTG">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -1421,7 +1421,7 @@ axis line style={->}]
         <answer permid="ynn">
           <sidebyside widths="47% 47%" margins="0%" permid="Xlw">
             <table permid="xwp">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="BaP">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -1482,7 +1482,7 @@ axis line style={->}]
         <answer permid="euw">
           <sidebyside widths="47% 47%" margins="0%" permid="DsF">
             <table permid="dDy">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="hhY">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -1543,7 +1543,7 @@ axis line style={->}]
         <answer permid="KBF">
           <sidebyside widths="47% 47%" margins="0%" permid="jzO">
             <table permid="JKH">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="Nph">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -1594,7 +1594,7 @@ axis line style={->}]
         <answer permid="qIO">
           <sidebyside widths="47% 47%" margins="0%" permid="PGX">
             <table permid="pRQ">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="twq">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -1645,7 +1645,7 @@ axis line style={->}]
         <answer permid="WPX">
           <sidebyside widths="47% 47%" margins="0%" permid="vOg">
             <table permid="VYZ">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="ZDz">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -1696,7 +1696,7 @@ axis line style={->}]
         <answer permid="CXg">
           <sidebyside widths="47% 47%" margins="0%" permid="bVp">
             <table permid="Cgi">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="FKI">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -1758,7 +1758,7 @@ axis line style={->}]
         <answer permid="jep">
           <sidebyside widths="47% 47%" margins="0%" permid="Icy">
             <table permid="inr">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="lRR">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -1819,7 +1819,7 @@ axis line style={->}]
         <answer permid="Ply">
           <sidebyside widths="47% 47%" margins="0%" permid="ojH">
             <table permid="OuA">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="RZa">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>
@@ -1880,7 +1880,7 @@ axis line style={->}]
         <answer permid="vsH">
           <sidebyside widths="47% 47%" margins="0%" permid="UqQ">
             <table permid="uBJ">
-              <caption>A possible table</caption>
+              <title>A possible table</title>
               <tabular valign="top" bottom="minor" permid="ygj">
                 <col halign="right" right="minor"/>
                 <col halign="center" right="minor"/>

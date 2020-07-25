@@ -84,13 +84,13 @@
         </p>
       </introduction>
       <webwork>
-          <setup>
+          
 <pg-code>
 $b=50;
 Context("Point");
 $yi=Point("(0,50)");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="uHw">
               What was the value of <m>b</m> in the plot of Yara's savings?
@@ -141,7 +141,7 @@ $yi=Point("(0,50)");
     </definition>
     <exercise permid="SHq">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context()->noreduce('(-x)+y','(-x)-y');
 Context()->flags->set(reduceConstants=>0);
@@ -156,7 +156,7 @@ $f[6]=Formula("3");
 Context("Point");
 @yi=map{Compute("(0,$_)")}(@b);
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="Tkg">
               What are the slope and <m>y</m>-intercept for each of the following line equations?
@@ -439,7 +439,7 @@ minor ytick={-3,-2,...,11}]
     </example>
     <exercise permid="yOz">
       <webwork>
-          <setup>
+          
 <pg-code>
 @x=(3,6,8,11);
 @y=(-2,-8,-12,-18);
@@ -470,7 +470,7 @@ if $ans->{ans_message} eq "The left side of an assignment must be a variable or 
 return $ans;
 });
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="zrp">
               Decide whether data in the table has a linear relationship.
@@ -873,7 +873,7 @@ minor ytick={-10,-9,...,20}]
     </p>
     <exercise permid="opu">
       <webwork >
-      <setup>
+      
 <pg-code>
 for my $i(0,1){
 $gr[$i]=init_graph(-2,-2,8,10,axes=>[0,0],grid=>[10,12],size=>[240,240]);
@@ -917,13 +917,13 @@ if $ans->{ans_message} eq "The left side of an assignment must be a variable or 
 return $ans;
 });
 </pg-code>
-      </setup>
+      
       <statement>
         <p permid="rMQ">
           Use the graph to write an equation of the line in slope-intercept form.
         </p>
         <sidebyside widths="40%" permid="PMK">
-          <image permid="lCf" pg-name="$gr[0]" />
+          <image permid="lCf" source="$gr[0]" />
         </sidebyside>
         <p permid="XTZ">
           <var name="$eq" evaluator="$ev" width="20"/>
@@ -937,7 +937,7 @@ return $ans;
           the slope will be the same.
         </p>
         <sidebyside widths="40%" permid="vTT">
-          <image pg-name="$gr[1]" />
+          <image source="$gr[1]" />
         </sidebyside>
         <p permid="nyw">
           Using the slope triangle, we can calculate the line's slope:
@@ -960,7 +960,7 @@ return $ans;
     </exercise>
     <exercise permid="UwD">
       <webwork>
-          <setup>
+          
 <pg-code>
 %x=(OIT=>9000,OSU=>10107,PSU=>8034,UO=>10289,WOU=>9368,EOU=>7764,SOU=>8145);
 %y=(OIT=>50100,OSU=>46400,PSU=>42800,UO=>41600,WOU=>38500,EOU=>37800,SOU=>37300);
@@ -1008,14 +1008,14 @@ if $ans->{ans_message} eq "The left side of an assignment must be a variable or 
 return $ans;
 });
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="Ebi">
               There are seven public four-year colleges in Oregon.
               The graph plots the annual in-state tuition for each school on the <m>x</m>-axis and the median income of former students ten years after first enrolling on the <m>y</m>-axis.
             </p>
             <sidebyside widths="40%" permid="cbc">
-              <image pg-name="$gr[0]" />
+              <image source="$gr[0]" />
             </sidebyside>
             <p permid="kir">
               Write an equation for this line in slope-intercept form.
@@ -1030,7 +1030,7 @@ return $ans;
               We go with <m>(0,27500)</m> and <m>(8000,41000)</m>.
             </p>
             <sidebyside widths="40%" permid="Iil">
-              <image pg-name="$gr[1]" />
+              <image source="$gr[1]" />
             </sidebyside>
             <p permid="Mbg">
               <me permid="pCe">
@@ -1176,7 +1176,7 @@ return $ans;
 </example> -->
     <exercise permid="sZn">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context()->operators->set(
 '+'=>{class=>'bizarro::BOP::add',isCommand=>1},
@@ -1203,7 +1203,7 @@ if $ans->{ans_message} eq "The left side of an assignment must be a variable or 
 return $ans;
 });
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="wwJ">
               Find the slope-intercept form of the equation of the line that passes through the points <m>(-3,150)</m> and <m>(0,30)</m>.
@@ -1239,7 +1239,7 @@ return $ans;
     </exercise>
     <exercise permid="Zgw">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context()->operators->set(
 '+'=>{class=>'bizarro::BOP::add',isCommand=>1},
@@ -1267,7 +1267,7 @@ if $ans->{ans_message} eq "The left side of an assignment must be a variable or 
 return $ans;
 });
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="ILb">
               Find the slope-intercept form of the equation of the line that passes through the points
@@ -1392,12 +1392,12 @@ return $ans;
     </example>
     <exercise permid="luO">
       <webwork>
-          <setup>
+          
 <pg-code>
 $p = 1950;
 $t = 40;
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="UZt">
               In a certain wildlife reservation in Africa,
@@ -2030,7 +2030,7 @@ $t = 40;
         <webwork source="Contrib/PCC/BasicAlgebra/SlopeAndY-InterceptCalculations/WriteEquationByGraph40.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="fMG">
       <title>Writing a Slope-Intercept Equation Given Two Points</title>
       <exercise permid="ZBV">

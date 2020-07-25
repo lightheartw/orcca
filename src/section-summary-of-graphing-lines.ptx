@@ -99,7 +99,7 @@
       </p>
       <sidebyside widths="40% 34%" margins="10%" permid="Qsn">
         <table permid="MVe">
-          <caption>Table for <m>y=-2x+1</m></caption>
+          <title>Table for <m>y=-2x+1</m></title>
           <tabular permid="lxO">
             <col halign="center"/>
             <col halign="left"/>
@@ -154,7 +154,7 @@ ymin=-6,ymax=6]
         </figure>
       </sidebyside>
     </example>
-    <newpage/>
+    <!-- <newpage/> -->
     <example permid="EdV">
       <title>Using Slope Triangles</title>
       <p permid="Ylh">
@@ -418,7 +418,7 @@ ymin=-6,ymax=6]
       </p>
       <sidebyside widths="42% 37%" margins="5%" permid="ZLZ">
         <table permid="tcn">
-          <caption>Intercepts of <m>3x+4y=12</m></caption>
+          <title>Intercepts of <m>3x+4y=12</m></title>
           <tabular permid="xMg">
             <col halign="left"/>
             <col halign="center"/>
@@ -586,7 +586,7 @@ ymin=-1,ymax=6]
     </p>
     <sidebyside margins="0%" permid="mar">
       <table permid="Zjw">
-        <caption>Table of Data for <m>y=2</m></caption>
+        <title>Table of Data for <m>y=2</m></title>
         <tabular permid="dTp">
           <col halign="center"/>
           <col halign="center"/>
@@ -609,7 +609,7 @@ ymin=-1,ymax=6]
         </tabular>
       </table>
       <table permid="FqF">
-        <caption>Table of Data for <m>x=-3</m></caption>
+        <title>Table of Data for <m>x=-3</m></title>
         <tabular permid="Kay">
           <col halign="center"/>
           <col halign="center"/>

@@ -196,7 +196,7 @@
         We can also consider Yara's savings using a table.
       </p>
       <table xml:id="table-yaras-savings" permid="YpL">
-        <caption>Yara's savings</caption>
+        <title>Yara's savings</title>
         <tabular permid="EwU">
           <col halign="center"/>
           <col halign="center"/>
@@ -463,7 +463,7 @@ ytick=]
     </exercise>
     <exercise permid="Mix">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("Fraction");
 $slope = Fraction(3,4);
@@ -488,7 +488,7 @@ $gr->moveTo(0,2-$pixel);
 $gr->lineTo(4+$pixel,2-$pixel,'red',1);
 $gr->arrowTo(4+$pixel,5,'red',1);
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="pJv">
               Make a table and plot the equation <m>y=\frac{3}{4}x+2</m>,
@@ -560,7 +560,7 @@ $gr->arrowTo(4+$pixel,5,'red',1);
               This table lets us plot the graph and identify a slope triangle that is easy to work with.
             </p>
             <sidebyside widths="40%" permid="TMW">
-              <image permid="CHH" pg-name="$gr" />
+              <image permid="CHH" source="$gr" />
             </sidebyside>
             <p permid="iAv">
               Since the slope triangle runs <m>4</m> units and then rises <m>3</m> units,
@@ -723,7 +723,7 @@ ytick={0,5,...,15}]
     <exercise xml:id="exercise-jogging-on-mt-hood" permid="wZz">
       <title>Jogging on Mt.<nbsp/>Hood</title>
       <webwork>
-          <setup>
+          
 <pg-code>
 @s=(NumberWithUnits("500 ft/hr"),NumberWithUnits("0 ft/hr"),NumberWithUnits("-875 ft/hr"));
 $gr = init_graph(-3,-300,25,4000,axes=&gt;[0,0],size=&gt;[240,144]);
@@ -739,7 +739,7 @@ $gr-&gt;lineTo(7,3500,'blue',2);
 $gr-&gt;lineTo(19,3500,'blue',2);
 $gr-&gt;lineTo(23,0,'blue',2);
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="BXN">
               Kato is training for a race up the slope of Mt.<nbsp/>Hood,
@@ -749,7 +749,7 @@ $gr-&gt;lineTo(23,0,'blue',2);
               and interpret their meanings in this context.
             </p>
             <sidebyside widths="40%" permid="kLh">
-              <image pg-name="$gr" permid="bkr">
+              <image source="$gr" permid="bkr">
                 <description></description>
               </image>
             </sidebyside>
@@ -1295,7 +1295,7 @@ clip=false]
       </exercise>
       <exercise permid="yeS">
         <webwork>
-            <setup>
+            
 <pg-code>
 @x=(1999..2013);
 @y=(17599,17446,17847,17887,17559,18499,18682,19112,19376,20370,19909,19727,20636,20035,20458);
@@ -1318,14 +1318,14 @@ $gr[1]->stamps(closed_circle(2006,19000,'red'));
 $gr[1]->stamps(closed_circle(2014,21000,'red'));
 $gr[1]->moveTo(2006,19000-$ypixel);$gr[1]->lineTo(2014-$xpixel,19000-$ypixel,'red',1);$gr[1]->arrowTo(2014-$xpixel,21000,'red',1);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Omf">
                 The graph plots the number of invasive cancer diagnoses in Oregon over time,
                 and a trend-line has been drawn.
               </p>
               <sidebyside widths="40%" permid="FJr">
-                <image pg-name="$gr[0]" />
+                <image source="$gr[0]" />
               </sidebyside>
               <p permid="uto">
                 Estimate the slope of the trend-line.
@@ -1343,7 +1343,7 @@ $gr[1]->moveTo(2006,19000-$ypixel);$gr[1]->lineTo(2014-$xpixel,19000-$ypixel,'re
                 it seems <m>(2006,19000)</m> and <m>(2014,21000)</m> are two such points.
               </p>
               <sidebyside widths="40%" permid="lQA">
-                <image pg-name="$gr[1]" />
+                <image source="$gr[1]" />
               </sidebyside>
               <p permid="zyG">
                 <me permid="NgM">
@@ -1368,7 +1368,7 @@ $gr[1]->moveTo(2006,19000-$ypixel);$gr[1]->lineTo(2014-$xpixel,19000-$ypixel,'re
       <exercise permid="emb"> -->
 <!-- Kara's challenge problem -->
         <!-- <webwork seed="3">
-            <setup>
+            
 <pg-code>
 Context("Fraction");
 $fraction1 = Fraction(2,random(3,9,2));
@@ -1378,7 +1378,7 @@ $false = PopUp(['?','true','false'], 2);
 if ($fraction1 &gt; $fraction2) {$popup1 = $true;}
 else {$popup1 = $false;};
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="GHG">
                 True or False: A slope of <m><var name="$fraction1"/></m> is steeper than a slope of <m><var name="$fraction2"/></m>.
@@ -1390,7 +1390,7 @@ else {$popup1 = $false;};
       <exercise permid="Ktk"> -->
 <!-- Kara's challenge problem -->
         <!-- <webwork seed="4">
-            <setup>
+            
 <pg-code>
 Context("Fraction");
 $fraction1 = Fraction(2,random(3,9,2));
@@ -1400,7 +1400,7 @@ $false = PopUp(['?','true','false'], 2);
 if ($fraction1 &lt; $fraction2) {$popup1 = $true;}
 else {$popup1 = $false;};
 </pg-code>
-            </setup>
+           
             <statement>
               <p permid="mOP">
                 True or False: A slope of <m><var name="$fraction2"/></m> is steeper than a slope of <m><var name="$fraction1"/></m>.
