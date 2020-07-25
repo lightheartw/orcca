@@ -1286,7 +1286,7 @@ xlabel={},
         <webwork source="Contrib/PCC/BasicMath/Decimal/MultiplyDivideDecimals220.pg"  />
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="Fkj">
       <title>Applications</title>
 <!-- seeds set so that problems are dissimilar -->

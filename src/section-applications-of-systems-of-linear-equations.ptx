@@ -8,6 +8,7 @@
 <!-- *********************************************************************-->
 <section xml:id="section-applications-of-systems-of-linear-equations" permid="jQa">
   <title>Applications of Systems of Linear Equations</title>
+  
   <introduction permid="hTJ">
     <p permid="fuP">
       <xref ref="example-system-of-equations-elimination-intro">Example</xref>
@@ -17,6 +18,8 @@
       while giving you some strategies for solving these problems.
     </p>
   </introduction>
+  <subsection>
+    <title>A Strategy for Solving Applications of Systems of Linear Equations</title>
   <example xml:id="example-system-of-equations-elimination-intro" permid="VFr">
     <p permid="VcO">
       Alicia has <m>\$1000</m> to give to her two grandchildren for New Year's.
@@ -88,8 +91,9 @@
     using systems of linear equations:
   </p>
   <list xml:id="list-solve-applications-using-linear-systems" permid="BMA">
+    <title>A Problem Solving Strategy for Applications of Systems of Linear Equations</title>
     <idx><h>solving</h><h>applications</h><h>systems</h></idx>
-    <caption>A Problem Solving Strategy for Applications of Systems of Linear Equations</caption>
+    
     <dl permid="IlG">
       <li permid="osP">
         <title>Step 1: Read</title>
@@ -138,6 +142,7 @@
       </li>
     </dl>
   </list>
+</subsection>
   <subsection permid="PXj">
     <title>Translating to a System of Equations</title>
     <p permid="buQ">
@@ -308,7 +313,7 @@
     <exercise permid="Dns">
       <webwork>
           <pg-macros><macro-file>contextTypeset.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("ImplicitPlane");
 Context()->variables->are(m=>"Real",e=>"Real");
@@ -357,7 +362,7 @@ return $return;
 }
 );
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="wta">
               A test has <m>35</m> problems,
@@ -380,7 +385,7 @@ return $return;
   </subsection>
   <subsection permid="wes">
     <title>Direct Translation Applications</title>
-    <introduction permid="znt">
+   <!--  <introduction permid="znt"> -->
       <p permid="LBY">
         In the previous examples,
         we learned how to translate application problems into systems of linear equations,
@@ -389,7 +394,7 @@ return $return;
         using what we learned in <xref ref="section-substitution">Section</xref>
         and <xref ref="section-elimination">Section</xref>.
       </p>
-    </introduction>
+   <!--  </introduction> -->
     <example permid="juB">
       <p permid="TXv">
         Translate to a system of equations and then solve: Devon is 26 years older than his son Cooper.
@@ -506,7 +511,7 @@ return $return;
         </li>
       </dl></p>
     </example>
-    <newpage/>
+    <!-- <newpage/> -->
     <example permid="PBK">
       <statement>
         <p permid="LnD">
@@ -642,7 +647,7 @@ return $return;
       <webwork>
         <pg-macros><macro-file>contextNumeric.pl</macro-file>
             <macro-file>contextLimitedNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
             <pg-code>
                 Context("Numeric");
                 $worthMulti=random(2,5,1);
@@ -660,7 +665,7 @@ return $return;
                 $s3 = $worthMulti-$worthShort;
 
             </pg-code>
-            </setup>
+            
             <statement><p>A test has <var name="$totalProblems"/> problems, which are worth a total of <var name="$totalPoints"/> points. There are two types of problems in the test. Each multiple-choice problem is worth <var name="$worthMulti"/> points, and each short-answer problem is worth <var name="$worthShort"/> points.</p> 
 
             <p>Write and solve a system equation to answer the following questions.</p>
@@ -671,7 +676,7 @@ return $return;
 
             <p>It's given that there are a total of <var name="$totalProblems"/> problems, so we have:</p>
 
-                <me>x+y=<var name="$totalProblems"/></me>
+                <p aligned="middle"><m>x+y=<var name="$totalProblems"/></m></p>
 
             <p>Since each multiple-choice problem is worth <var name="$worthMulti"/> points, <m>x</m> multiple-choice problems would be worth <m><var name="$worthMulti"/>x</m> points.</p>
 
@@ -679,7 +684,7 @@ return $return;
 
             <p>It's given that all problems in the test are worth a total of <var name="$totalPoints"/> points, so we have:</p>
 
-                <me><var name="$worthMulti"/>x+<var name="$worthShort"/>y=<var name="$totalPoints"/></me>
+                <p aligned="middle"><m><var name="$worthMulti"/>x+<var name="$worthShort"/>y=<var name="$totalPoints"/></m></p>
 
             <p>Now we have a system of equations:
 
@@ -872,7 +877,7 @@ return $return;
   </subsection>
   <subsection permid="clB">
     <title>Geometry Applications</title>
-    <introduction permid="Pgl">
+    <!-- <introduction permid="Pgl"> -->
       <p permid="rJh">
         For geometry applications, you will often use a geometry formula,
         which can be found in <xref ref="section-geometry-formulas">Section</xref>,
@@ -880,7 +885,7 @@ return $return;
         Here we will also use some new geometric concepts,
         which are not found in that section.
       </p>
-    </introduction>
+    
     <definition xml:id="definition-complementary-and-supplementary-angles" permid="rIU">
       <title>Complementary and Supplementary Angles</title>
       <statement>
@@ -898,6 +903,7 @@ return $return;
         </p>
       </statement>
     </definition>
+    <!-- </introduction> -->
     <example permid="XQd">
       <p permid="DJe">
         Translate to a system of equations and then solve: The difference of two complementary angles is <m>26</m> degrees.
@@ -1018,13 +1024,13 @@ return $return;
     <exercise permid="vnu">
       <webwork>
           <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("Numeric");
 $answer1=138;
 $answer2=42;
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="oOB">
               Translate to a system of equations and then solve: Two angles are supplementary.
@@ -1229,13 +1235,13 @@ $answer2=42;
     <exercise permid="buD">
       <webwork>
           <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("Numeric");
 $answer1=26;
 $answer2=8;
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="BcT">
               Translate to a system of equations and then solve: A rectangular pool has a perimeter of 68 yards and its length is two yards longer than three times its width.
@@ -1306,7 +1312,7 @@ $answer2=8;
   <subsection permid="IsK">
     <title>Uniform Motion Applications</title>
     <idx><h>uniform motion applications</h></idx>
-    <introduction permid="zXn">
+    <!-- <introduction permid="zXn"> -->
       <p permid="XQq">
         The basic equation we use in uniform motion problems is <m>d=rt</m> where <m>d</m> is the distance traveled,
         <m>r</m> is the rate or speed at which the person or object is traveling,
@@ -1315,7 +1321,7 @@ $answer2=8;
         we will learn how to use a table to organize our information,
         which will help us to translate the situation into a system of equations.
       </p>
-    </introduction>
+    <!-- </introduction> -->
     <example xml:id="example-catch-up-driving" permid="HBM">
       <p permid="OSd">
         Translate to a system of equations and then solve: Joni left St.
@@ -1399,12 +1405,12 @@ $answer2=8;
     <exercise permid="gew">
       <webwork>
           <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("Numeric");
 $answer=1;
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="Nrl">
               Translate to a system of equations and then solve: Charlie left his mother's house traveling at an average speed of 36 miles per hour.
@@ -1634,13 +1640,13 @@ $answer=1;
     <exercise permid="MlF">
       <webwork>
           <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("Numeric");
 $answer1=7;
 $answer2=1;
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="ZFD">
               Translate to a system of equations and then solve: Jorge paddled his canoe <m>24</m> miles upstream for <m>4</m> hours.
@@ -1840,13 +1846,13 @@ $answer2=1;
     <exercise permid="ssO">
       <webwork>
           <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("Numeric");
 $answer1=408;
 $answer2=24;
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="lTV">
               Translate to a system of equations and then solve: A commercial jet can fly <m>1728</m> miles with a tailwind for <m>4</m> hours,
@@ -2038,13 +2044,13 @@ $answer2=24;
     <exercise permid="kOp">
       <webwork>
           <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("Numeric");
 $answer1=3;
 $answer2=2;
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="yin">
               Translate to a system of equations and then solve: Greta wants to make <m>5</m> pounds of a nut mix using peanuts and cashews.
@@ -2301,13 +2307,13 @@ $answer2=2;
     <exercise permid="QVy">
       <webwork>
           <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("Numeric");
 $answer1=100;
 $answer2=150;
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="KwF">
               Translate to a system of equations and then solve: Anatole needs to make <m>250</m><quantity>
@@ -2461,7 +2467,7 @@ $answer2=150;
   </subsection>
   <subsection permid="UHc">
     <title>Interest Applications</title>
-    <introduction permid="JqZ">
+    <!-- <introduction permid="JqZ"> -->
       <p permid="DXz">
         The formula to model interest applications is <m>I=Prt</m>.
         Interest earned or owed, <m>I</m>,
@@ -2476,7 +2482,7 @@ $answer2=150;
         similar to uniform motion and mixture applications,
         as you'll see in <xref ref="example-solving-system-of-equations-interest-application">Example</xref>.
       </p>
-    </introduction>
+    <!-- </introduction> -->
     <example xml:id="example-solving-system-of-equations-interest-application" permid="xcH">
       <title>Investing at Two Different Interest Rates</title>
       <p permid="Rrk">
@@ -2654,7 +2660,7 @@ $answer2=150;
     <exercise permid="pyi">
       <webwork>
         <pg-macros><macro-file>contextCurrency.pl</macro-file></pg-macros>
-        <setup>
+        
         <pg-code>
             Context("Currency");
             Context()->currency->addSymbol("dollars","dollar");
@@ -2685,7 +2691,7 @@ $answer2=150;
             $pronoun = 'she' if ($sex eq 'female');
             $name = RandomName(sex=>$sex);
         </pg-code>
-        </setup>
+        
         <statement><p><var name="$name"/> invested a total of <m><var name="$cInit"/></m> in two accounts. After a year, one account lost <var name="$p1"/>%, while the other account gained <var name="$p2"/>%. In total, <var name="$name"/> lost <m><var name="$cTotalInt"/></m>. How much money did <var name="$pronoun"/> invest in each account?</p>
 
         <p>Write and solve a system of equations to answer the following questions.</p>
@@ -2749,7 +2755,7 @@ $answer2=150;
       <exercise permid="NcD">
         <webwork>
             <pg-macros><macro-file>contextTypeset.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("ImplicitPlane");
 Context()->variables->are(p=>"Real",n=>"Real");
@@ -2797,7 +2803,7 @@ return $return;
 }
 );
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="WKX">
                 A jar of pennies and nickels has 400 coins.
@@ -2929,13 +2935,13 @@ return $return;
       <exercise permid="ORQ">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
                 <pg-code>
                 Context("Numeric");
                 $answer1=62;
                 $answer2=28;
                 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Pgy">
                 Two angles are complementary.

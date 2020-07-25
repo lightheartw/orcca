@@ -448,7 +448,7 @@
       <!-- attempted to make revisions to first two exercises with this version, but it wouldn't work: 
       <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Numeric");
 $var = RandomVariableName(type=>variable);
@@ -474,7 +474,7 @@ $s3 = $a*$s2;
 @aArray = ($ans);
 ($ansEqRef, $eqTypesRef) = contextSetup(~~@vArray,~~@aArray);
 </pg-code>
-</setup>
+
 <statement>
   <ol><li>
 <p>Evaluate <var name="$left"/> when <m><var name="$var"/>=<var name="$ans"/></m></p>.</li>
@@ -526,7 +526,7 @@ $s3 = $a*$s2;
       </exercise>
       <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Numeric");
 Context()->variables->are(y=>"Real");
@@ -553,7 +553,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("($crit,inf)");
 </pg-code>
-</setup>
+
 <statement>
   <p>Solve this inequality:
 
@@ -569,7 +569,7 @@ $intans = Compute("($crit,inf)");
 </exercise>
 <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Numeric");
 Context()->variables->are(y=>"Real");
@@ -596,7 +596,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("($crit,inf)");
 </pg-code>
-</setup>
+
 <statement>
   <p>Solve this inequality:
 
@@ -619,7 +619,7 @@ $intans = Compute("($crit,inf)");
       </exercise> -->
       <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Numeric");
 $a=random(2,5,1);
@@ -641,7 +641,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("(-inf,-$c]");
 </pg-code>
-</setup>
+
 <statement>
   <p>Solve this inequality:
 
@@ -657,7 +657,7 @@ $intans = Compute("(-inf,-$c]");
 </exercise>
 <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Numeric");
 $a=random(2,5,1);
@@ -679,7 +679,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("(-inf,-$c]");
 </pg-code>
-</setup>
+
 <statement>
   <p>Solve this inequality:
 
@@ -703,7 +703,7 @@ $intans = Compute("(-inf,-$c]");
 
       <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 
 Context("Numeric");
@@ -734,7 +734,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("(-inf,$crit)");
 </pg-code>
-</setup>
+
 <statement>
   <p>Solve this inequality:
 
@@ -750,7 +750,7 @@ $intans = Compute("(-inf,$crit)");
 </exercise>
 <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 
 Context("Numeric");
@@ -781,7 +781,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("(-inf,$crit)");
 </pg-code>
-</setup>
+
 <statement>
   <p>Solve this inequality:
 
@@ -805,7 +805,7 @@ $intans = Compute("(-inf,$crit)");
 
       <exercise>
         <webwork>
-        <setup>
+        
           <pg-code>
 Context("Numeric");
 
@@ -827,7 +827,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("[$c,inf)");
 </pg-code>
-</setup>
+
 <statement>
   <p>Solve this inequality:
 
@@ -843,7 +843,7 @@ $intans = Compute("[$c,inf)");
 </exercise>
 <exercise>
   <webwork>
-        <setup>
+        
           <pg-code>
 Context("Numeric");
 
@@ -865,7 +865,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("[$c,inf)");
 </pg-code>
-</setup>
+
 <statement>
   <p>Solve this inequality:
 

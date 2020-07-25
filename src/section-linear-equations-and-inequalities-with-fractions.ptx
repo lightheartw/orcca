@@ -351,7 +351,7 @@
         </p>
       </solution>
     </example>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercise permid="WaZ">
       <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction290.pg" />
     </exercise>
@@ -452,7 +452,7 @@
       </solution>
     </example>
   </subsection>
-  <newpage/>
+  <!-- <newpage/> -->
   <exercises permid="BjT">
     <exercisegroup cols="3" permid="hrc">
       <title>Review and Warmup</title>

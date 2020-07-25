@@ -24,8 +24,8 @@
       We will look at some examples.
     </p>
     <list xml:id="list-solve-multistep-linear-inequality" permid="fNt">
+      <title>Steps to Solve Linear Inequalities</title>
       <idx><h>solving</h><h>linear inequalities</h><h>multistep</h></idx>
-      <caption>Steps to Solve Linear Inequalities</caption>
       <dl permid="wLE">
         <li permid="cSN">
           <title>Simplify</title>
@@ -283,7 +283,7 @@
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithEquation140.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="HGi">
       <title>Solving Multistep Linear Inequalities</title>
       <introduction permid="VJN">

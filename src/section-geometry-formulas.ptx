@@ -1134,7 +1134,7 @@ $bothvolume = Formula("V=Bh");
       </webwork>
     </exercise>
   </subsection>
-  <newpage/>
+  <!-- <newpage/> -->
   <exercises permid="lDj">
     <exercisegroup cols="2" permid="Wul">
       <title>Perimeter and Area</title>
@@ -1460,7 +1460,7 @@ $ansAE = NumberWithUnits("$area*10000 cm^2");
         <webwork source="Contrib/PCC/BasicAlgebra/Geometry/RectanglePerimeterArea50.pg" seed="89"/>
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="iID">
       <exercise permid="vGP">
         <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/EvaluateFormula10.pg" />

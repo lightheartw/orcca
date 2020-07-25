@@ -27,7 +27,7 @@
       </p>
       <sidebyside widths="47% 47%" margins="0%" permid="Ddt">
         <table permid="WPg">
-          <caption>Amount of Water in the Tank</caption>
+          <title>Amount of Water in the Tank</title>
           <tabular permid="CWp">
             <col halign="center" />
             <col halign="center"/>
@@ -119,7 +119,7 @@
       Below is a general approach to solving linear equations that we will use as we solve more and more complicated equations.
     </p>
     <list xml:id="list-solve-multistep-linear-equation" permid="WWk">
-      <caption>Steps to Solve Linear Equations</caption>
+      <title>Steps to Solve Linear Equations</title>
       <idx><h>solving</h><h>linear equations</h><h>multi-step</h></idx>
       <dl permid="LrM">
         <li permid="wiO">
@@ -975,7 +975,7 @@
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses190.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
+   <!--  <newpage/> -->
     <exercisegroup>
       <!-- <exercise permid="YbD">
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses190.pg" />
@@ -1101,7 +1101,7 @@
       <exercise permid="eAJ">
 <!-- Kara's challenge problem -->
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("ImplicitPlane");
 Context()->variables->are(x=>'Real');
@@ -1125,7 +1125,7 @@ return ($correct == $student);
 }
 );
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="pYd">
                 Write a linear equation whose solution is <m>x = -9</m>.

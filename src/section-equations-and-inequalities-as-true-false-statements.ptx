@@ -294,7 +294,7 @@ $right=Fraction(-2,3);
           </statement>
       </webwork>
     </exercise>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercise permid="eUz">
       <webwork>
           
@@ -546,7 +546,7 @@ $yesno=PopUp(['?','is', 'is not'],1);
         <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-02-Expressions.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="MCA">
       <title>Identifying Linear Equations and Inequalities</title>
       <exercise permid="uyW">

@@ -1175,7 +1175,7 @@ Context("Interval");
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveProportion30.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="4" permid="wqf">
       <title>Comparisons</title>
       <exercise permid="qfu">

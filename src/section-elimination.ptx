@@ -85,11 +85,11 @@
     </p>
     <exercise permid="uGa">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("Point");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="DEn">
               Solve the system of equations using the elimination method.
@@ -220,11 +220,11 @@ Context("Point");
     </p>
     <exercise permid="aNj">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("Point");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="PSF">
               Solve the system of equations using the elimination method.
@@ -724,7 +724,7 @@ Context("Point");
       <exercise permid="Wdq">
 <!-- Kara's challenge problem -->
         <webwork>
-            <setup>
+            
 <pg-code>
 $p2 = random(2,6,2);
 $q2 = random(-7,-3,2);
@@ -739,7 +739,7 @@ $exp1 = Formula("$p x + $q y")->reduce;
 $exp2 = Formula("$p2 x - b y")->reduce;
 $answer = Formula("-$q2");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="cgX">
                 Find the value of <m>b</m> so that the system of equations has an infinite number of solutions.

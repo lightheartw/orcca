@@ -1220,7 +1220,7 @@ $comparison=Compute("$bs");
         </webwork>
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="GbU">
       <title>True/False</title>
       <exercise permid="ldK">

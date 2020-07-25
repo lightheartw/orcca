@@ -451,7 +451,7 @@ Context("LimitedFraction");
       Sometimes it is useful to do the opposite of reducing a fraction,
       and <term>build up</term> the fraction to use larger numbers.
     </p>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercise permid="oxp">
       <webwork>
           
@@ -1183,7 +1183,7 @@ Context("LimitedFraction");
         so we multiplied the numerator and denominator of each fraction by whatever factor was necessary for the resulting denominator to be <m>15</m>.
       </p>
     </example>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercise permid="OPm">
       <title>Using Some Flour</title>
       <webwork>
@@ -2323,7 +2323,7 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
 </exercise> -->
 
     </exercisegroup>
-    <newpage/>
+   <!--  <newpage/> -->
     <exercisegroup permid="RQW">
       <title>Sketching Fractions</title>
 <!--TODO: These next four need answers/solutions -->

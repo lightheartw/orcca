@@ -502,7 +502,7 @@ $a[2]=Fraction(9,11);
       (as a real number).
     </p>
   </subsection>
-  <newpage/>
+  <!-- <newpage/> -->
   <exercises permid="Khk">
     <exercisegroup cols="2" permid="qot">
       <title>Review and Warmup</title>

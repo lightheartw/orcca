@@ -1176,8 +1176,8 @@ minor ytick={-9,-8,...,9},]
     </exercisegroup>
     <exercisegroup cols="3" permid="FEi">
       <title>Substitution</title>
-      <introduction permid="YrG">
-        Use substitution to solve the following systems of equations.
+      <introduction permid="YrG"><p>
+        Use substitution to solve the following systems of equations.</p>
       </introduction>
 <!-- <exercise>
 <webwork source="Contrib/PCC/BasicAlgebra/SystemsOfLinearEquations/SystemOfEquations05.pg" />
@@ -1385,8 +1385,8 @@ minor ytick={-9,-8,...,9},]
 </exercise> -->
     <exercisegroup cols="3" permid="lLr">
       <title>Elimination</title>
-      <introduction permid="BEj">
-        Use elimination to solve the following systems of equations.
+      <introduction permid="BEj"><p>
+        Use elimination to solve the following systems of equations.</p>
       </introduction>
       <exercise permid="hLs">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemsOfLinearEquations/SystemEquation10.pg" />
@@ -1514,67 +1514,66 @@ minor ytick={-9,-8,...,9},]
           translate to a system of equations and then solve the system,
           using your method of choice, to find the answers.
         </p>
-        <p permid="sdt">
-        </p>
+        
       </introduction>
-      25
+      
       <exercise permid="KXV">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplicationBySubstitution05.pg" seed="2"/>
       </exercise>
-      26
+     
       <exercise permid="rfe">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplicationBySubstitution20.pg" />
       </exercise>
-      27
+      
       <exercise permid="Xmn">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplication100.pg" />
       </exercise>
-      28
+      
       <exercise permid="Dtw">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/systemsWord0.pg" />
       </exercise>
-      29
+      
       <exercise permid="jAF">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplication50.pg" />
       </exercise>
-      30
+      
       <exercise permid="PHO">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplication10.pg" />
       </exercise>
-      31
+      
       <exercise permid="vOX">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplication20.pg" />
       </exercise>
-      32
+      
       <exercise permid="bWg">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/MixedCoffeeProblem20.pg" seed="3"/>
       </exercise>
-      35
+      
       <exercise permid="Idp">
         <webwork source="Library/Mizzou/Algebra/eqns_systems_apps/app_systems_02.pg" seed="3"/>
       </exercise>
-      34
+     
       <exercise permid="oky">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplicationBySubstitution10.pg" />
       </exercise>
-      33
+      
       <exercise permid="UrH">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplicationBySubstitution60.pg" />
       </exercise>
 <!-- <exercise>
 <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplicationBySubstitution10.pg" />
 </exercise> -->
-      36
+      
       <exercise permid="AyQ">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer1=147;
 $answer2=33;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="VpW">
                 Two angles are supplementary.
@@ -1587,7 +1586,7 @@ $answer2=33;
             </statement>
         </webwork>
       </exercise>
-      37
+     
       <exercise permid="gFZ">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplicationBySubstitution30.pg" />
       </exercise>
@@ -1597,7 +1596,7 @@ $answer2=33;
 <!-- <exercise>
 <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplicationBySubstitution50.pg" />
 </exercise> -->
-      38
+    
       <exercise permid="MNi">
         <webwork source="Contrib/PCC/BasicAlgebra/SystemOfLinearEquationsApplications/SystemEquationApplicationBySubstitution60.pg" />
       </exercise>

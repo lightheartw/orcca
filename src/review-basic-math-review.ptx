@@ -2229,7 +2229,7 @@ $pronoun = lc($Pronoun);
         <webwork source="Contrib/PCC/BasicAlgebra/OrderOfOperations/orderOfOperations220.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="KzJ">
       <exercise permid="HjE">
         <webwork source="Contrib/PCC/BasicMath/IntegerAndSquareRoot/CompareNumbers50.pg" />
