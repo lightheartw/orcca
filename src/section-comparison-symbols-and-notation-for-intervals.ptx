@@ -48,7 +48,7 @@
     </p>
     <exercise permid="MfB">
       <webwork >
-      <setup>
+      
 <pg-code>
 package context::Ordering::BOP::ordering;
 *isOrdering = sub {
@@ -62,7 +62,7 @@ Context()->strings->add('a'=>{isLetter => 1,TeX=>'\text{a}'});
 Context()->strings->add('x'=>{isLetter => 1,TeX=>'\text{x}'});
 $overage=OneOf(Compute("age>20"),Compute("a>20"),Compute("x>20"));
 </pg-code>
-      </setup>
+      
       <statement>
         <p permid="sfG">
           <ol label="a." permid="bYt">
@@ -169,7 +169,7 @@ xtick={-8,-3,3,8},
     </figure>
     <exercise permid="smK">
       <webwork seed="1">
-          <setup>
+          
 <pg-code>
 @a=(-7.6,6,-6,9.5,8);
 $as='{'.join('}\quad{',@a).'}';
@@ -200,7 +200,7 @@ $numberline->lb(new Label(0,-0.2,"0",'black','center','top','large'));
 for my$i(0,2,4){$numberline->lb(new Label($b[$i],-0.4,"$b[$i]",'blue','center','top','large'));$numberline->moveTo($b[$i],0);$numberline->lineTo($b[$i],-0.4);};
 for my$i(1,3){$numberline->lb(new Label($b[$i],0.4,"$b[$i]",'blue','center','bottom','large'));$numberline->moveTo($b[$i],0);$numberline->lineTo($b[$i],0.4);};
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="YmP">
               Use the <m>\gt</m> symbol to arrange the following numbers in order from greatest to least.
@@ -221,7 +221,7 @@ for my$i(1,3){$numberline->lb(new Label($b[$i],0.4,"$b[$i]",'blue','center','bot
               We can order these numbers by placing these numbers on a number line.
             </p>
             <sidebyside margins="0%" widths="40%" permid="TKa">
-              <image permid="lUV" pg-name="$numberline"/>
+              <image permid="lUV" source="$numberline"/>
             </sidebyside>
             <p permid="xUS">
               And so we see the answer is <m><var name="$comparison" /></m>.
@@ -231,7 +231,7 @@ for my$i(1,3){$numberline->lb(new Label($b[$i],0.4,"$b[$i]",'blue','center','bot
     </exercise>
     <exercise permid="YtT">
       <webwork >
-      <setup>
+      
 <pg-code>
 Context("Fraction");
 Context()->flags->set(reduceConstants=>0);
@@ -270,7 +270,7 @@ $numberline->lb(new Label($c[1],0.4,"$b[1]",'blue','center','bottom','large'));$
 $numberline->lb(new Label($c[3],0.4,"$b[3]",'blue','right','bottom','large'));$numberline->moveTo($c[3],0);$numberline->lineTo($c[3],0.4);
 $refreshCachedImages=1;
 </pg-code>
-      </setup>
+      
       <statement>
         <p permid="QIq">
           Use the <m>\gt</m> symbol to arrange the following numbers in order from greatest to least.
@@ -292,7 +292,7 @@ $refreshCachedImages=1;
           Knowing or computing their decimals helps with this.
         </p>
         <sidebyside margins="0%" widths="40%" permid="zRj">
-          <image pg-name="$numberline"/>
+          <image source="$numberline"/>
         </sidebyside>
         <p permid="Kjk">
           And so we see the answer is <m><var name="$comparison" /></m>.
@@ -350,7 +350,7 @@ $refreshCachedImages=1;
       <q>not equal to.</q>
     </p>
     <table xml:id="table-comparison-symbols" permid="qEO">
-      <caption>Comparison Symbols</caption>
+      <title>Comparison Symbols</title>
       <tabular valign="bottom" permid="WLX">
         <row bottom="medium">
           <cell>Symbol</cell>
@@ -633,7 +633,7 @@ after end axis/.code={},
     <exercise permid="hNF">
       <title>Interval and Set-Builder Notation from Number Lines</title>
       <webwork>
-          <setup>
+          
 <pg-code>
 ($a[0],$b[0])=(0,2);#num_sort(map{$_-4}NchooseK(9,2));
 ($a[1],$b[1])=(0,2);#num_sort(map{$_-4}NchooseK(9,2));
@@ -688,7 +688,7 @@ elsif($type[$i]eq'io'){$in[$i]=Compute("(-inf,$b[$i])");}
 else{$in[$i]=Compute("(-inf,$b[$i]]");}
 };
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="JdR">
               For each interval expressed in the number lines,
@@ -701,7 +701,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
               <ol label="a." cols="3" permid="IfC">
                 <li permid="xGx">
                   <sidebyside margins="0%" widths="40%" permid="pse">
-                    <image pg-name="$nl[0]"/>
+                    <image source="$nl[0]"/>
                   </sidebyside>
                   <p permid="vvL">
                     In set-builder notation: <var name="$sb[0]" width="20" />
@@ -712,7 +712,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
                 </li>
                 <li permid="dNG">
                   <sidebyside margins="0%" widths="40%" permid="Vzn">
-                    <image pg-name="$nl[1]"/>
+                    <image source="$nl[1]"/>
                   </sidebyside>
                   <p permid="HKd">
                     In set-builder notation: <var name="$sb[1]" width="20" />
@@ -723,7 +723,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
                 </li>
                 <li permid="JUP">
                   <sidebyside margins="0%" widths="40%" permid="BGw">
-                    <image pg-name="$nl[2]"/>
+                    <image source="$nl[2]"/>
                   </sidebyside>
                   <p permid="TYv">
                     In set-builder notation: <var name="$sb[2]" width="20" />
@@ -816,7 +816,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
       <title>Ordering Numbers</title>
       <exercise permid="nYq">
         <webwork >
-        <setup>
+        
 <pg-code>
 @a=map{$_-10}NchooseK(21,5);
 Context()->texStrings;
@@ -842,7 +842,7 @@ class => 'Parser::UOP::minus', hidden => 1, allowInfinite => 1, nofractionparens
 );
 $comparison=Compute("$bs");
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="Vsj">
             Use the <m>\gt</m> symbol to arrange the following numbers in order from greatest to least.
@@ -862,7 +862,7 @@ $comparison=Compute("$bs");
       </exercise>
       <exercise permid="Ufz">
         <webwork >
-        <setup>
+        
 <pg-code>
 @a=map{$_-10}NchooseK(21,5);
 Context()->texStrings;
@@ -888,7 +888,7 @@ class => 'Parser::UOP::minus', hidden => 1, allowInfinite => 1, nofractionparens
 );
 $comparison=Compute("$bs");
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="NNK">
             Use the <m>\gt</m> symbol to arrange the following numbers in order from greatest to least.
@@ -908,7 +908,7 @@ $comparison=Compute("$bs");
       </exercise>
       <exercise permid="AmI">
         <webwork >
-        <setup>
+        
 <pg-code>
 @a=map{($_-1000)/100}NchooseK(2000,5);
 Context()->texStrings;
@@ -934,7 +934,7 @@ class => 'Parser::UOP::minus', hidden => 1, allowInfinite => 1, nofractionparens
 );
 $comparison=Compute("$bs");
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="Gjl">
             Use the <m>\gt</m> symbol to arrange the following numbers in order from greatest to least.
@@ -954,7 +954,7 @@ $comparison=Compute("$bs");
       </exercise>
       <exercise permid="gtR">
         <webwork >
-        <setup>
+        
 <pg-code>
 @a=map{($_-10)+random(0,0.8,0.2)+random(0,0.09,0.01)}NchooseK(19,4);
 if($a[1]&lt;0){$a[4]=$a[1]+0.1;}
@@ -984,7 +984,7 @@ class => 'Parser::UOP::minus', hidden => 1, allowInfinite => 1, nofractionparens
 );
 $comparison=Compute("$bs");
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="yEM">
             Use the <m>\gt</m> symbol to arrange the following numbers in order from greatest to least.
@@ -1004,7 +1004,7 @@ $comparison=Compute("$bs");
       </exercise>
       <exercise permid="MBa">
         <webwork >
-        <setup>
+        
 <pg-code>
 @a=map{$_-10}NchooseK(21,5);
 Context("Fraction");
@@ -1035,7 +1035,7 @@ class => 'Parser::UOP::minus', hidden => 1, allowInfinite => 1, nofractionparens
 );
 $comparison=Compute("$bs");
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="ran">
             Use the <m>\gt</m> symbol to arrange the following numbers in order from greatest to least.
@@ -1055,7 +1055,7 @@ $comparison=Compute("$bs");
       </exercise>
       <exercise permid="sIj">
         <webwork >
-        <setup>
+        
 <pg-code>
 @d=(random(2,9,1),random(2,9,1),random(2,9,1),random(2,9,1),random(2,9,1));
 Context("Fraction");
@@ -1087,7 +1087,7 @@ class => 'Parser::UOP::minus', hidden => 1, allowInfinite => 1, nofractionparens
 );
 $comparison=Compute("$bs");
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="jvO">
             Use the <m>\gt</m> symbol to arrange the following numbers in order from greatest to least.
@@ -1107,7 +1107,7 @@ $comparison=Compute("$bs");
       </exercise>
       <exercise permid="YPs">
         <webwork >
-        <setup>
+        
 <pg-code>
 @c=map{$_-10}NchooseK(21,4);
 Context("Fraction");
@@ -1144,7 +1144,7 @@ Context()->parens->add('(' => {close => ')', type => 'Point', formMatrix => 1, f
 Context()->constants->add('pi' => {value => 4*atan2(1,1), TeX => '\pi ', perl => "pi"});
 $comparison=Compute("$bs");
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="bRp">
             Use the <m>\gt</m> symbol to arrange the following numbers in order from greatest to least.
@@ -1164,7 +1164,7 @@ $comparison=Compute("$bs");
       </exercise>
       <exercise permid="EWB">
         <webwork >
-        <setup>
+        
 <pg-code>
 @c=map{$_-10}NchooseK(21,4);
 Context("Fraction");
@@ -1201,7 +1201,7 @@ Context()->parens->add('(' => {close => ')', type => 'Point', formMatrix => 1, f
 Context()->constants->add('pi' => {value => 4*atan2(1,1), TeX => '\pi ', perl => "pi"});
 $comparison=Compute("$bs");
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="UmQ">
             Use the <m>\gt</m> symbol to arrange the following numbers in order from greatest to least.
@@ -1225,7 +1225,7 @@ $comparison=Compute("$bs");
       <title>True/False</title>
       <exercise permid="ldK">
         <webwork >
-        <setup>
+        
 <pg-code>
 #randomizes from 12, only presents 6
 ($left[1],$left[3],$left[5],$left[7],$left[9],$left[11])=map{$_-10}(NchooseK(20,6));
@@ -1249,7 +1249,7 @@ for my$i(8..9){$tf[$i]=($left[$i]&lt;=$right[$i])?$True:$False;};
 for my$i(10..11){$tf[$i]=($left[$i]!=$right[$i])?$True:$False;};
 for my$i(0..11){$TF[$i]=$tf[$j[$i]];};
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="MIr">
             Decide if each comparison is true or false.</p>
@@ -1292,7 +1292,7 @@ for my$i(0..11){$TF[$i]=$tf[$j[$i]];};
       </exercise>
       <exercise permid="RkT">
         <webwork >
-        <setup>
+        
 <pg-code>
 #randomizes from 12, only presents 6
 ($left[1],$left[3],$left[5],$left[7],$left[9],$left[11])=map{$_-10}(NchooseK(20,6));
@@ -1316,7 +1316,7 @@ for my$i(8..9){$tf[$i]=($left[$i]&lt;=$right[$i])?$True:$False;};
 for my$i(10..11){$tf[$i]=($left[$i]!=$right[$i])?$True:$False;};
 for my$i(0..11){$TF[$i]=$tf[$j[$i]];};
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="sPA">
             Decide if each comparison is true or false.</p>
@@ -1359,7 +1359,7 @@ for my$i(0..11){$TF[$i]=$tf[$j[$i]];};
       </exercise>
       <exercise permid="xsc">
         <webwork >
-        <setup>
+        
 <pg-code>
 #randomizes from 12, only presents 6
 ($ln[1],$ln[3],$ln[5],$ln[7],$ln[9],$ln[11])=map{$_-10}(NchooseK(20,6));
@@ -1386,7 +1386,7 @@ for my$i(8..9){$tf[$i]=($left[$i]&lt;=$right[$i])?$True:$False;};
 for my$i(10..11){$tf[$i]=($left[$i]!=$right[$i])?$True:$False;};
 for my$i(0..11){$TF[$i]=$tf[$j[$i]];};
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="YWJ">
             Decide if each comparison is true or false.</p>
@@ -1429,7 +1429,7 @@ for my$i(0..11){$TF[$i]=$tf[$j[$i]];};
       </exercise>
       <exercise permid="dzl">
         <webwork >
-        <setup>
+        
 <pg-code>
 #randomizes from 12, only presents 6
 ($ln[1],$ln[3],$ln[5],$ln[7],$ln[9],$ln[11])=map{$_-10}(NchooseK(20,6));
@@ -1456,7 +1456,7 @@ for my$i(8..9){$tf[$i]=($left[$i]&lt;=$right[$i])?$True:$False;};
 for my$i(10..11){$tf[$i]=($left[$i]!=$right[$i])?$True:$False;};
 for my$i(0..11){$TF[$i]=$tf[$j[$i]];};
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="FdS">
             Decide if each comparison is true or false.</p>
@@ -1539,7 +1539,7 @@ for my$i(0..11){$TF[$i]=$tf[$j[$i]];};
     </exercisegroup>
     <!-- <exercise permid="yLQ">
       <webwork>
-          <setup>
+          
 <pg-code>
 ($a[0],$b[0])=num_sort(map{$_-4}NchooseK(9,2));
 ($a[1],$b[1])=num_sort(map{$_-4}NchooseK(9,2));
@@ -1594,7 +1594,7 @@ elsif($type[$i]eq'io'){$in[$i]=Compute("(-inf,$b[$i])");}
 else{$in[$i]=Compute("(-inf,$b[$i]]");}
 };
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="llb">
               For each interval expressed in the number lines,
@@ -1607,7 +1607,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
               <ol label="a." cols="3" permid="MPv">
                 <li permid="ZNH">
                   <sidebyside margins="0%" widths="40%" permid="NUO">
-                    <image pg-name="$nl[0]"/>
+                    <image source="$nl[0]"/>
                   </sidebyside>
                   <p permid="PYw">
                     In set-builder notation: <var name="$sb[0]" width="20" />
@@ -1618,7 +1618,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
                 </li>
                 <li permid="FUQ">
                   <sidebyside margins="0%" widths="40%" permid="ubX">
-                    <image pg-name="$nl[1]"/>
+                    <image source="$nl[1]"/>
                   </sidebyside>
                   <p permid="cmO">
                     In set-builder notation: <var name="$sb[1]" width="20" />
@@ -1629,7 +1629,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
                 </li>
                 <li permid="mbZ">
                   <sidebyside margins="0%" widths="40%" permid="ajg">
-                    <image pg-name="$nl[2]"/>
+                    <image source="$nl[2]"/>
                   </sidebyside>
                   <p permid="oBg">
                     In set-builder notation: <var name="$sb[2]" width="20" />
@@ -1645,7 +1645,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
     </exercise>
     <exercise permid="eSZ">
       <webwork>
-          <setup>
+          
 <pg-code>
 ($a[0],$b[0])=num_sort(map{$_-4}NchooseK(9,2));
 ($a[1],$b[1])=num_sort(map{$_-4}NchooseK(9,2));
@@ -1700,7 +1700,7 @@ elsif($type[$i]eq'io'){$in[$i]=Compute("(-inf,$b[$i])");}
 else{$in[$i]=Compute("(-inf,$b[$i]]");}
 };
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="xzt">
               For each interval expressed in the number lines,
@@ -1713,7 +1713,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
               <ol label="a." cols="3" permid="sWE">
                 <li permid="Sji">
                   <sidebyside margins="0%" widths="40%" permid="Gqp">
-                    <image pg-name="$nl[0]"/>
+                    <image source="$nl[0]"/>
                   </sidebyside>
                   <p permid="APy">
                     In set-builder notation: <var name="$sb[0]" width="20" />
@@ -1724,7 +1724,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
                 </li>
                 <li permid="yqr">
                   <sidebyside margins="0%" widths="40%" permid="mxy">
-                    <image pg-name="$nl[1]"/>
+                    <image source="$nl[1]"/>
                   </sidebyside>
                   <p permid="NdQ">
                     In set-builder notation: <var name="$sb[1]" width="20" />
@@ -1735,7 +1735,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
                 </li>
                 <li permid="exA">
                   <sidebyside margins="0%" widths="40%" permid="SEH">
-                    <image pg-name="$nl[2]"/>
+                    <image source="$nl[2]"/>
                   </sidebyside>
                   <p permid="Zsi">
                     In set-builder notation: <var name="$sb[2]" width="20" />

@@ -12,8 +12,8 @@
 <!-- For title into HTML head, then tabs, bookmarks, etc -->
   <initialism>ORCCA</initialism>
   <cross-references text="global" />
-  <rename element="solution" lang="en-US">Explanation</rename>
-  <rename element="algorithm" lang="en-US">Process</rename>
+  <rename element="solution" xml:lang="en-US">Explanation</rename>
+  <rename element="algorithm" xml:lang="en-US">Process</rename>
 <latex-preamble>
 <package>cancel</package>
 </latex-preamble>

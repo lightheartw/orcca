@@ -112,7 +112,7 @@
         </p>
       </solution>
     </example>
-  </subsection>
+  
   <exercise permid="wgb">
     <introduction permid="PYS">
       <p permid="XRM">
@@ -122,7 +122,7 @@
     <webwork>
         <pg-macros><macro-file>contextCurrency.pl</macro-file>
         <macro-file>contextPercent.pl</macro-file></pg-macros>
-        <setup>
+        
 <pg-code>
 Context("Currency");
 $a=Currency(7.20);
@@ -130,7 +130,7 @@ $c=Currency(24);
 Context("Percent");
 $b=Compute("30%");
 </pg-code>
-        </setup>
+       
         <statement>
           <p permid="DYV">
             <ol label="a." permid="WxY">
@@ -199,6 +199,7 @@ $b=Compute("30%");
         </solution>
     </webwork>
   </exercise>
+  </subsection>
   <subsection permid="jDo">
     <title>Setting up and Solving Percent Equations</title>
     <p permid="Bep">
@@ -441,13 +442,13 @@ bar width=1cm,
     <exercise permid="DKA">
       <webwork>
           <pg-macros><macro-file>contextCurrency.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("Currency");
 Context()->flags->set(tolerance=>3);
 $sales=Currency(7857.14);
 </pg-code>
-          </setup>
+         
           <statement>
             <p permid="kge">
               Alexis sells cars for a living,
@@ -669,12 +670,12 @@ x tick label style={rotate=45,anchor=east},
     <exercise permid="jRJ">
       <webwork>
           <pg-macros><macro-file>contextCurrency.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("Currency");
 $cost=Currency(4.80);
 </pg-code>
-          </setup>
+         
           <statement>
             <p permid="wuw">
               Last month, a full tank of gas for a car you drive cost you <m>\$40.00</m>.

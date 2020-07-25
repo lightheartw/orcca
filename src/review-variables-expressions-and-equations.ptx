@@ -463,7 +463,7 @@
       </exercise>
       <exercise permid="gdw">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -490,7 +490,7 @@ $exp1=$expression[1];
 $exp2=$expression[2];
 $exp3=$expression[3];
 </pg-code>
-            </setup>
+           
             <statement>
               <p permid="FSQ">
                 List the terms in each expression.
@@ -560,7 +560,7 @@ $exp3=$expression[3];
       </exercise>
       <exercise permid="MkF">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -587,7 +587,7 @@ $exp1=$expression[1];
 $exp2=$expression[2];
 $exp3=$expression[3];
 </pg-code>
-            </setup>
+           
             <statement>
               <p permid="lZZ">
                 List the terms in each expression.
@@ -657,7 +657,7 @@ $exp3=$expression[3];
       </exercise>
       <exercise permid="srO">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -714,7 +714,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Shi">
                 Simplify each expression, if possible, by combining like terms.
@@ -763,7 +763,7 @@ return $OK;
       </exercise>
       <exercise permid="YyX">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -820,7 +820,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+          
             <statement>
               <p permid="evA">
                 Simplify each expression, if possible, by combining like terms.
@@ -869,7 +869,7 @@ return $OK;
       </exercise>
       <exercise permid="EGg">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Fraction");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -927,7 +927,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="qJS">
                 Simplify each expression, if possible, by combining like terms.
@@ -976,7 +976,7 @@ return $OK;
       </exercise>
       <exercise permid="kNp">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Fraction");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -1034,7 +1034,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="CYk">
                 Simplify each expression, if possible, by combining like terms.
@@ -1083,7 +1083,7 @@ return $OK;
       </exercise>
       <exercise permid="QUy">
         <webwork >
-        <setup>
+        
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1103,7 +1103,7 @@ $trueOrFalse = ($ans==1) ? "true" : "false";
 $isOrNot = ($ans==1) ? "is" : "is not";
 $yesno=PopUp(['?','is', 'is not'],$ans);
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="PmC">
             Is <m><var name="$x" /></m> a solution for <m>x</m> in the equation <m><var name="$left" />=<var name="$right" /></m>?
@@ -1149,7 +1149,7 @@ $yesno=PopUp(['?','is', 'is not'],$ans);
       </exercise>
       <exercise permid="xbH">
         <webwork >
-        <setup>
+        
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1169,7 +1169,7 @@ $trueOrFalse = ($ans==1) ? "true" : "false";
 $isOrNot = ($ans==1) ? "is" : "is not";
 $yesno=PopUp(['?','is', 'is not'],$ans);
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="bAU">
             Is <m><var name="$x" /></m> a solution for <m>x</m> in the equation <m><var name="$left" />=<var name="$right" /></m>?
@@ -1215,7 +1215,7 @@ $yesno=PopUp(['?','is', 'is not'],$ans);
       </exercise>
       <exercise permid="diQ">
         <webwork >
-        <setup>
+        
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1236,7 +1236,7 @@ $trueOrFalse = ($ans==1) ? "true" : "false";
 $isOrNot = ($ans==1) ? "is" : "is not";
 $yesno=PopUp(['?','is', 'is not'],$ans);
 </pg-code>
-        </setup>
+       
         <statement>
           <p permid="nPm">
             Is <m><var name="$x" /></m> a solution for <m>x</m> in the inequality <m><var name="$left" />\le<var name="$right" /></m>?
@@ -1282,7 +1282,7 @@ $yesno=PopUp(['?','is', 'is not'],$ans);
       </exercise>
       <exercise permid="JpZ">
         <webwork >
-        <setup>
+       
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1303,7 +1303,7 @@ $trueOrFalse = ($ans==1) ? "true" : "false";
 $isOrNot = ($ans==1) ? "is" : "is not";
 $yesno=PopUp(['?','is', 'is not'],$ans);
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="AdE">
             Is <m><var name="$x" /></m> a solution for <m>x</m> in the inequality <m><var name="$left" />\le<var name="$right" /></m>?
@@ -1385,7 +1385,7 @@ $yesno=PopUp(['?','is', 'is not'],$ans);
       </introduction>
       <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Numeric");
 
@@ -1406,7 +1406,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("($c,inf)");
 </pg-code>
-</setup>
+
 <statement>
   <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
   </statement>
@@ -1420,7 +1420,7 @@ $intans = Compute("($c,inf)");
 </exercise>
 <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Numeric");
 
@@ -1442,7 +1442,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("(-inf,$c]");
 </pg-code>
-</setup>
+
 <statement>
   <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
   </statement>
@@ -1456,7 +1456,7 @@ $intans = Compute("(-inf,$c]");
 </exercise>
   <exercise>
         <webwork>
-          <setup>
+         
             <pg-code>
 Context("Numeric");
 
@@ -1478,7 +1478,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("[$c,inf)");
 </pg-code>
-</setup>
+
 <statement>
   <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
   </statement>
@@ -1492,7 +1492,7 @@ $intans = Compute("[$c,inf)");
 </exercise>
 <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Numeric");
 
@@ -1514,7 +1514,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("(-inf,$c)");
 </pg-code>
-</setup>
+
 <statement>
   <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
   </statement>
@@ -1528,7 +1528,7 @@ $intans = Compute("(-inf,$c)");
 </exercise>
 <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Numeric");
 
@@ -1550,7 +1550,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("(-inf,$c]");
 </pg-code>
-</setup>
+
 <statement>
   <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
   </statement>
@@ -1564,7 +1564,7 @@ $intans = Compute("(-inf,$c]");
 </exercise>
 <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Fraction");
 Context()->flags->set(
@@ -1602,7 +1602,7 @@ Context()->flags->set(
 $intans = Interval("($c,inf)");
 $intansLatexString = "\left(".$c->TeX.",\infty\right)";
 </pg-code>
-</setup>
+
 <statement>
   <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
   </statement>
@@ -1616,7 +1616,7 @@ $intansLatexString = "\left(".$c->TeX.",\infty\right)";
 </exercise>
 <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Numeric");
 
@@ -1639,7 +1639,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("(-inf,-$c]");
 </pg-code>
-</setup>
+
 <statement>
   <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
   </statement>
@@ -1653,7 +1653,7 @@ $intans = Compute("(-inf,-$c]");
 </exercise>
 <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Numeric");
 
@@ -1676,7 +1676,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("[-$c,inf)");
 </pg-code>
-</setup>
+
 <statement>
   <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
   </statement>
@@ -1690,7 +1690,7 @@ $intans = Compute("[-$c,inf)");
 </exercise>
 <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Numeric");
 
@@ -1711,7 +1711,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("(-inf,-$b)");
 </pg-code>
-</setup>
+
 <statement>
   <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
   </statement>
@@ -1725,7 +1725,7 @@ $intans = Compute("(-inf,-$b)");
 </exercise>
 <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Numeric");
 
@@ -1747,7 +1747,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("[-$b,inf)");
 </pg-code>
-</setup>
+
 <statement>
   <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
   </statement>
@@ -1761,7 +1761,7 @@ $intans = Compute("[-$b,inf)");
 </exercise>
 <exercise>
         <webwork>
-          <setup>
+         
             <pg-code>
 Context("Fraction");
 
@@ -1789,7 +1789,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("(-$b,inf)");
 </pg-code>
-</setup>
+
 <statement>
   <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
   </statement>
@@ -1803,7 +1803,7 @@ $intans = Compute("(-$b,inf)");
 </exercise>
 <exercise>
         <webwork>
-          <setup>
+          
             <pg-code>
 Context("Numeric");
 
@@ -1827,7 +1827,7 @@ Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("(-$c,inf)");
 </pg-code>
-</setup>
+
 <statement>
   <p><m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
   </statement>
@@ -1901,25 +1901,26 @@ $intans = Compute("(-$c,inf)");
       </exercise>
       <exercise permid="KiG">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithInequality130.pg" />
+      </exercise>
     </exercisegroup>
     <exercisegroup cols="3">
       <title>Translating English Phrases into Math Expressions and Equations</title>
-      <exercise permid="pkw">
+      <exercise>
         <webwork source="Contrib/PCC/BasicAlgebra/EnglishToMath/englishToMath80.pg" />
       </exercise>
-      <exercise permid="VrF">
+      <exercise>
         <webwork source="Contrib/PCC/BasicAlgebra/EnglishToMath/englishToMath82.pg" />
       </exercise>
-       <exercise permid="yEi">
+       <exercise>
         <webwork source="Contrib/PCC/BasicAlgebra/EnglishToMath/englishToMath110.pg" />
       </exercise>
-      <exercise permid="eLr">
+      <exercise>
         <webwork source="Contrib/PCC/BasicAlgebra/EnglishToMath/englishToMath120.pg" />
       </exercise>
-      <exercise permid="Umm">
+      <exercise>
         <webwork source="Contrib/PCC/BasicAlgebra/EnglishToMath/englishToMath170.pg" />
       </exercise>
-      <exercise permid="Atv">
+      <exercise>
         <webwork source="Contrib/PCC/BasicAlgebra/EnglishToMath/englishToMath180.pg" />
       </exercise>
     </exercisegroup>

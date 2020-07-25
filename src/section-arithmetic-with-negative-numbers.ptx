@@ -777,6 +777,7 @@ xlabel={},
       <p>
         Here are four examples of division where at least one number is negative.</p>
         
+        <p>
         <ol label="a.">
           <li>
             <p>
@@ -826,6 +827,7 @@ xlabel={},
             </p>
           </li>
         </ol>
+      </p>
       
     </example>
     <exercise>
@@ -1306,13 +1308,13 @@ xlabel={},
       <exercise permid="xkl">
 <!-- Kara's challenge problem -->
         <webwork>
-            <setup>
+            
 <pg-code>
 $sometimes = PopUp(['?','sometimes','always','never'], 1);
 $always = PopUp(['?','sometimes','always','never'], 2);
 $never = PopUp(['?','sometimes','always','never'], 3);
 </pg-code>
-            </setup>
+           
             <statement>
               <p permid="vCp">
                 Select the correct word to make each statement true.</p>

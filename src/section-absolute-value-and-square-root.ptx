@@ -94,11 +94,11 @@ transform={yshift=1ex},text={distance 2 from 0}}}] ({2*cos(x)},{2*sin(x)});
         </p>
       </introduction>
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("LimitedNumeric");
 </pg-code>
-          </setup>
+         
           <statement>
             <p permid="cNE">
               <ol label="a." cols="3" permid="mYo">
@@ -177,7 +177,7 @@ Context("LimitedNumeric");
       If you have learned your basic multiplication table, you know:
     </p>
     <table xml:id="table-perfect-squares" permid="bIl">
-      <caption>Multiplication table with squares</caption>
+      <title>Multiplication table with squares</title>
       <tabular top="major" bottom="minor" left="major" right="minor" halign="center" permid="HPu">
         <col right="medium" />
         <col />
@@ -415,14 +415,14 @@ Context("LimitedNumeric");
         </p>
       </introduction>
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("LimitedFraction");
 $a[0]=Fraction(1,5);
 $a[1]=Fraction(2,3);
 $a[2]=Fraction(9,11);
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="IUN">
               <ol label="a." cols="3" permid="Tfx">

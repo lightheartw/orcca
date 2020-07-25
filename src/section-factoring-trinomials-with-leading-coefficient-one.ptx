@@ -1343,7 +1343,7 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
       <exercise permid="EpU">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring375.pg" />
       </exercise>
-      <!-- <exercise permid="kxd">
+      <exercise permid="kxd">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring405.pg" />
       </exercise>
       <exercise permid="QEm">

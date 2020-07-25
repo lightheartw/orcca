@@ -268,7 +268,7 @@ xlabel={$t$}
   </example>
   <exercise permid="uBf">
     <webwork>
-        <setup>
+        
 <pg-code>
 Context("Interval");
 $interval=Interval("(1,inf)");
@@ -289,7 +289,7 @@ $nl->moveTo(1,0.5);
 $nl->arrowTo(5,0.5,'blue',1);
 $nl->lb( new Label(1-2*$pixel,0.5,'(','blue','left','middle','giant'));
 </pg-code>
-        </setup>
+      
         <statement>
           <p permid="PNK">
             Solve the inequality <m>x-5\gt-4</m>.
@@ -347,7 +347,7 @@ $nl->lb( new Label(1-2*$pixel,0.5,'(','blue','left','middle','giant'));
   </exercise>
   <exercise permid="aIo">
     <webwork>
-        <setup>
+        
 <pg-code>
 Context("Interval");
 $interval=Interval("(-inf,3.48]");
@@ -370,7 +370,7 @@ $nl->arrowTo(-5,0.5,'blue',1);
 $nl->lb( new Label(3.48+4*$pixel,0.5,']','blue','right','middle','giant'));
 $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
 </pg-code>
-        </setup>
+       
         <statement>
           <p permid="Ijl">
             Solve the inequality <m>-\frac{1}{2}z\geq-1.74</m>.
@@ -585,7 +585,7 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
       <exercise>
 
   <webwork>
-    <setup>
+    
       <pg-code>
     Context("Numeric");
     Context("Fraction");
@@ -609,7 +609,7 @@ Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("(-inf,$c)");
 
 </pg-code>
-</setup>
+
 <statement>
 
 <p>Solve this inequality.
@@ -624,7 +624,7 @@ $intans = Compute("(-inf,$c)");
 <exercise>
 
   <webwork>
-    <setup>
+   
       <pg-code>
     Context("Numeric");
     Context("Fraction");
@@ -648,7 +648,7 @@ Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("(-inf,$c)");
 
 </pg-code>
-</setup>
+
 <statement>
 
 <p>Solve this inequality.
@@ -663,7 +663,7 @@ $intans = Compute("(-inf,$c)");
 <exercise>
 
   <webwork>
-    <setup>
+    
       <pg-code>
     Context("Numeric");
     Context("Fraction");
@@ -687,7 +687,7 @@ Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("($c,inf)");
 
 </pg-code>
-</setup>
+
 <statement>
 
 <p>Solve this inequality.
@@ -702,7 +702,7 @@ $intans = Compute("($c,inf)");
 <exercise>
 
   <webwork>
-    <setup>
+   
       <pg-code>
     Context("Numeric");
     Context("Fraction");
@@ -726,7 +726,7 @@ Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("($c,inf)");
 
 </pg-code>
-</setup>
+
 <statement>
 
 <p>Solve this inequality.
@@ -758,14 +758,14 @@ $intans = Compute("($c,inf)");
       <exercise permid="xvL"> -->
 <!-- Kara's challenge problem -->
         <!-- <webwork>
-            <setup>
+            
 <pg-code>
 $question = PopUp(['?','&lt;','>','='],0);
 $less = PopUp(['?','&lt;','>','='],1);
 $more = PopUp(['?','&lt;','>','='],2);
 $equal = PopUp(['?','&lt;','>','='],3);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="AEM">
                 Choose the correct inequality or equal sign to make the relation true.

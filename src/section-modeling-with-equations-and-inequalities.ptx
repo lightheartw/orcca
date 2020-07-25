@@ -33,7 +33,7 @@
           Write an equation that represents the number of months it will take for the balance to reach <m>\$1{,}700</m>.
         </p>
       </statement>
-      <solution permid="TgT">
+      <solution>
         <sidebyside widths="47% 47%" margins="0%" permid="lkx">
           <stack>
             <p permid="VGa">
@@ -45,13 +45,13 @@
               we can determine that an equation showing the unknown number of months,
               <m>m</m>,
               when the total savings equals <m>\$1700</m> would look like this:
-              <me permid="Yfh">
+              <me>
                 500+150m=1700
               </me>
             </p>
           </stack>
           <table xml:id="table-savings-pattern" permid="ZUu">
-            <caption>Amount in Savings Account</caption>
+            <title>Amount in Savings Account</title>
             <tabular permid="eEn">
               <col halign="center" />
               <col halign="left"/>
@@ -108,7 +108,7 @@
           <m>\$1{,}700</m> if <m>\$150</m> is saved each month.
         </p>
         <table xml:id="table-savings-pattern-continued" permid="GbD">
-          <caption>Amount in Savings Account</caption>
+          <title>Amount in Savings Account</title>
           <tabular permid="KLw">
             <col halign="center" />
             <col halign="left"/>
@@ -166,7 +166,7 @@
           </quantity>.
         </p>
       </statement>
-      <solution permid="zoc">
+      <solution>
         <sidebyside margins="0%" widths="47% 47%" permid="xyP">
           <p permid="hUs">
             Since this problem refers to <em>when</em>
@@ -181,7 +181,7 @@
             To determine this equation, we'll start by making a table of values:
           </p>
           <table xml:id="table-bathtub-pattern" permid="miM">
-            <caption>Amount of Water in the Bathtub</caption>
+            <title>Amount of Water in the Bathtub</title>
             <tabular permid="qSF">
               <col halign="center" />
               <col halign="left"/>
@@ -230,7 +230,7 @@
             <mag>6.25</mag><unit base="foot" exp="3"/>
           </quantity>
           is:
-          <me permid="Emq">
+          <me>
             2.5+1.75t=6.25
           </me>
         </p>
@@ -256,7 +256,7 @@
           where the unknown value is Jakobi's salary last year.
         </p>
       </statement>
-      <solution permid="fvl">
+      <solution>
         <p permid="uiK">
           We need to know Jakobi's salary last year.
           So we'll introduce <m>s</m>, defined to be Jakobi's salary last year
@@ -266,12 +266,12 @@
           To get to this year's salary,
           his employer took last year's salary and added <m>4\%</m> to it.
           Conceptually, this means we have:
-          <me permid="ktz">
+          <me>
             (\text{last year's salary})+(4\%\text{ of last year's salary}) = (\text{this year's salary})
           </me>
           We'll represent <m>4\%</m> of last year's salary with <m>0.04s</m> since <m>0.04</m> is the decimal representation of <m>4\%</m>.
           This means that the equation we set up is:
-          <me permid="QAI">
+          <me>
             s+0.04s=73290
           </me>
         </p>
@@ -279,14 +279,14 @@
     </example>
     <exercise permid="pUq">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("ImplicitPlane");
 Context()->variables->are(x=>'Real');
 $equation = ImplicitPlane("x+0.19x=150");
 $evaluator = $equation->cmp(correct_ans_latex_string=>'x+0.19x=150');
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="dUt">
               Kirima offered to pay the bill and tip at a restaurant where she and her freinds had dinner.
@@ -302,7 +302,7 @@ $evaluator = $equation->cmp(correct_ans_latex_string=>'x+0.19x=150');
               <var name="$equation" evaluator="$evaluator" width="25" />
             </p>
           </statement>
-          <solution permid="kfe">
+          <solution>
             <p permid="apT">
               A common mistake is to translate a question like this into
               <q>what is <m>19\%</m> of <m>\$150</m>?</q>
@@ -311,7 +311,7 @@ $evaluator = $equation->cmp(correct_ans_latex_string=>'x+0.19x=150');
               But that is not how tipping works.
               The tip percentage is applied to the original bill, not the final total.
               If we let <m>x</m> represent the original bill, then:
-              <md permid="hyT">
+              <md>
                 <mrow>\pinover{x}{bill}\pinover{+}{plus}\pinover{0.19}{19\%}\pinover{\cdot}{of}\pinover{x}{bill}\amp\pinover{=}{is}\pinover{150}{\$150}</mrow>
  <!--<mrow>1.00x+0.19x\amp=150</mrow> <mrow>1.19x\amp=150</mrow> <mrow>\divideunder{1.19x}{1.19}\amp=\divideunder{150}{1.19}</mrow> <mrow>x\amp\approx126.05</mrow>-->
               </md>
@@ -330,19 +330,19 @@ $evaluator = $equation->cmp(correct_ans_latex_string=>'x+0.19x=150');
           is the unknown quantity.
         </p>
       </statement>
-      <solution permid="LCu">
+      <solution>
         <p permid="Gxc">
           We'll let <m>c</m> be the original price of the refrigerator.
           To obtain the discounted price,
           we take the original price and subtract <m>15\%</m> of that amount.
           Conceptually, this looks like:
-          <me permid="wHR">
+          <me>
             (\text{original price})-(15\%\text{ of the original price})= (\text{discounted price})
           </me>
           Since the amount of the discount is <m>15\%</m> of the original price,
           we'll represent this with <m>0.15c</m>.
           The equation we set up is then:
-          <me permid="cPa">
+          <me>
             c-0.15c=612
           </me>
         </p>
@@ -350,14 +350,14 @@ $evaluator = $equation->cmp(correct_ans_latex_string=>'x+0.19x=150');
     </example>
     <exercise permid="Wbz">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("ImplicitPlane");
 Context()->variables->are(x=>'Real');
 $equation = ImplicitPlane("x-0.2x=51");
 $evaluator = $equation->cmp(correct_ans_latex_string=>'x-0.2x=51');
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="qiL">
               A shirt is on sale at <m>20\%</m> off.
@@ -371,12 +371,12 @@ $evaluator = $equation->cmp(correct_ans_latex_string=>'x-0.2x=51');
               <var name="$equation" evaluator="$evaluator" width="25" />
             </p>
           </statement>
-          <solution permid="Qmn">
+          <solution>
             <p permid="mEl">
               Let <m>x</m> represent the original price of the shirt.
               Since <m>20\%</m> is removed to bring the cost to <m>\$51</m>,
               we can set up <!-- and solve -->the equation:
-              <md permid="NGc">
+              <md>
                 <mrow>\pinover{x}{original}\pinover{-}{minus}\pinover{0.20}{20\%}\pinover{\cdot}{of}\pinover{x}{original}\amp\pinover{=}{is}\pinover{51}{\$51}</mrow>
  <!-- <mrow>1.00x-0.20x\amp=51</mrow> <mrow>0.8x\amp=51</mrow> <mrow>\divideunder{0.8x}{0.8}\amp=\divideunder{51}{0.8}</mrow> <mrow>x\amp=63.75</mrow> -->
               </md>
@@ -410,7 +410,7 @@ $evaluator = $equation->cmp(correct_ans_latex_string=>'x-0.2x=51');
           Use this information to set up an equation that models the width of the pool.
         </p>
       </statement>
-      <solution permid="rJD">
+      <solution>
         <sidebyside widths="59% 35%" margins="0%" permid="ipR">
           <p permid="SLu">
             Since the pool's shape is a rectangle,
@@ -451,7 +451,7 @@ $evaluator = $equation->cmp(correct_ans_latex_string=>'x-0.2x=51');
         <p permid="eZM">
           With this formula,
           we can substitute <m>150</m> in for <m>P</m> and <m>50</m> in for <m>\ell</m>:
-          <me permid="IWj">
+          <me>
             150=2(50+w)
           </me>
           and this equation models the width of the pool.
@@ -460,7 +460,7 @@ $evaluator = $equation->cmp(correct_ans_latex_string=>'x-0.2x=51');
     </example>
     <exercise permid="uEj">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("ImplicitPlane");
 Context()->flags->set(reduceConstants=>0);
@@ -475,7 +475,7 @@ $triangle->lineTo(1,1,'black',1);
 $triangle->lb( new Label(6,1,'10','black','center','top','large'));
 $triangle->lb( new Label(1,13,'h','black','right','middle','large'));
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="Cxd">
               One sail on a sail boat is approximately shaped like a triangle.
@@ -490,7 +490,7 @@ $triangle->lb( new Label(1,13,'h','black','right','middle','large'));
               <var name="$equation" evaluator="$evaluator" width="25" />
             </p>
           </statement>
-          <solution permid="wtw">
+          <solution>
             <p permid="roe">
               Since the sail's shape is (approximately) a triangle,
               it helps to sketch a triangle representing the sail.
@@ -510,7 +510,7 @@ $triangle->lb( new Label(1,13,'h','black','right','middle','large'));
             <p permid="DCw">
               With this formula,
               we can substitute <m>125</m> in for <m>A</m> and <m>100</m> in for <m>b</m>:
-              <me permid="pds">
+              <me>
                 125=\frac{1}{2}(10)h
               </me>
               and this equation models the height of the pool.
@@ -536,12 +536,12 @@ $triangle->lb( new Label(1,13,'h','black','right','middle','large'));
           where the unknown quantity is the number of hours she uses their vehicles.
         </p>
       </statement>
-      <solution permid="XQM">
+      <solution>
         <p permid="jJF">
           We'll let <m>h</m> be the number of hours that Hana uses car2go.
           We need the initial cost and the cost from the hourly charge to be less than or equal to <m>\$300</m>,
           which we set up as:
-          <me permid="VkB">
+          <me>
             5+14.99h \le 300
           </me>
         </p>
@@ -566,7 +566,7 @@ $triangle->lb( new Label(1,13,'h','black','right','middle','large'));
           where the time it takes for the tank to overflow with sand is the unknown quantity.
         </p>
       </statement>
-      <solution permid="DXV">
+      <solution>
         <p permid="PQO">
           The unknown in this scenario is time,
           so we'll define <m>t</m> to be the number of hours that sand is poured into the tank.
@@ -580,7 +580,7 @@ $triangle->lb( new Label(1,13,'h','black','right','middle','large'));
           <quantity>
             <mag>275</mag><unit base="gallon"/>
           </quantity>, we write this inequality as:
-          <me permid="BrK">
+          <me>
             700t >275
           </me>
         </p>
@@ -594,7 +594,7 @@ $triangle->lb( new Label(1,13,'h','black','right','middle','large'));
       The following table shows how to translate common phrases into mathematical expressions:
     </p>
     <table permid="SpV">
-      <caption>Translating English Phrases into Math Expressions</caption>
+      <title>Translating English Phrases into Math Expressions</title>
       <tabular valign="top" permid="WZO">
         <col halign="left"/>
         <col halign="center"/>
@@ -696,7 +696,7 @@ $triangle->lb( new Label(1,13,'h','black','right','middle','large'));
       etc.
     </p>
     <table permid="yxe">
-      <caption>Translating English Sentences into Math Equations</caption>
+      <title>Translating English Sentences into Math Equations</title>
       <tabular valign="top" permid="DgX">
         <col halign="left"/>
         <col halign="center"/>
@@ -755,7 +755,7 @@ $triangle->lb( new Label(1,13,'h','black','right','middle','large'));
       <exercise permid="yZH">
 <!-- randomize? -->
         <webwork>
-            <setup>
+            
 <pg-code>
 Context()->variables->are();
 for my $i (1..26) {
@@ -773,7 +773,7 @@ Context()->strings->add('square feet'=>{alias=>'ft^2'}, 'feet squared'=>{alias=>
 $a=OneOf('a','A');
 $t=OneOf('t','T');
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="OLv">
                 Identify a variable you might use to represent each quantity.
@@ -800,7 +800,7 @@ $t=OneOf('t','T');
                 </ol>
               </p>
             </statement>
-            <solution permid="cAF">
+            <solution>
               <p permid="vXX">
                 <ol label="a." permid="UWg">
                   <li permid="lUr">
@@ -842,7 +842,7 @@ $t=OneOf('t','T');
       </exercise>
       <exercise permid="fgQ">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context()->variables->are();
 for my $i (1..26) {
@@ -860,7 +860,7 @@ Context()->strings->add('square feet'=>{alias=>'ft^2'}, 'feet squared'=>{alias=>
 $a=OneOf('a','A');
 $t=OneOf('t','T');
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="uSE">
                 Identify a variable you might use to represent each quantity.
@@ -887,7 +887,7 @@ $t=OneOf('t','T');
                 </ol>
               </p>
             </statement>
-            <solution permid="IHO">
+            <solution>
               <p permid="cfg">
                 <ol label="a." permid="Bdp">
                   <li permid="WLt">
@@ -1149,7 +1149,7 @@ $t=OneOf('t','T');
         <!-- <webwork>
             <pg-macros><macro-file>contextPercent.pl</macro-file>
             <macro-file>contextCurrency.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Percent");
 $p = Percent(random(0.01,0.03,0.005));
@@ -1161,7 +1161,7 @@ $original = random(9,11,0.25);
 $current = Currency(sprintf("%.2f",$original*(1+$p->value)*(1+$q->value)));
 $original = Currency($current/(1+$p)/(1+$q));
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="aZN">
                 Last year, Joan received a <m><var name="$p"/></m> raise.

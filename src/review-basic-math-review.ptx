@@ -552,7 +552,7 @@
       The following are symbols used to compare numbers.
     </p>
     <table permid="YDB">
-      <caption>Comparison Symbols</caption>
+      <title>Comparison Symbols</title>
       <tabular valign="top" permid="EKK">
         <row bottom="medium">
           <cell>Symbol</cell>
@@ -781,7 +781,7 @@ minor xtick={-2,-1,...,2},
       <exercise permid="uls">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $digits = list_random(2,3);
 $decimals = random(0,$digits-1,1);
@@ -812,7 +812,7 @@ $factorden = ($factor > 1) ? 1 : 1/$factor;
 $factornumU = NumberWithUnits("$factornum $unitsout", {newUnit => $ORCCAunits});
 $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="zMw">
                 Convert <m><var name="$given"/></m> to <var name="$word"/>.
@@ -836,7 +836,7 @@ $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
       <exercise permid="asB">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $digits = list_random(2,3);
 $decimals = random(0,$digits-1,1);
@@ -867,7 +867,7 @@ $factorden = ($factor > 1) ? 1 : 1/$factor;
 $factornumU = NumberWithUnits("$factornum $unitsout", {newUnit => $ORCCAunits});
 $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="MaO">
                 Convert <m><var name="$given"/></m> to <var name="$word"/>.
@@ -891,7 +891,7 @@ $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
       <exercise permid="GzK">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $digits = list_random(2,3);
 $decimals = random(0,$digits-1,1);
@@ -922,7 +922,7 @@ $factorden = ($factor > 1) ? 1 : 1/$factor;
 $factornumU = NumberWithUnits("$factornum $unitsout", {newUnit => $ORCCAunits});
 $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Ypg">
                 Convert <m><var name="$given"/></m> to <var name="$word"/>.
@@ -946,7 +946,7 @@ $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
       <exercise permid="mGT">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $digits = list_random(2,3);
 $decimals = random(0,$digits-1,1);
@@ -977,7 +977,7 @@ $factorden = ($factor > 1) ? 1 : 1/$factor;
 $factornumU = NumberWithUnits("$factornum $unitsout", {newUnit => $ORCCAunits});
 $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="kDy">
                 Convert <m><var name="$given"/></m> to <var name="$word"/>.
@@ -1002,7 +1002,7 @@ $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
       <exercise permid="SOc">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $digits = list_random(2,3);
 $decimals = random(0,$digits-1,1);
@@ -1042,7 +1042,7 @@ $factorden2 = ($factor2 > 1) ? 1 : 1/$factor2;
 $factornum2U = NumberWithUnits("$factornum2 $unitsout", {newUnit => $ORCCAunits});
 $factorden2U = NumberWithUnits("$factorden2 $unitsmid", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="wRQ">
                 Convert <m><var name="$given"/></m> to <var name="$word"/>.
@@ -1066,7 +1066,7 @@ $factorden2U = NumberWithUnits("$factorden2 $unitsmid", {newUnit => $ORCCAunits}
       <exercise permid="yVl">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $digits = list_random(2,3);
 $decimals = random(0,$digits-1,1);
@@ -1106,7 +1106,7 @@ $factorden2 = ($factor2 > 1) ? 1 : 1/$factor2;
 $factornum2U = NumberWithUnits("$factornum2 $unitsout", {newUnit => $ORCCAunits});
 $factorden2U = NumberWithUnits("$factorden2 $unitsmid", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Jgi">
                 Convert <m><var name="$given"/></m> to <var name="$word"/>.
@@ -1130,7 +1130,7 @@ $factorden2U = NumberWithUnits("$factorden2 $unitsmid", {newUnit => $ORCCAunits}
       <exercise permid="fcu">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $digits = list_random(2,3);
 $decimals = random(0,$digits-1,1);
@@ -1170,7 +1170,7 @@ $factorden2 = ($factor2 > 1) ? 1 : 1/$factor2;
 $factornum2U = NumberWithUnits("$factornum2 $unitsout", {newUnit => $ORCCAunits});
 $factorden2U = NumberWithUnits("$factorden2 $unitsmid", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="VuA">
                 Convert <m><var name="$given"/></m> to <var name="$word"/>.
@@ -1194,7 +1194,7 @@ $factorden2U = NumberWithUnits("$factorden2 $unitsmid", {newUnit => $ORCCAunits}
       <exercise permid="LjD">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $digits = list_random(2,3);
 $decimals = random(0,$digits-1,1);
@@ -1234,7 +1234,7 @@ $factorden2 = ($factor2 > 1) ? 1 : 1/$factor2;
 $factornum2U = NumberWithUnits("$factornum2 $unitsout", {newUnit => $ORCCAunits});
 $factorden2U = NumberWithUnits("$factorden2 $unitsmid", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="hIS">
                 Convert <m><var name="$given"/></m> to <var name="$word"/>.
@@ -1259,7 +1259,7 @@ $factorden2U = NumberWithUnits("$factorden2 $unitsmid", {newUnit => $ORCCAunits}
       <exercise permid="rqM">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $digits = list_random(2,3);
 $decimals = random(0,$digits-1,1);
@@ -1292,7 +1292,7 @@ $factorden = ($factor > 1) ? 1 : 1/$factor;
 $factornumU = NumberWithUnits("$factornum $unitsout", {newUnit => $ORCCAunits});
 $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="tXk">
                 Convert <m><var name="$given"/></m> to <var name="$dimensionWord"/> <var name="$word"/>.
@@ -1317,7 +1317,7 @@ $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
       <exercise permid="XxV">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $digits = list_random(2,3);
 $decimals = random(0,$digits-1,1);
@@ -1350,7 +1350,7 @@ $factorden = ($factor > 1) ? 1 : 1/$factor;
 $factornumU = NumberWithUnits("$factornum $unitsout", {newUnit => $ORCCAunits});
 $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="GlC">
                 Convert <m><var name="$given"/></m> to <var name="$dimensionWord"/> <var name="$word"/>.
@@ -1375,7 +1375,7 @@ $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
       <exercise permid="DFe">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $digits = list_random(2,3);
 $decimals = random(0,$digits-1,1);
@@ -1408,7 +1408,7 @@ $factorden = ($factor > 1) ? 1 : 1/$factor;
 $factornumU = NumberWithUnits("$factornum $unitsout", {newUnit => $ORCCAunits});
 $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="SzU">
                 Convert <m><var name="$given"/></m> to <var name="$dimensionWord"/> <var name="$word"/>.
@@ -1433,7 +1433,7 @@ $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
       <exercise permid="jMn">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $digits = list_random(2,3);
 $decimals = random(0,$digits-1,1);
@@ -1466,7 +1466,7 @@ $factorden = ($factor > 1) ? 1 : 1/$factor;
 $factornumU = NumberWithUnits("$factornum $unitsout", {newUnit => $ORCCAunits});
 $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="eOm">
                 Convert <m><var name="$given"/></m> to <var name="$dimensionWord"/> <var name="$word"/>.
@@ -1493,7 +1493,7 @@ $factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
       <exercise permid="PTw">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 do {
 $digits = list_random(2,3);
@@ -1542,7 +1542,7 @@ $factornum2 = ($factorden > 1) ? 1 : 1/$factorden;
 $factornum2U = NumberWithUnits("$factornum2 $denunitsin", {newUnit => $ORCCAunits});
 $factorden2U = NumberWithUnits("$factorden2 $denunitsout", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="rcE">
                 Convert <m><var name="$given"/></m> to <var name="$numword"/> per <var name="$denword"/>.
@@ -1567,7 +1567,7 @@ $factorden2U = NumberWithUnits("$factorden2 $denunitsout", {newUnit => $ORCCAuni
       <exercise permid="waF">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 do {
 $digits = list_random(2,3);
@@ -1616,7 +1616,7 @@ $factornum2 = ($factorden > 1) ? 1 : 1/$factorden;
 $factornum2U = NumberWithUnits("$factornum2 $denunitsin", {newUnit => $ORCCAunits});
 $factorden2U = NumberWithUnits("$factorden2 $denunitsout", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="DqW">
                 Convert <m><var name="$given"/></m> to <var name="$numword"/> per <var name="$denword"/>.
@@ -1641,7 +1641,7 @@ $factorden2U = NumberWithUnits("$factorden2 $denunitsout", {newUnit => $ORCCAuni
       <exercise permid="chO">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 do {
 $digits = list_random(2,3);
@@ -1690,7 +1690,7 @@ $factornum2 = ($factorden > 1) ? 1 : 1/$factorden;
 $factornum2U = NumberWithUnits("$factornum2 $denunitsin", {newUnit => $ORCCAunits});
 $factorden2U = NumberWithUnits("$factorden2 $denunitsout", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="PFo">
                 Convert <m><var name="$given"/></m> to <var name="$numword"/> per <var name="$denword"/>.
@@ -1715,7 +1715,7 @@ $factorden2U = NumberWithUnits("$factorden2 $denunitsout", {newUnit => $ORCCAuni
       <exercise permid="IoX">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 do {
 $digits = list_random(2,3);
@@ -1764,7 +1764,7 @@ $factornum2 = ($factorden > 1) ? 1 : 1/$factorden;
 $factornum2U = NumberWithUnits("$factornum2 $denunitsin", {newUnit => $ORCCAunits});
 $factorden2U = NumberWithUnits("$factorden2 $denunitsout", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="bTG">
                 Convert <m><var name="$given"/></m> to <var name="$numword"/> per <var name="$denword"/>.
@@ -1789,7 +1789,7 @@ $factorden2U = NumberWithUnits("$factorden2 $denunitsout", {newUnit => $ORCCAuni
       <exercise permid="owg">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 do {
 $digits = list_random(2,3);
@@ -1838,7 +1838,7 @@ $factornum2 = ($factorden > 1) ? 1 : 1/$factorden;
 $factornum2U = NumberWithUnits("$factornum2 $denunitsin", {newUnit => $ORCCAunits});
 $factorden2U = NumberWithUnits("$factorden2 $denunitsout", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="ohY">
                 Convert <m><var name="$given"/></m> to <var name="$numword"/> per <var name="$denword"/>.
@@ -1863,7 +1863,7 @@ $factorden2U = NumberWithUnits("$factorden2 $denunitsout", {newUnit => $ORCCAuni
       <exercise permid="UDp">
         <webwork>
             <pg-macros><macro-file>ORCCA.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 do {
 $digits = list_random(2,3);
@@ -1912,7 +1912,7 @@ $factornum2 = ($factorden > 1) ? 1 : 1/$factorden;
 $factornum2U = NumberWithUnits("$factornum2 $denunitsin", {newUnit => $ORCCAunits});
 $factorden2U = NumberWithUnits("$factorden2 $denunitsout", {newUnit => $ORCCAunits});
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Awq">
                 Convert <m><var name="$given"/></m> to <var name="$numword"/> per <var name="$denword"/>.
@@ -1940,7 +1940,7 @@ $factorden2U = NumberWithUnits("$factorden2 $denunitsout", {newUnit => $ORCCAuni
       <exercise permid="AKy">
         <webwork>
             <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $sqft = random(90,200,1);
 $sqftU = NumberWithUnits("$sqft ft^2");
@@ -1971,7 +1971,7 @@ $ans->score(0);
 return $ans;
 });
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="MKI">
                 <var name="$name"/>'s bedroom has <m><var name="$sqftU"/></m> of floor.
@@ -1989,7 +1989,7 @@ return $ans;
       <exercise permid="gRH">
         <webwork>
             <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $liters = random(26,50,1);
 $litersU = NumberWithUnits("$liters L");
@@ -2020,7 +2020,7 @@ $ans->score(0);
 return $ans;
 });
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="YZa">
                 <var name="$name"/> is traveling in Europe and renting a car.
@@ -2040,7 +2040,7 @@ return $ans;
       <exercise permid="MYQ">
         <webwork>
             <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $milliliters = random(100,400,10);
 $millilitersU = NumberWithUnits("$milliliters mL", {newUnit => {name => 'mL', conversion => {factor => 10**-6, m => 3}}});
@@ -2073,7 +2073,7 @@ $ans->score(0);
 return $ans;
 });
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="lns">
                 <var name="$name"/> found a family recipe from the old country that uses <m><var name="$millilitersU"/></m> of soup stock.
@@ -2092,7 +2092,7 @@ return $ans;
       <exercise permid="tfZ">
         <webwork>
             <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $mph = random(21,68,1);
 $mphU = NumberWithUnits("$mph mph");
@@ -2106,7 +2106,7 @@ $name = RandomName(sex=>$sex);
 $Pronoun = ($sex eq 'male') ? 'He' : 'She';
 $pronoun = lc($Pronoun);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="xBK">
                 <var name="$name"/> was driving at a steady speed of <m><var name="$mphU"/></m> for <m><var name="$min"/></m> minutes.
@@ -2122,7 +2122,7 @@ $pronoun = lc($Pronoun);
       <exercise permid="Zni">
         <webwork>
             <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $d = {name=>'d',conversion=>{factor=>24*60*60,s=>1}};
 $wk = {name=>'wk',conversion=>{factor=>7*24*60*60,s=>1}};
@@ -2134,7 +2134,7 @@ $days = $weeks*7;
 $kilograms = $rate*$days;
 $kilogramsU = NumberWithUnits("$kilograms kg");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="JQc">
                 The algae in a pond is growing at a rate of <m><var name="$rateU"/></m>.
@@ -2150,7 +2150,7 @@ $kilogramsU = NumberWithUnits("$kilograms kg");
       <exercise permid="Fur">
         <webwork>
             <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 $b = {name=>'b'};
 $B = {name=>'B', conversion=>{factor => 8, b => 1}};
@@ -2173,7 +2173,7 @@ $name = RandomName(sex=>$sex);
 $Pronoun = ($sex eq 'male') ? 'He' : 'She';
 $pronoun = lc($Pronoun);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Weu">
                 <var name="$name"/> is downloading content at an average rate of <m><var name="$rateU"/></m>
@@ -2269,7 +2269,7 @@ $pronoun = lc($Pronoun);
 
     <!-- <exercise permid="YRJ">
       <webwork>
-          <setup>
+          
 <pg-code>
 ($a[0],$b[0])=num_sort(map{$_-4}NchooseK(9,2));
 ($a[1],$b[1])=num_sort(map{$_-4}NchooseK(9,2));
@@ -2324,7 +2324,7 @@ elsif($type[$i]eq'io'){$in[$i]=Compute("(-inf,$b[$i])");}
 else{$in[$i]=Compute("(-inf,$b[$i]]");}
 };
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="isM">
               For each interval expressed in the number lines,
@@ -2375,7 +2375,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
     </exercise>
     <exercise permid="EYS">
       <webwork>
-          <setup>
+          
 <pg-code>
 ($a[0],$b[0])=num_sort(map{$_-4}NchooseK(9,2));
 ($a[1],$b[1])=num_sort(map{$_-4}NchooseK(9,2));
@@ -2430,7 +2430,7 @@ elsif($type[$i]eq'io'){$in[$i]=Compute("(-inf,$b[$i])");}
 else{$in[$i]=Compute("(-inf,$b[$i]]");}
 };
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="uHe">
               For each interval expressed in the number lines,
