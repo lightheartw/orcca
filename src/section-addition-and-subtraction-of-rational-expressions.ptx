@@ -136,12 +136,13 @@
   </subsection>
   <subsection permid="WYS">
     <title>Addition and Subtraction of Rational Expressions with Different Denominators</title>
-    <introduction permid="PIO">
+    <!-- <introduction permid="PIO"> -->
       <p permid="nPZ">
         Below are the steps to follow when adding or subtracting rational expressions,
-        in general.
+        in general.</p>
         <list xml:id="list-add-subtract-rational-expressions" permid="Xnn">
-          <caption>Steps to Adding/Subtracting Rational Expressions</caption>
+          <title>Steps to Adding/Subtracting Rational Expressions</title>
+          
           <dl permid="FjJ">
             <li permid="lqS">
               <title>Identify the LCD</title>
@@ -170,9 +171,10 @@
               </p>
             </li>
           </dl>
+        
         </list>
-      </p>
-    </introduction>
+      
+    <!-- </introduction> -->
     <sidebyside widths="47% 47%" margins="0%" permid="Duw">
       <p permid="vuy">
         As you can see from the list above,

@@ -124,7 +124,7 @@
     </remark>
     <exercise permid="ZKz">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("LimitedRadical");
 Context()->flags->set(reduceConstants=>0,
@@ -147,7 +147,7 @@ Context()->variables->are(z=>'Real');
 $answer = List(Formula("z=-9/2"),Formula("z=9/2"));
 $evaluator=$answer->cmp(list_checker => ~~&amp;radicalListCheck);
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="Hlw">
               Solve for <m>z</m> in <m>4z^2-81=0</m>.
@@ -216,7 +216,7 @@ $evaluator=$answer->cmp(list_checker => ~~&amp;radicalListCheck);
     </p>
     <exercise permid="FRI">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("LimitedRadical");
 Context()->flags->set(reduceConstants=>0,
@@ -239,7 +239,7 @@ Context()->variables->are(q=>'Real');
 $answer = List(Formula("q=-2sqrt(3)-2"),Formula("q=2sqrt(3)-2"));
 $evaluator=$answer->cmp(list_checker => ~~&amp;radicalListCheck);
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="TzO">
               Solve for <m>q</m> in <m>(q+2)^2-12=0</m>.
@@ -339,7 +339,7 @@ $evaluator=$answer->cmp(list_checker => ~~&amp;radicalListCheck);
       <term>Pythagorean Theorem</term>.
     </p>
 
-      <sidebyside widths="50% 25%" margins="10%" valign="center">
+      <sidebyside widths="50% 25%" margins="10%" valign="middle">
       <p permid="lYR">
       The Pythagorean Theorem states that for any right triangle,
         the lengths of the three sides have the following relationship:
@@ -361,7 +361,7 @@ $evaluator=$answer->cmp(list_checker => ~~&amp;radicalListCheck);
       </figure>
     </sidebyside>
     <p>Let's look at some applications of the Pythaogrean Theorem in the following examples.</p>
-    <newpage/>
+    <!-- <newpage/> -->
     <example permid="Sga">
       <sidebyside widths="55% 24%" margins="5%" permid="WPT">
         <stack>
@@ -838,7 +838,7 @@ cycle;
       <exercise permid="cFf"> -->
 <!-- Kara's challenge problem -->
         <!-- <webwork>
-            <setup>
+            
 <pg-code>
 $west = random(2,8,1);
 $north = random(3,7,1);
@@ -846,7 +846,7 @@ $factor = random(2,6,1);
 $east = $west + $factor;
 $answer = Formula("sqrt($north**2+$factor**2)");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="fOg">
                 Imagine that you are in Math Land,

@@ -437,13 +437,13 @@
       <exercise permid="WbM">
 <!-- Kara's challenge problem -->
         <webwork>
-            <setup>
+           
 <pg-code>
 $denom = random(25,95,5);
 $minusone = $denom - 1;
 $answer = Formula("1/(x+$denom)");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="stK">
                 Simplify the following:

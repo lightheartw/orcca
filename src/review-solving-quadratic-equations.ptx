@@ -938,7 +938,7 @@ minor ytick={-12,-11,...,10}]
           This helps us to check that our vertex and <m>y</m>-values are correct.
         </p>
         <table xml:id="table-quadratic-function-complete-review" permid="fml">
-          <caption>Function values and points for <m>g(x)=2x^2+8x+2</m></caption>
+          <title>Function values and points for <m>g(x)=2x^2+8x+2</m></title>
           <tabular valign="top" bottom="minor" permid="jWe">
             <col halign="right" right="minor"/>
             <col halign="left" right="minor"/>
@@ -1339,7 +1339,7 @@ minor ytick={-16,-14,...,16}]
         </p>
       </solution>
     </example>
-    <newpage/>
+    <!-- <newpage/> -->
     <example permid="uuW">
       <title>Distinguishing Quadratic Functions from Other Functions and Relations</title>
       <statement>
@@ -2359,7 +2359,7 @@ TODO: Should these be mixed applications with factoring and square root method a
 <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexSolutions40.pg" />
 </exercise> -->
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="3" permid="xwG">
       <title>Strategies for Solving Quadratic Equations</title>
 <!-- <exercise>
@@ -2587,7 +2587,7 @@ TODO: Should these be mixed applications with factoring and square root method a
           </p>
           <sidebyside widths="47% 47%" margins="0%" permid="MTZ">
             <table permid="Ltu">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="Qdn">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -2648,7 +2648,7 @@ minor ytick={-5,-4,...,20}]
           </p>
           <sidebyside widths="47% 47%" margins="0%" permid="tbi">
             <table permid="rAD">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="wkw">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -2709,7 +2709,7 @@ minor ytick={-5,-4,...,20}]
           </p>
           <sidebyside widths="47% 47%" margins="0%" permid="Zir">
             <table permid="XHM">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="crF">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -2776,7 +2776,7 @@ minor ytick={-5,-4,...,20}]
           </p>
           <sidebyside widths="47% 47%" margins="0%" permid="FpA">
             <table permid="DOV">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="IyO">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>

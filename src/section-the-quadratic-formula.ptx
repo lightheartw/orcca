@@ -76,8 +76,9 @@
       A third method for solving a quadratic equation is to use what is known as the quadratic formula.
     </p>
     <fact xml:id="fact-the-quadratic-formula" permid="Tgc">
-      <idx><h>solving</h><h>quadratic equations</h><h>quadratic formula</h></idx>
       <title>The Quadratic Formula</title>
+      <idx><h>solving</h><h>quadratic equations</h><h>quadratic formula</h></idx>
+      
       <p permid="ZjJ">
         For any quadratic equation <m>ax^2+bx+c=0</m>,
         the solutions are given by
@@ -340,13 +341,13 @@
         </p>
       </introduction>
       <webwork>
-          <setup>
+          
 <pg-code>
 $linear = PopUp(['?','linear','quadratic','neither'],1);
 $quadratic = PopUp(['?','linear','quadratic','neither'],2);
 $neither = PopUp(['?','linear','quadratic','neither'],3);
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="xMt">
               <ol label="a." permid="qDt">
@@ -419,8 +420,9 @@ $neither = PopUp(['?','linear','quadratic','neither'],3);
       Here is an outline of the general process for determining which method to use.
     </p>
     <algorithm xml:id="algorithm-solving-linear-and-quadratic-equations" permid="rIM">
-      <idx><h>solving</h><h>linear and quadratic equations</h></idx>
       <title>Solving Quadratic Equations</title>
+      <idx><h>solving</h><h>linear and quadratic equations</h></idx>
+      
       <p permid="Xuw">
         <ol permid="Kwk">
           <li permid="TPW">
@@ -761,12 +763,12 @@ $neither = PopUp(['?','linear','quadratic','neither'],3);
     <exercise permid="wsF">
 <!-- Kara's challenge problem -->
       <webwork>
-          <setup>
+          
 <pg-code>
 Context()->variables->are(m=>'Real',n=>'Real',p=>'Real');
 $answer = Compute("(-n-sqrt(n^2-4mp))/(2m),(-n+sqrt(n^2-4mp))/(2m)");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="dTC">
               Solve for <m>x</m> in the equation <m>mx^{2}+nx+p=0</m>.

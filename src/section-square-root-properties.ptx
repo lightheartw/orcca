@@ -106,12 +106,12 @@
     </p>
     <exercise permid="iCv">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("LimitedNumeric");
 Context()->flags->set(tolType=>'absolute',tolerance=>'0.15');
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="Vxf">
               Estimate <m>\sqrt{19}</m> without a calculator.
@@ -298,12 +298,12 @@ Context()->flags->set(tolType=>'absolute',tolerance=>'0.15');
     </example>
     <exercise permid="zAG">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("LimitedRadical");
 $answer=Formula("5sqrt(5)");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="hLx">
               Simplify <m>\sqrt{125}</m>.
@@ -448,12 +448,12 @@ $answer=Formula("5sqrt(5)");
 </example> -->
     <exercise permid="rWh">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("LimitedRadical");
 $answer=Formula("42sqrt(3)");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="tZP">
               Multiply <m>2\sqrt{7}\cdot3\sqrt{21}</m>.
@@ -549,12 +549,12 @@ $answer=Formula("42sqrt(3)");
     </example>
     <exercise permid="QyR">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("LimitedRadical");
 $answer=Formula("-10sqrt(3)");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="Goh">
               Simplify <m>2\sqrt{3}-3\sqrt{48}</m>.
@@ -673,12 +673,12 @@ $answer=Formula("-10sqrt(3)");
     </example>
     <exercise permid="IUs">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("LimitedRadical");
 $answer=Formula("sqrt(10)/5");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="SCz">
               Rationalize the denominator in <m>\frac{2}{\sqrt{10}}</m>.
@@ -1059,7 +1059,7 @@ $answer=Formula("sqrt(10)/5");
         <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals90.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="vHL">
       <title>Rationalizing the Denominator</title>
       <exercise permid="srG">

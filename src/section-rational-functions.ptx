@@ -15,6 +15,8 @@
       Creating this ratio inherently requires division and we'll explore the effect this has on the domain of the function.
     </p>
   </introduction>
+  <subsection>
+    <title>Introduction to Rational Functions</title>
   <definition xml:id="definition-rational-function" permid="RWj">
     <title>Rational Function</title>
     <statement>
@@ -62,12 +64,12 @@
 <!--TODO: This isn't rendering properly-->
   <exercise permid="qyT">
     <webwork>
-        <setup>
+        
 <pg-code>
 $yes=PopUp(['?','is', 'is not'],1);
 $no=PopUp(['?','is', 'is not'],2);
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="EgZ">
             Identify which of the following are rational functions and which are not.
@@ -138,6 +140,7 @@ $no=PopUp(['?','is', 'is not'],2);
         </solution>
     </webwork>
   </exercise>
+</subsection>
   <subsection permid="CyQ">
     <title>Finding the Domain of a Rational Function</title>
     <p permid="koi">

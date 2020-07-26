@@ -46,7 +46,7 @@
     </p>
     <sidebyside widths="47% 47%" margins="0%" valign="middle" permid="KcP">
       <table xml:id="table-basic-quadratic-function" permid="nwJ">
-        <caption>Function values and points for <m>f(t)=-16t^2+64t</m></caption>
+        <title>Function values and points for <m>f(t)=-16t^2+64t</m></title>
         <tabular valign="top" bottom="minor" permid="mrq">
           <col halign="right" right="minor"/>
           <col halign="left" right="minor"/>
@@ -176,12 +176,12 @@ xlabel={$t$}]
     </fact>
     <exercise permid="OMI">
       <webwork >
-      <setup>
+      
 <pg-code>
 $up = PopUp(['?','upward','downward'],1);
 $down = PopUp(['?','upward','downward'],2);
 </pg-code>
-      </setup>
+      
       <statement>
         <p permid="aTW">
           Determine whether the graph of each quadratic function opens upward or downward.
@@ -347,7 +347,7 @@ $down = PopUp(['?','upward','downward'],2);
       Here is a summary of the properties of quadratic functions:
     </p>
     <list xml:id="list-properties-of-quadratic-functions-visual" permid="dVG">
-      <caption>Summary of Properties of Quadratic Functions</caption>
+      <title>Summary of Properties of Quadratic Functions</title>
       <dl permid="sJf">
         <li xml:id="item-direction" permid="fpu">
           <title>Direction</title>
@@ -436,7 +436,7 @@ minor ytick={-10,-9,...,10}]
     </example>
     <exercise permid="uTR">
       <webwork >
-      <setup>
+      
 <pg-code>
 Context("Point");
 $vertex=Point("(-2,1)");
@@ -455,13 +455,13 @@ $gr->lb( new Label(0, $j, $j,'black','right','middle','large'));
 }
 add_functions($gr, "(x+2)**2+1 for x in &lt;-4.45,0.45>  using color:blue and weight:1");
 </pg-code>
-      </setup>
+      
       <statement>
         <p permid="Hbf">
           Use the graph to answer the following questions.
         </p>
         <sidebyside widths="40%" permid="iFz">
-          <image permid="IuT" pg-name="$gr" />
+          <image permid="IuT" source="$gr" />
         </sidebyside>
         <p permid="nio">
           <ol label="a." permid="EXx">
@@ -650,7 +650,7 @@ add_functions($gr, "(x+2)**2+1 for x in &lt;-4.45,0.45>  using color:blue and we
         </p>
         <sidebyside widths="44% 50%" margins="0%" permid="fKT">
           <table xml:id="table-quadratic-function-x-values" permid="TDS">
-            <caption>Setting up the table for <m>y=-x^2-2x+3</m></caption>
+            <title>Setting up the table for <m>y=-x^2-2x+3</m></title>
             <tabular valign="top" bottom="minor" permid="Syz">
               <col halign="right" right="minor"/>
               <col halign="left" right="minor"/>
@@ -688,7 +688,7 @@ add_functions($gr, "(x+2)**2+1 for x in &lt;-4.45,0.45>  using color:blue and we
             </tabular>
           </table>
           <table xml:id="table-quadratic-function-complete" permid="zLb">
-            <caption>Function values and points for <m>y=-x^2-2x+3</m></caption>
+            <title>Function values and points for <m>y=-x^2-2x+3</m></title>
             <tabular valign="top" bottom="minor" permid="yFI">
               <col halign="right" right="minor"/>
               <col halign="left" right="minor"/>
@@ -805,7 +805,7 @@ add_functions($gr, "(x+2)**2+1 for x in &lt;-4.45,0.45>  using color:blue and we
         </p>
         <sidebyside widths="37% 37%" margins="10%" valign="middle" permid="rZl">
           <table xml:id="table-quadratic-function-graph-using-vertex-and-table-non-integer-vertex" permid="fSk">
-            <caption>Function values and points for <m>y=2x^2-3x-4</m></caption>
+            <title>Function values and points for <m>y=2x^2-3x-4</m></title>
             <tabular valign="top" bottom="minor" permid="eMR">
               <col halign="right" right="minor"/>
               <col halign="center" right="minor"/>
@@ -990,7 +990,7 @@ add_functions($gr, "(x+2)**2+1 for x in &lt;-4.45,0.45>  using color:blue and we
           Jae then shoots at the targets with the cross-hairs directly on the bulls-eye and measures the distance that the pellet hit above or below the bulls-eye when shot at those distances.
         </p>
         <table xml:id="table-shooting-distance" permid="LZt">
-          <caption>Shooting Distance vs Pellet Rise/Fall</caption>
+          <title>Shooting Distance vs Pellet Rise/Fall</title>
           <tabular top="major" bottom="minor" halign="center" permid="KUa">
             <col halign="left" />
             <col />
@@ -1244,7 +1244,7 @@ minor ytick={-7,-6,...,3}]
 <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex30.pg" />
 </exercise> -->
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="GTO">
       <title>Graphing Quadratic Functions Using the Vertex and a Table</title>
       <exercise permid="MnB">
@@ -1260,7 +1260,7 @@ minor ytick={-7,-6,...,3}]
         <answer permid="GcQ">
           <sidebyside widths="47% 47%" margins="0%" permid="Pih">
             <table permid="sgC">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="rbj">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -1326,7 +1326,7 @@ minor ytick={-7,-6,...,3}]
         <answer permid="mjZ">
           <sidebyside widths="47% 47%" margins="0%" permid="vpq">
             <table permid="YnL">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="Xis">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -1392,7 +1392,7 @@ minor ytick={-7,-6,...,3}]
         <answer permid="Sri">
           <sidebyside widths="47% 47%" margins="0%" permid="bwz">
             <table permid="EuU">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="DpB">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -1458,7 +1458,7 @@ minor ytick={-7,-6,...,3}]
         <answer permid="yyr">
           <sidebyside widths="47% 47%" margins="0%" permid="HDI">
             <table permid="kCd">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="jwK">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -1524,7 +1524,7 @@ minor ytick={-7,-6,...,3}]
         <answer permid="eFA">
           <sidebyside widths="47% 47%" margins="0%" permid="nKR">
             <table permid="QJm">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="PDT">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -1590,7 +1590,7 @@ minor ytick={-7,-6,...,3}]
         <answer permid="KMJ">
           <sidebyside widths="47% 47%" margins="0%" permid="TSa">
             <table permid="wQv">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="vLc">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -1661,7 +1661,7 @@ minor ytick={-5,-4,...,20}]
         <answer permid="qTS">
           <sidebyside widths="47% 47%" margins="0%" permid="zZj">
             <table permid="cXE">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="bSl">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -1727,7 +1727,7 @@ minor ytick={-5,-4,...,20}]
         <answer permid="Xbb">
           <sidebyside widths="47% 47%" margins="0%" permid="ggs">
             <table permid="JeN">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="HZu">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -1797,7 +1797,7 @@ minor ytick={-5,-4,...,20}]
           </p>
           <sidebyside widths="47% 47%" margins="0%" permid="JsV">
             <table permid="plW">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="ogD">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -1858,7 +1858,7 @@ minor ytick={-5,-4,...,20}]
           </p>
           <sidebyside widths="47% 47%" margins="0%" permid="pAe">
             <table permid="Vtf">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="UnM">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -1919,7 +1919,7 @@ minor ytick={-5,-4,...,20}]
           </p>
           <sidebyside widths="47% 47%" margins="0%" permid="VHn">
             <table permid="BAo">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="AuV">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -1986,7 +1986,7 @@ minor ytick={-5,-4,...,20}]
           </p>
           <sidebyside widths="47% 47%" margins="0%" permid="BOw">
             <table permid="hHx">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="gCe">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -2055,7 +2055,7 @@ minor ytick={-10,-9,...,10}]
           </p>
           <sidebyside widths="47% 47%" margins="0%" permid="hVF">
             <table permid="NOG">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="MJn">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -2114,7 +2114,7 @@ minor ytick={-10,-9,...,10}]
           </p>
           <sidebyside widths="47% 47%" margins="0%" permid="OcO">
             <table permid="tVP">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="sQw">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -2198,7 +2198,7 @@ minor ytick={-15,-14,...,10}]
           </p>
           <sidebyside widths="47% 47%" margins="0%" permid="ujX">
             <table permid="acY">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="YXF">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -2261,7 +2261,7 @@ minor ytick={-4,-3,...,9}]
           </p>
           <sidebyside widths="47% 47%" margins="0%" permid="arg">
             <table permid="Gkh">
-              <caption></caption>
+              <title></title>
               <tabular valign="top" bottom="minor" permid="FeO">
                 <col halign="right" right="minor"/>
                 <col halign="right"/>
@@ -2339,7 +2339,7 @@ minor ytick={-14,-13,...,14}]
 <webwork source="Contrib/PCC/BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph80.pg" />
 </exercise>
 </exercisegroup> -->
-  <newpage/>
+  <!-- <newpage/> -->
     <exercisegroup permid="Tig">
       <title>Finding Maximum and Minimum Values for Applications of Quadratic Functions</title>
       <exercise permid="DDJ">

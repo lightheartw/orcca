@@ -126,7 +126,7 @@ xlabel={$t$, time in hours},ylabel={$y$, concentration (mg per liter)}]
     </p>
     <sidebyside widths="47% 47%" permid="tFh">
       <table xml:id="table-rational-function-intro-injection-large-t" permid="SKH">
-        <caption>Numerical Values for <m>C(t)=\frac{3t}{t^2+8}</m></caption>
+        <title>Numerical Values for <m>C(t)=\frac{3t}{t^2+8}</m></title>
         <tabular permid="jIS">
           <col halign="center"/>
           <col halign="left"/>
@@ -294,7 +294,7 @@ $no=PopUp(['?','is', 'is not'],2);
         </p>
         <sidebyside widths="47% 47%" permid="ZMq">
           <table xml:id="table-rational-function-intro-initial-table" permid="yRQ">
-            <caption>Initial Values of <m>f(x)=\frac{1}{x-2}</m></caption>
+            <title>Initial Values of <m>f(x)=\frac{1}{x-2}</m></title>
             <tabular permid="PQb">
               <col halign="center"/>
               <col halign="left"/>
@@ -386,7 +386,7 @@ $no=PopUp(['?','is', 'is not'],2);
         </p>
         <sidebyside widths="47% 47%" valign="middle" permid="FTz">
           <table permid="eYZ">
-            <caption>Values of <m>f(x)=\frac{1}{x-2}</m></caption>
+            <title>Values of <m>f(x)=\frac{1}{x-2}</m></title>
             <tabular permid="vXk">
               <col halign="center"/>
               <col halign="left"/>
@@ -517,7 +517,7 @@ $no=PopUp(['?','is', 'is not'],2);
 <solution>
 <p>With technology, we will choose the starting value of <m>-2</m> and an increment of <m>0.5</m>, and look at values in a table:</p>
 <table>
-<caption>Values of <m>f(x)=\frac{1}{x^2}</m> in a table</caption>
+<title>Values of <m>f(x)=\frac{1}{x^2}</m> in a table</title>
 <tabular>
 <col halign="center"/>
 <col halign="left"/>
@@ -623,7 +623,7 @@ xlabel={x},ylabel={f}]
         </p>
         <sidebyside widths="47% 47%" margins="0%" valign="bottom" permid="maI">
           <table permid="Lgi">
-            <caption>Numerical Values for <m>g</m></caption>
+            <title>Numerical Values for <m>g</m></title>
             <tabular permid="cet">
               <col halign="center"/>
               <col halign="left"/>
@@ -747,7 +747,7 @@ minor xtick={-11,-9,...,11}]
         </p>
         <sidebyside widths="47% 47%" margins="0%" permid="ShR">
           <table permid="rnr">
-            <caption>Values for Large Positive <m>x</m></caption>
+            <title>Values for Large Positive <m>x</m></title>
             <tabular permid="IlC">
               <col halign="center"/>
               <col halign="left"/>
@@ -774,7 +774,7 @@ minor xtick={-11,-9,...,11}]
             </tabular>
           </table>
           <table permid="XuA">
-            <caption>Values for Large Negative <m>x</m></caption>
+            <title>Values for Large Negative <m>x</m></title>
             <tabular permid="osL">
               <col halign="center"/>
               <col halign="left"/>
@@ -999,7 +999,7 @@ xlabel={$x$, pairs of shoes},ylabel={$y$, average cost}]
                 and use technology to create a table of values:
               </p>
               <table permid="DBJ">
-                <caption>Values for Large Positive <m>x</m></caption>
+                <title>Values for Large Positive <m>x</m></title>
                 <tabular permid="UzU">
                   <col halign="left"/>
                   <col halign="left"/>

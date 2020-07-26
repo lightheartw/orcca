@@ -10,7 +10,7 @@
   <title>Graphing Quadratic Functions</title>
   <subsection xml:id="introduction-to-algebraically-determining-intercepts" permid="KuB">
     <title>Introduction</title>
-    <introduction permid="UcI">
+    <!-- <introduction permid="UcI"> -->
       <p permid="mBY">
         We have learned how to locate the key features of quadratic functions on a graph and find the vertex algebraically.
         In this section we'll explore how to find the intercepts algebraically and use their coordinates to graph a quadratic function.
@@ -61,7 +61,7 @@ ylabel={$H$}]
           </image>
         </figure>
       </sidebyside>
-    </introduction>
+    <!-- </introduction> -->
   </subsection>
   <subsection permid="qBK">
     <title>Finding the Vertical and Horizontal Intercepts Algebraically</title>
@@ -384,7 +384,7 @@ minor ytick={-12,-11,...,12}]
       </p>
       <sidebyside widths="47% 47%" margins="0%" valign="middle" permid="Ric">
         <table xml:id="table-quadratic-function-no-horizontal-intercepts-key-features" permid="mQt">
-          <caption>Determine additional function values.</caption>
+          <title>Determine additional function values.</title>
           <tabular valign="top" bottom="minor" permid="SXC">
             <col halign="right" right="minor"/>
             <col halign="right" right="minor"/>
@@ -2017,7 +2017,7 @@ ytick={-5,0,...,35},minor ytick={-10,-9,...,40}]
       <exercise permid="HOq">
 <!-- Kara's challenge problem -->
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Point");
 Context()->variables->are(n=>'Real',p=>'Real');
@@ -2025,23 +2025,23 @@ $xintanswer = Compute("((-n-sqrt(n^2-4p))/2,0),((-n+sqrt(n^2-4p))/2,0)");
 $yintanswer = Point(0,p);
 $vertexanswer = Compute("(-n/2,(4p-n^2)/4)");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="RDO">
                 Consider the function <m>f(x) = x^{2}+nx+p</m>.
                 Let <m>n</m> and <m>p</m> be real numbers.
                 Give your answers as points.
-              </p>
+              
               <ol label="a." permid="blI">
                 <li permid="ZaW">
                   <p permid="HHm">
                     Suppose the function has two real <m>x</m>-intercepts.
                     What are they?
                   </p>
-                  <instruction>
-                    Enter the two intercepts as a comma-separated list. Be mindful of how you use parentheses in typing up the answers.
-                  </instruction>
-                  <p permid="nOv">
+                  <p>
+                    Enter the two intercepts as a comma-separated list. Be mindful of how you use parentheses in typing up the answers.</p>
+                  
+                  <p permid="nOv"> 
                     <var name="$xintanswer" width="30"/>
                   </p>
                 </li>
@@ -2062,8 +2062,10 @@ $vertexanswer = Compute("(-n/2,(4p-n^2)/4)");
                   </p>
                 </li>
               </ol>
+            </p>
             </statement>
             <solution permid="lKN">
+              <p>
               <ol label="a." permid="WBP">
                 <li permid="Rwx">
                   <p permid="syo">
@@ -2081,6 +2083,7 @@ $vertexanswer = Compute("(-n/2,(4p-n^2)/4)");
                   </p>
                 </li>
               </ol>
+            </p>
             </solution>
         </webwork>
       </exercise>
