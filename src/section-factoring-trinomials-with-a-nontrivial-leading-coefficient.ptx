@@ -991,7 +991,7 @@
       <exercise permid="KHJ">
 <!-- Kara's challenge problem -->
         <webwork>
-            <setup>
+            
 <pg-code>
 $c = list_random(2,4,5,7,8,10);
 $threec = $c*3;
@@ -1014,7 +1014,7 @@ $answer = List(@b);
 Context()->variables->add(b=>'Real');
 $expression = Formula("3x^2+bx+$c")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="DrF">
                 What integers can go in the place of <m>b</m> so that the quadratic expression <m><var name="$expression" /></m> is factorable?
@@ -1026,8 +1026,8 @@ $expression = Formula("3x^2+bx+$c")->reduce;
                 <var name="$answer" width="30"/>
               </p>
             </statement>
-            <hint permid="BXR">
-              There are <var name="$n"/> answers.
+            <hint permid="BXR"><p>
+              There are <var name="$n"/> answers.</p>
             </hint>
             <solution permid="VQI">
               <p permid="afc">

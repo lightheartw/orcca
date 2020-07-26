@@ -197,7 +197,7 @@
       <webwork source="Contrib/PCC/BasicAlgebra/Exponents/exponentsMultiplication23.pg" />
     </exercise>
     <list xml:id="list-rules-of-exponents" permid="qYw">
-      <caption>Summary of the Rules of Exponents for Multiplication</caption>
+      <title>Summary of the Rules of Exponents for Multiplication</title>
       <idx><h>exponent</h><h>introductory rules</h></idx>
       <introduction permid="XfF">
         <p permid="ksm">
@@ -691,7 +691,7 @@
       <exercise permid="NLT">
         <webwork>
             <pg-macros><macro-file>contextLimitedPolynomial.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->reduction->set('(-x)-y'=>0);
@@ -711,7 +711,7 @@ Context()->reduction->set('(-x)-y'=>0);
 Context()->reduction->set('(-x)+y'=>0);
 $simplified=Formula("$simplified");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="IUW">
                 Fully simplify <m><var name="$unsimplified" /></m>.
@@ -734,7 +734,7 @@ $simplified=Formula("$simplified");
       <exercise permid="tTc">
         <webwork>
             <pg-macros><macro-file>contextLimitedPolynomial.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->reduction->set('(-x)-y'=>0);
@@ -754,7 +754,7 @@ Context()->reduction->set('(-x)-y'=>0);
 Context()->reduction->set('(-x)+y'=>0);
 $simplified=Formula("$simplified");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Vjo">
                 Fully simplify <m><var name="$unsimplified" /></m>.
@@ -777,7 +777,7 @@ $simplified=Formula("$simplified");
       <exercise permid="aal">
         <webwork>
             <pg-macros><macro-file>contextLimitedPolynomial.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->reduction->set('(-x)-y'=>0);
@@ -797,7 +797,7 @@ Context()->reduction->set('(-x)-y'=>0);
 Context()->reduction->set('(-x)+y'=>0);
 $simplified=Formula("$simplified");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="hxG">
                 Fully simplify <m><var name="$unsimplified" /></m>.
@@ -820,7 +820,7 @@ $simplified=Formula("$simplified");
       <exercise permid="Ghu">
         <webwork>
             <pg-macros><macro-file>contextLimitedPolynomial.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->reduction->set('(-x)-y'=>0);
@@ -840,7 +840,7 @@ Context()->reduction->set('(-x)-y'=>0);
 Context()->reduction->set('(-x)+y'=>0);
 $simplified=Formula("$simplified");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="tLY">
                 Fully simplify <m><var name="$unsimplified" /></m>.
@@ -864,7 +864,7 @@ $simplified=Formula("$simplified");
     <exercise permid="bPy">
 <!-- Kara's challenge problem -->
       <webwork>
-          <setup>
+          
 <pg-code>
 do {
 $a = random(-15,-1,2);
@@ -926,7 +926,7 @@ if ($numstu*$expastu*$expbstu != $complete3) {return 0;} else {return 1};
 }
 );
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="Gaq">
               Fill in the blanks with algebraic expressions that make the equation true.
@@ -944,6 +944,7 @@ if ($numstu*$expastu*$expbstu != $complete3) {return 0;} else {return 1};
               After finding a correct answer,
               see if you can come up with a different answer that is also correct.
             </p>
+            <p>
             <ol label="a." permid="uCW">
               <li permid="eoF">
                 <p permid="PPB">
@@ -961,6 +962,7 @@ if ($numstu*$expastu*$expbstu != $complete3) {return 0;} else {return 1};
                 </p>
               </li>
             </ol>
+          </p>
           </statement>
           <solution permid="ljk">
             <p permid="OKi">
@@ -994,7 +996,7 @@ if ($numstu*$expastu*$expbstu != $complete3) {return 0;} else {return 1};
     <!-- <exercise permid="HWH"> -->
 <!-- Kara's challenge problem -->
      <!--  <webwork>
-          <setup>
+          
 <pg-code>
 $m = random(5,15,1);
 $n = $m + random(10,20,1);
@@ -1003,7 +1005,7 @@ $answerb = $p-1;
 $q = random(500,2000,50);
 $answerc = $q-1;
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="eDa">
               <ol label="a." permid="aKf">
@@ -1088,7 +1090,7 @@ $answerc = $q-1;
     <exercise permid="odQ"> -->
 <!-- ! Kara's challenge problem -->
       <!-- <webwork>
-          <setup>
+          
 <pg-code>
 $m = random(2,3,1);
 $mraised = 100*$m;
@@ -1102,7 +1104,7 @@ else {
 $popup = ($m**$p > $p**$m) ? $more : $less;
 };
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="KKj">
               Choose the correct inequality or equal sign to make the relation true.

@@ -401,13 +401,13 @@
     <exercise permid="JJH">
       <webwork>
           <pg-macros><macro-file>contextLimitedFactor.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("LimitedFactor");
 Context()->variables->are(m=>'Real');
 $answer = Formula("(m+4)(m-10)");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="TrO">
               Factor <m>m^2-6m-40</m>.
@@ -682,13 +682,13 @@ $answer = Formula("(m+4)(m-10)");
     <exercise permid="uAJ">
       <webwork>
           <pg-macros><macro-file>contextLimitedFactor.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("LimitedFactor");
 Context()->variables->are(y=>'Real');
 $answer = Formula("(y^3-25)(y^3+2)");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="fGg">
               Factor <m>y^6-23y^3-50</m>.
@@ -913,7 +913,7 @@ $answer = Formula("(y^3-25)(y^3+2)");
       </exercise>
       <exercise permid="lXV">
         <webwork seed="2">
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -933,7 +933,7 @@ $s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
 $problem = Compute("$a*($var+$b)*($var+$c)")->reduce;
 $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="rUy">
                 Multiply the polynomials.
@@ -964,7 +964,7 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
       </exercise>
       <exercise permid="Sfe">
         <webwork seed="4">
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -985,7 +985,7 @@ $s3 = Compute("$a*($var**2+$bPlusC*$var+$bc)")->reduce;
 $problem = Compute("$a*($var+$b)*($var+$c)")->reduce;
 $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="EiQ">
                 Multiply the polynomials.
@@ -1016,7 +1016,7 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
       </exercise>
       <exercise permid="ymn">
         <webwork seed="3">
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1036,7 +1036,7 @@ $s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
 $problem = Compute("$a*($var+$b)*($var+$c)")->reduce;
 $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Qxi">
                 Multiply the polynomials.
@@ -1067,7 +1067,7 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
       </exercise>
       <exercise permid="etw">
         <webwork seed="5">
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1088,7 +1088,7 @@ $s3 = Compute("$a*($var**2+$bPlusC*$var+$bc)")->reduce;
 $problem = Compute("$a*($var+$b)*($var+$c)")->reduce;
 $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="cLA">
                 Multiply the polynomials.
@@ -1348,7 +1348,7 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
       </exercise>
       <exercise permid="QEm">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring405.pg" />
-      </exercise> -->
+      </exercise>
       <exercise permid="wLv">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring410.pg" />
       </exercise>
@@ -1430,7 +1430,7 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
       <exercise permid="obD">
 <!-- Kara's challenge problem -->
         <webwork>
-            <setup>
+            
 <pg-code>
 $c = list_random(4,6,8,9,10,12,14,15,16,18,20)*random(-1,1,2);
 $absc = abs($c);
@@ -1453,7 +1453,7 @@ $answer = List(@b);
 Context()->variables->add(b=>'Real');
 $expression = Formula("x^2+bx+$c")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="oZS">
                 What integers can go in the place of <m>b</m> so that the quadratic expression <m><var name="$expression" /></m> is factorable?
@@ -1465,8 +1465,8 @@ $expression = Formula("x^2+bx+$c")->reduce;
                 <var name="$answer" width="30"/>
               </p>
             </statement>
-            <hint permid="hgY">
-              There are <var name="$n"/> answers.
+            <hint permid="hgY"><p>
+              There are <var name="$n"/> answers.</p>
             </hint>
             <solution permid="AZP">
               <p permid="DyW">

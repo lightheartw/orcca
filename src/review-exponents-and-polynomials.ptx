@@ -1308,7 +1308,7 @@
       </exercise>
       <exercise permid="qHs">
         <webwork seed="2">
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1328,7 +1328,7 @@ $s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
 $problem = Compute("$a*($var+$b)*($var+$c)")->reduce;
 $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="VgF">
                 Multiply the polynomials.
@@ -1359,7 +1359,7 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
       </exercise>
       <exercise permid="WOB">
         <webwork seed="2">
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1380,7 +1380,7 @@ $s3 = Compute("$a*($var**2+$bPlusC*$var+$bc)")->reduce;
 $problem = Compute("$a*($var+$b)*($var+$c)")->reduce;
 $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="huX">
                 Multiply the polynomials.
@@ -1411,7 +1411,7 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
       </exercise>
       <exercise permid="CVK">
         <webwork seed="2">
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1428,7 +1428,7 @@ $s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
 $problem = Compute("$var*($var+$b)*($var+$c)")->reduce;
 $ans = Compute("$var**3+$bPlusC*$var**2+$bc*$var")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="tJp">
                 Multiply the polynomials.
@@ -1459,7 +1459,7 @@ $ans = Compute("$var**3+$bPlusC*$var**2+$bc*$var")->reduce;
       </exercise>
       <exercise permid="jcT">
         <webwork seed="2">
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1481,7 +1481,7 @@ $s4 = Compute("$a*$var")->reduce;
 $problem = Compute("$a*$var*($var+$b)*($var+$c)")->reduce;
 $ans = Compute("$a*$var**3+$d*$var**2+$e*$var")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="FXH">
                 Multiply the polynomials.

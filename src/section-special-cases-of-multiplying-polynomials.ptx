@@ -375,7 +375,7 @@
 <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar130.pg" seed="2"/>
 </exercise>-->
     <list xml:id="list-special-cases-of-multiplication-formulas" permid="UUc">
-      <caption>Special Cases of Multiplication Formulas</caption>
+      <title>Special Cases of Multiplication Formulas</title>
       <idx><h>special cases of multiplication formulas</h></idx>
       <introduction permid="Bbl">
         <p permid="Htn">
@@ -505,11 +505,11 @@
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/exponentsMultiplication50.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="4" permid="gTZ">
       <exercise permid="iJm">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -566,7 +566,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="THF">
                 Simplify each expression, if possible, by combining like terms.
@@ -615,7 +615,7 @@ return $OK;
       </exercise>
       <exercise permid="OQv">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -672,7 +672,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="fVX">
                 Simplify each expression, if possible, by combining like terms.
@@ -722,7 +722,7 @@ return $OK;
 <!-- 2 to 4 terms -->
       <exercise permid="uXE">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -779,7 +779,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="skp">
                 Simplify each expression, if possible, by combining like terms.
@@ -828,7 +828,7 @@ return $OK;
       </exercise>
       <exercise permid="beN">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -885,7 +885,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="EyH">
                 Simplify each expression, if possible, by combining like terms.
@@ -936,12 +936,12 @@ return $OK;
     <exercisegroup cols="2" permid="Nbi">
       <exercise permid="HlW">
         <webwork>
-            <setup>
+            
 <pg-code>
 $yes=PopUp(['?','True', 'False'],1);
 $no=PopUp(['?','True', 'False'],2);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="QMZ">
                 Determine if the following statements are true or false.
@@ -998,12 +998,12 @@ $no=PopUp(['?','True', 'False'],2);
       </exercise>
       <exercise permid="ntf">
         <webwork>
-            <setup>
+            
 <pg-code>
 $yes=PopUp(['?','True', 'False'],1);
 $no=PopUp(['?','True', 'False'],2);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="wUi">
                 Determine if the following statements are true or false.

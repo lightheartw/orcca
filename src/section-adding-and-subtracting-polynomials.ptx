@@ -144,12 +144,12 @@
     </remark>
     <exercise permid="yaw">
       <webwork>
-          <setup>
+          
 <pg-code>
 $yes=PopUp(['?','is', 'is not'],1);
 $no=PopUp(['?','is', 'is not'],2);
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="FqN">
               Identify which of the following are polynomials and which are not.
@@ -676,7 +676,7 @@ $no=PopUp(['?','is', 'is not'],2);
       <title>Review and Warmup</title>
       <exercise permid="vWO">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -703,7 +703,7 @@ $exp1=$expression[1];
 $exp2=$expression[2];
 $exp3=$expression[3];
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="lxW">
                 List the terms in each expression.
@@ -773,7 +773,7 @@ $exp3=$expression[3];
       </exercise>
       <exercise permid="cdX">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -800,7 +800,7 @@ $exp1=$expression[1];
 $exp2=$expression[2];
 $exp3=$expression[3];
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="RFf">
                 List the terms in each expression.
@@ -870,7 +870,7 @@ $exp3=$expression[3];
       </exercise>
       <exercise permid="Ilg">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -897,7 +897,7 @@ $exp1=$expression[1];
 $exp2=$expression[2];
 $exp3=$expression[3];
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="xMo">
                 List the terms in each expression.
@@ -967,7 +967,7 @@ $exp3=$expression[3];
       </exercise>
       <exercise permid="osp">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -994,7 +994,7 @@ $exp1=$expression[1];
 $exp2=$expression[2];
 $exp3=$expression[3];
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="dTx">
                 List the terms in each expression.
@@ -1066,7 +1066,7 @@ $exp3=$expression[3];
     <exercisegroup cols="2" permid="mDc">
       <exercise permid="Uzy">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -1123,7 +1123,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="KaG">
                 Simplify each expression, if possible, by combining like terms.
@@ -1172,7 +1172,7 @@ return $OK;
       </exercise>
       <exercise permid="AGH">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -1229,7 +1229,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="WoY">
                 Simplify each expression, if possible, by combining like terms.
@@ -1278,7 +1278,7 @@ return $OK;
       </exercise>
       <exercise permid="gNQ">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Fraction");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -1336,7 +1336,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="iDq">
                 Simplify each expression, if possible, by combining like terms.
@@ -1385,7 +1385,7 @@ return $OK;
       </exercise>
       <exercise permid="MUZ">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Fraction");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -1443,7 +1443,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="uRI">
                 Simplify each expression, if possible, by combining like terms.
@@ -1684,7 +1684,7 @@ return $OK;
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialBasics/polyMultVar55.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="DBn">
       <title>Evaluating Polynomials</title>
       <exercise permid="lck">

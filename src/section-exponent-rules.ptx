@@ -16,7 +16,7 @@
       We'll begin with a brief recap and explanation of these three exponent rules.
     </p>
     <list xml:id="list-exponent-rules-recap" permid="DxJ">
-      <caption>Summary of Exponent Rules</caption>
+      <title>Summary of Exponent Rules</title>
       <dl permid="EhD">
         <li xml:id="item-exponent-rules-product-rule-verbal-statement" permid="HqE">
           <title>Product Rule</title>
@@ -54,7 +54,7 @@
       <webwork>
           <pg-macros><macro-file>contextLimitedPolynomial.pl</macro-file>
           <macro-file>answerHints.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("LimitedPolynomial-Strict");
 Context()->variables->are(r=>'Real',x=>'Real',y=>'Real');
@@ -67,7 +67,7 @@ $b = Formula("x^110");
 $c = Formula("81r^4");
 $d = Formula("9y^19");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="LTt">
               <ol label="a." cols="2" permid="QvV">
@@ -289,7 +289,7 @@ $d = Formula("9y^19");
         <webwork>
             <pg-macros><macro-file>contextLimitedPolynomial.pl</macro-file>
             <macro-file>answerHints.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("LimitedPolynomial");
 Context()->variables->are(p=>'Real',r=>'Real',w=>'Real',x=>'Real');
@@ -304,7 +304,7 @@ $b = Formula("p^6/64");
 $c = Formula("5^36w^27");
 $d = Formula("2r^11");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="saC">
                 <ol label="a." permid="wDe">
@@ -460,7 +460,7 @@ $d = Formula("2r^11");
 </table>
 -->
     <table xml:id="table-descending-powers-of-two" permid="URG">
-      <caption>Descending Powers of <m>2</m></caption>
+      <title>Descending Powers of <m>2</m></title>
       <tabular permid="AYP">
         <row>
           <cell halign="right">power</cell>
@@ -604,7 +604,7 @@ $d = Formula("2r^11");
 -->
     <exercise permid="Ety">
       <webwork>
-          <setup>
+          
 
             <pg-code>
                 Context()->operators->set(
@@ -632,7 +632,7 @@ $d = Formula("2r^11");
                     );
                 }
             </pg-code>
-          </setup>
+          
           <statement>
             <p permid="lkO">
               Simplify the following expressions.
@@ -909,7 +909,7 @@ $d = Formula("2r^11");
     </p>
     <exercise permid="UvU">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context()->operators->set(
 '**' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
@@ -941,7 +941,7 @@ return $OK;
 });
 };
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="EoU">
               <ol label="a." cols="3" permid="IRw">
@@ -1051,7 +1051,7 @@ return $OK;
       let's summarize.
     </p>
     <list xml:id="list-exponent-rules" permid="gKm">
-      <caption>Summary of the Rules of Exponents for Multiplication and Division</caption>
+      <title>Summary of the Rules of Exponents for Multiplication and Division</title>
       <introduction permid="MRv">
         <p permid="fMk">
           If <m>a</m> and <m>b</m> are real numbers,
@@ -1158,13 +1158,13 @@ return $OK;
     </warning>
     <exercise permid="sYE">
       <webwork >
-      <setup>
+      
 <pg-code>
 Context()->variables->are();
 $true = PopUp(['?','true','false'],1);
 $false = PopUp(['?','true','false'],2);
 </pg-code>
-      </setup>
+      
       <statement>
         <p permid="kwd">
           Decide whether each statements is true or false.
@@ -1364,7 +1364,7 @@ $false = PopUp(['?','true','false'],2);
     </p>
     <exercise permid="ZfN">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context()->operators->set(
 '**' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
@@ -1399,7 +1399,7 @@ return $OK;
 });
 };
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="wKv">
               <ol label="a." cols="2" permid="VfO">
@@ -1944,13 +1944,13 @@ return $OK;
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/negExp180.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup permid="yUU">
       <title>Challenge</title>
       <exercise permid="Gsp">
 <!-- Kara's challenge problem -->
         <webwork>
-            <setup>
+            
 <pg-code>
 do {
 $a = random(1,10,1);
@@ -1990,7 +1990,7 @@ if ($dstu+$estu-$fstu != $negexponent) {return 0;} else {return 1};
 );
 $abs = abs($negexponent);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="cRE">
                 Consider the exponential expression
@@ -2061,7 +2061,7 @@ $abs = abs($negexponent);
       <exercise permid="mzy">
 <!-- Kara's challenge problem -->
         <webwork>
-            <setup>
+            
 <pg-code>
 do {
 $a = random(1,10,1);
@@ -2090,7 +2090,7 @@ if ($dstu+$estu-$fstu != $negexponent) {return 0;} else {return 1};
 );
 $abs = abs($negexponent);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="IYN">
                 Consider the exponential expression
@@ -2167,7 +2167,7 @@ $abs = abs($negexponent);
       <exercise permid="SGH">
 <!-- Kara's challenge problem -->
         <webwork>
-            <setup>
+            
 <pg-code>
 do {
 $a = random(1,10,1);
@@ -2196,7 +2196,7 @@ $negexponent = $d + $e - $f;
 $abs = abs($negexponent);
 $answer = Compute("none");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="pfW">
                 Consider the exponential expression

@@ -87,11 +87,11 @@
     </p>
     <exercise permid="yHm">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context()->variables->are(x=>'Real',y=>'Real');
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="UDL">
               <ol label="a." permid="sSa">
@@ -330,13 +330,13 @@ Context()->variables->are(x=>'Real',y=>'Real');
     <exercise xml:id="example-factor-out-common-factor-trailing-9x" permid="KVE">
       <webwork>
           <pg-macros><macro-file>contextLimitedFactor.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("LimitedFactor");
 Context()->noreduce('(-x)-y','(-x)+y');
 $answer=Formula("4x(x^2+3x-3)");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="AKU">
               Factor the polynomial <m>4x^3+12x^2-12x</m>.
@@ -383,8 +383,9 @@ $answer=Formula("4x(x^2+3x-3)");
       Similarly, we can factor a polynomial with a rectangle diagram.
     </p>
     <paragraphs permid="GHk">
+      <title>Factoring Out the Greatest Common Factor Using Rectangles</title>
       <algorithm permid="aeC">
-        <title>Factoring Out the Greatest Common Factor Using Rectangles</title>
+        
         <statement>
           <p permid="VJe">
             <ol permid="Awz">

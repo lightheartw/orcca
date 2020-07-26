@@ -482,20 +482,20 @@
           Currently, he can sell <m>100</m> paintings per year.
           Thus, his annual income from paintings is <m>200\cdot100=20000</m> dollars.
           He plans to raise the price.
-          However, for each <dollar /><m>20</m> price increase per painting,
+          However, for each <m>\$20</m> price increase per painting,
           his customers would buy <m>5</m> fewer paintings annually.
         </p>
         <p permid="UBh">
           Assume Tyrone would raise the price of his paintings <m>x</m> times,
-          each time by <dollar /><m>20</m>.
+          each time by <m>\$20</m>.
           Use an expanded polynomial to represent his new income per year.
         </p>
       </statement>
       <solution permid="YtP">
         <p permid="zYw">
-          Currently, each painting costs <dollar /><m>200</m>.
+          Currently, each painting costs <m>\$200</m>.
           After raising the price <m>x</m> times,
-          each time by <dollar /><m>20</m>,
+          each time by <m>\$20</m>,
           each painting’s new price would be <m>200+20x</m> dollars.
         </p>
         <p permid="gfF">
@@ -513,7 +513,7 @@
             <mrow>\amp=-100x^2+1000x+20000</mrow>
           </md>
           After raising the price <m>x</m> times,
-          each time by <dollar /><m>20</m>, Tyrone’s annual income from paintings would be <m>-100x^2+1000x+20000</m> dollars.
+          each time by <m>\$20</m>, Tyrone’s annual income from paintings would be <m>-100x^2+1000x+20000</m> dollars.
         </p>
       </solution>
     </example>
@@ -582,7 +582,7 @@
     <exercisegroup cols="2" permid="UAU">
       <exercise permid="Wqh">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -607,7 +607,7 @@ $exp1=$expression[1];
 $exp2=$expression[2];
 $exp3=$expression[3];
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Fsj">
                 Count the number of terms in each expression.
@@ -677,7 +677,7 @@ $exp3=$expression[3];
       </exercise>
       <exercise permid="Cxq">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -702,7 +702,7 @@ $exp1=$expression[1];
 $exp2=$expression[2];
 $exp3=$expression[3];
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="lzs">
                 Count the number of terms in each expression.
@@ -772,7 +772,7 @@ $exp3=$expression[3];
       </exercise>
       <exercise permid="iEz">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -799,7 +799,7 @@ $exp1=$expression[1];
 $exp2=$expression[2];
 $exp3=$expression[3];
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="RGB">
                 List the terms in each expression.
@@ -869,7 +869,7 @@ $exp3=$expression[3];
       </exercise>
       <exercise permid="OLI">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -896,7 +896,7 @@ $exp1=$expression[1];
 $exp2=$expression[2];
 $exp3=$expression[3];
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="xNK">
                 List the terms in each expression.
@@ -966,7 +966,7 @@ $exp3=$expression[3];
       </exercise>
       <exercise permid="uSR">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -993,7 +993,7 @@ $exp1=$expression[1];
 $exp2=$expression[2];
 $exp3=$expression[3];
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="dUT">
                 List the terms in each expression.
@@ -1063,7 +1063,7 @@ $exp3=$expression[3];
       </exercise>
       <exercise permid="baa">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -1090,7 +1090,7 @@ $exp1=$expression[1];
 $exp2=$expression[2];
 $exp3=$expression[3];
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Kcc">
                 List the terms in each expression.
@@ -1160,7 +1160,7 @@ $exp3=$expression[3];
       </exercise>
       <exercise permid="Hhj">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -1217,7 +1217,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="qjl">
                 Simplify each expression, if possible, by combining like terms.
@@ -1266,7 +1266,7 @@ return $OK;
       </exercise>
       <exercise permid="nos">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -1323,7 +1323,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="CxD">
                 Simplify each expression, if possible, by combining like terms.
@@ -1372,7 +1372,7 @@ return $OK;
       </exercise>
       <exercise permid="TvB">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Fraction");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -1430,7 +1430,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="OLV">
                 Simplify each expression, if possible, by combining like terms.
@@ -1479,7 +1479,7 @@ return $OK;
       </exercise>
       <exercise permid="zCK">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Fraction");
 Context()->noreduce('(-x)+y','(-x)-y');
@@ -1537,7 +1537,7 @@ return $OK;
 });
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="ban">
                 Simplify each expression, if possible, by combining like terms.
@@ -1753,7 +1753,7 @@ return $OK;
       </exercise>
       <exercise permid="mST">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1773,7 +1773,7 @@ $s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
 $problem = Compute("$a*($var+$b)*($var+$c)")->reduce;
 $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="noF">
                 Multiply the polynomials.
@@ -1804,7 +1804,7 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
       </exercise>
       <exercise permid="Tac">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1825,7 +1825,7 @@ $s3 = Compute("$a*($var**2+$bPlusC*$var+$bc)")->reduce;
 $problem = Compute("$a*($var+$b)*($var+$c)")->reduce;
 $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="zCX">
                 Multiply the polynomials.
@@ -1856,7 +1856,7 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
       </exercise>
       <exercise permid="zhl">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1873,7 +1873,7 @@ $s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
 $problem = Compute("$var*($var+$b)*($var+$c)")->reduce;
 $ans = Compute("$var**3+$bPlusC*$var**2+$bc*$var")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="LRp">
                 Multiply the polynomials.
@@ -1904,7 +1904,7 @@ $ans = Compute("$var**3+$bPlusC*$var**2+$bc*$var")->reduce;
       </exercise>
       <exercise permid="fou">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1926,7 +1926,7 @@ $s4 = Compute("$a*$var")->reduce;
 $problem = Compute("$a*$var*($var+$b)*($var+$c)")->reduce;
 $ans = Compute("$a*$var**3+$d*$var**2+$e*$var")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="YfH">
                 Multiply the polynomials.
@@ -1957,7 +1957,7 @@ $ans = Compute("$a*$var**3+$d*$var**2+$e*$var")->reduce;
       </exercise>
       <exercise permid="LvD">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -1979,7 +1979,7 @@ $s3 = Compute("$a*($b*$var**2+$e*$var+$cd)")->reduce;
 $problem = Compute("$a*($b*$var+$c)*($var+$d)")->reduce;
 $ans = Compute("$ab*$var**2+$a*$e*$var+$a*$cd")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="ktZ">
                 Multiply the polynomials.
@@ -2010,7 +2010,7 @@ $ans = Compute("$ab*$var**2+$a*$e*$var+$a*$cd")->reduce;
       </exercise>
       <exercise permid="rCM">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -2032,7 +2032,7 @@ $s3 = Compute("$a*($b*$var**2+$e*$var+$cd)")->reduce;
 $problem = Compute("$a*($b*$var+$c)*($var+$d)")->reduce;
 $ans = Compute("$ab*$var**2+$a*$e*$var+$a*$cd")->reduce;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="wIr">
                 Multiply the polynomials.
@@ -2116,7 +2116,7 @@ $ans = Compute("$ab*$var**2+$a*$e*$var+$a*$cd")->reduce;
       <exercise permid="FGr">
 <!-- Kara's challenge problem -->
         <webwork>
-            <setup>
+            
 <pg-code>
 Context()->variables->are(x=>'Real',y=>'Real');
 do {
@@ -2191,7 +2191,7 @@ if ($ans1stu*$ans2stu*$ans3stu*$ans4stu*$ans5stu != $complete3) {return 0;} else
 }
 );
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="IWJ">
                 Fill in the blanks with algebraic expressions that make the equation true.
