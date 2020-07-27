@@ -83,7 +83,7 @@
           Pair off each <m>x</m>-value with its <m>y</m>-value.
         </p>
         <table xml:id="table-technical" permid="GDp">
-          <caption/>
+          <title/>
           <tabular halign="center" permid="mKy">
             <col right="minor" />
             <col />
@@ -205,11 +205,11 @@
     <p permid="vuq">
       Try it yourself in the following exercise.
     </p>
-    <newpage/>
+    <!-- <newpage/> -->
 <!--TODO: the following question displays the correct answer as {{...}} with an extra brace pair. Investigate. -->
     <exercise permid="KKs">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context()->lists->set(List => {open => "{", close => "}"});
 Context()->parens->set("{" => {type => "List", close => "}"});
@@ -231,13 +231,13 @@ $evaluator = $answer->cmp(requireParenMatch=>1)->withPostFilter(AnswerHints(
 List(Point(-5,2),Point(-2,-3),Point(4,3)) => "You need to enclose the set in braces.",
 ));
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="ewf">
               The graph below is of <m>y=f(x)</m>.
             </p>
             <sidebyside widths="40%" permid="eDj">
-              <image permid="kVl" pg-name="$gr" />
+              <image permid="kVl" source="$gr" />
             </sidebyside>
             <p permid="KDo">
               Write the function <m>f</m> as a set of ordered pairs.
@@ -346,18 +346,20 @@ List(Point(-5,2),Point(-2,-3),Point(4,3)) => "You need to enclose the set in bra
     <exercise permid="Uee">
       <title>Does This Table Make a Function?</title>
       <webwork>
-          <setup>
+          
 <pg-code>
 $a = PopUp(['?','does','does not'],1);
 $b = PopUp(['?','does','does not'],2);
 $c = PopUp(['?','does','does not'],1);
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="WRG">
               Which of these tables make <m>y</m> a function of <m>x</m>?
               <ol label="a." cols="3" permid="uwb">
                 <li permid="wlo">
+                  <table>
+                    <title/>
                   <tabular permid="SRH">
                     <row bottom="major">
                       <cell><m>x</m></cell>
@@ -384,11 +386,14 @@ $c = PopUp(['?','does','does not'],1);
                       <cell><m>2</m></cell>
                     </row>
                   </tabular>
+                </table>
                   <p permid="wVi">
                     This table <var name="$a" form="popup"/> make <m>y</m> a function of <m>x</m>.
                   </p>
                 </li>
                 <li permid="csx">
+                  <table>
+                    <title/>
                   <tabular permid="yYQ">
                     <row bottom="major">
                       <cell><m>x</m></cell>
@@ -415,11 +420,14 @@ $c = PopUp(['?','does','does not'],1);
                       <cell><m>1</m></cell>
                     </row>
                   </tabular>
+                </table>
                   <p permid="dcr">
                     This table <var name="$b" form="popup"/> make <m>y</m> a function of <m>x</m>.
                   </p>
                 </li>
                 <li permid="IzG">
+                  <table>
+                    <title/>
                   <tabular permid="ffZ">
                     <row bottom="major">
                       <cell><m>x</m></cell>
@@ -446,6 +454,7 @@ $c = PopUp(['?','does','does not'],1);
                       <cell><m>2</m></cell>
                     </row>
                   </tabular>
+                </table>
                   <p permid="JjA">
                     This table <var name="$c" form="popup"/> make <m>y</m> a function of <m>x</m>.
                   </p>
@@ -652,7 +661,7 @@ $c = PopUp(['?','does','does not'],1);
         then the graph <em>does</em> give <m>y</m> as a function of <m>x</m>.
       </p>
     </fact>
-    <newpage/>
+    <!-- <newpage/> -->
     <example permid="DfT">
       <p permid="Vct">
         In each graph from <xref ref="example-is-it-a-function">Example</xref>,
@@ -886,12 +895,12 @@ $c = PopUp(['?','does','does not'],1);
     </example>
     <exercise permid="Aln">
       <webwork>
-          <setup>
+          
 <pg-code>
 $yes=PopUp(['?','does','does not'],1);
 $no=PopUp(['?','does','does not'],2);
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="CYP">
               Do each of these equations make <m>y</m> a function of <m>x</m>?
@@ -1010,7 +1019,7 @@ $no=PopUp(['?','does','does not'],2);
         <webwork source="Contrib/PCC/Math95/Functions/Functions11.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
+   <!--  <newpage/> -->
     <exercisegroup cols="2" permid="aYJ">
       <title>Determining If Graphs Are Functions</title>
       <exercise permid="Elm">
@@ -1032,7 +1041,7 @@ $no=PopUp(['?','does','does not'],2);
 <webwork source="Contrib/PCC/BasicAlgebra/FunctionBasics/FunctionOrNotByGraph30.pg" />
 </exercise> -->
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="HfS">
       <title>Determining If Equations Are Functions</title>
       <exercise permid="cNW">

@@ -9,6 +9,8 @@
 <section xml:id="section-function-basics" permid="RvK">
   <title>Function Basics</title>
   <!-- <introduction permid="cxF"> -->
+  <subsection xml:id="subsection-informal-definition-of-a-function" permid="xCT">
+    <title>Informal Definition of a Function</title>
     <p permid="RvX">
       In <xref ref="section-introduction-to-functions">Section</xref>
       there is a light introduction to functions.
@@ -16,8 +18,7 @@
       and is independent from <xref ref="section-introduction-to-functions">Section</xref>.
     </p>
   <!-- </introduction> -->
-  <subsection xml:id="subsection-informal-definition-of-a-function" permid="xCT">
-    <title>Informal Definition of a Function</title>
+  
     <sidebyside widths="65% 29%" margins="0%" permid="ocd">
       <p permid="gEV">
         We are familiar with the <m>\sqrt{\phantom{x}}</m> symbol.
@@ -27,7 +28,7 @@
         We can see some calculations in <xref ref="table-square-roots">Table</xref>.
       </p>
       <table xml:id="table-square-roots" permid="unb">
-        <caption>Values of <m>\sqrt{x}</m></caption>
+        <title>Values of <m>\sqrt{x}</m></title>
         <tabular permid="rsv">
           <row>
             <cell><m>\sqrt{9}</m></cell>
@@ -94,7 +95,7 @@
         </ul>
       </p>
     </example>
-    <sidebyside widths="65% 29%" margins="0%" valign="center" permid="Ujm">
+    <sidebyside widths="65% 29%" margins="0%" valign="middle" permid="Ujm">
       <p permid="MMe">
         The process of using <m>\sqrt{\phantom{x}}</m> to change numbers might feel more
         <q>mathematical</q>
@@ -109,7 +110,7 @@
         as we see in <xref ref="table-sqrt-values">Table</xref>.
       </p>
       <table xml:id="table-sqrt-values" permid="auk">
-        <caption>Values of <m>\operatorname{sqrt}(x)</m></caption>
+        <title>Values of <m>\operatorname{sqrt}(x)</m></title>
         <tabular permid="XzE">
           <row>
             <cell><m>\operatorname{sqrt}(9)</m></cell>
@@ -146,7 +147,7 @@
       even when they don't speak the same language.
     </p>
    
-    <sidebyside widths="37% 37%" margins="10%" valign="center" permid="Aqv">
+    <sidebyside widths="37% 37%" margins="10%" valign="middle" permid="Aqv">
       <p permid="sTn">
         Sometimes it's helpful to think of a function as a machine,
         as in <xref ref="figure-function-machine">Figure</xref>.
@@ -253,7 +254,7 @@
     <exercise permid="gxE">
       <webwork>
           <pg-macros><macro-file>contextArbitraryString.pl</macro-file></pg-macros>
-          <setup>
+          
 <pg-code>
 Context("ArbitraryString");
 $x = Compute("x");
@@ -278,7 +279,7 @@ $student = $student->value;
 $student =~ 's/\s//g';
 return $correct eq lc($student);});
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="xDg">
               Suppose you see the sentence,
@@ -354,7 +355,7 @@ return $correct eq lc($student);});
       </p>
       <sidebyside widths="44% 50%" margins="0%" permid="xvP">
         <table xml:id="table-budget-deficit" permid="GBt">
-          <caption/>
+          <title/>
           <tabular halign="center" permid="DGN">
             <col right="minor" />
             <col />
@@ -364,7 +365,7 @@ return $correct eq lc($student);});
                 <line><m>x</m> (year)</line></cell>
               <cell>
                 <line>output</line>
-                <line><m>\operatorname{BudgetDeficit}(x)</m> (<dollar/>trillion)</line></cell>
+                <line><m>\operatorname{BudgetDeficit}(x)</m> (\$trillion)</line></cell>
             </row>
             <row>
               <cell>2007</cell>
@@ -463,7 +464,7 @@ return $correct eq lc($student);});
       </p>
       <sidebyside widths="38% 56%" margins="0%" permid="dCY">
         <table xml:id="table-sqrt" permid="mIC">
-          <caption/>
+          <title/>
           <tabular halign="center" permid="jNW">
             <col right="minor" />
             <col />
@@ -581,7 +582,7 @@ return $correct eq lc($student);});
       </p>
       <sidebyside widths="47% 47%" margins="0%" permid="JKh">
         <table xml:id="table-budget-deficit-coordinates" permid="SPL">
-          <caption/>
+          <title/>
           <tabular permid="PVf">
             <row bottom="major">
               <cell>
@@ -669,7 +670,7 @@ axis x discontinuity=crunch,
         Revenue from income taxes dropped at the same time that federal money was spent to prevent further losses.
       </p>
     </example>
-    <newpage/>
+    <!-- <newpage/> -->
     <example permid="Fao">
       <title>A Graph for the Square Root Function</title>
       <p permid="tYG">
@@ -679,7 +680,7 @@ axis x discontinuity=crunch,
       </p>
       <sidebyside widths="47% 47%" margins="0%" permid="pRq">
         <table xml:id="table-sqrt-coordinates" permid="yWU">
-          <caption/>
+          <title/>
           <tabular halign="center" permid="wco">
             <row bottom="major">
               <cell>
@@ -808,7 +809,7 @@ ytick={1,2,3},
       Now given a graph of <m>f</m>,
       we interpret coordinates in the same way.
     </p>
-    <newpage/>
+    <!-- <newpage/> -->
     <example xml:id="example-read-graph" permid="lhx">
       <p permid="SBq">
         <!-- In <xref ref="figure-read-graph">Figure</xref> -->
@@ -1075,7 +1076,7 @@ text centered, minimum height=2.5em,drop shadow}]
             is one possible table that we might end up with.
           </p>
           <table xml:id="table-rule-of-four" permid="fed">
-            <caption />
+            <title />
             <tabular permid="cjx">
               <col right="minor" />
               <col halign="right"/>
@@ -1192,9 +1193,9 @@ minor ytick={0,1,...,20}]
           <p>Note that we tabulated inputs and outputs by working with the context of the function,
           not with any computations.
         </p>
-        <sidebyside valign="center" widths="20% 29% 37%" margins="5%" permid="Lzu">
+        <sidebyside valign="middle" widths="20% 29% 37%" margins="5%" permid="Lzu">
           <table xml:id="table-fahrenheit" permid="Llm">
-            <caption />
+            <title />
             <tabular permid="IqG">
               <col right="minor" />
               <col />
@@ -1344,11 +1345,11 @@ grid=major]
     <exercise xml:id="exercise-function-evaluation" permid="DUV">
       <title>Evaluating a Function</title>
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("LimitedNumeric");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="GWS">
               Find the given function values for a function <m>g</m> where <m>g(x)=3x+4</m>.
@@ -1514,14 +1515,14 @@ Context("LimitedNumeric");
     </example>
     <exercise permid="kce">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("Interval");
 $a = Set(2);
 $b = Set(7/4);
 $c = Set(-1);
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="neb">
               Solve the equations below for a function <m>h</m> where <m>h(x)=-4x+7</m>.
@@ -1712,7 +1713,7 @@ $c = Set(-1);
                 Moving straight right or left,
                 we find the points <m>(2,3)</m> and <m>(3,3)</m> are on the graph,
                 and that tells us that <m>f(x)=3</m> when <m>x=2</m> and when <m>x=3</m>.
-                Thus, the solution set is <m>\{2,3\}</m>.
+                Thus, the solution set is <m>\{2,3\}</m>.</p>
                 <sidebyside width="47%">
                 <figure xml:id="figure-read-graph1" permid="cqB">
                   <caption><m>y=f(x)</m></caption>
@@ -1722,7 +1723,7 @@ $c = Set(-1);
                   </image>
                 </figure>
               </sidebyside>
-              </p>
+              
             </li>
             <li permid="wER">
               <p permid="IxK">
@@ -1732,7 +1733,7 @@ $c = Set(-1);
                 Moving straight right or left,
                 we find the points <m>(1,2)</m> and <m>(4,2)</m> are on the graph,
                 and that tells us that <m>f(x)=2</m> when <m>x=1</m> and when <m>x=4</m>.
-                Thus, the solution set is <m>\{1,4\}</m>.
+                Thus, the solution set is <m>\{1,4\}</m>.</p>
                 <sidebyside width="47%">
                 <figure xml:id="figure-read-graph2" permid="oET">
                   <caption><m>y=f(x)</m></caption>
@@ -1742,7 +1743,7 @@ $c = Set(-1);
                   </image>
                 </figure>
               </sidebyside>
-              </p>
+              
             </li>
           </ol>
         </p>
@@ -1753,7 +1754,7 @@ $c = Set(-1);
 <!--     <remark>
 <p>Although the outputs for <m>y=x^2</m> do not increase by a constant amount, the <em>second differences</em> do, as shown in <xref ref="table-quadratic-function-second-differences">Table</xref>.</p>
 <table xml:id="table-quadratic-function-second-differences">
-<caption></caption>
+<title></title>
 <tabular valign="top" >
 <col halign="right" right="minor"/>
 <col halign="right" />
@@ -1851,7 +1852,7 @@ $c = Set(-1);
 <p>Determine if each function represented in a table <em>could</em> could represent a quadratic function.</p>
 <sidebyside widths="30% 30% 30%" margins="0%">
 <table>
-<caption>Function a.</caption>
+<title>Function a.</title>
 <tabular bottom="minor"  left="minor" top="minor">
 <col halign="right" right="minor"/>
 <col halign="right" right="minor"/>
@@ -1889,7 +1890,7 @@ $c = Set(-1);
 </row>
 </tabular></table>
 <table>
-<caption>Function b.</caption>
+<title>Function b.</title>
 <tabular valign="top" bottom="minor"  left="minor" top="minor">
 <col halign="right" right="minor"/>
 <col halign="right" right="minor"/>
@@ -1928,7 +1929,7 @@ $c = Set(-1);
 </tabular>
 </table>
 <table>
-<caption>Function c.</caption>
+<title>Function c.</title>
 <tabular valign="top" bottom="minor"  left="minor" top="minor">
 <col halign="right" right="minor"/>
 <col halign="right" right="minor"/>
@@ -1972,7 +1973,7 @@ $c = Set(-1);
 <p> <ol label="a."> <li><p>The difference between each output for consecutive inputs is constant, so it's possible that this function is a linear function. It is therefore not possible that it is a quadratic function.</p></li> <li><p>This pattern looks to follow the pattern of <m>-x^2</m>, so it is possible that it is a quadratic function.</p></li> <li><p>This function changes from increasing to decreasing (and visa versa) repeatedly, so it is not possible that it is a quadratic function.</p></li> </ol> </p>
 </solution>
 </example> -->
-<newpage/>
+<!-- <newpage/> -->
   <exercises permid="CmM">
     <exercisegroup cols="2" permid="itV">
       <title>Review and Warmup</title>
@@ -1992,7 +1993,7 @@ $c = Set(-1);
     <exercisegroup cols="2">
       <exercise permid="Bht">
         <webwork>
-            <setup>
+            
 <pg-code>
 @px=map{($_==0)?8:$_-8}(NchooseK(16,4));
 @py=map{($_==0)?8:$_-8}(NchooseK(16,4));
@@ -2021,7 +2022,7 @@ elsif ($px[$i]>0 and $py[$i]&lt;0) {$gr->lb(new Label($px[$i]+0.3,$py[$i]-0.3,$A
 Context("Point");
 @ans=map{Compute("($px[$_],$py[$_])")}(0..3);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Tlk">
                 Locate each point in the graph:
@@ -2049,7 +2050,7 @@ Context("Point");
       </exercise>
       <exercise permid="hoC">
         <webwork>
-            <setup>
+            
 <pg-code>
 @px=map{($_==0)?8:$_-8}(NchooseK(16,4));
 @py=map{($_==0)?8:$_-8}(NchooseK(16,4));
@@ -2078,7 +2079,7 @@ elsif ($px[$i]>0 and $py[$i]&lt;0) {$gr->lb(new Label($px[$i]+0.3,$py[$i]-0.3,$A
 Context("Point");
 @ans=map{Compute("($px[$_],$py[$_])")}(0..3);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="fzC">
                 Locate each point in the graph:
@@ -2341,7 +2342,7 @@ Context("Point");
         <webwork source="Contrib/PCC/CollegeAlgebra/FunctionBasics/FunctionTables20.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="zsg">
       <title>Translating Between Different Representations of a Function</title>
       <exercise permid="bdR">
@@ -2369,7 +2370,7 @@ Context("Point");
         <webwork source="Contrib/PCC/Math95/Functions/Functions19.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup permid="fzp">
       <title>Functions in Context</title>
       <exercise permid="Yjl">

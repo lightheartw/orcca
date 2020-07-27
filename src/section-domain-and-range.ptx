@@ -122,9 +122,10 @@
       These examples should motivate the following definition.
     </p>
     <definition xml:id="definition-domain" permid="NHG">
+      <title>Domain</title>
       <idx><h>domain</h></idx>
       <idx><h>function</h><h>domain</h></idx>
-      <title>Domain</title>
+      
       <statement>
         <p permid="xHK">
           The <term>domain</term> of a function <m>f</m> is the collection of all of its valid input values.
@@ -324,12 +325,12 @@ width=180pt,
     </p>
     <exercise permid="leX">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("Interval");
 $domain=Interval("[0,inf)");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="vwY">
               What is the domain of the function <m>\operatorname{sqrt}</m>,
@@ -355,12 +356,12 @@ $domain=Interval("[0,inf)");
     </exercise>
     <exercise permid="Rmg">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("Interval");
 $domain=Interval("(-inf,3)U(3,inf)");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="HLq">
               What is the domain of the function <m>\ell</m> where
@@ -463,12 +464,12 @@ $domain=Interval("(-inf,3)U(3,inf)");
     </figure>
     <exercise permid="xtp">
       <webwork>
-          <setup>
+          
 <pg-code>
 Context("Interval");
 $domain=Set("{1,2,5,10,20,50,100}");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="TZI">
               A change machine lets you put in an <m>x</m>-dollar bill,
@@ -557,13 +558,13 @@ $domain=Set("{1,2,5,10,20,50,100}");
     </figure>
     <exercise permid="dAy">
       <webwork>
-          <setup>
+          
 <pg-code>
 InequalitySetBuilder::UseVerticalSuchThat();
 Context("InequalitySetBuilder-Only");
 $domain = SetBuilder("{ x | x >= 0 }");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="goa">
               What is the domain of the function <m>\operatorname{sqrt}</m>,
@@ -670,7 +671,7 @@ $domain = SetBuilder("{ x | x >= 0 }");
       which are summarized here.
     </p>
     <list xml:id="list-algebraic-domain-restrictions" permid="KNa">
-      <caption>Summary of Algebraic Domain Restrictions</caption>
+      <title>Summary of Algebraic Domain Restrictions</title>
       <dl permid="Nmh">
         <li permid="MgO">
           <title>Denominators</title>
@@ -717,9 +718,10 @@ $domain = SetBuilder("{ x | x >= 0 }");
       there is a similar notion for <em>output</em>.
     </p>
     <definition xml:id="definition-range" permid="JHH">
+      <title>Range</title>
       <idx><h>range</h></idx>
       <idx><h>function</h><h>range</h></idx>
-      <title>Range</title>
+      
       <statement>
         <p permid="dOT">
           The <term>range</term> of a function <m>f</m> is the collection of all of its possible output values.
@@ -914,7 +916,7 @@ ytick={0,1,...,3},
     </example>
     <exercise xml:id="exercise-rational-function-domain" permid="mUk">
       <webwork>
-          <setup>
+          
 <pg-code>
 for my $i (0,1,2) {
 $graph[$i] = init_graph(-3,-3,7,3,
@@ -969,7 +971,7 @@ Context("InequalitySetBuilder");
 $domain = Compute("(-inf,2)U(2,inf)");
 $range = Compute("(-inf,0)U(0,inf)");
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="sCs">
               Given the function <m>h</m> graphed below,
@@ -983,8 +985,8 @@ $range = Compute("(-inf,0)U(0,inf)");
               getting arbitrarily close to the <m>y</m>-axis, but never touching it.
             </p>
             <sidebyside widths="47%" permid="uyJ">
-              <image permid="biI" pg-name="$graph[0]" />
-              <description></description>
+              <image permid="biI" source="$graph[0]" />
+              
             </sidebyside>
             <p permid="YJB">
               The domain of <m>h</m> is <var name="$domain" width="20" /> and the range of <m>h</m> is <var name="$range" width="20" />.
@@ -1004,7 +1006,7 @@ $range = Compute("(-inf,0)U(0,inf)");
               we will be able to get an output for <m>h</m>.
             </p>
             <sidebyside widths="47%" permid="aFS">
-              <image pg-name="$graph[1]" />
+              <image source="$graph[1]" />
             </sidebyside>
             <p permid="ACq">
               The one <m>x</m>-value that doesn't behave is <m>x=2</m>.
@@ -1019,7 +1021,7 @@ $range = Compute("(-inf,0)U(0,inf)");
               So the range is <m>(-\infty,0)\cup(0,\infty)</m>.
             </p>
             <sidebyside widths="47%" permid="GNb">
-              <image pg-name="$graph[2]" />
+              <image source="$graph[2]" />
             </sidebyside>
           </solution>
       </webwork>
@@ -1041,7 +1043,7 @@ $range = Compute("(-inf,0)U(0,inf)");
           What is the domain and range of <m>k</m>?
         </p>
         <table xml:id="table-range" permid="HpR">
-          <caption/>
+          <title/>
           <tabular permid="nxa">
             <row bottom="major">
               <cell><m>x</m></cell>
@@ -1128,7 +1130,7 @@ grid=none,
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation40.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="3" permid="Ntl">
       <title>Domain and Range From a Graph</title>
       <exercise permid="jbp">

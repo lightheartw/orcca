@@ -524,7 +524,7 @@ clip=false]
         <p permid="qTw">
           In <xref ref="example-multiplying-binomials-artist-income">Example</xref>,
           we learned that artist Tyrone's annual income from paintings can be modeled by <m>I(x)=-100x^2+1000x+20000</m>,
-          where <m>x</m> is the number of times he will raise the price per painting by <dollar/><m>20.00</m>.
+          where <m>x</m> is the number of times he will raise the price per painting by <m>\$20.00</m>.
           To maximize his income, how should Tyrone set his price per painting?
           Find the maximum by completing the square.
         </p>
@@ -550,7 +550,7 @@ clip=false]
           which is <m>\substitute{5}\cdot20=100</m> dollars.
           He would sell <m>100-5(\substitute{5})=75</m> paintings.
           This would make the price per painting <m>200+100=300</m> dollars,
-          and his annual income from paintings would become <dollar/><m>22500</m> by this model.
+          and his annual income from paintings would become <m>\$22500</m> by this model.
         </p>
 <!-- <p>As a check, we will substitute <m>x=7.5</m> into <m>f(x)=-10(x-7.5)^2+1562.5</m>, we will have:<md> <mrow>f(x)\amp=-10(x-7.5)^2+1562.5</mrow> <mrow>f(7.5)\amp=-10(7.5-7.5)^2+1562.5</mrow> <mrow>f(7.5)\amp=-10(0)+1562.5</mrow> <mrow>f(7.5)\amp=1562.5</mrow> </md>We have verified that the <m>y</m>-value of the vertex is <m>1562.5</m>. </p>
 <p>You might wonder why <m>(7.5,1562.5)</m> must be the parabola's vertex, instead of a different point on the parabola. This can be explained by the function's range. We know the square of a number must be positive or zero, so we have:<md> <mrow>(x-7.5)^2\amp\ge0</mrow> <mrow>\multiplyleft{-10}(x-7.5)^2\amp\le\multiplyleft{-10}0</mrow> <mrow>-10(x-7.5)^2\amp\le0</mrow> <mrow>-10(x-7.5)^2\addright{1562.5}\amp\le0\addright{1562.5}</mrow> <mrow>-10(x-7.5)^2+1562.5\amp\le1562.5</mrow> <mrow>f(x)\amp\le1562.5</mrow> </md>The result implies the maximum value of <m>f(x)</m> is <m>1562.5</m>, making <m>(7.5,1562.5)</m> the parabola's vertex.</p>  -->
@@ -731,7 +731,7 @@ clip=false]
       <title>Review and Warmup</title>
       <exercise permid="xdU">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $m = 1;
@@ -747,7 +747,7 @@ Context("FiniteSolutionSets");
 Context()->variables->are($x=>'Real');
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="HRH">
                 Use a square root to solve <m><var name="$left"/>=<var name="$right"/></m>.
@@ -771,7 +771,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="dld">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $m = 1;
@@ -787,7 +787,7 @@ Context("FiniteSolutionSets");
 Context()->variables->are($x=>'Real');
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="UfZ">
                 Use a square root to solve <m><var name="$left"/>=<var name="$right"/></m>.
@@ -811,7 +811,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="Jsm">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $m = random(2,9,1);
@@ -828,7 +828,7 @@ Context("FiniteSolutionSets");
 Context()->variables->are($x=>'Real');
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="gur">
                 Use a square root to solve <m><var name="$left"/>=<var name="$right"/></m>.
@@ -853,7 +853,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="pzv">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $m = random(2,9,1);
@@ -870,7 +870,7 @@ Context("FiniteSolutionSets");
 Context()->variables->are($x=>'Real');
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="sIJ">
                 Use a square root to solve <m><var name="$left"/>=<var name="$right"/></m>.
@@ -895,7 +895,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="VGE">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $m = 1;
@@ -913,7 +913,7 @@ $sol2 = Formula("$nb-sqrt($c)");
 Context()->variables->are($x=>'Real');
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="EXb">
                 Use a square root to solve <m><var name="$left"/>=<var name="$right"/></m>.
@@ -936,7 +936,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="BNN">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $m = 1;
@@ -954,7 +954,7 @@ $sol2 = Formula("$nb-sqrt($c)");
 Context()->variables->are($x=>'Real');
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Rlt">
                 Use a square root to solve <m><var name="$left"/>=<var name="$right"/></m>.
@@ -977,7 +977,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="hUW">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $m = 1;
@@ -994,7 +994,7 @@ Context("FiniteSolutionSets");
 Context()->variables->are($x=>'Real');
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="dzL">
                 Use a square root to solve <m><var name="$leftexpanded"/>=<var name="$right"/></m>.
@@ -1020,7 +1020,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="Ocf">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $m = 1;
@@ -1037,7 +1037,7 @@ Context("FiniteSolutionSets");
 Context()->variables->are($x=>'Real');
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="pOd">
                 Use a square root to solve <m><var name="$leftexpanded"/>=<var name="$right"/></m>.
@@ -1063,7 +1063,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="ujo">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $m = random(2,9,1);
@@ -1081,7 +1081,7 @@ Context("FiniteSolutionSets");
 Context()->variables->are($x=>'Real');
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Ccv">
                 Use a square root to solve <m><var name="$leftexpanded"/>=<var name="$right"/></m>.
@@ -1108,7 +1108,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="aqx">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $m = random(2,9,1);
@@ -1126,7 +1126,7 @@ Context("FiniteSolutionSets");
 Context()->variables->are($x=>'Real');
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="OqN">
                 Use a square root to solve <m><var name="$leftexpanded"/>=<var name="$right"/></m>.
@@ -1153,7 +1153,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="GxG">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $m = random(2,9,1);
@@ -1173,7 +1173,7 @@ $sol2 = Formula("($nbmsq)/$m");
 Context()->variables->are($x=>'Real');
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="aFf">
                 Use a square root to solve <m><var name="$leftexpanded"/>=<var name="$right"/></m>.
@@ -1199,7 +1199,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="mEP">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $m = random(2,9,1);
@@ -1219,7 +1219,7 @@ $sol2 = Formula("($nbmsq)/$m");
 Context()->variables->are($x=>'Real');
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="mTx">
                 Use a square root to solve <m><var name="$leftexpanded"/>=<var name="$right"/></m>.
@@ -1248,7 +1248,7 @@ $answer = Formula("{$sol1, $sol2}");
       <title>Completing the Square to Solve Equations</title>
       <exercise permid="SLY">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $a = 1;
@@ -1274,7 +1274,7 @@ $linear = Formula("$a $x")->reduce;
 $absnum = abs($num);
 $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $absnum/$den");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="zhP">
                 Solve the equation by completing the square.
@@ -1306,7 +1306,7 @@ $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $abs
       </exercise>
       <exercise permid="yTh">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $a = 1;
@@ -1332,7 +1332,7 @@ $linear = Formula("$a $x")->reduce;
 $absnum = abs($num);
 $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $absnum/$den");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="rDq">
                 Solve the equation by completing the square.
@@ -1364,7 +1364,7 @@ $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $abs
       </exercise>
       <exercise permid="faq">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $a = 1;
@@ -1390,7 +1390,7 @@ $linear = Formula("$a $x")->reduce;
 $absnum = abs($num);
 $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $absnum/$den");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="jYR">
                 Solve the equation by completing the square.
@@ -1422,7 +1422,7 @@ $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $abs
       </exercise>
       <exercise permid="Lhz">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $a = 1;
@@ -1448,7 +1448,7 @@ $linear = Formula("$a $x")->reduce;
 $absnum = abs($num);
 $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $absnum/$den");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="cus">
                 Solve the equation by completing the square.
@@ -1480,7 +1480,7 @@ $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $abs
       </exercise>
       <exercise permid="roI">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 @squares = map{$_**2} (2, 3, 5, 7, 11);
@@ -1522,7 +1522,7 @@ $sol1 = Formula("$nhelper - $margin");
 $sol2 = Formula("$nhelper + $margin");
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="UPT">
                 Solve the equation by completing the square.
@@ -1555,7 +1555,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="XvR">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 @squares = map{$_**2} (2, 3, 5, 7, 11);
@@ -1597,7 +1597,7 @@ $sol1 = Formula("$nhelper - $margin");
 $sol2 = Formula("$nhelper + $margin");
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Nlu">
                 Solve the equation by completing the square.
@@ -1630,7 +1630,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="DDa">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $a = 1;
@@ -1659,7 +1659,7 @@ $linear = Formula("$a $x")->reduce;
 $absnum = abs($num);
 $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $absnum/$den");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="FGV">
                 Solve the equation by completing the square.
@@ -1692,7 +1692,7 @@ $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $abs
       </exercise>
       <exercise permid="jKj">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $a = 1;
@@ -1721,7 +1721,7 @@ $linear = Formula("$a $x")->reduce;
 $absnum = abs($num);
 $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $absnum/$den");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="ycw">
                 Solve the equation by completing the square.
@@ -1754,7 +1754,7 @@ $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $abs
       </exercise>
       <exercise permid="PRs">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $a = 1;
@@ -1783,7 +1783,7 @@ $linear = Formula("$a $x")->reduce;
 $absnum = abs($num);
 $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $absnum/$den");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="qxX">
                 Solve the equation by completing the square.
@@ -1816,7 +1816,7 @@ $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $abs
       </exercise>
       <exercise permid="vYB">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 $a = 1;
@@ -1845,7 +1845,7 @@ $linear = Formula("$a $x")->reduce;
 $absnum = abs($num);
 $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $absnum/$den");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="iTy">
                 Solve the equation by completing the square.
@@ -1878,7 +1878,7 @@ $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $abs
       </exercise>
       <exercise permid="cfK">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 @squares = map{$_**2} (2, 3, 5, 7, 11);
@@ -1919,7 +1919,7 @@ $sol1 = Formula("$nhelper - $margin");
 $sol2 = Formula("$nhelper + $margin");
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="boZ">
                 Solve the equation by completing the square.
@@ -1953,7 +1953,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="ImT">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 @squares = map{$_**2} (2, 3, 5, 7, 11);
@@ -1994,7 +1994,7 @@ $sol1 = Formula("$nhelper - $margin");
 $sol2 = Formula("$nhelper + $margin");
 $answer = Formula("{$sol1, $sol2}");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="TKA">
                 Solve the equation by completing the square.
@@ -2028,7 +2028,7 @@ $answer = Formula("{$sol1, $sol2}");
       </exercise>
       <exercise permid="ouc">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 Context("Fraction");
@@ -2070,7 +2070,7 @@ $answer = Formula("{$sol1, $sol2}");
 $absnum = abs($num);
 $linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum/$den");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Mgb">
                 Solve the equation by completing the square.
@@ -2108,7 +2108,7 @@ $linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum/$den")
       </exercise>
       <exercise permid="UBl">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 Context("Fraction");
@@ -2150,7 +2150,7 @@ $answer = Formula("{$sol1, $sol2}");
 $absnum = abs($num);
 $linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum/$den");
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="EBC">
                 Solve the equation by completing the square.
@@ -2188,7 +2188,7 @@ $linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum/$den")
       </exercise>
       <exercise permid="AIu">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 Context("Fraction");
@@ -2243,7 +2243,7 @@ $absnum = abs($num);
 if ($den != 1) {$linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum/$den");}
 else {$linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum");}
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="wXd">
                 Solve the equation by completing the square.
@@ -2281,7 +2281,7 @@ else {$linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum"
       </exercise>
       <exercise permid="gPD">
         <webwork>
-            <setup>
+            
 <pg-code>
 $x = RandomVariableName(type=>'variable');
 Context("Fraction");
@@ -2336,7 +2336,7 @@ $absnum = abs($num);
 if ($den != 1) {$linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum/$den");}
 else {$linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum");}
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="psE">
                 Solve the equation by completing the square.
@@ -2377,7 +2377,7 @@ else {$linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum"
       <title>Converting to Vertex Form</title>
       <exercise permid="MWM">
         <webwork>
-            <setup>
+            
 <pg-code>
 $f = RandomVariableName(type=>'function');
 $x = RandomVariableName(type=>'variable');
@@ -2445,7 +2445,7 @@ Value::Error("Your answer is a formula for $f, but not in vertex form") unless $
 return $OK;
 });
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="hOf">
                 Consider <m><var name="$f" />(<var name="$x" />)=<var name="$formula" /></m>.
@@ -2454,9 +2454,9 @@ return $OK;
                     <p permid="XYH">
                       Give the formula for <m><var name="$f" /></m> in vertex form.
                     </p>
-                    <instruction>
+                    <p>
                       Use function notation with your answer.
-                    </instruction>
+                    </p>
                     <p permid="EfQ">
                       <var name="$fxvform" evaluator="$evaluator" width="20" />
                     </p>
@@ -2489,7 +2489,7 @@ return $OK;
       </exercise>
       <exercise permid="tdV">
         <webwork>
-            <setup>
+            
 <pg-code>
 $f = RandomVariableName(type=>'function');
 $x = RandomVariableName(type=>'variable');
@@ -2557,7 +2557,7 @@ Value::Error("Your answer is a formula for $f, but not in vertex form") unless $
 return $OK;
 });
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="NVo">
                 Consider <m><var name="$f" />(<var name="$x" />)=<var name="$formula" /></m>.
@@ -2566,9 +2566,9 @@ return $OK;
                     <p permid="wBr">
                       Give the formula for <m><var name="$f" /></m> in vertex form.
                     </p>
-                    <instruction>
+                    <p>
                       Use function notation with your answer.
-                    </instruction>
+                    </p>
                     <p permid="IPJ">
                       <var name="$fxvform" evaluator="$evaluator" width="20" />
                     </p>
@@ -2601,7 +2601,7 @@ return $OK;
       </exercise>
       <exercise permid="Zle">
         <webwork>
-            <setup>
+            
 <pg-code>
 $f = RandomVariableName(type=>'function');
 $x = RandomVariableName(type=>'variable');
@@ -2669,7 +2669,7 @@ Value::Error("Your answer is a formula for $f, but not in vertex form") unless $
 return $OK;
 });
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="ucx">
                 Consider <m><var name="$f" />(<var name="$x" />)=<var name="$formula" /></m>.
@@ -2678,9 +2678,9 @@ return $OK;
                     <p permid="Blk">
                       Give the formula for <m><var name="$f" /></m> in vertex form.
                     </p>
-                    <instruction>
+                    <p>
                       Use function notation with your answer.
-                    </instruction>
+                    </p>
                     <p permid="hst">
                       <var name="$fxvform" evaluator="$evaluator" width="20" />
                     </p>
@@ -2713,7 +2713,7 @@ return $OK;
       </exercise>
       <exercise permid="Fsn">
         <webwork>
-            <setup>
+            
 <pg-code>
 $f = RandomVariableName(type=>'function');
 $x = RandomVariableName(type=>'variable');
@@ -2781,7 +2781,7 @@ Value::Error("Your answer is a formula for $f, but not in vertex form") unless $
 return $OK;
 });
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="ajG">
                 Consider <m><var name="$f" />(<var name="$x" />)=<var name="$formula" /></m>.
@@ -2790,9 +2790,9 @@ return $OK;
                     <p permid="ZNU">
                       Give the formula for <m><var name="$f" /></m> in vertex form.
                     </p>
-                    <instruction>
+                    <p>
                       Use function notation with your answer.
-                    </instruction>
+                    </p>
                     <p permid="FVd">
                       <var name="$fxvform" evaluator="$evaluator" width="20" />
                     </p>
@@ -2825,7 +2825,7 @@ return $OK;
       </exercise>
       <exercise permid="lzw">
         <webwork>
-            <setup>
+            
 <pg-code>
 $f = RandomVariableName(type=>'function');
 $x = RandomVariableName(type=>'variable');
@@ -2903,7 +2903,7 @@ Value::Error("Your answer is a formula for $f, but not in vertex form") unless $
 return $OK;
 });
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="GqP">
                 Consider <m><var name="$f" />(<var name="$x" />)=<var name="$formula" /></m>.
@@ -2912,9 +2912,9 @@ return $OK;
                     <p permid="yqE">
                       Give the formula for <m><var name="$f" /></m> in vertex form.
                     </p>
-                    <instruction>
+                    <p>
                       Use function notation with your answer.
-                    </instruction>
+                    </p>
                     <p permid="exN">
                       <var name="$fxvform" evaluator="$evaluator" width="20" />
                     </p>
@@ -2950,7 +2950,7 @@ return $OK;
       </exercise>
       <exercise permid="RGF">
         <webwork>
-            <setup>
+            
 <pg-code>
 $f = RandomVariableName(type=>'function');
 $x = RandomVariableName(type=>'variable');
@@ -3028,7 +3028,7 @@ Value::Error("Your answer is a formula for $f, but not in vertex form") unless $
 return $OK;
 });
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="mxY">
                 Consider <m><var name="$f" />(<var name="$x" />)=<var name="$formula" /></m>.
@@ -3037,9 +3037,9 @@ return $OK;
                     <p permid="WTo">
                       Give the formula for <m><var name="$f" /></m> in vertex form.
                     </p>
-                    <instruction>
+                    <p>
                       Use function notation with your answer.
-                    </instruction>
+                    </p>
                     <p permid="Dax">
                       <var name="$fxvform" evaluator="$evaluator" width="20" />
                     </p>
@@ -3074,7 +3074,7 @@ return $OK;
         </webwork>
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="YBk">
       <title>Domain and Range</title>
       <exercise permid="xNO">
