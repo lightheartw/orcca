@@ -441,12 +441,9 @@
         <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals220.pg" />
       </exercise> -->
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup permid="WcZ">
-      <title permid="cCf">
-        <p permid="jpG">
-          Multiplying Radicals 
-        </p>
+      <title permid="cCf">Multiplying Radicals  
       </title>
       <exercise permid="IJo">
         <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/MultiplyRadicals10.pg" />
@@ -781,7 +778,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="3">
       <introduction><p>Simplify. Don't forget to rationalize the denominator.</p></introduction>
       <exercise>

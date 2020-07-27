@@ -83,13 +83,13 @@
     <p permid="ZNd">
       Note that the base <m>b</m> is always positive.
     </p>
-    <p permid="FUm">
-      <figure permid="ewW">
+    <!-- <p permid="FUm"> -->
+      <figure permid="ewW"><caption/>
         <image source="images/CNX_Precalc_Figure_04_03_004.jpg" permid="kWc">
           <description>Visual illustration of log base b of x equals y with arrows depicting how to read it.</description>
         </image>
       </figure>
-    </p>
+    <!-- </p> -->
     <p permid="mbv">
       Because a logarithm is a function,
       it is most correctly written as <m>\mathrm{log}_{b}\left(x\right)</m>,
@@ -101,17 +101,18 @@
       Note that many calculators require parentheses around the <m>x</m>.
     </p>
     <p permid="SiE">
-      We can illustrate the notation of logarithms as follows:
-      <figure permid="KEf">
+      We can illustrate the notation of logarithms as follows:</p>
+      <figure permid="KEf"><caption/>
         <image source="images/CNX_Precalc_Figure_04_03_003.jpg" permid="Rdl">
           <description>Visual illustration of log base b of c equals a with arrows depicting how to rewrite it as an exponential equation, as b^a=c.</description>
         </image>
       </figure>
-    </p>
+   <!--  </p> -->
     <definition xml:id="definition-logarithmic-function" permid="RcY">
+      <title>Logarithmic Function</title>
       <idx><h>logarithmic</h></idx>
       <idx><h>function</h><h>logarithmic</h></idx>
-      <title>Logarithmic Function</title>
+      
       <statement>
         <p permid="zgL">
           A <term>logarithm</term> base <m>b</m> of a positive number <m>x</m> satisfies the following definition.
@@ -159,12 +160,13 @@
       </statement>
     </definition>
     <p permid="ypN">
-      The following diagram may help you identify the base and exponent when converting between exponential and logarithmic forms of an equation:
-      <figure permid="qLo">
+      The following diagram may help you identify the base and exponent when converting between exponential and logarithmic forms of an equation:</p>
+      <figure permid="qLo"><caption/>
         <image source="images/exp_vs_log.png" width="70%" permid="xku">
           <description>Diagram of exponential equation versus logarithmic equation, pointing out the base and exponent in each.</description>
         </image>
       </figure>
+      <p>
       <ol label="1." permid="gAr">
         <li permid="znP">
           <p permid="YAt">
@@ -421,12 +423,12 @@
     <exercise permid="BUa">
       <webwork>
           <pg-macros><macro-file>contextLimitedFraction.pl</macro-file></pg-macros>
-          <setup>
+          
 		                 <pg-code>
 		                     Context("LimitedFraction");
 		                     $answer=Fraction(1,2);
 		                 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="QOQ">
               Solve <m>y=\mathrm{log}_{121}\left(11\right)</m> without using a calculator.
@@ -472,12 +474,12 @@
     <exercise permid="ibj">
       <webwork>
           <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-          <setup>
+          
 		                 <pg-code>
 		                     Context("Numeric");
 		                     $answer=-5;
 		                 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="ddi">
               Solve <m>y=\mathrm{log}_{2}\left(\frac{1}{32}\right)</m> without using a calculator.
@@ -507,8 +509,9 @@
       Scales for measuring the brightness of stars and the pH of acids and bases also use common logarithms.
     </p>
     <definition xml:id="definition-common-logarithm" permid="Ois">
-      <idx><h>common logarithm</h></idx>
       <title>Common Logarithm</title>
+      <idx><h>common logarithm</h></idx>
+      
       <statement>
         <p permid="jXN">
           A <term>common logarithm</term> is a logarithm with base <m>10</m>.
@@ -579,7 +582,7 @@
       </solution>
     </example>
     <list permid="SSl">
-      <caption>How To Solve a Common Logarithmc Equation Mentally</caption>
+      <title>How To Solve a Common Logarithmc Equation Mentally</title>
       <introduction permid="fgD">
         <p permid="OZD">
           Given a common logarithmic equation with the form <m>y=\mathrm{log}\left(x\right)</m>,
@@ -621,12 +624,12 @@
     <exercise permid="LnM">
       <webwork>
           <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-          <setup>
+          
 		                 <pg-code>
 		                     Context("Numeric");
 		                     $answer=6;
 		                 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="prA">
               Solve <m>y=\mathrm{log}\left(1,000,000\right)</m> without using a calculator.
@@ -644,11 +647,12 @@
       </webwork>
     </exercise>
     <list permid="yZu">
-      <caption>How To Evaluate a Common Logarithmc Expression Using a Calculator</caption>
-      <p permid="vgM">
+      <title>How To Evaluate a Common Logarithmc Expression Using a Calculator</title>
+      <introduction permid="vgM"><p>
         Given a common logarithmic expression with the form <m>\mathrm{log}\left(x\right)</m>,
         to evaluate it using the calculator do the following:
-      </p>
+      </p></introduction>
+      
       <ol label="1." permid="oeQ">
         <li permid="qDX">
           <p permid="Zkn">
@@ -667,6 +671,7 @@
           </p>
         </li>
       </ol>
+      
     </list>
     <example permid="GDT">
       <title>Finding the Value of a Common Logarithm Using a Calculator</title>
@@ -713,12 +718,12 @@
     <exercise permid="ruV">
       <webwork>
           <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-          <setup>
+          
 		                 <pg-code>
 		                     Context("Numeric");
 		                     $answer=2.0899;
 		                 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="BFS">
               Evaluate <m>\mathrm{log}\left(123\right)</m>,
@@ -784,12 +789,12 @@
     <exercise permid="XCe">
       <webwork>
           <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-          <setup>
+          
 		                 <pg-code>
 		                     Context("Numeric");
 		                     $answer=3.929;
 		                 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="NUk">
               The amount of energy released from one earthquake was <m>8,500</m> times greater than the amount of energy realeased from another.
@@ -828,8 +833,9 @@
       We can also find the natural logarithm of any power of <m>e</m> using what we've learned so far about the relationsip between logarithm and exponential equations.
     </p>
     <definition xml:id="definition-natural-logarithm" permid="DJn">
-      <idx><h>natural logarithm</h></idx>
       <title>Natural Logarithm</title>
+      <idx><h>natural logarithm</h></idx>
+      
       <statement>
         <p permid="IAx">
           A <term>natural logarithm</term> is a logarithm with base <m>e</m>.
@@ -901,11 +907,12 @@
       </solution>
     </example>
     <list permid="weO">
-      <caption>How to Evaluate a Natural Logarithm Using a Calculator</caption>
+      <title>How to Evaluate a Natural Logarithm Using a Calculator</title>
+      <introduction>
       <p permid="bnV">
         Given a natural logarithmic expression with the form <m>\mathrm{ln}\left(x\right)</m>,
         to solve it using the calculator do the following:
-      </p>
+      </p></introduction>
       <ol label="1." permid="UlZ">
         <li permid="HCi">
           <p permid="Tvb">
@@ -964,12 +971,12 @@
     <exercise permid="clX">
       <webwork>
           <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-          <setup>
+          
 		                 <pg-code>
 		                     Context("Numeric");
 		                     $answer=-2.0956;
 		                 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="aiC">
               Evaluate <m>\mathrm{ln}\left(0.123\right)</m>,

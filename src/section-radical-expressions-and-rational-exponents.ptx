@@ -111,7 +111,7 @@
       need to recognize the roots in <xref ref="table-small-roots">Table</xref>.
     </p>
 <!--  <table>
-<caption>Small Powers of Small Natural Numbers</caption>
+<title>Small Powers of Small Natural Numbers</title>
 <tabular halign="center">
 <row bottom="medium">
 <cell>Squares</cell>
@@ -208,7 +208,7 @@
 </table>
 <p>Likewise, the table can be reversed to show radicals.</p> -->
     <table xml:id="table-small-roots" permid="Kdp">
-      <caption>Small Roots of Appropriate Natural Numbers</caption>
+      <title>Small Roots of Appropriate Natural Numbers</title>
       <tabular halign="center" permid="qky">
         <row bottom="medium">
           <cell>Square Roots</cell>
@@ -687,7 +687,7 @@
       list of exponent rules.
     </p>
     <list xml:id="list-exponent-rules-complete" permid="cJw">
-      <caption>Complete List of Exponent Rules</caption>
+      <title>Complete List of Exponent Rules</title>
       <dl permid="PpL">
         <li permid="OUm">
           <title>Product Rule</title>

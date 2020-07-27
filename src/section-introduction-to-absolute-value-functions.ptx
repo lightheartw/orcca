@@ -159,12 +159,12 @@
     </example>
     <exercise permid="YUF">
       <webwork>
-          <setup>
+          
 <pg-code>
 $true=PopUp(['?',"True","False"],1);
 $false=PopUp(['?',"True","False"],2);
 </pg-code>
-          </setup>
+          
           <statement>
             <p permid="TIj">
               Mark each equation as True or False.
@@ -352,7 +352,7 @@ $false=PopUp(['?',"True","False"],2);
       <solution permid="OvA">
         <sidebyside widths="47% 47%" margins="0%" permid="Rqg">
           <table xml:id="table-values-of-h" permid="rPu">
-            <caption>Table for <m>y=h(x)</m>.</caption>
+            <title>Table for <m>y=h(x)</m>.</title>
             <tabular  halign="right" permid="XWD">
               <row bottom="major">
                 <cell><m>x</m></cell>
@@ -418,7 +418,7 @@ $false=PopUp(['?',"True","False"],2);
 <p>This is a strange one because it has an absolute value within an absolute value.</p>
 <sidebyside widths="47% 47%" margins="0%" valign="middle">
 <table xml:id="table-values-of-j">
-<caption>A table of values for <m>y=j(x)</m>.</caption>
+<title>A table of values for <m>y=j(x)</m>.</title>
 <tabular  halign="right">
 <row bottom="major">
 <cell><m>x</m></cell>
@@ -1010,7 +1010,7 @@ grid=none]
       <title>Tables</title>
       <exercise permid="wNv">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context()->noreduce('(-x)+y', '(-x)-y');
 $f = RandomVariableName(type=>'function');
@@ -1071,7 +1071,7 @@ Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
 $rs[$i] = $formula->substitute(x=>$x[$i]);
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="zPs">
                 Make a table of values for the function <m><var name="$f" /></m> defined by <m><var name="$f" />(x)=<var name="$formula" /></m>.
@@ -1184,7 +1184,7 @@ $rs[$i] = $formula->substitute(x=>$x[$i]);
       </exercise>
       <exercise permid="cUE">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context()->noreduce('(-x)+y', '(-x)-y');
 $f = RandomVariableName(type=>'function');
@@ -1245,7 +1245,7 @@ Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
 $rs[$i] = $formula->substitute(x=>$x[$i]);
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="fWB">
                 Make a table of values for the function <m><var name="$f" /></m> defined by <m><var name="$f" />(x)=<var name="$formula" /></m>.
@@ -1358,7 +1358,7 @@ $rs[$i] = $formula->substitute(x=>$x[$i]);
       </exercise>
       <exercise permid="JbN">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context()->noreduce('(-x)+y', '(-x)-y');
 $f = RandomVariableName(type=>'function');
@@ -1420,7 +1420,7 @@ Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
 $rs[$i] = $formula->substitute(x=>$x[$i]);
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="MdK">
                 Make a table of values for the function <m><var name="$f" /></m> defined by <m><var name="$f" />(x)=<var name="$formula" /></m>.
@@ -1533,7 +1533,7 @@ $rs[$i] = $formula->substitute(x=>$x[$i]);
       </exercise>
       <exercise permid="piW">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context()->noreduce('(-x)+y', '(-x)-y');
 $f = RandomVariableName(type=>'function');
@@ -1595,7 +1595,7 @@ Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
 $rs[$i] = $formula->substitute(x=>$x[$i]);
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="skT">
                 Make a table of values for the function <m><var name="$f" /></m> defined by <m><var name="$f" />(x)=<var name="$formula" /></m>.
@@ -1708,7 +1708,7 @@ $rs[$i] = $formula->substitute(x=>$x[$i]);
       </exercise>
       <exercise permid="Vqf">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context()->noreduce('(-x)+y', '(-x)-y');
 $f = RandomVariableName(type=>'function');
@@ -1772,7 +1772,7 @@ Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
 $rs[$i] = $formula->substitute(x=>$x[$i]);
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Ysc">
                 Make a table of values for the function <m><var name="$f" /></m> defined by <m><var name="$f" />(x)=<var name="$formula" /></m>.
@@ -1885,7 +1885,7 @@ $rs[$i] = $formula->substitute(x=>$x[$i]);
       </exercise>
       <exercise permid="Bxo">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context()->noreduce('(-x)+y', '(-x)-y');
 $f = RandomVariableName(type=>'function');
@@ -1949,7 +1949,7 @@ Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
 $rs[$i] = $formula->substitute(x=>$x[$i]);
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Ezl">
                 Make a table of values for the function <m><var name="$f" /></m> defined by <m><var name="$f" />(x)=<var name="$formula" /></m>.
@@ -2062,7 +2062,7 @@ $rs[$i] = $formula->substitute(x=>$x[$i]);
       </exercise>
       <exercise permid="hEx">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context()->noreduce('(-x)+y', '(-x)-y');
 $f = RandomVariableName(type=>'function');
@@ -2128,7 +2128,7 @@ Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
 $rs[$i] = $formula->substitute(x=>$x[$i]);
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="kGu">
                 Make a table of values for the function <m><var name="$f" /></m> defined by <m><var name="$f" />(x)=<var name="$nicerformula" /></m>.
@@ -2241,7 +2241,7 @@ $rs[$i] = $formula->substitute(x=>$x[$i]);
       </exercise>
       <exercise permid="NLG">
         <webwork>
-            <setup>
+            
 <pg-code>
 Context()->noreduce('(-x)+y', '(-x)-y');
 $f = RandomVariableName(type=>'function');
@@ -2307,7 +2307,7 @@ Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
 $rs[$i] = $formula->substitute(x=>$x[$i]);
 }
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="QND">
                 Make a table of values for the function <m><var name="$f" /></m> defined by <m><var name="$f" />(x)=<var name="$nicerformula" /></m>.

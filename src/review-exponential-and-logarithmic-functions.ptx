@@ -22,9 +22,9 @@
       </p>
     </paragraphs>
     <p permid="cKR">
-      We also learned that the graph of an exponential function has the following properties:
+      We also learned that the graph of an exponential function has the following properties:</p>
       <table width="100%" permid="BXv">
-        <caption>Properties of the Graph of <m>f(x)=b^x</m></caption>
+        <title>Properties of the Graph of <m>f(x)=b^x</m></title>
         <tabular permid="usW">
           <row bottom="major">
             <cell colspan="2">when <m>b&gt;1</m></cell>
@@ -74,12 +74,12 @@
           </row>
         </tabular>
       </table>
-      <figure permid="Vgs">
+      <figure permid="Vgs"><caption/>
         <image source="images/exp_graphs_2.png" align="center" width="80%" permid="sDJ">
           <description>Graphs of the functions y=b^x when b>0 and y=b^x when b is between 0 and 1, graphed side by side.</description>
         </image>
       </figure>
-    </p>
+    <!-- </p> -->
     <example permid="Yic">
       <statement>
         <p permid="eVD">
@@ -89,18 +89,18 @@
       </statement>
       <solution permid="tQg">
         <p permid="IDF">
-          We will use point plotting to graph the functions.
-          <figure permid="oKO">
+          We will use point plotting to graph the functions.</p>
+          <figure permid="oKO"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_002_img.jpg" width="60%" permid="YKS">
               <description>A table of values for graphing f(x)=2^x and g(x)=3^x.</description>
             </image>
           </figure>
-          <figure permid="URX">
+          <figure permid="URX"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_003_img.jpg" width="40%" permid="ESb">
               <description>A graph of f(x)=2^x, in blue, and g(x)=3^x, in red, graphed on the same coordinate system.</description>
             </image>
           </figure>
-        </p>
+       <!--  </p> -->
       </solution>
     </example>
     <example permid="Epl">
@@ -112,18 +112,18 @@
       </statement>
       <solution permid="ZXp">
         <p permid="AZg">
-          We will use point plotting to graph the functions.
-          <figure permid="hgp">
+          We will use point plotting to graph the functions.</p>
+          <figure permid="hgp"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_005_img.jpg" width="50%" permid="kZk">
               <description>A table of values for f(x)=(1/2)^x and g(x)=(1/3)^x.</description>
             </image>
           </figure>
-          <figure permid="Nny">
+          <figure permid="Nny"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_006_img.jpg" width="40%" permid="Rgt">
               <description>A graph of f(x)=(1/2)^x, in blue, and g(x)=(1/3)^x, in red, graphed on the same coordinate system.</description>
             </image>
           </figure>
-        </p>
+        <!-- </p> -->
       </solution>
     </example>
     <paragraphs permid="VIV">
@@ -133,13 +133,13 @@
         which is an irrational number like <m>\pi</m> whose value is
         <m>e\approx 2.718281827..</m>.. The graph of the function <m>f(x)=e^x</m>,
         compared to functions <m>g(x)=2^x</m> and
-        <m>h(x)=3^x</m> is given in the figure below:
-        <figure permid="Qwz">
+        <m>h(x)=3^x</m> is given in the figure below:</p>
+        <figure permid="Qwz"><caption/>
           <image source="images/CNX_IntAlg_Figure_10_02_012.jpg" width="50%" permid="xnC">
             <description>Graph of the function f(x)=e^x, in blue, on the same coordinate system as g(x)=2^x, in red, and h(x)=3^x, in green.</description>
           </image>
         </figure>
-      </p>
+      <!-- </p> -->
     </paragraphs>
     <paragraphs permid="BQe">
       <title>Use Exponential Models in Applications</title>
@@ -150,7 +150,7 @@
     </paragraphs>
     <paragraphs permid="hXn">
       <title>Compound Interest</title>
-      <introduction permid="LTK">
+      <!-- <introduction permid="LTK"> -->
         <p permid="Uwy">
           There are two formulas that are used to determine the balance in the account when interest is earned.
           If a principal,
@@ -163,7 +163,7 @@
           we use the formula <m>A=P{e}^{rt}</m>.
           These are the formulas for <term>compound interest</term>.
         </p>
-      </introduction>
+      <!-- </introduction> -->
     </paragraphs>
     <p permid="ISa">
       For a principal, <m>P</m>, invested at an interest rate, <m>r</m>
@@ -183,6 +183,7 @@
           If the interest rate is <m>5\%</m>,
           how much will be in the account in <m>18</m> years by each method of compounding?
         </p>
+        <p>
         <ol label="a." permid="EZf">
           <li permid="xuG">
             compound quarterly
@@ -194,9 +195,11 @@
             compound continuously
           </li>
         </ol>
+      </p>
       </statement>
       <solution permid="Gey">
         <table halign="left" permid="ieE">
+          <title/>
           <tabular permid="aAf">
             <row>
               <cell halign="left"></cell>
@@ -251,7 +254,7 @@
               <cell halign="left">Round to the nearest cent.</cell>
               <cell><m>A=\$24{,}459.20</m></cell>
             </row>
-            <row>
+            <row><cell/>
             </row>
             <row>
               <cell halign="left">b.</cell>
@@ -273,7 +276,7 @@
               <cell halign="left">Compute and round to the nearest cent.</cell>
               <cell><m>A=\$24{,}550.08</m></cell>
             </row>
-            <row>
+            <row><cell/>
             </row>
             <row>
               <cell halign="left">c.</cell>
@@ -297,7 +300,7 @@
     </example>
     <paragraphs permid="Oew">
       <title>Exponential Growth and Decay</title>
-      <introduction permid="saT">
+      <!-- <introduction permid="saT"> -->
         <p permid="ADH">
           Other topics that are modeled by exponential functions involve growth and decay.
           Both also use the formula <m>A=P{e}^{rt}</m> we used for the growth of money.
@@ -309,7 +312,7 @@
           <term>exponential decay</term>
           has a negative rate of growth.
         </p>
-      </introduction>
+      <!-- </introduction> -->
     </paragraphs>
     <p permid="oZj">
       For an original amount, <m>{A}_{0}</m>,
@@ -331,6 +334,7 @@
       </statement>
       <solution permid="mlH">
         <table permid="OlN">
+          <title/>
           <tabular permid="GHo">
             <row>
               <cell halign="left">Identify the values of each variable in the formulas.</cell>
@@ -383,13 +387,13 @@
     </p>
     <p permid="huK">
       The following illustration can be useful in identifying the base and exponent in either form,
-      which is key to making those conversions:
-      <figure permid="ysV">
+      which is key to making those conversions:</p>
+      <figure permid="ysV"><caption/>
         <image source="images/exp_vs_log.png" width="70%" permid="duL">
           <description>Diagram of exponential equation versus logarithmic equation, pointing out the base and exponent in each.</description>
         </image>
       </figure>
-    </p>
+    <!-- </p> -->
     <example permid="wKM">
       <title>Converting from Logarithmic Form to Exponential Form</title>
       <statement>
@@ -671,12 +675,12 @@
           </p>
         </statement>
         <answer permid="XcJ">
-          <p permid="nFv">
-            <figure permid="TME">
+          <!-- <p permid="nFv"> -->
+            <figure permid="TME"><caption/>
               <image source="images/CNX_IntAlg_Figure_10_02_311_img.jpg" width="40%" permid="JBU">
               </image>
             </figure>
-          </p>
+          <!-- </p> -->
         </answer>
       </exercise>
 		        <!-- <exercise>
@@ -689,12 +693,12 @@
           </p>
         </statement>
         <answer permid="DjS">
-          <p permid="zTN">
-            <figure permid="gaW">
+          <!-- <p permid="zTN"> -->
+            <figure permid="gaW"><caption/>
               <image source="images/CNX_IntAlg_Figure_10_02_315_img.jpg" width="40%" permid="pJd">
               </image>
             </figure>
-          </p>
+         <!--  </p> -->
         </answer>
       </exercise>
 		        <!-- <exercise>
@@ -709,12 +713,12 @@
         </p>
       </statement>
       <answer  permid="MDE">
-      <p permid="Mif">
-        <figure permid="Jnz">
+      <!-- <p permid="Mif"> -->
+        <figure permid="Jnz"><caption/>
           <image source="images/CNX_IntAlg_Figure_10_02_321_img.jpg" width="40%" permid="VQm">
           </image>
         </figure>
-      </p>
+      <!-- </p> -->
       </answer >
     </exercise>
 		        <!-- <exercise>
@@ -735,12 +739,12 @@
       <exercise permid="owt">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=72707;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="spo">
                 In the last ten years,
@@ -773,12 +777,12 @@ $answer=72707;
       <exercise permid="UDC">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=729514;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="EDG">
                 In the last twenty years,
@@ -920,12 +924,12 @@ $answer=729514;
       <exercise permid="qlG">
         <webwork>
             <pg-macros><macro-file>contextLimitedFraction.pl</macro-file></pg-macros>
-            <setup>
+            
 		                 <pg-code>
 		                     Context("LimitedFraction");
 		                     $answer=Fraction(1,5);
 		                 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="uOv">
                 <m>{\mathrm{log}}_{27}\left(\sqrt[5]{27}\right)=</m><var name="$answer" width="5"/>
@@ -936,12 +940,12 @@ $answer=729514;
       <exercise permid="WsP">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 		                 <pg-code>
 		                     Context("Numeric");
 		                     $answer=-2;
 		                 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="aVE">
                 <m>{\mathrm{log}}_{3}\left(\frac{1}{9}\right)=</m><var name="$answer" width="5"/>
@@ -952,12 +956,12 @@ $answer=729514;
       <exercise permid="CzY">
         <webwork>
             <pg-macros><macro-file>contextLimitedFraction.pl</macro-file></pg-macros>
-            <setup>
+            
 		                 <pg-code>
 		                     Context("LimitedFraction");
 		                     $answer=Fraction(1,3);
 		                 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="HcN">
                 <m>{\mathrm{log}}_{8}\left(2\right)=</m><var name="$answer" width="5"/>
@@ -968,12 +972,12 @@ $answer=729514;
       <exercise permid="iHh">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 		                 <pg-code>
 		                     Context("Numeric");
 		                     $answer=-3;
 		                 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="njW">
                 <m>{\mathrm{log}}_{4}\left(\frac{1}{64}\right)=</m><var name="$answer" width="5"/>
@@ -990,32 +994,36 @@ $answer=729514;
         </p>
       </introduction>
       <exercise permid="uVz">
+        <webwork>
         <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-        <setup>
+        
 		                 <pg-code>
 		                     Context("Numeric");
 		                     $answer=9.644;
 		                 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="Trf">
             <m>\mathrm{ln}\left(15{,}425\right) \approx</m><var name="'9.644'" width="5"/>
           </p>
         </statement>
+      </webwork>
       </exercise>
       <exercise permid="bcI">
+        <webwork>
         <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-        <setup>
+        
 		                 <pg-code>
 		                     Context("Numeric");
 		                     $answer=-0.2487;
 		                 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="zyo">
             <m>\mathrm{log}\left(0.564\right) \approx</m><var name="'-0.2487'" width="5"/>
           </p>
         </statement>
+      </webwork>
       </exercise>
     </exercisegroup>
     <exercisegroup cols="2" permid="rqZ">
@@ -1030,12 +1038,12 @@ $answer=729514;
       <exercise permid="nra">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 		                 <pg-code>
 		                     Context("Numeric");
 		                     $answer=4.918;
 		                 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="fFx">
                 <m>\mathrm{log}_{4}914 \approx</m><var name="$answer" width="5"/>
@@ -1046,12 +1054,12 @@ $answer=729514;
       <exercise permid="Tyj">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 		                 <pg-code>
 		                     Context("Numeric");
 		                     $answer=3.434;
 		                 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="LMG">
                 <m>\mathrm{log}_{6}470 \approx</m><var name="$answer" width="5"/>
@@ -1062,12 +1070,12 @@ $answer=729514;
       <exercise permid="zFs">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 		                  <pg-code>
 		                      Context("Numeric");
 		                      $answer=-0.861;
 		                  </pg-code>
-            </setup>
+            
             <statement>
               <p permid="rTP">
                 <m>\mathrm{log}_{5}0.25 \approx</m><var name="$answer" width="5"/>
@@ -1078,12 +1086,12 @@ $answer=729514;
       <exercise permid="fMB">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 		                    <pg-code>
 		                        Context("Numeric");
 		                        $answer=-0.527;
 		                    </pg-code>
-            </setup>
+            
             <statement>
               <p permid="YaY">
                 <m>\mathrm{log}_{15}0.24 \approx</m><var name="$answer" width="5"/>

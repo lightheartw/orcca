@@ -24,6 +24,8 @@
       we will typically choose to write the Change-of-Base Formula with the new base as either <m>10</m> or <m>e</m>.
     </p>
   </introduction>
+  <subsection>
+    <title>The Change-of-Base Formula</title>
   <definition xml:id="definition-change-of-base-formula" permid="Qmj">
     <title>Change-of-Base Formula</title>
     <idx><h>change-of-base formula</h></idx>
@@ -185,14 +187,14 @@
   <exercise permid="hku">
     <webwork>
         <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-        <setup>
+        
 <pg-code>
 Context("Numeric");
 $answer1=2.795;
 $answer2=6.539;
 $answer3=-0.652;
 </pg-code>
-        </setup>
+        
         <statement>
           <p permid="DCs">
             Use the change-of-base formula to approximate each logarithm to three decimal places.
@@ -250,6 +252,7 @@ $answer3=-0.652;
         </solution>
     </webwork>
   </exercise>
+</subsection>
   <exercises permid="aLo">
     <exercisegroup cols="3" permid="GSx">
       <introduction permid="mZG">
@@ -262,12 +265,12 @@ $answer3=-0.652;
       <exercise permid="TgP">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=3.763;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="jJB">
                 <m>\mathrm{log}_{8}2{,}500 \approx</m><var name="$answer" width="5"/>
@@ -278,12 +281,12 @@ $answer=3.763;
       <exercise permid="znY">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=3.402;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="PQK">
                 <m>\mathrm{log}_{3}42\approx</m><var name="$answer" width="5"/>
@@ -294,12 +297,12 @@ $answer=3.402;
       <exercise permid="fvh">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=2.707;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="vXT">
                 <m>\mathrm{log}_{5}78 \approx</m><var name="$answer" width="5"/>
@@ -310,12 +313,12 @@ $answer=2.707;
       <exercise permid="LCq">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=1.797;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="cfc">
                 <m>\mathrm{log}_{12}87 \approx</m><var name="$answer" width="5"/>
@@ -326,12 +329,12 @@ $answer=1.797;
       <exercise permid="rJz">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=1.674;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Iml">
                 <m>\mathrm{log}_{15}93 \approx</m><var name="$answer" width="5"/>
@@ -342,12 +345,12 @@ $answer=1.674;
       <exercise permid="XQI">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=4.087;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="otu">
                 <m>\mathrm{log}_{2}17 \approx</m><var name="$answer" width="5"/>
@@ -358,12 +361,12 @@ $answer=4.087;
       <exercise permid="DXR">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=-0.87;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="UAD">
                 <m>\mathrm{log}_{6}0.21 \approx</m><var name="$answer" width="5"/>
@@ -374,12 +377,12 @@ $answer=-0.87;
       <exercise permid="kfa">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=2.460;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="AHM">
                 <m>\mathrm{log}_{7}120 \approx</m><var name="$answer" width="5"/>

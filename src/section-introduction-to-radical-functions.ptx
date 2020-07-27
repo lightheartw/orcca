@@ -250,7 +250,7 @@ minor ytick=]
                 and look at the graph of <m>l=\sqrt{A}</m>.
               </p>
               <table permid="VxW">
-                <caption>Values of <m>f(A)=\sqrt{A}</m></caption>
+                <title>Values of <m>f(A)=\sqrt{A}</m></title>
                 <tabular permid="hMo">
                   <col halign="center"/>
                   <col halign="center"/>
@@ -764,7 +764,7 @@ ytick={0,1,...,5}, xtick={0,1,...,9}]
     </p>
     <sidebyside widths="42% 37%" margins="5%" permid="QVh">
       <table permid="BFf">
-        <caption>Values of <m>g(x)=\sqrt[3]{x}</m></caption>
+        <title>Values of <m>g(x)=\sqrt[3]{x}</m></title>
         <tabular permid="NTx">
           <col halign="center"/>
           <col halign="center"/>
@@ -884,7 +884,7 @@ ytick={0,1,...,5}, xtick={0,1,...,9}]
 <p>For <m>x^2=4</m>, there are two solutions because <m>2^2=4</m> and <m>(-2)^2=4</m>. However, for <m>x^3=8</m>, there is only one solution as <m>2^3=8</m>. The number <m>-2</m> is not a solution of <m>x^3=8</m>, because <m>(-2)^3=-8</m>.</p></remark> -->
 <!-- <p>The following table summarized the difference of square root and cube root:</p>
 <table xml:id="table-square-root-cube-root-comparison">
-<caption>Differences of <m>f(x)=\sqrt{x}</m> and <m>g(x)=\sqrt[3]{x}</m></caption>
+<title>Differences of <m>f(x)=\sqrt{x}</m> and <m>g(x)=\sqrt[3]{x}</m></title>
 <tabular>
 <col halign="center" right="minor"/>
 <col halign="center" width="40%" right="minor"/>
@@ -1018,7 +1018,7 @@ ytick={0,1,...,5}, xtick={0,1,...,9}]
     </example>
 <!-- <p>In the following table, we will summarize the differences between <m>f(x)=x^m</m> where <m>m</m> is even and <m>g(x)=x^n</m> where <m>n</m> is an odd number. The content of this table is very similar to content in <xref ref="table-square-root-cube-root-comparison">Table</xref>.</p>
 <table>
-<caption>Differences of <m>f(x)=\sqrt[m]{x}</m> where <m>m</m> is even and <m>g(x)=\sqrt[n]{x}</m> where <m>n</m> is odd</caption>
+<title>Differences of <m>f(x)=\sqrt[m]{x}</m> where <m>m</m> is even and <m>g(x)=\sqrt[n]{x}</m> where <m>n</m> is odd</title>
 <tabular>
 <col halign="center" right="minor"/>
 <col halign="center" width="40%" right="minor"/>
@@ -1225,7 +1225,7 @@ ytick={0,1,...,5}, xtick={0,1,...,9}]
 <pg-macros>
 <macro-file>PCCgraphMacros.pl</macro-file>
 </pg-macros>
-<setup>
+
 <pg-code>
 Context("Numeric");
 Context()->flags->set(showExtraParens=>0, reduceConstants=>0);
@@ -1268,7 +1268,7 @@ $gr->lb( new Label($a, $b-$marksep[1]/8, "($a,$b)",'red','center','top'));
 Context("Interval");
 $range = Compute("[$b,inf)");
 </pg-code>
-</setup>
+
 <statement>
 <p>Use technology to find the range of the function <m><var name="$fname" /></m> defined by <m><var name="$fname" />(x)=<var name="$func" /></m>.</p>
 <instruction>If you need to enter <m>\infty</m>, you can type  <c>inf</c> or <c>infinity</c>.  If you need to union two (or more) intervals, use the letter <c>U</c>. For example: <c>(-inf,5) \cup (5, inf)</c>.</instruction>
@@ -1290,7 +1290,7 @@ $range = Compute("[$b,inf)");
 <pg-macros>
 <macro-file>PCCgraphMacros.pl</macro-file>
 </pg-macros>
-<setup>
+
 <pg-code>
 Context("Numeric");
 Context()->flags->set(showExtraParens=>0, reduceConstants=>0);
@@ -1333,7 +1333,7 @@ $gr->lb( new Label($a, $b-$marksep[1]/8, "($a,$b)",'red','center','top'));
 Context("Interval");
 $range = Compute("[$b,inf)");
 </pg-code>
-</setup>
+
 <statement>
 <p>Use technology to find the range of the function <m><var name="$fname" /></m> defined by <m><var name="$fname" />(x)=<var name="$func" /></m>.</p>
 <instruction>If you need to enter <m>\infty</m>, you can type  <c>inf</c> or <c>infinity</c>.  If you need to union two (or more) intervals, use the letter <c>U</c>. For example: <c>(-inf,5) \cup (5, inf)</c>.</instruction>
@@ -1356,7 +1356,7 @@ $range = Compute("[$b,inf)");
 <pg-macros>
 <macro-file>PCCgraphMacros.pl</macro-file>
 </pg-macros>
-<setup>
+
 <pg-code>
 Context("Numeric");
 Context()->flags->set(showExtraParens=>0, reduceConstants=>0);
@@ -1408,7 +1408,7 @@ $gr->lb( new Label($hx, $hy+$marksep[1]/2, "$fname(x)",'blue','center','middle')
 Context("Interval");
 $range = Compute("($c,inf)");
 </pg-code>
-</setup>
+
 <statement>
 <p>Use technology to find the range of the function <m><var name="$fname" /></m> defined by <m><var name="$fname" />(x)=<var name="$func" /></m>.</p>
 <instruction>If you need to enter <m>\infty</m>, you can type  <c>inf</c> or <c>infinity</c>.  If you need to union two (or more) intervals, use the letter <c>U</c>. For example: <c>(-inf,5) \cup (5, inf)</c>.</instruction>
@@ -1430,7 +1430,7 @@ $range = Compute("($c,inf)");
 <pg-macros>
 <macro-file>PCCgraphMacros.pl</macro-file>
 </pg-macros>
-<setup>
+
 <pg-code>
 Context("Numeric");
 Context()->flags->set(showExtraParens=>0, reduceConstants=>0);
@@ -1482,7 +1482,7 @@ $gr->lb( new Label($hx, $hy+$marksep[1]/2, "$fname(x)",'blue','center','middle')
 Context("Interval");
 $range = Compute("($c,inf)");
 </pg-code>
-</setup>
+
 <statement>
 <p>Use technology to find the range of the function <m><var name="$fname" /></m> defined by <m><var name="$fname" />(x)=<var name="$func" /></m>.</p>
 <instruction>If you need to enter <m>\infty</m>, you can type  <c>inf</c> or <c>infinity</c>.  If you need to union two (or more) intervals, use the letter <c>U</c>. For example: <c>(-inf,5) \cup (5, inf)</c>.</instruction>
@@ -1519,7 +1519,7 @@ $range = Compute("($c,inf)");
 <pg-macros>
 <macro-file>PCCgraphMacros.pl</macro-file>
 </pg-macros>
-<setup> -->
+ -->
 <!-- todo: This graph doesn't show up as the correct one for Ross. He doesn't know why. -->
 <!-- graph appears in solution only. Will investigate the issue, but probably not before gamma release -->
 <!-- <pg-code>
@@ -1564,7 +1564,7 @@ $gr->lb( new Label($hx-$marksep[0]/8, $hy, "S(d)",'red','right','middle'));
 $gr->stamps( closed_circle($d1,$s1,'red') );
 $gr->lb( new Label($d1-$marksep[0]/8, $s1+$marksep[1]/8, "($d1,$s1R)",'red','right','bottom'));
 </pg-code>
-</setup>
+
 <statement>
 <p>The speed of a tsunami, in meters per second, can be modeled by the function <m>S(d)=<var name="$func"/></m>, where <m>d</m> is the depth of water in meters. Answer the following question with technology.</p>
 <instruction>Round your answer to two decimal places if needed.</instruction>
@@ -1586,7 +1586,7 @@ $gr->lb( new Label($d1-$marksep[0]/8, $s1+$marksep[1]/8, "($d1,$s1R)",'red','rig
 <pg-macros>
 <macro-file>PCCgraphMacros.pl</macro-file>
 </pg-macros>
-<setup> -->
+ -->
 <!-- todo: This graph doesn't show up as the correct one for Ross. He doesn't know why. -->
 <!-- graph appears in solution only. Will investigate the issue, but probably not before gamma release -->
 <!--  <pg-code>
@@ -1633,7 +1633,7 @@ $gr->lb( new Label($hx-$marksep[0]/8, $hy, "S(d)",'red','right','middle'));
 $gr->stamps( closed_circle($d1,$s1,'red') );
 $gr->lb( new Label($d1-$marksep[0]/8, $s1+$marksep[1]/8, "($d1R,$s1)",'red','right','bottom'));
 </pg-code>
-</setup>
+
 <statement>
 <p>The speed of a tsunami, in meters per second, can be modeled by the function <m>S(d)=<var name="$func"/></m>, where <m>d</m> is the depth of water in meters. Answer the following question with technology.</p>
 <instruction>Round your answer to two decimal places if needed.</instruction>

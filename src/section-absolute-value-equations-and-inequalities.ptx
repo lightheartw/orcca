@@ -263,9 +263,10 @@
       Let's summarize this with a fact.
     </p>
     <fact xml:id="fact-absolute-value-equation-i" permid="yKd">
+      <title>Equations with an Absolute Value Expression</title>
       <idx><h>absolute value</h><h>solving equations with one absolute value</h></idx>
       <idx><h>solving</h><h>absolute value equations</h><h>with one absolute value</h></idx>
-      <title>Equations with an Absolute Value Expression</title>
+      
       <statement>
         <p permid="gzv">
           Let <m>n</m> be a non-negative number and <m>X</m> be an algebraic expression.
@@ -553,9 +554,10 @@
 <statement><p>Let <m>n</m> be a non-negative number and <m>X</m> be a linear algebraic expression. Then, the inequality <me>\abs{X} \lt n</me> has the same solutions as the compound inequality <me>-n \lt X \lt n</me>. Likewise, the inequality <me>\abs{X} \le n</me> has the same solutions as the compound inequality <me>-n \le X \le n</me>.</p></statement>
 </fact> -->
     <fact xml:id="fact-absolute-value-inequalities-i" permid="IdP">
+      <title>An Absolute Value Expression Less Than a Value</title>
       <idx><h>absolute value</h><h>solving less-than inequalities</h></idx>
       <idx><h>solving</h><h>absolute value inequalities</h><h>with less than</h></idx>
-      <title>An Absolute Value Expression Less Than a Value</title>
+      
       <statement>
         <p permid="MGE">
           Let <m>n</m> be a non-negative number and <m>X</m> be a linear algebraic expression.
@@ -839,9 +841,10 @@
 <statement><p>Let <m>n</m> be a non-negative number and <m>X</m> be a linear algebraic expression. Then, the inequality <me>\abs{X} \gt n</me> has the same solutions as the compound inequality <me>X \gt n \text{ or } -X \gt n</me>. Likewise, the inequality <me>\abs{X} \ge n</me> has the same solutions as the compound inequality <me>X \ge n \text{ or } -X \ge n</me>.</p></statement>
 </fact> -->
     <fact xml:id="fact-absolute-value-inequalities-ii" permid="okY">
+      <title>An Absolute Value Expression Greater Than a Value</title>
       <idx><h>absolute value</h><h>solving greater-than inequalities</h></idx>
       <idx><h>solving</h><h>absolute value inequalities</h><h>with greater than</h></idx>
-      <title>An Absolute Value Expression Greater Than a Value</title>
+      
       <statement>
         <p permid="Fcf">
           Let <m>n</m> be a non-negative number and <m>X</m> be a linear algebraic expression.
@@ -1378,7 +1381,7 @@
 <webwork source="Contrib/PCC/Math95/AbsValueEquations/54IntAlg_35_AbsoluteValEq_Review.pg" />
 </exercise> -->
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="Rjg">
       <title>Testing Possible Solutions</title>
       <exercise permid="MdO">
@@ -1455,7 +1458,7 @@
 <title>Challenge</title>
 <exercise> --><!-- Kara's challenge problem -->
 <!--  <webwork>
-<setup>
+
 <pg-code>
 Context("Interval");
 $a = random(2,10,1);
@@ -1464,7 +1467,7 @@ $c = $a + $b;
 $d = $a + $a + $b;
 $I = Interval("[$a,$b]");
 </pg-code>
-</setup>
+
 <statement> -->
 <!--The answer is an interval.  I do not give any indication of this in the question, as that kind of ruins the question.-->
 <!--  <p> Algebraically, solve for <m>x</m>. </p>

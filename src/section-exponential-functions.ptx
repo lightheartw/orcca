@@ -17,9 +17,10 @@
       These models involve exponential functions.
     </p>
     <definition xml:id="definition-exponential-function" permid="zxX">
+      <title>Exponential Function</title>
       <idx><h>exponential</h></idx>
       <idx><h>function</h><h>exponential</h></idx>
-      <title>Exponential Function</title>
+      
       <statement>
         <p permid="CVt">
           An <term>exponential function</term>,
@@ -35,7 +36,7 @@
       the variable is the exponent.
       In our functions so far, the variables were the base.
     </p>
-    <figure permid="Api">
+    <figure permid="Api"><caption/>
       <image source="images/CNX_IntAlg_Figure_10_02_001_img.jpg" width="100%" permid="TcG">
         <description>A comparison of a linear function, a quadratic function, and an exponential function, with arrows pointing to the variable, x.</description>
       </image>
@@ -73,20 +74,20 @@
         <p permid="HqR">
           We will use point plotting to graph the functions.
         </p>
-        <p permid="nya">
-          <figure permid="zMs">
+        <!-- <p permid="nya"> -->
+          <figure permid="zMs"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_002_img.jpg" width="60%" permid="zjP">
               <description>A table of values for graphing f(x)=2^x and g(x)=3^x.</description>
             </image>
           </figure>
-        </p>
-        <p permid="TFj">
-          <figure permid="fTB">
+        <!-- </p> -->
+        <!-- <p permid="TFj"> -->
+          <figure permid="fTB"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_003_img.jpg" width="40%" permid="fqY">
               <description>A graph of f(x)=2^x, in blue, and g(x)=3^x, in red, graphed on the same coordinate system.</description>
             </image>
           </figure>
-        </p>
+        <!-- </p> -->
       </solution>
     </example>
     <exercise permid="Qwi">
@@ -96,13 +97,13 @@
         </p>
       </statement>
       <solution permid="mem">
-        <p permid="MaK">
-          <figure permid="shT">
+        <!-- <p permid="MaK"> -->
+          <figure permid="shT"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_301_img.jpg" width="30%" permid="Lyh">
               <description>A graph of f(x)=4^x.</description>
             </image>
           </figure>
-        </p>
+       <!--  </p> -->
       </solution>
     </exercise>
     <exercise permid="wDr">
@@ -112,13 +113,13 @@
         </p>
       </statement>
       <solution permid="Slv">
-        <p permid="Ypc">
-          <figure permid="Ewl">
+        <!-- <p permid="Ypc"> -->
+          <figure permid="Ewl"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_302_img.jpg" width="30%" permid="rFq">
               <description>A graph of g(x)=5^x.</description>
             </image>
           </figure>
-        </p>
+        <!-- </p> -->
       </solution>
     </exercise>
     <p permid="BuB">
@@ -172,7 +173,7 @@
       the <m>x</m>-axis, a horizontal asymptote.
     </p>
     <p permid="yzV">
-      We summarize these results below.
+      We summarize these results below.</p>
       <figure permid="gwr">
         <caption>Properties of the Graph of <m>f\left(x\right)={b}^{x}</m> when <m>b&gt;1</m></caption>
         <sidebyside widths="50% 35%" margins="5%" permid="koZ">
@@ -207,7 +208,7 @@
           </image>
         </sidebyside>
       </figure>
-    </p>
+    <!-- </p> -->
     <p permid="eHe">
       Our definition of an exponential function <m>f\left(x\right)={b}^{x}</m> says <m>b&gt;0</m>,
       but the examples and discussion so far has been about functions where <m>b&gt;1</m>.
@@ -225,20 +226,20 @@
         <p permid="kDu">
           We will use point plotting to graph the functions.
         </p>
-        <p permid="QKD">
-          <figure permid="cYV">
+        <!-- <p permid="QKD"> -->
+          <figure permid="cYV"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_005_img.jpg" width="50%" permid="DTI">
               <description>A table of values for f(x)=(1/2)^x and g(x)=(1/3)^x.</description>
             </image>
           </figure>
-        </p>
-        <p permid="wRM">
-          <figure permid="Jge">
+        <!-- </p>
+        <p permid="wRM"> -->
+          <figure permid="Jge"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_006_img.jpg" width="40%" permid="kaR">
               <description>A graph of f(x)=(1/2)^x, in blue, and g(x)=(1/3)^x, in red, graphed on the same coordinate system.</description>
             </image>
           </figure>
-        </p>
+        <!-- </p> -->
       </solution>
     </example>
     <exercise permid="cKA">
@@ -248,13 +249,13 @@
         </p>
       </statement>
       <solution permid="ysE">
-        <p permid="pnn">
-          <figure permid="Vuw">
+        <!-- <p permid="pnn"> -->
+          <figure permid="Vuw"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_303_img.jpg" width="30%" permid="Qia">
               <description>Graph of f(x)=(1/4)^x.</description>
             </image>
           </figure>
-        </p>
+        <!-- </p> -->
       </solution>
     </exercise>
     <exercise permid="IRJ">
@@ -264,13 +265,13 @@
         </p>
       </statement>
       <solution  permid="ezN">
-        <p permid="BBF">
-          <figure permid="hIO">
+        <!-- <p permid="BBF"> -->
+          <figure permid="hIO"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_304_img.jpg" width="30%" permid="wpj">
               <description>Graph of g(x)=(1/5)^x.</description>
             </image>
           </figure>
-        </p>
+        <!-- </p> -->
       </solution>
     </exercise>
     <p permid="KOn">
@@ -320,7 +321,7 @@
       which also includes when <m>b&gt;1</m>.
     </p>
     <table xml:id="table-properties-of-graph-exponential-function-with-base-greater-than-zero" width="100%" permid="Mib">
-      <caption>Properties of the Graph of <m>f(x)=b^x</m></caption>
+      <title>Properties of the Graph of <m>f(x)=b^x</m></title>
       <tabular permid="QRU">
         <row bottom="major">
           <cell colspan="2">when <m>b&gt;1</m></cell>
@@ -370,7 +371,7 @@
         </row>
       </tabular>
     </table>
-    <figure permid="MDA">
+    <figure permid="MDA"><caption/>
       <image source="images/exp_graphs_2.png" align="center" width="100%" permid="cws">
         <description>Graphs of the functions y=b^x when b>0 and y=b^x when b is between 0 and 1, graphed side by side.</description>
       </image>
@@ -385,17 +386,18 @@
       <solution permid="tIL">
         <p permid="NPX">
           We will use point plotting to graph the functions.
-          <figure permid="tXg">
+        </p>
+          <figure permid="tXg"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_010_img.jpg" width="60%" permid="IDB">
               <description>Table of values for f(x)=3^x and g(x)=3^x-2.</description>
             </image>
           </figure>
-          <figure permid="aep">
+          <figure permid="aep"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_011_img.jpg" width="50%" permid="oKK">
               <description>Graphs of f(x)=3^x, in blue, and g(x)=3^x-2, in red, graphed on the same coordinate system.</description>
             </image>
           </figure>
-        </p>
+        <!-- </p> -->
       </solution>
     </example>
     <exercise permid="oYS">
@@ -406,13 +408,13 @@
         </p>
       </statement>
       <solution permid="KGW">
-        <p permid="Gly">
-          <figure permid="msH">
+        <!-- <p permid="Gly"> -->
+          <figure permid="msH"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_307_img.jpg" width="30%" permid="URT">
               <description>Graphs of f(x)=3^x, in blue, and g(x)=3^x+2, in red, graphed on the same coordinate system.</description>
             </image>
           </figure>
-        </p>
+        <!-- </p> -->
       </solution>
     </exercise>
     <exercise permid="Vgb">
@@ -423,13 +425,13 @@
         </p>
       </statement>
       <solution permid="qOf">
-        <p permid="SzQ">
-          <figure permid="yGZ">
+        <!-- <p permid="SzQ"> -->
+          <figure permid="yGZ"><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_308_img.jpg" width="30%" permid="AZc">
               <description>Graphs of f(x)=4^x, in blue, and g(x)=4^x-2, in red, graphed on the same coordinate system.</description>
             </image>
           </figure>
-        </p>
+        <!-- </p> -->
       </solution>
     </exercise>
     <p permid="bMy">
@@ -445,9 +447,9 @@
       We say, as <m>n</m> approaches infinity,
       or increases without bound.
       The table shows the value of
-      <m>{\left(1+\frac{1}{n}\right)}^{n}</m> for several values of <m>n</m>.
+      <m>{\left(1+\frac{1}{n}\right)}^{n}</m> for several values of <m>n</m>.</p>
       <table permid="spk">
-        <caption></caption>
+        <title></title>
         <tabular permid="wZd">
           <row bottom="major">
             <cell><m>n</m></cell>
@@ -495,6 +497,7 @@
           </row>
         </tabular>
       </table>
+      <p>
       <me permid="Rnt">
         e\approx 2.718281827
       </me>
@@ -503,8 +506,9 @@
       <term>natural base</term>.
     </p>
     <definition xml:id="definition-natural-base-e" permid="fFg">
-      <idx><h>natural base e</h></idx>
       <title>Natural Base e</title>
+      <idx><h>natural base e</h></idx>
+      
       <statement>
         <p permid="jcC">
           The <term>natural base <m>e</m></term>
@@ -520,10 +524,11 @@
       </statement>
     </definition>
     <definition xml:id="definition-natural-exponential-function" permid="LMp">
+      <title>Natural Exponential Function</title>
       <idx><h>natural exponential</h></idx>
       <idx><h>function</h></idx>
       <idx><h>natural exponential</h></idx>
-      <title>Natural Exponential Function</title>
+      
       <statement>
         <p permid="vqU">
           The exponential function whose base is <m>e</m>,
@@ -536,7 +541,7 @@
       Let's graph the function <m>f\left(x\right)={e}^{x}</m> on the same coordinate system as
       <m>g\left(x\right)={2}^{x}</m> and <m>h\left(x\right)={3}^{x}</m>.
     </p>
-    <figure permid="sKJ">
+    <figure permid="sKJ"><caption/>
       <image source="images/CNX_IntAlg_Figure_10_02_012.jpg" width="50%" permid="hgl">
         <description>Graph of the function f(x)=e^x, in blue, on the same coordinate system as g(x)=2^x, in red, and h(x)=3^x, in green.</description>
       </image>
@@ -560,7 +565,7 @@
     </p>
     <paragraphs permid="lPR">
       <title>Compound Interest</title>
-      <introduction permid="izM">
+      <!-- <introduction permid="izM"> -->
         <p permid="swo">
           There are two formulas that are used to determine the balance in the account when interest is earned.
           If a principal,
@@ -573,7 +578,7 @@
           we use the formula <m>A=P{e}^{rt}</m>.
           These are the formulas for <term>compound interest</term>.
         </p>
-      </introduction>
+      <!-- </introduction> -->
       <p permid="saP">
         For a principal, <m>P</m>, invested at an interest rate, <m>r</m>
         (in decimal form),
@@ -597,7 +602,7 @@
             A total of <m>\$10{,}000</m> was invested in a college fund for a new grandchild.
             If the interest rate is <m>5\%</m>,
             how much will be in the account in <m>18</m> years by each method of compounding?
-          </p>
+          
           <ol label="a." permid="kYT">
             <li permid="BXe">
               compound quarterly
@@ -609,9 +614,11 @@
               compound continuously
             </li>
           </ol>
+        </p>
         </statement>
         <solution permid="ZPU">
           <table halign="left" permid="Ywt">
+            <title/>
             <tabular permid="dgm">
               <row>
                 <cell halign="left"></cell>
@@ -666,7 +673,7 @@
                 <cell halign="left">Round to the nearest cent.</cell>
                 <cell><m>A=\$24{,}459.20</m></cell>
               </row>
-              <row>
+              <row><cell/>
               </row>
 <!--   </tabular>
 </table>
@@ -692,7 +699,7 @@
                 <cell halign="left">Compute and round to the nearest cent.</cell>
                 <cell><m>A=\$24{,}550.08</m></cell>
               </row>
-              <row>
+              <row><cell/>
               </row>
 <!-- </tabular>
 </table>
@@ -725,21 +732,21 @@
       <exercise permid="OGV">
         <webwork>
             <pg-macros><macro-file>contextCurrency.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Currency");
 $answer1=Currency(22332.96);
 $answer2=Currency(22362.49);
 $answer3=Currency(22377.37);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Oes">
                 Angela invested <m>\$15{,}000</m> in a savings account.
                 If the interest rate is <m>4\%</m>,
                 how much will be in the account in <m>10</m> years by each method of compounding?
                 Round each answer to the nearest cent.
-              </p>
+              
               <ol label="a." permid="duu">
                 <li permid="usF">
                   compound quarterly: $<var name="$answer1" width="10" />
@@ -751,8 +758,10 @@ $answer3=Currency(22377.37);
                   compound continuously: $<var name="$answer3" width="10" />
                 </li>
               </ol>
+              </p>
             </statement>
             <solution permid="WVo">
+              <p>
               <ol label="a." permid="YKB">
                 <li permid="mOg">
                   <p permid="lIN">
@@ -795,20 +804,21 @@ $answer3=Currency(22377.37);
                   </p>
                 </li>
               </ol>
+            </p>
             </solution>
         </webwork>
       </exercise>
       <exercise permid="uOe">
         <webwork>
             <pg-macros><macro-file>contextCurrency.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Currency");
 $a=Currency(21071.81);
 $b=Currency(21137.04);
 $c=Currency(21170.00);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="ulB">
                 Allan invested <m>\$10{,}000</m> in a mutual fund.
@@ -816,6 +826,7 @@ $c=Currency(21170.00);
                 how much will be in the account in <m>15</m> years by each method of compounding?
                 Round each answer to the nearest cent.
               </p>
+              <p>
               <ol label="a." permid="JBD">
                 <li permid="fjH">
                   compound quarterly: <var name="$a" width="10" />
@@ -827,8 +838,10 @@ $c=Currency(21170.00);
                   compound continuously: <var name="$c" width="10" />
                 </li>
               </ol>
+            </p>
             </statement>
             <solution permid="Dcx">
+              <p>
               <ol label="a." permid="ERK">
                 <li permid="XFi">
                   <p permid="eeo">
@@ -871,13 +884,14 @@ $c=Currency(21170.00);
                   </p>
                 </li>
               </ol>
+            </p>
             </solution>
         </webwork>
       </exercise>
     </paragraphs>
     <paragraphs permid="RXa">
       <title>Exponential Growth and Decay</title>
-      <introduction permid="Hcw">
+      <!-- <introduction permid="Hcw"> -->
         <p permid="YDx">
           Other topics that are modeled by exponential functions involve growth and decay.
           Both also use the formula <m>A=P{e}^{rt}</m> we used for the growth of money.
@@ -889,7 +903,7 @@ $c=Currency(21170.00);
           <term>exponential decay</term>
           has a negative rate of growth.
         </p>
-      </introduction>
+      <!-- </introduction> -->
       <p permid="kwq">
         For an original amount, <m>{A}_{0}</m>,
         that grows or decays at a rate, <m>r</m>,
@@ -914,6 +928,7 @@ $c=Currency(21170.00);
         </statement>
         <solution permid="FXd">
           <table permid="EDC">
+            <title/>
             <tabular permid="Jnv">
               <row>
                 <cell halign="left">Identify the values of each variable in the formula.</cell>
@@ -959,12 +974,12 @@ $c=Currency(21170.00);
       <exercise permid="njF">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=166;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="asK">
                 Another researcher at the Center for Disease Control and Prevention, Lisa,
@@ -998,12 +1013,12 @@ $answer=166;
       <exercise permid="TqO">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=1102;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="mHc">
                 Maria, a biologist is observing the growth pattern of a virus.
@@ -1069,8 +1084,10 @@ $answer=1102;
           </p>
         </statement>
         <answer  permid="sDs">
+          <figure><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_309_img.jpg" width="40%" permid="Nnu">
             </image>
+          </figure>
         </answer>
       </exercise>
       <exercise permid="TMn">
@@ -1087,8 +1104,10 @@ $answer=1102;
           </p>
         </statement>
         <answer>
+          <figure><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_311_img.jpg" width="40%" permid="tuD">
             </image>
+          </figure>
         </answer>
       </exercise>
       <exercise permid="gaF">
@@ -1105,8 +1124,10 @@ $answer=1102;
           </p>
         </statement>
         <answer >
+          <figure><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_313_img.jpg" width="40%" permid="ZBM">
             </image>
+          </figure>
         </answer >
       </exercise>
       <exercise permid="soX">
@@ -1123,8 +1144,10 @@ $answer=1102;
           </p>
         </statement>
         <answer >
+          <figure><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_315_img.jpg" width="40%" permid="FIV">
             </image>
+          </figure>
         </answer >
       </exercise>
       <exercise permid="EDp">
@@ -1141,8 +1164,10 @@ $answer=1102;
           </p>
         </statement>
         <answer >
+          <figure><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_317_img.jpg" width="40%" permid="lQe">
             </image>
+          </figure>
         </answer >
       </exercise>
       <exercise permid="QRH">
@@ -1159,8 +1184,10 @@ $answer=1102;
           </p>
         </statement>
         <answer >
+          <figure><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_319_img.jpg" width="40%" permid="RXn">
             </image>
+          </figure>
         </answer >
       </exercise>
       <exercise permid="dfZ">
@@ -1185,8 +1212,10 @@ $answer=1102;
           </p>
         </statement>
         <answer >
+          <figure><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_321_img.jpg" width="40%" permid="yew">
             </image>
+          </figure>
         </answer >
       </exercise>
       <exercise permid="VBA">
@@ -1203,8 +1232,10 @@ $answer=1102;
           </p>
         </statement>
         <answer >
+          <figure><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_323_img.jpg" width="40%" permid="elF">
             </image>
+          </figure>
         </answer >
       </exercise>
       <exercise permid="hPS">
@@ -1221,8 +1252,10 @@ $answer=1102;
           </p>
         </statement>
         <answer >
+          <figure><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_325_img.jpg" width="40%" permid="KsO">
             </image>
+          </figure>
         </answer >
       </exercise>
       <exercise permid="uek">
@@ -1239,8 +1272,10 @@ $answer=1102;
           </p>
         </statement>
         <answer >
+          <figure><caption/>
             <image source="images/CNX_IntAlg_Figure_10_02_327_img.jpg" width="40%" permid="qzX">
             </image>
+          </figure>
         </answer >
       </exercise>
       <exercise permid="GsC">
@@ -1264,8 +1299,10 @@ $answer=1102;
           </p>
         </statement>
         <answer permid="vxY">
+          <figure><caption/>
               <image source="images/CNX_IntAlg_Figure_10_02_329_img.jpg" width="40%" permid="WHg">
               </image>
+            </figure>
         </answer>
       </exercise>
       <exercise permid="yOd">
@@ -1282,8 +1319,10 @@ $answer=1102;
           </p>
         </statement>
         <answer permid="bFh">
+          <figure><caption/>
               <image source="images/CNX_IntAlg_Figure_10_02_331_img.jpg" width="40%" permid="COp">
               </image>
+            </figure>
         </answer>
       </exercise>
       <exercise permid="Lcv">
@@ -1300,8 +1339,10 @@ $answer=1102;
           </p>
         </statement>
         <answer permid="HMq">
+          <figure><caption/>
               <image source="images/CNX_IntAlg_Figure_10_02_333_img.jpg" width="40%" permid="iVy">
               </image>
+            </figure>
         </answer>
       </exercise>
       <exercise permid="XqN">
@@ -1318,8 +1359,10 @@ $answer=1102;
           </p>
         </statement>
         <answer permid="nTz">
+          <figure><caption/>
               <image source="images/CNX_IntAlg_Figure_10_02_335_img.jpg" width="40%" permid="PcH">
               </image>
+            </figure>
         </answer>
       </exercise>
       <exercise permid="jFf">
@@ -1336,8 +1379,10 @@ $answer=1102;
           </p>
         </statement>
         <answer permid="UaI">
+          <figure><caption/>
               <image source="images/CNX_IntAlg_Figure_10_02_337_img.jpg" width="40%" permid="vjQ">
               </image>
+            </figure>
         </answer>
       </exercise>
       <exercise permid="vTx">
@@ -1352,7 +1397,7 @@ $answer=1102;
       <introduction permid="IhP">
         <p permid="kRP">
           In the following exercises,
-          match the graphs to one of the following functions:
+          match the graphs to one of the following functions:</p>
           <sidebyside permid="caG">
             <p permid="ghW">
               <ol label="a." permid="Rgc">
@@ -1381,14 +1426,16 @@ $answer=1102;
               </ol>
             </p>
           </sidebyside>
-        </p>
+        <!-- </p> -->
       </introduction>
       <exercise permid="ooY">
         <statement>
-          <p permid="Ipg">
+          <!-- <p permid="Ipg"> -->
+            <figure><caption/>
               <image source="images/CNX_IntAlg_Figure_10_02_201_img.jpg" width="40%" permid="bqZ">
               </image>
-          </p>
+            </figure>
+          <!-- </p> -->
         </statement>
         <answer permid="AhR">
           <p permid="KzS">
@@ -1398,18 +1445,22 @@ $answer=1102;
       </exercise>
       <exercise permid="Uwh">
         <statement>
-          <p permid="UDy">
+          <!-- <p permid="UDy"> -->
+            <figure><caption/>
               <image source="images/CNX_IntAlg_Figure_10_02_202_img.jpg" width="40%" permid="Hyi">
               </image>
-          </p>
+            </figure>
+          <!-- </p> -->
         </statement>
       </exercise>
       <exercise permid="ADq">
         <statement>
-          <p permid="gRQ">
+          <!-- <p permid="gRQ"> -->
+            <figure><caption/>
               <image source="images/CNX_IntAlg_Figure_10_02_203_img.jpg" width="40%" permid="nFr">
               </image>
-          </p>
+            </figure>
+          <!-- </p> -->
         </statement>
         <answer permid="gpa">
           <p permid="qHb">
@@ -1419,18 +1470,22 @@ $answer=1102;
       </exercise>
       <exercise permid="gKz">
         <statement>
-          <p permid="tgi">
+          <!-- <p permid="tgi"> -->
+            <figure><caption/>
               <image source="images/CNX_IntAlg_Figure_10_02_204_img.jpg" width="40%" permid="TMA">
               </image>
-          </p>
+            </figure>
+          <!-- </p> -->
         </statement>
       </exercise>
       <exercise permid="MRI">
         <statement>
-          <p permid="FuA">
+          <!-- <p permid="FuA"> -->
+            <figure><caption/>
               <image source="images/CNX_IntAlg_Figure_10_02_205_img.jpg" width="40%" permid="zTJ">
               </image>
-          </p>
+            </figure>
+          <!-- </p> -->
         </statement>
         <answer permid="Mwj">
           <p permid="WOk">
@@ -1440,14 +1495,16 @@ $answer=1102;
       </exercise>
       <exercise permid="sYR">
         <statement>
-          <p permid="RIS">
+          <!-- <p permid="RIS"> -->
+            <figure><caption/>
               <image source="images/CNX_IntAlg_Figure_10_02_206_img.jpg" width="40%" permid="gaS">
               </image>
-          </p>
+            </figure>
+          <!-- </p> -->
         </statement>
       </exercise>
     </exercisegroup>
-    <newpage/>
+    <!-- <newpage/> -->
     <exercisegroup permid="COc">
       <title permid="LTG">
         Use Exponential Models in Applications
@@ -1460,14 +1517,14 @@ $answer=1102;
       <exercise permid="Fnj">
         <webwork>
             <pg-macros><macro-file>contextCurrency.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Currency");
 $answer1=Currency(7387.28);
 $answer2=Currency(7434.57);
 $answer3=Currency(7459.12);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="dXk">
                 Edgar accumulated <m>\$5,000</m> in credit card debt.
@@ -1498,14 +1555,14 @@ $answer3=Currency(7459.12);
       <exercise permid="lus">
         <webwork>
             <pg-macros><macro-file>contextCurrency.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Currency");
 $answer1=Currency(21768.22);
 $answer2=Currency(21832.76);
 $answer3=Currency(21865.43);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="Ket">
                 Cynthia invested <m>\$12,000</m> in a savings account.
@@ -1535,12 +1592,12 @@ $answer3=Currency(21865.43);
       <exercise permid="RBB">
         <webwork>
             <pg-macros><macro-file>contextCurrency.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Currency");
 $answer1=Currency(36945.28);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="qlC">
                 Rochelle deposits <m>\$5,000</m> in an IRA. What will be the value of her investment in <m>25</m> years if the investment is earning <m>8\%</m> per year and is compounded continuously?
@@ -1554,12 +1611,12 @@ $answer1=Currency(36945.28);
       <exercise permid="xIK">
         <webwork>
             <pg-macros><macro-file>contextCurrency.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Currency");
 $answer1=Currency(14512.15);
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="CzU">
                 Nazerhy deposits <m>\$8,000</m> in a certificate of deposit.
@@ -1575,12 +1632,12 @@ $answer1=Currency(14512.15);
       <exercise permid="dPT">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=162;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="OOm">
                 A researcher at the Center for Disease Control and Prevention is studying the growth of a bacteria.
@@ -1597,12 +1654,12 @@ $answer=162;
       <exercise permid="JXc">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=6076;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="bcE">
                 A biologist is observing the growth pattern of a virus.
@@ -1619,12 +1676,12 @@ $answer=6076;
       <exercise permid="qel">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=288929825;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="nqW">
                 In the last ten years the population of Indonesia has grown at a rate of <m>1.12\%</m> per year to <m>258,316,051</m>.
@@ -1640,12 +1697,12 @@ $answer=288929825;
       <!-- <exercise permid="Wlu">
         <webwork>
             <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
-            <setup>
+            
 <pg-code>
 Context("Numeric");
 $answer=225206961;
 </pg-code>
-            </setup>
+            
             <statement>
               <p permid="zFo">
                 In the last ten years the population of Brazil has grown at a rate of <m>0.9\%</m> per year to <m>205,823,665</m>.
