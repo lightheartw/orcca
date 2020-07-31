@@ -346,11 +346,10 @@ title?, idx*, (p | p)+
         <li permid="YRw">
           <p permid="woN">
             We often round decimal results to four significant digits,
-            or possibly fewer leaving out trailing zeros.
+            or possibly fewer, leaving out trailing zeros.
             We do this to maintain consistency with the most common level of precision that
             <webwork /> uses to assess decimal answers.
-            We <em>round</em>, not <em>truncate</em>
-            and we often use the <m>\approx</m> symbol.
+            When we <em>round</em>, we often use the <m>\approx</m> symbol.
             For example <m>\pi\approx3.142</m> and Portland's population is <m>\approx609500</m>.
           </p>
         </li>
@@ -361,11 +360,11 @@ title?, idx*, (p | p)+
             we move to motivate more abstract definitions and notation.
             This approach is perhaps absent in the first chapter,
             which is intended to be a review only.
-            At first this may feel backwards to some instructors, with some
+            <!-- At first this may feel backwards to some instructors, with some
             <q>easier</q>
             examples (with no context) appearing after
             <q>more difficult</q>
-            contextual examples.
+            contextual examples. -->
           </p>
         </li>
         <li permid="lfO">
@@ -387,7 +386,7 @@ title?, idx*, (p | p)+
             We believe that mathematics is about more than understanding a topic,
             but also about understanding it well enough to communicate results to others.
           </p>
-          <newpage/>
+          
           <p permid="AYG">
             For example we promote progression of equations like
             <md permid="SGL">

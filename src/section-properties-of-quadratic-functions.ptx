@@ -461,7 +461,7 @@ add_functions($gr, "(x+2)**2+1 for x in &lt;-4.45,0.45>  using color:blue and we
           Use the graph to answer the following questions.
         </p>
         <sidebyside widths="40%" permid="iFz">
-          <image permid="IuT" source="$gr" />
+          <image permid="IuT" pg-name="$gr" />
         </sidebyside>
         <p permid="nio">
           <ol label="a." permid="EXx">

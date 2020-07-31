@@ -221,7 +221,7 @@ for my$i(1,3){$numberline->lb(new Label($b[$i],0.4,"$b[$i]",'blue','center','bot
               We can order these numbers by placing these numbers on a number line.
             </p>
             <sidebyside margins="0%" widths="40%" permid="TKa">
-              <image permid="lUV" source="$numberline"/>
+              <image permid="lUV" pg-name="$numberline"/>
             </sidebyside>
             <p permid="xUS">
               And so we see the answer is <m><var name="$comparison" /></m>.
@@ -292,7 +292,7 @@ $refreshCachedImages=1;
           Knowing or computing their decimals helps with this.
         </p>
         <sidebyside margins="0%" widths="40%" permid="zRj">
-          <image source="$numberline"/>
+          <image pg-name="$numberline"/>
         </sidebyside>
         <p permid="Kjk">
           And so we see the answer is <m><var name="$comparison" /></m>.
@@ -701,7 +701,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
               <ol label="a." cols="3" permid="IfC">
                 <li permid="xGx">
                   <sidebyside margins="0%" widths="40%" permid="pse">
-                    <image source="$nl[0]"/>
+                    <image pg-name="$nl[0]"/>
                   </sidebyside>
                   <p permid="vvL">
                     In set-builder notation: <var name="$sb[0]" width="20" />
@@ -712,7 +712,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
                 </li>
                 <li permid="dNG">
                   <sidebyside margins="0%" widths="40%" permid="Vzn">
-                    <image source="$nl[1]"/>
+                    <image pg-name="$nl[1]"/>
                   </sidebyside>
                   <p permid="HKd">
                     In set-builder notation: <var name="$sb[1]" width="20" />
@@ -723,7 +723,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
                 </li>
                 <li permid="JUP">
                   <sidebyside margins="0%" widths="40%" permid="BGw">
-                    <image source="$nl[2]"/>
+                    <image pg-name="$nl[2]"/>
                   </sidebyside>
                   <p permid="TYv">
                     In set-builder notation: <var name="$sb[2]" width="20" />
@@ -1607,7 +1607,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
               <ol label="a." cols="3" permid="MPv">
                 <li permid="ZNH">
                   <sidebyside margins="0%" widths="40%" permid="NUO">
-                    <image source="$nl[0]"/>
+                    <image pg-name="$nl[0]"/>
                   </sidebyside>
                   <p permid="PYw">
                     In set-builder notation: <var name="$sb[0]" width="20" />
@@ -1618,7 +1618,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
                 </li>
                 <li permid="FUQ">
                   <sidebyside margins="0%" widths="40%" permid="ubX">
-                    <image source="$nl[1]"/>
+                    <image pg-name="$nl[1]"/>
                   </sidebyside>
                   <p permid="cmO">
                     In set-builder notation: <var name="$sb[1]" width="20" />
@@ -1629,7 +1629,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
                 </li>
                 <li permid="mbZ">
                   <sidebyside margins="0%" widths="40%" permid="ajg">
-                    <image source="$nl[2]"/>
+                    <image pg-name="$nl[2]"/>
                   </sidebyside>
                   <p permid="oBg">
                     In set-builder notation: <var name="$sb[2]" width="20" />
@@ -1713,7 +1713,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
               <ol label="a." cols="3" permid="sWE">
                 <li permid="Sji">
                   <sidebyside margins="0%" widths="40%" permid="Gqp">
-                    <image source="$nl[0]"/>
+                    <image pg-name="$nl[0]"/>
                   </sidebyside>
                   <p permid="APy">
                     In set-builder notation: <var name="$sb[0]" width="20" />
@@ -1724,7 +1724,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
                 </li>
                 <li permid="yqr">
                   <sidebyside margins="0%" widths="40%" permid="mxy">
-                    <image source="$nl[1]"/>
+                    <image pg-name="$nl[1]"/>
                   </sidebyside>
                   <p permid="NdQ">
                     In set-builder notation: <var name="$sb[1]" width="20" />
@@ -1735,7 +1735,7 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
                 </li>
                 <li permid="exA">
                   <sidebyside margins="0%" widths="40%" permid="SEH">
-                    <image source="$nl[2]"/>
+                    <image pg-name="$nl[2]"/>
                   </sidebyside>
                   <p permid="Zsi">
                     In set-builder notation: <var name="$sb[2]" width="20" />

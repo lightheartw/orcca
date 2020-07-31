@@ -988,7 +988,7 @@ Context("Point");
                 Locate each point in the graph:
               </p>
               <sidebyside widths="40%" permid="zzb">
-                <image permid="fdH" source="$gr"/>
+                <image permid="fdH" pg-name="$gr"/>
               </sidebyside>
               <p permid="oSS">
                 Write each point's position as an ordered pair, like <m>(1,2)</m>.

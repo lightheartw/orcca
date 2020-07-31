@@ -192,7 +192,7 @@ $gr->arrowTo($stop,3*($stop-3)+2,'blue',1);
               Consider the line in this graph:
             </p>
             <sidebyside widths="47%" permid="guA">
-              <image permid="vKP" source="$gr" />
+              <image permid="vKP" pg-name="$gr" />
             </sidebyside>
             <p permid="dsQ">
               <ol label="a." permid="WFp">
@@ -400,7 +400,7 @@ $eq=Formula("y=0.8775(x-50)+50");
               we get the following graph where a trendline has been superimposed.
             </p>
             <sidebyside widths="40%" permid="sIS">
-              <image permid="bRY" source="$gr" />
+              <image permid="bRY" pg-name="$gr" />
             </sidebyside>
             <p permid="pHi">
               Find a point-slope equation for this line.
@@ -1004,7 +1004,7 @@ return $OK;
                 Determine the point-slope form of the linear equation from its graph.
               </p>
               <sidebyside widths="40%" permid="Cyd">
-                <image permid="HZh" source="$gr" />
+                <image permid="HZh" pg-name="$gr" />
               </sidebyside>
               <p permid="ayk">
                 <var name="$answer" evaluator="$evaluator" width="20" />
@@ -1118,7 +1118,7 @@ return $OK;
                 Determine the point-slope form of the linear equation from its graph.
               </p>
               <sidebyside widths="40%" permid="iFm">
-                <image source="$gr" />
+                <image pg-name="$gr" />
               </sidebyside>
               <p permid="mMC">
                 <var name="$answer" evaluator="$evaluator" width="20" />
@@ -1233,7 +1233,7 @@ return $OK;
                 Determine the point-slope form of the linear equation from its graph.
               </p>
               <sidebyside widths="40%" permid="OMv">
-                <image source="$gr" />
+                <image pg-name="$gr" />
               </sidebyside>
               <p permid="zaU">
                 <var name="$answer" evaluator="$evaluator" width="20" />
@@ -1351,7 +1351,7 @@ return $OK;
                 Determine the point-slope form of the linear equation from its graph.
               </p>
               <sidebyside widths="40%" permid="uTE">
-                <image source="$gr" />
+                <image pg-name="$gr" />
               </sidebyside>
               <p permid="Lpm">
                 <var name="$answer" evaluator="$evaluator" width="20" />
@@ -1466,7 +1466,7 @@ return $OK;
                 Determine the point-slope form of the linear equation from its graph.
               </p>
               <sidebyside widths="40%" permid="baN">
-                <image source="$gr" />
+                <image pg-name="$gr" />
               </sidebyside>
               <p permid="XDE">
                 <var name="$answer" evaluator="$evaluator" width="20" />
@@ -1581,7 +1581,7 @@ return $OK;
                 Determine the point-slope form of the linear equation from its graph.
               </p>
               <sidebyside widths="40%" permid="HhW">
-                <image source="$gr" />
+                <image pg-name="$gr" />
               </sidebyside>
               <p permid="jRW">
                 <var name="$answer" evaluator="$evaluator" width="20" />
@@ -1696,7 +1696,7 @@ return $OK;
                 Determine the point-slope form of the linear equation from its graph.
               </p>
               <sidebyside widths="40%" permid="npf">
-                <image source="$gr" />
+                <image pg-name="$gr" />
               </sidebyside>
               <p permid="wgo">
                 <var name="$answer" evaluator="$evaluator" width="20" />
@@ -1811,7 +1811,7 @@ return $OK;
                 Determine the point-slope form of the linear equation from its graph.
               </p>
               <sidebyside widths="40%" permid="Two">
-                <image source="$gr" />
+                <image pg-name="$gr" />
               </sidebyside>
               <p permid="IuG">
                 <var name="$answer" evaluator="$evaluator" width="20" />
@@ -1941,7 +1941,7 @@ return $OK;
                 Determine the point-slope form of the linear equation from its graph.
               </p>
               <sidebyside widths="40%" permid="zDx">
-                <image source="$gr" />
+                <image pg-name="$gr" />
               </sidebyside>
               <p permid="UIY">
                 <var name="$answer" evaluator="$evaluator" width="20" />
@@ -2071,7 +2071,7 @@ return $OK;
                 Determine the point-slope form of the linear equation from its graph.
               </p>
               <sidebyside widths="40%" permid="fKG">
-                <image source="$gr" />
+                <image pg-name="$gr" />
               </sidebyside>
               <p permid="gXq">
                 <var name="$answer" evaluator="$evaluator" width="20" />
@@ -2201,7 +2201,7 @@ return $OK;
                 Determine the point-slope form of the linear equation from its graph.
               </p>
               <sidebyside widths="40%" permid="LRP">
-                <image source="$gr" />
+                <image pg-name="$gr" />
               </sidebyside>
               <p permid="tlI">
                 <var name="$answer" evaluator="$evaluator" width="20" />
@@ -2331,7 +2331,7 @@ return $OK;
                 Determine the point-slope form of the linear equation from its graph.
               </p>
               <sidebyside widths="40%" permid="rYY">
-                <image source="$gr" />
+                <image pg-name="$gr" />
               </sidebyside>
               <p permid="FAa">
                 <var name="$answer" evaluator="$evaluator" width="20" />

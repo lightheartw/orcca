@@ -171,7 +171,7 @@ $ansA = NumberWithUnits("$area m^2");
               Find the perimeter and area of the rectangle.
             </p>
             <sidebyside widths="40%" permid="GPO">
-              <image permid="SXc" source="$picture" />
+              <image permid="SXc" pg-name="$picture" />
             </sidebyside>
             <instruction>
               Use <c>m</c> for meters and <c>m^2</c> for square meters.
@@ -397,7 +397,7 @@ $ansA = NumberWithUnits($area,"m^2");
               Find the perimeter and area of the triangle.
             </p>
             <sidebyside widths="40%" permid="mWX">
-              <image permid="jVn" source="$picture" />
+              <image permid="jVn" pg-name="$picture" />
             </sidebyside>
             <instruction>
               Use <c>m</c> for meters and <c>m^2</c> for square meters.

@@ -923,7 +923,7 @@ return $ans;
           Use the graph to write an equation of the line in slope-intercept form.
         </p>
         <sidebyside widths="40%" permid="PMK">
-          <image permid="lCf" source="$gr[0]" />
+          <image permid="lCf" pg-name="$gr[0]" />
         </sidebyside>
         <p permid="XTZ">
           <var name="$eq" evaluator="$ev" width="20"/>
@@ -937,7 +937,7 @@ return $ans;
           the slope will be the same.
         </p>
         <sidebyside widths="40%" permid="vTT">
-          <image source="$gr[1]" />
+          <image pg-name="$gr[1]" />
         </sidebyside>
         <p permid="nyw">
           Using the slope triangle, we can calculate the line's slope:
@@ -1015,7 +1015,7 @@ return $ans;
               The graph plots the annual in-state tuition for each school on the <m>x</m>-axis and the median income of former students ten years after first enrolling on the <m>y</m>-axis.
             </p>
             <sidebyside widths="40%" permid="cbc">
-              <image source="$gr[0]" />
+              <image pg-name="$gr[0]" />
             </sidebyside>
             <p permid="kir">
               Write an equation for this line in slope-intercept form.
@@ -1030,7 +1030,7 @@ return $ans;
               We go with <m>(0,27500)</m> and <m>(8000,41000)</m>.
             </p>
             <sidebyside widths="40%" permid="Iil">
-              <image source="$gr[1]" />
+              <image pg-name="$gr[1]" />
             </sidebyside>
             <p permid="Mbg">
               <me permid="pCe">

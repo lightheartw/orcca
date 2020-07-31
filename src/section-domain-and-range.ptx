@@ -985,7 +985,7 @@ $range = Compute("(-inf,0)U(0,inf)");
               getting arbitrarily close to the <m>y</m>-axis, but never touching it.
             </p>
             <sidebyside widths="47%" permid="uyJ">
-              <image permid="biI" source="$graph[0]" />
+              <image permid="biI" pg-name="$graph[0]" />
               
             </sidebyside>
             <p permid="YJB">
@@ -1006,7 +1006,7 @@ $range = Compute("(-inf,0)U(0,inf)");
               we will be able to get an output for <m>h</m>.
             </p>
             <sidebyside widths="47%" permid="aFS">
-              <image source="$graph[1]" />
+              <image pg-name="$graph[1]" />
             </sidebyside>
             <p permid="ACq">
               The one <m>x</m>-value that doesn't behave is <m>x=2</m>.
@@ -1021,7 +1021,7 @@ $range = Compute("(-inf,0)U(0,inf)");
               So the range is <m>(-\infty,0)\cup(0,\infty)</m>.
             </p>
             <sidebyside widths="47%" permid="GNb">
-              <image source="$graph[2]" />
+              <image pg-name="$graph[2]" />
             </sidebyside>
           </solution>
       </webwork>

@@ -137,7 +137,7 @@ xlabel={},
                 In the given number line, what fraction is marked?
               </p>
               <sidebyside margins="0%" widths="40%" permid="GAT">
-                <image source="$numberline" permid="XkW">
+                <image pg-name="$numberline" permid="XkW">
                   <description>a number line with -1, 0, and 1 marked; there are evenly spaced ticks, with eight ticks between -1 and 0, eight between 0 and 1, and so on; there is a dot marked at the fifth tick to the right from 0</description>
                 </image>
               </sidebyside>
@@ -1726,7 +1726,7 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'A');
                 Which letter is <var name="$a"/> on the number line?
               </p>
               <sidebyside widths="40%" margins="0%" permid="efo">
-                <image permid="ojh" source="$gr" />
+                <image permid="ojh" pg-name="$gr" />
               </sidebyside>
               <p permid="QbW">
                 <var name="$popup" form="popup" />
@@ -1765,7 +1765,7 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
                 Which letter is <var name="$a"/> on the number line?
               </p>
               <sidebyside widths="40%" margins="0%" permid="Kmx">
-                <image source="$gr"/>
+                <image pg-name="$gr"/>
               </sidebyside>
               <p permid="cqo">
                 <var name="$popup" form="popup" />

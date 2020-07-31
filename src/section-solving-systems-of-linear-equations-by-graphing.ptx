@@ -178,7 +178,7 @@ Context("Point");
               Determine the solution to the system of equations graphed below.
             </p>
             <sidebyside widths="32%" permid="mBU">
-              <image permid="HHv" source="$gr" />
+              <image permid="HHv" pg-name="$gr" />
             </sidebyside>
             <p permid="Yrl">
               The solution is the point <var name="'(3,2)'" width="20" />.

@@ -410,7 +410,7 @@ Context("Point");
                 Locate each point in the graph:
               </p>
               <sidebyside widths="40%" permid="eiF">
-                <image permid="jQN" source="$gr"/>
+                <image permid="jQN" pg-name="$gr"/>
               </sidebyside>
               <p permid="mbz">
                 Write each point's position as an ordered pair, like <m>(1,2)</m>.
@@ -467,7 +467,7 @@ Context("Point");
                 Locate each point in the graph:
               </p>
               <sidebyside widths="40%"  permid="qwX">
-                <image source="$gr" />
+                <image pg-name="$gr" />
               </sidebyside>
               <p permid="ypR">
                 Write each point's position as an ordered pair, like <m>(1,2)</m>.
@@ -856,7 +856,7 @@ for my$i(@x){$gr->stamps(closed_circle($i,$f{$i},'blue'));};
                 <url href="http://wdfw.wa.gov/publications/01793/wdfw01793.pdf" />)
               </p>
               <sidebyside widths="40%" permid="hNf">
-                <image source="$gr" />
+                <image pg-name="$gr" />
               </sidebyside>
               <p permid="TXV">
                 What are the Cartesian coordinates for the point representing the year <var name="$year"/>?
@@ -935,7 +935,7 @@ for my$i(@x){$gr->stamps(closed_circle($i,$f{$i},'blue','large'));};
                 <url href="http://www.pewhispanic.org/2015/09/28/chapter-5-u-s-foreign-born-population-trends/" />.)
               </p>
               <sidebyside widths="40%" permid="NUo">
-                <image source="$gr" />
+                <image pg-name="$gr" />
               </sidebyside>
               <p permid="YHO">
                 What are the Cartesian coordinates for the point representing the year <var name="$year"/>?

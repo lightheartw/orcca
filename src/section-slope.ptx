@@ -560,7 +560,7 @@ $gr->arrowTo(4+$pixel,5,'red',1);
               This table lets us plot the graph and identify a slope triangle that is easy to work with.
             </p>
             <sidebyside widths="40%" permid="TMW">
-              <image permid="CHH" source="$gr" />
+              <image permid="CHH" pg-name="$gr" />
             </sidebyside>
             <p permid="iAv">
               Since the slope triangle runs <m>4</m> units and then rises <m>3</m> units,
@@ -749,7 +749,7 @@ $gr-&gt;lineTo(23,0,'blue',2);
               and interpret their meanings in this context.
             </p>
             <sidebyside widths="40%" permid="kLh">
-              <image source="$gr" permid="bkr">
+              <image pg-name="$gr" permid="bkr">
                 <description></description>
               </image>
             </sidebyside>
@@ -1325,7 +1325,7 @@ $gr[1]->moveTo(2006,19000-$ypixel);$gr[1]->lineTo(2014-$xpixel,19000-$ypixel,'re
                 and a trend-line has been drawn.
               </p>
               <sidebyside widths="40%" permid="FJr">
-                <image source="$gr[0]" />
+                <image pg-name="$gr[0]" />
               </sidebyside>
               <p permid="uto">
                 Estimate the slope of the trend-line.
@@ -1343,7 +1343,7 @@ $gr[1]->moveTo(2006,19000-$ypixel);$gr[1]->lineTo(2014-$xpixel,19000-$ypixel,'re
                 it seems <m>(2006,19000)</m> and <m>(2014,21000)</m> are two such points.
               </p>
               <sidebyside widths="40%" permid="lQA">
-                <image source="$gr[1]" />
+                <image pg-name="$gr[1]" />
               </sidebyside>
               <p permid="zyG">
                 <me permid="NgM">
