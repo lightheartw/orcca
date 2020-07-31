@@ -784,14 +784,14 @@ minor ytick={-10,0,...,40}]
           as shown below.
           The hypotenuse will be <m>17</m> feet long.
           The length of one side will be <m>7</m> feet shorter than the length of the other side.
-          Find the lengths of the sides of the deck.
-          <figure permid="xaz">
+          Find the lengths of the sides of the deck.</p>
+          <figure permid="xaz"><caption/>
             <image width="25%" permid="iPQ">
               <description>a right triangle with sides labeled x, x-7, and 17; side marked as 17 is the hypotenuse</description>
                <latex-image> <![CDATA[\begin{tikzpicture}[x=0.5cm,y=0.5cm] \draw (0,0) -- node[pos=0.5,below]{$x-7$} (-3,0) --node[pos=0.5,left]{$x$} (-3,6) --node[pos=0.5,above,sloped]{$17$} cycle; \draw (-3,0.4) -- (-2.6,0.4) -- (-2.6,0); \end{tikzpicture}]]> </latex-image>
             </image>
           </figure>
-        </p>
+        
       </statement>
 <!-- <figure><image source="images/CNX_ElemAlg_Figure_07_06_010_img.jpg" width="60%"><description>A right triangle with the hypotenuse labeled as 17 feet and the legs marked as x and x-7.</description></image></figure></p></statement> -->
       <solution permid="kjr">

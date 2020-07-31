@@ -256,11 +256,11 @@
             <p permid="OKM">
               It will take a total of 125 feet of fencing to fence two widths and one length of the rectangular yard.
               The length of the yard must be 5 feet more than four times the width.</p>
-          </li>
-          <li><p>
+        
+          
                 <image source="images/CNX_ElemAlg_Figure_05_04_005a_img.jpg" width="30%" permid="Jki">
                   <description>A drawing of a house, from above, with a three-sided fence adjacent to the house.</description>
-                </image></p>
+                </image>
             </li>
           <li permid="KRR">
             <title>Step 2:</title><p>Identify what you are looking for.
@@ -1121,11 +1121,11 @@ $answer2=42;
               using <m>260</m> feet of fencing.
               She'd like the length of the garden to be five feet less than twice the width.</p>
               <p>Find the dimensions of the garden.
-              Draw a diagram:</p></li>
-              <li>
-                <p><image source="images/diagram_for_geometry_example_in_5.4.jpg" width="50%" permid="prr">
+              Draw a diagram:</p>
+              <image source="images/diagram_for_geometry_example_in_5.4.jpg" width="50%" permid="prr">
                   <description>A drawing of a rectangular garden, from above, with one short side marked as "width" and a long side marked as "length (five feet less than twice the width)".</description>
-                </image></p></li>
+                </image>
+              </li>
           
           <li permid="lTI">
               <title>Step 2:</title><p>
@@ -1334,7 +1334,7 @@ $answer2=8;
       </p>
       <p permid="uZm">
         A diagram is useful in helping us visualize the situation.</p>
-        <figure permid="seG">
+        <figure permid="seG"><caption/>
           <image source="images/CNX_ElemAlg_Figure_05_04_006_img.jpg" width="50%" permid="VyA">
             <description>A diagram with "Denver" on the left and "St. Louis" on the right. Then, two arrows pointing from St. Louis to Denver, one Labeled with "Joni" and the other with "Kelly (1/2 hour later)" and speeds of 65 mph and 78 mph labeled on each arrow respectively.</description>
           </image>
@@ -1352,7 +1352,7 @@ $answer2=8;
         Then, we can multiply the rates and times together to obtain an expression for each person's distance.
       </p>
       
-        <figure permid="YlP">
+        <figure permid="YlP"><caption/>
           <image source="images/CNX_ElemAlg_Figure_05_04_013a_img.jpg" width="50%" permid="BFJ">
             <description>A table with column headings of type, rate, time, and distance. The types are Joni and Kelly. The rates are 65 and 78. The times are variables j and k. The distances are 65j and 78j.</description>
           </image>
@@ -1497,7 +1497,7 @@ $answer=1;
       The actual speed at which the boat is moving is <m>b+c</m>.
     </p>
     
-      <figure xml:id="figure-downstream" permid="hTW">
+      <figure xml:id="figure-downstream" permid="hTW"><caption/>
         <image source="images/CNX_ElemAlg_Figure_05_04_007_img.jpg" width="40%" permid="hMS">
           <description>A picture of a boat traveling downstream, with the current.</description>
         </image>
@@ -1511,7 +1511,7 @@ $answer=1;
       The actual speed of the boat is <m>b-c</m>.
     </p>
     
-      <figure xml:id="figure-upstream" permid="Obf">
+      <figure xml:id="figure-upstream" permid="Obf"><caption/>
         <image source="images/CNX_ElemAlg_Figure_05_04_008_img.jpg" width="40%" permid="NUb">
           <description>A picture of a boat traveling upstream, against the current.</description>
         </image>
@@ -1527,7 +1527,7 @@ $answer=1;
       </p>
       <p permid="kAh">
         A diagram is useful in helping us visualize the situation.</p>
-        <figure permid="SwD">
+        <figure permid="SwD"><caption/>
           <image source="images/CNX_ElemAlg_Figure_05_04_009_img.jpg" width="50%" permid="ubk">
             <description>A diagram showing two arrows pointing in opposite directions, to represent a boat traveling one direction and then traveling back in the opposite direction the same distance. Then one blue arrow represents the direction of the current of the river.</description>
           </image>
@@ -1557,7 +1557,7 @@ $answer=1;
         We can now enter that information into the table as well.
       </p>
       
-        <figure permid="yDM">
+        <figure permid="yDM"><caption/>
           <image source="images/CNX_ElemAlg_Figure_05_04_010a_img.jpg" width="50%" permid="ait">
             <description>A table with column headings of rate, time, and distance, as well as row headings of downstream and upstream. The rates are s+c and s-c. The times are 4 and 5. The distances are both 60.</description>
           </image>
@@ -1754,12 +1754,12 @@ $answer2=1;
       </statement>
       <solution permid="yRU">
         <p permid="slK">
-          A diagram is useful in helping us visualize the situation.
-          
+          A diagram is useful in helping us visualize the situation.</p>
+            
             <image source="images/CNX_ElemAlg_Figure_05_04_011_img.jpg" width="40%" permid="GpC">
               <description>A diagram showing two arrows pointing in opposite directions, to represent a jet traveling one direction for a distance of 1095 miles and then traveling back in the opposite direction for a distance of 987 miles. Then one blue arrow represents the direction of the wind, with the time of 3 hours labeled on that arrow, representing the time traveled by the jet in both directions. There are also expressions of "j+w" labeling the arrow that represents the 1095-mile trip and "j-w" labeling the arrow that represents the 987-mile trip.</description>
             </image>
-          </p>
+          
         
         <p permid="YsT">
           <em>Identify and name</em> what we are looking for.
@@ -1785,11 +1785,11 @@ $answer2=1;
           These expressions can then be entered into the table for each rate.
         </p>
         
-          <figure permid="NTO">
+          <!-- <figure permid="NTO"> -->
             <image source="images/CNX_ElemAlg_Figure_05_04_012a_img.jpg" width="45%" permid="mwL">
               <description>A table with column headings of rate, time, and distance, as well as row headings of tailwind and headwind. The rates are j+w and j-w. The times are both 3. The distances are 1095 for tailwind and 987 for headwind.</description>
             </image>
-          </figure>
+          <!-- </figure> -->
         
         <p permid="QOu">
           <em>Translate</em> into a system of equations.
@@ -1971,11 +1971,11 @@ $answer2=24;
           Fill in the last column using <m>\text{Number of Pounds}\cdot\text{Value}=\text{Total Value}</m>:
         </p>
         
-          <figure permid="FjW">
+          <!-- <figure permid="FjW"> -->
             <image source="images/CNX_ElemAlg_Figure_05_05_003a_img.jpg" width="45%" permid="SDU">
               <description>A table with column headings type, number of pounds, value, and total value. The types are nuts, chocolate chips, and trail mix. The number of pounds are n, c, and 20. The values are 9.00, 2.00, and 7.60. The total values are 9n, 2c, and 7.60(20)=152.</description>
             </image>
-          </figure>
+         <!--  </figure> -->
         
         <p permid="IeC">
           <em>Translate</em> into a system of equations.
@@ -2159,11 +2159,11 @@ $answer2=2;
         of the <m>40\%</m> solution.
       </p>
       
-        <figure permid="FcS">
+        <!-- <figure permid="FcS"> -->
           <image source="images/CNX_ElemAlg_Figure_05_05_004a_img.jpg" width="50%" permid="yLd">
             <description>Diagram of a container marked with x and 25%, plus a container marked with y and 50%, both with arrows point down toward a third container marked with 40% and 200 ml.</description>
           </image>
-        </figure>
+        <!-- </figure> -->
       
       <p permid="PBX">
         <em>Name</em> what we are looking for.
@@ -2190,11 +2190,11 @@ $answer2=2;
         (in decimal form).
       </p>
      
-        <figure permid="lkb">
+        <!-- <figure permid="lkb"> -->
           <image source="images/CNX_ElemAlg_Figure_05_05_004b_img.jpg" width="45%" permid="eSm">
             <description>A table with column headings of type, number of units, concentration(\%), and amount. For the types, there are 25\%, 50\%, and 40\%. The number of units are x, y, and 200. The amounts are 0.25x, 0.50y, and 0.40(200).</description>
           </image>
-        </figure>
+        <!-- </figure> -->
       
       <p permid="oeH">
         <em>Translate</em> into a system of equations.
@@ -2515,11 +2515,11 @@ $answer2=150;
         Multiply: Principal <m>\cdot</m> Rate <m>\cdot</m> Time to get the Interest for each account as well as the total.
       </p>
       
-        <figure permid="Tgx">
+        <!-- <figure permid="Tgx"> -->
           <image source="images/CNX_ElemAlg_Figure_05_05_005a_img.png" width="50%" permid="KZv">
             <description>A table with column headings of Account, Principal, Rate, Time, and Interest, and row headings of Stock fund, Bonds, and Total. Under Principal are entries s, b, and 40,000. Under Rate are entries 0.08 and 0.03 (the last cell is blank). Under Time are entries 1 and 1 (the last cell is blank). Under Interest are entries 0.08s, 0.03b, and 2840.</description>
           </image>
-        </figure>
+        <!-- </figure> -->
       
       <p permid="Cim">
         <em>Translate</em> into a system of equations.

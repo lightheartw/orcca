@@ -1478,35 +1478,34 @@ Context()->parens->set('('=>{type=>'Point'});
           <p permid="WvY">
             The function <m>F</m> is defined by the following table:
           </p>
-          <table permid="vIC">
-            <title></title>
-            <tabular halighn="center" top="medium" permid="Asv">
-              <row bottom="medium">
-                <cell left="medium" right="medium">x</cell>
-                <cell right="medium">y</cell>
+         <sidebyside> 
+            <tabular halign="center" top="medium" bottom="medium" left="medium" right="medium" permid="Asv">
+              <row>
+                <cell>x</cell>
+                <cell>y</cell>
               </row>
-              <row bottom="medium">
-                <cell left="medium" right="medium">-2</cell>
-                <cell right="medium">0</cell>
+              <row>
+                <cell>-2</cell>
+                <cell>0</cell>
               </row>
-              <row bottom="medium">
-                <cell left="medium" right="medium">-1</cell>
-                <cell right="medium">2</cell>
+              <row>
+                <cell>-1</cell>
+                <cell>2</cell>
               </row>
-              <row bottom="medium">
-                <cell left="medium" right="medium">0</cell>
-                <cell right="medium">5</cell>
+              <row>
+                <cell>0</cell>
+                <cell>5</cell>
               </row>
-              <row bottom="medium">
-                <cell left="medium" right="medium">1</cell>
-                <cell right="medium">3</cell>
+              <row>
+                <cell>1</cell>
+                <cell>3</cell>
               </row>
-              <row bottom="medium">
-                <cell left="medium" right="medium">2</cell>
-                <cell halign="center" right="medium">1</cell>
+              <row>
+                <cell>2</cell>
+                <cell>1</cell>
               </row>
             </tabular>
-          </table>
+          </sidebyside>
           <p permid="CDh">
             Find the domain and range of <m>F</m>.
           </p>
@@ -1534,35 +1533,34 @@ Context()->parens->set('('=>{type=>'Point'});
         <statement>
           <p permid="uYI">
             The function <m>G</m> is defined by the following table:
-            <table permid="bPL">
-              <title></title>
-              <tabular halign="center" top="medium" permid="gzE">
-                <row bottom="medium">
-                  <cell left="medium" right="medium">x</cell>
-                  <cell right="medium">y</cell>
+            <sidebyside>
+              <tabular halign="center" top="medium" bottom="medium" left="medium" right="medium" permid="gzE">
+                <row>
+                  <cell>x</cell>
+                  <cell>y</cell>
                 </row>
-                <row bottom="medium">
-                  <cell left="medium" right="medium">1</cell>
-                  <cell right="medium">2</cell>
+                <row >
+                  <cell>1</cell>
+                  <cell>2</cell>
                 </row>
-                <row bottom="medium">
-                  <cell left="medium" right="medium">-10</cell>
-                  <cell right="medium">-8</cell>
+                <row >
+                  <cell>-10</cell>
+                  <cell>-8</cell>
                 </row>
-                <row bottom="medium">
-                  <cell left="medium" right="medium">-3</cell>
-                  <cell right="medium">1</cell>
+                <row >
+                  <cell>-3</cell>
+                  <cell>1</cell>
                 </row>
-                <row bottom="medium">
-                  <cell left="medium" right="medium">-6</cell>
-                  <cell right="medium">8</cell>
+                <row >
+                  <cell>-6</cell>
+                  <cell>8</cell>
                 </row>
-                <row bottom="medium">
-                  <cell left="medium" right="medium">-9</cell>
-                  <cell right="medium">5</cell>
+                <row >
+                  <cell>-9</cell>
+                  <cell>5</cell>
                 </row>
               </tabular>
-            </table>
+            </sidebyside>
           </p>
           <p permid="bfR">
             Find the domain and range of <m>G</m>.

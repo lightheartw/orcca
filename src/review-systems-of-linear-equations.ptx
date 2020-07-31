@@ -697,6 +697,11 @@ minor ytick={-9,-8,...,9},
             <m>\left\{\begin{aligned} x+y\amp=0\\ 3x-y\amp=8 \end{aligned}\right.</m>
           </p>
         </statement>
+        <answer permid="rOY">
+          <p permid="lEn">
+            <m>(2,-2)</m>
+          </p>
+        </answer>
         <solution permid="LHP">
           <sidebyside permid="xZJ">
             <image permid="pSH">
@@ -723,11 +728,7 @@ minor ytick={-9,-8,...,9},
             We write the solution set as <m>\{(2,-2)\}</m>.
           </p>
         </solution>
-        <answer permid="rOY">
-          <p permid="lEn">
-            <m>(2,-2)</m>
-          </p>
-        </answer>
+        
       </exercise>
       <exercise permid="Htv">
         <statement>
@@ -735,6 +736,11 @@ minor ytick={-9,-8,...,9},
             <m>\left\{\begin{aligned} 4x-2y\amp=4\\ x+2y\amp=6 \end{aligned}\right.</m>
           </p>
         </statement>
+        <answer permid="Edq">
+          <p permid="RLw">
+            <m>(2,2)</m>
+          </p>
+        </answer>
         <solution permid="XWh">
           <sidebyside permid="egS">
             <image permid="VZQ">
@@ -755,11 +761,7 @@ minor ytick={-9,-8,...,9},
             We write the solution set as <m>\{(2,2)\}</m>.
           </p>
         </solution>
-        <answer permid="Edq">
-          <p permid="RLw">
-            <m>(2,2)</m>
-          </p>
-        </answer>
+        
       </exercise>
 <!-- <exercise>
 <statement>
@@ -815,6 +817,11 @@ minor ytick={-9,-8,...,9},
             <m>\left\{\begin{aligned} x+y\amp=-1\\ x\amp=2 \end{aligned}\right.</m>
           </p>
         </statement>
+        <answer permid="QrI">
+          <p permid="xSF">
+            <m>(2,-3)</m>
+          </p>
+        </answer>
         <solution permid="kkz">
           <sidebyside permid="Kob">
             <image permid="CgZ">
@@ -835,11 +842,7 @@ minor ytick={-9,-8,...,9},
             We write the solution set as <m>\{(2,-3)\}</m>.
           </p>
         </solution>
-        <answer permid="QrI">
-          <p permid="xSF">
-            <m>(2,-3)</m>
-          </p>
-        </answer>
+        
       </exercise>
       <exercise permid="THN">
         <statement>
@@ -847,6 +850,11 @@ minor ytick={-9,-8,...,9},
             <m>\left\{\begin{aligned} x-2y\amp=-4\\ x\amp=-4 \end{aligned}\right.</m>
           </p>
         </statement>
+        <answer permid="cGa">
+          <p permid="dZO">
+            <m>(-4,0)</m>
+          </p>
+        </answer>
         <solution permid="wyR">
           <sidebyside permid="qvk">
             <image permid="ioi">
@@ -867,11 +875,7 @@ minor ytick={-9,-8,...,9},
             We write the solution set as <m>\{(-4,0)\}</m>.
           </p>
         </solution>
-        <answer permid="cGa">
-          <p permid="dZO">
-            <m>(-4,0)</m>
-          </p>
-        </answer>
+        
       </exercise>
 <!-- <exercise>
 <statement>
@@ -1017,6 +1021,11 @@ minor ytick={-9,-8,...,9},
             <m>\left\{\begin{aligned} -10x+15y\amp=60\\ 6x-9y\amp=36 \end{aligned}\right.</m>
           </p>
         </statement>
+         <answer permid="oUs">
+          <p permid="KgX">
+            The system has no solution.
+          </p>
+        </answer>
         <solution permid="INj">
           <sidebyside permid="WCt">
             <image permid="Ovr">
@@ -1035,11 +1044,7 @@ minor ytick={-9,-8,...,9},
             So the system has no solution.
           </p>
         </solution>
-        <answer permid="oUs">
-          <p permid="KgX">
-            The system has no solution.
-          </p>
-        </answer>
+       
       </exercise>
       <exercise permid="fWf">
         <statement>
@@ -1047,6 +1052,11 @@ minor ytick={-9,-8,...,9},
             <m>\left\{\begin{aligned} 6x-8y\amp=32\\ 9x-12y\amp=12 \end{aligned}\right.</m>
           </p>
         </statement>
+         <answer permid="BiK">
+          <p permid="qog">
+            The system has no solution.
+          </p>
+        </answer>
         <solution permid="VbB">
           <sidebyside permid="CJC">
             <image permid="uCA">
@@ -1065,11 +1075,7 @@ minor ytick={-9,-8,...,9},
             So the system has no solution.
           </p>
         </solution>
-        <answer permid="BiK">
-          <p permid="qog">
-            The system has no solution.
-          </p>
-        </answer>
+       
       </exercise>
       <exercise permid="Mdo">
         <statement>
@@ -1077,6 +1083,11 @@ minor ytick={-9,-8,...,9},
             <m>\left\{\begin{aligned} y\amp=-\frac{3}{5}x+7\\ 9x+15y\amp=105 \end{aligned}\right.</m>
           </p>
         </statement>
+        <answer permid="Nxc">
+          <p permid="Wvp">
+            The system has infinitely many solutions.
+          </p>
+        </answer>
         <solution permid="hpT">
           <sidebyside permid="iQL">
             <image permid="aJJ">
@@ -1104,11 +1115,7 @@ minor ytick={-9,-8,...,9},]
             the solution set is all points on the line <m>y=-\frac{3}{5}x+7</m>.
           </p>
         </solution>
-        <answer permid="Nxc">
-          <p permid="Wvp">
-            The system has infinitely many solutions.
-          </p>
-        </answer>
+        
       </exercise>
       <exercise permid="skx">
         <statement>
@@ -1116,6 +1123,11 @@ minor ytick={-9,-8,...,9},]
             <m>\left\{\begin{aligned} 9y-12x\amp=18\\ y\amp=\frac{4}{3}x+2 \end{aligned}\right.</m>
           </p>
         </statement>
+        <answer permid="ZLu">
+          <p permid="CCy">
+            The system has infinitely many solutions.
+          </p>
+        </answer>
         <solution permid="tEl">
           <sidebyside permid="OXU">
             <image permid="GQS">
@@ -1138,11 +1150,7 @@ minor ytick={-9,-8,...,9},]
             the solution set is all points on the line <m>y=\frac{4}{3}x+2</m>.
           </p>
         </solution>
-        <answer permid="ZLu">
-          <p permid="CCy">
-            The system has infinitely many solutions.
-          </p>
-        </answer>
+        
       </exercise>
 <!--     </exercisegroup>
 <exercisegroup cols="2"> -->

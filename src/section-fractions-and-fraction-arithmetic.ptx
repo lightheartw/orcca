@@ -118,19 +118,19 @@ xlabel={},
         <title>A Fraction on a Number Line</title>
         <webwork>
             
-<pg-code>
-$numberline=init_graph(-1.5,-0.15,1.5,0.06,size=>[240,34]);
-$numberline->moveTo(-1.5,0);
-$numberline->lineTo(1.5,0,'black');
-for my$i(-12..12){$numberline->moveTo($i/8,-0.02);$numberline->lineTo($i/8,0.02,'black');};
-for my$i(-8,0,8){$numberline->moveTo($i/8,-0.05);$numberline->lineTo($i/8,0.05,'black');};
-$numberline->lb(new Label(0,-0.05,"0",'black','center','top','large'));
-$numberline->lb(new Label(1,-0.05,"1",'black','center','top','large'));
-$numberline->lb(new Label(-1,-0.05,"-1",'black','center','top','large'));
-$numberline->stamps(closed_circle(5/8,0,'blue'));
-Context("LimitedFraction");
-$ans=Fraction(5,8);
-</pg-code>
+          <pg-code>
+                $numberline=init_graph(-1.5,-0.15,1.5,0.06,size=>[240,34]);
+                $numberline->moveTo(-1.5,0);
+                $numberline->lineTo(1.5,0,'black');
+                for my$i(-12..12){$numberline->moveTo($i/8,-0.02);$numberline->lineTo($i/8,0.02,'black');};
+                for my$i(-8,0,8){$numberline->moveTo($i/8,-0.05);$numberline->lineTo($i/8,0.05,'black');};
+                $numberline->lb(new Label(0,-0.05,"0",'black','center','top','large'));
+                $numberline->lb(new Label(1,-0.05,"1",'black','center','top','large'));
+                $numberline->lb(new Label(-1,-0.05,"-1",'black','center','top','large'));
+                $numberline->stamps(closed_circle(5/8,0,'blue'));
+                Context("LimitedFraction");
+                $ans=Fraction(5,8);
+          </pg-code>
             
             <statement>
               <p permid="utS">
@@ -980,13 +980,13 @@ Context("LimitedFraction");
     </p>
     <paragraphs permid="ASL">
       <title>Finding the Least Common Denominator</title>
-      <introduction permid="PUF">
+      
         <p permid="ifA">
           When adding or subtracting fractions with different denominators,
           it is necessary to first find a common denominator.
           Usually, we want to find the least common denominator (LCD), which is the smallest common multiple of each denominator.
         </p>
-      </introduction>
+      
       <p permid="efB">
         It is common to refer to the process of finding the LCD as "building" the LCD. The reason for this is that a common method for finding the LCD, which will be the most useful method to use when we get to more complicated fractions later in the course,
         is to use the <em>prime factors</em>
@@ -2360,28 +2360,28 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
         <answer permid="cSR">
           <sbsgroup permid="sxo">
             <sidebyside widths="47% 47%" permid="ELG">
-              <figure permid="kqm">
+              
                 <image source="images/two_thirds_on_numberline.png">
                   <description>a number line with tick marks, and labels at 0, 2/3, and 1</description>
                 </image>
-              </figure>
-              <figure permid="Qxv">
+              
+              
                 <image source="images/six_eighths_on_numberline.png" permid="Uqq">
                   <description>a number line with tick marks, and labels at 0, 6/8, and 1</description>
                 </image>
-              </figure>
+              
             </sidebyside>
             <sidebyside widths="47% 47%" permid="kSP">
-              <figure permid="wEE">
+              
                 <image source="images/five_fourths_on_numberline.png" permid="Axz">
                   <description>a number line with tick marks, and labels at 0, 1, and 5/4</description>
                 </image>
-              </figure>
-              <figure permid="cLN">
+              
+             
                 <image source="images/negative_four_fifths_on_numberline.png" permid="gEI">
                   <description>a number line with tick marks, and labels at -4/5, 0, and 1</description>
                 </image>
-              </figure>
+              
             </sidebyside>
           </sbsgroup>
         </answer>
@@ -2419,28 +2419,26 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
         <answer permid="Jaa">
           <sbsgroup permid="YEx">
             <sidebyside widths="47% 47%" permid="QZY">
-              <figure permid="ISW">
+              
                 <image source="images/one_sixth_on_numberline.png" permid="MLR">
                   <description>a number line with tick marks, and labels at 0, 1/6, and 1</description>
                 </image>
-              </figure>
-              <figure permid="paf">
+              
                 <image source="images/three_ninths_on_numberline.png" permid="sTa">
                   <description>a number line with tick marks, and labels at 0, 3/9, and 1</description>
                 </image>
-              </figure>
+              
             </sidebyside>
             <sidebyside widths="47% 47%" permid="xhh">
-              <figure permid="Vho">
+              
                 <image source="images/seven_sixths_on_numberline.png" permid="Zaj">
                   <description>a number line with tick marks, and labels at 0, 1, and 7/6</description>
                 </image>
-              </figure>
-              <figure permid="Box">
+              
                 <image source="images/eight_fifths_on_numberline.png" permid="Fhs">
                   <description>a number line with tick marks, and labels at 0, 1, and 8/5</description>
                 </image>
-              </figure>
+              
             </sidebyside>
           </sbsgroup>
         </answer>
