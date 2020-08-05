@@ -1593,7 +1593,7 @@ ytick={-20,-10,0},minor ytick={-20,-15,...,5}]
       </exercise>
       <exercise permid="KmT">
         <webwork>
-            <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
+            <!-- <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros> -->
             
 <pg-code>
 Context("Numeric");
@@ -1608,14 +1608,17 @@ $answer=6;
                 After how many seconds will the debris hit the ground?
               </p>
               <p permid="oqH">
-                The debris will hit the ground after <var name="$answer" width="10"/> seconds.
+                How many seconds will it take for the debris to hit the ground?
               </p>
             </statement>
+            <answer>
+              <p><var name="$answer"/> seconds</p>
+            </answer>
         </webwork>
       </exercise>
       <exercise permid="quc">
         <webwork>
-            <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
+            <!-- <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros> -->
             
 <pg-code>
 Context("Numeric");
@@ -1630,14 +1633,17 @@ $answer=5;
                 After how many seconds will the debris hit the ground?
               </p>
               <p permid="AEZ">
-                The debris will hit the ground after <var name="$answer" width="10"/> seconds.
+                The debris will hit the ground after how many seconds?
               </p>
             </statement>
+            <answer>
+              <p><var name="$answer"/> seconds</p>
+            </answer>
         </webwork>
       </exercise>
       <exercise permid="WBl">
         <webwork>
-            <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
+            <!-- <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros> -->
             
 <pg-code>
 Context("Numeric");
@@ -1653,17 +1659,20 @@ $answer2=6;
                 Find the lengths of the two legs.
               </p>
               <p permid="MTr">
-                The length of the longer leg is <var name="$answer1" width="10"/> inches.
+                How long is the longer leg?
               </p>
               <p permid="taA">
-                The length of the shorter leg is <var name="$answer2" width="10"/> inches.
+                How long is the shorter leg?
               </p>
             </statement>
+            <answer>
+              <p><var name="$answer1"/> in.; <var name="$answer2"/> in.</p>
+            </answer>
         </webwork>
       </exercise>
       <exercise permid="CIu">
         <webwork>
-            <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
+            <!-- <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros> -->
             
 <pg-code>
 Context("Numeric");
@@ -1680,16 +1689,10 @@ $answer3=17;
                 The third side is <m>7</m> feet longer than the side along the building.
                 Find the lengths of all three sides.
               </p>
-              <p permid="FoS">
-                The length of the shorter leg is <var name="$answer1" width="10"/> feet.
-              </p>
-              <p permid="lwb">
-                The length of the longer leg is <var name="$answer2" width="10"/> feet.
-              </p>
-              <p permid="RDk">
-                The length of the hypotenuse is <var name="$answer2" width="10"/> feet.
-              </p>
             </statement>
+            <answer>
+              <p><var name="$answer1"/> ft.; <var name="$answer2"/> ft.; <var name="$answer3"/> ft.</p>
+            </answer>
         </webwork>
       </exercise>
       <exercise permid="iPD">

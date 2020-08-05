@@ -446,8 +446,19 @@ return $OK;
       <exercise permid="zJF">
         <webwork source="Contrib/PCC/BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers30.pg"  />
       </exercise>
-      <exercise permid="fQO">
-        <webwork source="Contrib/PCC/BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers30.pg"  />
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <exercise permid="zuX">
+        <webwork source="Contrib/PCC/BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers10.pg"  />
+      </exercise>
+      <exercise permid="fCg">
+        <webwork source="Contrib/PCC/BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers10.pg"  />
+      </exercise>
+      <exercise permid="fCg">
+        <webwork source="Contrib/PCC/BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers10.pg"  />
+      </exercise>
+      <exercise permid="fCg">
+        <webwork source="Contrib/PCC/BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers10.pg"  />
       </exercise>
     </exercisegroup>
     <exercisegroup cols="2" permid="qpT">

@@ -813,18 +813,20 @@ $a[2]=Fraction(9,11);
       <exercise permid="PAX">
         <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot50.pg" />
       </exercise>
-      <exercise permid="vIg">
-        <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot60.pg" />
-      </exercise>
-      <exercise permid="bPp">
-        <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot60.pg" seed="1"/>
-      </exercise>
+      
       <exercise permid="HWy">
         <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator10.pg" />
       </exercise>
       <exercise permid="odH">
         <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator10.pg" />
       </exercise>
+        <exercise permid="vIg">
+        <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot60.pg" />
+      </exercise>
+      <exercise permid="bPp">
+        <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot60.pg" seed="1"/>
+      </exercise>
+     
     </exercisegroup>
   </exercises>
 </section>

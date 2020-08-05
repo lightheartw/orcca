@@ -1587,56 +1587,750 @@ return $OK;
     </exercisegroup>
     <exercisegroup cols="3" permid="AId">
       <title>Multiplying Monomials with Binomials</title>
-      <exercise permid="fJT">
+      <introduction><p>Multiply the polynomials.</p></introduction>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+
+<!-- # setup the monomial: $a * x -->
+$a = non_zero_random(-10,10,1);
+@poly1array = ($a);
+foreach my $i (1..1) {$poly1array[$i] = 0};
+
+<!-- # setup the binomial: x - $b -->
+$b = random(2.5,9.5,1)*random(-1,1,2)+0.5;
+@poly2array = (1,$b);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+<!-- #Context()->variables->add($var=>'Real'); -->
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+
+<!-- # setup the monomial: $a * x -->
+$a = non_zero_random(-10,10,1);
+@poly1array = ($a);
+foreach my $i (1..1) {$poly1array[$i] = 0};
+
+<!-- # setup the binomial: x - $b -->
+$b = random(2.5,9.5,1)*random(-1,1,2)+0.5;
+@poly2array = (1,$b);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+<!-- #Context()->variables->add($var=>'Real'); -->
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="fJT">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication0.pg" />
       </exercise>
       <exercise permid="LRc">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication0.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+
+<!-- # setup the monomial: $a * x -->
+$a = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+@poly1array = ($a);
+foreach my $i (1..1) {$poly1array[$i] = 0};
+
+<!-- # setup the binomial: $c * x - $b -->
+$b = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+$c=$b;
+$c = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while($c==$b);
+@poly2array = ($b,$c);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+<!-- # -->Context()->variables->add($var=>'Real');
+$ans = Formula($ans)->reduce;
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="rYl">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+
+<!-- # setup the monomial: $a * x -->
+$a = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+@poly1array = ($a);
+foreach my $i (1..1) {$poly1array[$i] = 0};
+
+<!-- # setup the binomial: $c * x - $b -->
+$b = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+$c=$b;
+$c = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while($c==$b);
+@poly2array = ($b,$c);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+<!-- # -->Context()->variables->add($var=>'Real');
+$ans = Formula($ans)->reduce;
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="rYl">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication5.pg" />
       </exercise>
       <exercise permid="Yfu">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication5.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+
+<!-- # setup the monomial: $a * x^2 -->
+$a = non_zero_random(-10,10,1);
+@poly1array = ($a);
+foreach my $i (1..2) {$poly1array[$i] = 0};
+
+<!-- # setup the binomial: x - $b -->
+$b = random(2.5,9.5,1)*random(-1,1,2)+0.5;
+@poly2array = (1,$b);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+<!-- #Context()->variables->add($var=>'Real'); -->
+$ans = Formula($ans)->reduce;
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="EmD">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+
+<!-- # setup the monomial: $a * x^2 -->
+$a = non_zero_random(-10,10,1);
+@poly1array = ($a);
+foreach my $i (1..2) {$poly1array[$i] = 0};
+
+<!-- # setup the binomial: x - $b -->
+$b = random(2.5,9.5,1)*random(-1,1,2)+0.5;
+@poly2array = (1,$b);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+<!-- #Context()->variables->add($var=>'Real'); -->
+$ans = Formula($ans)->reduce;
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="EmD">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication10.pg" />
       </exercise>
       <exercise permid="ktM">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication10.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real',x=>'Real');
+
+<!-- # setup the monomial: $a * x^2 -->
+$a = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+@poly1array = ($a);
+foreach my $i (1..2) {$poly1array[$i] = 0};
+
+<!-- # setup the binomial: $b*x^2 +$c*x -->
+$b = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+$c=$b;
+$c = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while ($c==$b);
+@poly2array = ($b,$c,0);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans)->reduce;
+
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="QAV">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real',x=>'Real');
+
+<!-- # setup the monomial: $a * x^2 -->
+$a = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+@poly1array = ($a);
+foreach my $i (1..2) {$poly1array[$i] = 0};
+
+<!-- # setup the binomial: $b*x^2 +$c*x -->
+$b = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+$c=$b;
+$c = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while ($c==$b);
+@poly2array = ($b,$c,0);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans)->reduce;
+
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="QAV">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication15.pg" />
       </exercise>
       <exercise permid="wIe">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication15.pg" />
-      </exercise>
+      </exercise> -->
     </exercisegroup>
     <exercisegroup cols="2">
-      <exercise width="wide" permid="cPn">
+      <title>Multiplying Monomials with Polynomials </title>
+      <introduction><p>Multiply the polynomials.</p></introduction>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real',x=>'Real');
+
+<!-- # setup the monomial: $a * x^2 -->
+$a = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+@poly1array = ($a);
+foreach my $i (1..2) {$poly1array[$i] = 0};
+
+<!-- # setup the binomial: $b*x^2 +$c*x -->
+$b = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+$c = $b;
+$c = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while ($c==$b);
+$d = $c;
+$d = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while ($d==$c);
+@poly2array = ($b,$c,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans)->reduce;
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real',x=>'Real');
+
+<!-- # setup the monomial: $a * x^2 -->
+$a = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+@poly1array = ($a);
+foreach my $i (1..2) {$poly1array[$i] = 0};
+
+<!-- # setup the binomial: $b*x^2 +$c*x -->
+$b = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+$c = $b;
+$c = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while ($c==$b);
+$d = $c;
+$d = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while ($d==$c);
+@poly2array = ($b,$c,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans)->reduce;
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise width="wide" permid="cPn">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication20.pg" />
       </exercise>
       <exercise width="wide" permid="IWw">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication20.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+ 
+<!-- # construct polynomials using $a, $b -->
+$a = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+$b=$a;
+$b = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while(abs($a)==abs($b));
+$c = $b;
+$c = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while(abs($c)==abs($b));
+
+<!-- # exponents of first polynomial -->
+$m = random(3,20,1);
+$n=$m;
+$n = random(3,20,1)while($n==$m);
+
+<!-- # exponents of second polynomial -->
+$p = random(3,20,1);
+$q = $p;
+$q = random(3,20,1)while($q==$p);
+
+<!-- # could replace these with other letters if desired -->
+$var1 = 'x';
+$var2 = 'y';
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+
+<!-- # the polynomial -->
+$poly1 = Formula("$a*$var1^$m*$var2^$n")->reduce;
+$poly2 = Formula("$b*$var1^$p+$c*$var2^$q")->reduce;
+$ans = Formula("$a*$b*$var1^($m+$p)*$var2^$n+$a*$c*$var1^($m)*$var2^($n+$q)")->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="pdF">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+ 
+<!-- # construct polynomials using $a, $b -->
+$a = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+$b=$a;
+$b = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while(abs($a)==abs($b));
+$c = $b;
+$c = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while(abs($c)==abs($b));
+
+<!-- # exponents of first polynomial -->
+$m = random(3,20,1);
+$n=$m;
+$n = random(3,20,1)while($n==$m);
+
+<!-- # exponents of second polynomial -->
+$p = random(3,20,1);
+$q = $p;
+$q = random(3,20,1)while($q==$p);
+
+<!-- # could replace these with other letters if desired -->
+$var1 = 'x';
+$var2 = 'y';
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+
+<!-- # the polynomial -->
+$poly1 = Formula("$a*$var1^$m*$var2^$n")->reduce;
+$poly2 = Formula("$b*$var1^$p+$c*$var2^$q")->reduce;
+$ans = Formula("$a*$b*$var1^($m+$p)*$var2^$n+$a*$c*$var1^($m)*$var2^($n+$q)")->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+
+      <!-- <exercise permid="pdF">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar65.pg" />
       </exercise>
+
       <exercise permid="VkO">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar65.pg" />
+      </exercise> -->
+
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+ 
+<!-- # construct polynomials using $a, $b -->
+$a = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+$b=$a;
+$b = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while(abs($a)==abs($b));
+$c = $b;
+$c = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while(abs($c)==abs($b));
+
+<!-- # exponents of first polynomial -->
+$m = random(3,20,1);
+$n=$m;
+$n = random(3,20,1)while($n==$m);
+
+<!-- # exponents of second polynomial -->
+$p = random(3,20,1);
+$q = $p;
+$q = random(3,20,1)while($q==$p);
+$r = random(3,20,1);
+$s = $r;
+$s = random(3,20,1)while($s==$r);
+
+<!-- # could replace these with other letters if desired -->
+$var1 = 'a';
+$var2 = 'b';
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+
+<!-- # the polynomial -->
+$poly1 = Formula("$a*$var1^$m*$var2^$n")->reduce;
+$poly2 = Formula("$b*$var1^$p*$var2^$q+$c*$var1^$r*$var2^$s")->reduce;
+$ans = Formula("$a*$b*$var1^($m+$p)*$var2^($n+$q)+$a*$c*$var1^($m+$r)*$var2^($n+$s)")->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="BrX">
+      
+      <!-- <exercise permid="BrX">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar70.pg" />
       </exercise>
       <exercise permid="hzg">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar70.pg" seed="2" />
+      </exercise> -->
+
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+ 
+<!-- # construct polynomials using $a, $b -->
+$a = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+$b=$a;
+$b = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while(abs($a)==abs($b));
+$c = $b;
+$c = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while(abs($c)==abs($b));
+$d = $c;
+$d = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while(abs($d)==abs($c));
+
+<!-- # exponents of first polynomial -->
+$m = random(3,10,1);
+$n=$m;
+$n = random(3,10,1)while($n==$m);
+$p = random(3,10,1);
+$q = $p;
+$q = random(3,10,1)while($q==$p);
+$r = random(3,10,1);
+
+<!-- # could replace these with other letters if desired -->
+$var1 = 'a';
+$var2 = 'b';
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+
+<!-- # the polynomial -->
+$poly1 = Formula("$a*$var1^$m")->reduce;
+$poly2 = Formula("$b*$var1^$n+$c*$var1^$p*$var2^$q+$d*$var2^$r")->reduce;
+$ans = Formula("$a*$b*$var1^($m+$n)+$a*$c*$var1^($m+$p)*$var2^($q)+$a*$d*$var1^($m)*$var2^($r)")->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="NGp">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+ 
+<!-- # construct polynomials using $a, $b -->
+$a = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+$b=$a;
+$b = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while(abs($a)==abs($b));
+$c = $b;
+$c = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while(abs($c)==abs($b));
+$d = $c;
+$d = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while(abs($d)==abs($c));
+
+<!-- # exponents of first polynomial -->
+$m = random(3,10,1);
+$n=$m;
+$n = random(3,10,1)while($n==$m);
+$p = random(3,10,1);
+$q = $p;
+$q = random(3,10,1)while($q==$p);
+$r = random(3,10,1);
+
+<!-- # could replace these with other letters if desired -->
+$var1 = 'a';
+$var2 = 'b';
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+
+<!-- # the polynomial -->
+$poly1 = Formula("$a*$var1^$m")->reduce;
+$poly2 = Formula("$b*$var1^$n+$c*$var1^$p*$var2^$q+$d*$var2^$r")->reduce;
+$ans = Formula("$a*$b*$var1^($m+$n)+$a*$c*$var1^($m+$p)*$var2^($q)+$a*$d*$var1^($m)*$var2^($r)")->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+
+      <!-- <exercise permid="NGp">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar75.pg" />
       </exercise>
       <exercise permid="tNy">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar75.pg" />
-      </exercise>
+      </exercise> -->
+
     </exercisegroup>
     <exercisegroup cols="2" permid="gPm">
       <title>Applications of Multiplying Monomials with Binomials</title>
@@ -1661,97 +2355,1412 @@ return $OK;
     </exercisegroup>
     <exercisegroup cols="3" permid="MWv">
       <title>Multiplying Binomials</title>
-      <exercise permid="KLJ">
+      <introduction><p>Multiply the polynomials.</p></introduction>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: (x+$a) -->
+$a = random(1,10,1);
+@poly1array = (1,$a);
+
+<!-- # setup the binomial: (x+$b) -->
+$b=$a;
+$b = random(1,10,1) while($b==$a);
+@poly2array = (1,$b);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: (x+$a) -->
+$a = random(1,10,1);
+@poly1array = (1,$a);
+
+<!-- # setup the binomial: (x+$b) -->
+$b=$a;
+$b = random(1,10,1) while($b==$a);
+@poly2array = (1,$b);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="KLJ">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication25.pg" />
       </exercise>
       <exercise permid="qSS">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication25.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,10,1);
+$b=$a;
+$b = random(1,10,1) while($b==$a);
+@poly1array = ($a,$b);
+
+<!-- # setup the binomial: (x+$c) -->
+$c=$b;
+$c = random(1,10,1) while($c==$b);
+@poly2array = (1,$c);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="Xab">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,10,1);
+$b=$a;
+$b = random(1,10,1) while($b==$a);
+@poly1array = ($a,$b);
+
+<!-- # setup the binomial: (x+$c) -->
+$c=$b;
+$c = random(1,10,1) while($c==$b);
+@poly2array = (1,$c);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="Xab">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication30.pg" />
       </exercise>
       <exercise permid="Dhk">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication30.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: (x+$a) -->
+$a = random(1,10,1);
+@poly1array = (1,$a);
+
+<!-- # setup the binomial: (x+$b) -->
+$b = random(-10,-1,1);
+@poly2array = (1,$b);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="jot">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: (x+$a) -->
+$a = random(1,10,1);
+@poly1array = (1,$a);
+
+<!-- # setup the binomial: (x+$b) -->
+$b = random(-10,-1,1);
+@poly2array = (1,$b);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="jot">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication35.pg" />
       </exercise>
       <exercise permid="PvC">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication35.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: (x+$a) -->
+$a = random(-10,-1,1);
+@poly1array = (1,$a);
+
+<!-- # setup the binomial: (x+$b) -->
+$b=$a;
+$b = random(-10,-1,1) while($b==$a);
+@poly2array = (1,$b);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="vCL">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: (x+$a) -->
+$a = random(-10,-1,1);
+@poly1array = (1,$a);
+
+<!-- # setup the binomial: (x+$b) -->
+$b=$a;
+$b = random(-10,-1,1) while($b==$a);
+@poly2array = (1,$b);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="vCL">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication40.pg" />
       </exercise>
       <exercise permid="bJU">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication40.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,6,1);
+$b=$a;
+$b = random(1,10,1) while($b==$a);
+@poly1array = ($a,$b);
+
+<!-- # setup the binomial: ($cx+$d) -->
+$c=$a;
+$c = random(1,6,1) while($c==$a);
+$d=$c;
+$d = random(1,10,1) while($d==$c);
+@poly2array = ($c,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="HRd">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,6,1);
+$b=$a;
+$b = random(1,10,1) while($b==$a);
+@poly1array = ($a,$b);
+
+<!-- # setup the binomial: ($cx+$d) -->
+$c=$a;
+$c = random(1,6,1) while($c==$a);
+$d=$c;
+$d = random(1,10,1) while($d==$c);
+@poly2array = ($c,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="HRd">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication60.pg" />
       </exercise>
       <exercise permid="nYm">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication60.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,6,1);
+$b=$a;
+$b = random(-10,-1,1) while(abs($b)==abs($a));
+@poly1array = ($a,$b);
+
+<!-- # setup the binomial: ($cx+$d) -->
+$c=$a;
+$c = random(1,6,1) while($c==$a);
+$d=$c;
+$d = random(-10,-1,1) while(abs($d)==abs($c));
+@poly2array = ($c,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="Ufv">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,6,1);
+$b=$a;
+$b = random(-10,-1,1) while(abs($b)==abs($a));
+@poly1array = ($a,$b);
+
+<!-- # setup the binomial: ($cx+$d) -->
+$c=$a;
+$c = random(1,6,1) while($c==$a);
+$d=$c;
+$d = random(-10,-1,1) while(abs($d)==abs($c));
+@poly2array = ($c,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="Ufv">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication65.pg" />
       </exercise>
       <exercise permid="AmE">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication65.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,10,1);
+$b=$a;
+$b = random(-10,-1,1) while(abs($b)==abs($a));
+@poly1array = ($a,$b);
+
+<!-- # setup the binomial: (x+$c) -->
+$c=$b;
+$c = random(-10,-1,1) while($c==$b);
+@poly2array = (1,$c);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="gtN">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,10,1);
+$b=$a;
+$b = random(-10,-1,1) while(abs($b)==abs($a));
+@poly1array = ($a,$b);
+
+<!-- # setup the binomial: (x+$c) -->
+$c=$b;
+$c = random(-10,-1,1) while($c==$b);
+@poly2array = (1,$c);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="gtN">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication70.pg" />
       </exercise>
       <exercise permid="MAW">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication70.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,10,1);
+$b=$a;
+$b = random(-10,-1,1) while(abs($b)==abs($a));
+@poly1array = ($a,$b);
+
+<!-- # setup the binomial: (x+$c) -->
+$c=$b;
+$c = random(1,10,1) while(abs($c)==abs($b));
+@poly2array = (1,$c);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="sIf">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,10,1);
+$b=$a;
+$b = random(-10,-1,1) while(abs($b)==abs($a));
+@poly1array = ($a,$b);
+
+<!-- # setup the binomial: (x+$c) -->
+$c=$b;
+$c = random(1,10,1) while(abs($c)==abs($b));
+@poly2array = (1,$c);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="sIf">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication75.pg" />
       </exercise>
       <exercise permid="YPo">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication75.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,6,1);
+$b=$a;
+$b = random(-10,-1,1) while(abs($b)==abs($a));
+@poly1array = ($a,$b);
+
+<!-- # setup the binomial: ($cx+$d) -->
+$c=$a;
+$c = random(1,6,1) while($c==$a);
+$d=$c;
+$d = random(-10,-1,1) while(abs($d)==abs($c));
+@poly2array = ($c,0,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="EWx">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,6,1);
+$b=$a;
+$b = random(-10,-1,1) while(abs($b)==abs($a));
+@poly1array = ($a,$b);
+
+<!-- # setup the binomial: ($cx+$d) -->
+$c=$a;
+$c = random(1,6,1) while($c==$a);
+$d=$c;
+$d = random(-10,-1,1) while(abs($d)==abs($c));
+@poly2array = ($c,0,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="EWx">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication80.pg" />
       </exercise>
       <exercise permid="ldG">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication80.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,10,1);
+$b=$a;
+$b = random(1,10,1) while($b==$a);
+@poly1array = ($a,0,0,$b);
+
+<!-- # setup the binomial: (x+$c) -->
+$c=$b;
+$c = random(1,10,1) while($c==$b);
+@poly2array = (1,0,$c);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="RkP">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,10,1);
+$b=$a;
+$b = random(1,10,1) while($b==$a);
+@poly1array = ($a,0,0,$b);
+
+<!-- # setup the binomial: (x+$c) -->
+$c=$b;
+$c = random(1,10,1) while($c==$b);
+@poly2array = (1,0,$c);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="RkP">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication85.pg" />
       </exercise>
       <exercise permid="xrY">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication85.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,6,1);
+$b=$a;
+$b = random(-10,-1,1) while(abs($b)==abs($a));
+@poly1array = ($a,0,$b);
+
+<!-- # setup the binomial: ($cx+$d) -->
+$c=$a;
+$c = random(1,6,1) while($c==$a);
+$d=$c;
+$d = random(-10,-1,1) while(abs($d)==abs($c));
+@poly2array = ($c,0,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="dzh">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: ($a x + $b) -->
+$a = random(2,6,1);
+$b=$a;
+$b = random(-10,-1,1) while(abs($b)==abs($a));
+@poly1array = ($a,0,$b);
+
+<!-- # setup the binomial: ($cx+$d) -->
+$c=$a;
+$c = random(1,6,1) while($c==$a);
+$d=$c;
+$d = random(-10,-1,1) while(abs($d)==abs($c));
+@poly2array = ($c,0,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="dzh">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication115.pg" />
       </exercise>
       <exercise permid="JGq">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication115.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+            
+<pg-code>
+Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+ 
+<!-- # construct polynomials using (a x + b y)( c x + d y) -->
+$a = 1;
+$c = 1;
+$b = random(2,10,1)*random(-1,1,2);
+$d=$b;
+$d = random(2,10,1)*random(-1,1,2);
+
+<!-- # could replace these with other letters if desired -->
+$var1 = 'a';
+$var2 = 'b';
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+
+<!-- # the terms in the polynomial -->
+$term1 = Formula("$a*$var1")->reduce;
+$term2 = Formula("$b*$var2")->reduce;
+$term3 = Formula("$c*$var1")->reduce;
+$term4 = Formula("$d*$var2")->reduce;
+$poly1 = Formula("$term1+$term2")->reduce;
+$poly2 = Formula("$term3+$term4")->reduce;
+$ans = Formula("$a*$var1^2+($b*$c+$a*$d)*$var1*$var2+($b*$d)$var2^2")->reduce;
+
+<!-- # solution string -->
+$soln = Formula("($term1)*($term3)+($term1)*($term4)+($term2)*($term3)+($term2)*($term4)")->reduce->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+$ans = Formula($ans);
+</pg-code>
+            
+            <statement>
+              <p>
+                <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
+              </p>
+            </statement>
+            <answer>
+              <p><m><var name="$ans"/></m></p>
+            </answer>
+        </webwork>
       </exercise>
-      <exercise permid="pNz">
+      <exercise>
+        <webwork>
+            
+<pg-code>
+Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+ 
+<!-- # construct polynomials using (a x + b y)( c x + d y) -->
+$a = 1;
+$c = 1;
+$b = random(2,10,1)*random(-1,1,2);
+$d=$b;
+$d = random(2,10,1)*random(-1,1,2);
+
+<!-- # could replace these with other letters if desired -->
+$var1 = 'a';
+$var2 = 'b';
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+
+<!-- # the terms in the polynomial -->
+$term1 = Formula("$a*$var1")->reduce;
+$term2 = Formula("$b*$var2")->reduce;
+$term3 = Formula("$c*$var1")->reduce;
+$term4 = Formula("$d*$var2")->reduce;
+$poly1 = Formula("$term1+$term2")->reduce;
+$poly2 = Formula("$term3+$term4")->reduce;
+$ans = Formula("$a*$var1^2+($b*$c+$a*$d)*$var1*$var2+($b*$d)$var2^2")->reduce;
+
+<!-- # solution string -->
+$soln = Formula("($term1)*($term3)+($term1)*($term4)+($term2)*($term3)+($term2)*($term4)")->reduce->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+$ans = Formula($ans);
+</pg-code>
+            
+            <statement>
+              <p>
+                <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
+              </p>
+            </statement>
+            <answer>
+              <p><m><var name="$ans"/></m></p>
+            </answer>
+        </webwork>
+      </exercise>
+
+      <!-- <exercise permid="pNz">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar80.pg" />
       </exercise>
       <exercise permid="VUI">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar80.pg" />
+      </exercise> -->
+
+      <exercise>
+        <webwork>
+            
+<pg-code>
+Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+ 
+# construct polynomials using (a x + b y)( c x + d y)
+$a = 1;
+$c = random(2,10,1);
+$b = random(2,10,1)*random(-1,1,2);
+$d=$b;
+$d = random(2,10,1)*random(-1,1,2);
+
+# could replace these with other letters if desired
+$var1 = 'a';
+$var2 = 'b';
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+
+# the terms in the polynomial
+$term1 = Formula("$a*$var1")->reduce;
+$term2 = Formula("$b*$var2")->reduce;
+$term3 = Formula("$c*$var1")->reduce;
+$term4 = Formula("$d*$var2")->reduce;
+$poly1 = Formula("$term1+$term2")->reduce;
+$poly2 = Formula("$term3+$term4")->reduce;
+$ans = Formula("$a*$c*$var1^2+($b*$c+$a*$d)*$var1*$var2+($b*$d)$var2^2")->reduce;
+
+# solution string
+$soln = Formula("($term1)*($term3)+($term1)*($term4)+($term2)*($term3)+($term2)*($term4)")->reduce->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+$ans = Formula($ans);
+</pg-code> 
+            <statement>
+              <p>
+                <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
+              </p>
+            </statement>
+            <answer>
+              <p><m><var name="$ans"/></m></p>
+            </answer>
+        </webwork>
       </exercise>
-      <exercise permid="CbR">
+      <exercise>
+        <webwork>
+          <pg-code>
+      Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+ 
+<!-- # construct polynomials using (a x + b y)( c x + d y) -->
+$a = 1;
+$c = random(2,10,1);
+$b = random(2,10,1)*random(-1,1,2);
+$d=$b;
+$d = random(2,10,1)*random(-1,1,2);
+
+<!-- # could replace these with other letters if desired -->
+$var1 = 'a';
+$var2 = 'b';
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+
+<!-- # the terms in the polynomial -->
+$term1 = Formula("$a*$var1")->reduce;
+$term2 = Formula("$b*$var2")->reduce;
+$term3 = Formula("$c*$var1")->reduce;
+$term4 = Formula("$d*$var2")->reduce;
+$poly1 = Formula("$term1+$term2")->reduce;
+$poly2 = Formula("$term3+$term4")->reduce;
+$ans = Formula("$a*$c*$var1^2+($b*$c+$a*$d)*$var1*$var2+($b*$d)$var2^2")->reduce;
+
+<!-- # solution string -->
+$soln = Formula("($term1)*($term3)+($term1)*($term4)+($term2)*($term3)+($term2)*($term4)")->reduce->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p>
+                <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
+              </p>
+            </statement>
+            <answer>
+              <p><m><var name="$ans"/></m></p>
+            </answer>
+        </webwork>
+      </exercise>
+
+
+      <!-- <exercise permid="CbR">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar85.pg" />
       </exercise>
       <exercise permid="ija">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar85.pg" />
+      </exercise> -->
+
+      <exercise>
+        <webwork>
+          <pg-code>
+      Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+ 
+<!-- # construct polynomials using (a x + b y)( c x + d y) -->
+$a = random(2,10,1);
+$c = random(2,10,1);
+$b = random(2,10,1)*random(-1,1,2);
+$d=$b;
+$d = random(2,10,1)*random(-1,1,2);
+
+<!-- # could replace these with other letters if desired -->
+$var1 = 'a';
+$var2 = 'b';
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+
+<!-- # the terms in the polynomial -->
+$term1 = Formula("$a*$var1")->reduce;
+$term2 = Formula("$b*$var2")->reduce;
+$term3 = Formula("$c*$var1")->reduce;
+$term4 = Formula("$d*$var2")->reduce;
+$poly1 = Formula("$term1+$term2")->reduce;
+$poly2 = Formula("$term3+$term4")->reduce;
+$ans = Formula("$a*$c*$var1^2+($b*$c+$a*$d)*$var1*$var2+($b*$d)$var2^2")->reduce;
+
+<!-- # solution string -->
+$soln = Formula("($term1)*($term3)+($term1)*($term4)+($term2)*($term3)+($term2)*($term4)")->reduce->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p>
+                <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
+              </p>
+            </statement>
+            <answer>
+              <p><m><var name="$ans"/></m></p>
+            </answer>
+        </webwork>
       </exercise>
-      <exercise permid="Oqj">
+      <exercise>
+        <webwork>
+          <pg-code>
+      Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+ 
+<!-- # construct polynomials using (a x + b y)( c x + d y) -->
+$a = random(2,10,1);
+$c = random(2,10,1);
+$b = random(2,10,1)*random(-1,1,2);
+$d=$b;
+$d = random(2,10,1)*random(-1,1,2);
+
+<!-- # could replace these with other letters if desired -->
+$var1 = 'a';
+$var2 = 'b';
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+
+<!-- # the terms in the polynomial -->
+$term1 = Formula("$a*$var1")->reduce;
+$term2 = Formula("$b*$var2")->reduce;
+$term3 = Formula("$c*$var1")->reduce;
+$term4 = Formula("$d*$var2")->reduce;
+$poly1 = Formula("$term1+$term2")->reduce;
+$poly2 = Formula("$term3+$term4")->reduce;
+$ans = Formula("$a*$c*$var1^2+($b*$c+$a*$d)*$var1*$var2+($b*$d)$var2^2")->reduce;
+
+<!-- # solution string -->
+$soln = Formula("($term1)*($term3)+($term1)*($term4)+($term2)*($term3)+($term2)*($term4)")->reduce->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p>
+                <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
+              </p>
+            </statement>
+            <answer>
+              <p><m><var name="$ans"/></m></p>
+            </answer>
+        </webwork>
+      </exercise>
+
+      <!-- <exercise permid="Oqj">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar90.pg" />
       </exercise>
       <exercise permid="uxs">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar90.pg" />
+      </exercise> -->
+
+      <exercise>
+        <webwork>
+          <pg-code>
+      Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+ 
+<!-- # construct polynomials using (a x + b y)( c x + d y) -->
+$a = random(2,10,1);
+$c = random(2,10,1);
+$b = random(2,10,1)*random(-1,1,2);
+$d=$b;
+$d = random(2,10,1)*random(-1,1,2);
+
+<!-- # could replace these with other letters if desired -->
+$var1 = 'a';
+$var2 = 'b';
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+
+<!-- # the terms in the polynomial -->
+$term1 = Formula("$a*$var1*$var2")->reduce;
+$term2 = Formula("$b")->reduce;
+$term3 = Formula("$c*$var1*$var2")->reduce;
+$term4 = Formula("$d")->reduce;
+$poly1 = Formula("$term1+$term2")->reduce;
+$poly2 = Formula("$term3+$term4")->reduce;
+$ans = Formula("$a*$c*$var1^2*$var2^2+($b*$c+$a*$d)*$var1*$var2+($b*$d)")->reduce;
+
+<!-- # solution string -->
+$soln = Formula("($term1)*($term3)+($term1)*($term4)+($term2)*($term3)+($term2)*($term4)")->reduce('x*n'=>0)->reduce('x*n'=>0);
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p>
+                <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
+              </p>
+            </statement>
+            <answer>
+              <p><m><var name="$ans"/></m></p>
+            </answer>
+        </webwork>
       </exercise>
-      <exercise permid="aEB">
+      <exercise>
+        <webwork>
+          <pg-code>
+      Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+ 
+<!-- # construct polynomials using (a x + b y)( c x + d y) -->
+$a = random(2,10,1);
+$c = random(2,10,1);
+$b = random(2,10,1)*random(-1,1,2);
+$d=$b;
+$d = random(2,10,1)*random(-1,1,2);
+
+<!-- # could replace these with other letters if desired -->
+$var1 = 'a';
+$var2 = 'b';
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+
+<!-- # the terms in the polynomial -->
+$term1 = Formula("$a*$var1*$var2")->reduce;
+$term2 = Formula("$b")->reduce;
+$term3 = Formula("$c*$var1*$var2")->reduce;
+$term4 = Formula("$d")->reduce;
+$poly1 = Formula("$term1+$term2")->reduce;
+$poly2 = Formula("$term3+$term4")->reduce;
+$ans = Formula("$a*$c*$var1^2*$var2^2+($b*$c+$a*$d)*$var1*$var2+($b*$d)")->reduce;
+
+<!-- # solution string -->
+$soln = Formula("($term1)*($term3)+($term1)*($term4)+($term2)*($term3)+($term2)*($term4)")->reduce('x*n'=>0)->reduce('x*n'=>0);
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+              <p>
+                <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
+              </p>
+            </statement>
+            <answer>
+              <p><m><var name="$ans"/></m></p>
+            </answer>
+        </webwork>
+      </exercise>
+
+
+      <!-- <exercise permid="aEB">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar95.pg" />
       </exercise>
       <exercise permid="GLK">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar95.pg" />
-      </exercise>
-      <exercise permid="mST">
+      </exercise> -->
+      <exercise>
         <webwork>
             
 <pg-code>
@@ -1775,34 +3784,16 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
 </pg-code>
             
             <statement>
-              <p permid="noF">
-                Multiply the polynomials.
-              </p>
-              <p permid="TvO">
-                <m><var name="$problem" />=</m><var name="$ans" width="10" />
+              <p>
+                <m><var name="$problem" /></m>
               </p>
             </statement>
-            <solution permid="psa">
-              <p permid="dkZ">
-                We could first distribute <m><var name="$a" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
-                and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
-                <md permid="Oqw">
-                  <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
-                  <mrow>\amp=<var name="$ans" /></mrow>
-                </md>
-              </p>
-              <p permid="Jsi">
-                We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
-                and then distribute <m><var name="$a" /></m> into <m><var name="$s2" /></m>:
-                <md permid="uxF">
-                  <mrow><var name="$problem" />\amp=<var name="$a" />(<var name="$s2" />)</mrow>
-                  <mrow>\amp=<var name="$ans" /></mrow>
-                </md>
-              </p>
-            </solution>
+            <answer>
+              <p><m><var name="$ans"/></m></p>
+            </answer>
         </webwork>
       </exercise>
-      <exercise permid="Tac">
+      <exercise>
         <webwork>
             
 <pg-code>
@@ -1827,34 +3818,16 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
 </pg-code>
             
             <statement>
-              <p permid="zCX">
-                Multiply the polynomials.
-              </p>
-              <p permid="fKg">
-                <m><var name="$problem" />=</m><var name="$ans" width="10" />
+              <p>
+                <m><var name="$problem" /></m>
               </p>
             </statement>
-            <solution permid="Vzj">
-              <p permid="pzr">
-                We could first distribute <m><var name="$a" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
-                and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
-                <md permid="aEO">
-                  <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
-                  <mrow>\amp=<var name="$ans" /></mrow>
-                </md>
-              </p>
-              <p permid="VGA">
-                We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
-                and then distribute <m><var name="$a" /></m> into <m><var name="$s2" /></m>:
-                <md permid="GLX">
-                  <mrow><var name="$problem" />\amp=<var name="$s3" /></mrow>
-                  <mrow>\amp=<var name="$ans" /></mrow>
-                </md>
-              </p>
-            </solution>
+            <answer>
+              <p><m><var name="$ans"/></m></p>
+            </answer>
         </webwork>
       </exercise>
-      <exercise permid="zhl">
+      <exercise>
         <webwork>
             
 <pg-code>
@@ -1875,34 +3848,16 @@ $ans = Compute("$var**3+$bPlusC*$var**2+$bc*$var")->reduce;
 </pg-code>
             
             <statement>
-              <p permid="LRp">
-                Multiply the polynomials.
-              </p>
-              <p permid="rYy">
-                <m><var name="$problem" />=</m><var name="$ans" width="10" />
+              <p>
+                <m><var name="$problem" /></m>
               </p>
             </statement>
-            <solution permid="BGs">
-              <p permid="BNJ">
-                We could first distribute <m><var name="$var" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
-                and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
-                <md permid="mTg">
-                  <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
-                  <mrow>\amp=<var name="$ans" /></mrow>
-                </md>
-              </p>
-              <p permid="hUS">
-                We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
-                and then distribute <m><var name="$var" /></m> into <m><var name="$s2" /></m>:
-                <md permid="Tap">
-                  <mrow><var name="$problem" />\amp=<var name="$var" />(<var name="$s2" />)</mrow>
-                  <mrow>\amp=<var name="$ans" /></mrow>
-                </md>
-              </p>
-            </solution>
+            <answer>
+              <p><m><var name="$ans"/></m></p>
+            </answer>
         </webwork>
       </exercise>
-      <exercise permid="fou">
+      <exercise>
         <webwork>
             
 <pg-code>
@@ -1928,34 +3883,16 @@ $ans = Compute("$a*$var**3+$d*$var**2+$e*$var")->reduce;
 </pg-code>
             
             <statement>
-              <p permid="YfH">
-                Multiply the polynomials.
-              </p>
-              <p permid="EmQ">
-                <m><var name="$problem" />=</m><var name="$ans" width="10" />
+              <p>
+                <m><var name="$problem" /></m>
               </p>
             </statement>
-            <solution permid="hNB">
-              <p permid="Ocb">
-                We could first distribute <m><var name="$s4" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
-                and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
-                <md permid="zhy">
-                  <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
-                  <mrow>\amp=<var name="$ans" /></mrow>
-                </md>
-              </p>
-              <p permid="ujk">
-                We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
-                and then distribute <m><var name="$a" /><var name="$var" /></m> into <m><var name="$s2" /></m>:
-                <md permid="foH">
-                  <mrow><var name="$problem" />\amp=<var name="$s3" /></mrow>
-                  <mrow>\amp=<var name="$ans" /></mrow>
-                </md>
-              </p>
-            </solution>
+            <answer>
+              <p><m><var name="$ans"/></m></p>
+            </answer>
         </webwork>
       </exercise>
-      <exercise permid="LvD">
+      <exercise>
         <webwork>
             
 <pg-code>
@@ -1981,31 +3918,13 @@ $ans = Compute("$ab*$var**2+$a*$e*$var+$a*$cd")->reduce;
 </pg-code>
             
             <statement>
-              <p permid="ktZ">
-                Multiply the polynomials.
-              </p>
-              <p permid="QBi">
-                <m><var name="$problem" />=</m><var name="$ans" width="10" />
+              <p>
+                <m><var name="$problem" /></m>
               </p>
             </statement>
-            <solution permid="NUK">
-              <p permid="aqt">
-                We could first distribute <m><var name="$a" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
-                and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
-                <md permid="LvQ">
-                  <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
-                  <mrow>\amp=<var name="$ans" /></mrow>
-                </md>
-              </p>
-              <p permid="GxC">
-                We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
-                and then distribute <m><var name="$a" /></m> into <m><var name="$s2" /></m>:
-                <md permid="rCZ">
-                  <mrow><var name="$problem" />\amp=<var name="$s3"/></mrow>
-                  <mrow>\amp=<var name="$ans" /></mrow>
-                </md>
-              </p>
-            </solution>
+            <answer>
+              <p><m><var name="$ans"/></m></p>
+            </answer>
         </webwork>
       </exercise>
       <exercise permid="rCM">
@@ -2034,31 +3953,13 @@ $ans = Compute("$ab*$var**2+$a*$e*$var+$a*$cd")->reduce;
 </pg-code>
             
             <statement>
-              <p permid="wIr">
-                Multiply the polynomials.
-              </p>
-              <p permid="cPA">
-                <m><var name="$problem" />=</m><var name="$ans" width="10" />
+              <p>
+                <m><var name="$problem" /></m>
               </p>
             </statement>
-            <solution permid="ubT">
-              <p permid="mEL">
-                We could first distribute <m><var name="$a" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
-                and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
-                <md permid="XKi">
-                  <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
-                  <mrow>\amp=<var name="$ans" /></mrow>
-                </md>
-              </p>
-              <p permid="SLU">
-                We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
-                and then distribute <m><var name="$a" /></m> into <m><var name="$s2" /></m>:
-                <md permid="DRr">
-                  <mrow><var name="$problem" />\amp=<var name="$s3"/></mrow>
-                  <mrow>\amp=<var name="$ans" /></mrow>
-                </md>
-              </p>
-            </solution>
+            <answer>
+              <p><m><var name="$ans"/></m></p>
+            </answer>
         </webwork>
       </exercise>
     </exercisegroup>
@@ -2079,37 +3980,519 @@ $ans = Compute("$ab*$var**2+$a*$e*$var+$a*$cd")->reduce;
     </exercisegroup>
     <exercisegroup cols="2" permid="ZkN">
       <title>Multiplying Larger Polynomials</title>
-      <exercise width="wide" permid="wmF">
+      <introduction><p>Multiply the polynomials.</p></introduction>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+
+<!-- # setup the binomial: ($a * x + $b) -->
+$a = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+$b = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+@poly1array = ($a,$b);
+
+<!-- # setup the trinomial: x^2 + $c x + $d -->
+$c = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+$d = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+@poly2array = (1,$c,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # for the solution -->
+$soln = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+$ans = Formula($ans)->reduce;
+
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+
+<!-- # setup the binomial: ($a * x + $b) -->
+$a = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+$b = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+@poly1array = ($a,$b);
+
+<!-- # setup the trinomial: x^2 + $c x + $d -->
+$c = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+$d = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+@poly2array = (1,$c,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # for the solution -->
+$soln = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+$ans = Formula($ans)->reduce;
+
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+
+      <!-- <exercise width="wide" permid="wmF">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication125.pg" />
       </exercise>
       <exercise width="wide" permid="ctO">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication125.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+
+<!-- # setup the binomial: ($a * x + $b) -->
+$a = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+$b=$a;
+$b = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($b==$a);
+@poly1array = ($a,$b);
+
+<!-- # setup the trinomial: x^2 + $c x + $d -->
+$c=$b;
+$c = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($c==$b);
+$d=$c;
+$d = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($d==$c);
+$e = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+$f = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+@poly2array = ($c,$d,$e,$f);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # for the solution -->
+$soln = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+$ans = Formula($ans)->reduce;
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="IAX">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+
+<!-- # setup the binomial: ($a * x + $b) -->
+$a = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+$b=$a;
+$b = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($b==$a);
+@poly1array = ($a,$b);
+
+<!-- # setup the trinomial: x^2 + $c x + $d -->
+$c=$b;
+$c = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($c==$b);
+$d=$c;
+$d = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($d==$c);
+$e = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+$f = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+@poly2array = ($c,$d,$e,$f);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # for the solution -->
+$soln = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+$ans = Formula($ans)->reduce;
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="IAX">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication120.pg" />
       </exercise>
       <exercise permid="oIg">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication120.pg" />
-      </exercise>
+      </exercise> -->
 <!-- seeds set to guarantee distinct versions -->
-      <exercise width="wide" seed="114" permid="UPp">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+<!-- # setup the trinomial: x^2 + $a x + $b -->
+$a = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+$b=$a;
+$b = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($b==$a);
+<!-- #$a=2;$b=3; -->
+@poly1array = (1,$a,$b);
+
+<!-- # setup the trinomial: x^2 + $c x + $d -->
+$c=$b;
+$c = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($c==$b);
+$d=$c;
+$d = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($d==$c);
+<!-- #$c=4;$d=5; -->
+@poly2array = (1,$c,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+# for the solution
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # for the solution string -->
+$soln = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+$ans = Formula($ans);
+
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+<!-- # setup the trinomial: x^2 + $a x + $b -->
+$a = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+$b=$a;
+$b = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($b==$a);
+<!-- #$a=2;$b=3; -->
+@poly1array = (1,$a,$b);
+
+<!-- # setup the trinomial: x^2 + $c x + $d -->
+$c=$b;
+$c = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($c==$b);
+$d=$c;
+$d = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($d==$c);
+<!-- #$c=4;$d=5; -->
+@poly2array = (1,$c,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+# for the solution
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # for the solution string -->
+$soln = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+$ans = Formula($ans);
+
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise width="wide" seed="114" permid="UPp">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication145.pg" />
       </exercise>
       <exercise width="wide" seed="115" permid="AWy">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication145.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+<!-- # setup the trinomial: x^2 + $a x + $b -->
+$a = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+$b=$a;
+$b = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($b==$a);
+<!-- #$a=2;$b=3; -->
+@poly1array = (1,$a,$b);
+
+<!-- # setup the trinomial: x^2 + $c x + $d -->
+$c=$b;
+$c = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($c==$b);
+$d=$c;
+$d = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($d==$c);
+<!-- #$c=4;$d=5; -->
+@poly2array = (1,$c,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # for the solution string -->
+$soln = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+$ans = Formula($ans);
+
+Context("LimitedPolynomial-Strict");
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="hdH">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+<!-- # setup the trinomial: x^2 + $a x + $b -->
+$a = (random(1.5,4.5,1)+0.5)*random(-1,1,2);
+$b=$a;
+$b = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($b==$a);
+<!-- #$a=2;$b=3; -->
+@poly1array = (1,$a,$b);
+
+<!-- # setup the trinomial: x^2 + $c x + $d -->
+$c=$b;
+$c = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($c==$b);
+$d=$c;
+$d = (random(1.5,4.5,1)+0.5)*random(-1,1,2) while($d==$c);
+<!-- #$c=4;$d=5; -->
+@poly2array = (1,$c,$d);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array))->reduce;
+$poly2 = Formula(PolyString(~~@poly2array))->reduce;
+
+<!-- # for the solution -->
+@productarray = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyString(~~@productarray))->reduce;
+
+<!-- # make $poly1 and $poly2 into strings -->
+$poly1 = $poly1->substitute(x=>$var)->reduce;
+$poly2 = $poly2->substitute(x=>$var)->reduce;
+
+<!-- # for the solution string -->
+$soln = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+<!-- # and make the answer into a string -->
+$ans = $ans->substitute(x=>$var);
+
+Context("LimitedPolynomial-Strict");
+$ans = Formula($ans);
+
+Context("LimitedPolynomial-Strict");
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="hdH">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar145.pg" />
       </exercise>
       <exercise permid="NkQ">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar145.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: (x+$a) -->
+$a = non_zero_random(-13,13,1);
+@poly1array = (1,$a);
+
+<!-- # setup the binomial: (x-$a) -->
+@poly2array = (1,-$a);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="trZ">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the first binomial: (x+$a) -->
+$a = non_zero_random(-13,13,1);
+@poly1array = (1,$a);
+
+<!-- # setup the binomial: (x-$a) -->
+@poly2array = (1,-$a);
+
+<!-- # reduction check -->
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+<!-- # for the solution -->
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+
+          </pg-code>
+          <statement>
+            <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="trZ">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar160.pg" />
       </exercise>
       <exercise permid="Zzi">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar160.pg" />
-      </exercise>
+      </exercise> -->
     </exercisegroup>
     <exercisegroup permid="FrW">
       <title>Challenge</title>

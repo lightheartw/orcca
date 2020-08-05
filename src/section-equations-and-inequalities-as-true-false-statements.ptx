@@ -513,6 +513,7 @@ $yesno=PopUp(['?','is', 'is not'],1);
   <exercises permid="Aoi">
     <exercisegroup cols="2" permid="gvr">
       <title>Review and Warmup</title>
+      <introduction><p>Try to complete the following exercises without a calculator.</p></introduction>
       <exercise permid="lfk">
         <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluate12.pg" />
       </exercise>
@@ -531,13 +532,26 @@ $yesno=PopUp(['?','is', 'is not'],1);
       <exercise permid="pPd">
         <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluate20.pg" />
       </exercise>
-    </exercisegroup>
+      </exercisegroup>
     <exercisegroup>
+      <exercise permid="miI">
+        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluate130.pg" seed="3"/>
+      </exercise>
+      <exercise permid="SpR">
+        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluate130.pg" seed="4"/>
+      </exercise>
+    
       <exercise permid="VWm">
         <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-04-Expressions.pg" />
       </exercise>
       <exercise permid="Cdv">
         <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-04-Expressions.pg" />
+      </exercise>
+      <exercise permid="Ufe">
+        <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-06-Expressions.pg" />
+      </exercise>
+      <exercise permid="Amn">
+        <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-06-Expressions.pg" />
       </exercise>
       <exercise permid="ikE">
         <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-02-Expressions.pg" />
@@ -546,7 +560,7 @@ $yesno=PopUp(['?','is', 'is not'],1);
         <webwork source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-02-Expressions.pg" />
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
+    
     <exercisegroup cols="2" permid="MCA">
       <title>Identifying Linear Equations and Inequalities</title>
       <exercise permid="uyW">

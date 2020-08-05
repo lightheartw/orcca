@@ -1944,7 +1944,7 @@
       </exercise>
       <exercise permid="XyI">
         <webwork>
-            <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
+            <!-- <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros> -->
             
 <pg-code>
 Context("Numeric");
@@ -1958,15 +1958,15 @@ $answer=7;
                 of the debris above the ground <m>t</m> seconds after the explosion.
                 After how many seconds will the debris hit the ground?
               </p>
-              <p permid="lof">
-                The debris will hit the ground after <var name="$answer" width="10"/> seconds.
-              </p>
             </statement>
+            <answer>
+              <p><var name="$answer" /> seconds </p>
+            </answer>
         </webwork>
       </exercise>
       <exercise permid="DFR">
         <webwork>
-            <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros>
+            <!-- <pg-macros><macro-file>contextNumeric.pl</macro-file></pg-macros> -->
             
 <pg-code>
 Context("Numeric");

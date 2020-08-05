@@ -619,6 +619,30 @@ Context()->parens->set('('=>{type=>'Point'});
         </statement>
         </webwork>
       </exercise>
+      <exercise>
+      <webwork >
+        
+<pg-code>
+$a=random(1,9,1);
+$a=2 if ($envir{problemSeed}==1);
+$b=$a**2;
+Context("Interval");
+$set=Set("{-$a,$a}");
+$setev=$set->cmp(cmp_class=>'a set');
+Context()->parens->set('('=>{type=>'Point'});
+</pg-code>
+        
+        <statement>
+          <p>
+            There are two numbers that you can square to get <m><var name="$b"/></m>.
+            Express this collection of two numbers using set notation.
+          </p>
+          <p>
+            <var name="$set" evaluator="$setev" width="30" />
+          </p>
+        </statement>
+        </webwork>
+      </exercise>
       <exercise permid="DMa">
         <webwork >
         
@@ -681,6 +705,31 @@ Context()->parens->set('('=>{type=>'Point'});
             Express this collection of three numbers using set notation.
           </p>
           <p permid="RIB">
+            <var name="$set" evaluator="$setev" width="30" />
+          </p>
+        </statement>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork >
+        
+<pg-code>
+@a=map{$_+1}NchooseK(6,3);
+@a=(1,2,5) if ($envir{problemSeed}==1);
+$sum=$a[0]**2+$a[1]**2+$a[2]**2;
+Context("Interval");
+$set=Set("{$a[0],$a[1],$a[2]}");
+$setev=$set->cmp(cmp_class=>'a set');
+Context()->parens->set('('=>{type=>'Point'});
+</pg-code>
+        
+        <statement>
+          <p>
+            There is a set of three small positive integers where you can square all three numbers,
+            then add the results, and get <m><var name="$sum"/></m>.
+            Express this collection of three numbers using set notation.
+          </p>
+          <p>
             <var name="$set" evaluator="$setev" width="30" />
           </p>
         </statement>

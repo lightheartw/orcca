@@ -357,7 +357,7 @@ $gr->arrowTo(7,-4.25,'blue',1);
               The reason we made a table was to help with plotting the line.
             </p>
             <sidebyside widths="40%" permid="vAL">
-              <image permid="lZV" source="$gr" />
+              <image permid="lZV" pg-name="$gr" />
             </sidebyside>
           </solution>
       </webwork>
@@ -582,7 +582,7 @@ $gr->arrowTo(3.14,-7,'blue',1);
               The reason we made a table was to help with plotting the line.
             </p>
             <sidebyside widths="40%" permid="Udv">
-              <image permid="evw" source="$gr" />
+              <image permid="evw" pg-name="$gr" />
             </sidebyside>
           </solution>
       </webwork>
@@ -632,7 +632,6 @@ xlabel={purchase price},
     </example>
     <paragraphs permid="diM">
       <title>Summary of Horizontal and Vertical Line Equations</title>
-      
         <sidebyside permid="FZQ">
           <tabular valign="top" bottom="minor" permid="YGk">
             <col width="47%" right="medium"/>
@@ -1133,18 +1132,129 @@ $line=Formula("y=3/2(x-4)-3");
    
     <exercisegroup cols="2" permid="VEn">
       <title>Line Equations</title>
-      <exercise permid="MUv">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("ImplicitPlane");
+Context()->flags->set(showExtraParens=>0);
+Context()->variables->are(x=>'Real', y=>'Real');
+Context()->noreduce('(-x)-y','(-x)+y');
+Context()->flags->set(showExtraParens=>0);
+
+$m=0;
+$b=random(-10,10,1);
+
+$x1=random(-5,5,1);
+$y1=$m*$x1+$b;
+$x2=random(-5,5,1);
+while ($x2==$x1) {$x2=random(-5,5,1);}
+$y2=$m*$x2+$b;
+
+$ansSI = ImplicitPlane("y=$b");
+          </pg-code>
+          <statement>
+            <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find an equation for this line.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ansS1"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("ImplicitPlane");
+            Context()->flags->set(showExtraParens=>0);
+            Context()->variables->are(x=>'Real', y=>'Real');
+            Context()->noreduce('(-x)-y','(-x)+y');
+            Context()->flags->set(showExtraParens=>0);
+
+            $m=0;
+            $b=random(-10,10,1);
+
+            $x1=random(-5,5,1);
+            $y1=$m*$x1+$b;
+            $x2=random(-5,5,1);
+            while ($x2==$x1) {$x2=random(-5,5,1);}
+            $y2=$m*$x2+$b;
+
+            $ansSI = ImplicitPlane("y=$b");
+          </pg-code>
+          <statement>
+            <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find an equation for this line.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ansS1"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="MUv">
         <webwork source="Contrib/PCC/BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindEquationSpecial10.pg" />
       </exercise>
       <exercise permid="tbE">
         <webwork source="Contrib/PCC/BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindEquationSpecial10.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("ImplicitPlane");
+            Context()->flags->set(showExtraParens=>0);
+            Context()->variables->are(x=>'Real', y=>'Real');
+            Context()->noreduce('(-x)-y','(-x)+y');
+            Context()->flags->set(showExtraParens=>0);
+
+            $a=random(-10,10,1);
+
+            $y1=random(-5,5,1);
+            $x1 = $a;
+            $y2=random(-5,5,1);
+            $x2 = $a;
+            while ($y2==$y1) {$y2=random(-5,5,1);}
+
+            $ansSI = ImplicitPlane("x=$a");
+          </pg-code>
+          <statement>
+            <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find an equation for this line.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ansS1"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="ZiN">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("ImplicitPlane");
+            Context()->flags->set(showExtraParens=>0);
+            Context()->variables->are(x=>'Real', y=>'Real');
+            Context()->noreduce('(-x)-y','(-x)+y');
+            Context()->flags->set(showExtraParens=>0);
+
+            $a=random(-10,10,1);
+
+            $y1=random(-5,5,1);
+            $x1 = $a;
+            $y2=random(-5,5,1);
+            $x2 = $a;
+            while ($y2==$y1) {$y2=random(-5,5,1);}
+
+            $ansSI = ImplicitPlane("x=$a");
+          </pg-code>
+          <statement>
+            <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find an equation for this line.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ansS1"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="ZiN">
         <webwork source="Contrib/PCC/BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindEquationSpecial20.pg" />
       </exercise>
       <exercise permid="FpW">
         <webwork source="Contrib/PCC/BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindEquationSpecial20.pg" />
-      </exercise>
+      </exercise> -->
+      
       <exercise permid="orL">
         <webwork source="Contrib/PCC/BasicAlgebra/SlopeAndY-InterceptCalculations/WriteEquationByGraph50.pg" />
       </exercise>
@@ -1326,13 +1436,16 @@ $lineSI=Formula("y=3x+4");
               <m>(-5,-11)\text{.}</m></p> 
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" width="20" />
-            </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" width="20" />
-            </p>
           </statement>
+          <answer>
+            <p> Line <m>\ell</m> in point-slope form is 
+              <var name="$linePS" />
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is 
+              <var name="$lineSI" />
+            </p>
+          </answer>
+          
         </webwork>
       </exercise>
       <exercise>
@@ -1353,13 +1466,15 @@ $lineSI=Formula("y=4x-1");
               <m>(4,15)\text{.}</m></p> 
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" width="20" />
-            </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" width="20" />
-            </p>
           </statement>
+          <answer>
+            <p> Line <m>\ell</m> in point-slope form is 
+              <var name="$linePS" />
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is 
+              <var name="$lineSI" />
+            </p>
+          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1380,13 +1495,15 @@ $lineSI=Formula("y=-1/3x+4");
               <m>(-9,7)\text{.}</m></p> 
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" width="20" />
-            </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" width="20" />
-            </p>
           </statement>
+            <answer>
+            <p> Line <m>\ell</m> in point-slope form is 
+              <var name="$linePS" />
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is 
+              <var name="$lineSI" />
+            </p>
+          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1407,13 +1524,15 @@ $lineSI=Formula("y=-2/7x+5");
               <m>(14,1)\text{.}</m></p> 
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" width="20" />
-            </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" width="20" />
-            </p>
           </statement>
+            <answer>
+            <p> Line <m>\ell</m> in point-slope form is 
+              <var name="$linePS" />
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is 
+              <var name="$lineSI" />
+            </p>
+            </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1434,13 +1553,15 @@ $lineSI=Formula("y=x+4");
               <m>(-3,1)\text{.}</m></p> 
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" width="20" />
-            </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" width="20" />
-            </p>
           </statement>
+            <answer>
+            <p> Line <m>\ell</m> in point-slope form is 
+              <var name="$linePS" />
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is 
+              <var name="$lineSI" />
+            </p>
+          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1461,13 +1582,15 @@ $lineSI=Formula("y=1/3x-3");
               <m>\left(2,-\frac{7}{3}\right)\text{.}</m></p> 
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" width="20" />
-            </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" width="20" />
-            </p>
           </statement>
+            <answer>
+            <p> Line <m>\ell</m> in point-slope form is 
+              <var name="$linePS" />
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is 
+              <var name="$lineSI" />
+            </p>
+          </answer>
         </webwork>
       </exercise>
 <exercise>
@@ -1488,13 +1611,15 @@ $lineSI=Formula("y=-8/5x+4");
               <m>\left(-2,\frac{36}{5}\right)\text{.}</m></p> 
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" width="20" />
-            </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" width="20" />
-            </p>
           </statement>
+            <answer>
+            <p> Line <m>\ell</m> in point-slope form is 
+              <var name="$linePS" />
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is 
+              <var name="$lineSI" />
+            </p>
+          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1515,13 +1640,15 @@ $lineSI=Formula("y=-5x+2");
               <m>(3,-13)\text{.}</m></p> 
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" width="20" />
-            </p>
-            <p permid="ZbJ"> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" width="20" />
-            </p>
           </statement>
+            <answer>
+            <p> Line <m>\ell</m> in point-slope form is 
+              <var name="$linePS" />
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is 
+              <var name="$lineSI" />
+            </p>
+          </answer>
         </webwork>
       </exercise>
 

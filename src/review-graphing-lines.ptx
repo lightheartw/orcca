@@ -1273,18 +1273,218 @@ $eq=Formula("y=$f")->reduce;
       <exercise permid="WWs">
         <webwork source="Contrib/PCC/BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept170.pg" />
       </exercise>
-      <exercise permid="DdB">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Fraction");
+Context()->variables->add(y=>'Real');
+Context()->noreduce('(-x)-y','(-x)+y');
+Context()->flags->set(showExtraParens=>0);
+
+$num=random(1,9,1);
+$den=random(2,9,1);
+while (gcd($num,$den)!=1) {$den=random(2,9,1);}
+
+$m=Fraction($num,$den);
+$b=non_zero_random(-10,10,1);
+
+$x1=$den*random(-3,3,1);
+$y1=$m*$x1+$b;
+$x2=$den*random(-3,3,1);
+while ($x2==$x1) {$x2=$den*random(-3,3,1);}
+$y2=$m*$x2+$b;
+
+$left1 = Formula("y-$y1")->reduce;
+$right1 = Formula("$m*(x-$x1)")->reduce;
+$left2 = Formula("y-$y2")->reduce;
+$right2 = Formula("$m*(x-$x2)")->reduce;
+
+Context()->texStrings;
+$ansPSstringTeX1 = "y-$y1=$m(x-$x1)"; 
+Context()->normalStrings;
+$ansPSstring1 = "y-$y1=$m(x-$x1)";
+
+Context()->texStrings;
+$ansPSstringTeX2 = "y-$y2=$m(x-$x2)"; 
+Context()->normalStrings;
+$ansPSstring2 = "y-$y2=$m(x-$x2)";
+
+
+Context("ImplicitPlane");
+Context()->variables->are(x=>'Real',y=>'Real');
+Context()->flags->set(showExtraParens=>0);
+Context()->flags->set(showExtraParens=>0);
+$ansPS1 = ImplicitPlane("$ansPSstring1");
+$ansPS2 = ImplicitPlane("$ansPSstring2");
+          </pg-code>
+          <statement>
+            <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Fraction");
+Context()->variables->add(y=>'Real');
+Context()->noreduce('(-x)-y','(-x)+y');
+Context()->flags->set(showExtraParens=>0);
+
+$num=random(1,9,1);
+$den=random(2,9,1);
+while (gcd($num,$den)!=1) {$den=random(2,9,1);}
+
+$m=Fraction($num,$den);
+$b=non_zero_random(-10,10,1);
+
+$x1=$den*random(-3,3,1);
+$y1=$m*$x1+$b;
+$x2=$den*random(-3,3,1);
+while ($x2==$x1) {$x2=$den*random(-3,3,1);}
+$y2=$m*$x2+$b;
+
+$left1 = Formula("y-$y1")->reduce;
+$right1 = Formula("$m*(x-$x1)")->reduce;
+$left2 = Formula("y-$y2")->reduce;
+$right2 = Formula("$m*(x-$x2)")->reduce;
+
+Context()->texStrings;
+$ansPSstringTeX1 = "y-$y1=$m(x-$x1)"; 
+Context()->normalStrings;
+$ansPSstring1 = "y-$y1=$m(x-$x1)";
+
+Context()->texStrings;
+$ansPSstringTeX2 = "y-$y2=$m(x-$x2)"; 
+Context()->normalStrings;
+$ansPSstring2 = "y-$y2=$m(x-$x2)";
+
+
+Context("ImplicitPlane");
+Context()->variables->are(x=>'Real',y=>'Real');
+Context()->flags->set(showExtraParens=>0);
+Context()->flags->set(showExtraParens=>0);
+$ansPS1 = ImplicitPlane("$ansPSstring1");
+$ansPS2 = ImplicitPlane("$ansPSstring2");
+          </pg-code>
+          <statement>
+            <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+
+
+      <!-- <exercise permid="DdB">
         <webwork source="Contrib/PCC/BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquation30.pg" />
       </exercise>
       <exercise permid="jkK">
         <webwork source="Contrib/PCC/BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquation30.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+            Context()->variables->add(y=>'Real');
+            Context()->noreduce('(-x)-y','(-x)+y');
+            Context()->flags->set(showExtraParens=>0);
+
+            $x4=random(40,50,1);
+            $y4=0;
+
+            $m= -random(11,99,1)/10;
+            $absM = abs($m);
+            $b= -$m*$x4;
+
+            $x1=random(5,10,1);
+            $y1=$m*$x1+$b;
+            $x2=random(11,19,1);
+            $y2=$m*$x2+$b;
+            $x3=random(30,40,1);
+            $y3=$m*$x3+$b;
+
+            parser::Assignment->Allow;
+            $ansSI=Formula("y=$m*x+$b")->reduce;
+          </pg-code>
+          <statement>
+            <p>Scientists are conducting an experiment with a gas in a sealed container. The mass of the gas is measured, and the scientists realize that the gas is leaking over time in a linear way. Each minute, they lose <var name="$absM" /> grams. <var name="@numberWord($x1,capital=>1)@"/> minutes since the experiment started, the remaining gas had a mass of <var name="$y1"/> grams.</p>
+
+            <p>Let <m>x</m> be the number of minutes that have passed since the experiment started, and let <m>y</m> be the mass of the gas in grams at that moment. Use a linear equation to model the weight of the gas over time.</p>
+
+            <p><ol>
+              <li><p>Find this line's slope-intercept equation.</p></li>
+
+              <li><p><var name="$x3"/> minutes after the experiment started, how many grams of gas would be left?</p></li>
+
+              <li><p>If a linear model continues to be accurate, after how many minutes since the experiment started will all gas in the container will be gone?</p></li>
+            </ol></p>
+          </statement>
+          <answer><p><ol>
+            <li><p><m><var name="$ansSI"/></m></p></li>
+            <li><p><var name="$y3"/> grams</p></li>
+            <li><p><var name="$x4"/> minutes</p></li>
+            </ol></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="PrT">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+            Context()->variables->add(y=>'Real');
+            Context()->noreduce('(-x)-y','(-x)+y');
+            Context()->flags->set(showExtraParens=>0);
+
+            $x4=random(40,50,1);
+            $y4=0;
+
+            $m= -random(11,99,1)/10;
+            $absM = abs($m);
+            $b= -$m*$x4;
+
+            $x1=random(5,10,1);
+            $y1=$m*$x1+$b;
+            $x2=random(11,19,1);
+            $y2=$m*$x2+$b;
+            $x3=random(30,40,1);
+            $y3=$m*$x3+$b;
+
+            parser::Assignment->Allow;
+            $ansSI=Formula("y=$m*x+$b")->reduce;
+          </pg-code>
+          <statement>
+            <p>Scientists are conducting an experiment with a gas in a sealed container. The mass of the gas is measured, and the scientists realize that the gas is leaking over time in a linear way. Each minute, they lose <var name="$absM" /> grams. <var name="@numberWord($x1,capital=>1)@"/> minutes since the experiment started, the remaining gas had a mass of <var name="$y1"/> grams.</p>
+
+            <p>Let <m>x</m> be the number of minutes that have passed since the experiment started, and let <m>y</m> be the mass of the gas in grams at that moment. Use a linear equation to model the weight of the gas over time.</p>
+
+            <p><ol>
+              <li><p>Find this line's slope-intercept equation.</p></li>
+
+              <li><p><var name="$x3"/> minutes after the experiment started, how many grams of gas would be left?</p></li>
+
+              <li><p>If a linear model continues to be accurate, after how many minutes since the experiment started will all gas in the container will be gone?</p></li>
+            </ol></p>
+          </statement>
+          <answer><p><ol>
+            <li><p><m><var name="$ansSI"/></m></p></li>
+            <li><p><var name="$y3"/> grams</p></li>
+            <li><p><var name="$x4"/> minutes</p></li>
+            </ol></p>
+          </answer>
+        </webwork>
+      </exercise>
+
+
+      <!-- <exercise permid="PrT">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FindLineEquationApplication80.pg" />
       </exercise>
       <exercise permid="vzc">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FindLineEquationApplication80.pg" />
-      </exercise>
+      </exercise> -->
     </exercisegroup>
     
     <exercisegroup permid="HdA">

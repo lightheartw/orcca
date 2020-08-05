@@ -1985,6 +1985,54 @@ return $ans;
             </statement>
         </webwork>
       </exercise>
+      <exercise>
+        <webwork>
+            <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
+            
+<pg-code>
+$sqft = random(90,200,1);
+$sqftU = NumberWithUnits("$sqft ft^2");
+$sex = list_random('female','male');
+$name = RandomName(sex=>$sex);
+$Pronoun = ($sex eq 'male') ? 'He' : 'She';
+$pronoun = lc($Pronoun);
+$sqyd = $sqft/9;
+$conversion = {factor => 0.9144, m => 1};
+$sqydU = NumberWithUnits("$sqyd yd^2",
+{newUnit=>[
+{name=>'yd', conversion => $conversion},
+{name=>'yard', conversion => $conversion},
+{name=>'yards', conversion => $conversion},
+]}
+);
+$evaluator = $sqydU->cmp->withPostFilter(sub {
+my $ans = shift;
+if ($ans->{score}) {
+my $correct = $ans->{correct_value};
+my $student = $ans->{student_value};
+my %goodunits = map { $_ => 1 } ('yd^2','yard^2','yards^2');
+if (!exists($goodunits{$student->{units}})) {
+$ans->{ans_message} = "Your answer is equivalent to the correct answer, but it uses the wrong units";
+$ans->score(0);
+}
+}
+return $ans;
+});
+</pg-code>
+            
+            <statement>
+              <p>
+                <var name="$name"/>'s bedroom has <m><var name="$sqftU"/></m> of floor.
+                <var name="$Pronoun"/> would like to carpet the floor,
+                but carpeting is sold by the square yard.
+                How many square yards of carpeting will <var name="$pronoun"/> need to get?
+              </p>
+              <p>
+                <var name="$evaluator" width="20"/>
+              </p>
+            </statement>
+        </webwork>
+      </exercise>
 <!-- petrol -->
       <exercise permid="gRH">
         <webwork>
@@ -2031,6 +2079,56 @@ return $ans;
                 How many gallons is that?
               </p>
               <p permid="Fgj">
+                <var name="$evaluator" width="20"/>
+              </p>
+            </statement>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+            <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
+            
+<pg-code>
+$liters = random(26,50,1);
+$litersU = NumberWithUnits("$liters L");
+$sex = list_random('female','male');
+$name = RandomName(sex=>$sex);
+$Pronoun = ($sex eq 'male') ? 'He' : 'She';
+$pronoun = lc($Pronoun);
+$gallons = $liters/3.785;
+$conversion = {factor => 0.003785, m => 3};
+$gallonsU = NumberWithUnits("$gallons gal",
+{newUnit=>[
+{name=>'gal', conversion => $conversion},
+{name=>'gallon', conversion => $conversion},
+{name=>'gallons', conversion => $conversion},
+]}
+);
+$evaluator = $gallonsU->cmp->withPostFilter(sub {
+my $ans = shift;
+if ($ans->{score}) {
+my $correct = $ans->{correct_value};
+my $student = $ans->{student_value};
+my %goodunits = map { $_ => 1 } ('gal','gallon','gallons');
+if (!exists($goodunits{$student->{units}})) {
+$ans->{ans_message} = "Your answer is equivalent to the correct answer, but it uses the wrong units";
+$ans->score(0);
+}
+}
+return $ans;
+});
+</pg-code>
+            
+            <statement>
+              <p>
+                <var name="$name"/> is traveling in Europe and renting a car.
+                <var name="$Pronoun"/> is used to thinking of gasoline amounts in gallons,
+                but in Europe it is sold in liters.
+                After filling the gas tank,
+                <var name="$pronoun"/> notices it took <m><var name="$litersU"/></m> of gas.
+                How many gallons is that?
+              </p>
+              <p>
                 <var name="$evaluator" width="20"/>
               </p>
             </statement>

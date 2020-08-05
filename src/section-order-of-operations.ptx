@@ -736,8 +736,9 @@ Context("LimitedNumeric");
   <subsection permid="EPG">
     <title>More Examples</title>
     <p permid="zRF">
-      Here are some example exercises that involve applying the order of operations to more complicated expressions.
-      Try these exercises and read the steps given in each solution.
+      Here are some example exercises that involve applying the order of operations to more complicated expressions.</p>
+
+      <p>Carefully follow these examples, step by step. Then, try to work through the checkpoint exercises on your own. Afterwards, check your answers and then read through the worked out solution, if you don't obtain the correct answer, to see if you can determine your mistake.
     </p>
     <example permid="DYI">
 <!-- <webwork> --> <!-- when toggling whether or not a ww, also toggle exercise vs example -->
@@ -1435,11 +1436,11 @@ $ans[$i]=($b[$i]&lt;0)?$b[$i]**$p[$i]:-$b[$i]**$p[$i];
 <webwork source="Contrib/PCC/BasicMath/OrderOfOperations_More/orderOfOperations164.pg" />
 </exercise> -->
     </exercisegroup>
-    <exercisegroup permid="dsq">
+    <!-- <exercisegroup permid="dsq">
       <title>Challenge</title>
-      <exercise permid="OxN">
+      <exercise permid="OxN"> -->
 <!-- Kara's challenge problem -->
-        <webwork>
+        <!-- <webwork>
             <statement>
               <p permid="AWY">
                 In this challenge, your job is to create expressions,
@@ -1485,6 +1486,6 @@ $ans[$i]=($b[$i]&lt;0)?$b[$i]**$p[$i]:-$b[$i]**$p[$i];
             </solution>
         </webwork>
       </exercise>
-    </exercisegroup>
+    </exercisegroup> -->
   </exercises>
 </section>

@@ -605,14 +605,13 @@ Context()->parens->set('('=>{type=>'Point'});
           <p permid="RKW">
             A function, <m>f</m> is defined by the ordered pairs <m>\{(-13,13),(-20,17),(-6,4),(-3,7),(-7,-5)\}</m>.
             Find the domain and range of <m>f</m>.
-          </p>
-          <p permid="xSf">
-            The domain of <m>f</m> is <var name="$set1" evaluator="$setev1" width="30" />.
-          </p>
-          <p permid="dZo">
-            The range of <m>f</m> is <var name="$set2" evaluator="$setev2" width="30" />.
-          </p>
+          </p> 
         </statement>
+        <answer>
+          <p>
+            The domain of <m>f</m> is <var name="$set1"/>. The range of <m>f</m> is <var name="$set2"/>.
+          </p>
+          </answer>
         </webwork>
       </exercise>
       <exercise permid="Iyo">
@@ -632,13 +631,12 @@ Context()->parens->set('('=>{type=>'Point'});
             A function, <m>g</m> is defined by the ordered pairs <m>\{(-17,-13),(-6,3),(1,10),(-1,3)\}</m>.
             Find the domain and range of <m>g</m>.
           </p>
-          <p permid="qnG">
-            The domain of <m>g</m> is <var name="$set1" evaluator="$setev1" width="30" />.
-          </p>
-          <p permid="WuP">
-            The range of <m>g</m> is <var name="$set2" evaluator="$setev2" width="30" />.
-          </p>
         </statement>
+        <answer>
+          <p>
+            The domain of <m>g/m> is <var name="$set1"/>. The range of <m>g</m> is <var name="$set2"/>.
+          </p>
+          </answer>
         </webwork>
       </exercise>
     </exercisegroup>
@@ -662,39 +660,248 @@ Context()->parens->set('('=>{type=>'Point'});
         <webwork source="Library/Mizzou/Algebra/rational_expressions_domain/domain_04.pg" />
       </exercise>
 <!-- Simplify -->
-      <exercise permid="tpq">
+      <exercise>
+        <webwork>
+          <pg-code>
+            $a= non_zero_random(-4,4,1);
+            do {$b= non_zero_random(-5,5,1);} while ($a==$b);
+
+            $f = Formula("(x^2 + ($a + $b)x + $a*$b)/(x + $a)")->reduce->TeX;
+            $ans = Formula("x+$b");
+          </pg-code>
+          <statement>
+            <p>Simplify the rational expression: <var name="$f"/>.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="tpq">
         <webwork source="Library/CollegeOfIdaho/setAlgebra_06_01_MultDivRationalExpressions/61IntAlg_07_MultDivRatExp.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            $a= random(2,5,1);
+            $b= non_zero_random(-5,5,1);
+            $c = non_zero_random(-7,7,1);
+
+            $f = Formula("($a x + $a*$b)/(x^2 + ($b + $c)x + $b*$c)")->reduce->TeX;
+            $ans = "$a/(x+$c)";
+          </pg-code>
+          <statement>
+            <p>Simplify the rational expression: <var name="$f"/>.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="Zwz">
+      <!-- <exercise permid="Zwz">
         <webwork source="Library/CollegeOfIdaho/setAlgebra_06_01_MultDivRationalExpressions/61IntAlg_08_MultDivRatExp.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            $a = non_zero_random(-5,5,1);
+            $b = non_zero_random(-5,5,1);
+            $c = $a + non_zero_random(-3,3,1);
+            $f = Formula("(x^2 + ($a + $b)x + $a*$b)/(x^2 + ($b + $c)x + $b*$c)")->reduce->TeX;
+            $ans = "(x+$a)/(x+$c)";
+          </pg-code>
+          <statement>
+            <p>Simplify the rational expression: <var name="$f"/>.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="FDI">
+      <!-- <exercise permid="FDI">
         <webwork source="Library/CollegeOfIdaho/setAlgebra_06_01_MultDivRationalExpressions/61IntAlg_09_MultDivRatExp.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            $a = non_zero_random(-7,7,1);
+            do {$b = random(1,5,1)} while (-1*$b==$a);
+
+            $f = Formula("(x^2 + ($a+$b)x + $a*$b)/(x^2 - $b^2)")->reduce->TeX;
+            $ans = "(x+$a)/(x-$b)";
+          </pg-code>
+          <statement>
+            <p>Simplify the rational expression: <var name="$f"/>.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="lKR">
+      <!-- <exercise permid="lKR">
         <webwork source="Library/CollegeOfIdaho/setAlgebra_06_01_MultDivRationalExpressions/61IntAlg_11_MultDivRatExp.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            $a = random(2,5,1);
+            do {$b = non_zero_random(-5,5,1);} until (gcd($a,$b)==1);
+            do {$c = random(2,5,1);} while ($a==$c);
+            do {$d = non_zero_random(-5,5,1);} until (gcd($c,$d)==1);
+            $e = non_zero_random(-3,3,1);
+
+            $f = Formula("(($a*$c)x^2 + ($a*$d+$b*$c)x + $b*$d)/($a x^2 + ($a*$e+$b)x + $b*$e)")->reduce->TeX;
+            $ans = "($c*x+$d)/(x+$e)";
+          </pg-code>
+          <statement>
+            <p>Simplify the rational expression: <var name="$f"/>.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="RSa">
+      <!-- <exercise permid="RSa">
         <webwork source="Library/CollegeOfIdaho/setAlgebra_06_01_MultDivRationalExpressions/61IntAlg_12_MultDivRatExp.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            $a = non_zero_random(-7,7,1);
+            $b = random(1,5,2);
+            $c = non_zero_random(-2,2,1);
+            do {$d = non_zero_random(-5,5,1);} until (gcd($a,$d)==1);
+
+            Context("RationalFunction");
+
+            $f = Formula("($b x + $a)/($b x^2 + $c x + $d)")->reduce;
+<!-- #$rationalexp = $f->string; -->
+
+            $function = $f->TeX;
+          </pg-code>
+          <statement>
+            <p>Simplify the rational expression, if possible: <var name="$f"/>.</p>
+          </statement>
+          <answer>
+            <p>Does not simplify.</p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="xZj">
+      <!-- <exercise permid="xZj">
         <webwork source="Library/CollegeOfIdaho/setAlgebra_06_01_MultDivRationalExpressions/61IntAlg_13_MultDivRatExp.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            $a = non_zero_random(-5,5,1);
+            $b = random(2,5,1);
+
+            $f = Formula("(x^3 + $a x^2 + $b x + $a*$b)/(x + $a)")->reduce->TeX;
+            $ans = "x^2+$b";
+          </pg-code>
+          <statement>
+            <p>Simplify the rational expression, if possible: <var name="$f"/>.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="egs">
+      <!-- <exercise permid="egs">
         <webwork source="Library/CollegeOfIdaho/setAlgebra_06_01_MultDivRationalExpressions/61IntAlg_14_MultDivRatExp.pg" />
-      </exercise>
+      </exercise> -->
+      
       <exercise permid="KnB">
         <webwork source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions141.pg" />
       </exercise>
       <exercise permid="quK">
         <webwork source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions141.pg" />
       </exercise>
-      <exercise permid="WBT">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("RestrictedDomains");
+            Context()->noreduce('(-x)-y','(-x)+y');
+            $var = RandomVariableName(type=>'variable');
+            Context()->variables->are($var=>'Real');
+            $R = RandomVariableName(type=>'function');
+
+
+            $a = non_zero_random(-5,5,1);
+            $a2 = $a**2;
+            $b = list_random(2,3,5);
+            do {$c = non_zero_random(-3,3,1);} until (gcd($b,abs($c))==1); 
+            $d = $a*$b+$c;
+
+            $num = Formula("$var**4+2*$a*$var**3+$a2*$var**2")->reduce;
+            $den = Formula("$b*$var**4+$d*$var**3+$a*$c*$var**2")->reduce;
+            $numFactored = Formula("$var**2*($var+$a)**2")->reduce;
+            $denFactored = Formula("$var**2*($b*$var+$c)($var+$a)")->reduce;
+
+            $step1Num = Formula("$var**2($var**2+2*$a*$var+$a2)")->reduce;
+            $step1Den = Formula("$var**2($b*$var**2+$d*$var+$a*$c)")->reduce;
+
+            $function = Formula("$num/$den")->reduce;
+            $ans = Formula("($var+$a)/($b*$var+$c), $var != -$a and $var != 0")->reduce;
+            $ans->{trueDomain} = Compute("$var != -$a and $var != 0 and $var != -$c/$b");
+
+            $lostDomain = List(-$a,0);
+          </pg-code>
+          <statement>
+            <p>Simplify the function formula, and if applicable, write the restricted domain.
+              <m><var name="$R"/>(<var name="$var"/>) = <var name="$function"/></m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("RestrictedDomains");
+            Context()->noreduce('(-x)-y','(-x)+y');
+            $var = RandomVariableName(type=>'variable');
+            Context()->variables->are($var=>'Real');
+            $R = RandomVariableName(type=>'function');
+
+
+            $a = non_zero_random(-5,5,1);
+            $a2 = $a**2;
+            $b = list_random(2,3,5);
+            do {$c = non_zero_random(-3,3,1);} until (gcd($b,abs($c))==1); 
+            $d = $a*$b+$c;
+
+            $num = Formula("$var**4+2*$a*$var**3+$a2*$var**2")->reduce;
+            $den = Formula("$b*$var**4+$d*$var**3+$a*$c*$var**2")->reduce;
+            $numFactored = Formula("$var**2*($var+$a)**2")->reduce;
+            $denFactored = Formula("$var**2*($b*$var+$c)($var+$a)")->reduce;
+
+            $step1Num = Formula("$var**2($var**2+2*$a*$var+$a2)")->reduce;
+            $step1Den = Formula("$var**2($b*$var**2+$d*$var+$a*$c)")->reduce;
+
+            $function = Formula("$num/$den")->reduce;
+            $ans = Formula("($var+$a)/($b*$var+$c), $var != -$a and $var != 0")->reduce;
+            $ans->{trueDomain} = Compute("$var != -$a and $var != 0 and $var != -$c/$b");
+
+            $lostDomain = List(-$a,0);
+          </pg-code>
+          <statement>
+            <p>Simplify the function formula, and if applicable, write the restricted domain.
+              <m><var name="$R"/>(<var name="$var"/>) = <var name="$function"/></m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+
+      <!-- <exercise permid="WBT">
         <webwork source="Contrib/PCC/BasicAlgebra/RationalFunctions/reduceRationalFunction30.pg" />
       </exercise>
       <exercise permid="CJc">
         <webwork source="Contrib/PCC/BasicAlgebra/RationalFunctions/reduceRationalFunction30.pg" />
-      </exercise>
+      </exercise> -->
 <!-- <exercise>
 <webwork source="Contrib/PCC/BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph50.pg" />
 </exercise>
@@ -1000,12 +1207,78 @@ $gr->lb( new Label($tMax-$marksep[0]/8, $fMax+$marksep[1]/8, "($tMaxR,$fMaxR)",'
 <!-- </solution>
 </exercise> -->
 <!-- Applications -->
-      <exercise permid="IcP">
+      <exercise>
+        <webwork>
+          <pg-code>
+            $sex1 = list_random('male','female');
+            $pronoun1 = ($sex1 eq 'male') ? 'he' : 'she';
+            $ob1 = ($sex1 eq 'male') ? 'him' : 'her';
+            $Pronoun1 = ucfirst($pronoun1);
+            $name1 = RandomName(sex=>$sex1);
+
+            $sex2 = list_random('male','female');
+            $pronoun2 = ($sex2 eq 'male') ? 'he' : 'she';
+            $ob2 = ($sex2 eq 'male') ? 'him' : 'her';
+            $Pronoun2 = ucfirst($pronoun2);
+            $name2 = RandomName(sex=>$sex2);
+
+            Context("Numeric");
+            Context()->noreduce('(-x)-y','(-x)+y');
+            Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0,             formatStudentAnswer=>parsed);
+
+            do {
+              $a = random(5,20,1);
+              do {$b = random(5,20,1);} until ($a!=$b);
+              $ans = Compute(($a*$b)/($a+$b));
+            } until ($ans*10==int($ans*10));
+
+            $commonD = Formula("$a*$b*x");
+          </pg-code>
+          <statement>
+            <p><var name="$name1"/> and <var name="$name2"/> are working together to paint a room. If <var name="$name1"/> paints the room alone, it would take <var name="$ob1"/> <var name="$a"/> hours to complete the job. If <var name="$name2"/> paints the room alone, it would take <var name="$ob2"/> <var name="$b"/> hours to complete the job. If they work together, how many hours would it take to complete the job?</p>
+          </statement>
+          <answer>
+            <p><var name="$ans"/> hours</p>
+          </answer>
+        </webwork>
+      </exercise>
+
+      <!-- <exercise permid="IcP">
         <webwork source="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication10.pg" seed="3" />
+      </exercise> -->
+      
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+            Context()->noreduce('(-x)-y','(-x)+y');
+            Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0, formatStudentAnswer=>parsed);
+
+            do {
+              $a = random(3.5,7.5,1);
+              $b = random(2,20,1);
+              $ans1 = Compute(($a+1)*$b/$a);
+            } until ($ans1==int($ans1));
+
+            $commonD = Formula("$a*$b*x");
+            $ans2 = Compute($ans1*$a);
+          </pg-code>
+          <statement>
+            <p>Two pipes are being used to fill a tank. Pipe A can fill the tank <var name="$a"/> times as fast as Pipe B does. When both pipes are turned on, it takes <var name="$b"/> hours to fill the tank. Answer the following questions:</p>
+
+            <p>If only Pipe A is turned on, how long would it take to fill the tank?</p>
+            <p>If only Pipe B is turned on, how long would it take to fill the tank?</p>
+          </statement>
+          <answer>
+            <p><var name="$ans1"/> hours; <var name="$ans2"/> hours</p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="ojY">
+
+      <!-- <exercise permid="ojY">
         <webwork source="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication25.pg" />
-      </exercise>
+      </exercise> -->
+      
       <exercise permid="Urh">
         <webwork source="Library/Mizzou/Intermediate_Algebra/Equations_Rational/App_Biker_Walker.pg" />
       </exercise>

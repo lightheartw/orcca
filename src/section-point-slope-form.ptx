@@ -819,24 +819,301 @@ Make a graph and interpreting it given an application -->
       <exercise permid="SMu">
         <webwork source="Contrib/PCC/BasicAlgebra/PointSlopeForm/PointSlopeBasicsORCCA30.pg" />
       </exercise>
-      <exercise permid="yTD">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->variables->add(y=>'Real');
+Context()->noreduce('(-x)-y','(-x)+y');
+Context()->flags->set(showExtraParens=>0);
+
+$m=random(2,5,1);
+$b=random(1,10,1);
+
+$x1=random(1,5,1);
+$y1=$m*$x1+$b;
+$x2=random(1,5,1);
+while ($x2==$x1) {$x2=random(1,5,1);}
+$y2=$m*$x2+$b;
+
+Context()->texStrings;
+$ansPSstringTeX1 = "y-$y1=$m(x-$x1)"; 
+Context()->normalStrings;
+$ansPSstring1 = "y-$y1=$m(x-$x1)";
+
+Context()->texStrings;
+$ansPSstringTeX2 = "y-$y2=$m(x-$x2)"; 
+Context()->normalStrings;
+$ansPSstring2 = "y-$y2=$m(x-$x2)";
+
+
+Context("ImplicitPlane");
+Context()->variables->are(x=>'Real',y=>'Real');
+Context()->flags->set(showExtraParens=>0);
+Context()->flags->set(showExtraParens=>0);
+$ansPS1 = ImplicitPlane("$ansPSstring1");
+$ansPS2 = ImplicitPlane("$ansPSstring2");
+          </pg-code>
+          <statement>
+            <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->variables->add(y=>'Real');
+Context()->noreduce('(-x)-y','(-x)+y');
+Context()->flags->set(showExtraParens=>0);
+
+$m=random(2,5,1);
+$b=random(1,10,1);
+
+$x1=random(1,5,1);
+$y1=$m*$x1+$b;
+$x2=random(1,5,1);
+while ($x2==$x1) {$x2=random(1,5,1);}
+$y2=$m*$x2+$b;
+
+Context()->texStrings;
+$ansPSstringTeX1 = "y-$y1=$m(x-$x1)"; 
+Context()->normalStrings;
+$ansPSstring1 = "y-$y1=$m(x-$x1)";
+
+Context()->texStrings;
+$ansPSstringTeX2 = "y-$y2=$m(x-$x2)"; 
+Context()->normalStrings;
+$ansPSstring2 = "y-$y2=$m(x-$x2)";
+
+
+Context("ImplicitPlane");
+Context()->variables->are(x=>'Real',y=>'Real');
+Context()->flags->set(showExtraParens=>0);
+Context()->flags->set(showExtraParens=>0);
+$ansPS1 = ImplicitPlane("$ansPSstring1");
+$ansPS2 = ImplicitPlane("$ansPSstring2");
+          </pg-code>
+          <statement>
+            <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+
+      <!-- <exercise permid="yTD">
         <webwork source="Contrib/PCC/BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquationORCCA10.pg" />
       </exercise>
       <exercise permid="faM">
         <webwork source="Contrib/PCC/BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquationORCCA10.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->variables->add(y=>'Real');
+Context()->noreduce('(-x)-y','(-x)+y');
+Context()->flags->set(showExtraParens=>0);
+
+$m=-random(2,5,1);
+$b=random(1,10,1);
+
+$x1=random(-5,5,1);
+$y1=$m*$x1+$b;
+$x2=random(-5,5,1);
+while ($x2==$x1) {$x2=random(-5,5,1);}
+$y2=$m*$x2+$b;
+
+Context()->texStrings;
+$ansPSstringTeX1 = "y-$y1=$m(x-$x1)"; 
+Context()->normalStrings;
+$ansPSstring1 = "y-$y1=$m(x-$x1)";
+
+Context()->texStrings;
+$ansPSstringTeX2 = "y-$y2=$m(x-$x2)"; 
+Context()->normalStrings;
+$ansPSstring2 = "y-$y2=$m(x-$x2)";
+
+
+Context("ImplicitPlane");
+Context()->variables->are(x=>'Real',y=>'Real');
+Context()->flags->set(showExtraParens=>0);
+Context()->flags->set(showExtraParens=>0);
+$ansPS1 = ImplicitPlane("$ansPSstring1");
+$ansPS2 = ImplicitPlane("$ansPSstring2");
+          </pg-code>
+          <statement>
+            <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="LhV">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+Context()->variables->add(y=>'Real');
+Context()->noreduce('(-x)-y','(-x)+y');
+Context()->flags->set(showExtraParens=>0);
+
+$m=-random(2,5,1);
+$b=random(1,10,1);
+
+$x1=random(-5,5,1);
+$y1=$m*$x1+$b;
+$x2=random(-5,5,1);
+while ($x2==$x1) {$x2=random(-5,5,1);}
+$y2=$m*$x2+$b;
+
+Context()->texStrings;
+$ansPSstringTeX1 = "y-$y1=$m(x-$x1)"; 
+Context()->normalStrings;
+$ansPSstring1 = "y-$y1=$m(x-$x1)";
+
+Context()->texStrings;
+$ansPSstringTeX2 = "y-$y2=$m(x-$x2)"; 
+Context()->normalStrings;
+$ansPSstring2 = "y-$y2=$m(x-$x2)";
+
+
+Context("ImplicitPlane");
+Context()->variables->are(x=>'Real',y=>'Real');
+Context()->flags->set(showExtraParens=>0);
+Context()->flags->set(showExtraParens=>0);
+$ansPS1 = ImplicitPlane("$ansPSstring1");
+$ansPS2 = ImplicitPlane("$ansPSstring2");
+          </pg-code>
+          <statement>
+            <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="LhV">
         <webwork source="Contrib/PCC/BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquationORCCA20.pg" />
       </exercise>
       <exercise permid="rpe">
         <webwork source="Contrib/PCC/BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquationORCCA20.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Fraction");
+Context()->variables->add(y=>'Real');
+Context()->noreduce('(-x)-y','(-x)+y');
+Context()->flags->set(showExtraParens=>0);
+
+$num=random(1,9,1);
+$den=random(2,9,1);
+while (gcd($num,$den)!=1) {$den=random(2,9,1);}
+
+$m=Fraction($num,$den);
+$b=non_zero_random(-10,10,1);
+
+$x1=$den*random(-3,3,1);
+$y1=$m*$x1+$b;
+$x2=$den*random(-3,3,1);
+while ($x2==$x1) {$x2=$den*random(-3,3,1);}
+$y2=$m*$x2+$b;
+
+$left1 = Formula("y-$y1")->reduce;
+$right1 = Formula("$m*(x-$x1)")->reduce;
+$left2 = Formula("y-$y2")->reduce;
+$right2 = Formula("$m*(x-$x2)")->reduce;
+
+Context()->texStrings;
+$ansPSstringTeX1 = "y-$y1=$m(x-$x1)"; 
+Context()->normalStrings;
+$ansPSstring1 = "y-$y1=$m(x-$x1)";
+
+Context()->texStrings;
+$ansPSstringTeX2 = "y-$y2=$m(x-$x2)"; 
+Context()->normalStrings;
+$ansPSstring2 = "y-$y2=$m(x-$x2)";
+
+
+Context("ImplicitPlane");
+Context()->variables->are(x=>'Real',y=>'Real');
+Context()->flags->set(showExtraParens=>0);
+Context()->flags->set(showExtraParens=>0);
+$ansPS1 = ImplicitPlane("$ansPSstring1");
+$ansPS2 = ImplicitPlane("$ansPSstring2");
+          </pg-code>
+          <statement>
+            <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="Xwn">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Fraction");
+Context()->variables->add(y=>'Real');
+Context()->noreduce('(-x)-y','(-x)+y');
+Context()->flags->set(showExtraParens=>0);
+
+$num=random(1,9,1);
+$den=random(2,9,1);
+while (gcd($num,$den)!=1) {$den=random(2,9,1);}
+
+$m=Fraction($num,$den);
+$b=non_zero_random(-10,10,1);
+
+$x1=$den*random(-3,3,1);
+$y1=$m*$x1+$b;
+$x2=$den*random(-3,3,1);
+while ($x2==$x1) {$x2=$den*random(-3,3,1);}
+$y2=$m*$x2+$b;
+
+$left1 = Formula("y-$y1")->reduce;
+$right1 = Formula("$m*(x-$x1)")->reduce;
+$left2 = Formula("y-$y2")->reduce;
+$right2 = Formula("$m*(x-$x2)")->reduce;
+
+Context()->texStrings;
+$ansPSstringTeX1 = "y-$y1=$m(x-$x1)"; 
+Context()->normalStrings;
+$ansPSstring1 = "y-$y1=$m(x-$x1)";
+
+Context()->texStrings;
+$ansPSstringTeX2 = "y-$y2=$m(x-$x2)"; 
+Context()->normalStrings;
+$ansPSstring2 = "y-$y2=$m(x-$x2)";
+
+
+Context("ImplicitPlane");
+Context()->variables->are(x=>'Real',y=>'Real');
+Context()->flags->set(showExtraParens=>0);
+Context()->flags->set(showExtraParens=>0);
+$ansPS1 = ImplicitPlane("$ansPSstring1");
+$ansPS2 = ImplicitPlane("$ansPSstring2");
+          </pg-code>
+          <statement>
+            <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+          </statement>
+          <answer>
+            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="Xwn">
         <webwork source="Contrib/PCC/BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquationORCCA30.pg" />
       </exercise>
       <exercise permid="DDw">
         <webwork source="Contrib/PCC/BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquationORCCA30.pg" />
-      </exercise>
+      </exercise> -->
       <exercise permid="jKF">
         <webwork source="Contrib/PCC/BasicAlgebra/PointSlopeForm/FindLineEquationORCCA10.pg" />
       </exercise>

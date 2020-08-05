@@ -870,24 +870,161 @@ $cost=Currency(4.80);
       <exercise permid="WTx">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentApplicationType3_60.pg" />
       </exercise>
-      <exercise permid="DaG">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("LimitedNumeric");
+
+            $whole = random(20,50,1);
+            $per=random(10,20,1);
+            $dec=$per/100;
+            $part = $dec*$whole;
+
+            Context("Currency");
+
+            $wholeC = Currency("$whole");
+            $partC = Currency("$part");
+
+
+            $sex = list_random('male','female');
+            $name = RandomName(sex=>$sex);
+            $pronoun = ($sex eq 'male') ? 'he' : 'she';
+            $possessive = ($sex eq 'male') ? 'his' : 'her';
+          </pg-code>
+          <statement>
+            <p><var name="$name"/> paid for a dinner and left <var name="$per"/>%, or <var name="$partC"/>, in tips. How much was the original bill (without counting the tip)?</p>
+          </statement>
+          <answer>
+            <p><var name="$wholeC"/></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("LimitedNumeric");
+
+            $whole = random(20,50,1);
+            $per=random(10,20,1);
+            $dec=$per/100;
+            $part = $dec*$whole;
+
+            Context("Currency");
+
+            $wholeC = Currency("$whole");
+            $partC = Currency("$part");
+
+
+            $sex = list_random('male','female');
+            $name = RandomName(sex=>$sex);
+            $pronoun = ($sex eq 'male') ? 'he' : 'she';
+            $possessive = ($sex eq 'male') ? 'his' : 'her';
+          </pg-code>
+          <statement>
+            <p><var name="$name"/> paid for a dinner and left <var name="$per"/>%, or <var name="$partC"/>, in tips. How much was the original bill (without counting the tip)?</p>
+          </statement>
+          <answer>
+            <p><var name="$wholeC"/></p>
+          </answer>
+        </webwork>
+      </exercise>
+
+      <!-- <exercise permid="DaG">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentApplicationType3_80.pg" />
       </exercise>
       <exercise permid="jhP">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentApplicationType3_80.pg" />
-      </exercise>
+      </exercise> -->
+
       <exercise permid="PoY">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentApplicationType2_50.pg" />
       </exercise>
       <exercise permid="vwh">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentApplicationType2_50.pg" />
       </exercise>
+
+      <!-- <exercise>
+        <webwork>
+          <pg-code>
+            TEXT(beginproblem());
+$refreshCachedImages = 1;
+Context("LimitedNumeric");
+
+$whole = random(50,80,5);
+$per=random(10,20,2);
+$dec=$per/100;
+$part = $dec*$whole;
+
+$partU = NumberWithUnits("$part g");
+$wholeU = NumberWithUnits("$whole g");
+
+$yCover = 21;
+$ystep = 1;
+$xCover = 10;
+$xstep = 1;
+
+$xmin = -$xstep;         #The viewing window
+$xmax = $xCover+$xstep;
+$ymin = -$ystep;
+$ymax = $yCover+$ystep;
+
+$picture = init_graph($xmin,$ymin,$xmax,$ymax,
+      pixels=>[400,400]);
+$picture->lb('reset');
+
+for my $i (0..$yCover) {
+   $picture->moveTo(0,$i*$ystep);
+   $picture->lineTo($xmax-$xstep, $i*$ystep, black,2);
+}
+
+$picture->moveTo(0,0);
+$picture->lineTo(0, $ymax-$ystep, black,2);
+$picture->moveTo($xmax-$xstep,0);
+$picture->lineTo($xmax-$xstep, $yCover*$ystep, black,2);
+
+@names = ("Iron 3 mg","Calcium 2 mg","Vitamin C 2 mg","Vitamin A 2 mg","","Protein 5 g","   Sugars 5 g","   Dietary Fiber 0 g","Total Carbohydrate 30 g","Sodium 400 mg","Cholesterol 30 mg","   Trans Fat 2 g","   Saturated Fat 2 g","Total Fat $partU","","Calories 300","Amount Per Serving","","Servings Per Container 2","Serving Size 1 cup","Nutrition Facts");
+
+@percents = ("4%","20%","2.5%","3%","","","","0%","11%","20%","10%","","15%","$per%","% Daily Value","Calories from Fat 110","","","","","");
+
+$alt = "The picture shows a nutrition fact label from the box of a certain brand of macaroni and cheese. From the top row down, it reads: ";
+for my $i (0..$yCover-1) {
+   $picture->lb( new Label(0.1,$i+0.1,"$names[$i]",'black','left','bottom'));
+   $picture->lb( new Label($xmax-$xstep-0.1,$i+0.1, 
+      "$percents[$i]",'black','right','bottom'));
+   $rowNum = $i+1;
+   $alt = $alt."Row $rowNum: $names[$yCover-1-$i] $percents[$yCover-1-$i]; "
+}
+$highlight = 13;
+$picture->fillRegion([$xstep,$ystep*$highlight+0.1,"yellow"]);
+chop($alt);chop($alt);
+$alt = $alt." The row $names[$highlight] $percents[$highlight] is highlighted.";
+          </pg-code>
+          <statement>
+            <p>The following is a nutrition fact label from a certain macaroni and cheese box.</p>
+            <sidebyside widths="40%">
+            <image pg-name="$picture"/>
+            </sidebyside>
+
+            <p>The highlighted row means each serving of macaroni and cheese in this box contains <var name="$partU"/> of fat, which is <var name="$per"/>% of an average person's daily intake of fat. What's the recommended daily intake of fat for an average person?</p>
+
+          </statement>
+          <answer>
+            <p><var name="$wholeC"/></p>
+          </answer>
+        </webwork>
+      </exercise> -->
+
+
       <exercise permid="bDq">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentApplicationType3_110.pg" />
       </exercise>
       <exercise permid="HKz">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentApplicationType3_110.pg" />
       </exercise>
+
+      
+
+
       <exercise permid="nRI">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentApplicationType3_40.pg" />
       </exercise>
@@ -915,12 +1052,69 @@ $cost=Currency(4.80);
       <exercise permid="EPT">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentIncreaseDecrease10.pg" />
       </exercise>
-      <exercise permid="kXc">
+
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+
+            $original = random(20,200,20);
+            $per = random(5,45,5);
+            $dec = $per/100;
+            $decrease = $original*$dec;
+            $new = $original-$decrease;
+
+            Context("LimitedPercent-strict");
+            Context()->flags->set(
+              trimTrailingZeros => 1,
+              decimalPlaces => 0,
+              tolerance => 1,
+            );
+            $ans = Compute("$per %");
+          </pg-code>
+          <statement>
+            <p>The population of cats in a shelter decreased from <var name="$original"/> to <var name="$new"/>. What is the percentage decrease of the shelter's cat population?</p>
+          </statement>
+            <answer>
+              <p><var name="$ans"/></p>
+            </answer>
+          </webwork>
+        </exercise>
+        <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+
+            $original = random(20,200,20);
+            $per = random(5,45,5);
+            $dec = $per/100;
+            $decrease = $original*$dec;
+            $new = $original-$decrease;
+
+            Context("LimitedPercent-strict");
+            Context()->flags->set(
+              trimTrailingZeros => 1,
+              decimalPlaces => 0,
+              tolerance => 1,
+            );
+            $ans = Compute("$per %");
+          </pg-code>
+          <statement>
+            <p>The population of cats in a shelter decreased from <var name="$original"/> to <var name="$new"/>. What is the percentage decrease of the shelter's cat population?</p>
+          </statement>
+            <answer>
+              <p><var name="$ans"/></p>
+            </answer>
+          </webwork>
+        </exercise>
+
+
+      <!-- <exercise permid="kXc">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentIncreaseDecrease30.pg" />
       </exercise>
       <exercise permid="Rel">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentIncreaseDecrease30.pg" />
-      </exercise>
+      </exercise> -->
 <!--             <exercise>
 <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentIncreaseDecrease50.pg" />
 </exercise>
@@ -939,18 +1133,79 @@ $cost=Currency(4.80);
       <exercise permid="pGV">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentIncreaseDecrease110.pg" />
       </exercise>
+      
       <exercise permid="VOe">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentIncreaseDecrease95.pg" />
       </exercise>
       <exercise permid="BVn">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentIncreaseDecrease95.pg" />
       </exercise>
-      <exercise permid="icw">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Currency");
+Context()->currency->addSymbol("dollars","dollar");
+Context()->flags->set(trimTrailingZeros=>1);
+Context()->operators->undefine('+','-');
+
+$per = random(2,8,1);
+$dec = $per/100;
+$value0 = random(100000,500000,10000);
+$decrease0 = $dec*$value0;
+$value1 = $value0*(1-$per/100);
+$decrease1 = $dec*$value1;
+$value2 = $value1*(1-$per/100);
+
+$value0C = Currency($value0);
+$value1C = Currency($value1);
+$value2C = Currency($value2);
+$decrease0C = Currency($decrease0);
+$decrease1C = Currency($decrease1);
+          </pg-code>
+          <statement>
+            <p>A house was bought two years ago at the price of <var name="$value0C"/>. Each year, the house's value decreased by <var name="$per"/>%. What's the house's value this year?</p>
+          </statement>
+            <answer>
+              <p><var name="$value2C"/></p>
+            </answer>
+          </webwork>
+        </exercise>
+        <exercise>
+        <webwork>
+          <pg-code>
+            Context("Currency");
+Context()->currency->addSymbol("dollars","dollar");
+Context()->flags->set(trimTrailingZeros=>1);
+Context()->operators->undefine('+','-');
+
+$per = random(2,8,1);
+$dec = $per/100;
+$value0 = random(100000,500000,10000);
+$decrease0 = $dec*$value0;
+$value1 = $value0*(1-$per/100);
+$decrease1 = $dec*$value1;
+$value2 = $value1*(1-$per/100);
+
+$value0C = Currency($value0);
+$value1C = Currency($value1);
+$value2C = Currency($value2);
+$decrease0C = Currency($decrease0);
+$decrease1C = Currency($decrease1);
+          </pg-code>
+          <statement>
+            <p>A house was bought two years ago at the price of <var name="$value0C"/>. Each year, the house's value decreased by <var name="$per"/>%. What's the house's value this year?</p>
+          </statement>
+            <answer>
+              <p><var name="$value2C"/></p>
+            </answer>
+          </webwork>
+        </exercise>
+      <!-- <exercise permid="icw">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentIncreaseDecrease130.pg" />
       </exercise>
       <exercise permid="OjF">
         <webwork source="Contrib/PCC/BasicMath/Percent/MTH20PercentIncreaseDecrease130.pg" />
-      </exercise>
+      </exercise> -->
     </exercisegroup>
   </exercises>
 </section>

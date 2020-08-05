@@ -1791,8 +1791,17 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
       <exercise permid="bkI">
         <webwork source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction05.pg"  />
       </exercise>
+      <exercise permid="bkI">
+        <webwork source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction05.pg"  />
+      </exercise>
       <exercise permid="HrR">
         <webwork source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction10.pg"  />
+      </exercise>
+      <exercise permid="HrR">
+        <webwork source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction10.pg"  />
+      </exercise>
+      <exercise permid="nza">
+        <webwork source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction20.pg"  />
       </exercise>
       <exercise permid="nza">
         <webwork source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction20.pg"  />
@@ -1800,8 +1809,17 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
       <exercise permid="TGj">
         <webwork          source="Contrib/PCC/BasicMath/FractionsCalculation/ReduceFraction25.pg"  />
       </exercise>
+      <exercise permid="TGj">
+        <webwork          source="Contrib/PCC/BasicMath/FractionsCalculation/ReduceFraction25.pg"  />
+      </exercise>
       <exercise permid="zNs">
         <webwork source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction30.pg"  />
+      </exercise>
+      <exercise permid="zNs">
+        <webwork source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction30.pg"  />
+      </exercise>
+      <exercise permid="fUB">
+        <webwork source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction40.pg"  />
       </exercise>
       <exercise permid="fUB">
         <webwork source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction40.pg"  />

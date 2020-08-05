@@ -813,12 +813,6 @@ $paymentev[$i]=$payment->cmp(cmp_class =>"an amount of money");
       <exercise permid="tNh">
         <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluate100.pg" />
       </exercise>
-<!--             <exercise>
-<webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluate110.pg" />
-</exercise>
-<exercise>
-<webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluate110.pg" />
-</exercise> -->
       <exercise permid="ZUq">
         <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluate120.pg" />
       </exercise>
@@ -980,6 +974,7 @@ $paymentev[$i]=$payment->cmp(cmp_class =>"an amount of money");
 </exercise> -->
     </exercisegroup>
     <exercisegroup cols="2" permid="zCt">
+      <title>Applications, Using Common Formulas - Temperature </title>
       <exercise permid="mSC">
         <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/FahrenheitCelsius10.pg" />
       </exercise>
@@ -993,7 +988,9 @@ $paymentev[$i]=$payment->cmp(cmp_class =>"an amount of money");
         <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/FahrenheitCelsius10.pg" />
       </exercise>
     </exercisegroup>
+
     <exercisegroup cols="2" permid="fJC">
+      <title>Applications, Using Common Formulas - Projectile  Height </title>
       <exercise permid="Lvm">
         <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluateInContext10.pg" />
       </exercise>
@@ -1002,6 +999,7 @@ $paymentev[$i]=$payment->cmp(cmp_class =>"an amount of money");
       </exercise>
     </exercisegroup>
     <exercisegroup cols="2" permid="LQL">
+      <title>Applications of Formulas Continued</title>
       <exercise permid="XJE">
         <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/EvaluateFormula30.pg" />
       </exercise>

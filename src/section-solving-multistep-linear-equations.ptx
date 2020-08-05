@@ -945,6 +945,8 @@
       <exercise permid="OHR">
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses150.pg" />
       </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
       <exercise permid="uPa">
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses90.pg" />
       </exercise>
@@ -1019,6 +1021,7 @@
       <exercise permid="hvp">
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnMultiSteps180.pg" />
       </exercise>
+      
       <exercise permid="NCy">
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/compareEquationExpression10.pg" />
       </exercise>
