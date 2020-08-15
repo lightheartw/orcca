@@ -8,7 +8,6 @@
 <!-- *********************************************************************-->
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chapter-rational-functions-and-equations" permid="EoL">
   <title>Rational Functions and Equations</title>
-<!--<introduction></introduction>-->
   <xi:include href="section-introduction-to-functions.ptx" />
   <xi:include href="section-rational-functions.ptx" />
   <xi:include href="section-multiplication-and-division-of-rational-expressions.ptx" />

@@ -8,6 +8,5 @@
 <!-- *********************************************************************-->
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chapter-graphs-of-quadratic-functions" permid="fMb">
   <title>Graphs of Quadratic Functions</title>
-<!--<introduction></introduction>-->
   <xi:include href="review-graphs-of-quadratic-functions.ptx" />
 </chapter>

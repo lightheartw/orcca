@@ -8,7 +8,6 @@
 <!-- *********************************************************************-->
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chapter-radical-functions-and-equations" permid="YhC">
   <title>Radical Functions and Equations</title>
-<!--<introduction></introduction>-->
   <xi:include href="section-introduction-to-radical-functions.ptx" />
   <xi:include href="section-radical-expressions-and-rational-exponents.ptx" />
   <xi:include href="section-radical-expression-operations.ptx" />

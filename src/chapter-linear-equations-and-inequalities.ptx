@@ -8,7 +8,6 @@
 <!-- *********************************************************************-->
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chapter-linear-equations-and-inequalities" permid="LTk">
   <title>Linear Equations and Inequalities</title>
-<!--<introduction></introduction>-->
   <xi:include href="section-solving-multistep-linear-equations.ptx" />
   <xi:include href="section-solving-multistep-linear-inequalities.ptx" />
   <xi:include href="section-linear-equations-and-inequalities-with-fractions.ptx" />
