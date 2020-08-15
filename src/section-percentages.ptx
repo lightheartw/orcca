@@ -262,7 +262,6 @@ at (\angle+90+0.5*\percent*3.6:\radius) {};
           </figure>
         </sidebyside>
       </statement>
-      <!-- <newpage/> -->
       <solution permid="Iut">
         <p permid="raJ">
           After reading this word problem and the chart,
@@ -441,7 +440,6 @@ bar width=1cm,
         </p>
       </solution>
     </example>
-    <!-- <newpage/> -->
     <exercise permid="DKA">
       <webwork>
           <pg-macros><macro-file>contextCurrency.pl</macro-file></pg-macros>
@@ -705,7 +703,6 @@ $cost=Currency(4.80);
       </webwork>
     </exercise>
   </subsection>
-  <!-- <newpage/> -->
   <exercises permid="PKx">
     <exercisegroup cols="4" permid="vRG">
       <title>Review and Warmup</title>

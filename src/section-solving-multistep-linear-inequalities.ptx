@@ -596,7 +596,6 @@
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/ModelingWithEquation140.pg" />
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="HGi">
       <title>Solving Multistep Linear Inequalities</title>
       <introduction permid="VJN">

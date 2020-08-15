@@ -2030,7 +2030,6 @@ $t = 40;
         <webwork source="Contrib/PCC/BasicAlgebra/SlopeAndY-InterceptCalculations/WriteEquationByGraph40.pg" />
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="fMG">
       <title>Writing a Slope-Intercept Equation Given Two Points</title>
       <exercise permid="ZBV">

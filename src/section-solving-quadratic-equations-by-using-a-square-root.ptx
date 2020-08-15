@@ -361,7 +361,6 @@ $evaluator=$answer->cmp(list_checker => ~~&amp;radicalListCheck);
       </figure>
     </sidebyside>
     <p>Let's look at some applications of the Pythaogrean Theorem in the following examples.</p>
-    <newpage/>
     <example permid="Sga">
       <sidebyside widths="55% 24%" margins="5%" permid="WPT">
         <stack>

@@ -145,7 +145,6 @@ minor ytick={2,4,...,14},
       </p>
     </remark>
     <p>Try a similar exercise.</p>
-    <newpage/>
     <exercise permid="rlN">
       <webwork>
           
@@ -1022,7 +1021,6 @@ $rightsteps[3] = Formula("$m x + $b")->reduce;
         <webwork source="Contrib/PCC/BasicAlgebra/SystemsOfLinearEquations/SolutionOfSystem30.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
     <exercisegroup cols="3" permid="KQj">
       <title>Using a Graph to Solve a System</title>
       <introduction permid="twz">

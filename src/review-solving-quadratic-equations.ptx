@@ -1339,7 +1339,6 @@ minor ytick={-16,-14,...,16}]
         </p>
       </solution>
     </example>
-    <newpage/>
     <example permid="uuW">
       <title>Distinguishing Quadratic Functions from Other Functions and Relations</title>
       <statement>
@@ -2359,7 +2358,6 @@ TODO: Should these be mixed applications with factoring and square root method a
 <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexSolutions40.pg" />
 </exercise> -->
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup cols="3" permid="xwG">
       <title>Strategies for Solving Quadratic Equations</title>
 <!-- <exercise>

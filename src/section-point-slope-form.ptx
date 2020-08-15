@@ -158,7 +158,6 @@ grid=none]
       </p>
     </remark>
     <!-- <p>Now, it's your turn to try the next exercise on your own.</p> -->
-    <newpage/>
     <exercise xml:id="exercise-point-slope" permid="YQb">
       <webwork>
           
@@ -1527,7 +1526,6 @@ return $OK;
         </webwork>
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup cols="2">
       <exercise permid="QBI">
         <webwork>

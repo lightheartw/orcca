@@ -549,7 +549,6 @@ xlabel={$x$, days},ylabel={$y$, number of zombies}]
     </example>
 
   </subsection>
-  <!-- <newpage/> -->
   <exercises permid="dwy">
     <exercisegroup cols="2" permid="JDH">
       <title>Introduction to Functions</title>

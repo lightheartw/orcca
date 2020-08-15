@@ -460,7 +460,6 @@ ytick=]
     </example>
 
     <!-- <p>Now, here are a couple for you to try on your own.</p> -->
-    <newpage/>
     <exercise permid="gbo">
       <webwork source="Contrib/PCC/BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph30.pg" seed="3"/>
     </exercise>

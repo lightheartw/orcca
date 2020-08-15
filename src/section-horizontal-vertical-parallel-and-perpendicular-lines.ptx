@@ -630,7 +630,6 @@ xlabel={purchase price},
         </figure>
       </sidebyside>
     </example>
-    <newpage/>
     <paragraphs permid="diM">
       <title>Summary of Horizontal and Vertical Line Equations</title>
         <sidebyside permid="FZQ">
@@ -1422,7 +1421,6 @@ $ansSI = ImplicitPlane("y=$b");
         </answer>
       </exercise>
     </exercisegroup>
-    <newpage/>
     <exercisegroup cols="2" permid="NZO">
       <title>Parallel or Perpendicular?</title>
       <exercise permid="Hfj">

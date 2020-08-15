@@ -441,7 +441,6 @@
         <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals220.pg" />
       </exercise> -->
     </exercisegroup>
-    <newpage/>
     <exercisegroup permid="WcZ">
       <title permid="cCf">Multiplying Radicals  
       </title>
@@ -778,7 +777,6 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup cols="3">
       <introduction><p>Simplify. Don't forget to rationalize the denominator.</p></introduction>
       <exercise>

@@ -141,7 +141,6 @@ minor ytick={-3,-2,...,11}
         </sidebyside>
       </solution>
     </example>
-    <newpage/>
     <example permid="mmu">
       <title>Translating between Four Descriptions of the Same Function</title>
       <statement>

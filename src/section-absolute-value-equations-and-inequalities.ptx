@@ -1518,7 +1518,6 @@
 <webwork source="Contrib/PCC/Math95/AbsValueEquations/54IntAlg_35_AbsoluteValEq_Review.pg" />
 </exercise> -->
     </exercisegroup>
-    <newpage/>
     <exercisegroup cols="2" permid="Rjg">
       <title>Testing Possible Solutions</title>
       <exercise permid="MdO">

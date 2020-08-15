@@ -505,7 +505,6 @@
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/exponentsMultiplication50.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
     <exercisegroup cols="4" permid="gTZ">
       <exercise permid="iJm">
         <webwork>
