@@ -711,12 +711,56 @@ $neither = PopUp(['?','linear','quadratic','neither'],3);
       <exercise permid="bPU">
         <webwork source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication10.pg" />
       </exercise>
-      <exercise permid="HXd">
+      <exercise>
+        <webwork>
+          <pg-code>
+            $num1 = non_zero_random(-10,10,1)+random(1,9,1)/10;
+            do {$num2 = non_zero_random(-10,10,1)+random(1,9,1)/10;} until (abs($num1)!=abs($num2));
+
+            $num1 = Real($num1);
+            $num2 = Real($num2);
+
+            $sum = $num1 + $num2;
+            $product = $num1*$num2;
+
+            $ans=List($num1,$num2);
+          </pg-code>
+          <statement>
+            <p>Two numbers' sum is <var name="$sum"/>, and their product is <var name="$product"/>. Find these two numbers.</p>
+          </statement>
+          <answer>
+            <p><var name="$ans"/></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            $num1 = non_zero_random(-10,10,1)+random(1,9,1)/10;
+            do {$num2 = non_zero_random(-10,10,1)+random(1,9,1)/10;} until (abs($num1)!=abs($num2));
+
+            $num1 = Real($num1);
+            $num2 = Real($num2);
+
+            $sum = $num1 + $num2;
+            $product = $num1*$num2;
+
+            $ans=List($num1,$num2);
+          </pg-code>
+          <statement>
+            <p>Two numbers' sum is <var name="$sum"/>, and their product is <var name="$product"/>. Find these two numbers.</p>
+          </statement>
+          <answer>
+            <p><var name="$ans"/></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="HXd">
         <webwork source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication20.pg" />
       </exercise>
       <exercise permid="oem">
         <webwork source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication20.pg" />
-      </exercise>
+      </exercise> -->
       <exercise permid="Ulv">
         <webwork source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication30.pg" />
       </exercise>

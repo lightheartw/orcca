@@ -12,8 +12,8 @@
     <title>Solving Multistep Linear Equations</title>
     <p permid="JDh">
       In <xref ref="section-solving-multistep-linear-equations">Section</xref>
-      we covered the <xref ref="list-solve-multistep-linear-equation" text="title">steps</xref>
-      to solve a linear equation and the <xref ref="list-differences-expressions-equations" text="title">differences</xref>
+      we covered the <xref ref="list-solve-multistep-linear-equation" text="custom">steps</xref>
+      to solve a linear equation and the <xref ref="list-differences-expressions-equations" text="custom">differences</xref>
       among simplifying expressions,
       evaluating expressions and solving equations.
     </p>
@@ -102,8 +102,8 @@
     <title>Solving Multistep Linear Inequalities</title>
     <p permid="pKq">
       In <xref ref="section-solving-multistep-linear-inequalities">Section</xref>
-      we covered how solving inequalities is very much like how we <xref ref="list-solve-multistep-linear-equation" text="title">solve equations</xref>,
-      except that if we <xref ref="fact-changing-direction-of-inequality-sign" text="title">multiply or divide by a negative</xref>
+      we covered how solving inequalities is very much like how we <xref ref="list-solve-multistep-linear-equation" text="custom">solve equations</xref>,
+      except that if we <xref ref="fact-changing-direction-of-inequality-sign" text="custom">multiply or divide by a negative</xref>
       we switch the inequality sign.
     </p>
     <example permid="Xsr">
@@ -185,7 +185,7 @@
     <title>Isolating a Linear Variable</title>
     <p permid="BYI">
       In <xref ref="section-isolating-a-linear-variable">Section</xref>
-      we covered how to <xref ref="list-solve-multistep-linear-equation" text="title">solve an equation</xref>
+      we covered how to <xref ref="list-solve-multistep-linear-equation" text="custom">solve an equation</xref>
       when there are multiple variables in the equation.
     </p>
     <example permid="PNS">

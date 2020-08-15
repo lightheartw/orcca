@@ -1535,7 +1535,7 @@ xlabel={t}]
       </solution>
     </example>
   </subsection>
-  <!-- <newpage/> -->
+  <newpage/>
 <!-- TODO: Add more application problems -->
   <exercises permid="fSb">
     <exercisegroup cols="2" permid="LZk">
@@ -1552,30 +1552,316 @@ xlabel={t}]
       <exercise permid="JeE">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation40.pg" />
       </exercise>
-      <exercise permid="plN">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+
+            $a=random(1,5,1);
+            $b=random(6,10,1);
+            $left = Compute("x-$a");
+            $comp = "\leq";
+            $right = Compute("$b");
+
+            $c = $b+$a;
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+
+            $setans = Compute("{ x | x &lt;= $c}");
+            $alt = Compute("{ x | $c >= x}");
+            $ans = OneOf($setans, $alt);
+
+            Context("Interval");
+            Context()->flags->set("formatStudentAnswer"=>'parsed');
+            $intans = Compute("(-inf,$c]");
+          </pg-code>
+          <statement>
+            <p>  
+
+              <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+          </statement>
+          <answer>
+            <p><var name="$setans"/>; <var name="$intans"/></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+
+            $a=random(1,5,1);
+            $b=random(6,10,1);
+            $left = Compute("x-$a");
+            $comp = "\leq";
+            $right = Compute("$b");
+
+            $c = $b+$a;
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+
+            $setans = Compute("{ x | x &lt;= $c}");
+            $alt = Compute("{ x | $c >= x}");
+            $ans = OneOf($setans, $alt);
+
+            Context("Interval");
+            Context()->flags->set("formatStudentAnswer"=>'parsed');
+            $intans = Compute("(-inf,$c]");
+          </pg-code>
+          <statement>
+            <p>  
+
+              <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+          </statement>
+          <answer>
+            <p><var name="$setans"/>; <var name="$intans"/></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="plN">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality40.pg" />
       </exercise>
       <exercise permid="VsW">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality40.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+
+            $a=random(2,5,1);
+            $c=list_random((2,3,4));
+            $b=$a*$c;
+            $left = Compute("-$a*x");
+            $comp = "\geq";
+            $right = Compute("$b");
+
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+            Context()->flags->set(formatStudentAnswer=>'parsed');
+
+            $setans = Compute("{ x | x &lt;= -$c}");
+            $alt = Compute("{ x | -$c >= x}");
+            $ans = OneOf($setans, $alt);
+
+            Context("Interval");
+            Context()->flags->set("formatStudentAnswer"=>'parsed');
+            $intans = Compute("(-inf,-$c]");
+          </pg-code>
+          <statement>
+            <p>  
+
+              <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+          </statement>
+          <answer>
+            <p><var name="$setans"/>; <var name="$intans"/></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="BAf">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+
+            $a=random(2,5,1);
+            $c=list_random((2,3,4));
+            $b=$a*$c;
+            $left = Compute("-$a*x");
+            $comp = "\geq";
+            $right = Compute("$b");
+
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+            Context()->flags->set(formatStudentAnswer=>'parsed');
+
+            $setans = Compute("{ x | x &lt;= -$c}");
+            $alt = Compute("{ x | -$c >= x}");
+            $ans = OneOf($setans, $alt);
+
+            Context("Interval");
+            Context()->flags->set("formatStudentAnswer"=>'parsed');
+            $intans = Compute("(-inf,-$c]");
+          </pg-code>
+          <statement>
+            <p>  
+
+              <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+          </statement>
+          <answer>
+            <p><var name="$setans"/>; <var name="$intans"/></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="BAf">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality70.pg" />
       </exercise>
       <exercise permid="hHo">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality70.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+
+            $a=random(3,10,1);
+            $b=random(2,5,1);
+
+            $left = Compute("$b");
+            $comp = "\geq";
+            $right = Compute("-$a*x+$b");
+
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+            Context()->flags->set(formatStudentAnswer=>'parsed');
+
+            $setans = Compute("{ x | x >= 0}");
+            $alt = Compute("{ x | 0 &lt;= x}");
+            $ans = OneOf($setans, $alt);
+
+
+            Context("Interval");
+            Context()->flags->set("formatStudentAnswer"=>'parsed');
+            $intans = Compute("[0,inf)");
+          </pg-code>
+          <statement>
+            <p> 
+
+              <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+          </statement>
+          <answer>
+            <p><var name="$setans"/>; <var name="$intans"/></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="NOx">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+
+            $a=random(3,10,1);
+            $b=random(2,5,1);
+
+            $left = Compute("$b");
+            $comp = "\geq";
+            $right = Compute("-$a*x+$b");
+
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+            Context()->flags->set(formatStudentAnswer=>'parsed');
+
+            $setans = Compute("{ x | x >= 0}");
+            $alt = Compute("{ x | 0 &lt;= x}");
+            $ans = OneOf($setans, $alt);
+
+
+            Context("Interval");
+            Context()->flags->set("formatStudentAnswer"=>'parsed');
+            $intans = Compute("[0,inf)");
+          </pg-code>
+          <statement>
+            <p> 
+
+              <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+          </statement>
+          <answer>
+            <p><var name="$setans"/>; <var name="$intans"/></p>
+          </answer>
+        </webwork>
+      </exercise>
+     <!--  <exercise permid="NOx">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality210.pg" />
       </exercise>
       <exercise permid="tVG">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality210.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+            Context()->variables->are(t=>"Real");
+
+            $a=random(6,10,1);
+            $b=random(2,10,1);
+            $c=random(1,5,1);
+            $crit=random(2,10,1);
+            $d=$a*$crit+$b-$c*$crit;
+
+            $left = Compute("$a*t+$b");
+            $comp = "&lt;";
+            $right = Compute("$c*t+$d");
+
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+            Context()->flags->set(formatStudentAnswer=>'parsed');
+            Context()->variables->are(t=>"Real");
+
+            $setans = Compute("{ t | t &lt; $crit}");
+            $alt = Compute("{ t | $crit>= t}");
+            $ans = OneOf($setans, $alt);
+
+
+            Context("Interval");
+            Context()->variables->are(t=>"Real");
+            Context()->flags->set("formatStudentAnswer"=>'parsed');
+            $intans = Compute("(-inf,$crit)");
+          </pg-code>
+          <statement>
+            <p> 
+
+              <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+          </statement>
+          <answer>
+            <p><var name="$setans"/>; <var name="$intans"/></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="acP">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+            Context()->variables->are(t=>"Real");
+
+            $a=random(6,10,1);
+            $b=random(2,10,1);
+            $c=random(1,5,1);
+            $crit=random(2,10,1);
+            $d=$a*$crit+$b-$c*$crit;
+
+            $left = Compute("$a*t+$b");
+            $comp = "&lt;";
+            $right = Compute("$c*t+$d");
+
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+            Context()->flags->set(formatStudentAnswer=>'parsed');
+            Context()->variables->are(t=>"Real");
+
+            $setans = Compute("{ t | t &lt; $crit}");
+            $alt = Compute("{ t | $crit>= t}");
+            $ans = OneOf($setans, $alt);
+
+
+            Context("Interval");
+            Context()->variables->are(t=>"Real");
+            Context()->flags->set("formatStudentAnswer"=>'parsed');
+            $intans = Compute("(-inf,$crit)");
+          </pg-code>
+          <statement>
+            <p> 
+
+              <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+          </statement>
+          <answer>
+            <p><var name="$setans"/>; <var name="$intans"/></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="acP">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality240.pg" />
       </exercise>
       <exercise permid="GjY">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality240.pg" />
-      </exercise>
+      </exercise> -->
     </exercisegroup>
     <exercisegroup cols="2" permid="sgt">
       <title>Check Solutions</title>
@@ -1679,18 +1965,190 @@ xlabel={t}]
       <exercise permid="JOy">
         <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities12.pg" />
       </exercise>
-      <exercise permid="pVH">
+      <exercise>
+        <webwork>
+          <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
+          <pg-code>
+            Context("LimitedNumeric");
+
+do {
+   $b=random(2,5,1);
+   $c=random(2,8,1);
+} until (gcd($b,$c)==1);
+
+$a=$b*random(1,5,1);
+$d=$b*random($a+1,$a+5,1);
+
+$left = Compute("$a");
+$comp0 = "\lt";
+
+$comp1 = "\lt";
+$right = Compute("$d");
+
+$leftEnd = $a*$c/$b;
+$rightEnd = $d*$c/$b;
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+
+$setans = Compute("{ x | $leftEnd &lt; x &lt; $rightEnd}");
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("($leftEnd,$rightEnd)");
+            </pg-code>
+            <statement>
+              <p><m><var name="$left"/> <var name="$comp0"/> \frac{<var name="$b"/> }{<var name="$c"/> }x <var name="$comp1"/> <var name="$right"/> </m></p>
+            </statement>
+            <answer>
+              <p><var name="$intans"/></p>
+              </answer>
+              </webwork>
+              </exercise> 
+              <exercise>
+        <webwork>
+          <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
+          <pg-code>
+            Context("LimitedNumeric");
+
+do {
+   $b=random(2,5,1);
+   $c=random(2,8,1);
+} until (gcd($b,$c)==1);
+
+$a=$b*random(1,5,1);
+$d=$b*random($a+1,$a+5,1);
+
+$left = Compute("$a");
+$comp0 = "\lt";
+
+$comp1 = "\lt";
+$right = Compute("$d");
+
+$leftEnd = $a*$c/$b;
+$rightEnd = $d*$c/$b;
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+
+$setans = Compute("{ x | $leftEnd &lt; x &lt; $rightEnd}");
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("($leftEnd,$rightEnd)");
+            </pg-code>
+            <statement>
+              <p><m><var name="$left"/> <var name="$comp0"/> \frac{<var name="$b"/> }{<var name="$c"/> }x <var name="$comp1"/> <var name="$right"/> </m></p>
+            </statement>
+            <answer>
+              <p><var name="$intans"/></p>
+              </answer>
+              </webwork>
+              </exercise>
+      <!-- <exercise permid="pVH">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/CompoundInequalityAnd60.pg" />
       </exercise>
       <exercise permid="WcQ">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/CompoundInequalityAnd60.pg" />
-      </exercise>
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
+          <pg-code>
+            Context("LimitedNumeric");
+
+do {
+   $c=random(2,5,1);
+   $d=random(2,8,1);
+} until (gcd($c,$d)==1);
+$b=non_zero_random(-5,5,1);
+
+do {
+   $aMinusB=(-$c)*random(2,5,1)*random(-1,1,2);
+   $eMinusB=(-$c)*random(2,5,1)*random(-1,1,2);
+} until ($eMinusB &lt; $aMinusB);
+$a = $b+$aMinusB;
+$e = $b+$eMinusB;
+
+$left = Compute("$a");
+$comp0 = "\gt";
+
+$comp1 = "\geq";
+$right = Compute("$e");
+
+$leftEnd = ($a-$b)*$d/(-$c);
+$rightEnd = ($e-$b)*$d/(-$c);
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+
+$setans = Compute("{ x | $leftEnd &lt; x &lt;= $rightEnd}");
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("($leftEnd,$rightEnd]");
+            </pg-code>
+            <statement>
+              <p><m><var name="$left"/> <var name="$comp0"/> <var name="$b"/> - \frac{<var name="$c"/> }{<var name="$d"/> }x <var name="$comp1"/> <var name="$right"/> </m></p>
+            </statement>
+            <answer>
+              <p><var name="$intans"/></p>
+              </answer>
+              </webwork>
+              </exercise> 
+              <exercise>
+        <webwork>
+          <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
+          <pg-code>
+            Context("LimitedNumeric");
+
+do {
+   $c=random(2,5,1);
+   $d=random(2,8,1);
+} until (gcd($c,$d)==1);
+$b=non_zero_random(-5,5,1);
+
+do {
+   $aMinusB=(-$c)*random(2,5,1)*random(-1,1,2);
+   $eMinusB=(-$c)*random(2,5,1)*random(-1,1,2);
+} until ($eMinusB &lt; $aMinusB);
+$a = $b+$aMinusB;
+$e = $b+$eMinusB;
+
+$left = Compute("$a");
+$comp0 = "\gt";
+
+$comp1 = "\geq";
+$right = Compute("$e");
+
+$leftEnd = ($a-$b)*$d/(-$c);
+$rightEnd = ($e-$b)*$d/(-$c);
+
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+
+$setans = Compute("{ x | $leftEnd &lt; x &lt;= $rightEnd}");
+
+Context("Interval");
+Context()->flags->set("formatStudentAnswer"=>'parsed');
+$intans = Compute("($leftEnd,$rightEnd]");
+            </pg-code>
+            <statement>
+              <p><m><var name="$left"/> <var name="$comp0"/> <var name="$b"/> - \frac{<var name="$c"/> }{<var name="$d"/> }x <var name="$comp1"/> <var name="$right"/> </m></p>
+            </statement>
+            <answer>
+              <p><var name="$intans"/></p>
+              </answer>
+              </webwork>
+              </exercise>
       <exercise permid="CjZ">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/CompoundInequalityAnd70.pg" />
       </exercise>
       <exercise permid="iri">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/CompoundInequalityAnd70.pg" />
       </exercise>
+
+
 <!--             <exercise width="wide">
 <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities9.pg" />
 </exercise>

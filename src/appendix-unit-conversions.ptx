@@ -40,22 +40,22 @@
   <sidebyside widths="92% 6%" margins="0%" permid="SNP">
     <table permid="ovT">
       <title>Length Unit Conversion Factors</title>
-      <tabular top="major" permid="ZmV">
+      <tabular top="major" left="medium" bottom="medium" permid="ZmV">
         <col right="medium"/>
         <col right="medium"/>
         <col/>
-        <row left="medium">
-          <cell bottom="medium">
+        <row >
+          <cell >
             <line>Units of Length</line>
             <line>in the US/Imperial System</line></cell>
-          <cell bottom="medium">
+          <cell>
             <line>Units of Length</line>
             <line>in the Metric System</line></cell>
-          <cell bottom="medium" right="medium">
+          <cell>
             <line>System to System</line>
             <line>Length Conversions</line></cell>
         </row>
-        <row left="medium" bottom="minor">
+        <row>
           <cell>
             <line><m>1</m> foot (<quantity>
               <unit base="foot"/>
@@ -97,7 +97,7 @@
             <line><m>1</m> meter (<quantity>
               <unit base="meter"/>
             </quantity>)</line>
-            <line right="medium"><m>{}\approx3.281</m> feet (<quantity>
+            <line><m>{}\approx3.281</m> feet (<quantity>
               <unit base="foot"/>
             </quantity>)</line></cell>
         </row>
@@ -120,7 +120,7 @@
             <line><m>1</m> meter (<quantity>
               <unit base="meter"/>
             </quantity>)</line>
-            <line right="medium"><m>{}\approx1.094</m> yard (<quantity>
+            <line><m>{}\approx1.094</m> yard (<quantity>
               <unit base="yard"/>
             </quantity>)</line></cell>
         </row>
@@ -129,7 +129,7 @@
             <line><m>1</m> mile (<quantity>
               <unit base="mile"/>
             </quantity>)</line>
-            <line bottom="major"><m>{}=5280</m> feet (<quantity>
+            <line><m>{}=5280</m> feet (<quantity>
               <unit base="foot"/>
             </quantity>)</line></cell>
           <cell>
@@ -143,7 +143,7 @@
             <line><m>1</m> mile (<quantity>
               <unit base="mile"/>
             </quantity>)</line>
-            <line bottom="major" right="medium"><m>{}\approx1.609</m> kilometer (<quantity>
+            <line><m>{}\approx1.609</m> kilometer (<quantity>
               <unit prefix="kilo" base="meter"/>
             </quantity>)</line></cell>
         </row>
@@ -220,19 +220,19 @@
             <line><m>1</m> hectare (<quantity>
               <unit base="hectare"/>
             </quantity>)</line>
-            <line bottom="major" right="medium"><m>{}\approx2.471</m> acres</line></cell>
+            <line><m>{}\approx2.471</m> acres</line></cell>
         </row>
         <row>
           <cell bottom="major">
             <line><m>640</m> acres</line>
-            <line bottom="major"><m>{}=1</m> square mile (<quantity>
+            <line><m>{}=1</m> square mile (<quantity>
               <unit base="mile" exp="2"/>
             </quantity>)</line></cell>
           <cell bottom="major">
             <line><m>100</m> hectares (<quantity>
               <unit base="hectare"/>
             </quantity>)</line>
-            <line bottom="major"><m>{}=1</m> square kilometer (<quantity>
+            <line><m>{}=1</m> square kilometer (<quantity>
               <unit prefix="kilo" base="meter" exp="2"/>
             </quantity>)</line></cell>
           <cell/>
@@ -464,10 +464,10 @@
             </quantity>)</line></cell>
           <cell>
             <line><m>1</m> kilogram (<quantity>
-              <unit base="gram"/>
+              <unit prefix="kilo" base="gram"/>
             </quantity>)</line>
             <line><m>{}=1000</m> grams (<quantity>
-              <unit prefix="kilo" base="gram"/>
+              <unit base="gram"/>
             </quantity>)</line></cell>
           <cell bottom="major" right="medium">
             <line><m>1</m> kilogram (<quantity>
@@ -621,7 +621,7 @@ opacity=0.25
               <unit prefix="micro" base="second"/>
             </quantity>)</line></cell>
         </row>
-        <row bottom="minor" right="medium">
+        <row>
           <cell bottom="minor">
             <line><m>1</m> hour (<quantity>
               <unit base="hour"/>

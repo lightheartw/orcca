@@ -460,6 +460,12 @@ return $OK;
       <exercise permid="fCg">
         <webwork source="Contrib/PCC/BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers10.pg"  />
       </exercise>
+      <exercise permid="fCg">
+        <webwork source="Contrib/PCC/BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers10.pg"  />
+      </exercise>
+      <exercise permid="fCg">
+        <webwork source="Contrib/PCC/BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers10.pg"  />
+      </exercise>
     </exercisegroup>
     <exercisegroup cols="2" permid="qpT">
       <title>Identifying Terms</title>
@@ -849,6 +855,202 @@ $exp3=$expression[3];
         </webwork>
       </exercise>
 <!-- List terms -->
+      <exercise permid="kAH">
+        <webwork>
+            
+<pg-code>
+Context("Numeric");
+Context()->noreduce('(-x)+y','(-x)-y');
+Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',t=>'Real',s=>'Real');
+@termcount = (1,2,2,3,3,4,4)[NchooseK(7,4)];
+for $i (0..3) {
+$expression[$i] = Formula("0");
+$answers[$i] = List();
+my @vars;
+my @exps;
+for $j (1..$termcount[$i]) {
+my $nextvar = list_random('x','y','z','t','s');
+my $nextexp;
+do {$nextexp = list_random(0,1,1,1,2,2);} until ($exps[$j-2] != 0 or $nextexp != 0);
+push(@vars,$nextvar);
+push(@exps,$nextexp);
+$string = non_zero_random(-9,9,1).$vars[$j-1].'^'.$exps[$j-1];
+$expression[$i] = Compute("$expression[$i]+ $string")->reduce->reduce;
+$answers[$i] = List($answers[$i],Formula("$string")->reduce->reduce);
+}
+}
+$exp0=$expression[0];
+$exp1=$expression[1];
+$exp2=$expression[2];
+$exp3=$expression[3];
+</pg-code>
+            
+            <statement>
+              <p permid="Lhm">
+                List the terms in each expression.</p>
+                <p>
+                <ol label="a." permid="Bdt">
+                  <li permid="tdv">
+                    <p permid="OEv">
+                      <m><var name="$exp0" /></m>
+                    </p>
+                    <p permid="uLE">
+                      <var name="$answers[0]" width="25" />
+                    </p>
+                  </li>
+                  <li permid="ZkE">
+                    <p permid="aSN">
+                      <m><var name="$exp1" /></m>
+                    </p>
+                    <p permid="GZW">
+                      <var name="$answers[1]" width="25" />
+                    </p>
+                  </li>
+                  <li permid="FrN">
+                    <p permid="nhf">
+                      <m><var name="$exp2" /></m>
+                    </p>
+                    <p permid="Too">
+                      <var name="$answers[2]" width="25" />
+                    </p>
+                  </li>
+                  <li permid="lyW">
+                    <p permid="zvx">
+                      <m><var name="$exp3" /></m>
+                    </p>
+                    <p permid="fCG">
+                      <var name="$answers[3]" width="25" />
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </statement>
+            <solution permid="WbD">
+              <p permid="WLK">
+                <ol label="a." permid="LCy">
+                  <li permid="RGf">
+                    <p permid="LJP">
+                      The terms are <m><var name="$answers[0]" /></m>.
+                    </p>
+                  </li>
+                  <li permid="xNo">
+                    <p permid="rQY">
+                      The terms are <m><var name="$answers[1]" /></m>.
+                    </p>
+                  </li>
+                  <li permid="dUx">
+                    <p permid="XYh">
+                      The terms are <m><var name="$answers[2]" /></m>.
+                    </p>
+                  </li>
+                  <li permid="KbG">
+                    <p permid="Efq">
+                      The terms are <m><var name="$answers[3]" /></m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </solution>
+        </webwork>
+      </exercise>
+      <exercise permid="QHQ">
+        <webwork>
+            
+<pg-code>
+Context("Numeric");
+Context()->noreduce('(-x)+y','(-x)-y');
+Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',t=>'Real',s=>'Real');
+@termcount = (1,2,2,3,3,4,4)[NchooseK(7,4)];
+for $i (0..3) {
+$expression[$i] = Formula("0");
+$answers[$i] = List();
+my @vars;
+my @exps;
+for $j (1..$termcount[$i]) {
+my $nextvar = list_random('x','y','z','t','s');
+my $nextexp;
+do {$nextexp = list_random(0,1,1,1,2,2);} until ($exps[$j-2] != 0 or $nextexp != 0);
+push(@vars,$nextvar);
+push(@exps,$nextexp);
+$string = non_zero_random(-9,9,1).$vars[$j-1].'^'.$exps[$j-1];
+$expression[$i] = Compute("$expression[$i]+ $string")->reduce->reduce;
+$answers[$i] = List($answers[$i],Formula("$string")->reduce->reduce);
+}
+}
+$exp0=$expression[0];
+$exp1=$expression[1];
+$exp2=$expression[2];
+$exp3=$expression[3];
+</pg-code>
+            
+            <statement>
+              <p permid="rov">
+                List the terms in each expression.</p>
+                <p>
+                <ol label="a." permid="hkC">
+                  <li permid="qiP">
+                    <p permid="kmz">
+                      <m><var name="$exp0" /></m>
+                    </p>
+                    <p permid="QtI">
+                      <var name="$answers[0]" width="25" />
+                    </p>
+                  </li>
+                  <li permid="WpY">
+                    <p permid="wAR">
+                      <m><var name="$exp1" /></m>
+                    </p>
+                    <p permid="IPj">
+                      <var name="$answers[1]" width="25" />
+                    </p>
+                  </li>
+                  <li permid="Cxh">
+                    <p permid="oWs">
+                      <m><var name="$exp2" /></m>
+                    </p>
+                    <p permid="VdB">
+                      <var name="$answers[2]" width="25" />
+                    </p>
+                  </li>
+                  <li permid="iEq">
+                    <p permid="BkK">
+                      <m><var name="$exp3" /></m>
+                    </p>
+                    <p permid="hrT">
+                      <var name="$answers[3]" width="25" />
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </statement>
+            <solution permid="CiM">
+              <p permid="CST">
+                <ol label="a." permid="rJH">
+                  <li permid="OLz">
+                    <p permid="Nzc">
+                      The terms are <m><var name="$answers[0]" /></m>.
+                    </p>
+                  </li>
+                  <li permid="uSI">
+                    <p permid="tGl">
+                      The terms are <m><var name="$answers[1]" /></m>.
+                    </p>
+                  </li>
+                  <li permid="aZR">
+                    <p permid="ZNu">
+                      The terms are <m><var name="$answers[2]" /></m>.
+                    </p>
+                  </li>
+                  <li permid="Hha">
+                    <p permid="FUD">
+                      The terms are <m><var name="$answers[3]" /></m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </solution>
+        </webwork>
+      </exercise>
       <exercise permid="kAH">
         <webwork>
             
@@ -1659,6 +1861,7 @@ return $OK;
             </statement>
         </webwork>
       </exercise>
+      
 <!-- 2 to 4 terms -->
       <exercise permid="hGb">
         <webwork>

@@ -1130,7 +1130,7 @@ grid=none,
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation40.pg" />
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
+    <newpage/>
     <exercisegroup cols="3" permid="Ntl">
       <title>Domain and Range From a Graph</title>
       <exercise permid="jbp">

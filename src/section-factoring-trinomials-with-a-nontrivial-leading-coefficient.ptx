@@ -747,6 +747,7 @@
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication85.pg" />
       </exercise>
     </exercisegroup>
+    <newpage/>
     <exercisegroup cols="3" permid="Pdh">
       <title>Factoring Trinomials with a Nontrivial Leading Coefficient</title>
       <exercise permid="YwT">

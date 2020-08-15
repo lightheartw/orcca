@@ -29,7 +29,7 @@
     </p>
     <figure permid="LWT">
       <caption>In a relation, some knowledge of one variable implies some knowledge about the other</caption>
-      <image width="100%" permid="XfS">
+      <image width="75%" permid="XfS">
         <description>a diagram with a circle for the first variable on the right and a circle for the second variable on the right; there are arrows going each way indicating that information passes back and forth, but possibly imperfectly</description>
 <latex-image>
 <![CDATA[\begin{tikzpicture}[

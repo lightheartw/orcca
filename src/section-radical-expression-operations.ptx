@@ -441,7 +441,7 @@
         <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals220.pg" />
       </exercise> -->
     </exercisegroup>
-    <!-- <newpage/> -->
+    <newpage/>
     <exercisegroup permid="WcZ">
       <title permid="cCf">Multiplying Radicals  
       </title>

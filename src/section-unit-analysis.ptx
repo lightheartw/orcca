@@ -627,7 +627,7 @@ return $ans;
         in both the numerator and the denominator.
       </p>
     </example>
-    <!-- <newpage/> -->
+    <newpage/>
     <exercise permid="ahY">
       <webwork>
           

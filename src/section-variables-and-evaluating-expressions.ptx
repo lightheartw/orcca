@@ -973,8 +973,7 @@ $paymentev[$i]=$payment->cmp(cmp_class =>"an amount of money");
 <webwork source="Library/MC/PreAlgebra/setPreAlgebraC01S03/EvalExpress03.pg" />
 </exercise> -->
     </exercisegroup>
-    <exercisegroup cols="2" permid="zCt">
-      <title>Applications, Using Common Formulas - Temperature </title>
+    <exercisegroup permid="zCt">
       <exercise permid="mSC">
         <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/FahrenheitCelsius10.pg" />
       </exercise>
@@ -988,23 +987,20 @@ $paymentev[$i]=$payment->cmp(cmp_class =>"an amount of money");
         <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/FahrenheitCelsius10.pg" />
       </exercise>
     </exercisegroup>
-
-    <exercisegroup cols="2" permid="fJC">
-      <title>Applications, Using Common Formulas - Projectile  Height </title>
-      <exercise permid="Lvm">
-        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluateInContext10.pg" />
-      </exercise>
-      <exercise permid="rCv">
-        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluateInContext10.pg" />
-      </exercise>
-    </exercisegroup>
     <exercisegroup cols="2" permid="LQL">
-      <title>Applications of Formulas Continued</title>
       <exercise permid="XJE">
         <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/EvaluateFormula30.pg" />
       </exercise>
       <exercise permid="DQN">
         <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/EvaluateFormula30.pg" />
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2" permid="fJC">
+      <exercise permid="Lvm">
+        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluateInContext10.pg" />
+      </exercise>
+      <exercise permid="rCv">
+        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/evaluateInContext10.pg" />
       </exercise>
     </exercisegroup>
     <exercisegroup cols="2" permid="rXU">

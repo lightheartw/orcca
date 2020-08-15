@@ -639,6 +639,65 @@
         </p>
       </solution>
     </example>
+    <exercise>
+        <webwork>
+           
+            
+<pg-code>
+Context("Currency");
+Context()-&gt;currency-&gt;addSymbol("dollars","dollar");
+Context()-&gt;flags-&gt;set(trimTrailingZeros=>1);
+$sex = list_random('male','female');
+$name = RandomName(sex => $sex);
+$pronoun = ($sex eq 'male') ? 'he' : 'she';
+$w = random(10,17,1)+0.5;
+$h = random(4,8,2);
+$wages = $w * $h;
+$wh = random(22,32,2);
+$p = $w * $wh;
+$hours = numberWord($h);
+$whours = numberWord($wh);
+$cAns = Currency($p);
+</pg-code>
+            
+            <statement>
+              <p>
+                <var name="$name" /> makes <m>\$<var name="$wages" /></m> every <var name="$hours" /> hours <var name="$pronoun" /> works.
+                How much will <var name="$pronoun" /> make if <var name="$pronoun" /> works <var name="$whours" /> hours this week?
+              </p>
+              <p>
+                If <var name="$name" /> works <var name="$whours" /> hours this week,
+                <var name="$pronoun" /> will make <var name="$cAns" width="10" />.
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Let <m>x</m> represent how much money
+                (in dollars)
+                that <var name="$name" /> will make by working <var name="$whours" /> hours this week.
+              </p>
+              <p>
+                To solve this use a proportion,
+                we begin by setting up a ratio where we know all the values:
+                <m>\frac{<var name="$wages" /> \text{ dollars}}{<var name="$h"/>\text{ hours}}</m>
+              </p>
+              <p>
+                We then set up a second ratio,
+                using the same structure, where one value is unknown:
+                <m>\frac{x \text{ dollars}}{<var name="$wh"/>\text{ hours}}</m>
+              </p>
+              <p>
+                We finish by setting the two ratios equal and solve the resulting proportion.
+                <md>
+                  <mrow>\frac{<var name="$wages" />}{<var name="$h"/>} \amp= \frac{x}{<var name="$wh"/>}</mrow>
+                  <mrow>\frac{<var name="$wages" />}{<var name="$h"/>}\multiplyright{<var name="$wh"/>} \amp= \frac{x}{<var name="$wh"/>}\multiplyright{<var name="$wh"/>}</mrow>
+                  <mrow><var name="$p"/> \amp= x</mrow>
+                </md>
+                <var name="$name" /> will make <var name="$cAns" /> by working <var name="$whours" /> hours this week.
+              </p>
+            </solution>
+        </webwork>
+      </exercise>
   </subsection>
   <exercises permid="Aha">
     <exercisegroup cols="3" permid="goj">
@@ -1819,11 +1878,11 @@ $Ans = 63*28/18;
         <webwork source="Contrib/PCC/BasicMath/Proportion/MTH20Proportion71.pg" />
       </exercise>
     </exercisegroup>
-    <exercisegroup permid="EQT">
+    <!-- <exercisegroup permid="EQT">
       <title>Challenge</title>
-      <exercise permid="LZT">
+      <exercise permid="LZT"> -->
 <!-- Kara's challenge problem -->
-        <webwork>
+        <!-- <webwork>
             
 <pg-code>
 $girl = random(2,6,2);
@@ -1855,6 +1914,6 @@ $total = Real(($girl+$boy)*$factor);
             </solution>
         </webwork>
       </exercise>
-    </exercisegroup>
+    </exercisegroup> -->
   </exercises>
 </section>

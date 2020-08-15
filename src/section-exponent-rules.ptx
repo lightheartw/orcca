@@ -225,7 +225,7 @@ $d = Formula("9y^19");
     <paragraphs permid="hWJ">
       <title>Quotient to a Power</title>
       <p permid="tPP">
-        Another rule we have learned is the <xref ref="item-exponent-rules-product-to-a-power" text="title">product to a power rule</xref>,
+        Another rule we have learned is the <xref ref="item-exponent-rules-product-to-a-power" text="custom">product to a power rule</xref>,
         which applies the outer exponent to each factor in the product inside the parentheses.
         We can use the rules of fractions to extend this property to a
         <em>quotient</em> raised to a power.
@@ -374,13 +374,13 @@ $d = Formula("2r^11");
                       If we stick closely to the order of operations,
                       we should first simplify inside the parentheses and then work with the outer exponent.
                       Going this route,
-                      we will first use the <xref ref="item-exponent-rules-quotient" text="title">quotient rule</xref>:
+                      we will first use the <xref ref="item-exponent-rules-quotient" text="custom">quotient rule</xref>:
                       <md permid="Tct">
                         <mrow>\left(\frac{5^6w^7}{5^2w^4}\right)^9 \amp= \left(5^{6-2}w^{7-4}\right)^9</mrow>
                         <mrow>\amp=  \left(5^{4}w^{3}\right)^9</mrow>
-                        <intertext>Now we can apply the outer exponent to each factor inside the parentheses using the <xref ref="item-exponent-rules-product-to-a-power" text="title">product to a power rule</xref>.</intertext>
+                        <intertext>Now we can apply the outer exponent to each factor inside the parentheses using the <xref ref="item-exponent-rules-product-to-a-power" text="custom">product to a power rule</xref>.</intertext>
                         <mrow>\amp= \left(5^{4}\right)^9\cdot \left(w^{3}\right)^9</mrow>
-                        <intertext>To finish, we need to use the <xref ref="item-exponent-rules-power-to-a-power" text="title">power to a power rule</xref>.</intertext>
+                        <intertext>To finish, we need to use the <xref ref="item-exponent-rules-power-to-a-power" text="custom">power to a power rule</xref>.</intertext>
                         <mrow>\amp= 5^{4\cdot 9}\cdot w^{3 \cdot 9}</mrow>
                         <mrow>\amp= 5^{36}\cdot w^{27}</mrow>
                       </md>
@@ -1358,7 +1358,7 @@ $false = PopUp(['?','true','false'],2);
       many situations we'll come across will require us to use more than one exponent rule.
       In these situations, we'll have to decide which rule to use first.
       There are often different, correct approaches we could take.
-      But if we rely on <xref ref="list-order-of-operations" text="title">order of operations</xref>,
+      But if we rely on <xref ref="list-order-of-operations" text="custom">order of operations</xref>,
       we will have a straightforward approach to simplify the expression correctly.
       To bring it all together, try these exercises.
     </p>
@@ -1494,8 +1494,8 @@ return $OK;
                     We'll again rely on the order of operations,
                     and look to simplify anything inside parentheses first and then apply exponents.
                     In this example,
-                    we will begin by applying the <xref ref="item-exponent-rules-product-to-a-power" text="title">product to a power rule</xref>,
-                    followed by the <xref ref="item-exponent-rules-power-to-a-power" text="title">power to a power rule</xref>.
+                    we will begin by applying the <xref ref="item-exponent-rules-product-to-a-power" text="custom">product to a power rule</xref>,
+                    followed by the <xref ref="item-exponent-rules-power-to-a-power" text="custom">power to a power rule</xref>.
                     <md permid="oKx">
                       <mrow>\left( 7^{4} x^{-6} t^{2} \right)^{-5} \left( 7 x^{-2} t^{-7} \right)^{4} \amp=  \left( 7^{4} \right)^{-5} \left( x^{-6} \right)^{-5} \left( t^{2} \right)^{-5} \cdot \left( 7 \right)^{4} \left(x^{-2}\right)^{4}  \left(t^{-7} \right)^{4}</mrow>
                       <mrow>\amp=   7^{-20} x^{30} t^{-10} \cdot 7^{4} x^{-8} t^{-28}</mrow>
@@ -1930,6 +1930,7 @@ return $OK;
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/negExp170.pg" />
       </exercise>
     </exercisegroup>
+    <newpage/>
     <exercisegroup cols="2" permid="SNL">
       <exercise permid="hPF">
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/negExp175.pg" />

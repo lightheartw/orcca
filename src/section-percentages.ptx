@@ -112,6 +112,8 @@
         </p>
       </solution>
     </example>
+
+    <p>Now it's your turn to solve each of these equations.</p>
   
   <exercise permid="wgb">
     <introduction permid="PYS">
@@ -204,8 +206,9 @@ $b=Compute("30%");
     <title>Setting up and Solving Percent Equations</title>
     <p permid="Bep">
       An important skill for solving percent-related problems is to boil down a complicated word problem into a simple form like
-      <q><m>2</m> is <m>50\%</m> of <m>4</m>.</q>
-      Let's look at some further examples.
+      <q><m>2</m> is <m>50\%</m> of <m>4</m>.</q></p>
+
+      <p>Let's look at some further examples.
     </p>
     <example permid="axX">
       <statement>

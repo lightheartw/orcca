@@ -145,7 +145,7 @@ minor ytick={2,4,...,14},
       </p>
     </remark>
     <p>Try a similar exercise.</p>
-    <!-- <newpage/> -->
+    <newpage/>
     <exercise permid="rlN">
       <webwork>
           
@@ -439,7 +439,7 @@ minor ytick={2,4,...,20},
       </statement>
       <solution permid="AFz">
         <p permid="HOz">
-          Since both line equations are given in <xref ref="definition-point-slope-form" text="title">point-slope form</xref>,
+          Since both line equations are given in <xref ref="definition-point-slope-form" text="custom">point-slope form</xref>,
           we can start by graphing the point indicated in each equation and use the slope to determine the rest of the line.
         </p>
         <sidebyside widths="47% 47%" margins="0%" permid="eXv">
@@ -1022,7 +1022,7 @@ $rightsteps[3] = Formula("$m x + $b")->reduce;
         <webwork source="Contrib/PCC/BasicAlgebra/SystemsOfLinearEquations/SolutionOfSystem30.pg" />
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
+    <newpage/>
     <exercisegroup cols="3" permid="KQj">
       <title>Using a Graph to Solve a System</title>
       <introduction permid="twz">

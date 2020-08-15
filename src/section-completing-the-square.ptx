@@ -3074,7 +3074,7 @@ return $OK;
         </webwork>
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
+    <newpage/>
     <exercisegroup cols="2" permid="YBk">
       <title>Domain and Range</title>
       <exercise permid="xNO">

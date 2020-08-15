@@ -1145,10 +1145,10 @@ Context("Interval");
 <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction200.pg" />
 </exercise>
       <!-- <exercise permid="gLI">
-        <webwork source="Contrib/PCC/Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction210.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction210.pg" />
       </exercise>
       <exercise permid="MSR">
-        <webwork source="Contrib/PCC/Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction210.pg" />
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction210.pg" />
       </exercise> -->
       <exercise permid="taa">
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction220.pg" />

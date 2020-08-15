@@ -12,7 +12,7 @@
     <title>Review of Factoring out the GCF</title>
     <p permid="itz">
       In <xref ref="section-factoring-out-the-common-factor">Section</xref>
-      we covered how to factor out the <xref ref="algorithm-factor-gcf" text="title">greatest common factor</xref>.
+      we covered how to factor out the <xref ref="algorithm-factor-gcf" text="custom">greatest common factor</xref>.
       Recall that the <term>greatest common factor</term>
       between two expressions is the largest factor that goes in evenly to both expressions.
     </p>
@@ -641,7 +641,7 @@
     <p permid="aPa">
       In <xref ref="section-factoring-trinomials-with-a-nontrivial-leading-coefficient">Section</xref>
       we covered factoring trinomials of the form
-      <m>ax^2+bx+c</m> when <m>a\neq1</m> using the <xref ref="algorithm-the-ac-method" text="title">AC method</xref>.
+      <m>ax^2+bx+c</m> when <m>a\neq1</m> using the <xref ref="algorithm-the-ac-method" text="custom">AC method</xref>.
     </p>
     <example permid="LUk">
       <title>Using the AC Method</title>
@@ -894,31 +894,31 @@
         <li permid="vUo">
           <title>Difference of Squares</title>
           <p permid="ISA">
-            <xref ref="fact-difference-of-squares" text="title"><m>A^2-B^2=(A+B)(A-B)</m></xref>
+            <xref ref="fact-difference-of-squares" text="custom"><m>A^2-B^2=(A+B)(A-B)</m></xref>
           </p>
         </li>
         <li permid="cbx">
           <title>Perfect Square Sum</title>
           <p permid="oZJ">
-            <xref ref="fact-perfect-square-trinomial" text="title"><m>A^2+2AB+B^2=(A+B)^2</m></xref>
+            <xref ref="fact-perfect-square-trinomial" text="custom"><m>A^2+2AB+B^2=(A+B)^2</m></xref>
           </p>
         </li>
         <li permid="IiG">
           <title>Perfect Square Difference</title>
           <p permid="VgS">
-            <xref ref="fact-perfect-square-trinomial" text="title"><m>A^2-2AB+B^2=(A-B)^2</m></xref>
+            <xref ref="fact-perfect-square-trinomial" text="custom"><m>A^2-2AB+B^2=(A-B)^2</m></xref>
           </p>
         </li>
         <li permid="opP">
           <title>Difference of Cubes</title>
           <p permid="Bob">
-            <xref ref="fact-difference-of-cubes" text="title"><m>A^3-B^3=(A-B)\left(A^2+AB+B^2\right)</m></xref>
+            <xref ref="fact-difference-of-cubes" text="custom"><m>A^3-B^3=(A-B)\left(A^2+AB+B^2\right)</m></xref>
           </p>
         </li>
         <li permid="UwY">
           <title>Sum of Cubes</title>
           <p permid="hvk">
-            <xref ref="fact-difference-of-cubes" text="title"><m>A^3+B^3=(A+B)\left(A^2-AB+B^2\right)</m></xref>
+            <xref ref="fact-difference-of-cubes" text="custom"><m>A^3+B^3=(A+B)\left(A^2-AB+B^2\right)</m></xref>
           </p>
         </li>
       </dl>
@@ -1080,7 +1080,7 @@
     <title>Review of Factoring Strategies</title>
     <p permid="nds">
       In <xref ref="section-factoring-strategies">Section</xref>
-      we covered a <xref ref="figure-factoring-flow-chart" text="title">factoring decision tree</xref>
+      we covered a <xref ref="figure-factoring-flow-chart" text="custom">factoring decision tree</xref>
       to help us decide what methods to try when factoring a given expression.
       Remember to always factor out the GCF first.
     </p>
@@ -1136,7 +1136,7 @@
                 first we will factor that out.
                 <md permid="HGd">
                   <mrow>12t^2+36t+27\amp=\highlight{3}\left(4t^2+12t+9\right)</mrow>
-                  <intertext>Next, we can note that the first and last terms are perfect squares where <m>A^2=4t^2</m> and <m>B=9</m>; so <m>A=2t</m> and <m>B=3</m>. To check the middle term, <m>2AB=12t</m>. So the expression factors as a <xref ref="fact-perfect-square-trinomial" text="title">perfect square</xref>.</intertext>
+                  <intertext>Next, we can note that the first and last terms are perfect squares where <m>A^2=4t^2</m> and <m>B=9</m>; so <m>A=2t</m> and <m>B=3</m>. To check the middle term, <m>2AB=12t</m>. So the expression factors as a <xref ref="fact-perfect-square-trinomial" text="custom">perfect square</xref>.</intertext>
                   <mrow>12t^2+36t+27\amp=\highlight{3}\left(4t^2+12t+9\right)</mrow>
                   <mrow>\amp=\highlight{3}(2t+3)^2</mrow>
                 </md>
@@ -1148,7 +1148,7 @@
                 we first look for a GCF. Since the GCF is <m>1</m>,
                 we can move further on the flowchart.
                 Since the expression is a trinomial with leading coefficient other than <m>1</m>,
-                we should try the <xref ref="algorithm-the-ac-method" text="title">AC method</xref>.
+                we should try the <xref ref="algorithm-the-ac-method" text="custom">AC method</xref>.
                 Note that <m>AC=-72</m> and factor pairs of <m>-72</m> that add up to <m>14</m> are
                 <m>\highlight{18}</m> and <m>\highlight{-4}</m>.
                 <md permid="nNm">
@@ -1183,8 +1183,8 @@
     <title>Solving Quadratic Equations by Factoring</title>
     <p permid="TkB">
       In <xref ref="section-solving-quadratic-equations-by-factoring">Section</xref>
-      we covered the <xref ref="fact-zero-product-property" text="title">zero product property</xref>
-      and learned an algorithm for <xref ref="algorithm-solving-quadratic-equations-by-factoring" text="title">solving quadratic equations by factoring</xref>.
+      we covered the <xref ref="fact-zero-product-property" text="custom">zero product property</xref>
+      and learned an algorithm for <xref ref="algorithm-solving-quadratic-equations-by-factoring" text="custom">solving quadratic equations by factoring</xref>.
     </p>
     <example permid="VnW">
       <title>Solving Using Factoring</title>
@@ -1388,7 +1388,7 @@
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring115.pg" />
       </exercise>
     </exercisegroup>
-    <exercisegroup cols="3" permid="Lru">
+    <exercisegroup cols="2" permid="Lru">
       <title>Factor by Grouping</title>
       <exercise permid="OVU">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring125.pg" />
@@ -1408,6 +1408,7 @@
       <exercise permid="TFN">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring135.pg" />
       </exercise>
+
       <exercise permid="zMW">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring140.pg" />
       </exercise>
@@ -1628,6 +1629,7 @@
 <exercise>
 <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring480.pg" />
 </exercise> -->
+<newpage/>
       <exercisegroup cols="3">
       <exercise permid="QpI">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring485.pg" />

@@ -781,10 +781,25 @@ minor ytick={-2,-1,...,10},]
   </example>
   <exercises permid="Zwi">
 <!--TODO: add review and warmup, if appropriate ones exist-->
-<!--         <exercisegroup cols="2">
-<title>Review and Warmup</title>
+         <exercisegroup cols="2">
+<title>Warmup</title>
+<exercise>
+  <statement>
+    <p>Decide whether <m>(2,1)</m> and <m>(-5,13)</m> are on the graph of the equation <m>y=-2x+3</m>.</p>
+  </statement>
+  <answer><p><m>(2,1)</m> is not on the graph, but <m>(-5,13)</m> is on the graph.</p>
+</answer>
+</exercise>
+<exercise>
+  <statement>
+    <p>Decide whether <m>(8,-7)</m> and <m>(5,0)</m> are on the graph of the equation <m>y=-\frac{3}{2}x+5</m>.</p>
+  </statement>
+  <answer><p><m>(8,-7)</m> is on the graph, but <m>(5,0)</m> is not on the graph.</p>
+</answer>
+</exercise>
+  
 </exercisegroup>
--->
+
     <exercisegroup cols="3" permid="FDr">
       <title>Testing Points as Solutions</title>
       <exercise permid="egb">

@@ -12,7 +12,7 @@
     <title>Introduction to Exponent Rules</title>
     <p permid="SlZ">
       In <xref ref="section-introduction-to-exponent-rules">Section</xref>
-      we covered the <xref ref="list-rules-of-exponents" text="title">rules of exponents for multiplication</xref>.
+      we covered the <xref ref="list-rules-of-exponents" text="custom">rules of exponents for multiplication</xref>.
     </p>
     <example permid="GAk">
       <statement>
@@ -74,7 +74,7 @@
     <title>Exponent Rules</title>
     <p permid="yti">
       In <xref ref="section-exponent-rules">Section</xref>
-      we covered the <xref ref="list-exponent-rules" text="title">exponent rules</xref> and how to use them.
+      we covered the <xref ref="list-exponent-rules" text="custom">exponent rules</xref> and how to use them.
     </p>
     <example permid="mHt">
       <title>Quotients and Exponents</title>
@@ -87,9 +87,9 @@
       </statement>
       <solution permid="OOD">
         <p permid="eVQ">
-          We first use the <xref ref="item-exponent-rules-quotient" text="title"></xref>,
-          then the <xref ref="item-exponent-rules-quotient-to-a-power" text="title"></xref>,
-          then the <xref ref="item-exponent-rules-power-to-a-power" text="title"></xref>.
+          We first use the <xref ref="item-exponent-rules-quotient" text="custom">quotient rule</xref>,
+          then the <xref ref="item-exponent-rules-quotient-to-a-power" text="custom"> quotient to a power rule</xref>,
+          then the <xref ref="item-exponent-rules-power-to-a-power" text="custom">power to a power rule</xref>.
           <md permid="vyC">
             <mrow>\left(\frac{q^9}{t\cdot q^3}\right)^2\amp=\left(\frac{q^{9-3}}{t}\right)^2</mrow>
             <mrow>\amp=\left(\frac{q^{6}}{t}\right)^2</mrow>
@@ -103,8 +103,7 @@
       <title>The Zero Exponent</title>
       <statement>
         <p permid="uOI">
-          Recall that the <xref ref="item-exponent-rules-zero-exponent" text="title"></xref>
-          says that any real number raised to the <m>0</m>-power is <m>1</m>.
+          Recall that the <xref ref="item-exponent-rules-zero-exponent">zero exponent rule</xref> says that any real number raised to the <m>0</m>-power is <m>1</m>.
           Using this, and the other exponent rules,
           find another way to write <m>-9^0</m>.
         </p>
@@ -131,8 +130,7 @@
       </statement>
       <solution permid="bcV">
         <p permid="rki">
-          Recall that the <xref ref="item-exponent-rules-negative-exponent-definition" text="title"></xref>
-          says that a factor in the numerator with a negative exponent can be flipped into the denominator.
+          Recall that the <xref ref="item-exponent-rules-negative-exponent-definition" text="custom">negative exponent rule</xref> says that a factor in the numerator with a negative exponent can be flipped into the denominator.
           So
           <me permid="Prt">
             5x^{-3}=\frac{5}{x^3}
@@ -206,7 +204,7 @@
     <title>Scientific Notation</title>
     <p permid="eAr">
       In <xref ref="section-scientific-notation">Section</xref>
-      we covered the definition of <xref ref="definition-scientific-notation" text="title">scientific notation</xref>,
+      we covered the definition of <xref ref="definition-scientific-notation" text="custom">scientific notation</xref>,
       how to convert to and from scientific notation,
       and how to do some calculations in scientific notation.
     </p>
@@ -363,16 +361,16 @@
     <title>Adding and Subtracting Polynomials</title>
     <p permid="KHA">
       In <xref ref="section-adding-and-subtracting-polynomials">Section</xref>
-      we covered the definitions of a <xref ref="definition-polynomial" text="title">polynomial</xref>,
-      a <xref ref="definition-term-polynomial" text="title">term</xref> of a polynomial,
-      a <xref ref="definition-coefficient" text="title">coefficient</xref> of a term,
-      the <xref ref="definition-degree" text="title">degree</xref> of a term,
-      the <xref ref="definition-degree-polynomial" text="title">degree</xref> of a polynomial,
-      the <xref ref="definition-leading-term" text="title">leading term</xref> of a polynomial,
-      a <xref ref="definition-constant-term" text="title">constant term</xref>,
-      <xref ref="definition-monomial-binomial-trinomial" text="title">monomials,
+      we covered the definitions of a <xref ref="definition-polynomial" text="custom">polynomial</xref>,
+      a <xref ref="definition-term-polynomial" text="custom">term</xref> of a polynomial,
+      a <xref ref="definition-coefficient" text="custom">coefficient</xref> of a term,
+      the <xref ref="definition-degree" text="custom">degree</xref> of a term,
+      the <xref ref="definition-degree-polynomial" text="custom">degree</xref> of a polynomial,
+      the <xref ref="definition-leading-term" text="custom">leading term</xref> of a polynomial,
+      a <xref ref="definition-constant-term" text="custom">constant term</xref>,
+      <xref ref="definition-monomial-binomial-trinomial" text="custom">monomials,
       binomials, and trinomials</xref>,
-      and how to write a polynomial in <xref ref="remark-standard-form" text="title">standard form</xref>.
+      and how to write a polynomial in <xref ref="remark-standard-form" text="custom">standard form</xref>.
     </p>
     <example permid="DFE">
       <title>Polynomial Vocabulary</title>
@@ -543,8 +541,8 @@
     <title>Special Cases of Multiplying Polynomials</title>
     <p permid="WVS">
       In <xref ref="section-special-cases-of-multiplying-polynomials">Section</xref>
-      we covered how to <xref ref="fact-squaring-a-binomial" text="title">square a binomial</xref>
-      and how to find the <xref ref="fact-product-of-sum-and-difference" text="title">product of the sum or difference of two terms</xref>.
+      we covered how to <xref ref="fact-squaring-a-binomial" text="custom">square a binomial</xref>
+      and how to find the <xref ref="fact-product-of-sum-and-difference" text="custom">product of the sum or difference of two terms</xref>.
     </p>
     <example permid="cio">
       <title>Squaring a Binomial</title>
@@ -1549,6 +1547,7 @@ $ans = Compute("$a*$var**3+$d*$var**2+$e*$var")->reduce;
       <exercise permid="gin">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication200.pg" />
       </exercise>
+    </exercisegroup>
 <!-- <exercise>
 <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication205.pg" />
 </exercise>
@@ -1567,6 +1566,7 @@ $ans = Compute("$a*$var**3+$d*$var**2+$e*$var")->reduce;
 <exercise>
 <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication215.pg" />
 </exercise> -->
+    <exercisegroup cols="3">
       <exercise permid="Mpw">
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar100.pg" />
       </exercise>
@@ -1692,27 +1692,371 @@ $ans = Compute("$a*$var**3+$d*$var**2+$e*$var")->reduce;
     </exercisegroup>
     <exercisegroup cols="3" permid="qsX">
       <title>Dividing by a Monomial</title>
-<!--  <introduction>
-<p>Dividing Polynomials by Monomials</p>
-</introduction> -->
-      <exercise permid="VJi">
+<introduction><p>Simplify the following expressions</p>
+    </introduction>
+<exercise>
+        <webwork>
+          <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the answer: $a x^n + $b x^m -->
+$a = non_zero_random(-13,13,1);
+$n = random(3,20,1);
+
+$b = non_zero_random(-13,13,1);
+$m = random(3,$n-1,1);
+
+<!-- # multiply top and bottom by $c -->
+$c = random(2,10,1);
+
+foreach my $i (0..$n) {$poly1array[$i] = 0};
+$poly1array[0] = $a;
+$poly1array[$n-$m] = $b;
+
+<!-- # setup the denominator: $c -->
+$poly2array[0] = $c;
+
+<!-- # reduction check -->
+$ans = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+<!-- # for the numerator we have to multiply poly1 by poly2 -->
+$poly1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->operators->set(
+   '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   ' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1});
+
+
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the answer: $a x^n + $b x^m -->
+$a = non_zero_random(-13,13,1);
+$n = random(3,20,1);
+
+$b = non_zero_random(-13,13,1);
+$m = random(3,$n-1,1);
+
+<!-- # multiply top and bottom by $c -->
+$c = random(2,10,1);
+
+foreach my $i (0..$n) {$poly1array[$i] = 0};
+$poly1array[0] = $a;
+$poly1array[$n-$m] = $b;
+
+<!-- # setup the denominator: $c -->
+$poly2array[0] = $c;
+
+<!-- # reduction check -->
+$ans = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+<!-- # for the numerator we have to multiply poly1 by poly2 -->
+$poly1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->operators->set(
+   '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   ' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1});
+
+
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="VJi">
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/exponentDivision115.pg" />
       </exercise>
       <exercise permid="BQr">
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/exponentDivision115.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the answer: $a x^n + $b x^m + $c x^p -->
+$a = non_zero_random(-13,13,1);
+$b = non_zero_random(-13,13,1);
+$c = non_zero_random(-13,13,1);
+
+$n = random(6,20,1);
+$m = random(4,$n-1,1);
+$p = random(3,$m-1,1);
+
+foreach my $i (0..$n) {$poly1array[$i] = 0};
+$poly1array[$n-$n] = $a;
+$poly1array[$n-$m] = $b;
+$poly1array[$n-$p] = $c;
+
+<!-- # multiply top and bottom by $d x^2 -->
+$d = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+
+<!-- # setup the denominator: $d x^2 -->
+@poly2array = ($d,0,0,0);
+
+<!-- # reduction check -->
+$ans = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+<!-- # for the numerator we have to multiply poly1 by poly2 -->
+$poly1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+<!-- #Make it so that fractions like 1/2 in formulas are not computed to 0.5 -->
+Context()->operators->set(
+   '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   ' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1});
+
+
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="hXA">
+      <exercise>
+        <webwork>
+          <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the answer: $a x^n + $b x^m + $c x^p -->
+$a = non_zero_random(-13,13,1);
+$b = non_zero_random(-13,13,1);
+$c = non_zero_random(-13,13,1);
+
+$n = random(6,20,1);
+$m = random(4,$n-1,1);
+$p = random(3,$m-1,1);
+
+foreach my $i (0..$n) {$poly1array[$i] = 0};
+$poly1array[$n-$n] = $a;
+$poly1array[$n-$m] = $b;
+$poly1array[$n-$p] = $c;
+
+<!-- # multiply top and bottom by $d x^2 -->
+$d = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+
+<!-- # setup the denominator: $d x^2 -->
+@poly2array = ($d,0,0,0);
+
+<!-- # reduction check -->
+$ans = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+<!-- # for the numerator we have to multiply poly1 by poly2 -->
+$poly1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+<!-- #Make it so that fractions like 1/2 in formulas are not computed to 0.5 -->
+Context()->operators->set(
+   '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   ' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1});
+
+
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+
+      <!-- <exercise permid="hXA">
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/exponentDivision120.pg" />
       </exercise>
       <exercise permid="OeJ">
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/exponentDivision120.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the answer: $a x^n + $b x^m -->
+$a = non_zero_random(-13,13,1);
+$n = random(4,20,1);
+
+$b = non_zero_random(-13,13,1);
+$m = random(3,$n-1,1);
+
+<!-- # multiply top and bottom by $c -->
+$c = random(2,10,1);
+
+foreach my $i (0..$n) {$poly1array[$i] = 0};
+$poly1array[0] = $a;
+$poly1array[$n-$m] = $b;
+
+<!-- # setup the denominator: $c -->
+@poly2array = ($c,0);
+
+<!-- # reduction check -->
+$ans = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+<!-- # for the numerator we have to multiply poly1 by poly2 -->
+$poly1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->operators->set(
+   '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   ' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1});
+
+
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
       </exercise>
-      <exercise permid="ulS">
+      <exercise>
+        <webwork>
+          <pg-macros><macro-file>PCCmacros.pl</macro-file></pg-macros>
+          <pg-code>
+            Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+<!-- # setup the answer: $a x^n + $b x^m -->
+$a = non_zero_random(-13,13,1);
+$n = random(4,20,1);
+
+$b = non_zero_random(-13,13,1);
+$m = random(3,$n-1,1);
+
+<!-- # multiply top and bottom by $c -->
+$c = random(2,10,1);
+
+foreach my $i (0..$n) {$poly1array[$i] = 0};
+$poly1array[0] = $a;
+$poly1array[$n-$m] = $b;
+
+<!-- # setup the denominator: $c -->
+@poly2array = ($c,0);
+
+<!-- # reduction check -->
+$ans = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+<!-- # for the numerator we have to multiply poly1 by poly2 -->
+$poly1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->operators->set(
+   '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   ' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1});
+
+
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+          </pg-code>
+          <statement>
+            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+          </statement>
+          <answer>
+            <p><m><var name="$ans"/></m></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="ulS">
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/exponentDivision125.pg" />
       </exercise>
       <exercise permid="atb">
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/exponentDivision125.pg" />
-      </exercise>
+      </exercise> -->
+
+
+
+      
 <!-- <exercise>
 <webwork source="Contrib/PCC/BasicAlgebra/Exponents/exponentDivision130.pg" />
 </exercise>

@@ -1815,7 +1815,7 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
       <exercise permid="zNs">
         <webwork source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction30.pg"  />
       </exercise>
-      <exercise permid="zNs">
+      <!-- <exercise permid="zNs">
         <webwork source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction30.pg"  />
       </exercise>
       <exercise permid="fUB">
@@ -1823,7 +1823,7 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
       </exercise>
       <exercise permid="fUB">
         <webwork source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction40.pg"  />
-      </exercise>
+      </exercise> -->
     </exercisegroup>
     <exercisegroup cols="2" permid="tom">
       <title>Building Fractions</title>
@@ -2165,10 +2165,22 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
         <webwork source="Contrib/PCC/BasicMath/FractionsCalculation/MixedNumberAddition90.pg"  />
       </exercise>
       <exercise>
+        <webwork source="Contrib/PCC/BasicMath/FractionsCalculation/MixedNumberAddition100.pg"  />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicMath/FractionsCalculation/MixedNumberAddition120.pg"  />
+      </exercise>
+      <exercise>
         <webwork source="Contrib/PCC/BasicMath/FractionsCalculation/MixedNumberAddition120.pg"  />
       </exercise>
       <exercise>
         <webwork source="Contrib/PCC/BasicMath/FractionsCalculation/MixedNumberSubtraction170.pg"  />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicMath/FractionsCalculation/MixedNumberSubtraction170.pg"  />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicMath/FractionsCalculation/MixedNumberSubtraction180.pg"  />
       </exercise>
       <exercise>
         <webwork source="Contrib/PCC/BasicMath/FractionsCalculation/MixedNumberSubtraction140.pg"  />
@@ -2187,26 +2199,28 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
       <exercise permid="Bhg">
         <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionAdditionWordProblems20.pg"  />
       </exercise>
-<!--             <exercise>
-<webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionAdditionWordProblems30.pg"  />
-</exercise> -->
-<!--             <exercise>
-<webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionAdditionWordProblems40.pg"  />
-</exercise> -->
-      <exercise permid="hop">
-        <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionAdditionWordProblems60.pg"  />
+      <exercise permid="Bhg">
+        <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionAdditionWordProblems20.pg"  />
       </exercise>
-<!--             <exercise>
-<webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionAdditionWordProblems70.pg"  />
-</exercise> -->
       <exercise permid="Nvy">
         <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems10.pg"  />
       </exercise>
       <exercise permid="tCH">
         <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems10.pg"  />
       </exercise>
+
+      <exercise permid="hop">
+        <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionAdditionWordProblems60.pg"  />
+      </exercise>
+<!--             <exercise>
+<webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionAdditionWordProblems70.pg"  />
+</exercise> -->
+      
       <exercise permid="ZJQ">
         <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems20.pg"  />
+      </exercise>
+      <exercise permid="lYi">
+        <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems70.pg"  />
       </exercise>
 <!--             <exercise>
 <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems30.pg"  />
@@ -2215,9 +2229,7 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
       <exercise permid="FQZ">
         <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems30.pg"  />
       </exercise>
-      <exercise permid="lYi">
-        <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems70.pg"  />
-      </exercise>
+      
 <!--             <exercise>
 <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems40.pg"  />
 </exercise> -->
@@ -2227,18 +2239,13 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
       <exercise permid="ymA">
         <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems50.pg"  />
       </exercise>
-      <exercise permid="etJ">
-        <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems60.pg"  />
-      </exercise>
-<!--             <exercise>
-<webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems75.pg"  />
-</exercise> -->
-<!--             <exercise>
-<webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems80.pg"  />
-</exercise> -->
       <exercise permid="KAS">
         <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionMultiplicationWordProblems10.pg"  />
       </exercise>
+      <exercise permid="etJ">
+        <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems60.pg"  />
+      </exercise>
+      
       <exercise permid="qIb">
         <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionMultiplicationWordProblems10.pg"  />
       </exercise>
@@ -2315,6 +2322,9 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
 <exercise>
 <webwork source="Contrib/PCC/BasicMath/FractionApplication/MixedNumberSubtractionWordProblems30.pg"  />
 </exercise> -->
+      <exercise>
+        <webwork source="Contrib/PCC/BasicMath/FractionApplication/MixedNumberSubtractionWordProblems40.pg"  />
+      </exercise>
       <exercise permid="giW">
         <webwork source="Contrib/PCC/BasicMath/FractionApplication/MixedNumberSubtractionWordProblems40.pg"  />
       </exercise>
@@ -2327,6 +2337,9 @@ $popup=PopUp(['?', 'A', 'B', 'C', 'D'],'D');
 <!--             <exercise>
 <webwork source="Contrib/PCC/BasicMath/FractionApplication/MixedNumberMultiplicationWordProblems10.pg"  />
 </exercise> -->
+      <exercise>
+        <webwork source="Contrib/PCC/BasicMath/FractionApplication/MixedNumberMultiplicationWordProblems20.pg"  />
+      </exercise>
       <exercise permid="Mqf">
         <webwork source="Contrib/PCC/BasicMath/FractionApplication/MixedNumberMultiplicationWordProblems20.pg"  />
       </exercise>

@@ -271,8 +271,8 @@ ytick={0,5,...,30}]
       <q>big</q>
       is on the left, the output
       <q>small</q>
-      is on the right.
-      The first table's function is to output a word with the opposite meaning of each input word.
+      is on the right.</p>
+      <p>The first table's function is to output a word with the opposite meaning of each input word.
       (This is not a numerical example.)
     </p>
     <sidebyside widths="47% 47%" margins="0%" permid="fql">
@@ -330,10 +330,11 @@ ytick={0,5,...,30}]
       The equation <m>y=2x</m> summarizes the pattern in the table.
       For each of the following tables,
       find an equation that describes the pattern you see.
-      Numerical pattern recognition may or may not come naturally for you.
-      Either way, pattern recognition is an important mathematical skill that anyone can develop.
+      Numerical pattern recognition may or may not come naturally for you.</p>
+      <p>Either way, pattern recognition is an important mathematical skill that anyone can develop.
       Solutions for these exercises provide some ideas for recognizing patterns.
     </p>
+    <newpage/>
     <exercise permid="Qhn">
       <webwork>
           

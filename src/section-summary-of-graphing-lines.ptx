@@ -86,7 +86,7 @@
     <title>Graphing Lines in Slope-Intercept Form</title>
     <p permid="oNT">
       In the following examples we will graph <m>y=-2x+1</m>,
-      which is in <xref ref="equation-slope-intercept-form" text="title">slope-intercept form</xref>,
+      which is in <xref ref="equation-slope-intercept-form" text="custom">slope-intercept form</xref>,
       with different methods and compare them.
     </p>
     <example permid="XWM">
@@ -162,7 +162,7 @@ ymin=-6,ymax=6]
         the slope triangle method is both faster and reinforces the true meaning of slope.
         In the slope triangle method,
         we first identify some point on the line.
-        With a line in <xref ref="equation-slope-intercept-form" text="title">slope-intercept form</xref>,
+        With a line in <xref ref="equation-slope-intercept-form" text="custom">slope-intercept form</xref>,
         we know the <m>y</m>-intercept, which is <m>(0,1)</m>.
         Then, we can draw slope triangles in both directions to find more points.
       </p>
@@ -319,7 +319,7 @@ ymin=-6,ymax=6]
       </p>
     </example>
     <p permid="UVc">
-      When a line is presented in <xref ref="equation-slope-intercept-form" text="title">slope-intercept form</xref>,
+      When a line is presented in <xref ref="equation-slope-intercept-form" text="custom">slope-intercept form</xref>,
       our opinion is that the slope triangle method is the best choice for making its graph.
     </p>
   </subsection>
@@ -327,7 +327,7 @@ ymin=-6,ymax=6]
     <title>Graphing Lines in Standard Form</title>
     <p permid="Bcl">
       In the following examples we will graph <m>3x+4y=12</m>,
-      which is in <xref ref="equation-standard-form" text="title">standard form</xref>,
+      which is in <xref ref="equation-standard-form" text="custom">standard form</xref>,
       with different methods and compare them.
     </p>
     <example permid="oUX">
@@ -467,7 +467,7 @@ ymin=-1,ymax=4]
       <title>With Slope Triangles</title>
       <sidebyside widths="47% 47%" margins="0%" permid="FTi">
         <p permid="KRw">
-          We can always rearrange <m>3x+4y=12</m> into <xref ref="equation-slope-intercept-form" text="title">slope-intercept form</xref>,
+          We can always rearrange <m>3x+4y=12</m> into <xref ref="equation-slope-intercept-form" text="custom">slope-intercept form</xref>,
           and then graph it with the slope triangle method:
         </p>
         <p permid="qYF">

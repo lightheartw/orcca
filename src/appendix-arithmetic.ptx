@@ -461,7 +461,7 @@ If a baby is about <m>0.6</m> meters long and their father is three times taller
       or they use the dot, as in <m>0.6\cdot3</m>,
       to indicate multiplication.
       If you're typing, use parentheses or the asterisk,
-      <asterisk />, for multiplication,
+      *, for multiplication,
       and both people and computers will understand you.
     </p>
     <exercise permid="fKB">
@@ -625,7 +625,7 @@ $symbol = '\dog'; # dog
       then division is the most time-consuming of the four basic arithmetic operations.
       There are algorithms like the long division algorithm
       (detailed at
-      <url href="https://en.wikipedia.org/wiki/Long_division#Method">en.wikipedia.org/wiki/Long<underscore />division</url>
+      <url href="https://en.wikipedia.org/wiki/Long_division#Method">en.wikipedia.org/wiki/Long_division</url>
       and elsewhere)
       to compute a quotient by hand.
       Or perhaps you have access to an electronic calculator.
@@ -875,7 +875,7 @@ $alot=Currency("80");
         </row>
         <row bottom="major">
           <cell><p permid="hAB">
-              <circumflex />, or second number written in superscript
+               ^, or second number written in superscript
             </p>
           </cell>
           <cell>exponentiate</cell>

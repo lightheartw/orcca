@@ -250,6 +250,27 @@
       <exercise permid="Cwq">
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses40.pg" />
       </exercise>
+      <exercise permid="Cwq">
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses40.pg" />
+      </exercise>
+       <exercise permid="HIZ">
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction10.pg" />
+      </exercise>
+       <exercise permid="HIZ">
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction10.pg" />
+      </exercise>
+       <exercise permid="HIZ">
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction30.pg" />
+      </exercise>
+      <exercise permid="HIZ">
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction30.pg" />
+      </exercise>
+      <exercise permid="HIZ">
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction40.pg" />
+      </exercise>
+      <exercise permid="HIZ">
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction40.pg" />
+      </exercise>
     </exercisegroup>
     <!-- <newpage/> -->
     <exercisegroup cols="2" permid="ZjN">

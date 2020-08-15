@@ -404,7 +404,7 @@ ytick=]
           To find a line's slope using its graph,
           we first identify two points on it,
           and then draw a slope triangle.
-          Naturally, we would want to choose two points whose <m>x</m>- and <m>y</m>-coordinates are easy to identify exactly based on the graph.
+          Naturally, we would want to choose two points whose <m>x</m>- and <m>y</m>-coordinates are easy to identify exactly based on the graph.</p><p>
           We will pick the two points where <m>x=3</m> and <m>x=6</m>,
           because they are right on the grid lines:
         </p>
@@ -446,7 +446,7 @@ ytick=]
         <p permid="JXL">
           With units, the slope is <m>-\frac{2}{3}</m><quantity>
             <unit base="gallon" /><per base="hour" />
-          </quantity>.
+          </quantity>.</p><p>
           In the given context,
           this slope implies gas in the tank is <em>decreasing</em>
           at the rate of <m>\frac{2}{3}</m><quantity>
@@ -458,6 +458,9 @@ ytick=]
         </p>
       </solution>
     </example>
+
+    <!-- <p>Now, here are a couple for you to try on your own.</p> -->
+    <newpage/>
     <exercise permid="gbo">
       <webwork source="Contrib/PCC/BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph30.pg" seed="3"/>
     </exercise>
@@ -1066,7 +1069,7 @@ clip=false]
       and <m>y_2</m> is the second of them.
     </p>
     <p permid="cpK">
-      The beauty of the <xref ref="equation-slope-formula" text="title">slope formula</xref>
+      The beauty of the <xref ref="equation-slope-formula" text="custom">slope formula</xref>
       is that to find a line's slope,
       we don't need to draw a slope triangle any more.
       Let's look at an example.
@@ -1086,7 +1089,7 @@ clip=false]
           <me permid="gZD">
             (\overset{x_1}{-5},\overset{y_1}{25}) \text{ and } (\overset{x_2}{4},\overset{y_2}{-2})
           </me>
-          Now apply the <xref ref="equation-slope-formula" text="title">slope formula</xref>:
+          Now apply the <xref ref="equation-slope-formula" text="custom">slope formula</xref>:
           <md permid="RQF">
             <mrow>\text{slope}\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
             <mrow>\amp=\frac{-2-25}{4-(-5)}</mrow>
@@ -1138,6 +1141,58 @@ clip=false]
         <webwork source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction40.pg" />
       </exercise>
     </exercisegroup>
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("LimitedFraction");
+Context()->flags->set(requirePureFractions=>1);
+Context()->flags->set(showMixedNumbers=>0);
+Context()->flags->set(formatStudentAnswer=>parsed);
+
+
+
+  Context()->{cmpDefaults}{Fraction}{checker} = sub {
+    my ($correct,$student,$ans) = @_;
+    return 0 if $ans->{isPreview} || $correct != $student;
+    if ($student->class eq 'Fraction') {
+      my $gcd = gcd(($student->value)[0],($student->value)[1]);
+      Value::Error("Your answer is not simplified") if ($gcd != 1 or ($student->value)[1] == 1);}
+    $student = $ans->{student_formula};
+    $correct = $correct->{original_formula} if defined $correct->{original_formula};
+    my $OK = ($correct == $student); 
+    return $OK;
+  };
+
+
+@multiples = (2..10);
+
+$den1 = random(-10,-2,1);
+$num1 = $den1*list_random(@multiples);
+$den2 = random(-7,-4,1);
+$num2 = -$den2*list_random(@multiples);
+$den3 = random(5,9,1);
+$num3 = -$den3*list_random(@multiples);
+
+$ans1 = Fraction($num1,$den1);
+$ans2 = Fraction($num2,$den2);
+$ans3 = Fraction($num3,$den3);
+          </pg-code>
+          <statement><p>Simplify the following.</p>
+            <p><ol>
+              <li><p><m>\frac{<var name="$num1"/>}{<var name="$den1"/>}</m></p></li>
+              <li><p><m>\frac{<var name="$num2"/>}{<var name="$den2"/>}</m></p></li>
+              <li><p><m>\frac{<var name="$num3"/>}{<var name="$den3"/>}</m></p></li>
+            </ol></p>
+          </statement>
+          <answer><p><ol>
+            <li><p><m><var name="$ans1"/></m></p></li>
+              <li><p><m><var name="$ans2"/></m></p></li>
+              <li><p><m><var name="$ans3"/></m></p></li>
+            </ol></p>
+          </answer>
+        </webwork>
+      </exercise>
+
     <exercisegroup cols="2" permid="tQy">
       <title>Slope and Points</title>
       <exercise permid="HUd">
@@ -1195,7 +1250,7 @@ clip=false]
         <webwork source="Contrib/PCC/BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula90.pg" />
       </exercise>
     </exercisegroup>
-    <exercisegroup cols="3" permid="ZXH">
+    <exercisegroup cols="2" permid="ZXH">
       <title>Slope and Graphs</title>
       <exercise permid="Otj">
         <webwork source="Contrib/PCC/BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph10.pg" />

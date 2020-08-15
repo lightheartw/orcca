@@ -447,7 +447,7 @@ grid=none]
       Try a similar exercise.
     </p>
     <exercise permid="gER">
-      <webwork source="Contrib/PCC/Contrib/PCC/BasicAlgebra/Factoring/factoring210.pg" />
+      <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring210.pg" />
     </exercise>
     <p permid="FYM">
       So far the equations have been written in standard form, which is

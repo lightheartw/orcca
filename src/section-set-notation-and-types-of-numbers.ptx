@@ -736,6 +736,7 @@ Context()->parens->set('('=>{type=>'Point'});
         </webwork>
       </exercise>
     </exercisegroup>
+    <newpage/>
     <exercisegroup cols="2" permid="VPE">
       <title>Types of Numbers</title>
       <exercise permid="whB">

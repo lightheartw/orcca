@@ -488,10 +488,13 @@ Context("Point");
         </webwork>
       </exercise>
 <!--Replace these with less awkwardly-sized versions-->
-<!--             <exercise>
+            <exercise>
 <webwork source="Library/Mizzou/Algebra/graph_basics/list_points_01.pg" />
 </exercise>
 <exercise>
+<webwork source="Library/Mizzou/Algebra/graph_basics/list_points_01.pg" />
+</exercise>
+<!-- <exercise>
 <webwork source="Library/Mizzou/Algebra/graph_basics/match_points_01.pg" />
 </exercise> -->
     </exercisegroup>
@@ -775,6 +778,13 @@ coordinates{(0,-10) (0,0) (10,0) (10,-10)};
             </image>
           </sidebyside>
         </answer>
+      </exercise>
+      <exercise permid="BFW">
+        <statement>
+          <p permid="HJD">
+            Sketch a Cartesian plane and shade the quadrants where the <m>y</m>-coordinate is negative.
+          </p>
+        </statement>
       </exercise>
     </exercisegroup>
    

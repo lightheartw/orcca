@@ -1091,30 +1091,167 @@
       <exercise permid="VSZ">
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses30.pg" />
       </exercise>
+
       <exercise permid="Cai">
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction320.pg" />
       </exercise>
       <exercise permid="ihr">
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction320.pg" />
       </exercise>
-      <exercise permid="OoA">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+
+            $a=random(3,10,1);
+            $b=random(2,5,1);
+            $v=random(2,10,1);
+            $c=$a*$v-$b;
+
+            $left = Compute("$c");
+            $comp = "\geq";
+            $right = Compute("$a*x-$b");
+
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+            Context()->flags->set(formatStudentAnswer=>'parsed');
+
+            $setans = Compute("{ x | x &lt;= $v}");
+            $alt = Compute("{ x | $v >= x}");
+            $ans = OneOf($setans, $alt);
+
+            Context("Interval");
+            Context()->flags->set("formatStudentAnswer"=>'parsed');
+            $intans = Compute("(-inf,$v]");
+          </pg-code>
+          <statement>
+            <p> 
+
+              <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+          </statement>
+          <answer>
+            <p><var name="$setans"/>; <var name="$intans"/></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+
+            $a=random(3,10,1);
+            $b=random(2,5,1);
+            $v=random(2,10,1);
+            $c=$a*$v-$b;
+
+            $left = Compute("$c");
+            $comp = "\geq";
+            $right = Compute("$a*x-$b");
+
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+            Context()->flags->set(formatStudentAnswer=>'parsed');
+
+            $setans = Compute("{ x | x &lt;= $v}");
+            $alt = Compute("{ x | $v >= x}");
+            $ans = OneOf($setans, $alt);
+
+            Context("Interval");
+            Context()->flags->set("formatStudentAnswer"=>'parsed');
+            $intans = Compute("(-inf,$v]");
+          </pg-code>
+          <statement>
+            <p> 
+
+              <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+          </statement>
+          <answer>
+            <p><var name="$setans"/>; <var name="$intans"/></p>
+          </answer>
+        </webwork>
+      </exercise>
+      <!-- <exercise permid="OoA">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality180.pg" />
       </exercise>
       <exercise permid="uvJ">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality180.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+
+            $b=random(1,5,1);
+            $v=random(6,10,1);
+            $c=$b-$v;
+
+            $left = Compute("$c");
+            $comp = ">";
+            $right = Compute("$b-x");
+
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+            Context()->flags->set(formatStudentAnswer=>'parsed');
+
+            $setans = Compute("{ x | x > $v}");
+            $alt = Compute("{ x | $v &lt; x}");
+            $ans = OneOf($setans, $alt);
+
+            Context("Interval");
+            Context()->flags->set("formatStudentAnswer"=>'parsed');
+            $intans = Compute("($v,inf)");
+          </pg-code>
+          <statement>
+            <p> 
+
+              <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+          </statement>
+          <answer>
+            <p><var name="$setans"/>; <var name="$intans"/></p>
+          </answer>
+        </webwork>
       </exercise>
-<!-- <exercise>
-<webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality200.pg" />
-</exercise>
-<exercise>
-<webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality200.pg" />
-</exercise> -->
-      <exercise permid="aCS">
+      <exercise>
+        <webwork>
+          <pg-code>
+            Context("Numeric");
+
+            $b=random(1,5,1);
+            $v=random(6,10,1);
+            $c=$b-$v;
+
+            $left = Compute("$c");
+            $comp = ">";
+            $right = Compute("$b-x");
+
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+            Context()->flags->set(formatStudentAnswer=>'parsed');
+
+            $setans = Compute("{ x | x > $v}");
+            $alt = Compute("{ x | $v &lt; x}");
+            $ans = OneOf($setans, $alt);
+
+            Context("Interval");
+            Context()->flags->set("formatStudentAnswer"=>'parsed');
+            $intans = Compute("($v,inf)");
+          </pg-code>
+          <statement>
+            <p> 
+
+              <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+          </statement>
+          <answer>
+            <p><var name="$setans"/>; <var name="$intans"/></p>
+          </answer>
+        </webwork>
+      </exercise>
+     <!--  <exercise permid="aCS">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality220.pg" />
       </exercise>
       <exercise permid="GKb">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality220.pg" />
-      </exercise>
+      </exercise> -->
     </exercisegroup>
     <exercisegroup cols="2" permid="YNF">
       <title>Solving Absolute Value Equations Algebraically</title>
@@ -1381,14 +1518,14 @@
 <webwork source="Contrib/PCC/Math95/AbsValueEquations/54IntAlg_35_AbsoluteValEq_Review.pg" />
 </exercise> -->
     </exercisegroup>
-    <!-- <newpage/> -->
+    <newpage/>
     <exercisegroup cols="2" permid="Rjg">
       <title>Testing Possible Solutions</title>
       <exercise permid="MdO">
-        <webwork source="Contrib/PCC/Contrib/PCC/Math95/AbsValueInequalities/AbsValueInequalities1.pg" />
+        <webwork source="Contrib/PCC/Math95/AbsValueInequalities/AbsValueInequalities1.pg" />
       </exercise>
       <exercise permid="skX">
-        <webwork source="Contrib/PCC/Contrib/PCC/Math95/AbsValueInequalities/AbsValueInequalities1.pg" />
+        <webwork source="Contrib/PCC/Math95/AbsValueInequalities/AbsValueInequalities1.pg" />
       </exercise>
     </exercisegroup>
 <!-- <exercisegroup>

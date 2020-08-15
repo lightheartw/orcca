@@ -1244,7 +1244,7 @@ minor ytick={-7,-6,...,3}]
 <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex30.pg" />
 </exercise> -->
     </exercisegroup>
-    <!-- <newpage/> -->
+    <newpage/>
     <exercisegroup cols="2" permid="GTO">
       <title>Graphing Quadratic Functions Using the Vertex and a Table</title>
       <exercise permid="MnB">

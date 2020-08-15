@@ -359,10 +359,14 @@
   <subsection permid="VcK">
     <title>Solving Inequalities with Fractions</title>
     <p permid="apt">
-      We can also solve linear inequalities involving fractions by multiplying each side of the inequality by the LCD of all fractions within the inequality.
-      Remember that with inequalities,
-      everything works exactly the same except that the inequality sign reverses direction whenever we multiply each side of the inequality by a negative number.
+      We can also solve linear inequalities involving fractions by multiplying each side of the inequality by the LCD of all fractions within the inequality.</p>
+
+      <p>Remember that with linear inequalities,
+      everything works exactly the same as with solving linear equations, except that the inequality sign reverses direction whenever we multiply each side of the inequality by a negative number.
     </p>
+
+      <p>Let's look at a few examples to see how to solve a linear inequality by first clearing the fractions.</p>
+      
     <example permid="Cii">
       <statement>
         <p permid="xcQ">

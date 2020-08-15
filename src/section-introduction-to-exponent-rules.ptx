@@ -256,9 +256,9 @@
             <li permid="UUT">
               <p permid="xcd">
                 Since we cannot simplify anything inside the parentheses,
-                we'll begin simplifying this expression using the <xref ref="item-exponent-on-a-product-rule" text="title" />.
+                we'll begin simplifying this expression using the <xref ref="item-exponent-on-a-product-rule" text="custom">product to a power rule</xref>.
                 We'll apply the outer exponent of 4 to each factor inside the parentheses.
-                Then we'll use the <xref ref="item-exponent-on-an-exponent-rule" text="title" /> to finish out simplification process:
+                Then we'll use the <xref ref="item-exponent-on-an-exponent-rule" text="custom">power to a power rule</xref> to finish out simplification process:
                 <md permid="mRt">
                   <mrow>\left(3^7r^5\right)^4 \amp= \left(3^7\right)^4 \cdot \left(r^5\right)^4</mrow>
                   <mrow>\amp= 3^{7\cdot4} \cdot r^{5\cdot 4}</mrow>
@@ -270,7 +270,7 @@
               <p permid="djm">
                 According to the order of operations,
                 we should first simplify any exponents before carrying out any multiplication.
-                Therefore, we'll begin simplifying this by applying the <xref ref="item-exponent-on-an-exponent-rule" text="title" /> and then finish using the <xref ref="item-product-to-sum-exponent-rule" text="title" />:
+                Therefore, we'll begin simplifying this by applying the <xref ref="item-exponent-on-an-exponent-rule" text="custom">power to a power rule</xref> and then finish using the <xref ref="item-product-to-sum-exponent-rule" text="custom">product rule</xref> :
                 <md permid="SYC">
                   <mrow>\left(t^3\right)^2\cdot \left(t^4\right)^5 \amp= t^{3\cdot2}\cdot t^{4\cdot5}</mrow>
                   <mrow>\amp= t^6 \cdot t^{20}</mrow>
@@ -285,7 +285,7 @@
     </example>
     <remark permid="KRn">
       <p permid="Eld">
-        We cannot simplify an expression like <m>x^2y^3</m> using the <xref ref="item-product-to-sum-exponent-rule" text="title" />,
+        We cannot simplify an expression like <m>x^2y^3</m> using the <xref ref="item-product-to-sum-exponent-rule" text="custom">product rule</xref>,
         as the factors <m>x^2</m> and <m>y^3</m> do not have the same base.
       </p>
     </remark>
