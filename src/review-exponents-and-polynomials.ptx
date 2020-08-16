@@ -1742,7 +1742,7 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
           </statement>
           <answer>
             <p><m><var name="$ans"/></m></p>
@@ -1797,7 +1797,7 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
           </statement>
           <answer>
             <p><m><var name="$ans"/></m></p>
@@ -1863,7 +1863,7 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
           </statement>
           <answer>
             <p><m><var name="$ans"/></m></p>
@@ -1923,7 +1923,7 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
           </statement>
           <answer>
             <p><m><var name="$ans"/></m></p>
@@ -1985,7 +1985,7 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
           </statement>
           <answer>
             <p><m><var name="$ans"/></m></p>
@@ -2040,7 +2040,7 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
           </statement>
           <answer>
             <p><m><var name="$ans"/></m></p>
