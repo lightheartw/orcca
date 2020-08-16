@@ -750,10 +750,8 @@
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -789,10 +787,8 @@
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -845,10 +841,8 @@
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -901,10 +895,8 @@
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -955,10 +947,8 @@ $intans = Compute("(-inf,$ans)");
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1009,10 +999,8 @@ $intans = Compute("(-inf,$ans)");
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1039,10 +1027,8 @@ $ans = Compute("no solution");
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1069,10 +1055,8 @@ $ans = Compute("no solution");
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1112,10 +1096,8 @@ $intans = Compute("($ans,inf)");
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1155,10 +1137,8 @@ $intans = Compute("($ans,inf)");
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1195,10 +1175,8 @@ $intans = Compute("[-$ans,inf)");
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1235,10 +1213,8 @@ $intans = Compute("[-$ans,inf)");
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1277,10 +1253,8 @@ $intans = Compute("(-inf,$ans]");
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1319,10 +1293,8 @@ $intans = Compute("(-inf,$ans]");
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
     </exercisegroup>
@@ -1378,10 +1350,8 @@ $intans = Compute("($ans,inf)");
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1435,10 +1405,8 @@ $intans = Compute("($ans,inf)");
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       

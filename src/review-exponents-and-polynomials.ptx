@@ -1743,10 +1743,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1798,10 +1796,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="VJi">
@@ -1864,10 +1860,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1924,10 +1918,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
 
@@ -1986,10 +1978,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -2041,10 +2031,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="ulS">

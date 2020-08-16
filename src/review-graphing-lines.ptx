@@ -1300,12 +1300,12 @@ $left2 = Formula("y-$y2")->reduce;
 $right2 = Formula("$m*(x-$x2)")->reduce;
 
 Context()->texStrings;
-$ansPSstringTeX1 = "y-$y1=$m(x-$x1)"; 
+$ansPSstringTeX1 = "y-$y1=$m(x-$x1)";
 Context()->normalStrings;
 $ansPSstring1 = "y-$y1=$m(x-$x1)";
 
 Context()->texStrings;
-$ansPSstringTeX2 = "y-$y2=$m(x-$x2)"; 
+$ansPSstringTeX2 = "y-$y2=$m(x-$x2)";
 Context()->normalStrings;
 $ansPSstring2 = "y-$y2=$m(x-$x2)";
 
@@ -1316,13 +1316,16 @@ Context()->flags->set(showExtraParens=>0);
 Context()->flags->set(showExtraParens=>0);
 $ansPS1 = ImplicitPlane("$ansPSstring1");
 $ansPS2 = ImplicitPlane("$ansPSstring2");
+$ans = OneOf($ansPS1,$ansPS2);
           </pg-code>
           <statement>
-            <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+            <p>
+              A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.
+            </p>
+            <p>
+              <var name="$ans"/>
+            </p>
           </statement>
-          <answer>
-            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1352,12 +1355,12 @@ $left2 = Formula("y-$y2")->reduce;
 $right2 = Formula("$m*(x-$x2)")->reduce;
 
 Context()->texStrings;
-$ansPSstringTeX1 = "y-$y1=$m(x-$x1)"; 
+$ansPSstringTeX1 = "y-$y1=$m(x-$x1)";
 Context()->normalStrings;
 $ansPSstring1 = "y-$y1=$m(x-$x1)";
 
 Context()->texStrings;
-$ansPSstringTeX2 = "y-$y2=$m(x-$x2)"; 
+$ansPSstringTeX2 = "y-$y2=$m(x-$x2)";
 Context()->normalStrings;
 $ansPSstring2 = "y-$y2=$m(x-$x2)";
 
@@ -1368,13 +1371,14 @@ Context()->flags->set(showExtraParens=>0);
 Context()->flags->set(showExtraParens=>0);
 $ansPS1 = ImplicitPlane("$ansPSstring1");
 $ansPS2 = ImplicitPlane("$ansPSstring2");
+$ans = OneOf($ansPS1, $ansPS2);
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+            <p>
+              <var name="$ans"/>
+            </p>
           </statement>
-          <answer>
-            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
-          </answer>
         </webwork>
       </exercise>
 
@@ -1415,20 +1419,35 @@ $ansPS2 = ImplicitPlane("$ansPSstring2");
 
             <p>Let <m>x</m> be the number of minutes that have passed since the experiment started, and let <m>y</m> be the mass of the gas in grams at that moment. Use a linear equation to model the weight of the gas over time.</p>
 
-            <p><ol>
-              <li><p>Find this line's slope-intercept equation.</p></li>
-
-              <li><p><var name="$x3"/> minutes after the experiment started, how many grams of gas would be left?</p></li>
-
-              <li><p>If a linear model continues to be accurate, after how many minutes since the experiment started will all gas in the container will be gone?</p></li>
-            </ol></p>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Find this line's slope-intercept equation.
+                  </p>
+                  <p>
+                    <var name="$ansSI" width="15"/>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <var name="$x3"/> minutes after the experiment started, how many grams of gas would be left?
+                  </p>
+                  <p>
+                    <var name="$y3" width="15"/>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    If a linear model continues to be accurate, after how many minutes since the experiment started will all gas in the container will be gone?
+                  </p>
+                  <p>
+                    <var name="$x4" width="15"/>
+                  </p>
+                </li>
+              </ol>
+            </p>
           </statement>
-          <answer><p><ol>
-            <li><p><m><var name="$ansSI"/></m></p></li>
-            <li><p><var name="$y3"/> grams</p></li>
-            <li><p><var name="$x4"/> minutes</p></li>
-            </ol></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1461,20 +1480,35 @@ $ansPS2 = ImplicitPlane("$ansPSstring2");
 
             <p>Let <m>x</m> be the number of minutes that have passed since the experiment started, and let <m>y</m> be the mass of the gas in grams at that moment. Use a linear equation to model the weight of the gas over time.</p>
 
-            <p><ol>
-              <li><p>Find this line's slope-intercept equation.</p></li>
-
-              <li><p><var name="$x3"/> minutes after the experiment started, how many grams of gas would be left?</p></li>
-
-              <li><p>If a linear model continues to be accurate, after how many minutes since the experiment started will all gas in the container will be gone?</p></li>
-            </ol></p>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Find this line's slope-intercept equation.
+                  </p>
+                  <p>
+                    <var name="$ansSI" width="15"/>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <var name="$x3"/> minutes after the experiment started, how many grams of gas would be left?
+                  </p>
+                  <p>
+                    <var name="$y3" width="15"/>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    If a linear model continues to be accurate, after how many minutes since the experiment started will all gas in the container will be gone?
+                  </p>
+                  <p>
+                    <var name="$x4" width="15"/>
+                  </p>
+                </li>
+              </ol>
+            </p>
           </statement>
-          <answer><p><ol>
-            <li><p><m><var name="$ansSI"/></m></p></li>
-            <li><p><var name="$y3"/> grams</p></li>
-            <li><p><var name="$x4"/> minutes</p></li>
-            </ol></p>
-          </answer>
         </webwork>
       </exercise>
 

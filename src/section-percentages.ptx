@@ -893,10 +893,8 @@ $cost=Currency(4.80);
           </pg-code>
           <statement>
             <p><var name="$name"/> paid for a dinner and left <var name="$per"/>%, or <var name="$partC"/>, in tips. How much was the original bill (without counting the tip)?</p>
+            <p><var name="$wholeC" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$wholeC"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -922,10 +920,8 @@ $cost=Currency(4.80);
           </pg-code>
           <statement>
             <p><var name="$name"/> paid for a dinner and left <var name="$per"/>%, or <var name="$partC"/>, in tips. How much was the original bill (without counting the tip)?</p>
+            <p><var name="$wholeC" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$wholeC"/></p>
-          </answer>
         </webwork>
       </exercise>
 
@@ -1007,10 +1003,8 @@ $alt = $alt." The row $names[$highlight] $percents[$highlight] is highlighted.";
 
             <p>The highlighted row means each serving of macaroni and cheese in this box contains <var name="$partU"/> of fat, which is <var name="$per"/>% of an average person's daily intake of fat. What's the recommended daily intake of fat for an average person?</p>
 
+            <p><var name="$wholeC" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$wholeC"/></p>
-          </answer>
         </webwork>
       </exercise> -->
 
@@ -1074,10 +1068,8 @@ $alt = $alt." The row $names[$highlight] $percents[$highlight] is highlighted.";
           </pg-code>
           <statement>
             <p>The population of cats in a shelter decreased from <var name="$original"/> to <var name="$new"/>. What is the percentage decrease of the shelter's cat population?</p>
+              <p><var name="$ans" width="15"/></p>
           </statement>
-            <answer>
-              <p><var name="$ans"/></p>
-            </answer>
           </webwork>
         </exercise>
         <exercise>
@@ -1101,10 +1093,8 @@ $alt = $alt." The row $names[$highlight] $percents[$highlight] is highlighted.";
           </pg-code>
           <statement>
             <p>The population of cats in a shelter decreased from <var name="$original"/> to <var name="$new"/>. What is the percentage decrease of the shelter's cat population?</p>
+              <p><var name="$ans" width="15"/></p>
           </statement>
-            <answer>
-              <p><var name="$ans"/></p>
-            </answer>
           </webwork>
         </exercise>
 
@@ -1164,10 +1154,8 @@ $decrease1C = Currency($decrease1);
           </pg-code>
           <statement>
             <p>A house was bought two years ago at the price of <var name="$value0C"/>. Each year, the house's value decreased by <var name="$per"/>%. What's the house's value this year?</p>
+              <p><var name="$value2C" width="15"/></p>
           </statement>
-            <answer>
-              <p><var name="$value2C"/></p>
-            </answer>
           </webwork>
         </exercise>
         <exercise>
@@ -1194,10 +1182,8 @@ $decrease1C = Currency($decrease1);
           </pg-code>
           <statement>
             <p>A house was bought two years ago at the price of <var name="$value0C"/>. Each year, the house's value decreased by <var name="$per"/>%. What's the house's value this year?</p>
+              <p><var name="$value2C" width="15"/></p>
           </statement>
-            <answer>
-              <p><var name="$value2C"/></p>
-            </answer>
           </webwork>
         </exercise>
       <!-- <exercise permid="icw">

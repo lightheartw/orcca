@@ -1957,10 +1957,8 @@ $answer=7;
                 of the debris above the ground <m>t</m> seconds after the explosion.
                 After how many seconds will the debris hit the ground?
               </p>
+              <p><var name="$answer" width="15" /> seconds </p>
             </statement>
-            <answer>
-              <p><var name="$answer" /> seconds </p>
-            </answer>
         </webwork>
       </exercise>
       <exercise permid="DFR">

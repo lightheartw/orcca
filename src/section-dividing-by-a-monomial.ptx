@@ -291,10 +291,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -346,10 +344,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="kCh">
@@ -412,10 +408,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -472,10 +466,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="wQz">
@@ -533,10 +525,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -588,10 +578,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="JeR">
@@ -655,10 +643,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -716,10 +702,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="Vtj">
@@ -771,10 +755,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -820,10 +802,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
      <!--  <exercise permid="hHB">
@@ -890,10 +870,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -954,10 +932,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="tVT">
@@ -1019,10 +995,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1078,10 +1052,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><m><var name="$ans" width="15"/></m></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="Gkl">

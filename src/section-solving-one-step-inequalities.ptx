@@ -501,10 +501,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -533,10 +531,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -566,10 +562,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -599,10 +593,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -632,10 +624,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -665,10 +655,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -698,10 +686,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -731,10 +717,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
     </exercisegroup>
@@ -774,10 +758,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -807,10 +789,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
 
@@ -857,10 +837,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -906,10 +884,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -940,10 +916,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -974,10 +948,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1008,10 +980,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1042,10 +1012,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1074,10 +1042,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1106,10 +1072,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1139,10 +1103,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1172,10 +1134,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
 
@@ -1212,10 +1172,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1251,10 +1209,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1290,10 +1246,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1329,10 +1283,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1368,10 +1320,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1407,10 +1357,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       
@@ -1447,10 +1395,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1486,10 +1432,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       
@@ -1522,10 +1466,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1557,10 +1499,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
 
@@ -1592,10 +1532,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1626,10 +1564,8 @@ $nl->lb( new Label(3.48,1,'3.48','blue','center','bottom','large'));
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       
@@ -1667,10 +1603,8 @@ $intans = Compute("(-inf,$c)");
 
     <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
 
+    <p><m><var name="$ans"/></m>; <m><var name="$intans" width="15" /></m></p>
 </statement>
-  <answer>
-    <p><m><var name="$ans"/></m>; <m><var name="$intans" /></m></p>
-  </answer>
   </webwork>
 </exercise>
 <exercise>
@@ -1707,10 +1641,8 @@ $intans = Compute("(-inf,$c)");
 
     <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
 
+    <p><m><var name="$ans"/></m>; <m><var name="$intans" width="15" /></m></p>
   </statement>
-   <answer>
-    <p><m><var name="$ans"/></m>; <m><var name="$intans" /></m></p>
-  </answer>
   </webwork>
 </exercise>
 <exercise>
@@ -1747,10 +1679,8 @@ $intans = Compute("($c,inf)");
 
     <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
 
+    <p><m><var name="$ans"/></m>; <m><var name="$intans" width="15" /></m></p>
   </statement>
-   <answer>
-    <p><m><var name="$ans"/></m>; <m><var name="$intans" /></m></p>
-  </answer>
   </webwork>
 </exercise>
 <exercise>
@@ -1787,10 +1717,8 @@ $intans = Compute("($c,inf)");
 
     <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
 
+    <p><m><var name="$ans"/></m>; <m><var name="$intans" width="15" /></m></p>
   </statement>
-   <answer>
-    <p><m><var name="$ans"/></m>; <m><var name="$intans" /></m></p>
-  </answer>
   </webwork>
 </exercise>
 <exercise>
@@ -1830,10 +1758,8 @@ $intans = Compute("($c,inf)");
 
     <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
 
+      <p><m><var name="$ans"/></m>; <m><var name="$intans" width="15" /></m></p>
     </statement>
-    <answer>
-      <p><m><var name="$ans"/></m>; <m><var name="$intans" /></m></p>
-    </answer>
   </webwork>
 </exercise>
 <exercise>
@@ -1873,10 +1799,8 @@ $intans = Compute("($c,inf)");
 
     <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
 
+      <p><m><var name="$ans"/></m>; <m><var name="$intans" width="15" /></m></p>
     </statement>
-    <answer>
-      <p><m><var name="$ans"/></m>; <m><var name="$intans" /></m></p>
-    </answer>
   </webwork>
 </exercise>
   
@@ -1918,10 +1842,8 @@ $intans = Compute("($c,inf)");
 
     <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
 
+      <p><m><var name="$ans"/></m>; <m><var name="$intans" width="15" /></m></p>
     </statement>
-    <answer>
-      <p><m><var name="$ans"/></m>; <m><var name="$intans" /></m></p>
-    </answer>
   </webwork>
 </exercise>
 <exercise>
@@ -1962,10 +1884,8 @@ $intans = Compute("($c,inf)");
 
     <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
 
+      <p><m><var name="$ans"/></m>; <m><var name="$intans" width="15" /></m></p>
     </statement>
-    <answer>
-      <p><m><var name="$ans"/></m>; <m><var name="$intans" /></m></p>
-    </answer>
   </webwork>
 </exercise>
      
