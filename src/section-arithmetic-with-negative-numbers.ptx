@@ -1297,7 +1297,7 @@ xlabel={},
             <p>It's given that <m><var name="$int1"/> \cdot <var name="$int2"/> = <var name="$product1"/></m>. Use this fact to calculate the following without using a calculator.</p>
 
             <p> <m><var name="$dec1"/> - <var name="$dec2"/></m></p>
-                <p><m><var name="$product2" width="15"/></m></p>
+                <p><var name="$product2" width="15"/></p>
             </statement>
             </webwork>
           </exercise>
@@ -1326,7 +1326,7 @@ xlabel={},
             <p>It's given that <m><var name="$int1"/> \cdot <var name="$int2"/> = <var name="$product1"/></m>. Use this fact to calculate the following without using a calculator.</p>
 
             <p> <m><var name="$dec1"/> - <var name="$dec2"/></m></p>
-                <p><m><var name="$product2" width="15"/></m></p>
+                <p><var name="$product2" width="15"/></p>
             </statement>
             </webwork>
       </exercise>

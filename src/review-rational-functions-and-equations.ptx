@@ -664,7 +664,7 @@ Context()->parens->set('('=>{type=>'Point'});
           </pg-code>
           <statement>
             <p>Simplify the rational expression: <var name="$f"/>.</p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -683,7 +683,7 @@ Context()->parens->set('('=>{type=>'Point'});
           </pg-code>
           <statement>
             <p>Simplify the rational expression: <var name="$f"/>.</p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -701,7 +701,7 @@ Context()->parens->set('('=>{type=>'Point'});
           </pg-code>
           <statement>
             <p>Simplify the rational expression: <var name="$f"/>.</p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -719,7 +719,7 @@ Context()->parens->set('('=>{type=>'Point'});
           </pg-code>
           <statement>
             <p>Simplify the rational expression: <var name="$f"/>.</p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -740,7 +740,7 @@ Context()->parens->set('('=>{type=>'Point'});
           </pg-code>
           <statement>
             <p>Simplify the rational expression: <var name="$f"/>.</p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -781,7 +781,7 @@ Context()->parens->set('('=>{type=>'Point'});
           </pg-code>
           <statement>
             <p>Simplify the rational expression, if possible: <var name="$f"/>.</p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -828,7 +828,7 @@ Context()->parens->set('('=>{type=>'Point'});
           <statement>
             <p>Simplify the function formula, and if applicable, write the restricted domain.
               <m><var name="$R"/>(<var name="$var"/>) = <var name="$function"/></m></p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -865,7 +865,7 @@ Context()->parens->set('('=>{type=>'Point'});
           <statement>
             <p>Simplify the function formula, and if applicable, write the restricted domain.
               <m><var name="$R"/>(<var name="$var"/>) = <var name="$function"/></m></p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>

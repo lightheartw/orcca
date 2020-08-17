@@ -1154,7 +1154,7 @@ $ansSI = ImplicitPlane("y=$b");
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find an equation for this line.</p>
-            <p><m><var name="$ansS1" width="15"/></m></p>
+            <p><var name="$ansS1" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1180,7 +1180,7 @@ $ansSI = ImplicitPlane("y=$b");
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find an equation for this line.</p>
-            <p><m><var name="$ansS1" width="15"/></m></p>
+            <p><var name="$ansS1" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1211,7 +1211,7 @@ $ansSI = ImplicitPlane("y=$b");
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find an equation for this line.</p>
-            <p><m><var name="$ansS1" width="15"/></m></p>
+            <p><var name="$ansS1" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1236,7 +1236,7 @@ $ansSI = ImplicitPlane("y=$b");
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find an equation for this line.</p>
-            <p><m><var name="$ansS1" width="15"/></m></p>
+            <p><var name="$ansS1" width="15"/></p>
           </statement>
         </webwork>
       </exercise>

@@ -1761,7 +1761,7 @@ $ansAE = NumberWithUnits("$area*10000 cm^2");
           </pg-code>
           <statement>
             <p>A cube's side length is <var name="$sideU"/>. Find its volume.</p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1780,7 +1780,7 @@ $ansAE = NumberWithUnits("$area*10000 cm^2");
           </pg-code>
           <statement>
             <p>A cube's side length is <var name="$sideU"/>. Find its volume.</p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>

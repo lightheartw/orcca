@@ -1743,7 +1743,7 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1796,7 +1796,7 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1860,7 +1860,7 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1918,7 +1918,7 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1978,7 +1978,7 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -2031,7 +2031,7 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
-            <p><m><var name="$ans" width="15"/></m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
