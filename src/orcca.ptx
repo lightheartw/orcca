@@ -14,11 +14,11 @@
 <!-- Videos -->
   <xi:include href="./bookinfo.ptx" />
   <book xml:id="orcca" permid="eVd">
-    <title>Lane ORCCA (2019-2020)</title>
+    <title>Lane ORCCA (2020<ndash/>2021)</title>
     <subtitle>Open Resources for Community College Algebra</subtitle>
     <xi:include href="./frontmatter.ptx" />
     <xi:include href="./chapter-basic-math-review.ptx" />
-    <xi:include href="./chapter-variables-expressions-and-equations.ptx" />
+    <xi:include href="./chapter-variables-expressions-and-equations.ptx" /> 
     <xi:include href="./chapter-linear-equations-and-inequalities.ptx" />
     <xi:include href="./chapter-graphing-lines.ptx" />
     <xi:include href="./chapter-systems-of-linear-equations.ptx" />
