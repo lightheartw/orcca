@@ -1610,10 +1610,8 @@ $answer=6;
               <p permid="oqH">
                 How many seconds will it take for the debris to hit the ground?
               </p>
+              <p><var name="$answer" width="15"/> seconds</p>
             </statement>
-            <answer>
-              <p><var name="$answer"/> seconds</p>
-            </answer>
         </webwork>
       </exercise>
       <exercise permid="quc">
@@ -1635,10 +1633,8 @@ $answer=5;
               <p permid="AEZ">
                 The debris will hit the ground after how many seconds?
               </p>
+              <p><var name="$answer" width="15"/> seconds</p>
             </statement>
-            <answer>
-              <p><var name="$answer"/> seconds</p>
-            </answer>
         </webwork>
       </exercise>
       <exercise permid="WBl">
@@ -1664,10 +1660,8 @@ $answer2=6;
               <p permid="taA">
                 How long is the shorter leg?
               </p>
+              <p><var name="$answer1" width="15"/> in.; <var name="$answer2" width="15"/> in.</p>
             </statement>
-            <answer>
-              <p><var name="$answer1"/> in.; <var name="$answer2"/> in.</p>
-            </answer>
         </webwork>
       </exercise>
       <exercise permid="CIu">
@@ -1689,10 +1683,8 @@ $answer3=17;
                 The third side is <m>7</m> feet longer than the side along the building.
                 Find the lengths of all three sides.
               </p>
+              <p><var name="$answer1" width="15"/> ft.; <var name="$answer2" width="15"/> ft.; <var name="$answer3" width="15"/> ft.</p>
             </statement>
-            <answer>
-              <p><var name="$answer1"/> ft.; <var name="$answer2"/> ft.; <var name="$answer3"/> ft.</p>
-            </answer>
         </webwork>
       </exercise>
       <exercise permid="iPD">

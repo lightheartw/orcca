@@ -1930,7 +1930,6 @@ return $OK;
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/negExp170.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
     <exercisegroup cols="2" permid="SNL">
       <exercise permid="hPF">
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/negExp175.pg" />
@@ -1945,7 +1944,6 @@ return $OK;
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/negExp180.pg" />
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup permid="yUU">
       <title>Challenge</title>
       <exercise permid="Gsp">

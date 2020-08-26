@@ -670,7 +670,6 @@ axis x discontinuity=crunch,
         Revenue from income taxes dropped at the same time that federal money was spent to prevent further losses.
       </p>
     </example>
-    <newpage/>
     <example permid="Fao">
       <title>A Graph for the Square Root Function</title>
       <p permid="tYG">
@@ -809,7 +808,6 @@ ytick={1,2,3},
       Now given a graph of <m>f</m>,
       we interpret coordinates in the same way.
     </p>
-    <!-- <newpage/> -->
     <example xml:id="example-read-graph" permid="lhx">
       <p permid="SBq">
         <!-- In <xref ref="figure-read-graph">Figure</xref> -->
@@ -1973,7 +1971,6 @@ $c = Set(-1);
 <p> <ol label="a."> <li><p>The difference between each output for consecutive inputs is constant, so it's possible that this function is a linear function. It is therefore not possible that it is a quadratic function.</p></li> <li><p>This pattern looks to follow the pattern of <m>-x^2</m>, so it is possible that it is a quadratic function.</p></li> <li><p>This function changes from increasing to decreasing (and visa versa) repeatedly, so it is not possible that it is a quadratic function.</p></li> </ol> </p>
 </solution>
 </example> -->
-<!-- <newpage/> -->
   <exercises permid="CmM">
     <exercisegroup cols="2" permid="itV">
       <title>Review and Warmup</title>
@@ -2342,7 +2339,6 @@ Context("Point");
         <webwork source="Contrib/PCC/CollegeAlgebra/FunctionBasics/FunctionTables20.pg" />
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="zsg">
       <title>Translating Between Different Representations of a Function</title>
       <exercise permid="bdR">
@@ -2370,7 +2366,6 @@ Context("Point");
         <webwork source="Contrib/PCC/Math95/Functions/Functions19.pg" />
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup permid="fzp">
       <title>Functions in Context</title>
       <exercise permid="Yjl">

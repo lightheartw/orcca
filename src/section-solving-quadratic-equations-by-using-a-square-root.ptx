@@ -361,7 +361,6 @@ $evaluator=$answer->cmp(list_checker => ~~&amp;radicalListCheck);
       </figure>
     </sidebyside>
     <p>Let's look at some applications of the Pythaogrean Theorem in the following examples.</p>
-    <newpage/>
     <example permid="Sga">
       <sidebyside widths="55% 24%" margins="5%" permid="WPT">
         <stack>
@@ -507,7 +506,7 @@ cycle;
         </p>
         <figure permid="RKB">
           <caption>Pythagorean Theorem Problem</caption>
-          <image width="50%" permid="gya">
+          <image width="25%" permid="gya">
             <description>a rectangle for the TV with a diagonal line drawn and labeled c=50 in; the base width of the TV is labeled a and the height is labeled b</description>
 <latex-image>
 <![CDATA[\begin{tikzpicture}[x=0.5cm,y=0.5cm]

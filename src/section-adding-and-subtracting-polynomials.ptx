@@ -1684,7 +1684,6 @@ return $OK;
         <webwork source="Contrib/PCC/BasicAlgebra/PolynomialBasics/polyMultVar55.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
     <exercisegroup cols="2" permid="DBn">
       <title>Evaluating Polynomials</title>
       <exercise permid="lck">

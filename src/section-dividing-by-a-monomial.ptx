@@ -290,11 +290,9 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -345,11 +343,9 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="kCh">
@@ -411,11 +407,9 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -471,11 +465,9 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="wQz">
@@ -532,11 +524,9 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -587,11 +577,9 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="JeR">
@@ -654,11 +642,9 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -715,11 +701,9 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="Vtj">
@@ -770,11 +754,9 @@ Context()->operators->set(
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -819,11 +801,9 @@ Context()->operators->set(
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
      <!--  <exercise permid="hHB">
@@ -889,11 +869,9 @@ Context()->variables->are('x'=>'Real','y'=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -953,11 +931,9 @@ Context()->variables->are('x'=>'Real','y'=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="tVT">
@@ -1018,11 +994,9 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1077,11 +1051,9 @@ Context()->variables->are($var=>'Real');
 $ans = Formula($ans);
           </pg-code>
           <statement>
-            <p><m>\frac{<var name="poly1"/>}{<var name="poly2"/>}</m></p>
+            <p><m>\frac{<var name="$poly1"/>}{<var name="$poly2"/>}</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="Gkl">

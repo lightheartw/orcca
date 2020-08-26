@@ -1535,7 +1535,6 @@ xlabel={t}]
       </solution>
     </example>
   </subsection>
-  <newpage/>
 <!-- TODO: Add more application problems -->
   <exercises permid="fSb">
     <exercisegroup cols="2" permid="LZk">
@@ -1576,13 +1575,11 @@ xlabel={t}]
             $intans = Compute("(-inf,$c]");
           </pg-code>
           <statement>
-            <p>  
+            <p>
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1612,10 +1609,8 @@ xlabel={t}]
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="plN">
@@ -1652,10 +1647,8 @@ xlabel={t}]
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1686,10 +1679,8 @@ xlabel={t}]
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="BAf">
@@ -1727,10 +1718,8 @@ xlabel={t}]
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1762,10 +1751,8 @@ xlabel={t}]
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
      <!--  <exercise permid="NOx">
@@ -1809,10 +1796,8 @@ xlabel={t}]
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1850,10 +1835,8 @@ xlabel={t}]
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="acP">
@@ -1999,10 +1982,8 @@ $intans = Compute("($leftEnd,$rightEnd)");
             </pg-code>
             <statement>
               <p><m><var name="$left"/> <var name="$comp0"/> \frac{<var name="$b"/> }{<var name="$c"/> }x <var name="$comp1"/> <var name="$right"/> </m></p>
+              <p><var name="$intans" width="15"/></p>
             </statement>
-            <answer>
-              <p><var name="$intans"/></p>
-              </answer>
               </webwork>
               </exercise> 
               <exercise>
@@ -2039,10 +2020,8 @@ $intans = Compute("($leftEnd,$rightEnd)");
             </pg-code>
             <statement>
               <p><m><var name="$left"/> <var name="$comp0"/> \frac{<var name="$b"/> }{<var name="$c"/> }x <var name="$comp1"/> <var name="$right"/> </m></p>
+              <p><var name="$intans" width="15"/></p>
             </statement>
-            <answer>
-              <p><var name="$intans"/></p>
-              </answer>
               </webwork>
               </exercise>
       <!-- <exercise permid="pVH">
@@ -2090,10 +2069,8 @@ $intans = Compute("($leftEnd,$rightEnd]");
             </pg-code>
             <statement>
               <p><m><var name="$left"/> <var name="$comp0"/> <var name="$b"/> - \frac{<var name="$c"/> }{<var name="$d"/> }x <var name="$comp1"/> <var name="$right"/> </m></p>
+              <p><var name="$intans" width="15"/></p>
             </statement>
-            <answer>
-              <p><var name="$intans"/></p>
-              </answer>
               </webwork>
               </exercise> 
               <exercise>
@@ -2135,10 +2112,8 @@ $intans = Compute("($leftEnd,$rightEnd]");
             </pg-code>
             <statement>
               <p><m><var name="$left"/> <var name="$comp0"/> <var name="$b"/> - \frac{<var name="$c"/> }{<var name="$d"/> }x <var name="$comp1"/> <var name="$right"/> </m></p>
+              <p><var name="$intans" width="15"/></p>
             </statement>
-            <answer>
-              <p><var name="$intans"/></p>
-              </answer>
               </webwork>
               </exercise>
       <exercise permid="CjZ">

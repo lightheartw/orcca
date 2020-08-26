@@ -505,7 +505,6 @@
         <webwork source="Contrib/PCC/BasicAlgebra/Exponents/exponentsMultiplication50.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
     <exercisegroup cols="4" permid="gTZ">
       <exercise permid="iJm">
         <webwork>
@@ -1145,10 +1144,8 @@ $no=PopUp(['?','True', 'False'],2);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)^2</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1186,10 +1183,8 @@ $no=PopUp(['?','True', 'False'],2);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)^2</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
 
@@ -1235,10 +1230,8 @@ $no=PopUp(['?','True', 'False'],2);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)^2</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1277,10 +1270,8 @@ $no=PopUp(['?','True', 'False'],2);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)^2</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="BwK">
@@ -1324,10 +1315,8 @@ $no=PopUp(['?','True', 'False'],2);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)^2</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1365,10 +1354,8 @@ $no=PopUp(['?','True', 'False'],2);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)^2</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="NLc">
@@ -1452,10 +1439,8 @@ $no=PopUp(['?','True', 'False'],2);
           <statement>
             <p>Multiply the polynomials.</p>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1494,10 +1479,8 @@ $no=PopUp(['?','True', 'False'],2);
           <statement>
             <p>Multiply the polynomials.</p>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="vHy">
@@ -1543,10 +1526,8 @@ $no=PopUp(['?','True', 'False'],2);
           <statement>
             <p>Multiply the polynomials.</p>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1586,10 +1567,8 @@ $no=PopUp(['?','True', 'False'],2);
           <statement>
             <p>Multiply the polynomials.</p>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="HVQ">
@@ -1660,10 +1639,8 @@ $no=PopUp(['?','True', 'False'],2);
             </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1701,10 +1678,8 @@ $no=PopUp(['?','True', 'False'],2);
             </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="RpC">
@@ -1752,10 +1727,8 @@ $no=PopUp(['?','True', 'False'],2);
             </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1797,10 +1770,8 @@ $no=PopUp(['?','True', 'False'],2);
             </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="dDU">
@@ -1849,10 +1820,8 @@ $no=PopUp(['?','True', 'False'],2);
             </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1895,10 +1864,8 @@ $no=PopUp(['?','True', 'False'],2);
             </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="pSm">

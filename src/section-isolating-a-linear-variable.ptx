@@ -272,7 +272,6 @@
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction40.pg" />
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="ZjN">
       <title>Solving for a Variable</title>
       <exercise permid="iDz">

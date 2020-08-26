@@ -727,10 +727,8 @@ $neither = PopUp(['?','linear','quadratic','neither'],3);
           </pg-code>
           <statement>
             <p>Two numbers' sum is <var name="$sum"/>, and their product is <var name="$product"/>. Find these two numbers.</p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$ans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -749,10 +747,8 @@ $neither = PopUp(['?','linear','quadratic','neither'],3);
           </pg-code>
           <statement>
             <p>Two numbers' sum is <var name="$sum"/>, and their product is <var name="$product"/>. Find these two numbers.</p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$ans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="HXd">

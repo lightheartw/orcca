@@ -2030,7 +2030,6 @@ $t = 40;
         <webwork source="Contrib/PCC/BasicAlgebra/SlopeAndY-InterceptCalculations/WriteEquationByGraph40.pg" />
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="fMG">
       <title>Writing a Slope-Intercept Equation Given Two Points</title>
       <exercise permid="ZBV">
@@ -2155,25 +2154,37 @@ $cz = Currency(0);
 
             <p>Let [`x`] be the number of years since 2000, and let [`y`] be the amount of money, in dollars, left in the fund that year. Use a linear equation to model the amount of money left in the fund after so many years.</p>
 
-            <p><ol> 
-            <li><p>Find the linear model's slope-intercept equation.</p></li>
-
-            <li><p>In the year <var name="$yx3"/>, how much money was left in the fund?</p></li>
-
-            <li><p>Determine in what year, the fund will be empty.</p></li>
-          </ol>
-        </p>
-      </statement>
-      <answer>
-        <p><ol>
-          <li><p><var name="$ansSI"/></p></li>
-          <li><p><var name="$cy3"/></p></li>
-          <li><p><var name="$yx4"/></p></li>
-        </ol>
-        </p>
-      </answer>
-    </webwork>
-  </exercise>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Find the linear model's slope-intercept equation.
+                  </p>
+                  <p>
+                    <var name="$ansSI" width="15"/>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    In the year <var name="$yx3"/>, how much money was left in the fund?
+                  </p>
+                  <p>
+                    <var name="$cy3" width="15"/>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Determine in what year, the fund will be empty.
+                  </p>
+                  <p>
+                    <var name="$yx4" width="15"/>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
 
       <!-- <exercise permid="spt">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FindLineEquationApplication20.pg" />
@@ -2212,29 +2223,39 @@ $cm = Currency($m);
           <statement>
             <p>By your cell phone contract, you pay a monthly fee plus some money for each minute you use the phone during the month. In one month, you spent <var name="$x1"/> minutes on the phone, and paid <var name="$cy1"/>. In another month, you spent <var name="$x2"/> minutes on the phone, and paid <var name="$cy2"/>.</p>
 
-            <p>Let <m>x</m> be the number of minutes you talk over the phone in a month, and let <m>y</m> be your cell phone bill, in dollars, for that month. Use a linear equation to model your monthly bill based on the number of minutes you talk over the phone.</p> 
+            <p>Let <m>x</m> be the number of minutes you talk over the phone in a month, and let <m>y</m> be your cell phone bill, in dollars, for that month. Use a linear equation to model your monthly bill based on the number of minutes you talk over the phone.</p>
 
-            <p><ol>
-
-            <li><p>Find this linear model's slope-intercept equation.</p></li>
-
-            <li><p>If you spent <var name="$x3"/> minutes over the phone in a month, how much you would pay?</p></li>
-
-            <li><p>If in a month, you paid <var name="$cy4"/> for your cell phone bill, how many minutes must you have spent on the phone in that month?</p></li>
-
-            </ol>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Find this linear model's slope-intercept equation.
+                  </p>
+                  <p>
+                    <var name="$ansSI" width="15"/>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    If you spent <var name="$x3"/> minutes over the phone in a month, how much you would pay?
+                  </p>
+                  <p>
+                    <var name="$cy3" width="15"/>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    If in a month, you paid <var name="$cy4"/> for your cell phone bill, how many minutes must you have spent on the phone in that month?
+                  </p>
+                  <p>
+                    <var name="$x4" width="15"/>
+                  </p>
+                </li>
+              </ol>
             </p>
           </statement>
-          <answer>
-            <p><ol>
-          <li><p><var name="$ansSI"/></p></li>
-          <li><p><var name="$cy3"/></p></li>
-          <li><p><var name="$x4"/></p></li>
-        </ol>
-        </p>
-      </answer>
-    </webwork>
-  </exercise>
+        </webwork>
+      </exercise>
 
       <!-- <exercise permid="YwC">
         <webwork source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FindLineEquationApplication10.pg" />
@@ -2274,26 +2295,37 @@ $ansSI=Formula("y=$m*x+$b")->reduce;
 
             <p>Let <m>x</m> be the number of minutes that have passed since the experiment started, and let <m>y</m> be the mass of the gas in grams at that moment. Use a linear equation to model the weight of the gas over time.</p>
 
-            <p><ol>
-
-            <li><p>Find this line's slope-intercept equation.</p></li>
-
-            <li><p><var name="$x3"/> minutes after the experiment started, how many grams of gas will be left?</p></li>
-
-            <li><p>If a linear model continues to be accurate, after how many minutes since the experiment started, will all gas in the container be gone?</p></li>
-            </ol></p>
-
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Find this line's slope-intercept equation.
+                  </p>
+                  <p>
+                    <var name="$ansSI" width="15"/>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <var name="$x3"/> minutes after the experiment started, how many grams of gas will be left?
+                  </p>
+                  <p>
+                    <var name="$y3" width="15"/>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    If a linear model continues to be accurate, after how many minutes since the experiment started, will all gas in the container be gone?
+                  </p>
+                  <p>
+                    <var name="$x4" width="15"/>
+                  </p>
+                </li>
+              </ol>
+            </p>
           </statement>
-          <answer>
-            <p><ol>
-          <li><p><var name="$ansSI"/></p></li>
-          <li><p><var name="$y3"/></p></li>
-          <li><p><var name="$x4"/></p></li>
-        </ol>
-        </p>
-      </answer>
-    </webwork>
-  </exercise>
+        </webwork>
+      </exercise>
 
 
 
@@ -2329,23 +2361,35 @@ $ansSI=Formula("y=$m*x+$b")->reduce;
 
             <p>Let <m>x</m> be the number of months passed since the observations started, and let <m>y</m> be the tree's height at that time, in feet. Use a linear equation to model the tree's height as the number of months pass.</p>
 
-            <p><ol>
-
-            <li><p>Find this line's slope-intercept equation.</p></li>
-
-            <li><p><var name="$x3"/> months after the observations started, how tall  would the tree be?</p></li>
-
-            <li><p>How many months after the observation started, will the tree reach <var name="$y4"/> feet tall?</p></li>
-            </ol></p>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Find this line's slope-intercept equation.
+                  </p>
+                  <p>
+                    <var name="$ansSI" width="15"/>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <var name="$x3"/> months after the observations started, how tall  would the tree be?
+                  </p>
+                  <p>
+                    <var name="$y3" width="15"/>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    How many months after the observation started, will the tree reach <var name="$y4"/> feet tall?
+                  </p>
+                  <p>
+                    <var name="$x4" width="15"/>
+                  </p>
+                </li>
+              </ol>
+            </p>
           </statement>
-          <answer>
-            <p><ol>
-          <li><p><var name="$ansSI"/></p></li>
-          <li><p><var name="$y3"/></p></li>
-          <li><p><var name="$x4"/></p></li>
-        </ol>
-        </p>
-      </answer>
     </webwork>
   </exercise>
 

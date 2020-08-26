@@ -334,7 +334,6 @@ ytick={0,5,...,30}]
       <p>Either way, pattern recognition is an important mathematical skill that anyone can develop.
       Solutions for these exercises provide some ideas for recognizing patterns.
     </p>
-    <newpage/>
     <exercise permid="Qhn">
       <webwork>
           

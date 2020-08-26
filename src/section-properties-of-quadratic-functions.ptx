@@ -1244,7 +1244,6 @@ minor ytick={-7,-6,...,3}]
 <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex30.pg" />
 </exercise> -->
     </exercisegroup>
-    <newpage/>
     <exercisegroup cols="2" permid="GTO">
       <title>Graphing Quadratic Functions Using the Vertex and a Table</title>
       <exercise permid="MnB">
@@ -2339,7 +2338,6 @@ minor ytick={-14,-13,...,14}]
 <webwork source="Contrib/PCC/BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph80.pg" />
 </exercise>
 </exercisegroup> -->
-  <!-- <newpage/> -->
     <exercisegroup permid="Tig">
       <title>Finding Maximum and Minimum Values for Applications of Quadratic Functions</title>
       <exercise permid="DDJ">

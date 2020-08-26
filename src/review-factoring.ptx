@@ -807,7 +807,6 @@
         </p>
       </solution>
     </example>
-    <!-- <newpage/> -->
     <example permid="YiC">
       <statement>
         <p permid="IbC">
@@ -1629,7 +1628,6 @@
 <exercise>
 <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring480.pg" />
 </exercise> -->
-<newpage/>
       <exercisegroup cols="3">
       <exercise permid="QpI">
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring485.pg" />
@@ -1842,7 +1840,6 @@
         <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring505.pg" />
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup cols="3" permid="Qbn">
       <title>Solve Quadratic Equations by Factoring</title>
       <exercise permid="vry">
@@ -1960,10 +1957,8 @@ $answer=7;
                 of the debris above the ground <m>t</m> seconds after the explosion.
                 After how many seconds will the debris hit the ground?
               </p>
+              <p><var name="$answer" width="15" /> seconds </p>
             </statement>
-            <answer>
-              <p><var name="$answer" /> seconds </p>
-            </answer>
         </webwork>
       </exercise>
       <exercise permid="DFR">
