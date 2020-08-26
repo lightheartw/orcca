@@ -1128,7 +1128,7 @@
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
-            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1162,7 +1162,7 @@
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
-            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1201,7 +1201,7 @@
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
-            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1234,7 +1234,7 @@
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
-            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>

@@ -1575,10 +1575,10 @@ xlabel={t}]
             $intans = Compute("(-inf,$c]");
           </pg-code>
           <statement>
-            <p>  
+            <p>
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
-            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1609,7 +1609,7 @@ xlabel={t}]
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
-            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1647,7 +1647,7 @@ xlabel={t}]
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
-            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1679,7 +1679,7 @@ xlabel={t}]
             <p>  
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
-            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1718,7 +1718,7 @@ xlabel={t}]
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
-            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1751,7 +1751,7 @@ xlabel={t}]
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
-            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1796,7 +1796,7 @@ xlabel={t}]
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
-            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>
@@ -1835,7 +1835,7 @@ xlabel={t}]
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
-            <p><var name="$setans"/>; <var name="$intans" width="15"/></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
         </webwork>
       </exercise>

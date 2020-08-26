@@ -1660,7 +1660,7 @@ $answer2=6;
               <p permid="taA">
                 How long is the shorter leg?
               </p>
-              <p><var name="$answer1"/> in.; <var name="$answer2" width="15"/> in.</p>
+              <p><var name="$answer1" width="15"/> in.; <var name="$answer2" width="15"/> in.</p>
             </statement>
         </webwork>
       </exercise>
@@ -1683,7 +1683,7 @@ $answer3=17;
                 The third side is <m>7</m> feet longer than the side along the building.
                 Find the lengths of all three sides.
               </p>
-              <p><var name="$answer1"/> ft.; <var name="$answer2"/> ft.; <var name="$answer3" width="15"/> ft.</p>
+              <p><var name="$answer1" width="15"/> ft.; <var name="$answer2" width="15"/> ft.; <var name="$answer3" width="15"/> ft.</p>
             </statement>
         </webwork>
       </exercise>
