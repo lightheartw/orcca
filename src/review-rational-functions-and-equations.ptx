@@ -753,7 +753,7 @@ Context()->parens->set('('=>{type=>'Point'});
             $a = non_zero_random(-7,7,1);
             $b = random(1,5,2);
             $c = non_zero_random(-2,2,1);
-            do {$d = non_zero_random(-5,5,1);} until ($d % $a != 0);
+            do {$d = non_zero_random(-5,5,1);} until ($c != $a + $b*$d/$a);
 
             Context("RationalFunction");
 
