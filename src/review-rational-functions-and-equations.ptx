@@ -663,7 +663,7 @@ Context()->parens->set('('=>{type=>'Point'});
             $ans = Formula("x+$b");
           </pg-code>
           <statement>
-            <p>Simplify the rational expression: <var name="$f"/>.</p>
+            <p>Simplify the rational expression: <m><var name="$f"/></m>.</p>
             <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
@@ -682,7 +682,7 @@ Context()->parens->set('('=>{type=>'Point'});
             $ans = "$a/(x+$c)";
           </pg-code>
           <statement>
-            <p>Simplify the rational expression: <var name="$f"/>.</p>
+            <p>Simplify the rational expression: <m><var name="$f"/></m>.</p>
             <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
@@ -700,7 +700,7 @@ Context()->parens->set('('=>{type=>'Point'});
             $ans = "(x+$a)/(x+$c)";
           </pg-code>
           <statement>
-            <p>Simplify the rational expression: <var name="$f"/>.</p>
+            <p>Simplify the rational expression: <m><var name="$f"/></m>.</p>
             <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
@@ -718,7 +718,7 @@ Context()->parens->set('('=>{type=>'Point'});
             $ans = "(x+$a)/(x-$b)";
           </pg-code>
           <statement>
-            <p>Simplify the rational expression: <var name="$f"/>.</p>
+            <p>Simplify the rational expression: <m><var name="$f"/></m>.</p>
             <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
@@ -739,7 +739,7 @@ Context()->parens->set('('=>{type=>'Point'});
             $ans = "($c*x+$d)/(x+$e)";
           </pg-code>
           <statement>
-            <p>Simplify the rational expression: <var name="$f"/>.</p>
+            <p>Simplify the rational expression: <m><var name="$f"/></m>.</p>
             <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
@@ -760,7 +760,7 @@ Context()->parens->set('('=>{type=>'Point'});
             $f = Formula("($b x + $a)/($b x^2 + $c x + $d)")->reduce;
           </pg-code>
           <statement>
-            <p>Simplify the rational expression, if possible: <var name="$f"/>.</p>
+            <p>Simplify the rational expression, if possible: <m><var name="$f"/></m>.</p>
             <p>
               <var name="$f" width="30"/>
             </p>
@@ -780,7 +780,7 @@ Context()->parens->set('('=>{type=>'Point'});
             $ans = "x^2+$b";
           </pg-code>
           <statement>
-            <p>Simplify the rational expression, if possible: <var name="$f"/>.</p>
+            <p>Simplify the rational expression, if possible: <m><var name="$f"/></m>.</p>
             <p><var name="$ans" width="15"/></p>
           </statement>
         </webwork>
