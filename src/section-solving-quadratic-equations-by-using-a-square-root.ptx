@@ -506,7 +506,7 @@ cycle;
         </p>
         <figure permid="RKB">
           <caption>Pythagorean Theorem Problem</caption>
-          <image width="50%" permid="gya">
+          <image width="25%" permid="gya">
             <description>a rectangle for the TV with a diagonal line drawn and labeled c=50 in; the base width of the TV is labeled a and the height is labeled b</description>
 <latex-image>
 <![CDATA[\begin{tikzpicture}[x=0.5cm,y=0.5cm]
