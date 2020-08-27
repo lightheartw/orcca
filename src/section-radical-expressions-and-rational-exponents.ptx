@@ -1268,7 +1268,7 @@
         <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/FractionalExponentToRadical30.pg" />
       </exercise>
     </exercisegroup>
-    <exercisegroup cols="2" permid="oJt">
+    <exercisegroup cols="3" permid="oJt">
       <title>Simplifying Expressions with Rational Exponents</title>
       <exercise permid="ZeW">
         <webwork source="Contrib/PCC/Math95/RadicalsRationalExponents/RadicalsRationalExponents13.pg" />

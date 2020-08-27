@@ -531,7 +531,7 @@ cycle;
         </p>
         <figure permid="aut">
           <caption>Pythagorean Theorem Problem</caption>
-          <image width="50%" permid="MFj">
+          <image width="40%" permid="MFj">
             <description>The previous image of the TV with the height labeled b=x in and the base width labeled a=4/3x in</description>
 <latex-image>
 <![CDATA[\begin{tikzpicture}[x=0.5cm,y=0.5cm]
@@ -589,7 +589,7 @@ cycle;
         <p permid="xRK">
           Luca wanted to make a bench.
         </p>
-        <sidebyside width="50%">
+        <sidebyside width="35%">
         <figure permid="Kgc">
           <caption>Sketch of a Bench with Highlighted Back</caption>
 <!-- TODO: make the bench wider or the backrest shorter so that the backrest could be 48x3 inches. I was having trouble visualizing the next images because the proportion is different  -->
@@ -643,7 +643,7 @@ cycle;
           The circle should go through the bottom corners of the board and just barely touch the top of the board.
           That means that the line from the middle of the bottom of the board to the center of the circle will be <m>3</m> inches shorter than the radius.
         </p>
-        <sidebyside width="35%">
+        <sidebyside width="32%">
         <figure permid="SPU">
           <caption>Bench Back Board Diagram</caption>
           <image width="47%" permid="FaK">

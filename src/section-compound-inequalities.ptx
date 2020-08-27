@@ -1981,6 +1981,7 @@ Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("($leftEnd,$rightEnd)");
             </pg-code>
             <statement>
+              <p>Solve the compound inequality algebraically.</p>
               <p><m><var name="$left"/> <var name="$comp0"/> \frac{<var name="$b"/> }{<var name="$c"/> }x <var name="$comp1"/> <var name="$right"/> </m></p>
               <p><var name="$intans" width="15"/></p>
             </statement>
@@ -2019,6 +2020,7 @@ Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("($leftEnd,$rightEnd)");
             </pg-code>
             <statement>
+              <p>Solve the compound inequality algebraically.</p>
               <p><m><var name="$left"/> <var name="$comp0"/> \frac{<var name="$b"/> }{<var name="$c"/> }x <var name="$comp1"/> <var name="$right"/> </m></p>
               <p><var name="$intans" width="15"/></p>
             </statement>
@@ -2068,6 +2070,7 @@ Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("($leftEnd,$rightEnd]");
             </pg-code>
             <statement>
+              <p>Solve the compound inequality algebraically.</p>
               <p><m><var name="$left"/> <var name="$comp0"/> <var name="$b"/> - \frac{<var name="$c"/> }{<var name="$d"/> }x <var name="$comp1"/> <var name="$right"/> </m></p>
               <p><var name="$intans" width="15"/></p>
             </statement>
@@ -2111,6 +2114,7 @@ Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("($leftEnd,$rightEnd]");
             </pg-code>
             <statement>
+              <p>Solve the compound inequality algebraically.</p>
               <p><m><var name="$left"/> <var name="$comp0"/> <var name="$b"/> - \frac{<var name="$c"/> }{<var name="$d"/> }x <var name="$comp1"/> <var name="$right"/> </m></p>
               <p><var name="$intans" width="15"/></p>
             </statement>

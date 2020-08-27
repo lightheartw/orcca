@@ -913,7 +913,7 @@ grid=none]
     </example>
   </subsection>
   <exercises permid="VLE">
-    <exercisegroup cols="4" permid="BSN">
+    <exercisegroup cols="3" permid="BSN">
       <title>Review and Warmup</title>
       <exercise permid="mJP">
         <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/AbsoluteValue20.pg"/>
