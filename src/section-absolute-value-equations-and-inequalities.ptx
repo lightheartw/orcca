@@ -1128,10 +1128,8 @@
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1164,10 +1162,8 @@
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="OoA">
@@ -1205,10 +1201,8 @@
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1240,10 +1234,8 @@
             <p> 
 
               <m><var name="$left"/> <var name="$comp"/> <var name="$right"/></m></p>
+            <p><var name="$setans" width="15"/>; <var name="$intans" width="15"/></p>
           </statement>
-          <answer>
-            <p><var name="$setans"/>; <var name="$intans"/></p>
-          </answer>
         </webwork>
       </exercise>
      <!--  <exercise permid="aCS">
@@ -1518,7 +1510,6 @@
 <webwork source="Contrib/PCC/Math95/AbsValueEquations/54IntAlg_35_AbsoluteValEq_Review.pg" />
 </exercise> -->
     </exercisegroup>
-    <newpage/>
     <exercisegroup cols="2" permid="Rjg">
       <title>Testing Possible Solutions</title>
       <exercise permid="MdO">

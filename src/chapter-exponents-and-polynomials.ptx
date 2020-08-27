@@ -8,7 +8,6 @@
 <!-- *********************************************************************-->
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chapter-exponents-and-polynomials" permid="Hjr">
   <title>Exponents and Polynomials</title>
-<!--<introduction></introduction>-->
   <xi:include href="section-introduction-to-exponent-rules.ptx" />
   <xi:include href="section-exponent-rules.ptx" />
   <xi:include href="section-scientific-notation.ptx" />

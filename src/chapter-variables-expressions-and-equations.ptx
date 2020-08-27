@@ -8,7 +8,6 @@
 <!-- *********************************************************************-->
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chapter-variables-expressions-and-equations" permid="wKm">
   <title>Variables, Expressions, and Equations</title>
-<!--<introduction></introduction>-->
   <xi:include href="section-variables-and-evaluating-expressions.ptx" />
   <xi:include href="section-geometry-formulas.ptx" />
   <xi:include href="section-combining-like-terms.ptx" />

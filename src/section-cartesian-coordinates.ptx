@@ -211,7 +211,6 @@ $carls=Point("(0,0)");
     </webwork>
   </exercise>
 <!-- <p>It's traditional to use the variable <m>x</m> to represent numbers on the left-right axis, so we call that axis the <term><m>x</m>-axis</term>.<idx><h sortby="x"><m>x</m>-axis</h></idx> For similar reasons we call the down-up axis the <term><m>y</m>-axis</term>.<idx><h sortby="y"><m>y</m>-axis</h></idx> The point <m>(0,0)</m> is where the two axes meet, and we call it the <term>origin</term>.<idx><h>origin</h></idx> We use an <term>ordered pair</term>, like <m>(2,3)</m>, to represent the location of a point.<idx><h>ordered pair</h></idx> We are ready for a formal definition of the <term>Cartesian Coordinate System</term> and several associated vocabulary terms.</p> -->
-  <!-- <newpage/> -->
   <aside permid="Utu">
 <!-- <title>Coordinates <abbr>vs.</abbr> Intervals</title> -->
 <!-- <p>Unfortunately, the way we write ordered pairs looks exactly like the way we write open intervals in interval notation. It's up to you to use <em>context</em> to understand if something like <m>(2,3)</m> is the point <m>2</m> units right of the origin and <m>3</m> units up, or if it's the interval of all numbers between <m>2</m> and <m>3</m>.</p> -->
@@ -498,7 +497,6 @@ Context("Point");
 <webwork source="Library/Mizzou/Algebra/graph_basics/match_points_01.pg" />
 </exercise> -->
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="FFV">
       <title>Creating Sketches of Graphs</title>
       <exercise permid="Ytt">
@@ -809,7 +807,6 @@ coordinates{(0,-10) (0,0) (10,0) (10,-10)};
       </exercise> -->
       
     </exercisegroup>
-   <!--  <newpage/> -->
     <exercisegroup cols="2" permid="lNe">
       <title>Cartesian Plots in Context</title>
       <exercise permid="ubx">

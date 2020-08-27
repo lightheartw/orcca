@@ -8,7 +8,6 @@
 <!-- *********************************************************************-->
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chapter-more-on-quadratic-functions" permid="sat">
   <title>More on Quadratic Functions</title>
-<!--<introduction></introduction>-->
   <xi:include href="section-graphs-and-vertex-form.ptx" />
   <xi:include href="section-completing-the-square.ptx" />
   <xi:include href="section-more-on-complex-solutions-to-quadratic-equations.ptx" />

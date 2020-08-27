@@ -8,7 +8,6 @@
 <!-- *********************************************************************-->
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chapter-functions-and-their-representations" permid="TxJ">
   <title>Functions and Their Representations</title>
-<!--<introduction></introduction>-->
   <xi:include href="section-function-basics.ptx" />
   <xi:include href="section-domain-and-range.ptx" />
   <xi:include href="section-simplifying-expressions-with-function-notation.ptx" />

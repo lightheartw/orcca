@@ -1339,7 +1339,6 @@ minor ytick={-16,-14,...,16}]
         </p>
       </solution>
     </example>
-    <newpage/>
     <example permid="uuW">
       <title>Distinguishing Quadratic Functions from Other Functions and Relations</title>
       <statement>
@@ -2359,7 +2358,6 @@ TODO: Should these be mixed applications with factoring and square root method a
 <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexSolutions40.pg" />
 </exercise> -->
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup cols="3" permid="xwG">
       <title>Strategies for Solving Quadratic Equations</title>
 <!-- <exercise>
@@ -2872,10 +2870,8 @@ $areaU = NumberWithUnits("$yVertex ft^2");
           </pg-code>
           <statement>
             <p>You will build a rectangular sheep enclosure next to a river. There is no need to build a fence along the river, so you only need to build on three sides. You have a total of <var name="$fence"/> feet of fence to use. Find the dimensions of the pen such that you can enclose the maximum possible area. One approach is to let [`x`] represent the length of fencing that runs perpendicular to the river, and write an expression for the area of the enclosure. Then find its vertex and interpret it.</p>
+            <p>The length of the pen (parallel to the river) should be <var name="$lengthU"/>, the width (perpendicular to the river) should be <var name="$widthU"/>, and the maximum possible area is <var name="$areaU" width="15"/>.</p>
           </statement>
-          <answer>
-            <p>The length of the pen (parallel to the river) should be <var name="$lengthU"/>, the width (perpendicular to the river) should be <var name="$widthU"/>, and the maximum possible area is <var name="$areaU"/>.</p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -2919,10 +2915,8 @@ $areaU = NumberWithUnits("$yVertex ft^2");
           </pg-code>
           <statement>
             <p>You will build a rectangular sheep enclosure next to a river. There is no need to build a fence along the river, so you only need to build on three sides. You have a total of <var name="$fence"/> feet of fence to use. Find the dimensions of the pen such that you can enclose the maximum possible area. One approach is to let [`x`] represent the length of fencing that runs perpendicular to the river, and write an expression for the area of the enclosure. Then find its vertex and interpret it.</p>
+            <p>The length of the pen (parallel to the river) should be <var name="$lengthU"/>, the width (perpendicular to the river) should be <var name="$widthU"/>, and the maximum possible area is <var name="$areaU" width="15"/>.</p>
           </statement>
-          <answer>
-            <p>The length of the pen (parallel to the river) should be <var name="$lengthU"/>, the width (perpendicular to the river) should be <var name="$widthU"/>, and the maximum possible area is <var name="$areaU"/>.</p>
-          </answer>
         </webwork>
       </exercise>
 

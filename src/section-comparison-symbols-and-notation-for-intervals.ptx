@@ -1220,7 +1220,6 @@ $comparison=Compute("$bs");
         </webwork>
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="GbU">
       <title>True/False</title>
       <exercise permid="ldK">
@@ -1749,7 +1748,6 @@ else{$in[$i]=Compute("(-inf,$b[$i]]");}
           </statement>
       </webwork>
     </exercise> -->
-    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="Sqm">
       <title>Set-builder and Interval Notation</title>
       <exercise permid="foy">

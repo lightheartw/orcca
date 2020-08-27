@@ -977,7 +977,6 @@
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses190.pg" />
       </exercise>
     </exercisegroup>
-   <!--  <newpage/> -->
     <exercisegroup>
       <!-- <exercise permid="YbD">
         <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses190.pg" />

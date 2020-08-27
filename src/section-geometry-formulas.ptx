@@ -1134,7 +1134,6 @@ $bothvolume = Formula("V=Bh");
       </webwork>
     </exercise>
   </subsection>
-  <!-- <newpage/> -->
   <exercises permid="lDj">
     <exercisegroup cols="2" permid="Wul">
       <title>Perimeter and Area</title>
@@ -1451,24 +1450,41 @@ $ansAE = NumberWithUnits("$area*10000 cm^2");
 
                 <p>
                   <ol>
-                    <li><p>Find this circle's circumference, in terms of <m>\pi</m>.</p></li> 
-
-                    <li><p>Find this circle's circumference, rounded to the hundredths place.</p></li>
-
-                    <li><p>Find this circle's area, in terms of <m>\pi</m>.</p></li>
-
-                    <li><p>Find this circle's area, rounded to the hundredths place.</p></li>
+                    <li>
+                      <p>
+                        Find this circle's circumference, in terms of <m>\pi</m>.
+                      </p>
+                      <p>
+                        <var name="$circumferenceWithPiMO" width="15"/>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Find this circle's circumference, rounded to the hundredths place.
+                      </p>
+                      <p>
+                        <var name="$circumferenceMO" width="15"/>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Find this circle's area, in terms of <m>\pi</m>.
+                      </p>
+                      <p>
+                        <var name="$areaWithPiMO" width="15"/>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Find this circle's area, rounded to the hundredths place.
+                      </p>
+                      <p>
+                        <var name="$areaMO" width="15"/>
+                      </p>
+                    </li>
                   </ol>
                 </p>
               </statement>
-              <answer>
-                <p><ol>
-                  <li><p><m><var name="$circumferenceWithPiMO"/></m></p></li>
-                  <li><p><m><var name="$circumferenceMO"/></m></p></li>
-                  <li><p><m><var name="$areaWithPiMO"/></m></p></li>
-                  <li><p><m><var name="$areaMO"/></m></p></li>
-                </ol></p>
-              </answer>
             </webwork>
           </exercise>
           <exercise>
@@ -1501,24 +1517,41 @@ $ansAE = NumberWithUnits("$area*10000 cm^2");
 
                 <p>
                   <ol>
-                    <li><p>Find this circle's circumference, in terms of <m>\pi</m>.</p></li> 
-
-                    <li><p>Find this circle's circumference, rounded to the hundredths place.</p></li>
-
-                    <li><p>Find this circle's area, in terms of <m>\pi</m>.</p></li>
-
-                    <li><p>Find this circle's area, rounded to the hundredths place.</p></li>
+                    <li>
+                      <p>
+                        Find this circle's circumference, in terms of <m>\pi</m>.
+                      </p>
+                      <p>
+                        <var name="$circumferenceWithPiMO" width="15" />
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Find this circle's circumference, rounded to the hundredths place.
+                      </p>
+                      <p>
+                        <var name="$circumferenceMO" width="15" />
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Find this circle's area, in terms of <m>\pi</m>.
+                      </p>
+                      <p>
+                        <var name="$areaWithPiMO" width="15" />
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Find this circle's area, rounded to the hundredths place.
+                      </p>
+                      <p>
+                        <var name="$areaMO" width="15" />
+                      </p>
+                    </li>
                   </ol>
                 </p>
               </statement>
-              <answer>
-                <p><ol>
-                  <li><p><m><var name="$circumferenceWithPiMO"/></m></p></li>
-                  <li><p><m><var name="$circumferenceMO"/></m></p></li>
-                  <li><p><m><var name="$areaWithPiMO"/></m></p></li>
-                  <li><p><m><var name="$areaMO"/></m></p></li>
-                </ol></p>
-              </answer>
             </webwork>
           </exercise>
           <exercise>
@@ -1551,24 +1584,41 @@ $ansAE = NumberWithUnits("$area*10000 cm^2");
 
                 <p>
                   <ol>
-                    <li><p>Find this circle's circumference, in terms of <m>\pi</m>.</p></li> 
-
-                    <li><p>Find this circle's circumference, rounded to the hundredths place.</p></li>
-
-                    <li><p>Find this circle's area, in terms of <m>\pi</m>.</p></li>
-
-                    <li><p>Find this circle's area, rounded to the hundredths place.</p></li>
+                    <li>
+                      <p>
+                        Find this circle's circumference, in terms of <m>\pi</m>.
+                      </p>
+                      <p>
+                        <var name="$circumferenceWithPiMO" width="15"/>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Find this circle's circumference, rounded to the hundredths place.
+                      </p>
+                      <p>
+                        <var name="$circumferenceMO" width="15"/>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Find this circle's area, in terms of <m>\pi</m>.
+                      </p>
+                      <p>
+                        <var name="$areaWithPiMO" width="15"/>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Find this circle's area, rounded to the hundredths place.
+                      </p>
+                      <p>
+                        <var name="$areaMO" width="15"/>
+                      </p>
+                    </li>
                   </ol>
                 </p>
               </statement>
-              <answer>
-                <p><ol>
-                  <li><p><m><var name="$circumferenceWithPiMO"/></m></p></li>
-                  <li><p><m><var name="$circumferenceMO"/></m></p></li>
-                  <li><p><m><var name="$areaWithPiMO"/></m></p></li>
-                  <li><p><m><var name="$areaMO"/></m></p></li>
-                </ol></p>
-              </answer>
             </webwork>
           </exercise>
           <exercise>
@@ -1601,29 +1651,44 @@ $ansAE = NumberWithUnits("$area*10000 cm^2");
 
                 <p>
                   <ol>
-                    <li><p>Find this circle's circumference, in terms of <m>\pi</m>.</p></li> 
-
-                    <li><p>Find this circle's circumference, rounded to the hundredths place.</p></li>
-
-                    <li><p>Find this circle's area, in terms of <m>\pi</m>.</p></li>
-
-                    <li><p>Find this circle's area, rounded to the hundredths place.</p></li>
+                    <li>
+                      <p>
+                        Find this circle's circumference, in terms of <m>\pi</m>.
+                      </p>
+                      <p>
+                        <var name="$circumferenceWithPiMO" width="15" />
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Find this circle's circumference, rounded to the hundredths place.
+                      </p>
+                      <p>
+                        <var name="$circumferenceMO" width="15" />
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Find this circle's area, in terms of <m>\pi</m>.
+                      </p>
+                      <p>
+                        <var name="$areaWithPiMO" width="15" />
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Find this circle's area, rounded to the hundredths place.
+                      </p>
+                      <p>
+                        <var name="$areaMO" width="15" />
+                      </p>
+                    </li>
                   </ol>
                 </p>
               </statement>
-              <answer>
-                <p><ol>
-                  <li><p><m><var name="$circumferenceWithPiMO"/></m></p></li>
-                  <li><p><m><var name="$circumferenceMO"/></m></p></li>
-                  <li><p><m><var name="$areaWithPiMO"/></m></p></li>
-                  <li><p><m><var name="$areaMO"/></m></p></li>
-                </ol></p>
-              </answer>
             </webwork>
           </exercise>
 
-      
-      
       <exercise permid="yBv">
         <webwork source="Contrib/PCC/BasicAlgebra/Geometry/PolygonPerimeterArea20.pg" seed="87"/>
       </exercise>
@@ -1651,7 +1716,6 @@ $ansAE = NumberWithUnits("$area*10000 cm^2");
         <webwork source="Contrib/PCC/BasicAlgebra/Geometry/RectanglePerimeterArea50.pg" seed="89"/>
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup cols="2" permid="iID">
       <exercise permid="vGP">
         <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/EvaluateFormula10.pg" />
@@ -1697,10 +1761,8 @@ $ansAE = NumberWithUnits("$area*10000 cm^2");
           </pg-code>
           <statement>
             <p>A cube's side length is <var name="$sideU"/>. Find its volume.</p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1718,10 +1780,8 @@ $ansAE = NumberWithUnits("$area*10000 cm^2");
           </pg-code>
           <statement>
             <p>A cube's side length is <var name="$sideU"/>. Find its volume.</p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
      

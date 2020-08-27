@@ -884,7 +884,6 @@ $ans=Fraction(-1,2);
       </webwork>
     </exercise>
   </subsection>
-  <!-- <newpage/> -->
   <exercises permid="kWP">
     <exercisegroup cols="2" permid="RdY">
       <title>Review and Warmup</title>

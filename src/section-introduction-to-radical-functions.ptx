@@ -479,8 +479,8 @@ ytick={0,1,...,5}, xtick={0,1,...,9}]
                 we need to plug in <m>100</m> for the distance that it will fall,<m>d</m> and then solve for <m>t</m>.
                 <md permid="qwg">
                   <mrow>t=\sqrt{\frac{d}{16}}</mrow>
-                  <mrow>t\amp=sqrt{\frac{100}{16}}</mrow>
-                  <mrow>t\amp=\frac{sqrt{100}}{sqrt{16}}</mrow>
+                  <mrow>t\amp=\sqrt{\frac{100}{16}}</mrow>
+                  <mrow>t\amp=\frac{\sqrt{100}}{sqrt{16}}</mrow>
                   <mrow>t\amp=\frac{10}{4}</mrow>
                   <mrow>t\amp=2.5</mrow>
                 </md>

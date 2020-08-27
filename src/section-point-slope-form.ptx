@@ -158,7 +158,6 @@ grid=none]
       </p>
     </remark>
     <!-- <p>Now, it's your turn to try the next exercise on your own.</p> -->
-    <newpage/>
     <exercise xml:id="exercise-point-slope" permid="YQb">
       <webwork>
           
@@ -858,10 +857,8 @@ $ansPS2 = ImplicitPlane("$ansPSstring2");
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+            <p><var name="$ansPS1" width="15"/> or <var name="$ansPS2" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -901,10 +898,8 @@ $ansPS2 = ImplicitPlane("$ansPSstring2");
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+            <p><var name="$ansPS1" width="15"/> or <var name="$ansPS2" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
-          </answer>
         </webwork>
       </exercise>
 
@@ -951,10 +946,8 @@ $ansPS2 = ImplicitPlane("$ansPSstring2");
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+            <p><var name="$ansPS1" width="15"/> or <var name="$ansPS2" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -994,10 +987,8 @@ $ansPS2 = ImplicitPlane("$ansPSstring2");
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+            <p><var name="$ansPS1" width="15"/> or <var name="$ansPS2" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="LhV">
@@ -1052,10 +1043,8 @@ $ansPS2 = ImplicitPlane("$ansPSstring2");
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+            <p><var name="$ansPS1" width="15"/> or <var name="$ansPS2" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1104,10 +1093,8 @@ $ansPS2 = ImplicitPlane("$ansPSstring2");
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find this line's equation in point-slope form.</p>
+            <p><var name="$ansPS1" width="15"/> or <var name="$ansPS2" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ansPS1"/></m> or <m><var name="$ansPS2"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="Xwn">
@@ -1527,7 +1514,6 @@ return $OK;
         </webwork>
       </exercise>
     </exercisegroup>
-    <!-- <newpage/> -->
     <exercisegroup cols="2">
       <exercise permid="QBI">
         <webwork>

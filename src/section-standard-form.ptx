@@ -534,7 +534,6 @@ ytick={1,2,3}]
         </p>
       </statement>
     </fact>
-    <!-- <newpage/> -->
     <exercise permid="mom">
       <webwork>
           
@@ -1483,7 +1482,6 @@ return $ansHash;
         </webwork>
       </exercise>
     </exercisegroup>
-    <newpage/>
     <exercisegroup permid="bAM">
       <title>Graphs and Standard Form</title>
       <exercise permid="ffm">

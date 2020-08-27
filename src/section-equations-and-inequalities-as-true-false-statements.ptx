@@ -294,7 +294,6 @@ $right=Fraction(-2,3);
           </statement>
       </webwork>
     </exercise>
-    <!-- <newpage/> -->
     <exercise permid="eUz">
       <webwork>
           

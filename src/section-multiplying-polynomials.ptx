@@ -1628,10 +1628,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1674,10 +1672,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="fJT">
@@ -1728,10 +1724,8 @@ $ans = Formula($ans)->reduce;
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1776,10 +1770,8 @@ $ans = Formula($ans)->reduce;
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="rYl">
@@ -1829,10 +1821,8 @@ $ans = Formula($ans)->reduce;
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1876,10 +1866,8 @@ $ans = Formula($ans)->reduce;
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="EmD">
@@ -1932,10 +1920,8 @@ $ans = Formula($ans)->reduce;
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1982,10 +1968,8 @@ $ans = Formula($ans)->reduce;
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="QAV">
@@ -2043,10 +2027,8 @@ $ans = Formula($ans)->reduce;
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -2094,10 +2076,8 @@ $ans = Formula($ans)->reduce;
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise width="wide" permid="cPn">
@@ -2145,10 +2125,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -2190,10 +2168,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
 
@@ -2247,10 +2223,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       
@@ -2301,10 +2275,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -2347,10 +2319,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m><var name="$poly1"/>(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
 
@@ -2424,10 +2394,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -2468,10 +2436,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="KLJ">
@@ -2520,10 +2486,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -2566,10 +2530,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="Xab">
@@ -2615,10 +2577,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
               <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -2658,10 +2618,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
               <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="jot">
@@ -2708,10 +2666,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
               <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -2752,10 +2708,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
               <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="vCL">
@@ -2806,10 +2760,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
               <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -2854,10 +2806,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
               <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="HRd">
@@ -2906,10 +2856,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
               <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -2952,10 +2900,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
               <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="Ufv">
@@ -3004,10 +2950,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
               <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -3050,10 +2994,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
               <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="gtN">
@@ -3102,10 +3044,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
               <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -3148,10 +3088,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
               <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="sIf">
@@ -3203,10 +3141,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -3252,10 +3188,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="EWx">
@@ -3304,10 +3238,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -3350,10 +3282,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="RkP">
@@ -3405,10 +3335,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -3454,10 +3382,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="dzh">
@@ -3506,10 +3432,8 @@ $ans = Formula($ans);
               <p>
                 <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
               </p>
+              <p><var name="$ans" width="15"/></p>
             </statement>
-            <answer>
-              <p><m><var name="$ans"/></m></p>
-            </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -3552,10 +3476,8 @@ $ans = Formula($ans);
               <p>
                 <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
               </p>
+              <p><var name="$ans" width="15"/></p>
             </statement>
-            <answer>
-              <p><m><var name="$ans"/></m></p>
-            </answer>
         </webwork>
       </exercise>
 
@@ -3605,10 +3527,8 @@ $ans = Formula($ans);
               <p>
                 <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
               </p>
+              <p><var name="$ans" width="15"/></p>
             </statement>
-            <answer>
-              <p><m><var name="$ans"/></m></p>
-            </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -3649,10 +3569,8 @@ $ans = Formula($ans);
               <p>
                 <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
               </p>
+              <p><var name="$ans" width="15"/></p>
             </statement>
-            <answer>
-              <p><m><var name="$ans"/></m></p>
-            </answer>
         </webwork>
       </exercise>
 
@@ -3702,10 +3620,8 @@ $ans = Formula($ans);
               <p>
                 <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
               </p>
+              <p><var name="$ans" width="15"/></p>
             </statement>
-            <answer>
-              <p><m><var name="$ans"/></m></p>
-            </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -3746,10 +3662,8 @@ $ans = Formula($ans);
               <p>
                 <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
               </p>
+              <p><var name="$ans" width="15"/></p>
             </statement>
-            <answer>
-              <p><m><var name="$ans"/></m></p>
-            </answer>
         </webwork>
       </exercise>
 
@@ -3798,10 +3712,8 @@ $ans = Formula($ans);
               <p>
                 <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
               </p>
+              <p><var name="$ans" width="15"/></p>
             </statement>
-            <answer>
-              <p><m><var name="$ans"/></m></p>
-            </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -3842,10 +3754,8 @@ $ans = Formula($ans);
               <p>
                 <m>(<var name="$poly1" />)(<var name="$poly2" />)</m>
               </p>
+              <p><var name="$ans" width="15"/></p>
             </statement>
-            <answer>
-              <p><m><var name="$ans"/></m></p>
-            </answer>
         </webwork>
       </exercise>
 
@@ -3883,10 +3793,8 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
               <p>
                 <m><var name="$problem" /></m>
               </p>
+              <p><var name="$ans" width="15"/></p>
             </statement>
-            <answer>
-              <p><m><var name="$ans"/></m></p>
-            </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -3917,10 +3825,8 @@ $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
               <p>
                 <m><var name="$problem" /></m>
               </p>
+              <p><var name="$ans" width="15"/></p>
             </statement>
-            <answer>
-              <p><m><var name="$ans"/></m></p>
-            </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -3947,10 +3853,8 @@ $ans = Compute("$var**3+$bPlusC*$var**2+$bc*$var")->reduce;
               <p>
                 <m><var name="$problem" /></m>
               </p>
+              <p><var name="$ans" width="15"/></p>
             </statement>
-            <answer>
-              <p><m><var name="$ans"/></m></p>
-            </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -3982,10 +3886,8 @@ $ans = Compute("$a*$var**3+$d*$var**2+$e*$var")->reduce;
               <p>
                 <m><var name="$problem" /></m>
               </p>
+              <p><var name="$ans" width="15"/></p>
             </statement>
-            <answer>
-              <p><m><var name="$ans"/></m></p>
-            </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -4017,10 +3919,8 @@ $ans = Compute("$ab*$var**2+$a*$e*$var+$a*$cd")->reduce;
               <p>
                 <m><var name="$problem" /></m>
               </p>
+              <p><var name="$ans" width="15"/></p>
             </statement>
-            <answer>
-              <p><m><var name="$ans"/></m></p>
-            </answer>
         </webwork>
       </exercise>
       <exercise permid="rCM">
@@ -4052,10 +3952,8 @@ $ans = Compute("$ab*$var**2+$a*$e*$var+$a*$cd")->reduce;
               <p>
                 <m><var name="$problem" /></m>
               </p>
+              <p><var name="$ans" width="15"/></p>
             </statement>
-            <answer>
-              <p><m><var name="$ans"/></m></p>
-            </answer>
         </webwork>
       </exercise>
     </exercisegroup>
@@ -4121,10 +4019,8 @@ $ans = Formula($ans)->reduce;
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -4171,10 +4067,8 @@ $ans = Formula($ans)->reduce;
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
 
@@ -4232,10 +4126,8 @@ $ans = Formula($ans)->reduce;
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -4286,10 +4178,8 @@ $ans = Formula($ans)->reduce;
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="IAX">
@@ -4347,10 +4237,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -4401,10 +4289,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise width="wide" seed="114" permid="UPp">
@@ -4463,10 +4349,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -4519,10 +4403,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="hdH">
@@ -4566,10 +4448,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -4607,10 +4487,8 @@ $ans = Formula($ans);
           </pg-code>
           <statement>
             <p><m>(<var name="$poly1"/>)(<var name="$poly2"/>)</m></p>
+            <p><var name="$ans" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ans"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="trZ">

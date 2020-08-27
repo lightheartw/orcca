@@ -1059,7 +1059,6 @@ $answer=Formula("sqrt(10)/5");
         <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals90.pg" />
       </exercise>
     </exercisegroup>
-    <newpage/>
     <exercisegroup cols="2" permid="vHL">
       <title>Rationalizing the Denominator</title>
       <exercise permid="srG">

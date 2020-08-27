@@ -630,7 +630,6 @@ xlabel={purchase price},
         </figure>
       </sidebyside>
     </example>
-    <newpage/>
     <paragraphs permid="diM">
       <title>Summary of Horizontal and Vertical Line Equations</title>
         <sidebyside permid="FZQ">
@@ -1155,10 +1154,8 @@ $ansSI = ImplicitPlane("y=$b");
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find an equation for this line.</p>
+            <p><var name="$ansS1" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ansS1"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1183,10 +1180,8 @@ $ansSI = ImplicitPlane("y=$b");
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find an equation for this line.</p>
+            <p><var name="$ansS1" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ansS1"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="MUv">
@@ -1216,10 +1211,8 @@ $ansSI = ImplicitPlane("y=$b");
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find an equation for this line.</p>
+            <p><var name="$ansS1" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ansS1"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
@@ -1243,10 +1236,8 @@ $ansSI = ImplicitPlane("y=$b");
           </pg-code>
           <statement>
             <p>A line passes through the points <m>(<var name="$x1"/>,<var name="$y1"/>)</m> and <m>(<var name="$x2"/>,<var name="$y2"/>)</m>. Find an equation for this line.</p>
+            <p><var name="$ansS1" width="15"/></p>
           </statement>
-          <answer>
-            <p><m><var name="$ansS1"/></m></p>
-          </answer>
         </webwork>
       </exercise>
       <!-- <exercise permid="ZiN">
@@ -1422,7 +1413,6 @@ $ansSI = ImplicitPlane("y=$b");
         </answer>
       </exercise>
     </exercisegroup>
-    <newpage/>
     <exercisegroup cols="2" permid="NZO">
       <title>Parallel or Perpendicular?</title>
       <exercise permid="Hfj">
@@ -1482,219 +1472,196 @@ $lineSI=Formula("y=3x+4");
               <m>(-5,-11)\text{.}</m></p> 
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
-          </statement>
-          <answer>
             <p> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" />
+              <var name="$linePS" width="15"/>
             </p>
-            <p> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" />
+            <p> Line <m>\ell</m> in slope-intercept form is
+              <var name="$lineSI" width="15"/>
             </p>
-          </answer>
-          
+          </statement>
         </webwork>
       </exercise>
       <exercise>
         <webwork>
-          
 <pg-code>
 Context("Numeric")->variables->add(y=>'Real');
 parser::Assignment->Allow;
 $linePS=Formula("y=4(x-4)+15");
 $lineSI=Formula("y=4x-1");
 </pg-code>
-          
           <statement>
             <p permid="sUA">
               Line <m>k</m> and Line <m>\ell</m> are parallel.</p>
-              <p>Line <m>k</m> has the equation <m>y=4x+5\text{.}</m></p> 
+              <p>Line <m>k</m> has the equation <m>y=4x+5\text{.}</m></p>
               <p>Line <m>\ell</m> passes through the point
-              <m>(4,15)\text{.}</m></p> 
+              <m>(4,15)\text{.}</m></p>
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
+            <p> Line <m>\ell</m> in point-slope form is
+              <var name="$linePS" width="15"/>
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is
+              <var name="$lineSI" width="15"/>
+            </p>
           </statement>
-          <answer>
-            <p> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" />
-            </p>
-            <p> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" />
-            </p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
         <webwork>
-          
+
 <pg-code>
 Context("Numeric")->variables->add(y=>'Real');
 parser::Assignment->Allow;
 $linePS=Formula("y=-1/3(x+9)+7");
 $lineSI=Formula("y=-1/3x+4");
 </pg-code>
-         
+
           <statement>
             <p permid="sUA">
               Line <m>k</m> and Line <m>\ell</m> are parallel.</p>
-              <p>Line <m>k</m> has the equation <m>y=-\frac{1}{3}x+8\text{.}</m></p> 
+              <p>Line <m>k</m> has the equation <m>y=-\frac{1}{3}x+8\text{.}</m></p>
               <p>Line <m>\ell</m> passes through the point
-              <m>(-9,7)\text{.}</m></p> 
+              <m>(-9,7)\text{.}</m></p>
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
+            <p> Line <m>\ell</m> in point-slope form is
+              <var name="$linePS" width="15"/>
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is
+              <var name="$lineSI" width="15"/>
+            </p>
           </statement>
-            <answer>
-            <p> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" />
-            </p>
-            <p> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" />
-            </p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
         <webwork>
-          
 <pg-code>
 Context("Numeric")->variables->add(y=>'Real');
 parser::Assignment->Allow;
 $linePS=Formula("y=-2/7(x-14)+1");
 $lineSI=Formula("y=-2/7x+5");
 </pg-code>
-          
           <statement>
             <p permid="sUA">
               Line <m>k</m> and Line <m>\ell</m> are parallel.</p>
-              <p>Line <m>k</m> has the equation <m>y=-\frac{2}{7}x-7\text{.}</m></p> 
+              <p>Line <m>k</m> has the equation <m>y=-\frac{2}{7}x-7\text{.}</m></p>
               <p>Line <m>\ell</m> passes through the point
-              <m>(14,1)\text{.}</m></p> 
+              <m>(14,1)\text{.}</m></p>
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
+            <p> Line <m>\ell</m> in point-slope form is
+              <var name="$linePS" width="15"/>
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is
+              <var name="$lineSI" width="15"/>
+            </p>
           </statement>
-            <answer>
-            <p> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" />
-            </p>
-            <p> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" />
-            </p>
-            </answer>
         </webwork>
       </exercise>
       <exercise>
         <webwork>
-          
 <pg-code>
 Context("Numeric")->variables->add(y=>'Real');
 parser::Assignment->Allow;
 $linePS=Formula("y=1(x+3)+1");
 $lineSI=Formula("y=x+4");
 </pg-code>
-          
           <statement>
             <p permid="sUA">
               Line <m>k</m> and Line <m>\ell</m> are perpendicular.</p>
-              <p>Line <m>k</m> has the equation <m>y=-x+5\text{.}</m></p> 
+              <p>Line <m>k</m> has the equation <m>y=-x+5\text{.}</m></p>
               <p>Line <m>\ell</m> passes through the point
-              <m>(-3,1)\text{.}</m></p> 
+              <m>(-3,1)\text{.}</m></p>
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
+            <p> Line <m>\ell</m> in point-slope form is
+              <var name="$linePS" width="15"/>
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is
+              <var name="$lineSI" width="15"/>
+            </p>
           </statement>
-            <answer>
-            <p> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" />
-            </p>
-            <p> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" />
-            </p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
         <webwork>
-          
 <pg-code>
 Context("Numeric")->variables->add(y=>'Real');
 parser::Assignment->Allow;
 $linePS=Formula("y=1/3(x-2)-7/3");
 $lineSI=Formula("y=1/3x-3");
 </pg-code>
-          
           <statement>
             <p permid="sUA">
               Line <m>k</m> and Line <m>\ell</m> are perpendicular.</p>
-              <p>Line <m>k</m> has the equation <m>y=-3x-4\text{.}</m></p> 
+              <p>Line <m>k</m> has the equation <m>y=-3x-4\text{.}</m></p>
               <p>Line <m>\ell</m> passes through the point
-              <m>\left(2,-\frac{7}{3}\right)\text{.}</m></p> 
+              <m>\left(2,-\frac{7}{3}\right)\text{.}</m></p>
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
+            <p> Line <m>\ell</m> in point-slope form is
+              <var name="$linePS" width="15"/>
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is
+              <var name="$lineSI" width="15"/>
+            </p>
           </statement>
-            <answer>
-            <p> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" />
-            </p>
-            <p> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" />
-            </p>
-          </answer>
         </webwork>
       </exercise>
 <exercise>
         <webwork>
-          
 <pg-code>
 Context("Numeric")->variables->add(y=>'Real');
 parser::Assignment->Allow;
 $linePS=Formula("y=-8/5(x+2)+36/5");
 $lineSI=Formula("y=-8/5x+4");
 </pg-code>
-          
           <statement>
             <p permid="sUA">
               Line <m>k</m> and Line <m>\ell</m> are perpendicular.</p>
-              <p>Line <m>k</m> has the equation <m>y=\frac{5}{8}x+5\text{.}</m></p> 
+              <p>Line <m>k</m> has the equation <m>y=\frac{5}{8}x+5\text{.}</m></p>
               <p>Line <m>\ell</m> passes through the point
-              <m>\left(-2,\frac{36}{5}\right)\text{.}</m></p> 
+              <m>\left(-2,\frac{36}{5}\right)\text{.}</m></p>
               <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
             </p>
+            <p> Line <m>\ell</m> in point-slope form is
+              <var name="$linePS" width="15"/>
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is
+              <var name="$lineSI" width="15"/>
+            </p>
           </statement>
-            <answer>
-            <p> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" />
-            </p>
-            <p> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" />
-            </p>
-          </answer>
         </webwork>
       </exercise>
       <exercise>
         <webwork>
-          
 <pg-code>
 Context("Numeric")->variables->add(y=>'Real');
 parser::Assignment->Allow;
 $linePS=Formula("y=-5(x-3)-13");
 $lineSI=Formula("y=-5x+2");
 </pg-code>
-          
           <statement>
             <p permid="sUA">
-              Line <m>k</m> and Line <m>\ell</m> are perpendicular.</p>
-              <p>Line <m>k</m> has the equation <m>x-5y=-25\text{.}</m></p> 
-              <p>Line <m>\ell</m> passes through the point
-              <m>(3,-13)\text{.}</m></p> 
-              <p>Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
+              Line <m>k</m> and Line <m>\ell</m> are perpendicular.
+            </p>
+            <p>
+              Line <m>k</m> has the equation <m>x-5y=-25\text{.}</m>
+            </p>
+            <p>
+              Line <m>\ell</m> passes through the point
+              <m>(3,-13)\text{.}</m>
+            </p>
+            <p>
+              Find an equation for Line <m>\ell</m> both in point-slope form and slope-intercept form.
+            </p>
+            <p> Line <m>\ell</m> in point-slope form is
+              <var name="$linePS" width="15"/>
+            </p>
+            <p> Line <m>\ell</m> in slope-intercept form is
+              <var name="$lineSI" width="15"/>
             </p>
           </statement>
-            <answer>
-            <p> Line <m>\ell</m> in point-slope form is 
-              <var name="$linePS" />
-            </p>
-            <p> Line <m>\ell</m> in slope-intercept form is 
-              <var name="$lineSI" />
-            </p>
-          </answer>
         </webwork>
       </exercise>
 
