@@ -607,7 +607,7 @@ $no=PopUp(['?','is', 'is not'],2);
     </exercisegroup>
     <exercisegroup cols="2" permid="npS">
       <title>Simplifying Rational Expressions with More Than One Variable</title>
-      </introduction>
+      
       <exercise permid="VWi">
         <webwork source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions81.pg" />
       </exercise>

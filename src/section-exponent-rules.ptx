@@ -593,15 +593,7 @@ $d = Formula("2r^11");
       because our reasoning for this rule with the table had us dividing by the base.
       And we cannot divide by <m>0</m>.
     </p>
-<!--         <example>
-<statement>
-<p>Simplify <m>\frac{x^8}{\left(x^2\right)^4}</m>, assuming <m>x \neq 0</m>.</p>
-</statement>
-<solution>
-<p>We'll first focus on the parentheses and exponent in the denominator, using the <xref ref="item-exponent-rules-power-to-a-power" text="title">Property</xref>.  Then we'll finish using the <xref ref="item-exponent-rules-quotient" text="title">Property</xref>.<md> <mrow> \frac{x^8}{\left(x^2\right)^4} \amp= \frac{x^8}{x^{2\cdot 4}} </mrow> <mrow>  \amp= \frac{x^8}{x^8} </mrow> <mrow>  \amp= x^{8-8} </mrow> <mrow>  \amp= x^0 </mrow> <mrow>  \amp= 1 </mrow> </md>While this one started out being fairly similar to previous examples, when we arrived at the line <m>\frac{x^8}{x^8}</m> and carried out the division, all of the factors of <m>x</m> canceled from the numerator and denominator.  We were left with <m>x^0</m>, which we now know equals <m>1</m>.</p>
-</solution>
-</example>
--->
+
     <exercise permid="Ety">
       <webwork>
           
@@ -1014,35 +1006,7 @@ return $OK;
           </solution>
       </webwork>
     </exercise>
-<!--         <example>
-<statement>
-<p>Simplify <m>\frac{ 3^{5} x^{-7} }{ 3^{-6}x^{2} }</m>. Do not leave negative exponents in the final answer, and assume all variables represent non-zero real numbers.</p>
-</statement>
-<solution>
-<p>There are two main approaches we could use on this problem.</p>
-<sidebyside widths="47% 47%" margins="0%">
-<p>The first option would be to jump straight into the <xref ref="item-exponent-rules-quotient" text="title">quotient rules</xref> and subtract the powers of the respective bases.  <md> <mrow>\frac{ 3^{5} x^{-7} }{ 3^{-6}x^{2} } \amp= 3^{5-(-6)}x^{-7-2}</mrow> <mrow> \amp= 3^{11} \highlight{x^{-9}}</mrow> <mrow> \amp= \frac{3^{11}}{ \highlight{x^{9}}}</mrow> </md>Our final step was to remove the negative exponent on the <m>x^{-9}</m> factor.</p>
-<p>The other option would be to use the Negative Exponent rule and to remove the negative exponents first. <md> <mrow>\frac{ 3^{5} \highlight{x^{-7}} }{ \highlight{3^{-6}}x^{2} } \amp= \frac{ 3^{5} \highlight{3^{6}} }{\highlight{x^{7}} x^{2} }</mrow> <mrow>\amp= \frac{ 3^{5+6} }{x^{7+2} }</mrow> <mrow> \amp= \frac{3^{11}}{ x^{9}}</mrow> </md>Once all the factors had positive exponents, we finished by using <xref ref="item-exponent-rules-product" text="title">product rule</xref>.</p>
-</sidebyside>
-<p>Both approaches are correct and obtain the same simplified expression. There will be times where you'll be more inclined to use one approach over the other. </p>
-</solution>
-</example> -->
-<!--         <exercise>
-<webwork source="Contrib/PCC/BasicAlgebra/Exponents/negExp75.pg" seed="7652"/>
-</exercise>
-<exercise>
-<webwork source="Contrib/PCC/BasicAlgebra/Exponents/negExp60.pg" seed="6652"/>
-</exercise>
-<exercise>
-<webwork source="Contrib/PCC/BasicAlgebra/Exponents/negExp90.pg" seed="1111"/>
-</exercise>
-<exercise>
-<webwork source="Contrib/PCC/BasicAlgebra/Exponents/negExp15.pg" seed="7652"/>
-</exercise>
-<exercise>
-<webwork source="Contrib/PCC/BasicAlgebra/Exponents/negExp35.pg" seed="6652"/>
-</exercise>
--->
+
   </subsection>
   <subsection permid="pBi">
     <title>Summary of Exponent Rules</title>
@@ -1133,7 +1097,7 @@ return $OK;
       <title>A Common Mistake</title>
       <p permid="Wsy">
         It may be tempting to apply the rules of exponents to expressions containing addition or subtraction.
-        However, none of the <xref ref="list-exponent-rules">rules of exponents</xref>
+        However, none of the <xref ref="list-exponent-rules" text="custom">rules of exponents</xref>
         involve addition or subtraction in the initial expression.
         Because whole number exponents mean repeated multiplication,
         not repeated addition or subtraction,

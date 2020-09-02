@@ -507,7 +507,7 @@
         </p>
       </solution>
     </example>
-<!-- <remark><p>In this resource, we mostly use <xref ref="definition-interval-notation" text="title">interval notation</xref> to answer questions. Recall that we can also use <xref ref="definition-set-builder-notation" text="title">set builder notation</xref>. For example, the set <m>[3,\infty)</m> can also be written as <m>\{x\mid x\ge 3\}</m>.</p></remark>
+<!-- <remark><p>In this resource, we mostly use <xref ref="definition-interval-notation" text="custom">interval notation</xref> to answer questions. Recall that we can also use <xref ref="definition-set-builder-notation" text="custom">set builder notation</xref>. For example, the set <m>[3,\infty)</m> can also be written as <m>\{x\mid x\ge 3\}</m>.</p></remark>
 <example>
 <statement>
 <p>Simplify the intersections and unions.</p>

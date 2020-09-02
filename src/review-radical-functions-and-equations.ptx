@@ -13,9 +13,9 @@
     <p permid="HeA">
       In <xref ref="section-introduction-to-radical-functions">Section</xref>
       we covered the square root and other root functions.
-      We learned how to find the <xref ref="fact-domain-of-radicals" text="title">domain of radical functions</xref>
+      We learned how to find the <xref ref="fact-domain-of-radicals" text="custom">domain of radical functions</xref>
       algebraically and the range graphically.
-      We also saw the <xref ref="fact-distance-formula" text="title">distance formula</xref>
+      We also saw the <xref ref="fact-distance-formula" text="custom">distance formula</xref>
       which is an application of square roots.
     </p>
     <example permid="wMz">
@@ -176,8 +176,8 @@ ytick={0,1,...,5}, xtick={0,1,...,9}]
     <title>Radical Expressions and Rational Exponents</title>
     <p permid="nlJ">
       In <xref ref="section-radical-expressions-and-rational-exponents">Section</xref>
-      we learned the <xref ref="fact-rational-exponent-rule-ii" text="title">rational exponent rule</xref>
-      and added it to our <xref ref="list-exponent-rules-complete" text="title"> list of exponent rules</xref>.
+      we learned the <xref ref="fact-rational-exponent-rule-ii" text="custom">rational exponent rule</xref>
+      and added it to our <xref ref="list-exponent-rules-complete" text="custom"> list of exponent rules</xref>.
     </p>
     <example permid="Bws">
       <title>Radical Expressions and Rational Exponents</title>

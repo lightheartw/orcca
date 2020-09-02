@@ -12,9 +12,9 @@
     <title>Square Root Properties</title>
     <p permid="UyL">
       In <xref ref="section-square-root-properties">Section</xref>
-      we covered the <xref ref="definition-square-root" text="title">definition of a square root</xref>,
-      how to <xref ref="estimating-square-root" text="title">estimate</xref> and simplify square roots,
-      <xref ref="fact-mult-div-square-root-properties" text="title">multiplication and division properties</xref> of square roots,
+      we covered the <xref ref="definition-square-root" text="custom">definition of a square root</xref>,
+      how to <xref ref="estimating-square-root" text="custom">estimate</xref> and simplify square roots,
+      <xref ref="fact-mult-div-square-root-properties" text="custom">multiplication and division properties</xref> of square roots,
       and rationalizing the denominator.
     </p>
     <example permid="qQw">
@@ -46,7 +46,7 @@
       <title>Multiplication and Division Properties of Square Roots</title>
       <statement>
         <p permid="PeY">
-          Simplify the expressions using the <xref ref="fact-mult-div-square-root-properties" text="title">multiplication and division properties</xref> of square roots.
+          Simplify the expressions using the <xref ref="fact-mult-div-square-root-properties" text="custom">multiplication and division properties</xref> of square roots.
           <ol label="a" cols="2" permid="wUd">
             <li permid="tZx">
               <p permid="Bix">
@@ -187,8 +187,8 @@
     <title>Solving Quadratic Equations by Using a Square Root</title>
     <p permid="AFU">
       In <xref ref="section-solving-quadratic-equations-by-using-a-square-root">Section</xref>
-      we covered how to solve quadratic equations using the <xref ref="fact-square-root-property" text="title">square root property</xref>
-      and how to use the <xref ref="theorem-pythagorean-theorem" text="title">Pythagorean Theorem</xref>.
+      we covered how to solve quadratic equations using the <xref ref="fact-square-root-property" text="custom">square root property</xref>
+      and how to use the <xref ref="theorem-pythagorean-theorem" text="custom">Pythagorean Theorem</xref>.
     </p>
     <example permid="HOH">
       <title>Solving Quadratic Equations Using the Square Root Property</title>
@@ -294,9 +294,9 @@ ymax=1]
     <title>The Quadratic Formula</title>
     <p permid="gNd">
       In <xref ref="section-the-quadratic-formula">Section</xref>
-      we covered how to use the <xref ref="fact-the-quadratic-formula" text="title">quadratic formula</xref>
+      we covered how to use the <xref ref="fact-the-quadratic-formula" text="custom">quadratic formula</xref>
       to solve any quadratic equation,
-      as well as an <xref ref="algorithm-solving-linear-and-quadratic-equations" text="title">Process</xref>
+      as well as an <xref ref="algorithm-solving-linear-and-quadratic-equations">Process</xref>
       to help solve linear and quadratic equations.
     </p>
     <example permid="Aki">
@@ -449,7 +449,7 @@ ymax=1]
       <title>Solving Linear and Quadratic Equations</title>
       <statement>
         <p permid="YyK">
-          Use <xref ref="algorithm-solving-linear-and-quadratic-equations"/> to help solve the equations after deciding if they are linear or quadratic.
+          Use <xref ref="algorithm-solving-linear-and-quadratic-equations">Process</xref> to help solve the equations after deciding if they are linear or quadratic.
           <ol label="a." cols="2" permid="ppE">
             <li permid="MMV">
               <p permid="TVV">
@@ -577,8 +577,8 @@ ymax=1]
     <title>Complex Solutions to Quadratic Equations</title>
     <p permid="MUm">
       In <xref ref="section-complex-solutions-to-quadratic-equations">Section</xref>
-      we covered what both <xref ref="definition-imaginary-number" text="title">imaginary numbers</xref>
-      and <xref ref="definition-complex-number" text="title">complex numbers</xref> are,
+      we covered what both <xref ref="definition-imaginary-number" text="custom">imaginary numbers</xref>
+      and <xref ref="definition-complex-number" text="custom">complex numbers</xref> are,
       as well as how to solve quadratic equations where the solutions are imaginary numbers or complex numbers.
     </p>
     <example permid="sFJ">
@@ -662,7 +662,7 @@ ymax=1]
     <title>Strategies for Solving Quadratic Equations</title>
     <p permid="tbv">
       In <xref ref="section-strategies-for-solving-quadratic-equations">Section</xref>
-      we review all three <xref ref="list-methods-for-solving-quadratic-equations" text="title">methods for solving quadratic equations</xref> that we know.
+      we review all three <xref ref="list-methods-for-solving-quadratic-equations" text="custom">methods for solving quadratic equations</xref> that we know.
       For the full explanation of solving using the factoring,
       visit <xref ref="section-solving-quadratic-equations-by-factoring">Section</xref>,
       solving using the square root method,
@@ -797,10 +797,10 @@ ymax=1]
     <title>Properties of Quadratic Functions</title>
     <p permid="ZiE">
       In <xref ref="section-properties-of-quadratic-functions">Section</xref>
-      we covered the definition of a <xref ref="definition-quadratic-function" text="title">quadratic function</xref>,
+      we covered the definition of a <xref ref="definition-quadratic-function" text="custom">quadratic function</xref>,
       and how to determine the direction, vertex,
       axis of symmetry, and vertical and horizontal intercepts.
-      We then learned how to algebraically find the <xref ref="fact-vertex" text="title">vertex</xref>,
+      We then learned how to algebraically find the <xref ref="fact-vertex" text="custom">vertex</xref>,
       how to graph a parabola using a table,
       and how to find the domain and range of quadratic functions.
     </p>
@@ -809,7 +809,7 @@ ymax=1]
       <title>Finding the Vertex and Axis of Symmetry</title>
       <statement>
         <p permid="diD">
-          Algebraically find the <xref ref="fact-vertex" text="title">vertex</xref>
+          Algebraically find the <xref ref="fact-vertex" text="custom">vertex</xref>
           of the parabola described by the quadratic function <m>f(x)=3x^2+8x-7</m>.
         </p>
       </statement>
@@ -839,7 +839,7 @@ ymax=1]
       <statement>
         <sidebyside widths="47% 47%" margins="0%" permid="JDU">
           <p permid="JpM">
-            Identify the <xref ref="list-properties-of-quadratic-functions-visual" text="title">key features</xref>
+            Identify the <xref ref="list-properties-of-quadratic-functions-visual" text="custom">key features</xref>
             of the quadratic function <m>y=-2x^2-4x+6</m> shown in <xref ref="figure-quadratic-function-graph-properties-review">Figure</xref>.
           </p>
           <figure xml:id="figure-quadratic-function-graph-properties-review" permid="pwV">
@@ -1060,7 +1060,7 @@ minor ytick={-12,-11,...,10}]
                 we set the function equal to zero.
                 To solve that equation we will use <xref ref="list-methods-for-solving-quadratic-equations">Process</xref>.
                 For this particular example,
-                we will practice factoring using the <xref ref="algorithm-the-ac-method" text="title">AC method</xref>.
+                we will practice factoring using the <xref ref="algorithm-the-ac-method" text="custom">AC method</xref>.
                 Here, <m>ac=36</m> and factor pairs that add up to <m>-13</m> are <m>-9</m> and <m>-4</m>,
                 as you will see.
                 <md permid="SnZ">
@@ -1092,7 +1092,7 @@ minor ytick={-12,-11,...,10}]
                 we set the function equal to zero.
                 To solve that equation we will use <xref ref="list-methods-for-solving-quadratic-equations">Process</xref>.
                 For this particular example,
-                we will use the <xref ref="fact-the-quadratic-formula" text="title">quadratic formula</xref>
+                we will use the <xref ref="fact-the-quadratic-formula" text="custom">quadratic formula</xref>
                 because the square root method will not work
                 (because there is a linear term)
                 and factoring fails.

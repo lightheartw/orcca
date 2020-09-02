@@ -665,7 +665,7 @@ $c = PopUp(['?','does','does not'],1);
     <example permid="DfT">
       <p permid="Vct">
         In each graph from <xref ref="example-is-it-a-function">Example</xref>,
-        we can apply the <xref ref="fact-vertical-line-test" text="title" />.
+        we can apply the <xref ref="fact-vertical-line-test" text="custom">Vertical Line Test</xref>.
       </p>
       <sidebyside widths="32% 32% 32%" margins="0%" permid="HPM">
         <figure permid="BjC">
@@ -819,7 +819,7 @@ $c = PopUp(['?','does','does not'],1);
                 <ol label="i." permid="DIJ">
                   <li permid="XBA">
                     <p permid="rur">
-                      You recognize that the graph of this equation would be a non-vertical line and so it would pass the <xref ref="fact-vertical-line-test" text="title" />.
+                      You recognize that the graph of this equation would be a non-vertical line and so it would pass the <xref ref="fact-vertical-line-test" text="custom">Vertical Line Test</xref>.
                     </p>
                   </li>
                   <li permid="FFa">
@@ -883,7 +883,7 @@ $c = PopUp(['?','does','does not'],1);
                   </li>
                   <li permid="ehK">
                     <p permid="KYN">
-                      You recognize that the graph of this equation would be a circle with radius <m>3</m> and so it would not pass the <xref ref="fact-vertical-line-test" text="title" />.
+                      You recognize that the graph of this equation would be a circle with radius <m>3</m> and so it would not pass the <xref ref="fact-vertical-line-test" text="custom">Vertical Line Test</xref>.
                     </p>
                   </li>
                 </ol>

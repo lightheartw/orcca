@@ -67,8 +67,8 @@
       </statement>
       <solution permid="vsD">
         <p permid="EMp">
-          While we could factor and use the <xref ref="fact-zero-product-property" text="title" />,
-          here we are demonstrating <xref ref="fact-square-root-property" text="title" /> instead.
+          While we could factor and use the <xref ref="fact-zero-product-property" text="custom">zero product property</xref>,
+          here we are demonstrating <xref ref="fact-square-root-property" text="custom">the square root property</xref> instead.
           We need to isolate the squared quantity.
           <md permid="phS">
             <mrow>y^2-49\amp=0</mrow>

@@ -103,7 +103,7 @@
       <title>The Zero Exponent</title>
       <statement>
         <p permid="uOI">
-          Recall that the <xref ref="item-exponent-rules-zero-exponent">zero exponent rule</xref> says that any real number raised to the <m>0</m>-power is <m>1</m>.
+          Recall that the <xref ref="item-exponent-rules-zero-exponent" text="custom">zero exponent rule</xref> says that any real number raised to the <m>0</m>-power is <m>1</m>.
           Using this, and the other exponent rules,
           find another way to write <m>-9^0</m>.
         </p>

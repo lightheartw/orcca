@@ -331,7 +331,7 @@ grid=none]
           <li permid="umX">
             <title>Apply the Zero Product Property</title>
             <p permid="gTm">
-              Apply the <xref ref="fact-zero-product-property" text="title" />.
+              Apply the <xref ref="fact-zero-product-property" text="custom">Zero Product Property</xref>.
             </p>
           </li>
           <li permid="aug">
@@ -454,7 +454,7 @@ grid=none]
       <me permid="HNZ">
         ax^2+bx+c=0
       </me>
-      If an equation is not given in standard form then we must rearrange it in order to use the <xref ref="fact-zero-product-property" text="title" />.
+      If an equation is not given in standard form then we must rearrange it in order to use the <xref ref="fact-zero-product-property" text="custom">Zero Product Property</xref>.
     </p>
     <example permid="bUY">
       <title>Writing in Standard Form</title>
@@ -465,7 +465,7 @@ grid=none]
       </statement>
       <solution permid="zsp">
         <p permid="Wuh">
-          There is nothing like the <xref ref="fact-zero-product-property" text="title" /> for the number <m>24</m>.
+          There is nothing like the <xref ref="fact-zero-product-property" text="custom">Zero Product Property</xref> for the number <m>24</m>.
           We must have a <m>0</m> on one side of the equation to solve quadratic equations using factoring.
           <md permid="VRE">
             <mrow>x^2-10x\amp=24</mrow>
@@ -490,7 +490,7 @@ grid=none]
       </statement>
       <solution permid="fzy">
         <p permid="CBq">
-          Again, there is nothing like the <xref ref="fact-zero-product-property" text="title" /> for a number like <m>18</m>.
+          Again, there is nothing like the <xref ref="fact-zero-product-property" text="custom">Zero Product Property</xref> for a number like <m>18</m>.
           We must expand the left side and subtract <m>18</m> from both sides.
           <md permid="ifW">
             <mrow>(x+4)(x-3)\amp=18</mrow>
@@ -815,7 +815,7 @@ minor ytick={-10,0,...,40}]
         <p permid="zGK">
           As you can see, this is a quadratic equation.
           So, we will solve this equation by factoring.
-          First, we'll need to get it into standard form and then we can use the <xref ref="fact-zero-product-property" text="title" />.
+          First, we'll need to get it into standard form and then we can use the <xref ref="fact-zero-product-property" text="custom">Zero Product Property</xref>.
           <md permid="jVj">
             <mrow>2x^2-14x-240=0</mrow>
             <mrow>2\left(x^2-7x-120\right)=0</mrow>
@@ -885,7 +885,7 @@ $answer2=8;
             <p permid="Yju">
               As you can see, this is a quadratic equation.
               So, we will solve this equation by factoring.
-              First, we'll need to get it into standard form and then we can use the <xref ref="fact-zero-product-property" text="title" />.
+              First, we'll need to get it into standard form and then we can use the <xref ref="fact-zero-product-property" text="custom">Zero Product Property</xref>.
               <md permid="cqK">
                 <mrow>0=3x^2+4x-224=0</mrow>
                 <mrow>0=(3x+28)(x-8)</mrow>

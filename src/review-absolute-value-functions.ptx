@@ -210,9 +210,9 @@ minor ytick={-6,-5,...,8}
     <title>Compound Inequalities</title>
     <p permid="PFb">
       In <xref ref="section-compound-inequalities">Section</xref>
-      we defined the <xref ref="definition-union" text="title">union of intervals</xref>,
-      <xref ref="definition-intersection" text="title"> the intersection of intervals</xref>,
-      and what <xref ref="definition-compound-inequality" text="title">compound inequalities</xref> are,
+      we defined the <xref ref="definition-union" text="custom">union of intervals</xref>,
+      <xref ref="definition-intersection" text="custom"> the intersection of intervals</xref>,
+      and what <xref ref="definition-compound-inequality" text="custom">compound inequalities</xref> are,
       as well as how to solve
       <q>or</q>
       inequalities,
@@ -451,9 +451,9 @@ minor ytick={-6,-5,...,8}
     <title>Absolute Value Equations and Inequalities</title>
     <p permid="vMk">
       In <xref ref="section-absolute-value-equations-and-inequalities">Section</xref>
-      we covered how to solve equations when an <xref ref="fact-absolute-value-equation-i" text="title">absolute value is equal to a number</xref>.
-      We also covered how to solve inequalities when an <xref ref="fact-absolute-value-inequalities-i" text="title">absolute value is less than a number</xref>
-      and when an <xref ref="fact-absolute-value-inequalities-ii" text="title">absolute value is greater than a number</xref>.
+      we covered how to solve equations when an <xref ref="fact-absolute-value-equation-i" text="custom">absolute value is equal to a number</xref>.
+      We also covered how to solve inequalities when an <xref ref="fact-absolute-value-inequalities-i" text="custom">absolute value is less than a number</xref>
+      and when an <xref ref="fact-absolute-value-inequalities-ii" text="custom">absolute value is greater than a number</xref>.
     </p>
     <example permid="HMh">
       <title>Solving an Equation with an Absolute Value</title>

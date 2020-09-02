@@ -230,7 +230,7 @@ Context()->flags->set(tolType=>'absolute',tolerance=>'0.15');
   <subsection permid="tSy">
     <title>Simplifying Square Roots</title>
     <p permid="vPc">
-      We can use <xref ref="fact-mult-div-square-root-properties" text="title"/> to simplify a radicand that is not a perfect square.
+      We can use the <xref ref="fact-mult-div-square-root-properties" text="custom">Multiplication and Division Properties of Square Roots</xref> to simplify a radicand that is not a perfect square.
       Simplifying radicals is similar to simplifying fractions because we want the radicand to be as small as possible.
     </p>
     <p permid="bWl">
@@ -354,7 +354,7 @@ $answer=Formula("5sqrt(5)");
       </solution>
     </example>
     <p permid="UrM">
-      We can also use <xref ref="item-division-property-of-square-roots" text="title" /> to simplify expressions.
+      We can also use the <xref ref="item-division-property-of-square-roots" text="custom">Division Property of Square Roots</xref> to simplify expressions.
     </p>
     <example permid="Hff">
       <statement>
@@ -379,7 +379,7 @@ $answer=Formula("5sqrt(5)");
             <li permid="dxd">
               <p permid="aCx">
                 For the first expression,
-                we will use the <xref ref="item-division-property-of-square-roots" text="title" />:
+                we will use the <xref ref="item-division-property-of-square-roots" text="custom">Division Property of Square Roots</xref>:
                 <md permid="fAL">
                   <mrow>\sqrt{\frac{9}{16}}\amp=\frac{\sqrt{9}}{\sqrt{16}}</mrow>
                   <mrow>\amp=\frac{3}{4}</mrow>
@@ -405,7 +405,7 @@ $answer=Formula("5sqrt(5)");
   <subsection permid="ZZH">
     <title>Multiplying Square Root Expressions</title>
     <p permid="AyV">
-      If we use the <xref ref="item-multiplication-property-of-square-roots" text="title" /> and the <xref ref="item-division-property-of-square-roots" text="title" /> in the reverse order as
+      If we use the <xref ref="item-multiplication-property-of-square-roots" text="custom">Multiplication Property</xref> and the <xref ref="item-division-property-of-square-roots" text="custom">Division Property of Square Roots</xref> in the reverse order as
       <md permid="rPd">
         <mrow>\sqrt{x}\cdot\sqrt{y}\amp=\sqrt{xy}\amp\amp \text{and}\amp \frac{\sqrt{x}}{\sqrt{y}}\amp=\sqrt{\frac{x}{y}}</mrow>
       </md>,
@@ -502,7 +502,7 @@ $answer=Formula("42sqrt(3)");
   <subsection permid="GgQ">
     <title>Adding and Subtracting Square Root Expressions</title>
     <p permid="gGe">
-      We learned the <xref ref="item-multiplication-property-of-square-roots" text="title"/> previously and applied this to multiplication of square roots,
+      We learned the <xref ref="item-multiplication-property-of-square-roots" text="custom">Multiplication Property</xref> previously and applied this to multiplication of square roots,
       but we cannot apply this property to the operations of addition or subtraction.
       Here are two examples to demonstrate this:
       <md permid="QrN">

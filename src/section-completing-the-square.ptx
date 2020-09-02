@@ -21,7 +21,7 @@
     <idx><h>solving</h><h>quadratic equations</h><h>by completing the square</h></idx>
     <p permid="xGX">
       When we have an equation like <m>(x+5)^2=4</m>,
-      we can solve it quickly using the <xref ref="fact-square-root-property" text="title">square root property</xref>:
+      we can solve it quickly using the <xref ref="fact-square-root-property" text="custom">square root property</xref>:
       <md permid="IPW">
         <mrow>(x+5)^2\amp=4</mrow>
       </md>

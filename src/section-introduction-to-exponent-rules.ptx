@@ -20,7 +20,7 @@
       Before we discuss any exponent rules,
       we need to quickly remind ourselves of some important concepts and vocabulary.
     </p>
-<!-- that are discussed in greater detail in the appendix <xref ref="appendix-arithmetic" text="title"/>.</p>-->
+
     <p permid="vBl">
       When working with expressions with exponents,
       we have the following vocabulary:
@@ -426,7 +426,7 @@
             </li>
             <li permid="lTe">
               <p permid="Xua">
-                We will apply the <xref ref="item-product-to-sum-exponent-rule" text="title" />:
+                We will apply the <xref ref="item-product-to-sum-exponent-rule" text="custom">product to sum rule</xref>:
                 <md permid="fmU">
                   <mrow>(3x^2)(2x)(x^2)\amp=6x^5</mrow>
                 </md>
@@ -435,7 +435,7 @@
             <li permid="San">
               <p permid="DBj">
                 To simplify <m>2x(3x+4)</m>, we want to first distribute <m>2x</m>,
-                and then we can apply the <xref ref="item-product-to-sum-exponent-rule" text="title" />:
+                and then we can apply the <xref ref="item-product-to-sum-exponent-rule" text="custom">product to sum rule</xref>:
                 <md permid="Lud">
                   <mrow>2x(3x+4)\amp=2x(3x)+2x(4)</mrow>
                   <mrow>\amp=6x^2+8x</mrow>
@@ -446,7 +446,7 @@
             <li permid="yhw">
               <p permid="jIs">
                 We will use the distributive property first,
-                apply the <xref ref="item-product-to-sum-exponent-rule" text="title" />, and combine like terms:
+                apply the <xref ref="item-product-to-sum-exponent-rule" text="custom">product to sum rule</xref>, and combine like terms:
                 <md permid="rBm">
                   <mrow>x^3-3x^2(5x-2)\amp=x^3-3x^2(5x)-(-3x^2)(2)</mrow>
                   <mrow>\amp=x^3-15x^3+6x^2</mrow>

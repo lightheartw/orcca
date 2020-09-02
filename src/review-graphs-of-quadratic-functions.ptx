@@ -12,11 +12,11 @@
     <title>Introduction to Functions</title>
     <p permid="qmT">
       In <xref ref="section-introduction-to-functions">Section</xref>
-      we covered the definitions of a <xref ref="definition-relation" text="title">relation</xref>,
-      a <xref ref="definition-function-informal-early" text="title">function</xref>,
-      and <xref ref="definition-domain-and-range" text="title">domain and range</xref>.
+      we covered the definitions of a <xref ref="definition-relation" text="custom">relation</xref>,
+      a <xref ref="definition-function-informal-early" text="custom">function</xref>,
+      and <xref ref="definition-domain-and-range" text="custom">domain and range</xref>.
       We then discussed function notation and how to evaluate functions at a particular value as well as how to solve an equation with function notation.
-      Last we introduced the <xref ref="fact-VLT" text="title">vertical line test</xref>
+      Last we introduced the <xref ref="fact-VLT" text="custom">vertical line test</xref>
     </p>
     <example xml:id="example-pdx-rainfall" permid="kbV">
       <title>Introduction to Functions</title>
@@ -80,7 +80,7 @@ connex/.style={-{stealth}, ultra thick,color=thirdcolor}]
       <title>Functions as Predictors</title>
       <statement>
         <p permid="gjn">
-          Recall that a a <xref ref="definition-function-informal-early" text="title">function</xref>
+          Recall that a a <xref ref="definition-function-informal-early" text="custom">function</xref>
           should predict the output perfectly if you know the input.
           In <xref ref="example-pdx-rainfall">Example</xref>,
           we saw that the day of a particular week in Portland was related to the rainfall during that week.
@@ -505,7 +505,7 @@ connex/.style={-{stealth}, ultra thick,color=thirdcolor}]
       </statement>
       <solution permid="kLP">
         <p permid="bkZ">
-          Recall the definitions of <xref ref="definition-domain-and-range" text="title">domain and range</xref>.
+          Recall the definitions of <xref ref="definition-domain-and-range" text="custom">domain and range</xref>.
           <ol label="a." permid="gLQ">
             <li permid="paj">
               <p permid="mPx">
@@ -593,10 +593,10 @@ connex/.style={-{stealth}, ultra thick,color=thirdcolor}]
     <title>Properties of Quadratic Functions</title>
     <p permid="Wuc">
       In <xref ref="section-properties-of-quadratic-functions">Section</xref>
-      we covered the definition of a <xref ref="definition-quadratic-function" text="title">quadratic function</xref>,
+      we covered the definition of a <xref ref="definition-quadratic-function" text="custom">quadratic function</xref>,
       and how to determine the direction, vertex,
       axis of symmetry, and vertical and horizontal intercepts.
-      We then learned how to algebraically find the <xref ref="fact-vertex" text="title">vertex</xref>,
+      We then learned how to algebraically find the <xref ref="fact-vertex" text="custom">vertex</xref>,
       how to graph a parabola using a table,
       and how to find the domain and range of quadratic functions.
     </p>
@@ -605,7 +605,7 @@ connex/.style={-{stealth}, ultra thick,color=thirdcolor}]
       <title>Finding the Vertex and Axis of Symmetry</title>
       <statement>
         <p permid="umS">
-          Algebraically find the <xref ref="fact-vertex" text="title">vertex</xref>
+          Algebraically find the <xref ref="fact-vertex" text="custom">vertex</xref>
           of the parabola described by the quadratic function <m>f(x)=3x^2+8x-7</m>.
         </p>
       </statement>
@@ -635,7 +635,7 @@ connex/.style={-{stealth}, ultra thick,color=thirdcolor}]
       <statement>
         <sidebyside widths="47% 47%" margins="0%" permid="KtS">
           <p permid="aub">
-            Identify the <xref ref="list-properties-of-quadratic-functions-visual" text="title">key features</xref>
+            Identify the <xref ref="list-properties-of-quadratic-functions-visual" text="custom">key features</xref>
             of the quadratic function <m>y=-2x^2-4x+6</m> shown in <xref ref="figure-quadratic-function-graph-properties-review">Figure</xref>.
           </p>
           <figure xml:id="figure-quadratic-function-graph-properties-review" permid="GBk">
@@ -922,7 +922,7 @@ minor ytick={-12,-11,...,10}]
                 we set the function equal to zero.
                 To solve that equation we will use <xref ref="list-methods-for-solving-quadratic-equations">Algorithm</xref>.
                 For this particular example,
-                we will practice factoring using the <xref ref="algorithm-the-ac-method" text="title">AC method</xref>.
+                we will practice factoring using the <xref ref="algorithm-the-ac-method" text="custom">AC method</xref>.
                 Here, <m>ac=36</m> and factor pairs that add up to <m>-13</m> are <m>-9</m> and <m>-4</m>,
                 as you will see.
                 <md permid="wLZ">
@@ -955,7 +955,7 @@ minor ytick={-12,-11,...,10}]
                 we set the function equal to zero.
                 To solve that equation we will use <xref ref="list-methods-for-solving-quadratic-equations">Algorithm</xref>.
                 For this particular example,
-                we will use the <xref ref="fact-the-quadratic-formula" text="title">quadratic formula</xref>
+                we will use the <xref ref="fact-the-quadratic-formula" text="custom">quadratic formula</xref>
                 because the square root method will not work
                 (because there is a linear term)
                 and factoring fails.
@@ -1215,7 +1215,7 @@ minor ytick={-16,-14,...,16}]
       <title>The Domain and Range of Quadratic Applications</title>
       <statement>
         <p permid="DGE">
-          In the <xref ref="example-FAST-telescope" text="title">FAST telescope example</xref>,
+          In the <xref ref="example-FAST-telescope" text="custom">FAST telescope example</xref>,
           find the real world domain and range of the function <m>h</m>.
         </p>
       </statement>

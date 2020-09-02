@@ -12,10 +12,10 @@
     <title>Graphs and Vertex Form</title>
     <p permid="ePZ">
       In <xref ref="section-graphs-and-vertex-form">Section</xref>
-      we covered the <xref ref="fact-vertex-form" text="title">vertex form</xref> of a quadratic function,
+      we covered the <xref ref="fact-vertex-form" text="custom">vertex form</xref> of a quadratic function,
       how it can be used to identify the vertex,
       and how the vertex can be used to find the domain and range of a quadratic function.
-      We also covered the <xref ref="fact-factored-form" text="title">factored form</xref>
+      We also covered the <xref ref="fact-factored-form" text="custom">factored form</xref>
       of a quadratic function and how it can help us identify horizontal intercepts.
     </p>
 <!--  <example>
@@ -109,7 +109,7 @@ ytick={-8,-6,...,-2}, minor ytick={-10,-9,...,2},
       <title>The Vertex Form of a Parabola</title>
       <statement>
         <p permid="jVr">
-          Recall that the <xref ref="fact-vertex-form" text="title">vertex form</xref>
+          Recall that the <xref ref="fact-vertex-form" text="custom">vertex form</xref>
           of a quadratic function tells us the location of the vertex of a parabola.
           <ol label="a." cols="2" permid="DGR">
             <li permid="gTu">
@@ -185,7 +185,7 @@ ytick={-8,-6,...,-2}, minor ytick={-10,-9,...,2},
       <title>The Factored Form of a Parabola</title>
       <statement>
         <p permid="QcA">
-          Recall that the <xref ref="fact-factored-form" text="title">factored form</xref>
+          Recall that the <xref ref="fact-factored-form" text="custom">factored form</xref>
           of a quadratic function tells us the horizontal intercepts very quickly.
           <ol label="a." cols="2" permid="jOa">
             <li permid="dYO">
@@ -224,8 +224,8 @@ ytick={-8,-6,...,-2}, minor ytick={-10,-9,...,2},
     <title>Completing the Square</title>
     <p permid="KXi">
       In <xref ref="section-completing-the-square">Section</xref>
-      we covered how to <xref ref="fact-completing-the-square" text="title">complete the square</xref>
-      to both solve quadratic equations in one variable and to put quadratic functions into <xref ref="fact-vertex-form" text="title">vertex form</xref>.
+      we covered how to <xref ref="fact-completing-the-square" text="custom">complete the square</xref>
+      to both solve quadratic equations in one variable and to put quadratic functions into <xref ref="fact-vertex-form" text="custom">vertex form</xref>.
     </p>
     <example permid="wxR">
       <title>Solving Quadratic Equations by Completing the Square</title>
@@ -442,7 +442,7 @@ clip=false]
     <title>More on Complex Solutions to Quadratic Equations</title>
     <p permid="rer">
       In <xref ref="section-more-on-complex-solutions-to-quadratic-equations">Section</xref>
-      we covered the definition of a <xref ref="definition-complex-number" text="title">complex number</xref>,
+      we covered the definition of a <xref ref="definition-complex-number" text="custom">complex number</xref>,
       and discussed both quadratic applications and equations where complex numbers appear as solutions.
     </p>
     <example permid="oTs">
@@ -468,7 +468,7 @@ clip=false]
             <intertext>This is a quadratic equation where verything is divisible by <m>2</m>. We will divide every term by <m>2</m> which can simplify the process.</intertext>
             <mrow>\divideunder{0}{2}\amp=\divideunder{-16t^2}{2}+\divideunder{24t}{2}-\divideunder{10}{2}</mrow>
             <mrow>0\amp=-8t^2+12t-5</mrow>
-            <intertext>Since the equation doesn't seem to factor easily, we will use the <xref ref="fact-the-quadratic-formula" text="title">quadratic formula</xref> to solve it. Note that <m>\substitute{a=-8}</m>, <m>\substitute{b=12}</m>, and <m>\substitute{c=-5}</m>.</intertext>
+            <intertext>Since the equation doesn't seem to factor easily, we will use the <xref ref="fact-the-quadratic-formula" text="custom">quadratic formula</xref> to solve it. Note that <m>\substitute{a=-8}</m>, <m>\substitute{b=12}</m>, and <m>\substitute{c=-5}</m>.</intertext>
             <mrow>t\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</mrow>
             <mrow>t\amp=\frac{-(\substitute{12})\pm\sqrt{(\substitute{12})^2-4(\substitute{-8})(\substitute{-5})}}{2(\substitute{-8})}</mrow>
             <mrow>t\amp=\frac{-12\pm\sqrt{-16}}{-16}</mrow>
