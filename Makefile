@@ -238,6 +238,13 @@ lanepdf:
 	xelatex orcca.tex; \
 
 
+odd-answers:
+	cd $(PRINTOUT); \
+	xsltproc --xinclude --stringparam publisher $(PUBFILE) --stringparam toc.level 3 --stringparam latex.pageref 'no' --stringparam latex.sides 'one' $(XSL)/orcca-odd-answers.xsl $(MAINFILE) > orcca-odd-answers.tex; \
+	xelatex orcca-odd-answers.tex; \
+	xelatex orcca-odd-answers.tex; \
+	xelatex orcca-odd-answers.tex;
+
 #	echo 'GLOBAL SPACING'; \
 #	echo 'Next line removes \leavevmode when it comes right before an enumerate'; \
 #	perl -p0i -e 's/\\leavevmode%\n(\\begin{enumerate})/\1/g' orcca.tex; \
@@ -648,7 +655,7 @@ html:
 	rsync -r --include='*.png' --exclude='*' . $(HTMLOUT)/images
 	cp $(CSS) $(HTMLOUT)
 	cd $(HTMLOUT); \
-	xsltproc -xinclude --stringparam publisher $(PUBFILE) --stringparam exercise.inline.hint no --stringparam exercise.inline.answer no --stringparam exercise.inline.solution yes --stringparam exercise.divisional.hint no --stringparam exercise.divisional.answer no --stringparam exercise.divisional.solution no --stringparam exercise.text.hint no --stringparam exercise.text.answer no --stringparam exercise.text.solution no --stringparam html.knowl.exercise.inline no --stringparam html.knowl.example no --stringparam html.css.extra orcca.css $(PRJXSL)/orcca-html.xsl $(MAINFILE)
+	xsltproc -xinclude --stringparam publisher $(PUBFILE) --stringparam exercise.inline.hint no --stringparam exercise.inline.answer no --stringparam exercise.inline.solution yes --stringparam exercise.divisional.hint no --stringparam exercise.divisional.answer no --stringparam exercise.divisional.solution no --stringparam html.knowl.exercise.inline no --stringparam html.knowl.example no --stringparam html.css.extra orcca.css $(PRJXSL)/orcca-html.xsl $(MAINFILE)
 
 # make all the image files in svg format
 laneimages:
