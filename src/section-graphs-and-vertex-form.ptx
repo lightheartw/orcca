@@ -910,7 +910,7 @@ $xints[3] = List(Point(8,0),Point(-3,0));
           <title>Factored Form</title>
           <p permid="XHI">
             <m>f(x)=a(x-r)(x-s)</m>,
-            with <m>x</m>-intercepts <m>(m,0)</m> and <m>(n,0)</m>.
+            with <m>x</m>-intercepts <m>(r,0)</m> and <m>(s,0)</m>.
           </p>
         </li>
       </dl>

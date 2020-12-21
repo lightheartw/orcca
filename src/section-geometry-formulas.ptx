@@ -503,7 +503,7 @@ $ansA = NumberWithUnits($area,"m^2");
         that the circumference is a little more than <m>6</m> times the radius.
       </p>
       <figure xml:id="figure-circumference-by-radius" permid="hwg">
-        <caption>Circle Diameter and Circumference</caption>
+        <caption>Circle Radius and Circumference</caption>
         <image width="48%" permid="Qcw">
           <description></description>
 <latex-image>
